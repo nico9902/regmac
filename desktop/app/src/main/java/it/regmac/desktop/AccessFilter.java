@@ -20,6 +20,8 @@ import java.nio.charset.StandardCharsets;
 @Component @Order(1)
 public class AccessFilter extends OncePerRequestFilter {
   private static final String COOKIE = "regmac";
+  private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(AccessFilter.class);
+  private static volatile boolean connected;
 
   @Override
   protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws ServletException, IOException {
@@ -29,19 +31,21 @@ public class AccessFilter extends OncePerRequestFilter {
     String t = req.getParameter("t");
     if (t != null && same(t, DesktopApp.token)) {
       Cookie c = new Cookie(COOKIE, DesktopApp.token);
-      c.setHttpOnly(true); c.setPath("/"); c.setAttribute("SameSite", "Strict");
+      c.setHttpOnly(true); c.setPath("/"); c.setAttribute("SameSite", "Lax"); // Strict non viene inviato dopo la navigazione dalla finestra nativa (origine tauri://)
       res.addCookie(c);
       if ("GET".equals(req.getMethod()) && !path.startsWith("/api/")) { res.sendRedirect("/"); return; }
     }
     if (path.equals("/api/ping")) { res.setStatus(200); return; }
     boolean ok = false;
     if (req.getCookies() != null) for (Cookie c : req.getCookies()) if (COOKIE.equals(c.getName()) && same(c.getValue(), DesktopApp.token)) ok = true;
-    if (!ok && path.startsWith("/api/")) { res.sendError(401, "Apri RegMac dalla sua icona"); return; }
+    if (!ok && path.startsWith("/api/")) { LOG.warn("Richiesta API senza sessione valida: {}", path); res.sendError(401, "Apri RegMac dalla sua icona"); return; }
     if (!ok && !path.startsWith("/assets/") && !path.endsWith(".png") && !path.endsWith(".ico")) {
+      LOG.warn("Pagina richiesta senza sessione valida: {}", path);
       res.setContentType("text/html;charset=UTF-8");
-      res.getWriter().write("<!doctype html><meta charset=utf-8><title>RegMac</title><body style='font-family:sans-serif;padding:40px;color:#1E293B'><h2>Sessione non valida</h2><p>Riapri RegMac dalla sua icona oppure dalla finestra «RegMac è in esecuzione».</p></body>");
+      res.getWriter().write("<!doctype html><meta charset=utf-8><title>RegMac</title><body style='font-family:sans-serif;padding:40px;color:#1E293B'><h2>Sessione non valida</h2><p>Chiudi e riapri RegMac dalla sua icona.</p></body>");
       return;
     }
+    if (ok && path.equals("/api/status") && !connected) { connected = true; LOG.info("Interfaccia collegata al motore"); }
     res.setHeader("X-Content-Type-Options", "nosniff");
     res.setHeader("X-Frame-Options", "DENY");
     res.setHeader("Referrer-Policy", "no-referrer");

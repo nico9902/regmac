@@ -1,0 +1,92 @@
+# Costruisce gli installatori di RegMac Desktop per macOS, Windows e Linux.
+# Si avvia a mano (Actions → "RegMac Desktop" → Run workflow) o pubblicando un tag "v*" (es. v1.0.1):
+# con un tag gli installatori vengono allegati a una Release di GitHub.
+name: RegMac Desktop
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-14          # Apple Silicon
+            bundles: app,dmg
+            name: macOS
+          - os: windows-latest
+            bundles: msi,nsis
+            name: Windows
+          - os: ubuntu-22.04
+            bundles: deb,appimage
+            name: Linux
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          cache-dependency-path: desktop/app/pom.xml
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: |
+            desktop/ui/package-lock.json
+            desktop/tauri/package-lock.json
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: desktop/tauri/src-tauri
+
+      - name: Librerie di sistema (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libfuse2
+
+      - name: Costruzione
+        run: desktop/build.sh "${{ matrix.bundles }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RegMac-${{ matrix.name }}
+          path: desktop/dist/*
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          draft: true
+          body: |
+            Installatori di RegMac Desktop (pre-assessment di macchine con AI locale).
+            - macOS (Apple Silicon): file .dmg
+            - Windows: .msi oppure -setup.exe
+            - Linux: .deb oppure .AppImage
+            Richiede Ollama (ollama.com/download): al primo avvio RegMac scarica i modelli necessari.
+            Gli installatori non sono firmati: al primo avvio il sistema mostra un avviso.

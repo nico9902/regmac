@@ -38,7 +38,7 @@ Ogni fascicolo è una cartella dentro `fascicoli/`. Per un backup basta copiare 
 ## Compilare l'installatore
 
 ```bash
-desktop/build-macos.sh            # crea desktop/dist/RegMac_1.0.0_aarch64.dmg (finestra nativa + Java 21 incluso)
+desktop/build.sh            # sul sistema in uso: .dmg (macOS), .msi/.exe (Windows), .deb/.AppImage (Linux)
 ```
 
 Requisiti per compilare: JDK 21, Node.js, Rust. Windows (.msi) e Linux (.deb/.AppImage) si creano con gli stessi passi sul rispettivo sistema; vanno ancora preparati.
