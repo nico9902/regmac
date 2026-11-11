@@ -48,7 +48,7 @@
     <img src="assets/readme/download-linux-light.svg" alt="Scarica per Linux (AppImage)" height="56">
   </picture></a>
   <br>
-  <sub>Gratuito · richiede <a href="https://ollama.com/download">Ollama</a> · circa 5,5 GB di modelli scaricati al primo avvio · nulla esce dal computer</sub>
+  <sub>Richiede <a href="https://ollama.com/download">Ollama</a> · circa 5,5 GB di modelli scaricati al primo avvio · nulla esce dal computer</sub>
   <br>
   <sub>Altri formati: <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Windows-x64.msi">Windows .msi</a> · <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.deb">Linux .deb</a> · <a href="https://github.com/nico9902/regmac/releases">tutte le versioni</a></sub>
 </p>
@@ -157,3 +157,8 @@ git tag v1.0.1 && git push origin v1.0.1
 ```
 
 La precedente versione server (Docker, PostgreSQL, utenti e ruoli) è descritta in [`docs/SERVER.md`](docs/SERVER.md).
+
+## Licenza
+
+© 2026 Domenico Paolo. Tutti i diritti riservati. Il codice non è distribuito con una licenza open source: puoi scaricare e usare l'applicazione, ma non riutilizzare il codice senza autorizzazione.
+I testi dei regolamenti provengono da EUR-Lex (© Unione europea), riutilizzabili ai sensi della decisione 2011/833/UE.
