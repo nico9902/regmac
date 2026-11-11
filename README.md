@@ -18,7 +18,7 @@
   <a href="https://github.com/nico9902/regmac/releases"><img src="https://img.shields.io/github/downloads/nico9902/regmac/total?style=flat-square&labelColor=0B1F3A&color=155EEF&label=download" alt="Download"></a>
   <img src="https://img.shields.io/badge/Windows-10%20e%2011-155EEF?style=flat-square&labelColor=0B1F3A" alt="Windows 10 e 11">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon-155EEF?style=flat-square&labelColor=0B1F3A" alt="macOS Apple Silicon">
-  <img src="https://img.shields.io/badge/Linux-AppImage%20e%20.deb-155EEF?style=flat-square&labelColor=0B1F3A" alt="Linux AppImage e .deb">
+  <img src="https://img.shields.io/badge/Linux-Ubuntu%20e%20Debian-155EEF?style=flat-square&labelColor=0B1F3A" alt="Linux: Ubuntu e Debian">
   <br>
   <img src="https://img.shields.io/badge/AI-locale%20con%20Ollama-16A34A?style=flat-square&labelColor=0B1F3A" alt="AI locale con Ollama">
   <img src="https://img.shields.io/badge/Reg.%20(UE)-2023%2F1230-64748B?style=flat-square&labelColor=0B1F3A" alt="Regolamento Macchine">
@@ -43,14 +43,14 @@
     <source media="(prefers-color-scheme: dark)" srcset="assets/readme/download-macos-dark.svg">
     <img src="assets/readme/download-macos-light.svg" alt="Scarica per macOS (Apple Silicon)" height="56">
   </picture></a>
-  <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.AppImage"><picture>
+  <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.deb"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/readme/download-linux-dark.svg">
-    <img src="assets/readme/download-linux-light.svg" alt="Scarica per Linux (AppImage)" height="56">
+    <img src="assets/readme/download-linux-light.svg" alt="Scarica per Linux (Ubuntu e Debian, .deb)" height="56">
   </picture></a>
   <br>
   <sub>Al primo avvio scarica da solo l'AI locale (Ollama e modelli, circa 6–7 GB) · nulla esce dal computer</sub>
   <br>
-  <sub>Altri formati: <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Windows-x64.msi">Windows .msi</a> · <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.deb">Linux .deb</a> · <a href="https://github.com/nico9902/regmac/releases">tutte le versioni</a></sub>
+  <sub><a href="https://github.com/nico9902/regmac/releases">Tutte le versioni</a></sub>
 </p>
 
 <p align="center">
@@ -78,7 +78,7 @@ Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostr
 |---|---|
 | **macOS** | apri il `.dmg` e trascina RegMac in Applicazioni. Al primo avvio: clic destro su RegMac → **Apri** → **Apri** |
 | **Windows** | se compare «Windows ha protetto il PC»: **Ulteriori informazioni** → **Esegui comunque** |
-| **Linux** | AppImage: `chmod +x RegMac-Linux-x64.AppImage` e avvialo. Debian/Ubuntu: `sudo apt install ./RegMac-Linux-x64.deb` |
+| **Linux** (Ubuntu 22.04+, Debian 12+) | `sudo apt install ./RegMac-Linux-x64.deb`, poi apri RegMac dal menu delle applicazioni |
 
 **Requisiti:** 16 GB di RAM consigliati, circa 8 GB liberi su disco, connessione a internet solo al primo avvio. Con una scheda grafica o un Mac Apple Silicon l'analisi è molto più veloce.
 
@@ -149,7 +149,11 @@ Scheda di verifica del requisito ─────────────┤  per
 **Compilare** sul sistema in uso (servono JDK 21, Node.js e Rust):
 
 ```bash
-desktop/build.sh        # .dmg su macOS · .msi e .exe su Windows (Git Bash) · .deb e .AppImage su Linux
+desktop/build.sh                     # .dmg su macOS · .msi e .exe su Windows (Git Bash) · .deb e .AppImage su Linux
+REGMAC_CROSS=windows desktop/build.sh  # da macOS: installatore Windows .exe (rustup, cargo-xwin, llvm, makensis)
+# da macOS o Windows, installatori Linux in un contenitore Docker:
+docker run --rm --platform linux/amd64 --dns 1.1.1.1 -v "$PWD:/src:ro" -v "$PWD/desktop/dist-linux:/out" \
+  ubuntu:22.04 bash /src/desktop/packaging/linux/build-in-container.sh
 ```
 
 **Pubblicare una versione**: il workflow [`.github/workflows/desktop.yml`](.github/workflows/desktop.yml) costruisce i tre sistemi e pubblica la Release, a cui puntano i pulsanti di download.

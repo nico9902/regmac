@@ -2,5 +2,5 @@
 <rect x="0.5" y="0.5" width="249" height="55" rx="12" fill="#FFFFFF" stroke="#FFFFFF"/>
 <g transform="translate(18 14) scale(1.15)" fill="#0B1F3A"><ellipse cx="12" cy="13.5" rx="6.2" ry="8.5"/><ellipse cx="12" cy="15.5" rx="3.9" ry="5.6" fill="#FFFFFF"/><circle cx="10" cy="8.4" r="1.1" fill="#FFFFFF"/><circle cx="14" cy="8.4" r="1.1" fill="#FFFFFF"/><path d="M10.4 10.3h3.2l-1.6 1.6z" fill="#F5B301"/><ellipse cx="8" cy="22" rx="2.6" ry="1.1" fill="#F5B301"/><ellipse cx="16" cy="22" rx="2.6" ry="1.1" fill="#F5B301"/></g>
 <text x="58" y="25" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="650" fill="#0B1F3A">Scarica per Linux</text>
-<text x="58" y="42" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" fill="#64748B">AppImage · x64</text>
+<text x="58" y="42" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" fill="#64748B">Ubuntu e Debian · .deb x64</text>
 </svg>
