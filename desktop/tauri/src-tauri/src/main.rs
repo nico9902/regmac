@@ -44,7 +44,11 @@ fn java_path(res: &PathBuf) -> PathBuf {
 }
 
 fn start_backend(res: &PathBuf, port: u16, token: &str, log: Option<PathBuf>) -> std::io::Result<Child> {
+    let backend = res.join("backend");
     let mut cmd = Command::new(java_path(res));
+    // si avvia dalla cartella del motore e si passa il jar per nome: su Windows i percorsi estesi (\\?\C:\...)
+    // fanno fallire il caricatore delle classi di Java («impossibile trovare la classe principale»)
+    cmd.current_dir(&backend);
     cmd.args([
         "-Xmx2g",
         "-Dfile.encoding=UTF-8",
@@ -55,7 +59,7 @@ fn start_backend(res: &PathBuf, port: u16, token: &str, log: Option<PathBuf>) ->
         &format!("-Dregmac.parent={}", std::process::id()),
         "-jar",
     ])
-    .arg(res.join("backend").join("regmac-desktop.jar"))
+    .arg("regmac-desktop.jar")
     .stdin(Stdio::null());
     if let Some(p) = log.and_then(|p| std::fs::File::create(p).ok()) {
         cmd.stdout(p.try_clone().map(Stdio::from).unwrap_or(Stdio::null())).stderr(Stdio::from(p));
@@ -117,7 +121,7 @@ fn main() {
                 .min_inner_size(1024.0, 680.0)
                 .disable_drag_drop_handler() // il trascinamento dei file va all'interfaccia web
                 .build()?;
-            let res = app.path().resource_dir()?;
+            let res = dunce::simplified(&app.path().resource_dir()?).to_path_buf();
             let log = app.path().app_log_dir().ok().map(|d| {
                 let _ = std::fs::create_dir_all(&d);
                 d.join("motore.log")
