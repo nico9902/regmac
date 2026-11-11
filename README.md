@@ -50,7 +50,7 @@
   <br>
   <sub>Al primo avvio scarica da solo l'AI locale (Ollama e modelli, circa 6–7 GB) · nulla esce dal computer</sub>
   <br>
-  <sub><a href="https://github.com/nico9902/regmac/releases">Tutte le versioni</a></sub>
+  <sub>Windows su processore ARM (Surface, Snapdragon, macchine virtuali su Mac): <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Windows-arm64-setup.exe">RegMac-Windows-arm64-setup.exe</a> · <a href="https://github.com/nico9902/regmac/releases">tutte le versioni</a></sub>
 </p>
 
 <p align="center">
@@ -77,7 +77,7 @@ Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostr
 | Sistema | Cosa fare |
 |---|---|
 | **macOS** | apri il `.dmg` e trascina RegMac in Applicazioni. Al primo avvio: clic destro su RegMac → **Apri** → **Apri** |
-| **Windows** | se compare «Windows ha protetto il PC»: **Ulteriori informazioni** → **Esegui comunque** |
+| **Windows** | se compare «Windows ha protetto il PC»: **Ulteriori informazioni** → **Esegui comunque**. Su PC con processore ARM usa l'installatore `arm64` (link sotto i pulsanti) |
 | **Linux** (Ubuntu 22.04+, Debian 12+) | `sudo apt install ./RegMac-Linux-x64.deb`, poi apri RegMac dal menu delle applicazioni |
 
 **Requisiti:** 16 GB di RAM consigliati, circa 8 GB liberi su disco, connessione a internet solo al primo avvio. Con una scheda grafica o un Mac Apple Silicon l'analisi è molto più veloce.
