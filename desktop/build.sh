@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Crea gli installatori di RegMac: finestra nativa Tauri + motore Java con Java 21 incluso.
 # Funziona su macOS, Windows (Git Bash) e Linux. Requisiti: JDK 21, Node.js/npm, Rust (cargo).
+# Da macOS si può creare anche l'installatore Windows (.exe NSIS): REGMAC_CROSS=windows desktop/build.sh
+#   (servono rustup con il target x86_64-pc-windows-msvc, cargo-xwin, llvm e makensis)
 # Uso: desktop/build.sh [pacchetti]   es. "app,dmg" (macOS, predefinito), "msi,nsis" (Windows), "deb,appimage" (Linux)
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -12,12 +14,18 @@ case "$(uname -s)" in
   *) DEFAULT=deb,appimage ;;
 esac
 BUNDLES=${1:-$DEFAULT}
+CROSS=${REGMAC_CROSS:-}
+if [ "$CROSS" = windows ]; then
+  BUNDLES=nsis
+  export PATH="/opt/homebrew/opt/rustup/bin:$HOME/.cargo/bin:/opt/homebrew/opt/llvm/bin:$PATH"
+fi
 export JAVA_HOME
 MVN="$ROOT/.tools/apache-maven-3.9.9/bin/mvn"
 MVN_REPO=()
 if [ -x "$MVN" ]; then MVN_REPO=(-Dmaven.repo.local="$ROOT/.tools/m2"); else MVN=mvn; fi
 
 echo "== 1/5 Dati normativi e schede di verifica"
+mkdir -p app/src/main/resources/normative app/src/main/resources/static
 cp "$ROOT/data/normative/requirements.json" "$ROOT/data/normative/schede.json" app/src/main/resources/normative/
 mkdir -p ui/public/normative && cp "$ROOT"/data/normative/*.pdf ui/public/normative/
 
@@ -31,13 +39,26 @@ echo "== 4/5 Java incluso (runtime ridotto con jlink)"
 [ -d build/backend ] && chmod -R u+w build/backend
 rm -rf build/backend && mkdir -p build/backend
 cp app/target/regmac-desktop.jar build/backend/
+if [ "$CROSS" = windows ]; then
+  # Java per Windows: JRE 21 ufficiale (Eclipse Temurin), non si può creare con jlink da macOS
+  curl -fsSL -o build/jre-windows.zip "https://api.adoptium.net/v3/binary/latest/21/ga/windows/x64/jre/hotspot/normal/eclipse"
+  rm -rf build/jre-tmp && mkdir -p build/jre-tmp && unzip -q build/jre-windows.zip -d build/jre-tmp
+  mv build/jre-tmp/*/ build/backend/runtime && rm -rf build/jre-tmp build/jre-windows.zip
+else
 "$JAVA_HOME/bin/jlink" --output build/backend/runtime \
   --add-modules java.base,java.desktop,java.logging,java.management,java.naming,java.net.http,java.sql,java.xml,java.instrument,java.security.jgss,java.scripting,jdk.crypto.ec,jdk.unsupported,jdk.management,jdk.zipfs,jdk.charsets,jdk.localedata \
   --strip-debug --no-man-pages --no-header-files --compress zip-6
+fi
 chmod -R u+w build/backend   # jlink crea file in sola lettura: Tauri deve poterli copiare e sovrascrivere
 [ -d tauri/src-tauri/target/release/backend ] && chmod -R u+w tauri/src-tauri/target/release/backend && rm -rf tauri/src-tauri/target/release/backend
 
 echo "== 5/5 Applicazione nativa (Tauri) e installatore"
+if [ "$CROSS" = windows ]; then
+  (cd tauri && npm ci --no-audit --no-fund >/dev/null && npx tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc --bundles nsis)
+  rm -rf dist && mkdir -p dist
+  cp tauri/src-tauri/target/x86_64-pc-windows-msvc/release/bundle/nsis/*-setup.exe dist/RegMac-Windows-x64-setup.exe
+  ls -lh dist; exit 0
+fi
 (cd tauri && npm ci --no-audit --no-fund >/dev/null && npx tauri build --bundles "$BUNDLES")
 rm -rf dist && mkdir -p dist
 # nomi fissi: i pulsanti di download del README puntano a releases/latest/download/<nome>

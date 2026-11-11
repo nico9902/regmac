@@ -25,3 +25,4 @@ desktop/ui/public/normative/
 desktop/tauri/src-tauri/target/
 desktop/tauri/src-tauri/gen/
 desktop/tauri/node_modules/
+desktop/dist-linux/
