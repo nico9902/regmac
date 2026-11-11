@@ -51,7 +51,7 @@ public class Api {
     out.put("dataDir", Paths.dataDir().toString());
     out.put("os", System.getProperty("os.name"));
     out.put("schede", catalog.schedeVersion());
-    out.put("version", "1.1.0");
+    out.put("version", "1.1.1");
     return out;
   }
 

@@ -70,6 +70,21 @@ fn start_backend(res: &PathBuf, port: u16, token: &str, log: Option<PathBuf>) ->
     cmd.spawn()
 }
 
+/// Ultime righe del registro del motore, da mostrare nella schermata d'errore.
+fn log_tail(log: &Option<PathBuf>) -> String {
+    let Some(p) = log else { return String::new() };
+    let text = std::fs::read_to_string(p).unwrap_or_default();
+    let lines: Vec<&str> = text.lines().filter(|l| !l.trim().is_empty()).collect();
+    let start = lines.len().saturating_sub(14);
+    format!("{}\n\nRegistro completo: {}", lines[start..].join("\n"), p.display())
+}
+
+fn show_error(handle: &tauri::AppHandle, msg: &str) {
+    if let Some(w) = handle.get_webview_window("main") {
+        let _ = w.eval(&format!("window.showError({:?})", msg));
+    }
+}
+
 fn stop_backend(app: &tauri::AppHandle) {
     let state = app.state::<Backend>();
     let mut guard = state.child.lock().unwrap();
@@ -107,21 +122,31 @@ fn main() {
                 let _ = std::fs::create_dir_all(&d);
                 d.join("motore.log")
             });
-            match start_backend(&res, port, &token, log) {
+            let java = java_path(&res);
+            match start_backend(&res, port, &token, log.clone()) {
                 Ok(child) => {
                     *app.state::<Backend>().child.lock().unwrap() = Some(child);
                 }
                 Err(e) => {
-                    let msg = format!("Impossibile avviare il motore di RegMac: {e}");
+                    let msg = format!("Impossibile avviare il motore di RegMac ({}): {e}", java.display());
                     let _ = window.eval(&format!("window.showError({:?})", msg));
                     return Ok(());
                 }
             }
             let handle = app.handle().clone();
             let token = token.clone();
+            let log = log.clone();
             std::thread::spawn(move || {
                 let t = Instant::now();
-                while t.elapsed() < Duration::from_secs(120) {
+                let mut slow_notice = false;
+                let mut exit_info = String::new();
+                while t.elapsed() < Duration::from_secs(180) {
+                    if !slow_notice && t.elapsed() > Duration::from_secs(12) {
+                        slow_notice = true;
+                        if let Some(w) = handle.get_webview_window("main") {
+                            let _ = w.eval("window.slow && window.slow()");
+                        }
+                    }
                     if http(port, "GET", "/api/ping", &token) == Some(200) {
                         if let Some(w) = handle.get_webview_window("main") {
                             let url = format!("http://127.0.0.1:{port}/?t={token}");
@@ -130,13 +155,13 @@ fn main() {
                         return;
                     }
                     // il motore si è chiuso subito (es. un'altra copia di RegMac è già aperta)
-                    let exited = handle.state::<Backend>().child.lock().unwrap().as_mut().and_then(|c| c.try_wait().ok().flatten()).is_some();
-                    if exited { break; }
+                    let exited = handle.state::<Backend>().child.lock().unwrap().as_mut().and_then(|c| c.try_wait().ok().flatten());
+                    if let Some(code) = exited { exit_info = format!("Il motore si è chiuso subito ({code})."); break; }
                     std::thread::sleep(Duration::from_millis(250));
                 }
-                if let Some(w) = handle.get_webview_window("main") {
-                    let _ = w.eval("window.showError('Il motore di RegMac non si è avviato. Chiudi e riapri il programma; se il problema resta, controlla il file motore.log nella cartella dei log.')");
-                }
+                if exit_info.is_empty() { exit_info = "Il motore non ha risposto entro 3 minuti.".into(); }
+                let msg = format!("{exit_info}\n\n{}", log_tail(&log));
+                show_error(&handle, &msg);
             });
             Ok(())
         })

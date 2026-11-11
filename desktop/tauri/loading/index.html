@@ -13,7 +13,8 @@ p{color:var(--mute);margin:0}
 .bar{width:220px;height:4px;border-radius:3px;background:#1F3A5F;margin:22px auto 0;overflow:hidden}
 .bar i{display:block;width:40%;height:100%;background:var(--brand);border-radius:3px;animation:m 1.2s ease-in-out infinite}
 @keyframes m{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
-.err{display:none;max-width:460px;margin-top:18px;color:#FCA5A5}
+.err{display:none;max-width:760px;margin:18px auto 0;color:#FCA5A5;text-align:left;white-space:pre-wrap;font:12px/1.5 ui-monospace,Menlo,Consolas,monospace;background:#132B4D;border:1px solid #1F3A5F;border-radius:8px;padding:12px 14px;max-height:50vh;overflow:auto;user-select:text;-webkit-user-select:text}
+button{margin-top:12px;border:0;border-radius:8px;padding:8px 14px;background:#155EEF;color:#fff;font:inherit;cursor:pointer}
 </style>
 </head>
 <body>
@@ -23,12 +24,17 @@ p{color:var(--mute);margin:0}
   <p id="msg">Avvio del motore…</p>
   <div class="bar" id="bar"><i></i></div>
   <p class="err" id="err"></p>
+  <button id="copy" style="display:none" onclick="navigator.clipboard.writeText(document.getElementById('err').textContent);this.textContent='Copiato'">Copia il messaggio</button>
 </div></div>
 <script>
 window.showError = function (m) {
   document.getElementById('bar').style.display = 'none';
   document.getElementById('msg').textContent = 'Avvio non riuscito';
   var e = document.getElementById('err'); e.textContent = m; e.style.display = 'block';
+  document.getElementById('copy').style.display = 'inline-block';
+};
+window.slow = function () {
+  document.getElementById('msg').textContent = 'Avvio del motore… al primo avvio può richiedere fino a un minuto';
 };
 </script>
 </body>

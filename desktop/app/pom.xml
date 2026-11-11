@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>it.regmac</groupId>
   <artifactId>regmac-desktop</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <name>RegMac Desktop</name>
   <parent>
     <groupId>org.springframework.boot</groupId>
