@@ -1,0 +1,198 @@
+[
+  {
+    "id": "MR-SOFTWARE-ID",
+    "version": "0.1.0",
+    "law": "MR",
+    "reference": "Allegato III, § 1.1.9 — identificazione software (sottoinsieme)",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2023/1230/en",
+    "sourceSnapshot": "machinery-excerpt.txt",
+    "sourceHash": "8c5004297fc44ccf085b8037b3a9277d65523732a614a8e2ee45ebf33828c696",
+    "originalText": "The machinery or related product shall identify the software installed on it that is necessary for it to operate safely",
+    "interpretation": "Controllo operativo proposto: verificare mediante test che il software necessario alla sicurezza sia identificabile e che la relativa informazione sia accessibile. Questo controllo non copre gli altri obblighi del punto 1.1.9.",
+    "effectiveFrom": "2027-01-20",
+    "scopeKey": "machinery",
+    "controls": [
+      {
+        "id": "MR-SW-01",
+        "factKey": "safety_software_identification_test",
+        "question": "Un test documentato conferma identificazione e accessibilità delle informazioni sul software necessario alla sicurezza?",
+        "evidenceType": "VERIFIED_TEST",
+        "applicabilityKey": null,
+        "questions": [
+          {
+            "id": "support",
+            "type": "CHOICE",
+            "instructions": "Un test documentato conferma identificazione e accessibilità delle informazioni sul software necessario alla sicurezza?",
+            "criteria": {
+              "SUPPORTED": "Evidence supports the atomic test outcome.",
+              "CONTRADICTED": "Evidence demonstrates a negative test outcome.",
+              "INSUFFICIENT": "Missing, declarative, or conflicting evidence."
+            },
+            "levels": null
+          },
+          {
+            "id": "sufficient",
+            "type": "NOUL",
+            "instructions": "Does the provided evidence contain an explicit technical test outcome for this control?",
+            "criteria": null,
+            "levels": null
+          },
+          {
+            "id": "quality",
+            "type": "SCORE",
+            "instructions": "Rate documentary quality, not legal compliance.",
+            "criteria": null,
+            "levels": [
+              "No relevant evidence",
+              "Declaration without technical test",
+              "Documented test outcome with human verification"
+            ]
+          }
+        ]
+      }
+    ],
+    "aggregation": "ALL",
+    "status": "DRAFT",
+    "reviewer": null,
+    "reviewNote": null,
+    "relatedRequirements": [
+      "CRA-REMOTE-ACCESS"
+    ]
+  },
+  {
+    "id": "CRA-REMOTE-ACCESS",
+    "version": "0.1.0",
+    "law": "CRA",
+    "reference": "Allegato I, parte I, § 2(d) — accesso remoto (sottoinsieme)",
+    "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024R2847",
+    "sourceSnapshot": "cra-excerpt.txt",
+    "sourceHash": "d28b84ae2435383ed1e915610dbd872a3e63ba16018d624d70232db0f16ac2f3",
+    "originalText": "ensure protection from unauthorised access by appropriate control mechanisms",
+    "interpretation": "Sottoinsieme proposto per macchine con accesso remoto: verificare autenticazione, autorizzazione e segnalazione degli accessi non autorizzati. Applicabilità da confermare mediante valutazione dei rischi e ambito CRA. Non copre interfacce locali o la totalità del punto 2(d).",
+    "effectiveFrom": "2027-12-11",
+    "scopeKey": "digital_product",
+    "controls": [
+      {
+        "id": "CRA-AUTH-01",
+        "factKey": "remote_authentication_test",
+        "question": "Un test documentato conferma che l’accesso remoto rifiuta sessioni non autenticate?",
+        "evidenceType": "VERIFIED_TEST",
+        "applicabilityKey": "remote_access",
+        "questions": [
+          {
+            "id": "support",
+            "type": "CHOICE",
+            "instructions": "Un test documentato conferma che l’accesso remoto rifiuta sessioni non autenticate?",
+            "criteria": {
+              "SUPPORTED": "Evidence supports the atomic test outcome.",
+              "CONTRADICTED": "Evidence demonstrates a negative test outcome.",
+              "INSUFFICIENT": "Missing, declarative, or conflicting evidence."
+            },
+            "levels": null
+          },
+          {
+            "id": "sufficient",
+            "type": "NOUL",
+            "instructions": "Does the provided evidence contain an explicit technical test outcome for this control?",
+            "criteria": null,
+            "levels": null
+          },
+          {
+            "id": "quality",
+            "type": "SCORE",
+            "instructions": "Rate documentary quality, not legal compliance.",
+            "criteria": null,
+            "levels": [
+              "No relevant evidence",
+              "Declaration without technical test",
+              "Documented test outcome with human verification"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CRA-AUTHZ-01",
+        "factKey": "remote_authorization_test",
+        "question": "Un test documentato conferma che gli utenti remoti possono compiere solo operazioni autorizzate?",
+        "evidenceType": "VERIFIED_TEST",
+        "applicabilityKey": "remote_access",
+        "questions": [
+          {
+            "id": "support",
+            "type": "CHOICE",
+            "instructions": "Un test documentato conferma che gli utenti remoti possono compiere solo operazioni autorizzate?",
+            "criteria": {
+              "SUPPORTED": "Evidence supports the atomic test outcome.",
+              "CONTRADICTED": "Evidence demonstrates a negative test outcome.",
+              "INSUFFICIENT": "Missing, declarative, or conflicting evidence."
+            },
+            "levels": null
+          },
+          {
+            "id": "sufficient",
+            "type": "NOUL",
+            "instructions": "Does the provided evidence contain an explicit technical test outcome for this control?",
+            "criteria": null,
+            "levels": null
+          },
+          {
+            "id": "quality",
+            "type": "SCORE",
+            "instructions": "Rate documentary quality, not legal compliance.",
+            "criteria": null,
+            "levels": [
+              "No relevant evidence",
+              "Declaration without technical test",
+              "Documented test outcome with human verification"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CRA-EVENT-01",
+        "factKey": "unauthorized_access_reporting_test",
+        "question": "Un test documentato conferma la segnalazione di possibili accessi non autorizzati?",
+        "evidenceType": "VERIFIED_TEST",
+        "applicabilityKey": "remote_access",
+        "questions": [
+          {
+            "id": "support",
+            "type": "CHOICE",
+            "instructions": "Un test documentato conferma la segnalazione di possibili accessi non autorizzati?",
+            "criteria": {
+              "SUPPORTED": "Evidence supports the atomic test outcome.",
+              "CONTRADICTED": "Evidence demonstrates a negative test outcome.",
+              "INSUFFICIENT": "Missing, declarative, or conflicting evidence."
+            },
+            "levels": null
+          },
+          {
+            "id": "sufficient",
+            "type": "NOUL",
+            "instructions": "Does the provided evidence contain an explicit technical test outcome for this control?",
+            "criteria": null,
+            "levels": null
+          },
+          {
+            "id": "quality",
+            "type": "SCORE",
+            "instructions": "Rate documentary quality, not legal compliance.",
+            "criteria": null,
+            "levels": [
+              "No relevant evidence",
+              "Declaration without technical test",
+              "Documented test outcome with human verification"
+            ]
+          }
+        ]
+      }
+    ],
+    "aggregation": "ALL",
+    "status": "DRAFT",
+    "reviewer": null,
+    "reviewNote": null,
+    "relatedRequirements": [
+      "MR-SOFTWARE-ID"
+    ]
+  }
+]

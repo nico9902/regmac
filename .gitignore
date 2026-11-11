@@ -1,0 +1,27 @@
+.tools/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+backend/target/
+frontend/node_modules/
+frontend/dist/
+.env
+runtime/
+.DS_Store
+
+*.egg-info/
+*.tsbuildinfo
+backups/
+desktop/dist/
+desktop/build/
+desktop/ui/node_modules/
+desktop/app/target/
+experiments/preassessment/results/
+# copie generate da desktop/build-macos.sh
+desktop/app/src/main/resources/static/
+desktop/app/src/main/resources/normative/
+desktop/ui/public/normative/
+desktop/tauri/src-tauri/target/
+desktop/tauri/src-tauri/gen/
+desktop/tauri/node_modules/

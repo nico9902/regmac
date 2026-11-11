@@ -1,0 +1,14 @@
+{
+  "format": "regmac-evidence-v1",
+  "synthetic": true,
+  "text": "CASO SINTETICO. Il test DEMO-AUTH-02 ha consentito una sessione remota priva di credenziali: FAIL.",
+  "facts": [
+    {
+      "subject": "machine",
+      "key": "remote_authentication_test",
+      "value": false,
+      "quote": "Il test DEMO-AUTH-02 ha consentito una sessione remota priva di credenziali: FAIL.",
+      "locator": "test DEMO-AUTH-02"
+    }
+  ]
+}

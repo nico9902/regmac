@@ -1,0 +1,21 @@
+{
+  "format": "regmac-evidence-v1",
+  "synthetic": true,
+  "text": "CASO SINTETICO. Il test DEMO-AUTHZ-01 ha bloccato operazioni oltre i privilegi assegnati: PASS. Il test DEMO-EVENT-01 ha segnalato accessi non autorizzati: PASS.",
+  "facts": [
+    {
+      "subject": "machine",
+      "key": "remote_authorization_test",
+      "value": true,
+      "quote": "Il test DEMO-AUTHZ-01 ha bloccato operazioni oltre i privilegi assegnati: PASS.",
+      "locator": "test DEMO-AUTHZ-01"
+    },
+    {
+      "subject": "machine",
+      "key": "unauthorized_access_reporting_test",
+      "value": true,
+      "quote": "Il test DEMO-EVENT-01 ha segnalato accessi non autorizzati: PASS.",
+      "locator": "test DEMO-EVENT-01"
+    }
+  ]
+}

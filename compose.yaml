@@ -1,0 +1,84 @@
+name: regmac
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: regmac
+      POSTGRES_USER: regmac
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-regmac-local}
+    volumes:
+      - database:/var/lib/postgresql/data
+      - ./scripts/pgvector.sql:/docker-entrypoint-initdb.d/10-vector.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U regmac -d regmac"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [private]
+  ai:
+    build:
+      context: ./ai-service
+      args:
+        AI_EXTRAS: ${AI_EXTRAS:-}
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:8b}
+      OLLAMA_VISION_MODEL: ${OLLAMA_VISION_MODEL:-qwen3-vl:8b}
+      EMBEDDING_MODEL: nomic-embed-text
+      DECISION_PROVIDER: ${DECISION_PROVIDER:-ollama}
+      LAYA_MODEL_PATH: /models/laya
+      DOCLING_ARTIFACTS_PATH: /models/docling
+      SEARCH_DATABASE_URL: postgresql://regmac:${DATABASE_PASSWORD:-regmac-local}@db:5432/regmac
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes: ["./runtime/models:/models:ro"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    networks: [private, local_models]
+  backend:
+    build: ./backend
+    environment:
+      SPRING_FLYWAY_BASELINE_ON_MIGRATE: "true"
+      SPRING_FLYWAY_BASELINE_VERSION: "0"
+      DATABASE_URL: jdbc:postgresql://db:5432/regmac
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-regmac-local}
+      AI_URL: http://ai:8000
+      DOCUMENT_STORAGE: /documents
+      NORMATIVE_SEED: /normative/controls.json
+      API_TOKEN: ${API_TOKEN:-}
+    volumes:
+      - documents:/documents
+      - ./data/normative:/normative:ro
+    depends_on:
+      db: {condition: service_healthy}
+      ai: {condition: service_healthy}
+    networks: [private]
+  frontend:
+    build: ./frontend
+    ports: ["127.0.0.1:${WEB_PORT:-5173}:80"]
+    depends_on: [backend]
+    networks: [private, ingress]
+  ollama:
+    image: ollama/ollama:0.12.7
+    profiles: [ollama]
+    volumes: ["ollama:/root/.ollama"]
+    environment:
+      OLLAMA_NO_CLOUD: "1"
+    networks: [local_models]
+volumes:
+  database:
+  documents:
+  ollama:
+networks:
+  ingress:
+  private:
+    internal: true
+  local_models:

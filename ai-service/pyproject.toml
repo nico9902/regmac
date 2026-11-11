@@ -1,0 +1,11 @@
+[project]
+name = "regmac-ai"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = ["fastapi==0.115.12", "uvicorn==0.34.2", "httpx==0.28.1", "pydantic==2.11.4", "psycopg[binary]==3.2.9"]
+[project.optional-dependencies]
+documents = ["docling>=2.55,<3"]
+laya = ["laya>=0.4.23,<0.5"]
+test = ["pytest==8.3.5"]
+[tool.pytest.ini_options]
+pythonpath = ["."]

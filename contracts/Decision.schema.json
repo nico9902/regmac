@@ -1,0 +1,56 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "provider": {
+      "title": "Provider",
+      "type": "string"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "UNAVAILABLE",
+        "INVALID_OUTPUT"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "calibrated": {
+      "default": false,
+      "title": "Calibrated",
+      "type": "boolean"
+    },
+    "abstain": {
+      "default": true,
+      "title": "Abstain",
+      "type": "boolean"
+    },
+    "answers": {
+      "additionalProperties": true,
+      "title": "Answers",
+      "type": "object"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error"
+    }
+  },
+  "required": [
+    "provider",
+    "model",
+    "status"
+  ],
+  "title": "Decision",
+  "type": "object"
+}

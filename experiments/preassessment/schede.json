@@ -1,0 +1,22 @@
+{
+ "schema": "regmac-schede-v0.1-esperimento",
+ "note": "Schede di verifica scritte a mano per l'esperimento: condizione di applicabilità (facoltativa) e punti di controllo.",
+ "schede": {
+  "MR-III-1.1.2": {"points": ["È stata eseguita e documentata una valutazione dei rischi della macchina", "Le misure seguono l'ordine: eliminazione dei rischi in progettazione, poi protezioni, poi informazioni sui rischi residui", "La valutazione considera anche l'uso scorretto ragionevolmente prevedibile"]},
+  "MR-III-1.1.4": {"points": ["La macchina ha un'illuminazione incorporata adeguata nelle zone di lavoro, regolazione o manutenzione dove l'illuminazione ambiente non basta, oppure è dimostrato che non serve"]},
+  "MR-III-1.2.2": {"points": ["I dispositivi di comando sono chiaramente visibili e identificati, se del caso con pittogrammi", "I dispositivi di comando sono posizionati fuori dalle zone pericolose", "I comandi sono protetti contro l'azionamento accidentale"]},
+  "MR-III-1.2.3": {"points": ["L'avviamento è possibile solo con un'azione volontaria su un dispositivo di comando previsto a tale scopo", "Dopo un arresto, il riavvio richiede una nuova azione volontaria"]},
+  "MR-III-1.2.4.1": {"points": ["Esiste un dispositivo di comando per l'arresto generale in condizioni di sicurezza", "L'ordine di arresto ha priorità sugli ordini di avviamento"]},
+  "MR-III-1.2.4.3": {"points": ["Uno o più dispositivi di arresto di emergenza sono raggiungibili da ogni postazione di lavoro", "I comandi di arresto di emergenza sono chiaramente individuabili, ben visibili e rapidamente accessibili", "Il comando di emergenza resta bloccato finché non viene sbloccato con una manovra apposita", "Lo sblocco del comando di emergenza non riavvia la macchina"]},
+  "MR-III-1.2.5": {"condition": "La macchina dispone di più modi di comando o di funzionamento", "points": ["Il selettore di modo è bloccabile in ogni posizione (es. a chiave)", "Nei modi con protezioni escluse i movimenti avvengono solo a velocità ridotta o con comando ad azione mantenuta"]},
+  "MR-III-1.3.1": {"points": ["La macchina è stabile contro il ribaltamento durante uso, trasporto e installazione", "Le istruzioni indicano i mezzi di ancoraggio o fissaggio necessari"]},
+  "MR-III-1.3.7": {"points": ["Gli elementi mobili che possono causare infortuni sono protetti da ripari o dispositivi di protezione"]},
+  "MR-III-1.3.8.1": {"condition": "La macchina ha elementi mobili di trasmissione (cinghie, catene, pulegge, alberi, giunti)", "points": ["Gli elementi mobili di trasmissione sono protetti da ripari fissi o da ripari mobili interbloccati"]},
+  "MR-III-1.4.2.1": {"condition": "La macchina ha ripari fissi", "points": ["I ripari fissi si possono aprire o smontare solo con un utensile", "Gli elementi di fissaggio restano attaccati al riparo o alla macchina quando il riparo è rimosso"]},
+  "MR-III-1.5.1": {"condition": "La macchina è alimentata con energia elettrica", "points": ["L'equipaggiamento elettrico è progettato secondo una norma di sicurezza elettrica (es. EN 60204-1)", "Sono previste protezioni contro i contatti diretti e indiretti"]},
+  "MR-III-1.5.8": {"points": ["Il rumore emesso è ridotto alla fonte con misure di progettazione", "Il livello di emissione sonora è misurato e dichiarato"]},
+  "MR-III-1.5.12": {"condition": "La macchina impiega dispositivi laser", "points": ["I dispositivi laser sono progettati per evitare radiazioni involontarie"]},
+  "MR-III-1.6.3": {"points": ["Esiste un dispositivo che isola la macchina da ciascuna fonte di energia, chiaramente identificato", "Il dispositivo di isolamento è bloccabile (es. con lucchetto) in posizione di isolamento", "Le energie residue (es. pressione idraulica, condensatori) possono essere scaricate"]},
+  "MR-III-1.7.4": {"points": ["Le istruzioni per l'uso sono fornite nella lingua del paese di utilizzo", "Le istruzioni descrivono uso previsto, installazione, regolazione e manutenzione in sicurezza", "Le istruzioni indicano i rischi residui e le misure di protezione a carico dell'utilizzatore"]}
+ }
+}

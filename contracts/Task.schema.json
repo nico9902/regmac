@@ -1,0 +1,113 @@
+{
+  "$defs": {
+    "Question": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "CHOICE",
+            "NOUL",
+            "SCORE"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "instructions": {
+          "title": "Instructions",
+          "type": "string"
+        },
+        "criteria": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criteria"
+        },
+        "levels": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Levels"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "instructions"
+      ],
+      "title": "Question",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "requirement_id": {
+      "title": "Requirement Id",
+      "type": "string"
+    },
+    "requirement_version": {
+      "title": "Requirement Version",
+      "type": "string"
+    },
+    "control_id": {
+      "title": "Control Id",
+      "type": "string"
+    },
+    "applicability": {
+      "title": "Applicability",
+      "type": "string"
+    },
+    "machine_state": {
+      "additionalProperties": true,
+      "title": "Machine State",
+      "type": "object"
+    },
+    "evidence": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "questions": {
+      "items": {
+        "$ref": "#/$defs/Question"
+      },
+      "title": "Questions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "requirement_id",
+    "requirement_version",
+    "control_id",
+    "applicability",
+    "machine_state",
+    "evidence",
+    "questions"
+  ],
+  "title": "Task",
+  "type": "object"
+}

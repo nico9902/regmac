@@ -1,0 +1,49 @@
+{
+  "format": "regmac-evidence-v1",
+  "synthetic": true,
+  "text": "CASO SINTETICO — nessuna macchina reale.\nLinea dimostrativa RM-01, configurazione DEMO-1.\nLa macchina contiene PLC, HMI e una connessione Ethernet.\nL’accesso remoto è presente tramite un gateway di manutenzione.\nIl test DEMO-AUTH-01 sulla configurazione DEMO-1 ha rifiutato una sessione remota priva di credenziali: PASS.\nIl test DEMO-SW-01 sulla configurazione DEMO-1 ha identificato il software di sicurezza e confermato l’accessibilità della versione sul pannello: PASS.\nNon sono disponibili risultati di test sui privilegi degli utenti remoti o sulla segnalazione degli accessi non autorizzati.\n",
+  "facts": [
+    {
+      "subject": "machine",
+      "key": "plc",
+      "value": true,
+      "quote": "La macchina contiene PLC, HMI e una connessione Ethernet.",
+      "locator": "questionario DEMO-1"
+    },
+    {
+      "subject": "machine",
+      "key": "hmi",
+      "value": true,
+      "quote": "La macchina contiene PLC, HMI e una connessione Ethernet.",
+      "locator": "questionario DEMO-1"
+    },
+    {
+      "subject": "machine",
+      "key": "network",
+      "value": true,
+      "quote": "La macchina contiene PLC, HMI e una connessione Ethernet.",
+      "locator": "questionario DEMO-1"
+    },
+    {
+      "subject": "machine",
+      "key": "remote_access",
+      "value": true,
+      "quote": "L’accesso remoto è presente tramite un gateway di manutenzione.",
+      "locator": "questionario DEMO-1"
+    },
+    {
+      "subject": "machine",
+      "key": "remote_authentication_test",
+      "value": true,
+      "quote": "Il test DEMO-AUTH-01 sulla configurazione DEMO-1 ha rifiutato una sessione remota priva di credenziali: PASS.",
+      "locator": "questionario DEMO-1"
+    },
+    {
+      "subject": "machine",
+      "key": "safety_software_identification_test",
+      "value": true,
+      "quote": "Il test DEMO-SW-01 sulla configurazione DEMO-1 ha identificato il software di sicurezza e confermato l’accessibilità della versione sul pannello: PASS.",
+      "locator": "questionario DEMO-1"
+    }
+  ]
+}

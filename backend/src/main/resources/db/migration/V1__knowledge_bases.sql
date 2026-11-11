@@ -1,0 +1,13 @@
+CREATE TABLE machine (id VARCHAR(36) PRIMARY KEY, payload TEXT NOT NULL);
+CREATE TABLE evidence (id VARCHAR(36) PRIMARY KEY, machine_id VARCHAR(36) NOT NULL REFERENCES machine(id), payload TEXT NOT NULL);
+CREATE TABLE fact (id VARCHAR(36) PRIMARY KEY, machine_id VARCHAR(36) NOT NULL REFERENCES machine(id), evidence_id VARCHAR(36) NOT NULL REFERENCES evidence(id), payload TEXT NOT NULL);
+CREATE TABLE machine_entity (id VARCHAR(36) PRIMARY KEY, machine_id VARCHAR(36) NOT NULL REFERENCES machine(id), payload TEXT NOT NULL);
+CREATE TABLE machine_relation (id VARCHAR(36) PRIMARY KEY, machine_id VARCHAR(36) NOT NULL REFERENCES machine(id), source_id VARCHAR(36) NOT NULL REFERENCES machine_entity(id), target_id VARCHAR(36) NOT NULL REFERENCES machine_entity(id), payload TEXT NOT NULL);
+CREATE TABLE requirement_version (id VARCHAR(160) PRIMARY KEY, payload TEXT NOT NULL);
+CREATE TABLE assessment (id VARCHAR(36) PRIMARY KEY, machine_id VARCHAR(36) NOT NULL REFERENCES machine(id), payload TEXT NOT NULL);
+CREATE TABLE evidence_request (id VARCHAR(36) PRIMARY KEY, machine_id VARCHAR(36) NOT NULL REFERENCES machine(id), assessment_id VARCHAR(36) NOT NULL REFERENCES assessment(id), payload TEXT NOT NULL);
+CREATE TABLE audit_event (id VARCHAR(36) PRIMARY KEY, occurred_at VARCHAR(50) NOT NULL, action VARCHAR(100) NOT NULL, subject VARCHAR(160) NOT NULL, payload TEXT NOT NULL);
+CREATE INDEX fact_machine ON fact(machine_id);
+CREATE INDEX evidence_machine ON evidence(machine_id);
+CREATE INDEX assessment_machine ON assessment(machine_id);
+CREATE INDEX request_machine ON evidence_request(machine_id);

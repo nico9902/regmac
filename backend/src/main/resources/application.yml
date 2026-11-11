@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/regmac}
+    username: ${DATABASE_USER:regmac}
+    password: ${DATABASE_PASSWORD:regmac-local}
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 21MB
+  flyway:
+    enabled: true
+regmac:
+  ai-url: ${AI_URL:http://localhost:8000}
+  storage: ${DOCUMENT_STORAGE:./runtime/documents}
+  seed: ${NORMATIVE_SEED:./data/normative/controls.json}
+  api-token: ${API_TOKEN:}

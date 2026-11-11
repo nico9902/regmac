@@ -1,0 +1,2567 @@
+{
+  "schema": "regmac-standards-v1",
+  "updated": "2026-11-11",
+  "notice": "Le norme indicate sono riferimenti tecnici suggeriti come ausilio di lavoro e non costituiscono un elenco esaustivo né vincolante. La presunzione di conformità deriva esclusivamente dall'applicazione di norme armonizzate i cui riferimenti siano pubblicati nella Gazzetta ufficiale dell'Unione europea (GUUE) per lo specifico regolamento, e nei limiti delle eventuali restrizioni indicate nella pubblicazione. Lo stato \"armonizzata (dir. 2006/42/CE)\" si riferisce alla citazione in GUUE ai sensi della direttiva macchine, che resta applicabile fino al 19 gennaio 2027: non conferisce di per sé presunzione di conformità al Regolamento (UE) 2023/1230. Alla data di redazione, le norme armonizzate ai sensi del Regolamento (UE) 2023/1230 e del Regolamento (UE) 2024/2847 vanno verificate sugli elenchi pubblicati dalla Commissione europea; per il Regolamento (UE) 2024/2847 le norme armonizzate sono in fase di elaborazione nell'ambito della richiesta di normazione M/606. Verificare sempre l'edizione in vigore, gli eventuali emendamenti e la data di cessazione della presunzione di conformità delle edizioni sostituite.",
+  "mappings": [
+    {
+      "match": "MR-III-B1",
+      "standards": [
+        {
+          "code": "EN ISO 12100:2010",
+          "title": "Sicurezza del macchinario - Principi generali di progettazione - Valutazione del rischio e riduzione del rischio",
+          "type": "A",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "ISO/TR 14121-2:2012",
+          "title": "Safety of machinery - Risk assessment - Part 2: Practical guidance and examples of methods",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.1.2",
+      "standards": [
+        {
+          "code": "EN ISO 12100:2010",
+          "title": "Sicurezza del macchinario - Principi generali di progettazione - Valutazione del rischio e riduzione del rischio",
+          "type": "A",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 11161:2007 + A1:2010",
+          "title": "Safety of machinery - Integrated manufacturing systems - Basic requirements",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.1.4",
+      "standards": [
+        {
+          "code": "EN 1837:2020",
+          "title": "Safety of machinery - Integral lighting of machines",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.1.5",
+      "standards": [
+        {
+          "code": "EN 1005-2:2003+A1:2008",
+          "title": "Safety of machinery - Human physical performance - Part 2: Manual handling of machinery and component parts of machinery",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.1.6",
+      "standards": [
+        {
+          "code": "EN 614-1:2006+A1:2009",
+          "title": "Sicurezza del macchinario - Principi ergonomici di progettazione - Parte 1: Terminologia e principi generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 614-2:2000+A1:2008",
+          "title": "Safety of machinery - Ergonomic design principles - Part 2: Interactions between the design of machinery and work tasks",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1005-3:2002+A1:2008",
+          "title": "Safety of machinery - Human physical performance - Part 3: Recommended force limits for machinery operation",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1005-4:2005+A1:2008",
+          "title": "Safety of machinery - Human physical performance - Part 4: Evaluation of working postures and movements in relation to machinery",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 894-1:1997+A1:2008",
+          "title": "Safety of machinery - Ergonomics requirements for the design of displays and control actuators - Part 1: General principles for human interactions with displays and control actuators",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.1.7",
+      "standards": [
+        {
+          "code": "EN 614-1:2006+A1:2009",
+          "title": "Sicurezza del macchinario - Principi ergonomici di progettazione - Parte 1: Terminologia e principi generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1005-4:2005+A1:2008",
+          "title": "Safety of machinery - Human physical performance - Part 4: Evaluation of working postures and movements in relation to machinery",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.1.9-*",
+      "standards": [
+        {
+          "code": "ISO/TR 22100-4:2018",
+          "title": "Safety of machinery - Relationship with ISO 12100 - Part 4: Guidance to machinery manufacturers for consideration of related IT-security (cyber security) aspects",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "IEC TS 63074:2023",
+          "title": "Safety of machinery - Security aspects related to functional safety of safety-related control systems",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN IEC 62443-4-2:2019",
+          "title": "Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN IEC 62443-3-3:2019",
+          "title": "Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-*",
+      "standards": [
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-2:2012",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 2: Validazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 62061:2021 + A1:2024",
+          "title": "Sicurezza del macchinario - Sicurezza funzionale dei sistemi di comando relativi alla sicurezza",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-1a",
+      "standards": [
+        {
+          "code": "IEC TS 63074:2023",
+          "title": "Safety of machinery - Security aspects related to functional safety of safety-related control systems",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/TR 22100-4:2018",
+          "title": "Safety of machinery - Relationship with ISO 12100 - Part 4: Guidance to machinery manufacturers for consideration of related IT-security (cyber security) aspects",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN IEC 62443-3-3:2019",
+          "title": "Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-1f",
+      "standards": [
+        {
+          "code": "IEC TS 63074:2023",
+          "title": "Safety of machinery - Security aspects related to functional safety of safety-related control systems",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN IEC 62443-4-2:2019",
+          "title": "Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-3a",
+      "standards": [
+        {
+          "code": "EN ISO 14118:2018",
+          "title": "Sicurezza del macchinario - Prevenzione dell'avviamento inatteso",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-3d",
+      "standards": [
+        {
+          "code": "EN ISO 13850:2015",
+          "title": "Sicurezza del macchinario - Funzione di arresto di emergenza - Principi di progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-3g",
+      "standards": [
+        {
+          "code": "EN ISO 14119:2025 + A11:2026",
+          "title": "Sicurezza del macchinario - Dispositivi di interblocco associati ai ripari - Principi di progettazione e di scelta",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 61496-1:2020",
+          "title": "Safety of machinery - Electro-sensitive protective equipment - Part 1: General requirements and tests",
+          "type": "B",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.1-3h",
+      "standards": [
+        {
+          "code": "EN ISO 11161:2007 + A1:2010",
+          "title": "Safety of machinery - Integrated manufacturing systems - Basic requirements",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.2",
+      "standards": [
+        {
+          "code": "EN 894-1:1997+A1:2008",
+          "title": "Safety of machinery - Ergonomics requirements for the design of displays and control actuators - Part 1: General principles for human interactions with displays and control actuators",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 894-3:2000+A1:2008",
+          "title": "Safety of machinery - Ergonomics requirements for the design of displays and control actuators - Part 3: Control actuators",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 894-4:2010",
+          "title": "Safety of machinery - Ergonomics requirements for the design of displays and control actuators - Part 4: Location and arrangement of displays and control actuators",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 61310-3:2008",
+          "title": "Safety of machinery - Indication, marking and actuation - Part 3: Requirements for the location and operation of actuators",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13851:2019",
+          "title": "Safety of machinery - Two-hand control devices - Principles for design and selection",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.3",
+      "standards": [
+        {
+          "code": "EN ISO 14118:2018",
+          "title": "Sicurezza del macchinario - Prevenzione dell'avviamento inatteso",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.4.1",
+      "standards": [
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.4.2",
+      "standards": [
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.4.3",
+      "standards": [
+        {
+          "code": "EN ISO 13850:2015",
+          "title": "Sicurezza del macchinario - Funzione di arresto di emergenza - Principi di progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.4.4",
+      "standards": [
+        {
+          "code": "EN ISO 11161:2007 + A1:2010",
+          "title": "Safety of machinery - Integrated manufacturing systems - Basic requirements",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13850:2015",
+          "title": "Sicurezza del macchinario - Funzione di arresto di emergenza - Principi di progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.5",
+      "standards": [
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 62061:2021 + A1:2024",
+          "title": "Sicurezza del macchinario - Sicurezza funzionale dei sistemi di comando relativi alla sicurezza",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.2.6",
+      "standards": [
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14118:2018",
+          "title": "Sicurezza del macchinario - Prevenzione dell'avviamento inatteso",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.3.2",
+      "standards": [
+        {
+          "code": "EN ISO 4413:2010",
+          "title": "Oleoidraulica - Regole generali e requisiti di sicurezza relativi ai sistemi e ai loro componenti",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 4414:2010",
+          "title": "Pneumatica - Regole generali e requisiti di sicurezza relativi ai sistemi e ai loro componenti",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.3.3",
+      "standards": [
+        {
+          "code": "EN ISO 14120:2015",
+          "title": "Sicurezza del macchinario - Ripari - Requisiti generali per la progettazione e la costruzione di ripari fissi e mobili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.3.7",
+      "standards": [
+        {
+          "code": "EN ISO 14120:2015",
+          "title": "Sicurezza del macchinario - Ripari - Requisiti generali per la progettazione e la costruzione di ripari fissi e mobili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13857:2019",
+          "title": "Sicurezza del macchinario - Distanze di sicurezza per impedire il raggiungimento di zone pericolose con gli arti superiori e inferiori",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13854:2019",
+          "title": "Sicurezza del macchinario - Spazi minimi per evitare lo schiacciamento di parti del corpo umano",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.3.8*",
+      "standards": [
+        {
+          "code": "EN ISO 14120:2015",
+          "title": "Sicurezza del macchinario - Ripari - Requisiti generali per la progettazione e la costruzione di ripari fissi e mobili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14119:2025 + A11:2026",
+          "title": "Sicurezza del macchinario - Dispositivi di interblocco associati ai ripari - Principi di progettazione e di scelta",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13857:2019",
+          "title": "Sicurezza del macchinario - Distanze di sicurezza per impedire il raggiungimento di zone pericolose con gli arti superiori e inferiori",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13855:2024",
+          "title": "Safety of machinery - Positioning of safeguards with respect to the approach of the human body",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13851:2019",
+          "title": "Safety of machinery - Two-hand control devices - Principles for design and selection",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13856-1:2013",
+          "title": "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure-sensitive mats and pressure-sensitive floors",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13856-2:2013",
+          "title": "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure-sensitive edges and pressure-sensitive bars",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 61496-1:2020",
+          "title": "Safety of machinery - Electro-sensitive protective equipment - Part 1: General requirements and tests",
+          "type": "B",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.3.9",
+      "standards": [
+        {
+          "code": "EN ISO 14118:2018",
+          "title": "Sicurezza del macchinario - Prevenzione dell'avviamento inatteso",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.4.*",
+      "standards": [
+        {
+          "code": "EN ISO 14120:2015",
+          "title": "Sicurezza del macchinario - Ripari - Requisiti generali per la progettazione e la costruzione di ripari fissi e mobili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14119:2025 + A11:2026",
+          "title": "Sicurezza del macchinario - Dispositivi di interblocco associati ai ripari - Principi di progettazione e di scelta",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13857:2019",
+          "title": "Sicurezza del macchinario - Distanze di sicurezza per impedire il raggiungimento di zone pericolose con gli arti superiori e inferiori",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13855:2024",
+          "title": "Safety of machinery - Positioning of safeguards with respect to the approach of the human body",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.4.3",
+      "standards": [
+        {
+          "code": "EN IEC 61496-1:2020",
+          "title": "Safety of machinery - Electro-sensitive protective equipment - Part 1: General requirements and tests",
+          "type": "B",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN ISO 13856-1:2013",
+          "title": "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure-sensitive mats and pressure-sensitive floors",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13856-2:2013",
+          "title": "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure-sensitive edges and pressure-sensitive bars",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13851:2019",
+          "title": "Safety of machinery - Two-hand control devices - Principles for design and selection",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.1",
+      "standards": [
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 60204-11:2019",
+          "title": "Safety of machinery - Electrical equipment of machines - Part 11: Requirements for equipment for voltages above 1 000 V AC or 1 500 V DC and not exceeding 36 kV",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.2",
+      "standards": [
+        {
+          "code": "IEC TS 60079-32-1",
+          "title": "Explosive atmospheres - Part 32-1: Electrostatic hazards - Guidance",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.3",
+      "standards": [
+        {
+          "code": "EN ISO 4413:2010",
+          "title": "Oleoidraulica - Regole generali e requisiti di sicurezza relativi ai sistemi e ai loro componenti",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 4414:2010",
+          "title": "Pneumatica - Regole generali e requisiti di sicurezza relativi ai sistemi e ai loro componenti",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.5",
+      "standards": [
+        {
+          "code": "EN ISO 13732-1:2008",
+          "title": "Ergonomia degli ambienti termici - Metodi per la valutazione della risposta dell'uomo al contatto con le superfici - Parte 1: Superfici calde",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 13732-3:2008",
+          "title": "Ergonomics of the thermal environment - Methods for the assessment of human responses to contact with surfaces - Part 3: Cold surfaces",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.6",
+      "standards": [
+        {
+          "code": "EN ISO 19353:2019",
+          "title": "Sicurezza del macchinario - Prevenzione e protezione contro l'incendio",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.7",
+      "standards": [
+        {
+          "code": "EN 1127-1:2019",
+          "title": "Atmosfere esplosive - Prevenzione dell'esplosione e protezione contro l'esplosione - Parte 1: Concetti fondamentali e metodologia",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.8",
+      "standards": [
+        {
+          "code": "EN ISO 11688-1:2009",
+          "title": "Acoustics - Recommended practice for the design of low-noise machinery and equipment - Part 1: Planning",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 3744:2026",
+          "title": "Acoustics - Determination of sound power levels of noise sources using sound pressure - Engineering methods for an essentially free field over a reflecting plane",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 3746:2010",
+          "title": "Acoustics - Determination of sound power levels and sound energy levels of noise sources using sound pressure - Survey method using an enveloping measurement surface over a reflecting plane",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 11201:2010",
+          "title": "Acoustics - Noise emitted by machinery and equipment - Determination of emission sound pressure levels at a work station and at other specified positions in an essentially free field over a reflecting plane with negligible environmental corrections",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 11202:2010 + A1:2021",
+          "title": "Acoustics - Noise emitted by machinery and equipment - Determination of emission sound pressure levels at a work station and at other specified positions applying approximate environmental corrections",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 4871:2009",
+          "title": "Acustica - Dichiarazione e verifica dei valori di emissione sonora delle macchine e delle apparecchiature",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.9",
+      "standards": [
+        {
+          "code": "EN 1299:1997+A1:2008",
+          "title": "Mechanical vibration and shock - Vibration isolation of machines - Information for the application of source isolation",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 20643:2008 + A1:2012",
+          "title": "Mechanical vibration - Hand-held and hand-guided machinery - Principles for evaluation of vibration emission",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1032:2003+A1:2008",
+          "title": "Mechanical vibration - Testing of mobile machinery in order to determine the vibration emission value",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.10",
+      "standards": [
+        {
+          "code": "EN 12198-1:2000+A1:2008",
+          "title": "Safety of machinery - Assessment and reduction of risks arising from radiation emitted by machinery - Part 1: General principles",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12198-2:2002+A1:2008",
+          "title": "Safety of machinery - Assessment and reduction of risks arising from radiation emitted by machinery - Part 2: Radiation emission measurement procedure",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12198-3:2002+A1:2008",
+          "title": "Safety of machinery - Assessment and reduction of risks arising from radiation emitted by machinery - Part 3: Reduction of radiation by attenuation or screening",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.12",
+      "standards": [
+        {
+          "code": "EN ISO 11553-1:2020 + A11:2020",
+          "title": "Safety of machinery - Laser processing machines - Part 1: Laser safety requirements",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 11553-2:2008",
+          "title": "Safety of machinery - Laser processing machines - Part 2: Safety requirements for hand-held laser processing devices",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.13",
+      "standards": [
+        {
+          "code": "EN ISO 14123-1:2015",
+          "title": "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14123-2:2015",
+          "title": "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 2: Methodology leading to verification procedures",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1093-1:2008",
+          "title": "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 1: Selection of test methods",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.14",
+      "standards": [
+        {
+          "code": "EN 547-1:1996+A1:2008",
+          "title": "Safety of machinery - Human body measurements - Part 1: Principles for determining the dimensions required for openings for whole body access into machinery",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.15",
+      "standards": [
+        {
+          "code": "EN ISO 14122-1:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 1: Choice of fixed means and general requirements of access",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14122-2:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 2: Working platforms and walkways",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14122-3:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 3: Stairs, stepladders and guard-rails",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.5.16",
+      "standards": [
+        {
+          "code": "EN 62305 (serie)",
+          "title": "Protection against lightning",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.6.1",
+      "standards": [
+        {
+          "code": "EN ISO 14118:2018",
+          "title": "Sicurezza del macchinario - Prevenzione dell'avviamento inatteso",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14122-1:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 1: Choice of fixed means and general requirements of access",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.6.2",
+      "standards": [
+        {
+          "code": "EN ISO 14122-1:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 1: Choice of fixed means and general requirements of access",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14122-2:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 2: Working platforms and walkways",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14122-3:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 3: Stairs, stepladders and guard-rails",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14122-4:2016",
+          "title": "Safety of machinery - Permanent means of access to machinery - Part 4: Fixed ladders",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 547-1:1996+A1:2008",
+          "title": "Safety of machinery - Human body measurements - Part 1: Principles for determining the dimensions required for openings for whole body access into machinery",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 547-2:1996+A1:2008",
+          "title": "Safety of machinery - Human body measurements - Part 2: Principles for determining the dimensions required for access openings",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.6.3",
+      "standards": [
+        {
+          "code": "EN ISO 14118:2018",
+          "title": "Sicurezza del macchinario - Prevenzione dell'avviamento inatteso",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 4413:2010",
+          "title": "Oleoidraulica - Regole generali e requisiti di sicurezza relativi ai sistemi e ai loro componenti",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 4414:2010",
+          "title": "Pneumatica - Regole generali e requisiti di sicurezza relativi ai sistemi e ai loro componenti",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.6.4",
+      "standards": [
+        {
+          "code": "EN 614-1:2006+A1:2009",
+          "title": "Sicurezza del macchinario - Principi ergonomici di progettazione - Parte 1: Terminologia e principi generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.1",
+      "standards": [
+        {
+          "code": "EN 61310-1:2008",
+          "title": "Sicurezza del macchinario - Indicazione, marcatura e manovra - Parte 1: Prescrizioni per segnali visivi, acustici e tattili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 894-2:1997+A1:2008",
+          "title": "Safety of machinery - Ergonomics requirements for the design of displays and control actuators - Part 2: Displays",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.1.1",
+      "standards": [
+        {
+          "code": "EN 61310-1:2008",
+          "title": "Sicurezza del macchinario - Indicazione, marcatura e manovra - Parte 1: Prescrizioni per segnali visivi, acustici e tattili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 894-2:1997+A1:2008",
+          "title": "Safety of machinery - Ergonomics requirements for the design of displays and control actuators - Part 2: Displays",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 9241-110:2020",
+          "title": "Ergonomics of human-system interaction - Part 110: Interaction principles",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.1.2",
+      "standards": [
+        {
+          "code": "EN 981:1996+A1:2008",
+          "title": "Safety of machinery - System of auditory and visual danger and information signals",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 842:1996+A1:2008",
+          "title": "Safety of machinery - Visual danger signals - General requirements, design and testing",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 7731:2008",
+          "title": "Ergonomics - Danger signals for public and work areas - Auditory danger signals",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 61310-1:2008",
+          "title": "Sicurezza del macchinario - Indicazione, marcatura e manovra - Parte 1: Prescrizioni per segnali visivi, acustici e tattili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.2",
+      "standards": [
+        {
+          "code": "EN ISO 7010:2020",
+          "title": "Graphical symbols - Safety colours and safety signs - Registered safety signs",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO 3864-2:2016",
+          "title": "Graphical symbols - Safety colours and safety signs - Part 2: Design principles for product safety labels",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN 61310-1:2008",
+          "title": "Sicurezza del macchinario - Indicazione, marcatura e manovra - Parte 1: Prescrizioni per segnali visivi, acustici e tattili",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.3-*",
+      "standards": [
+        {
+          "code": "EN 61310-2:2008",
+          "title": "Sicurezza del macchinario - Indicazione, marcatura e manovra - Parte 2: Prescrizioni per la marcatura",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-1:2018",
+          "title": "Sicurezza del macchinario - Equipaggiamento elettrico delle macchine - Parte 1: Regole generali",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.4*",
+      "standards": [
+        {
+          "code": "EN ISO 20607:2019",
+          "title": "Sicurezza del macchinario - Manuale di istruzioni - Principi generali di stesura",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 82079-1:2020",
+          "title": "Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.4.2-u",
+      "standards": [
+        {
+          "code": "EN ISO 4871:2009",
+          "title": "Acustica - Dichiarazione e verifica dei valori di emissione sonora delle macchine e delle apparecchiature",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 3744:2026",
+          "title": "Acoustics - Determination of sound power levels of noise sources using sound pressure - Engineering methods for an essentially free field over a reflecting plane",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 11201:2010",
+          "title": "Acoustics - Noise emitted by machinery and equipment - Determination of emission sound pressure levels at a work station and at other specified positions in an essentially free field over a reflecting plane with negligible environmental corrections",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.4.2-x",
+      "standards": [
+        {
+          "code": "EN ISO 14123-1:2015",
+          "title": "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-1.7.5",
+      "standards": [
+        {
+          "code": "EN ISO 20607:2019",
+          "title": "Sicurezza del macchinario - Manuale di istruzioni - Principi generali di stesura",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.1.*",
+      "standards": [
+        {
+          "code": "EN 1672-2:2005+A1:2009",
+          "title": "Food processing machinery - Basic concepts - Part 2: Hygiene requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 14159:2008",
+          "title": "Safety of machinery - Hygiene requirements for the design of machinery",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.2.1*",
+      "standards": [
+        {
+          "code": "EN ISO 11148 (serie)",
+          "title": "Hand-held non-electric power tools - Safety requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 62841-1:2015 + A11:2022",
+          "title": "Electric motor-operated hand-held tools, transportable tools and lawn and garden machinery - Safety - Part 1: General requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 20643:2008 + A1:2012",
+          "title": "Mechanical vibration - Hand-held and hand-guided machinery - Principles for evaluation of vibration emission",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 28927 (serie)",
+          "title": "Hand-held portable power tools - Test methods for evaluation of vibration emission",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.2.2.*",
+      "standards": [
+        {
+          "code": "EN 15895:2025",
+          "title": "Powder actuated hand-held fixing and hard marking tools - Safety requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.3",
+      "standards": [
+        {
+          "code": "EN ISO 19085-1:2021",
+          "title": "Woodworking machines - Safety - Part 1: Common requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.4.*",
+      "standards": [
+        {
+          "code": "EN ISO 4254-6:2020 + A11:2021",
+          "title": "Agricultural machinery - Safety - Part 6: Sprayers and liquid fertilizer distributors",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 16119-1:2013",
+          "title": "Agricultural and forestry machinery - Environmental requirements for sprayers - Part 1: General",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.4.5.*",
+      "standards": [
+        {
+          "code": "EN ISO 16119-2:2013",
+          "title": "Agricultural and forestry machinery - Environmental requirements for sprayers - Part 2: Horizontal boom sprayers",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 16119-3:2013",
+          "title": "Agricultural and forestry machinery - Environmental requirements for sprayers - Part 3: Sprayers for bush and tree crops",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 16119-4:2014",
+          "title": "Agricultural and forestry machinery - Environmental requirements for sprayers - Part 4: Fixed and semi-mobile sprayers",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-2.4.8",
+      "standards": [
+        {
+          "code": "ISO 10625",
+          "title": "Equipment for crop protection - Sprayer nozzles - Colour coding for identification",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.*",
+      "standards": [
+        {
+          "code": "EN ISO 4254-1:2015 + A1:2021",
+          "title": "Agricultural machinery - Safety - Part 1: General requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 474-1:2022",
+          "title": "Earth-moving machinery - Safety - Part 1: General requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 3691-1:2015 + A1:2020",
+          "title": "Industrial trucks - Safety requirements and verification - Part 1: Self-propelled industrial trucks, other than driverless trucks, variable-reach trucks and burden-carrier trucks",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 16307-1:2020",
+          "title": "Industrial trucks - Safety requirements and verification - Part 1: Supplementary requirements for self-propelled industrial trucks, other than driverless trucks, variable-reach trucks and burden-carrier trucks",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.2.1",
+      "standards": [
+        {
+          "code": "ISO 5006:2017",
+          "title": "Earth-moving machinery - Operator's field of view - Test method and performance criteria",
+          "type": "C",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN ISO 3411:2007",
+          "title": "Earth-moving machinery - Physical dimensions of operators and minimum operator space envelope",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.2.2",
+      "standards": [
+        {
+          "code": "EN ISO 7096:2020",
+          "title": "Earth-moving machinery - Laboratory evaluation of operator seat vibration",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 6683:2008",
+          "title": "Earth-moving machinery - Seat belts and seat belt anchorages - Performance requirements and tests",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.2.4",
+      "standards": [
+        {
+          "code": "EN ISO 3691-4:2023",
+          "title": "Industrial trucks - Safety requirements and verification - Part 4: Driverless industrial trucks and their systems",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 18497-1:2024",
+          "title": "Agricultural machinery and tractors - Safety of partially automated, semi-autonomous and autonomous machinery - Part 1: Machine design principles and vocabulary",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.3*",
+      "standards": [
+        {
+          "code": "EN ISO 25119-1:2023",
+          "title": "Tractors and machinery for agriculture and forestry - Safety-related parts of control systems - Part 1: General principles for design and development",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1175:2025",
+          "title": "Safety of industrial trucks - Electrical/electronic requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.3.3",
+      "standards": [
+        {
+          "code": "EN ISO 3450:2011",
+          "title": "Earth-moving machinery - Wheeled or high-speed rubber-tracked machines - Performance requirements and test procedures for brake systems",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.3.4",
+      "standards": [
+        {
+          "code": "EN ISO 3691-5:2015 + A1:2020",
+          "title": "Industrial trucks - Safety requirements and verification - Part 5: Pedestrian-propelled trucks",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.4.3",
+      "standards": [
+        {
+          "code": "EN ISO 3471:2008",
+          "title": "Earth-moving machinery - Roll-over protective structures - Laboratory tests and performance requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.4.4",
+      "standards": [
+        {
+          "code": "EN ISO 3449:2008",
+          "title": "Earth-moving machinery - Falling-object protective structures - Laboratory tests and performance requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.4.5",
+      "standards": [
+        {
+          "code": "EN ISO 2867:2011",
+          "title": "Earth-moving machinery - Access systems",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.4.2",
+      "standards": [
+        {
+          "code": "EN 12965:2019+A1:2025",
+          "title": "Tractors and machinery for agriculture and forestry - Power take-off (PTO) drive shafts and their guards - Safety",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.4.7",
+      "standards": [
+        {
+          "code": "EN 12965:2019+A1:2025",
+          "title": "Tractors and machinery for agriculture and forestry - Power take-off (PTO) drive shafts and their guards - Safety",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 5674:2009",
+          "title": "Tractors and machinery for agriculture and forestry - Guards for power take-off (PTO) drive-shafts - Strength and wear tests and acceptance criteria",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.5.1",
+      "standards": [
+        {
+          "code": "EN 1175:2025",
+          "title": "Safety of industrial trucks - Electrical/electronic requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.6.1",
+      "standards": [
+        {
+          "code": "EN ISO 7010:2020",
+          "title": "Graphical symbols - Safety colours and safety signs - Registered safety signs",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO 3864-2:2016",
+          "title": "Graphical symbols - Safety colours and safety signs - Part 2: Design principles for product safety labels",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.6.3.1",
+      "standards": [
+        {
+          "code": "EN 1032:2003+A1:2008",
+          "title": "Mechanical vibration - Testing of mobile machinery in order to determine the vibration emission value",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-3.6.3.3",
+      "standards": [
+        {
+          "code": "EN ISO 3691-4:2023",
+          "title": "Industrial trucks - Safety requirements and verification - Part 4: Driverless industrial trucks and their systems",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN ISO 18497-3:2024",
+          "title": "Agricultural machinery and tractors - Safety of partially automated, semi-autonomous and autonomous machinery - Part 3: Autonomous operating zones",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.1",
+      "standards": [
+        {
+          "code": "EN 13001-2:2021",
+          "title": "Crane safety - General design - Part 2: Load actions",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.2",
+      "standards": [
+        {
+          "code": "EN 13001-3-3:2014",
+          "title": "Cranes - General design - Part 3-3: Limit states and proof of competence of wheel/rail contacts",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.3",
+      "standards": [
+        {
+          "code": "EN 13001-1:2015",
+          "title": "Cranes - General design - Part 1: General principles and requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13001-2:2021",
+          "title": "Crane safety - General design - Part 2: Load actions",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13001-3-1:2025",
+          "title": "Cranes - General design - Part 3-1: Limit states and proof competence of steel structure",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.4",
+      "standards": [
+        {
+          "code": "EN 13001-3-2:2014",
+          "title": "Cranes - General design - Part 3-2: Limit states and proof of competence of wire ropes in reeving systems",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12385-4:2002+A1:2008",
+          "title": "Steel wire ropes - Safety - Part 4: Stranded ropes for general lifting applications",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.5",
+      "standards": [
+        {
+          "code": "EN 13155:2020+A1:2025",
+          "title": "Crane - Safety - Non-fixed load lifting attachments",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1677-1:2000+A1:2008",
+          "title": "Components for slings - Safety - Part 1: Forged steel components, Grade 8",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.6",
+      "standards": [
+        {
+          "code": "EN 13557:2024",
+          "title": "Cranes - Control devices and control stations",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12077-2:2024",
+          "title": "Cranes safety - Requirements for health and safety - Part 2: Limiting and indicating devices",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-32:2008",
+          "title": "Safety of machinery - Electrical equipment of machines - Part 32: Requirements for hoisting machines",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.2.8.*",
+      "standards": [
+        {
+          "code": "EN 81-31:2024",
+          "title": "Safety rules for the construction and installation of lifts - Lifts for the transport of goods only - Part 31: Accessible goods only lifts",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12158-1:2021",
+          "title": "Builders' hoists for goods - Part 1: Hoists with accessible platforms",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.1.3",
+      "standards": [
+        {
+          "code": "EN 15011:2020",
+          "title": "Cranes - Bridge and gantry cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 14492-1:2006+A1:2009",
+          "title": "Cranes - Power driven winches and hoists - Part 1: Power driven winches",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 14492-2:2006+A1:2009",
+          "title": "Cranes - Power driven winches and hoists - Part 2: Power driven hoists",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13000:2010+A1:2014",
+          "title": "Cranes - Mobile cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12999:2020+A1:2025",
+          "title": "Cranes - Loader cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.2.1",
+      "standards": [
+        {
+          "code": "EN 13557:2024",
+          "title": "Cranes - Control devices and control stations",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 60204-32:2008",
+          "title": "Safety of machinery - Electrical equipment of machines - Part 32: Requirements for hoisting machines",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.2.2",
+      "standards": [
+        {
+          "code": "EN 12077-2:2024",
+          "title": "Cranes safety - Requirements for health and safety - Part 2: Limiting and indicating devices",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.3.1",
+      "standards": [
+        {
+          "code": "EN 818-2:1996+A1:2008",
+          "title": "Short link chain for lifting purposes - Safety - Part 2: Medium tolerance chain for chain slings - Grade 8",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 818-4:1996+A1:2008",
+          "title": "Short link chain for lifting purposes - Safety - Part 4: Chain slings - Grade 8",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1492-1:2000+A1:2008",
+          "title": "Textile slings - Safety - Part 1: Flat woven webbing slings made of man-made fibres for general purpose use",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1492-2:2000+A1:2008",
+          "title": "Textile slings - Safety - Part 2: Roundslings made of man-made fibres for general purpose use",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13414-1:2003+A2:2008",
+          "title": "Steel wire rope slings - Safety - Part 1: Slings for general lifting service",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12385-4:2002+A1:2008",
+          "title": "Steel wire ropes - Safety - Part 4: Stranded ropes for general lifting applications",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.3.2",
+      "standards": [
+        {
+          "code": "EN 13155:2020+A1:2025",
+          "title": "Crane - Safety - Non-fixed load lifting attachments",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1677-1:2000+A1:2008",
+          "title": "Components for slings - Safety - Part 1: Forged steel components, Grade 8",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 818-4:1996+A1:2008",
+          "title": "Short link chain for lifting purposes - Safety - Part 4: Chain slings - Grade 8",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1492-1:2000+A1:2008",
+          "title": "Textile slings - Safety - Part 1: Flat woven webbing slings made of man-made fibres for general purpose use",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13414-1:2003+A2:2008",
+          "title": "Steel wire rope slings - Safety - Part 1: Slings for general lifting service",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.3.3",
+      "standards": [
+        {
+          "code": "EN 15011:2020",
+          "title": "Cranes - Bridge and gantry cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 14492-1:2006+A1:2009",
+          "title": "Cranes - Power driven winches and hoists - Part 1: Power driven winches",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 14492-2:2006+A1:2009",
+          "title": "Cranes - Power driven winches and hoists - Part 2: Power driven hoists",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.4.1",
+      "standards": [
+        {
+          "code": "EN 13155:2020+A1:2025",
+          "title": "Crane - Safety - Non-fixed load lifting attachments",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 818-4:1996+A1:2008",
+          "title": "Short link chain for lifting purposes - Safety - Part 4: Chain slings - Grade 8",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1492-1:2000+A1:2008",
+          "title": "Textile slings - Safety - Part 1: Flat woven webbing slings made of man-made fibres for general purpose use",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1492-2:2000+A1:2008",
+          "title": "Textile slings - Safety - Part 2: Roundslings made of man-made fibres for general purpose use",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13414-1:2003+A2:2008",
+          "title": "Steel wire rope slings - Safety - Part 1: Slings for general lifting service",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-4.4.2",
+      "standards": [
+        {
+          "code": "EN 15011:2020",
+          "title": "Cranes - Bridge and gantry cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 14492-1:2006+A1:2009",
+          "title": "Cranes - Power driven winches and hoists - Part 1: Power driven winches",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 14492-2:2006+A1:2009",
+          "title": "Cranes - Power driven winches and hoists - Part 2: Power driven hoists",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 13000:2010+A1:2014",
+          "title": "Cranes - Mobile cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12999:2020+A1:2025",
+          "title": "Cranes - Loader cranes",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-5.*",
+      "standards": [
+        {
+          "code": "EN ISO 19296:2018",
+          "title": "Mining - Mobile machines working underground - Machine safety",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 16191:2014",
+          "title": "Tunnelling machinery - Safety requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-5.1",
+      "standards": [
+        {
+          "code": "EN 1804-1:2020",
+          "title": "Machines for underground mines - Safety requirements for hydraulic powered roof supports - Part 1: Support units and general requirements",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-5.3",
+      "standards": [
+        {
+          "code": "EN 1804-3:2020",
+          "title": "Machines for underground mines - Safety requirements for hydraulic powered roof supports - Part 3: Hydraulic and electro hydraulic control systems",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-6.*",
+      "standards": [
+        {
+          "code": "EN 280-1:2022",
+          "title": "Mobile elevating work platforms - Part 1: Design calculations - Stability criteria - Construction - Safety - Examinations and tests",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 1808:2015",
+          "title": "Safety requirements for suspended access equipment - Design calculations, stability criteria, construction - Examinations and tests",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 81-41:2024",
+          "title": "Safety rules for the construction and installation of lifts - Special lifts for the transport of persons and goods - Part 41: Vertical lifting platforms intended for use by persons with impaired mobility",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN 12159:2024",
+          "title": "Builders hoists for persons and materials with vertically guided cages",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-III-6.2",
+      "standards": [
+        {
+          "code": "EN 14502-2:2005+A1:2008",
+          "title": "Cranes - Equipment for the lifting of persons - Part 2: Elevating control stations",
+          "type": "C",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-A-b",
+      "standards": [
+        {
+          "code": "EN ISO 12100:2010",
+          "title": "Sicurezza del macchinario - Principi generali di progettazione - Valutazione del rischio e riduzione del rischio",
+          "type": "A",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "ISO/TR 14121-2:2012",
+          "title": "Safety of machinery - Risk assessment - Part 2: Practical guidance and examples of methods",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-B-b",
+      "standards": [
+        {
+          "code": "EN ISO 12100:2010",
+          "title": "Sicurezza del macchinario - Principi generali di progettazione - Valutazione del rischio e riduzione del rischio",
+          "type": "A",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "ISO/TR 14121-2:2012",
+          "title": "Safety of machinery - Risk assessment - Part 2: Practical guidance and examples of methods",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-A-g",
+      "standards": [
+        {
+          "code": "EN ISO 13849-2:2012",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 2: Validazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-B-g",
+      "standards": [
+        {
+          "code": "EN ISO 13849-2:2012",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 2: Validazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-A-h",
+      "standards": [
+        {
+          "code": "EN ISO 9001:2015",
+          "title": "Quality management systems - Requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-A-l",
+      "standards": [
+        {
+          "code": "EN ISO 9001:2015",
+          "title": "Quality management systems - Requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-B-h",
+      "standards": [
+        {
+          "code": "EN ISO 9001:2015",
+          "title": "Quality management systems - Requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-B-j",
+      "standards": [
+        {
+          "code": "EN ISO 9001:2015",
+          "title": "Quality management systems - Requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-A-i",
+      "standards": [
+        {
+          "code": "EN ISO 20607:2019",
+          "title": "Sicurezza del macchinario - Manuale di istruzioni - Principi generali di stesura",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 82079-1:2020",
+          "title": "Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-B-i",
+      "standards": [
+        {
+          "code": "EN IEC 82079-1:2020",
+          "title": "Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-A-m",
+      "standards": [
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 62061:2021 + A1:2024",
+          "title": "Sicurezza del macchinario - Sicurezza funzionale dei sistemi di comando relativi alla sicurezza",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-IV-B-k",
+      "standards": [
+        {
+          "code": "EN ISO 13849-1:2023",
+          "title": "Sicurezza del macchinario - Parti dei sistemi di comando legate alla sicurezza - Parte 1: Principi generali per la progettazione",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        },
+        {
+          "code": "EN IEC 62061:2021 + A1:2024",
+          "title": "Sicurezza del macchinario - Sicurezza funzionale dei sistemi di comando relativi alla sicurezza",
+          "type": "B",
+          "status": "armonizzata (dir. 2006/42/CE)"
+        }
+      ]
+    },
+    {
+      "match": "MR-V-*",
+      "standards": [
+        {
+          "code": "EN ISO/IEC 17050-1:2010",
+          "title": "Conformity assessment - Supplier's declaration of conformity - Part 1: General requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-ART21-*",
+      "standards": [
+        {
+          "code": "EN ISO/IEC 17050-1:2010",
+          "title": "Conformity assessment - Supplier's declaration of conformity - Part 1: General requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "MR-ART22-*",
+      "standards": [
+        {
+          "code": "EN ISO/IEC 17050-1:2010",
+          "title": "Conformity assessment - Supplier's declaration of conformity - Part 1: General requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-1-*",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-2:2019",
+          "title": "Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-2",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-2: Principles for cyber resilience",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        },
+        {
+          "code": "ETSI EN 303 645 V3.1.3 (2024-09)",
+          "title": "CYBER; Cyber Security for Consumer Internet of Things: Baseline Requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN IEC 62443-3-3:2019",
+          "title": "Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-1-1",
+      "standards": [
+        {
+          "code": "EN IEC 62443-3-2:2020",
+          "title": "Security for industrial automation and control systems - Part 3-2: Security risk assessment for system design",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 27005:2022",
+          "title": "Information security, cybersecurity and privacy protection - Guidance on managing information security risks",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-1-2a",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-1-2c",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-1-2e",
+      "standards": [
+        {
+          "code": "ISO/IEC 18033-3",
+          "title": "Information security - Encryption algorithms - Part 3: Block ciphers",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 19772",
+          "title": "Information security - Authenticated encryption",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-1-2f",
+      "standards": [
+        {
+          "code": "ISO/IEC 19772",
+          "title": "Information security - Authenticated encryption",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 14888 (serie)",
+          "title": "IT security techniques - Digital signatures with appendix",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-2-*",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-3",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-3: Vulnerability handling",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        },
+        {
+          "code": "ISO/IEC 30111:2019",
+          "title": "Information technology - Security techniques - Vulnerability handling processes",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 29147:2018",
+          "title": "Information technology - Security techniques - Vulnerability disclosure",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-I-2-1",
+      "standards": [
+        {
+          "code": "ISO/IEC 5962:2021",
+          "title": "Information technology - SPDX Specification V2.2.1",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ECMA-424",
+          "title": "CycloneDX Bill of Materials Specification",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-2",
+      "standards": [
+        {
+          "code": "EN IEC 62443-3-2:2020",
+          "title": "Security for industrial automation and control systems - Part 3-2: Security risk assessment for system design",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 27005:2022",
+          "title": "Information security, cybersecurity and privacy protection - Guidance on managing information security risks",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-2",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-2: Principles for cyber resilience",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-3",
+      "standards": [
+        {
+          "code": "EN IEC 62443-3-2:2020",
+          "title": "Security for industrial automation and control systems - Part 3-2: Security risk assessment for system design",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 27005:2022",
+          "title": "Information security, cybersecurity and privacy protection - Guidance on managing information security risks",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-2",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-2: Principles for cyber resilience",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-4",
+      "standards": [
+        {
+          "code": "EN IEC 62443-3-2:2020",
+          "title": "Security for industrial automation and control systems - Part 3-2: Security risk assessment for system design",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-5",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-6",
+      "standards": [
+        {
+          "code": "ISO/IEC 29147:2018",
+          "title": "Information technology - Security techniques - Vulnerability disclosure",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 30111:2019",
+          "title": "Information technology - Security techniques - Vulnerability handling processes",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-3",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-3: Vulnerability handling",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-8",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 30111:2019",
+          "title": "Information technology - Security techniques - Vulnerability handling processes",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-3",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-3: Vulnerability handling",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-17",
+      "standards": [
+        {
+          "code": "ISO/IEC 29147:2018",
+          "title": "Information technology - Security techniques - Vulnerability disclosure",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-18",
+      "standards": [
+        {
+          "code": "EN IEC 82079-1:2020",
+          "title": "Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART13-20",
+      "standards": [
+        {
+          "code": "EN ISO/IEC 17050-1:2010",
+          "title": "Conformity assessment - Supplier's declaration of conformity - Part 1: General requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART14-*",
+      "standards": [
+        {
+          "code": "ISO/IEC 29147:2018",
+          "title": "Information technology - Security techniques - Vulnerability disclosure",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 27035-1:2023",
+          "title": "Information technology - Information security incident management - Part 1: Principles and process",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-ART28-*",
+      "standards": [
+        {
+          "code": "EN ISO/IEC 17050-1:2010",
+          "title": "Conformity assessment - Supplier's declaration of conformity - Part 1: General requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-V",
+      "standards": [
+        {
+          "code": "EN ISO/IEC 17050-1:2010",
+          "title": "Conformity assessment - Supplier's declaration of conformity - Part 1: General requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-II-2",
+      "standards": [
+        {
+          "code": "ISO/IEC 29147:2018",
+          "title": "Information technology - Security techniques - Vulnerability disclosure",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-II-8",
+      "standards": [
+        {
+          "code": "EN IEC 82079-1:2020",
+          "title": "Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-II-9",
+      "standards": [
+        {
+          "code": "ISO/IEC 5962:2021",
+          "title": "Information technology - SPDX Specification V2.2.1",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ECMA-424",
+          "title": "CycloneDX Bill of Materials Specification",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    },
+    {
+      "match": "CRA-VII-2",
+      "standards": [
+        {
+          "code": "EN IEC 62443-4-1:2018",
+          "title": "Security for industrial automation and control systems - Part 4-1: Secure product development lifecycle requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 27001:2022",
+          "title": "Information security, cybersecurity and privacy protection - Information security management systems - Requirements",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-3",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-3: Vulnerability handling",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        }
+      ]
+    },
+    {
+      "match": "CRA-VII-3",
+      "standards": [
+        {
+          "code": "EN IEC 62443-3-2:2020",
+          "title": "Security for industrial automation and control systems - Part 3-2: Security risk assessment for system design",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ISO/IEC 27005:2022",
+          "title": "Information security, cybersecurity and privacy protection - Guidance on managing information security risks",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "prEN 40000-1-2",
+          "title": "Cybersecurity requirements for products with digital elements - Part 1-2: Principles for cyber resilience",
+          "type": "tecnica",
+          "status": "in elaborazione (richiesta di normazione)"
+        }
+      ]
+    },
+    {
+      "match": "CRA-VII-8",
+      "standards": [
+        {
+          "code": "ISO/IEC 5962:2021",
+          "title": "Information technology - SPDX Specification V2.2.1",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        },
+        {
+          "code": "ECMA-424",
+          "title": "CycloneDX Bill of Materials Specification",
+          "type": "tecnica",
+          "status": "non armonizzata"
+        }
+      ]
+    }
+  ]
+}
