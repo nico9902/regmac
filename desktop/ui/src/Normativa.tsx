@@ -1,6 +1,6 @@
 import {useEffect, useMemo, useState} from 'react';
 import {ExternalLink, Search} from 'lucide-react';
-import {CatalogData} from './api';
+import {api, CatalogData} from './api';
 import {catalog} from './parts';
 
 /** Wiki dei due regolamenti: testo ufficiale, scheda di verifica usata dall'AI, norme di riferimento. */
@@ -27,7 +27,7 @@ export default function Normativa() {
     <div className="detail"><div className="dwrap">
       <div className="row tiny mute"><span>{r.law === 'MR' ? 'Regolamento (UE) 2023/1230' : 'Regolamento (UE) 2024/2847'}</span>·<span>{r.group}</span></div>
       <h1 style={{fontSize: 22, margin: '6px 0 10px'}}><span className="mute" style={{fontWeight: 500}}>{r.shortRef}</span> {r.title}</h1>
-      <div className="row wrap tiny" style={{marginBottom: 12}}><a className="row" style={{gap: 4}} href={`/normative/${pdf}#page=${r.pages?.[0] || 1}`} target="_blank" rel="noreferrer"><ExternalLink size={12}/>Gazzetta ufficiale, p. {r.pages?.[0]}</a>
+      <div className="row wrap tiny" style={{marginBottom: 12}}><button className="linkbtn row" style={{gap: 4, color: 'var(--brand)', fontSize: 11}} onClick={() => void api.openLaw(r.law)} title={pdf}><ExternalLink size={12}/>Gazzetta ufficiale: apri il PDF, pagina {r.pages?.[0]}</button>
         {r.always && <span className="chip brand">Si applica in ogni caso</span>}</div>
       <div className="legal">{r.text}</div>
       <div className="section-t">Scheda di verifica <span className="chip" style={{textTransform: 'none', letterSpacing: 0}}>{r.sheet.status === 'rivista' ? 'rivista' : 'bozza generata, da rivedere'}</span></div>

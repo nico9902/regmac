@@ -1,0 +1,19 @@
+[package]
+name = "regmac"
+version = "1.0.0"
+description = "RegMac — pre-assessment di macchine con AI locale"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-single-instance = "2"
+rand = "0.8"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

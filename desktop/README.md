@@ -4,9 +4,9 @@ Applicazione desktop per il **pre-assessment** di macchine rispetto al Regolamen
 
 ## Installazione (macOS)
 
-1. Apri `RegMac-1.0.0.dmg` e trascina **RegMac** in Applicazioni.
+1. Apri il file `.dmg` e trascina **RegMac** in Applicazioni.
 2. Primo avvio: l'app non è firmata, quindi macOS la blocca. Clic destro su RegMac → **Apri** → **Apri**. In alternativa: Impostazioni di Sistema → Privacy e sicurezza → «Apri comunque».
-3. RegMac si apre nel browser e mostra una piccola finestra «RegMac è in esecuzione», da cui si riapre l'interfaccia o si chiude il programma.
+3. RegMac si apre nella sua finestra, come ogni altra applicazione. Chiudendo la finestra il programma termina, e con lui il motore interno.
 
 Al primo avvio:
 - **profilo**: nome e organizzazione per l'intestazione dei report;
@@ -38,14 +38,18 @@ Ogni fascicolo è una cartella dentro `fascicoli/`. Per un backup basta copiare 
 ## Compilare l'installatore
 
 ```bash
-desktop/build-macos.sh            # crea desktop/dist/RegMac-1.0.0.dmg (Java 21 incluso)
+desktop/build-macos.sh            # crea desktop/dist/RegMac_1.0.0_aarch64.dmg (finestra nativa + Java 21 incluso)
 ```
 
-Windows (.msi) e Linux (.deb) si creano con lo stesso `jpackage` sul rispettivo sistema; vanno ancora preparati.
+Requisiti per compilare: JDK 21, Node.js, Rust. Windows (.msi) e Linux (.deb/.AppImage) si creano con gli stessi passi sul rispettivo sistema; vanno ancora preparati.
 
 ## Struttura
 
-- `app/` — programma Java (Spring Boot), con:
+- `tauri/` — finestra nativa (Tauri, Rust):
+  - avvia il motore Java incluso, con porta casuale e token;
+  - mostra la schermata di caricamento;
+  - alla chiusura spegne il motore.
+- `app/` — motore Java (Spring Boot), con:
   - `Engine`: motore di pre-valutazione;
   - `Ollama`: client dell'AI, avvio di Ollama e download dei modelli;
   - `Views`: calcolo di score e gap;
@@ -59,4 +63,5 @@ Windows (.msi) e Linux (.deb) si creano con lo stesso `jpackage` sul rispettivo 
 - PDF scansionati (senza testo) non ancora letti.
 - Schede di verifica in gran parte in bozza.
 - Il modello da 8 miliardi di parametri sbaglia: per questo ogni esito mostra la citazione e si può correggere.
-- Installatore non firmato: avvisi di Gatekeeper / SmartScreen.
+- Installatore non firmato (firma ad hoc): avvisi di Gatekeeper / SmartScreen.
+- Senza finestra nativa il motore si può avviare anche da solo (`java -jar regmac-desktop.jar`): in questo caso l'interfaccia si apre nel browser.

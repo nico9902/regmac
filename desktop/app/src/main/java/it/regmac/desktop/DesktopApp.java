@@ -37,12 +37,14 @@ public class DesktopApp {
     if (lock == null) { // già in esecuzione: apre il browser sull'istanza esistente ed esce
       try {
         Map<?, ?> m = new ObjectMapper().readValue(info.toFile(), Map.class);
-        if (alive((Integer) m.get("port"))) { browse("http://127.0.0.1:" + m.get("port") + "/?t=" + m.get("token")); System.exit(0); }
+        if (!Boolean.getBoolean("regmac.embedded") && alive((Integer) m.get("port"))) { browse("http://127.0.0.1:" + m.get("port") + "/?t=" + m.get("token")); System.exit(0); }
       } catch (Exception ignored) { }
       System.err.println("RegMac è già in esecuzione."); System.exit(1);
     }
-    token = HexFormat.of().formatHex(new SecureRandom().generateSeed(24));
-    try (ServerSocket s = new ServerSocket(0, 0, java.net.InetAddress.getLoopbackAddress())) { port = s.getLocalPort(); }
+    boolean embedded = Boolean.getBoolean("regmac.embedded"); // avviato dalla finestra nativa (Tauri)
+    token = System.getProperty("regmac.token", HexFormat.of().formatHex(new SecureRandom().generateSeed(24)));
+    port = Integer.getInteger("regmac.port", 0);
+    if (port == 0) try (ServerSocket s = new ServerSocket(0, 0, java.net.InetAddress.getLoopbackAddress())) { port = s.getLocalPort(); }
     new ObjectMapper().writeValue(info.toFile(), Map.of("port", port, "token", token, "pid", ProcessHandle.current().pid()));
 
     SpringApplication app = new SpringApplication(DesktopApp.class);
@@ -54,6 +56,15 @@ public class DesktopApp {
     ConfigurableApplicationContext ctx = app.run(args);
     String url = "http://127.0.0.1:" + port + "/?t=" + token;
     Runtime.getRuntime().addShutdownHook(new Thread(() -> { try { Files.deleteIfExists(info); lock.release(); } catch (IOException ignored) { } }));
+    if (embedded) {
+      // se la finestra nativa termina in modo anomalo, il motore si chiude da solo
+      Long parent = Long.getLong("regmac.parent");
+      if (parent != null) Thread.ofPlatform().daemon().start(() -> {
+        while (ProcessHandle.of(parent).map(ProcessHandle::isAlive).orElse(false)) { try { Thread.sleep(1000); } catch (InterruptedException e) { return; } }
+        System.exit(0);
+      });
+      return;
+    }
     if (!Boolean.getBoolean("regmac.nobrowser")) browse(url);
     ControlWindow.show(url, () -> { ctx.close(); System.exit(0); });
   }

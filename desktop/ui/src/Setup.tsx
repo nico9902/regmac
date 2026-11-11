@@ -70,7 +70,7 @@ export default function Setup({status, reload}: {status: Status; reload: () => P
       {!status.ollama.installed && <div className="card" style={{background: 'var(--partbg)', borderColor: 'transparent'}}>
         <b>Installa Ollama per continuare</b>
         <p className="small" style={{marginTop: 6}}>Scaricalo da <b>ollama.com/download</b> e installalo come una normale applicazione. Poi torna qui: RegMac lo rileva da solo.</p>
-        <div className="row" style={{marginTop: 10}}><a className="btn" href="https://ollama.com/download" target="_blank" rel="noreferrer"><ExternalLink size={14}/>Apri ollama.com/download</a><button className="btn" onClick={() => void reload()}>Riprova</button></div>
+        <div className="row" style={{marginTop: 10}}><button className="btn" onClick={() => void api.openUrl('https://ollama.com/download')}><ExternalLink size={14}/>Apri ollama.com/download</button><button className="btn" onClick={() => void reload()}>Riprova</button></div>
       </div>}
       {status.ollama.running && missing.length > 0 && !pulling && <div className="card row" style={{background: 'var(--brand3)'}}>
         <div className="grow"><b>Mancano {missing.length === 1 ? 'un modello' : missing.length + ' modelli'}</b><div className="tiny mute">Download di circa {gb(missing.reduce((a, m) => a + m.approxBytes, 0))}, una volta sola. Puoi continuare a usare il computer.</div></div>

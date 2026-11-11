@@ -236,6 +236,59 @@ public class Api {
         .header(HttpHeaders.CONTENT_DISPOSITION, ContentDisposition.attachment().filename(fname, java.nio.charset.StandardCharsets.UTF_8).build().toString()).body(b);
   }
 
+  /** Salva il report nella cartella Download e lo mostra nel Finder / Esplora risorse. */
+  @PostMapping("/fascicoli/{id}/report/save")
+  public Map<String, Object> saveReport(@PathVariable String id) throws Exception {
+    var r = report(id);
+    String name = Objects.requireNonNull(r.getHeaders().getContentDisposition().getFilename());
+    Path out = OsOpen.downloads().resolve(name);
+    for (int i = 2; Files.exists(out); i++) out = OsOpen.downloads().resolve(name.replace(".pdf", " (" + i + ").pdf"));
+    Files.write(out, Objects.requireNonNull(r.getBody()));
+    OsOpen.reveal(out);
+    return Map.of("path", out.toString(), "name", out.getFileName().toString());
+  }
+
+  /** Apre un documento del fascicolo con l'applicazione predefinita (copia temporanea con il nome originale). */
+  @PostMapping("/fascicoli/{id}/documents/{docId}/open")
+  public Map<String, Object> openDocument(@PathVariable String id, @PathVariable String docId) throws Exception {
+    Doc d = store.docs(id).stream().filter(x -> x.id().equals(docId)).findFirst().orElseThrow(() -> new NoSuchElementException("Documento non trovato"));
+    Path tmp = Paths.dataDir().resolve("tmp").resolve(docId);
+    Files.createDirectories(tmp);
+    Path copy = tmp.resolve(d.name());
+    Files.copy(store.dir(id).resolve("documenti").resolve(d.file()), copy, java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+    OsOpen.open(copy.toString());
+    return Map.of("opened", d.name());
+  }
+
+  /** Apre il PDF ufficiale del regolamento con l'applicazione predefinita. */
+  @PostMapping("/normativa/{law}/open")
+  public Map<String, Object> openLaw(@PathVariable String law) throws Exception {
+    String file = switch (law) { case "MR" -> "CELEX_32023R1230_IT_TXT.pdf"; case "CRA" -> "OJ_L_202402847_IT_TXT.pdf"; default -> throw new IllegalArgumentException("Regolamento sconosciuto"); };
+    Path out = Paths.dataDir().resolve("normativa").resolve(file);
+    if (!Files.exists(out)) {
+      Files.createDirectories(out.getParent());
+      try (var in = Api.class.getResourceAsStream("/static/normative/" + file)) { Files.copy(Objects.requireNonNull(in), out); }
+    }
+    OsOpen.open(out.toString());
+    return Map.of("opened", file);
+  }
+
+  /** Apre nel browser di sistema solo indirizzi noti (es. download di Ollama). */
+  @PostMapping("/open-url")
+  public Map<String, Object> openUrl(@RequestBody Map<String, String> body) throws Exception {
+    String url = body.getOrDefault("url", "");
+    if (!url.equals("https://ollama.com/download")) throw new IllegalArgumentException("Indirizzo non consentito");
+    OsOpen.open(url);
+    return Map.of("opened", url);
+  }
+
+  /** Chiusura ordinata richiesta dalla finestra nativa: gli hook chiudono anche Ollama se l'ha avviato RegMac. */
+  @PostMapping("/shutdown")
+  public Map<String, Object> shutdown() {
+    Thread.ofPlatform().start(() -> { try { Thread.sleep(300); } catch (InterruptedException ignored) { } System.exit(0); });
+    return Map.of("bye", true);
+  }
+
   // ---------- errori ----------
   @ExceptionHandler({IllegalArgumentException.class, NoSuchElementException.class, IllegalStateException.class})
   public ResponseEntity<Map<String, String>> error(RuntimeException e) {

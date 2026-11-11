@@ -60,6 +60,10 @@ export const api = {
   stop: (id: string) => req<Fascicolo>(`/fascicoli/${id}/stop`, json('POST')),
   review: (id: string, rid: string, body: {points?: (string | null)[]; confirmed?: boolean; note?: string}) => req<DossierFull>(`/fascicoli/${id}/results/${rid}`, json('PUT', body)),
   docUrl: (id: string, docId: string) => `/api/fascicoli/${id}/documents/${docId}`,
+  openDoc: (id: string, docId: string) => req<{opened: string}>(`/fascicoli/${id}/documents/${docId}/open`, json('POST')),
+  openLaw: (law: string) => req<{opened: string}>(`/normativa/${law}/open`, json('POST')),
+  openUrl: (url: string) => req<{opened: string}>('/open-url', json('POST', {url})),
+  saveReport: (id: string) => req<{path: string; name: string}>(`/fascicoli/${id}/report/save`, json('POST')),
   reportUrl: (id: string) => `/api/fascicoli/${id}/report.pdf`,
 };
 

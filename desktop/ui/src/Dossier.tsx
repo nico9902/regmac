@@ -41,7 +41,7 @@ export default function Dossier({id, initialTab, back, toast}: {id: string; init
       {tab === 'documenti' && <Documents d={d} reload={load} toast={toast}/>}
       {tab === 'requisiti' && <Requirements d={d} setD={setD} sel={sel} setSel={setSel}/>}
       {tab === 'gap' && <Gaps d={d} goto={goto}/>}
-      {tab === 'report' && <Report d={d} reload={load} goto={() => setTab('requisiti')}/>}
+      {tab === 'report' && <Report d={d} reload={load} goto={() => setTab('requisiti')} toast={toast}/>}
     </div>
     {del && <DeleteModal row={{fascicolo: f, summary: s, documents: d.documents.length}} cancel={() => setDel(false)} confirm={async () => {
       await api.remove(f.id); back(); toast(`Fascicolo «${f.name}» eliminato`, {label: 'Annulla', run: () => { void api.restore(f.id); }});
@@ -124,6 +124,7 @@ function Overview({d, reload, setTab, goto, toast}: {d: DossierFull; reload: () 
 
 function Documents({d, reload, toast}: {d: DossierFull; reload: () => void; toast: Toast}) {
   const [busy, setBusy] = useState(false);
+  const [pending, setPending] = useState<string | null>(null);
   async function add(files: File[]) {
     if (!files.length) return; setBusy(true);
     try { await api.upload(d.fascicolo.id, files); await reload(); toast(files.length === 1 ? 'Documento aggiunto' : files.length + ' documenti aggiunti'); } catch (e) { toast((e as Error).message); } finally { setBusy(false); }
@@ -131,10 +132,11 @@ function Documents({d, reload, toast}: {d: DossierFull; reload: () => void; toas
   const run = running(d.fascicolo.run);
   return <div className="page">{busy ? <div className="card empty">Caricamento e lettura dei documenti…</div> : <Drop onFiles={add}/>}
     <div className="card" style={{marginTop: 14, padding: '6px 8px'}}><table><thead><tr><th>Documento</th><th>Pagine</th><th>Brani letti</th><th>Impronta SHA-256</th><th/></tr></thead><tbody>
-      {d.documents.map(x => <tr key={x.id}><td><a className="row" href={api.docUrl(d.fascicolo.id, x.id)} target="_blank" rel="noreferrer"><FileText size={15}/><b>{x.name}</b></a>
+      {d.documents.map(x => <tr key={x.id}><td><button className="linkbtn row" title="Apri con l'applicazione predefinita" onClick={() => api.openDoc(d.fascicolo.id, x.id).catch(e => toast(e.message))}><FileText size={15}/><b>{x.name}</b></button>
         {x.warning && <div className="tiny" style={{color: 'var(--part)'}}><AlertTriangle size={11}/> {x.warning}</div>}</td><td>{x.pages}</td>
         <td>{x.passages ? <span className="chip ok">{x.passages}</span> : <span className="chip part">0</span>}</td><td><code className="tiny mute" title={x.sha256}>{x.sha256.slice(0, 8)}…{x.sha256.slice(-6)}</code></td>
-        <td><button className="iconbtn" aria-label="Rimuovi documento" disabled={run} onClick={() => { if (confirm(`Rimuovere «${x.name}» dal fascicolo?`)) void api.removeDoc(d.fascicolo.id, x.id).then(reload); }}><Trash2 size={14}/></button></td></tr>)}
+        <td>{pending === x.id ? <span className="row" style={{gap: 6}}><button className="btn danger pri sm" onClick={() => { setPending(null); void api.removeDoc(d.fascicolo.id, x.id).then(reload); }}>Rimuovi</button><button className="btn sm" onClick={() => setPending(null)}>Annulla</button></span>
+          : <button className="iconbtn" aria-label="Rimuovi documento" disabled={run} onClick={() => setPending(x.id)}><Trash2 size={14}/></button>}</td></tr>)}
       {!d.documents.length && <tr><td colSpan={5} className="mute">Nessun documento.</td></tr>}</tbody></table></div>
     {d.fascicolo.run.state !== 'idle' && !run && <div className="card row" style={{marginTop: 14, background: 'var(--brand3)'}}><div className="grow"><b>Hai aggiunto o rimosso documenti?</b>
       <div className="tiny mute">Aggiorna la pre-valutazione: i giudizi già fatti restano in memoria, si ricalcola solo ciò che cambia.</div></div>
@@ -221,7 +223,7 @@ function Card({r, d, save, note, setNote}: {r: ReqView; d: DossierFull; save: (b
     {r.sheet.condition && <p className="tiny mute" style={{margin: '6px 0 0'}}>Applicabile: {x.appQuote ? `«${x.appQuote}»` : r.sheet.condition}</p>}
     {x.points.map((p, i) => <div className="pt" key={i}><div className="row" style={{alignItems: 'flex-start'}}><span className="pn">{i + 1}</span>
       <div className="grow"><div className="small"><b>{p.text}</b></div>
-        {p.quote && eff[i] !== 'I' ? <><q>{p.quote}</q><div className="tiny mute"><FileText size={11}/> {p.docId ? <a href={api.docUrl(d.fascicolo.id, p.docId)} target="_blank" rel="noreferrer">{p.doc}</a> : p.doc}{p.page && p.page > 1 ? ' · p. ' + p.page : ''}</div></>
+        {p.quote && eff[i] !== 'I' ? <><q>{p.quote}</q><div className="tiny mute"><FileText size={11}/> {p.docId ? <button className="linkbtn" style={{color: 'var(--brand)', fontSize: 11}} onClick={() => void api.openDoc(d.fascicolo.id, p.docId!)}>{p.doc}</button> : p.doc}{p.page && p.page > 1 ? ' · p. ' + p.page : ''}</div></>
           : <div className="tiny mute" style={{marginTop: 4}}>{p.user === 'I' ? 'Segnato dal revisore come senza evidenze.' : 'Nessuna frase dei documenti dimostra o contraddice questo punto.'}</div>}
         {p.user && <div className="tiny" style={{color: 'var(--brand)', marginTop: 3}}>Corretto dal revisore (proposta AI: {ANS[p.answer][0].toLowerCase()})</div>}</div>
       <div className="yn">{(['S', 'C', 'I'] as const).map(k => <button key={k} className={eff[i] === k ? 'on ' + ANS[k][1] : ''}
@@ -234,9 +236,9 @@ function LegalText({id}: {id: string}) {
   const [t, setT] = useState<{text: string; pages: number[]; law: string; standards: string[]} | null>(null);
   useEffect(() => { void import('./parts').then(m => m.catalog()).then(c => { const r = c.requirements.find(x => x.id === id); if (r) setT(r); }); }, [id]);
   if (!t) return null;
-  const pdf = t.law === 'MR' ? 'CELEX_32023R1230_IT_TXT.pdf' : 'OJ_L_202402847_IT_TXT.pdf';
+  const pdf = t.law === 'MR' ? 'Reg. (UE) 2023/1230' : 'Reg. (UE) 2024/2847';
   return <><div className="legal" style={{marginTop: 10}}>{t.text}</div>
-    <div className="row wrap tiny" style={{marginTop: 8}}><a className="row" style={{gap: 4}} href={`/normative/${pdf}#page=${t.pages?.[0] || 1}`} target="_blank" rel="noreferrer"><ExternalLink size={12}/>Gazzetta ufficiale, p. {t.pages?.[0]}</a>
+    <div className="row wrap tiny" style={{marginTop: 8}}><button className="linkbtn row" style={{gap: 4, color: 'var(--brand)', fontSize: 11}} onClick={() => void api.openLaw(t.law)} title={pdf}><ExternalLink size={12}/>Gazzetta ufficiale: apri il PDF, pagina {t.pages?.[0]}</button>
       {t.standards.length > 0 && <span className="mute">· Norme: {t.standards.join(', ')}</span>}</div></>;
 }
 
@@ -257,8 +259,10 @@ function Gaps({d, goto}: {d: DossierFull; goto: (rid: string) => void}) {
       {!list.length && <tr><td colSpan={3} className="mute">Nessun gap.</td></tr>}</tbody></table></div></div>;
 }
 
-function Report({d, reload, goto}: {d: DossierFull; reload: () => void; goto: () => void}) {
+function Report({d, reload, goto, toast}: {d: DossierFull; reload: () => void; goto: () => void; toast: Toast}) {
   const s = d.assessment.summary, run = running(d.fascicolo.run);
+  const [saving, setSaving] = useState(false);
+  async function save() { setSaving(true); try { const r = await api.saveReport(d.fascicolo.id); toast(`Report salvato in Download: ${r.name}`); reload(); } catch (e) { toast((e as Error).message); } finally { setSaving(false); } }
   return <div className="page" style={{maxWidth: 820}}><div className="stack">
     <div className="card"><h2>Report di pre-assessment</h2>
       <div style={{marginTop: 8}}>
@@ -269,7 +273,7 @@ function Report({d, reload, goto}: {d: DossierFull; reload: () => void; goto: ()
         {run && <div className="block"><span style={{color: 'var(--part)'}}><AlertTriangle size={16}/></span><span className="grow">Pre-valutazione ancora in corso: il report sarebbe parziale</span></div>}
       </div>
       <p className="tiny mute" style={{margin: '8px 0 12px'}}>Puoi esportare anche con esiti non rivisti: il report lo dichiara. Una copia resta archiviata nel fascicolo.</p>
-      <a className="btn pri" href={api.reportUrl(d.fascicolo.id)} onClick={() => window.setTimeout(reload, 1500)}><Download size={14}/>Scarica il report PDF</a></div>
+      <button className="btn pri" disabled={saving} onClick={save}><Download size={14}/>{saving ? 'Creazione del report…' : 'Salva il report PDF'}</button></div>
     <div className="card"><h3>Documenti da richiedere</h3>{d.assessment.docsNeeded.length ? <ul className="small" style={{paddingLeft: 18, margin: '8px 0 0', lineHeight: 1.8}}>{d.assessment.docsNeeded.map(x => <li key={x}>{x}</li>)}</ul> : <p className="small mute">Nessuno.</p>}</div>
     <div className="card"><h3>Score per area</h3><table style={{marginTop: 8}}><tbody>{d.assessment.areas.map(a => <tr key={a.name}><td>{a.name} <span className="tiny mute">({a.n})</span></td><td style={{width: 60}}><b>{pct(a.score)}</b></td><td style={{width: 60}} className="mute">{pct(a.max)}</td><td style={{width: 180}}><ScoreBar s={a}/></td></tr>)}</tbody></table></div>
   </div></div>;
