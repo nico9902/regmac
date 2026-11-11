@@ -40,6 +40,13 @@ chmod -R u+w build/backend   # jlink crea file in sola lettura: Tauri deve poter
 echo "== 5/5 Applicazione nativa (Tauri) e installatore"
 (cd tauri && npm ci --no-audit --no-fund >/dev/null && npx tauri build --bundles "$BUNDLES")
 rm -rf dist && mkdir -p dist
-find tauri/src-tauri/target/release/bundle -maxdepth 2 -type f \( -name '*.dmg' -o -name '*.msi' -o -name '*-setup.exe' -o -name '*.deb' -o -name '*.AppImage' \) -exec cp {} dist/ \;
+# nomi fissi: i pulsanti di download del README puntano a releases/latest/download/<nome>
+B=tauri/src-tauri/target/release/bundle
+case "$(uname -m)" in arm64|aarch64) ARCH=arm64 ;; *) ARCH=x64 ;; esac
+for f in "$B"/dmg/*.dmg; do if [ -f "$f" ]; then cp "$f" "dist/RegMac-macOS-$ARCH.dmg"; fi; done
+for f in "$B"/msi/*.msi; do if [ -f "$f" ]; then cp "$f" "dist/RegMac-Windows-$ARCH.msi"; fi; done
+for f in "$B"/nsis/*-setup.exe; do if [ -f "$f" ]; then cp "$f" "dist/RegMac-Windows-$ARCH-setup.exe"; fi; done
+for f in "$B"/deb/*.deb; do if [ -f "$f" ]; then cp "$f" "dist/RegMac-Linux-$ARCH.deb"; fi; done
+for f in "$B"/appimage/*.AppImage; do if [ -f "$f" ]; then cp "$f" "dist/RegMac-Linux-$ARCH.AppImage"; fi; done
 ls -lh dist
 echo "Installatori pronti in desktop/dist:"; ls dist

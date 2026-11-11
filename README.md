@@ -1,216 +1,159 @@
-# RegMac — valutazione di conformità delle macchine
+<p align="center">
+  <img src="assets/readme/logo.png" alt="RegMac" width="112">
+</p>
 
-Applicazione locale per valutare una macchina rispetto al **Regolamento Macchine (UE) 2023/1230** e al **Cyber Resilience Act (UE) 2024/2847**: wiki dei requisiti con testi ufficiali e norme di riferimento, checklist per macchina con evidenze collegate, firma del valutatore e rapporto finale in PDF archiviato. Tutto gira sulla tua infrastruttura: nessun servizio cloud.
+<h1 align="center">RegMac</h1>
 
-Guida per gli utenti: **[docs/GUIDA.md](docs/GUIDA.md)**.
+<h3 align="center">Pre-assessment di macchine con l'AI, sul tuo computer.</h3>
+
+<p align="center">
+  Carichi la documentazione tecnica di una macchina: l'AI locale controlla, requisito per requisito, il
+  Regolamento Macchine (UE) 2023/1230 e il Cyber Resilience Act (UE) 2024/2847, e prepara un report con
+  score di compliance, gap e documenti da richiedere. Ogni esito cita la frase del documento da cui deriva.
+  I documenti non lasciano mai il computer.
+</p>
+
+<p align="center">
+  <a href="https://github.com/nico9902/regmac/releases/latest"><img src="https://img.shields.io/github/v/release/nico9902/regmac?style=flat-square&labelColor=0B1F3A&color=155EEF&label=versione" alt="Ultima versione"></a>
+  <a href="https://github.com/nico9902/regmac/releases"><img src="https://img.shields.io/github/downloads/nico9902/regmac/total?style=flat-square&labelColor=0B1F3A&color=155EEF&label=download" alt="Download"></a>
+  <img src="https://img.shields.io/badge/Windows-10%20e%2011-155EEF?style=flat-square&labelColor=0B1F3A" alt="Windows 10 e 11">
+  <img src="https://img.shields.io/badge/macOS-Apple%20Silicon-155EEF?style=flat-square&labelColor=0B1F3A" alt="macOS Apple Silicon">
+  <img src="https://img.shields.io/badge/Linux-AppImage%20e%20.deb-155EEF?style=flat-square&labelColor=0B1F3A" alt="Linux AppImage e .deb">
+  <br>
+  <img src="https://img.shields.io/badge/AI-locale%20con%20Ollama-16A34A?style=flat-square&labelColor=0B1F3A" alt="AI locale con Ollama">
+  <img src="https://img.shields.io/badge/Reg.%20(UE)-2023%2F1230-64748B?style=flat-square&labelColor=0B1F3A" alt="Regolamento Macchine">
+  <img src="https://img.shields.io/badge/Reg.%20(UE)-2024%2F2847%20CRA-64748B?style=flat-square&labelColor=0B1F3A" alt="Cyber Resilience Act">
+</p>
+
+<p align="center">
+  <a href="#installazione">Installazione</a> ·
+  <a href="#cosa-fa">Cosa fa</a> ·
+  <a href="#come-funziona">Come funziona</a> ·
+  <a href="#lo-score">Lo score</a> ·
+  <a href="#limiti">Limiti</a> ·
+  <a href="#per-sviluppatori">Per sviluppatori</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Windows-x64-setup.exe"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/download-windows-dark.svg">
+    <img src="assets/readme/download-windows-light.svg" alt="Scarica per Windows" height="56">
+  </picture></a>
+  <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-macOS-arm64.dmg"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/download-macos-dark.svg">
+    <img src="assets/readme/download-macos-light.svg" alt="Scarica per macOS (Apple Silicon)" height="56">
+  </picture></a>
+  <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.AppImage"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/download-linux-dark.svg">
+    <img src="assets/readme/download-linux-light.svg" alt="Scarica per Linux (AppImage)" height="56">
+  </picture></a>
+  <br>
+  <sub>Gratuito · richiede <a href="https://ollama.com/download">Ollama</a> · circa 5,5 GB di modelli scaricati al primo avvio · nulla esce dal computer</sub>
+  <br>
+  <sub>Altri formati: <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Windows-x64.msi">Windows .msi</a> · <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.deb">Linux .deb</a> · <a href="https://github.com/nico9902/regmac/releases">tutte le versioni</a></sub>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/requisiti-dark.png">
+    <img src="assets/readme/requisiti-light.png" alt="Revisione di un requisito: per ogni punto di controllo l'esito proposto dall'AI con la frase del manuale che lo dimostra" width="900">
+  </picture>
+</p>
+
+---
 
 ## Installazione
 
-Prerequisiti: Docker Desktop/Engine con Compose v2. Facoltativo: Ollama locale con i modelli indicati più sotto, per estrazione dei fatti e suggerimenti AI (senza modelli l'app funziona interamente; i documenti vengono comunque letti come testo).
+1. **Installa Ollama** da [ollama.com/download](https://ollama.com/download): è il motore che fa girare l'AI sul tuo computer.
+2. **Scarica RegMac** per il tuo sistema con i pulsanti qui sopra e installalo.
+3. **Primo avvio**: RegMac chiede nome e organizzazione per l'intestazione dei report. Poi controlla Ollama e scarica i modelli che mancano, mostrando l'avanzamento:
+   - `qwen3:8b`, 5,2 GB;
+   - `nomic-embed-text`, 274 MB.
 
-```sh
-cp .env.example .env          # impostare almeno DATABASE_PASSWORD
-docker compose up -d --build
-```
+Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostra un avviso:
 
-Aprire **http://localhost:5173**. Al primo accesso l'app chiede di creare l'**amministratore** (nome utente, nome e cognome, password di almeno 10 caratteri). Dalla sezione **Utenti** l'amministratore crea poi valutatori e lettori. Solo la porta web è pubblicata, e soltanto su `127.0.0.1`; database, backend e AI non sono esposti.
-
-Ruoli:
-
-| Ruolo | Può |
+| Sistema | Cosa fare |
 |---|---|
-| Amministratore | tutto, inclusa la gestione utenti |
-| Valutatore | creare macchine e checklist, valutare, caricare documenti, firmare i rapporti |
-| Lettore | consultare wiki, checklist, rapporti e audit trail, senza modifiche |
+| **macOS** | apri il `.dmg` e trascina RegMac in Applicazioni. Al primo avvio: clic destro su RegMac → **Apri** → **Apri** |
+| **Windows** | se compare «Windows ha protetto il PC»: **Ulteriori informazioni** → **Esegui comunque** |
+| **Linux** | AppImage: `chmod +x RegMac-Linux-x64.AppImage` e avvialo. Debian/Ubuntu: `sudo apt install ./RegMac-Linux-x64.deb` |
 
-`API_TOKEN` (in `.env`) è un accesso tecnico con ruolo amministratore per gli script (`scripts/demo.py`, `scripts/smoke.py`). È **vuoto e disattivato per impostazione predefinita**; non può firmare rapporti.
+**Requisiti:** 16 GB di RAM consigliati, circa 7 GB liberi su disco. Con una scheda grafica o un Mac Apple Silicon l'analisi è molto più veloce.
 
-## Funzioni principali
+## Cosa fa
 
-- **Wiki normativa → Requisiti e valutazione**: 502 voci (articoli, allegati, punti), 351 valutabili. Ricerca, apertura del PDF ufficiale alla pagina, norme EN/ISO/IEC di riferimento per 256 requisiti (con stato di armonizzazione), valutazione direttamente dalla pagina. "Testo integrale" consente la lettura pagina per pagina.
-- **Assessment → Checklist requisiti**: dati della macchina e profilo (macchina/quasi-macchina, capi dell'Allegato III, CRA). Per ogni requisito: esito, evidenze, **documenti collegati** (con nome, pagina e impronta SHA-256), norme applicate, rilievo, azione correttiva, responsabile, scadenza. **Suggerimento AI** facoltativo: propone un esito citando passaggi dei documenti, ma non lo applica mai da solo. Salvataggio automatico.
-- **Firma**: la chiusura richiede esiti e motivazioni completi e la conferma della password dell'utente. Il rapporto PDF viene generato dal server, archiviato e registrato con la sua impronta SHA-256; la checklist diventa immutabile. Le modifiche successive passano da "Nuova revisione" (Rev. 2, 3…).
-- **Rapporto finale**: PDF firmato (o bozza), CSV per Excel, JSON; anteprima a schermo.
-- **Aggiornamento dei testi normativi**: quando il catalogo viene rigenerato, l'app segnala i requisiti il cui testo è cambiato rispetto a quando sono stati valutati e ne blocca la firma finché non vengono riconfermati.
-- **Audit trail**: ogni operazione con data e autore.
-- **Controlli automatici (sperimentale)**: il precedente motore di regole AI, mantenuto per sperimentazione.
+- **Fascicolo per macchina**: dati della macchina, documenti (PDF con testo, DOCX, TXT, MD), esiti, gap e report.
+- **Profilo proposto dall'AI**: dai documenti l'AI propone il profilo della macchina, con la frase che giustifica ogni risposta. Tu confermi. Le domande sono per esempio:
+  - è una macchina completa o una quasi-macchina?
+  - si sposta? solleva carichi o persone?
+  - ha software o accesso remoto (quindi si applica il CRA)?
+- **Pre-valutazione automatica** di tutti i requisiti applicabili, in sottofondo. Circa 5 minuti per 150 requisiti su un Mac M-series.
+- **Revisione rapida**: per ogni punto di controllo vedi la risposta dell'AI e la citazione, e puoi correggerla. Invio conferma e passa al successivo.
+- **Registro dei gap**, di tre tipi:
+  - **tecnici**: i documenti contraddicono il requisito;
+  - **documentali**: manca la prova;
+  - **di applicabilità**: non è chiaro se il requisito si applica.
+- **Report PDF** con score, massimo raggiungibile, score per area, gap, documenti da richiedere, dettaglio con citazioni e metodo.
+- **Normativa consultabile**: testo ufficiale dei due regolamenti, schede di verifica e norme tecniche di riferimento.
 
-## Operatività
+<p align="center">
+  <img src="assets/readme/gap.png" alt="Registro dei gap per requisito con priorità" width="440">
+  <img src="assets/readme/normativa.png" alt="Normativa: testo ufficiale, scheda di verifica e norme di riferimento" width="440">
+</p>
 
-```sh
-scripts/backup.sh                    # database + documenti + rapporti → backups/regmac-AAAAMMGG-HHMMSS (con SHA256SUMS)
-scripts/restore.sh backups/regmac-…  # verifica le impronte e ripristina (chiede conferma: sostituisce i dati attuali)
-docker compose logs --tail 100 backend ai
-docker compose stop / start          # i dati restano nei volumi
+## Come funziona
+
+```
+Documenti ──► testo diviso in frasi ──► indice semantico (nomic-embed-text)
+                                              │
+Scheda di verifica del requisito ─────────────┤  per ogni punto di controllo: le 3 frasi più pertinenti
+(condizione di applicabilità + punti)         ▼
+                                   qwen3:8b giudica ogni coppia punto–frase:
+                                   la frase lo DIMOSTRA, lo CONTRADDICE o NON C'ENTRA
+                                              │  una conferma o una contraddizione vale solo se
+                                              ▼  due domande formulate diversamente concordano
+                                   esito del requisito ──► score, gap, report
 ```
 
-Pianificare il backup (es. ogni notte con `cron`) e conservarne una copia fuori dalla macchina. I rapporti firmati si trovano nel volume documenti (`/documents/reports`) e nel backup.
+- Ogni esito positivo o negativo **cita la frase** da cui deriva; senza una frase che lo dimostri il punto resta «senza evidenze».
+- **Risultati ripetibili**: temperatura 0 e seme fisso. I giudizi sono salvati: rilanciando, si ricalcola solo ciò che è cambiato.
+- **Tutto locale**: l'interfaccia comunica solo con il motore sul tuo computer (porta locale con token casuale).
 
-**Aggiornare i testi normativi** (es. testo consolidato o rettifica): sostituire i PDF in `data/normative/`, eseguire `python3 scripts/prepare_normative.py` e `python3 scripts/build_requirements.py`, poi `docker compose restart backend`. Il backend importa il nuovo catalogo solo se corrisponde ai PDF (SHA-256), conserva gli esiti per ID e segnala i testi cambiati.
+## Lo score
 
-**Dati dimostrativi** (facoltativo): impostare `API_TOKEN` in `.env`, riavviare il backend e lanciare `API_TOKEN=… python3 scripts/demo.py`: crea la macchina di prova «RM-01 · Linea dimostrativa». Svuotare poi `API_TOKEN`.
+- **Score** = media, sui requisiti applicabili, della quota di punti di controllo supportati. I punti contraddetti e quelli senza evidenze valgono 0.
+- **Massimo raggiungibile** = lo stesso calcolo, come se le evidenze mancanti risultassero favorevoli. La differenza è quanto può recuperare il fabbricante portando la documentazione. Sotto il massimo restano solo i gap tecnici.
+- **Copertura delle evidenze** = quota di punti su cui i documenti dicono qualcosa di netto. **Sotto il 30%** il fascicolo è dichiarato **«non valutabile: documentazione insufficiente»** invece di mostrare uno score fuorviante.
 
-**Norme di riferimento**: in `data/normative/standards.json` (aggiornato al 11/11/2026 sull'elenco della Commissione per la dir. 2006/42/CE). Modificabile; dopo una modifica eseguire `build_requirements.py` e riavviare il backend.
+## Limiti
 
-## Architettura
+- RegMac fa un **pre-assessment documentale**. Non è la valutazione della conformità prevista dall'art. 25 del Reg. (UE) 2023/1230 o dall'art. 32 del Reg. (UE) 2024/2847. Non sostituisce la valutazione dei rischi del fabbricante né l'organismo notificato, quando richiesto.
+- **Schede di verifica**: 16 sono riviste a mano; le altre 335 sono bozze generate con l'AI e vanno riviste da un esperto.
+- **Modello piccolo**: un modello da 8 miliardi di parametri sbaglia. Per questo il sistema è prudente: nel dubbio un punto resta «senza evidenze», mai «conforme». Ogni esito resta comunque da rivedere.
+- I **PDF scansionati** (immagini senza testo) non vengono ancora letti.
+- I testi dei regolamenti sono le pubblicazioni originali in Gazzetta ufficiale, non consolidate.
 
-```mermaid
-flowchart TD
-    N[Fonti ufficiali + estratti versionati] --> NK[Normative KB / PostgreSQL]
-    NK --> RC[Requirement Compiler / Java]
-    RC --> H[Validazione umana e attivazione]
-    H --> TB[Decision Task Builder / Java]
-    D[Documenti locali / SHA-256] --> MU[Machine Understanding / Python]
-    MU --> Q[Docling + Qwen3 / Qwen3-VL via Ollama]
-    Q --> MK[Machine KB / fatti, entità, relazioni, evidenze]
-    MK --> TB
-    TB --> DM[DecisionModel / Ollama oppure Laya]
-    DM --> CE[Compliance Engine deterministico / Java]
-    CE --> R[Assessment e report immutabili]
-    R --> AC[Active Compliance Agent / richieste raggruppate]
-    AC --> D
-    MK <--> V[pgvector / embedding locali]
-    NK <--> V
-    UI[React + TypeScript] <--> API[Spring Boot REST]
-    API <--> NK
-    API <--> MK
-    API <--> R
+## Per sviluppatori
+
+| Cartella | Contenuto |
+|---|---|
+| [`desktop/tauri`](desktop/tauri) | finestra nativa (Tauri, Rust): avvia il motore Java incluso, schermata di caricamento, chiusura ordinata |
+| [`desktop/app`](desktop/app) | motore (Java 21, Spring Boot): pre-valutazione, client di Ollama e download dei modelli, score e gap, report PDF |
+| [`desktop/ui`](desktop/ui) | interfaccia (React + TypeScript) |
+| [`data/normative`](data/normative) | testi ufficiali, catalogo dei requisiti, norme tecniche, schede di verifica |
+| [`experiments/preassessment`](experiments/preassessment) | prove di accuratezza e velocità del motore AI |
+| [`docs/prototipo`](docs/prototipo) | prototipo cliccabile dell'interfaccia |
+
+**Compilare** sul sistema in uso (servono JDK 21, Node.js e Rust):
+
+```bash
+desktop/build.sh        # .dmg su macOS · .msi e .exe su Windows (Git Bash) · .deb e .AppImage su Linux
 ```
 
-Tre componenti applicativi: frontend statico, monolite modulare Java e un servizio AI Python. PostgreSQL con pgvector e Ollama sono infrastruttura locale. Non vengono usati servizi cloud durante il trattamento dei documenti. Installazione di pacchetti, immagini e pesi richiede una fase preliminare online; gli artifact possono essere trasferiti su una macchina isolata.
+**Pubblicare una versione**: il workflow [`.github/workflows/desktop.yml`](.github/workflows/desktop.yml) costruisce i tre sistemi e pubblica la Release, a cui puntano i pulsanti di download.
 
-## Struttura
-
-```text
-backend/
-  src/main/java/it/regmac/
-    Domain.java                    # contratti tipizzati
-    KnowledgeService.java          # le due KB, evidenze, revisione
-    RequirementCompiler.java       # validazione/attivazione versioni
-    DecisionTaskBuilder.java        # selezione pertinente, applicabilità
-    ComplianceEngine.java          # regole deterministiche
-    ActiveComplianceAgent.java     # richieste raggruppate
-    AssessmentService.java         # orchestrazione e snapshot
-    AiClient.java, Api.java, SearchApi.java
-  src/main/resources/db/migration/  # Flyway
-  src/test/                        # unità + integrazione Python reale
-ai-service/
-  app/contracts.py                 # Pydantic
-  app/understanding.py              # parsing, estrazione, citazioni
-  app/models.py                    # Ollama e Laya, CHOICE/NOUL/SCORE
-  app/search.py                    # embedding e pgvector
-  tests/
-frontend/src/                      # UI React responsive
-scripts/
-  demo.py                          # macchina sintetica e grafo
-  evaluate.py                      # metriche e temperature scaling offline
-  fetch_normative.py                # acquisizione pubblica esplicita
-  pgvector.sql                     # namespace/indice vettoriale
-  smoke.py                         # smoke test su stack reale
-  export_schemas.py                # JSON Schema dei contratti AI
-contracts/                         # schemi esportati
-data/
-  normative/                       # controlli DRAFT e snapshot estratti
-  demo/                            # manuale, questionario, risposta, conflitto
-docs/                              # architettura, fonti, API, test e limiti
-compose.yaml
-.env.example
+```bash
+git tag v1.0.1 && git push origin v1.0.1
 ```
 
-## Tecnologie
-
-- Java **21**, Spring Boot **3.5.7**, JDBC, Flyway, Jackson; test JUnit 5.
-- Python **3.12**, FastAPI **0.115.12**, Pydantic **2.11.4**, HTTPX, Psycopg.
-- React **19.1**, TypeScript **5.8**, Vite **6.3**, Nginx; font di sistema, nessun CDN.
-- PostgreSQL **17**, pgvector; file originali in volume locale, digest SHA-256.
-- Ollama, `qwen3:8b`, `qwen3-vl:8b`; embedding `nomic-embed-text` (768 dimensioni).
-- Docling e Laya opzionali. Dipendenze di base e lock npm presenti; gli extra AI hanno intervalli di versione e richiedono un lock dopo la qualificazione nell'ambiente target.
-
-## Preparazione dei modelli
-
-Su macOS è preferibile Ollama nativo per sfruttare Metal; un container Linux su Mac non usa automaticamente la GPU Apple.
-
-```sh
-ollama pull qwen3:8b
-ollama pull qwen3-vl:8b
-ollama pull nomic-embed-text
-```
-
-Qwen3-VL richiede almeno Ollama **0.12.7**, secondo il catalogo ufficiale. Configurare il listener nativo affinché il container AI possa raggiungerlo tramite `host.docker.internal`; limitarne l'accesso con le impostazioni di rete locali. Non usare tag `cloud`: gli adapter li rifiutano. Nessun pull automatico durante un assessment.
-
-Alternativa con Ollama in Compose:
-
-```sh
-# In .env impostare OLLAMA_URL=http://ollama:11434
-docker compose --profile ollama up -d ollama
-docker compose exec ollama ollama pull qwen3:8b
-docker compose exec ollama ollama pull qwen3-vl:8b
-docker compose exec ollama ollama pull nomic-embed-text
-docker compose up -d --build
-```
-
-La configurazione include CPU; per GPU NVIDIA aggiungere una configurazione Compose adeguata al runtime installato. I pesi 8B richiedono diversi GB ciascuno, oltre a runtime e cache di contesto; dimensionare sulla macchina target e caricare i modelli sequenzialmente se necessario.
-
-### Docling
-
-```sh
-python3 -m venv .venv
-.venv/bin/pip install -e './ai-service[documents,test]'
-.venv/bin/docling-tools models download --output-dir runtime/models/docling
-# .env: AI_EXTRAS=documents
-docker compose build ai
-docker compose up -d ai
-```
-
-Il parsing PDF/DOCX richiede l'extra e, per PDF, gli artifact locali. Il codice disabilita i servizi remoti di Docling. OCR e parsing grafico devono essere verificati con i documenti target; le citazioni di PDF sono riferite al Markdown estratto, non ancora a coordinate grafiche certificate. Le immagini usano Qwen3-VL e producono testo da revisionare.
-
-### Laya
-
-La documentazione pubblica del progetto supporta inferenza locale con `Agent(path).predict(state, questions)` e primitive `choice`, `noul`, `score`. L'adapter usa un checkpoint locale e imposta `HF_HUB_OFFLINE=1`; non scarica automaticamente pesi. Copiare checkpoint e dipendenze/tokenizer richiesti in `runtime/models/laya` dopo acquisizione e verifica separata.
-
-```sh
-# .env: AI_EXTRAS=documents,laya
-# .env: DECISION_PROVIDER=laya
-docker compose build ai
-docker compose up -d ai
-```
-
-Laya è un modello decisionale distinto da Jev, non una sua riproduzione. L'adapter Ollama genera invece giudizi e probabilità dichiarate in JSON: **non equivale a una testa probabilistica non autoregressiva e non è calibrato sul dominio**. Entrambi sono conservativi (`abstain=true`) finché non è qualificata una calibrazione specifica. La verifica documentale dell'API Laya non equivale a un test d'inferenza dei pesi.
-
-## Sviluppo e test
-
-```sh
-python3 -m venv .venv
-.venv/bin/pip install -e './ai-service[test]'
-.venv/bin/pytest ai-service/tests -q
-mvn -f backend/pom.xml test
-npm --prefix frontend ci
-npm --prefix frontend run build
-```
-
-I test Java di integrazione avviano un vero FastAPI dal virtualenv `.venv`, su porta loopback temporanea, e usano H2 in modalità PostgreSQL. Richiedono quindi Python preparato come sopra e il permesso di aprire socket locali. Nessun modello è simulato come inferenza reale. Un test contrattuale Python usa un test double esplicitamente nominato.
-
-```sh
-# Dopo l'avvio Compose, verifica API, persistenza PostgreSQL e import reale.
-python3 scripts/smoke.py
-```
-
-Per sviluppo senza container serve PostgreSQL locale con estensione pgvector e schema `scripts/pgvector.sql`; avviare FastAPI con `cd ai-service && ../.venv/bin/uvicorn app.main:app --host 127.0.0.1`, il backend con `mvn -f backend/pom.xml spring-boot:run` specificando i percorsi assoluti `NORMATIVE_SEED` e `DOCUMENT_STORAGE`, e la UI con `npm --prefix frontend run dev`.
-
-## Valutazione sperimentale
-
-`python3 scripts/evaluate.py heldout.jsonl --fit calibration.jsonl --output evaluation.json` calcola accuratezza, accuratezza selettiva, Brier score, NLL, ECE, falsi positivi e astensione; stima una temperatura su un insieme di calibrazione distinto. I JSONL devono contenere probabilità e label validate da esperti. Non sono inclusi risultati scientifici inventati né un dataset di esperti. Il risultato non viene attivato automaticamente nel serving: richiede binding al digest del modello e alle versioni delle domande, validazione e policy di rischio.
-
-## Stato e limiti
-
-Il percorso eseguibile iniziale comprende due requisiti parziali e quattro controlli. Regole, fatti e reviewer demo non costituiscono validazione giuridica. Le date valgono per i controlli selezionati, non per tutti gli obblighi dei regolamenti. Il CRA include obblighi con scadenze diverse, non implementati qui.
-
-Sono ora importati anche i due PDF integrali italiani forniti dall'utente: Regolamento Macchine (102 pagine, pubblicazione originale del 29 giugno 2023) e CRA (81 pagine, pubblicazione originale del 20 novembre 2024). La Wiki consente consultazione per pagina, ricerca testuale locale e download degli originali verificati tramite SHA-256. `scripts/prepare_normative.py` prepara `data/normative/corpus.json` con Poppler; il backend importa il corpus in modo transazionale e idempotente all'avvio. Non sono testi consolidati: rettifiche e modifiche successive richiedono importazione e revisione separate. Il caricamento integrale non genera né approva automaticamente controlli aggiuntivi. Gli embedding del corpus restano da predisporre quando sarà disponibile un modello locale.
-
-Il sistema conserva natura dichiarata/inferita/verificata/ritirata e uno snapshot per assessment. Il test verificato rappresenta l'attestazione umana del protocollo, non una prova tecnica eseguita dall'app. Non sono implementati scanner PLC, test di penetrazione o certificazione automatica.
-
-Gli adapter Qwen3, Qwen3-VL, Docling, Laya ed embedding sono implementati ma l'inferenza con i relativi pesi non è stata eseguita nell'ambiente di sviluppo. Il dettaglio delle verifiche reali è in [docs/TESTING.md](docs/TESTING.md).
-
-Implementati: utenti individuali con ruoli, firma con conferma della password, rapporto archiviato con impronta, audit con autore, backup verificati. Restano consigliati per installazioni multi-sede o esposte in rete: HTTPS con reverse proxy e autenticazione aziendale (SSO), cifratura dei volumi a riposo, registro di audit su supporto WORM, firma elettronica qualificata se richiesta contrattualmente, job asincroni per documenti molto grandi.
-
-Passi successivi: corpus normativo completo revisionato, citazioni per pagina/bounding box, scope giuridico articolato, versioni/configurazioni macchina e scadenza evidenze, calibrazione su esperti, training Laya, workflow di approvazione e test tecnici integrati.
+La precedente versione server (Docker, PostgreSQL, utenti e ruoli) è descritta in [`docs/SERVER.md`](docs/SERVER.md).

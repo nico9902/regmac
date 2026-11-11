@@ -1,6 +1,6 @@
 # Costruisce gli installatori di RegMac Desktop per macOS, Windows e Linux.
 # Si avvia a mano (Actions → "RegMac Desktop" → Run workflow) o pubblicando un tag "v*" (es. v1.0.1):
-# con un tag gli installatori vengono allegati a una Release di GitHub.
+# con un tag gli installatori vengono pubblicati in una Release di GitHub (i pulsanti del README puntano all'ultima).
 name: RegMac Desktop
 
 on:
@@ -82,7 +82,8 @@ jobs:
       - uses: softprops/action-gh-release@v2
         with:
           files: dist/*
-          draft: true
+          draft: false
+          make_latest: true
           body: |
             Installatori di RegMac Desktop (pre-assessment di macchine con AI locale).
             - macOS (Apple Silicon): file .dmg
