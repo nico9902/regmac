@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -19,7 +22,11 @@ import java.util.concurrent.ConcurrentHashMap;
 /** Client dell'AI locale: verifica, avvio, download dei modelli, chat con output JSON vincolato ed embedding. */
 @Component
 public class Ollama {
-  public static final String BASE = System.getProperty("regmac.ollama", "http://127.0.0.1:11434");
+  /**
+   * RegMac usa sempre un proprio Ollama, su una porta dedicata e con i modelli nella propria cartella dati:
+   * così alla disinstallazione si possono eliminare senza toccare un Ollama già presente sul computer.
+   */
+  public static final String BASE = System.getProperty("regmac.ollama", "http://127.0.0.1:11435");
   /** Modelli necessari: decisioni (chat) e indice semantico (embedding). */
   public static final String CHAT = "qwen3:8b", EMBED = "nomic-embed-text";
   public static final List<Model> REQUIRED = List.of(
@@ -67,17 +74,65 @@ public class Ollama {
     return c.stream().filter(p -> new File(p).canExecute()).findFirst();
   }
 
-  /** Avvia "ollama serve" se installato ma non in esecuzione, con 4 richieste in parallelo. */
+  /** Archivio dei modelli di RegMac (dentro la cartella dati). */
+  public static Path modelsDir() { return OllamaInstaller.home().resolve("modelli"); }
+
+  /** Archivio comune di un Ollama già installato (variabile OLLAMA_MODELS oppure ~/.ollama/models). */
+  static Path sharedModelsDir() {
+    String env = System.getenv("OLLAMA_MODELS");
+    return env != null && !env.isBlank() ? Path.of(env) : Path.of(System.getProperty("user.home"), ".ollama", "models");
+  }
+
+  /**
+   * Se i modelli necessari sono già nell'archivio comune, li collega in quello di RegMac (collegamenti fisici:
+   * nessuno spazio in più e, eliminando la copia di RegMac, l'originale resta). Se il collegamento non è possibile
+   * (dischi diversi) li copia.
+   */
+  void importShared() {
+    Path from = sharedModelsDir(), to = modelsDir();
+    if (!Files.isDirectory(from) || from.toAbsolutePath().normalize().equals(to.toAbsolutePath().normalize())) return;
+    for (var m : REQUIRED) {
+      String[] nt = m.name().split(":");
+      String name = nt[0], tag = nt.length > 1 ? nt[1] : "latest";
+      Path rel = Path.of("manifests", "registry.ollama.ai", "library", name, tag), src = from.resolve(rel), dst = to.resolve(rel);
+      if (!Files.isRegularFile(src) || Files.exists(dst)) continue;
+      try {
+        JsonNode man = json.readTree(src.toFile());
+        List<String> digests = new ArrayList<>();
+        digests.add(man.path("config").path("digest").asText());
+        for (JsonNode l : man.path("layers")) digests.add(l.path("digest").asText());
+        for (String d : digests) {
+          if (d.isBlank()) continue;
+          Path b = from.resolve("blobs").resolve(d.replace(':', '-')), t = to.resolve("blobs").resolve(d.replace(':', '-'));
+          if (!Files.isRegularFile(b)) throw new IOException("blob mancante " + d);
+          if (Files.exists(t)) continue;
+          Files.createDirectories(t.getParent());
+          try { Files.createLink(t, b); } catch (Exception e) { Files.copy(b, t); }
+        }
+        Files.createDirectories(dst.getParent());
+        Files.copy(src, dst);
+      } catch (Exception ignored) { /* se qualcosa manca il modello verrà scaricato */ }
+    }
+  }
+
+  /** Avvio automatico all'apertura di RegMac, se Ollama è disponibile. */
+  @org.springframework.context.event.EventListener(org.springframework.boot.context.event.ApplicationReadyEvent.class)
+  public void autoStart() { if (binary().isPresent()) Thread.ofVirtual().start(this::start); }
+
+  /** Avvia il proprio "ollama serve" (porta dedicata, modelli nella cartella di RegMac, 4 richieste in parallelo). */
   public synchronized boolean start() {
     if (version().isPresent()) return true;
     var bin = binary();
     if (bin.isEmpty()) return false;
     try {
+      Files.createDirectories(modelsDir());
+      importShared();
       ProcessBuilder pb = new ProcessBuilder(bin.get(), "serve").redirectErrorStream(true)
           .redirectOutput(Paths.dataDir().resolve("logs/ollama.log").toFile());
       Paths.dataDir().resolve("logs").toFile().mkdirs();
       pb.environment().put("OLLAMA_NUM_PARALLEL", "4");
       pb.environment().put("OLLAMA_HOST", URI.create(BASE).getHost() + ":" + URI.create(BASE).getPort());
+      pb.environment().put("OLLAMA_MODELS", modelsDir().toString());
       started = pb.start();
       Runtime.getRuntime().addShutdownHook(new Thread(() -> { if (started != null) started.destroy(); }));
       for (int i = 0; i < 40; i++) { Thread.sleep(250); if (version().isPresent()) return true; }
@@ -86,6 +141,28 @@ public class Ollama {
   }
 
   public boolean startedByUs() { return started != null && started.isAlive(); }
+
+  /** Ferma il proprio Ollama ed elimina modelli e Ollama scaricati da RegMac; restituisce i byte liberati. */
+  public synchronized long deleteAll() throws Exception {
+    if (started != null) { started.destroy(); started.waitFor(10, java.util.concurrent.TimeUnit.SECONDS); if (started.isAlive()) started.destroyForcibly(); started = null; }
+    pulls.clear();
+    long size = sizeOf(OllamaInstaller.home());
+    OllamaInstaller.deleteTree(OllamaInstaller.home());
+    return size;
+  }
+
+  /**
+   * Spazio occupato davvero da Ollama e modelli di RegMac: i file collegati a un archivio comune
+   * (collegamenti fisici, più di un nome) non contano, perché eliminandoli lo spazio non si libera.
+   */
+  public static long sizeOf(Path dir) {
+    if (!Files.exists(dir)) return 0;
+    try (var w = Files.walk(dir)) { return w.filter(Files::isRegularFile).filter(p -> links(p) <= 1).mapToLong(p -> p.toFile().length()).sum(); } catch (IOException e) { return 0; }
+  }
+
+  static int links(Path p) {
+    try { return ((Number) Files.getAttribute(p, "unix:nlink")).intValue(); } catch (Exception e) { return 1; } // Windows: non disponibile
+  }
 
   public Map<String, Pull> pulls() { return pulls; }
 

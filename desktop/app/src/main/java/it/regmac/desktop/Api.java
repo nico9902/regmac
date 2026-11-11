@@ -46,12 +46,14 @@ public class Api {
     out.put("ollamaInstall", installer.progress());
     out.put("ollamaAsset", OllamaInstaller.asset().orElse(null));
     out.put("ollamaOwn", OllamaInstaller.installedBinary().isPresent());
+    out.put("aiBytes", Ollama.sizeOf(OllamaInstaller.home()));
+    out.put("aiDir", OllamaInstaller.home().toString());
     out.put("ready", ready);
     out.put("memoryGb", Math.round(((com.sun.management.OperatingSystemMXBean) java.lang.management.ManagementFactory.getOperatingSystemMXBean()).getTotalMemorySize() / 1073741824.0));
     out.put("dataDir", Paths.dataDir().toString());
     out.put("os", System.getProperty("os.name"));
     out.put("schede", catalog.schedeVersion());
-    out.put("version", "1.1.2");
+    out.put("version", "1.2.0");
     return out;
   }
 
@@ -82,7 +84,14 @@ public class Api {
     return status();
   }
 
-  @PostMapping("/setup/pull")
+  /** Elimina modelli AI e Ollama scaricati da RegMac (es. prima di cestinare l'app su macOS). */
+  @PostMapping("/setup/delete-ai")
+  public Map<String, Object> deleteAi() throws Exception {
+    if (engine.busy()) throw new IllegalStateException("C'è una pre-valutazione in corso: interrompila prima di eliminare i modelli");
+    return Map.of("freedBytes", ai.deleteAll());
+  }
+
+    @PostMapping("/setup/pull")
   public Map<String, Object> pull() {
     if (ai.version().isEmpty() && !ai.start()) throw new IllegalStateException("Ollama non è in esecuzione");
     Set<String> inst = ai.installed();

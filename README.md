@@ -70,7 +70,7 @@
    - i modelli `qwen3:8b` (5,2 GB) e `nomic-embed-text` (274 MB).
 3. Al termine si entra nell'app. I download avvengono una volta sola: dopo, RegMac funziona anche senza internet.
 
-Se Ollama è già installato, RegMac usa quello.
+Se Ollama è già installato, RegMac ne usa il programma e **collega** i modelli che ci sono già (nessun nuovo download, nessuno spazio in più), senza toccarne l'archivio.
 
 Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostra un avviso:
 
@@ -81,6 +81,16 @@ Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostr
 | **Linux** (Ubuntu 22.04+, Debian 12+) | `sudo apt install ./RegMac-Linux-x64.deb`, poi apri RegMac dal menu delle applicazioni |
 
 **Requisiti:** 16 GB di RAM consigliati, circa 8 GB liberi su disco, connessione a internet solo al primo avvio. Con una scheda grafica o un Mac Apple Silicon l'analisi è molto più veloce.
+
+## Disinstallazione
+
+Tutto ciò che RegMac scarica (Ollama e modelli AI) sta nella sua cartella dati, separato da un eventuale Ollama già presente.
+
+| Sistema | Come |
+|---|---|
+| **Windows** | Impostazioni → App → RegMac → **Disinstalla**: elimina anche Ollama e i modelli. Spunta «Elimina i dati dell'applicazione» per eliminare anche i fascicoli |
+| **macOS** | in RegMac: Impostazioni → **Elimina i modelli AI**, poi trascina RegMac nel Cestino. I fascicoli restano in `~/Library/Application Support/RegMac` |
+| **Linux** | `sudo apt remove reg-mac` elimina anche Ollama e i modelli; `sudo apt purge reg-mac` anche i fascicoli |
 
 ## Cosa fa
 

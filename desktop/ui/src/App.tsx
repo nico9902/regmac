@@ -16,6 +16,7 @@ export default function App() {
   const [error, setError] = useState('');
   const [view, setView] = useState<View>({tab: 'fascicoli'});
   const [toast, setToast] = useState<{msg: string; action?: {label: string; run: () => void}} | null>(null);
+  const [deletedAi, setDeletedAi] = useState<number | null>(null);
 
   const load = useCallback(() => api.status().then(s => { setStatus(s); setError(''); }).catch(e => setError(String(e.message || e))), []);
   useEffect(() => { void load(); }, [load]);
@@ -24,6 +25,10 @@ export default function App() {
 
   if (error && !status) return <div className="setup"><h1>RegMac</h1><div className="err" style={{marginTop: 16}}>{error}</div><button className="btn" style={{marginTop: 12}} onClick={load}>Riprova</button></div>;
   if (!status) return <div className="empty">Avvio…</div>;
+  if (deletedAi !== null) return <div className="setup" style={{textAlign: 'center', paddingTop: 80}}><img src="/logo.png" alt="" style={{width: 64, borderRadius: 14}}/>
+    <h1 style={{marginTop: 14}}>Modelli AI eliminati</h1><p className="mute" style={{marginTop: 8}}>Liberati {(deletedAi / 1e9).toFixed(1).replace('.', ',')} GB. Ora puoi chiudere RegMac e, se vuoi disinstallarlo, trascinarlo nel Cestino.</p>
+    <p className="tiny mute" style={{marginTop: 6}}>I fascicoli sono ancora nella cartella dati: <code className="path">{status.dataDir}</code></p>
+    <button className="btn" style={{marginTop: 18}} onClick={() => { setDeletedAi(null); void load(); }}>Ho cambiato idea: riscarica i modelli</button></div>;
   if (!status.profile || !status.ready) return <Setup status={status} reload={load}/>;
 
   const initials = status.profile.name.split(/\s+/).map(x => x[0]).join('').slice(0, 2).toUpperCase();
@@ -41,7 +46,7 @@ export default function App() {
       {view.tab === 'fascicoli' && !view.id && <Dossiers open={(id, sub) => setView({tab: 'fascicoli', id, sub})} toast={show}/>}
       {view.tab === 'fascicoli' && view.id && <Dossier id={view.id} initialTab={view.sub} back={() => setView({tab: 'fascicoli'})} toast={show}/>}
       {view.tab === 'normativa' && <Normativa/>}
-      {view.tab === 'impostazioni' && <Settings status={status} reload={load} toast={show}/>}
+      {view.tab === 'impostazioni' && <Settings status={status} reload={load} toast={show} onDeletedAi={b => setDeletedAi(b)}/>}
     </div>
     {toast && <div className="toast" role="status">{toast.msg}{toast.action && <button className="undo" onClick={() => { toast.action!.run(); setToast(null); }}>{toast.action.label}</button>}</div>}
   </div>;
