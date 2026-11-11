@@ -10,10 +10,10 @@ Applicazione desktop per il **pre-assessment** di macchine rispetto al Regolamen
 
 Al primo avvio:
 - **profilo**: nome e organizzazione per l'intestazione dei report;
-- **controllo dell'AI**:
-  - se Ollama è installato ma spento, RegMac lo avvia;
-  - se manca, indica dove scaricarlo (ollama.com/download);
-  - se mancano i modelli `qwen3:8b` (5,2 GB) e `nomic-embed-text` (274 MB), li scarica mostrando l'avanzamento.
+- **preparazione automatica dell'AI**, senza clic:
+  - se Ollama è installato, RegMac lo usa (e lo avvia se è spento);
+  - se manca, lo scarica dalle release ufficiali (`OllamaInstaller`), verifica l'impronta SHA-256, lo estrae nella cartella dati e lo avvia con 4 richieste in parallelo; lo spegne alla chiusura;
+  - scarica i modelli mancanti `qwen3:8b` (5,2 GB) e `nomic-embed-text` (274 MB), mostrando l'avanzamento.
 
 Requisiti consigliati: 16 GB di RAM, circa 7 GB liberi su disco per i modelli.
 

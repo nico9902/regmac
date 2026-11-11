@@ -48,7 +48,7 @@
     <img src="assets/readme/download-linux-light.svg" alt="Scarica per Linux (AppImage)" height="56">
   </picture></a>
   <br>
-  <sub>Richiede <a href="https://ollama.com/download">Ollama</a> · circa 5,5 GB di modelli scaricati al primo avvio · nulla esce dal computer</sub>
+  <sub>Al primo avvio scarica da solo l'AI locale (Ollama e modelli, circa 6–7 GB) · nulla esce dal computer</sub>
   <br>
   <sub>Altri formati: <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Windows-x64.msi">Windows .msi</a> · <a href="https://github.com/nico9902/regmac/releases/latest/download/RegMac-Linux-x64.deb">Linux .deb</a> · <a href="https://github.com/nico9902/regmac/releases">tutte le versioni</a></sub>
 </p>
@@ -64,11 +64,13 @@
 
 ## Installazione
 
-1. **Installa Ollama** da [ollama.com/download](https://ollama.com/download): è il motore che fa girare l'AI sul tuo computer.
-2. **Scarica RegMac** per il tuo sistema con i pulsanti qui sopra e installalo.
-3. **Primo avvio**: RegMac chiede nome e organizzazione per l'intestazione dei report. Poi controlla Ollama e scarica i modelli che mancano, mostrando l'avanzamento:
-   - `qwen3:8b`, 5,2 GB;
-   - `nomic-embed-text`, 274 MB.
+1. **Scarica RegMac** per il tuo sistema con i pulsanti qui sopra e installalo. Non serve installare altro.
+2. **Primo avvio**: RegMac chiede nome e organizzazione per l'intestazione dei report. Poi **prepara da solo l'AI locale**, mostrando l'avanzamento:
+   - **Ollama**, il motore dell'AI, se non è già sul computer: viene scaricato dalle release ufficiali, verificato con l'impronta SHA-256 pubblicata e tenuto nella cartella di RegMac, senza permessi di amministratore. Pesa 177 MB su macOS, circa 1,5 GB su Windows e Linux (include le librerie per le schede grafiche);
+   - i modelli `qwen3:8b` (5,2 GB) e `nomic-embed-text` (274 MB).
+3. Al termine si entra nell'app. I download avvengono una volta sola: dopo, RegMac funziona anche senza internet.
+
+Se Ollama è già installato, RegMac usa quello.
 
 Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostra un avviso:
 
@@ -78,7 +80,7 @@ Gli installatori non sono ancora firmati, quindi al primo avvio il sistema mostr
 | **Windows** | se compare «Windows ha protetto il PC»: **Ulteriori informazioni** → **Esegui comunque** |
 | **Linux** | AppImage: `chmod +x RegMac-Linux-x64.AppImage` e avvialo. Debian/Ubuntu: `sudo apt install ./RegMac-Linux-x64.deb` |
 
-**Requisiti:** 16 GB di RAM consigliati, circa 7 GB liberi su disco. Con una scheda grafica o un Mac Apple Silicon l'analisi è molto più veloce.
+**Requisiti:** 16 GB di RAM consigliati, circa 8 GB liberi su disco, connessione a internet solo al primo avvio. Con una scheda grafica o un Mac Apple Silicon l'analisi è molto più veloce.
 
 ## Cosa fa
 

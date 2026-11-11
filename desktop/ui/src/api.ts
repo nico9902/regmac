@@ -5,6 +5,7 @@ export type ModelRow = {name: string; role: string; approxBytes: number; install
 export type Status = {
   profile: Profile | null; ready: boolean; memoryGb: number; dataDir: string; os: string; schede: string; version: string;
   ollama: {running: boolean; version: string; installed: boolean; startedByApp: boolean}; models: ModelRow[];
+  ollamaInstall: {status: string; total: number; completed: number; error: string | null; done: boolean} | null; ollamaAsset: string | null; ollamaOwn: boolean;
 };
 export type Answer = {tag: string; verdict: 'TRUE' | 'FALSE' | 'UNKNOWN'; quote: string; doc: string | null; page: number | null; value: boolean};
 export type Run = {state: 'idle' | 'queued' | 'indexing' | 'running' | 'done' | 'stopped' | 'interrupted' | 'error'; done: number; total: number;
@@ -45,6 +46,7 @@ export const api = {
   saveProfile: (p: Profile) => req<Profile>('/setup/profile', json('POST', p)),
   startOllama: () => req<{running: boolean}>('/setup/start-ollama', json('POST')),
   pull: () => req<Status>('/setup/pull', json('POST')),
+  auto: () => req<Status>('/setup/auto', json('POST')),
   catalog: () => req<CatalogData>('/catalog'),
   list: () => req<DossierRow[]>('/fascicoli'),
   create: (d: Partial<Fascicolo>) => req<Fascicolo>('/fascicoli', json('POST', d)),

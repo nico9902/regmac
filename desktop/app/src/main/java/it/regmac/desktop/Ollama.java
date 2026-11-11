@@ -55,6 +55,9 @@ public class Ollama {
 
   /** Percorsi tipici dell'eseguibile di Ollama sui tre sistemi. */
   public Optional<String> binary() {
+    var own = OllamaInstaller.installedBinary(); // scaricato da RegMac: ha la precedenza
+    if (own.isPresent()) return Optional.of(own.get().toString());
+    if (Boolean.getBoolean("regmac.ignoreSystemOllama")) return Optional.empty(); // solo per i test
     String home = System.getProperty("user.home"), local = System.getenv("LOCALAPPDATA");
     List<String> c = new ArrayList<>(List.of("/opt/homebrew/bin/ollama", "/usr/local/bin/ollama", "/usr/bin/ollama",
         "/Applications/Ollama.app/Contents/Resources/ollama", home + "/.local/bin/ollama"));
@@ -74,7 +77,7 @@ public class Ollama {
           .redirectOutput(Paths.dataDir().resolve("logs/ollama.log").toFile());
       Paths.dataDir().resolve("logs").toFile().mkdirs();
       pb.environment().put("OLLAMA_NUM_PARALLEL", "4");
-      pb.environment().put("OLLAMA_HOST", "127.0.0.1:11434");
+      pb.environment().put("OLLAMA_HOST", URI.create(BASE).getHost() + ":" + URI.create(BASE).getPort());
       started = pb.start();
       Runtime.getRuntime().addShutdownHook(new Thread(() -> { if (started != null) started.destroy(); }));
       for (int i = 0; i < 40; i++) { Thread.sleep(250); if (version().isPresent()) return true; }

@@ -19,9 +19,10 @@ public class Api {
   private final Engine engine;
   private final Views views;
   private final ReportPdf pdf;
+  private final OllamaInstaller installer;
 
-  public Api(Store store, Catalog catalog, Ollama ai, Engine engine, Views views, ReportPdf pdf) {
-    this.store = store; this.catalog = catalog; this.ai = ai; this.engine = engine; this.views = views; this.pdf = pdf;
+  public Api(Store store, Catalog catalog, Ollama ai, Engine engine, Views views, ReportPdf pdf, OllamaInstaller installer) {
+    this.store = store; this.catalog = catalog; this.ai = ai; this.engine = engine; this.views = views; this.pdf = pdf; this.installer = installer;
   }
 
   // ---------- avvio: profilo e AI locale ----------
@@ -42,12 +43,15 @@ public class Api {
     out.put("profile", store.profile().orElse(null));
     out.put("ollama", Map.of("running", version.isPresent(), "version", version.orElse(""), "installed", version.isPresent() || ai.binary().isPresent(), "startedByApp", ai.startedByUs()));
     out.put("models", models);
+    out.put("ollamaInstall", installer.progress());
+    out.put("ollamaAsset", OllamaInstaller.asset().orElse(null));
+    out.put("ollamaOwn", OllamaInstaller.installedBinary().isPresent());
     out.put("ready", ready);
     out.put("memoryGb", Math.round(((com.sun.management.OperatingSystemMXBean) java.lang.management.ManagementFactory.getOperatingSystemMXBean()).getTotalMemorySize() / 1073741824.0));
     out.put("dataDir", Paths.dataDir().toString());
     out.put("os", System.getProperty("os.name"));
     out.put("schede", catalog.schedeVersion());
-    out.put("version", "1.0.0");
+    out.put("version", "1.1.0");
     return out;
   }
 
@@ -61,6 +65,22 @@ public class Api {
 
   @PostMapping("/setup/start-ollama")
   public Map<String, Object> startOllama() { return Map.of("running", ai.start()); }
+
+  /**
+   * Preparazione automatica dell'AI: avvia Ollama se c'è; altrimenti lo scarica (verificato) e lo avvia;
+   * poi scarica i modelli che mancano. Si può chiamare più volte: fa solo ciò che manca.
+   */
+  @PostMapping("/setup/auto")
+  public Map<String, Object> auto() {
+    Runnable models = () -> {
+      if (!ai.start()) return;
+      Set<String> inst = ai.installed();
+      for (var m : Ollama.REQUIRED) if (!inst.contains(m.name())) ai.pull(m.name());
+    };
+    if (ai.version().isPresent() || ai.binary().isPresent()) Thread.ofVirtual().start(models);
+    else if (!installer.running()) installer.install(models);
+    return status();
+  }
 
   @PostMapping("/setup/pull")
   public Map<String, Object> pull() {

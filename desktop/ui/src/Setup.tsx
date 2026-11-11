@@ -1,37 +1,44 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {AlertTriangle, Check, ChevronRight, Download, ExternalLink, Loader2} from 'lucide-react';
 import {api, gb, Status} from './api';
 
-/** Primo avvio: profilo del valutatore, poi controllo di Ollama e dei modelli con download e avanzamento. */
+/**
+ * Primo avvio: profilo del valutatore, poi preparazione automatica dell'AI.
+ * Se Ollama manca RegMac lo scarica (pacchetto ufficiale verificato), lo avvia e scarica i modelli: nessun clic.
+ */
 export default function Setup({status, reload}: {status: Status; reload: () => Promise<void>}) {
   const [step, setStep] = useState(status.profile ? 1 : 0);
   const [name, setName] = useState(status.profile?.name || '');
   const [org, setOrg] = useState(status.profile?.organization || '');
   const [error, setError] = useState('');
-  const [busy, setBusy] = useState(false);
+  const started = useRef(false);
+  const inst = status.ollamaInstall;
+  const installing = !!inst && !inst.done;
   const pulling = status.models.some(m => m.pull && !m.pull.done);
+  const failed = (inst?.error ? inst.error : null) || status.models.find(m => m.pull?.error)?.pull?.error || null;
 
-  // durante il download aggiorna lo stato ogni secondo
+  // avvio automatico della preparazione, una volta per sessione (e di nuovo con «Riprova»)
+  const prepare = () => { setError(''); api.auto().then(() => reload()).catch(e => setError((e as Error).message)); };
+  useEffect(() => { if (step === 1 && !status.ready && !started.current) { started.current = true; prepare(); } }, [step, status.ready]); // eslint-disable-line react-hooks/exhaustive-deps
+  // quando Ollama è pronto ma qualche modello manca e nessun download è in corso, riprova da solo
   useEffect(() => {
-    if (step !== 1) return;
-    const t = window.setInterval(() => { void reload(); }, pulling || !status.ollama.running ? 1000 : 4000);
-    return () => window.clearInterval(t);
-  }, [step, pulling, status.ollama.running, reload]);
-
-  // se Ollama è installato ma spento, prova ad avviarlo
-  useEffect(() => {
-    if (step === 1 && !status.ollama.running && status.ollama.installed && !busy) {
-      setBusy(true); api.startOllama().finally(() => { setBusy(false); void reload(); });
+    if (step === 1 && status.ollama.running && !pulling && !installing && !failed && status.models.some(m => !m.installed)) {
+      const t = window.setTimeout(prepare, 1500); return () => window.clearTimeout(t);
     }
-  }, [step, status.ollama.running, status.ollama.installed]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [step, status.ollama.running, pulling, installing, failed]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (step !== 1 || status.ready) return;
+    const t = window.setInterval(() => { void reload(); }, 1000);
+    return () => window.clearInterval(t);
+  }, [step, status.ready, reload]);
 
   async function saveProfile(e: React.FormEvent) {
     e.preventDefault(); setError('');
     try { await api.saveProfile({name, organization: org}); await reload(); setStep(1); } catch (err) { setError((err as Error).message); }
   }
-  async function download() { setError(''); try { await api.pull(); await reload(); } catch (err) { setError((err as Error).message); } }
 
-  const missing = status.models.filter(m => !m.installed);
+  const ollamaFrac = inst && inst.total ? inst.completed / inst.total : 0;
+  const totalLeft = status.models.filter(m => !m.installed).reduce((a, m) => a + m.approxBytes, 0);
   const left = <div className="l">
     <div className="logo" style={{color: '#fff'}}><img src="/logo.png" alt=""/>RegMac</div>
     <h1 style={{fontSize: 30, lineHeight: 1.2, color: '#fff', marginTop: 30}}>Pre-assessment di macchine con l'AI, sul tuo computer.</h1>
@@ -49,42 +56,43 @@ export default function Setup({status, reload}: {status: Status; reload: () => P
       {error && <div className="err">{error}</div>}
       <div className="row" style={{marginTop: 8}}><button className="btn pri">Avanti <ChevronRight size={15}/></button></div>
     </form> : <div className="r">
-      <span className="eyebrow">Primo avvio · 2 di 2</span><h1>Controllo dell'AI locale</h1>
-      <p className="mute">RegMac funziona solo con l'AI locale: Ollama e due modelli. Il controllo si ripete a ogni avvio.</p>
+      <span className="eyebrow">Primo avvio · 2 di 2</span><h1>Preparazione dell'AI locale</h1>
+      <p className="mute">RegMac scarica e avvia da solo quello che serve: il motore Ollama e due modelli. Succede una volta sola; poi tutto funziona anche senza internet.</p>
       <div className="card" style={{padding: '4px 14px'}}>
-        <Row ok={status.ollama.running} title={status.ollama.running ? `Ollama ${status.ollama.version}` : 'Ollama'}
-             sub={status.ollama.running ? 'in esecuzione su questo computer' : status.ollama.installed ? 'avvio in corso…' : 'non installato'}/>
+        <div className="block">
+          <Icon ok={status.ollama.running} busy={installing || (!status.ollama.running && !failed)} err={!!inst?.error}/>
+          <div className="grow"><b>Ollama{status.ollama.version ? ' ' + status.ollama.version : ''}</b> <span className="tiny mute">· motore dell'AI{status.ollamaAsset?.startsWith('ollama-darwin') ? ' · 177 MB' : status.ollamaAsset ? ' · circa 1,5 GB' : ''}</span>
+            <div className="tiny mute">{status.ollama.running ? (status.ollamaOwn ? 'scaricato da RegMac, in esecuzione' : 'in esecuzione su questo computer') : installing ? inst!.status : inst?.error ? 'non installato' : 'avvio…'}</div>
+            {installing && inst!.total > 0 && <><div className="dl"><i style={{width: (ollamaFrac * 100).toFixed(1) + '%'}}/></div>
+              <div className="tiny mute">{gb(inst!.completed)} di {gb(inst!.total)} · {Math.round(ollamaFrac * 100)}%</div></>}
+          </div>
+        </div>
         {status.models.map(m => {
           const p = m.pull, frac = p && p.total ? p.completed / p.total : 0;
           return <div className="block" key={m.name}>
-            <span style={{color: m.installed ? 'var(--ok)' : p?.error ? 'var(--nc)' : 'var(--mute)', display: 'flex'}}>{m.installed ? <Check size={16}/> : p && !p.done ? <Loader2 size={16} className="spinning"/> : p?.error ? <AlertTriangle size={16}/> : <Download size={16}/>}</span>
+            <Icon ok={m.installed} busy={!!p && !p.done} err={!!p?.error} wait={!m.installed && !p}/>
             <div className="grow"><b>{m.name}</b> <span className="tiny mute">· {gb(m.approxBytes)}</span><div className="tiny mute">{m.role}</div>
               {!m.installed && p && !p.done && <><div className="dl"><i style={{width: (frac * 100).toFixed(1) + '%'}}/></div><div className="tiny mute">{p.total ? `${gb(p.completed)} di ${gb(p.total)} · ${Math.round(frac * 100)}%` : p.status}</div></>}
-              {p?.error && <div className="tiny" style={{color: 'var(--nc)'}}>{p.error}</div>}
             </div>
-            <span className="tiny mute">{m.installed ? 'installato' : p && !p.done ? 'download…' : 'mancante'}</span>
+            <span className="tiny mute">{m.installed ? 'pronto' : p && !p.done ? 'download…' : 'in attesa'}</span>
           </div>;
         })}
-        <Row ok={status.memoryGb >= 16} warn title={`Memoria ${status.memoryGb} GB`} sub={status.memoryGb >= 16 ? 'sufficiente (minimo 16 GB)' : 'sotto i 16 GB consigliati: l\'analisi sarà lenta'}/>
+        <div className="block"><Icon ok={status.memoryGb >= 16} warnOnly/><div className="grow"><b>Memoria {status.memoryGb} GB</b>
+          <div className="tiny mute">{status.memoryGb >= 16 ? 'sufficiente (minimo consigliato 16 GB)' : 'sotto i 16 GB consigliati: l\'analisi sarà lenta'}</div></div></div>
       </div>
-      {!status.ollama.installed && <div className="card" style={{background: 'var(--partbg)', borderColor: 'transparent'}}>
-        <b>Installa Ollama per continuare</b>
-        <p className="small" style={{marginTop: 6}}>Scaricalo da <b>ollama.com/download</b> e installalo come una normale applicazione. Poi torna qui: RegMac lo rileva da solo.</p>
-        <div className="row" style={{marginTop: 10}}><button className="btn" onClick={() => void api.openUrl('https://ollama.com/download')}><ExternalLink size={14}/>Apri ollama.com/download</button><button className="btn" onClick={() => void reload()}>Riprova</button></div>
-      </div>}
-      {status.ollama.running && missing.length > 0 && !pulling && <div className="card row" style={{background: 'var(--brand3)'}}>
-        <div className="grow"><b>Mancano {missing.length === 1 ? 'un modello' : missing.length + ' modelli'}</b><div className="tiny mute">Download di circa {gb(missing.reduce((a, m) => a + m.approxBytes, 0))}, una volta sola. Puoi continuare a usare il computer.</div></div>
-        <button className="btn pri" onClick={download}><Download size={14}/>Scarica</button>
-      </div>}
-      {error && <div className="err">{error}</div>}
-      <div className="row">{!status.profile && <button className="btn" onClick={() => setStep(0)}>Indietro</button>}
-        <span className="grow tiny mute">{status.ready ? 'Tutto pronto.' : pulling ? 'Download in corso: non chiudere RegMac.' : ''}</span>
-        <button className="btn pri" disabled={!status.ready} onClick={() => void reload()}>Inizia <ChevronRight size={15}/></button></div>
+      {!status.ready && !failed && <p className="tiny mute">{totalLeft > 0 ? `Da scaricare in tutto circa ${gb(totalLeft + (status.ollama.running ? 0 : status.ollamaAsset?.startsWith('ollama-darwin') ? 177e6 : 1.5e9))}. ` : ''}Puoi lasciare RegMac aperto e usare il computer: al termine si entra da soli.</p>}
+      {(failed || error) && <div className="card" style={{background: 'var(--ncbg)', borderColor: 'transparent'}}>
+        <b style={{color: 'var(--nc)'}}>Qualcosa non è andato</b><p className="small" style={{marginTop: 6}}>{failed || error}</p>
+        <p className="tiny mute" style={{marginTop: 6}}>Controlla la connessione a internet e riprova. In alternativa installa Ollama a mano: RegMac lo rileva da solo.</p>
+        <div className="row" style={{marginTop: 10}}><button className="btn pri" onClick={() => { prepare(); }}>Riprova</button>
+          <button className="btn" onClick={() => void api.openUrl('https://ollama.com/download')}><ExternalLink size={14}/>ollama.com/download</button></div></div>}
+      <div className="row">{!status.profile && <button className="btn" onClick={() => setStep(0)}>Indietro</button>}<span className="grow"/>
+        <button className="btn pri" disabled={!status.ready} onClick={() => void reload()}>{status.ready ? 'Inizia' : 'Preparazione…'} <ChevronRight size={15}/></button></div>
     </div>}
   </div>;
 }
 
-function Row({ok, title, sub, warn}: {ok: boolean; title: string; sub: string; warn?: boolean}) {
-  return <div className="block"><span style={{color: ok ? 'var(--ok)' : warn ? 'var(--part)' : 'var(--nc)', display: 'flex'}}>{ok ? <Check size={16}/> : <AlertTriangle size={16}/>}</span>
-    <div className="grow"><b>{title}</b><div className="tiny mute">{sub}</div></div></div>;
+function Icon({ok, busy, err, wait, warnOnly}: {ok: boolean; busy?: boolean; err?: boolean; wait?: boolean; warnOnly?: boolean}) {
+  const color = ok ? 'var(--ok)' : err ? 'var(--nc)' : warnOnly ? 'var(--part)' : 'var(--mute)';
+  return <span style={{color, display: 'flex'}}>{ok ? <Check size={16}/> : err || warnOnly ? <AlertTriangle size={16}/> : busy ? <Loader2 size={16} className="spinning"/> : wait ? <Download size={16}/> : <Loader2 size={16} className="spinning"/>}</span>;
 }
