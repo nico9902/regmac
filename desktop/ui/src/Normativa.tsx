@@ -32,7 +32,7 @@ export default function Normativa() {
       <div className="legal">{r.text}</div>
       <div className="section-t">Scheda di verifica <span className="chip" style={{textTransform: 'none', letterSpacing: 0}}>{r.sheet.status === 'rivista' ? 'rivista' : 'bozza generata, da rivedere'}</span></div>
       <div className="card">{r.sheet.condition && <p className="small"><b>Si applica se:</b> {r.sheet.condition}</p>}
-        <ol className="small" style={{margin: r.sheet.condition ? '10px 0 0' : 0, paddingLeft: 20, lineHeight: 1.7}}>{r.sheet.points.map(p => <li key={p}>{p}</li>)}</ol></div>
+        <ol className="small" style={{margin: r.sheet.condition ? '10px 0 0' : 0, paddingLeft: 20, lineHeight: 1.7}}>{r.sheet.points.map(p => <li key={p.q}>{p.q}{p.doc && <span className="tiny mute"> · cerca in: {p.doc.replace('_', ' ')}{p.quasi === 'integratore' ? ' · quasi-macchina: a carico dell\'integratore' : ''}</span>}</li>)}</ol></div>
       <div className="section-t">Norme di riferimento</div>
       {r.standards.length ? <div className="row wrap">{r.standards.map(s => <span className="chip" key={s}>{s}</span>)}</div> : <p className="small mute">Nessuna norma associata.</p>}
     </div></div>

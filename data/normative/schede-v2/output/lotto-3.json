@@ -1,0 +1,1008 @@
+{
+  "MR-III-1.7.4.2-n": {
+    "condition": "La macchina è dotata di utensili montabili",
+    "points": [
+      {
+        "q": "Le istruzioni indicano gli utensili montabili sulla macchina e le loro caratteristiche essenziali (tipo, dimensioni, velocità o massa ammesse)",
+        "doc": "istruzioni",
+        "ok": "elenco o tabella degli utensili ammessi con dati come diametro, attacco, velocità massima, massa",
+        "no": "generico invito a usare utensili adatti o originali senza caratteristiche",
+        "smentita": "il manuale ammette qualsiasi utensile senza limiti di dimensione o velocità"
+      },
+      {
+        "q": "Le specifiche tecniche riportano i limiti degli utensili montabili (attacco, dimensioni massime, velocità o carico massimi)",
+        "doc": "specifiche",
+        "ok": "valori numerici dei limiti dell'utensile: diametro massimo, attacco, giri o carico massimo",
+        "no": "dati della sola macchina senza riferimento agli utensili"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-o": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano le condizioni di stabilità durante l'uso: superficie di appoggio, inclinazione massima, ancoraggio o fissaggio richiesti",
+        "doc": "istruzioni",
+        "ok": "pendenza o inclinazione massima, requisiti del pavimento, fissaggio con tasselli o zavorra, carichi ammessi",
+        "no": "frase generica 'installare su superficie stabile' senza alcun criterio"
+      },
+      {
+        "q": "Le istruzioni indicano come garantire la stabilità durante trasporto, montaggio, smontaggio o fuori servizio (posizione di trasporto, appoggi, blocchi)",
+        "doc": "istruzioni",
+        "ok": "posizione di trasporto o parcheggio, bloccaggi, puntelli, sequenza di montaggio/smontaggio che preserva la stabilità",
+        "no": "istruzioni di trasporto che non parlano di stabilità o ribaltamento"
+      },
+      {
+        "q": "La valutazione dei rischi esamina il rischio di ribaltamento o perdita di stabilità nelle varie fasi di vita della macchina",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo di ribaltamento o caduta analizzato con misure di riduzione (fissaggio, base, contrappeso)",
+        "no": "elenco di pericoli senza analisi della stabilità"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-p": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano la massa della macchina e, se trasportati separatamente, la massa dei suoi elementi",
+        "doc": "istruzioni",
+        "ok": "massa in kg della macchina e dei singoli elementi o colli da movimentare",
+        "no": "solo dimensioni o volume; massa del solo imballo senza la macchina"
+      },
+      {
+        "q": "Le istruzioni descrivono come trasportare e sollevare la macchina in sicurezza: punti di sollevamento, mezzi da usare, baricentro",
+        "doc": "istruzioni",
+        "ok": "punti di aggancio o imbracatura, mezzi di sollevamento (carrello, gru) e loro portata, posizione del baricentro, bloccaggi per il trasporto",
+        "no": "frase generica 'movimentare con cura' o solo simboli di imballo",
+        "smentita": "il manuale indica di sollevare la macchina da parti non previste come punti di sollevamento (es. dal braccio o dai ripari)"
+      },
+      {
+        "q": "Le istruzioni indicano le condizioni di stoccaggio (ambiente, temperatura, umidità, posizione, protezioni)",
+        "doc": "istruzioni",
+        "ok": "intervallo di temperatura e umidità di stoccaggio, posizione o protezione della macchina immagazzinata",
+        "no": "condizioni ambientali di funzionamento presentate come stoccaggio"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-q": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono cosa fare in caso di avaria o infortunio: arresto della macchina, messa in sicurezza, chi contattare",
+        "doc": "istruzioni",
+        "ok": "procedura passo passo per guasto o incidente (arresto, sezionamento, segnalazione, intervento)",
+        "no": "sola tabella di codici errore senza azioni; avvertenze generiche"
+      },
+      {
+        "q": "Le istruzioni indicano come sbloccare in sicurezza la macchina in caso di blocco o inceppamento (es. movimentazione manuale, rilascio freni)",
+        "doc": "istruzioni",
+        "ok": "metodo di sblocco: rilascio manuale dei freni, movimento a mano, condizioni di sicurezza prima dello sblocco",
+        "no": "rimando all'assistenza senza alcun metodo, quando il blocco è possibile",
+        "smentita": "il manuale prescrive di liberare un inceppamento con la macchina in moto o con le protezioni rimosse"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-r": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni elencano le operazioni di manutenzione a carico dell'utilizzatore con la relativa frequenza o scadenza",
+        "doc": "istruzioni",
+        "ok": "tabella o piano di manutenzione con intervalli (ore, mesi, cicli) e operazioni",
+        "no": "'eseguire regolarmente la manutenzione' senza operazioni né intervalli"
+      },
+      {
+        "q": "Le istruzioni descrivono le regolazioni che l'utilizzatore deve effettuare e come eseguirle",
+        "doc": "istruzioni",
+        "ok": "descrizione di regolazioni (tensionamenti, tarature, parametri) con valori o procedura",
+        "no": "regolazioni riservate al fabbricante senza indicazioni per l'utilizzatore"
+      },
+      {
+        "q": "Le istruzioni distinguono le operazioni affidate all'utilizzatore da quelle riservate al fabbricante o a personale autorizzato",
+        "doc": "istruzioni",
+        "ok": "indicazione esplicita di chi esegue ciascuna operazione (operatore, manutentore, assistenza)",
+        "no": "nessuna attribuzione delle responsabilità"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-s": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni prescrivono come mettere in sicurezza la macchina prima di regolazione e manutenzione (arresto, sezionamento, blocco delle energie)",
+        "doc": "istruzioni",
+        "ok": "sezionamento dell'alimentazione, lucchettaggio, scarico dell'energia residua (pneumatica, idraulica, molle), attesa dell'arresto",
+        "no": "generico 'eseguire a macchina ferma' senza sezionamento",
+        "smentita": "il manuale prevede la manutenzione ordinaria con la macchina alimentata e i ripari aperti senza modalità protetta"
+      },
+      {
+        "q": "Le istruzioni indicano le misure di protezione da adottare durante la manutenzione (dispositivi di protezione individuale, attrezzi, modalità protette)",
+        "doc": "istruzioni",
+        "ok": "DPI richiesti, attrezzi specifici, modalità di manutenzione a velocità ridotta o comando ad azione mantenuta",
+        "no": "avvertenze di sicurezza generali non riferite alla manutenzione"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-t": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni specificano i ricambi che incidono sulla sicurezza (codici, caratteristiche) da utilizzare",
+        "doc": "istruzioni",
+        "ok": "elenco ricambi con codice o caratteristiche per componenti di sicurezza (freni, finecorsa, cinghie, filtri, fusibili)",
+        "no": "solo 'usare ricambi originali' senza specifiche"
+      },
+      {
+        "q": "Un catalogo o elenco ricambi identifica i componenti rilevanti per la sicurezza",
+        "doc": "disegni",
+        "ok": "esploso o distinta ricambi con codici e riferimenti dei componenti di sicurezza",
+        "no": "distinta di produzione senza indicazione dei ricambi"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-u": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano il livello di pressione acustica ponderato A al posto di lavoro (LpA) in dB(A), anche se non supera 70 dB(A)",
+        "doc": "istruzioni",
+        "ok": "valore LpA in dB(A) o dichiarazione 'LpA inferiore a 70 dB(A)' riferita alla postazione di lavoro",
+        "no": "aggettivi come 'silenziosa'; valore in dB senza ponderazione o senza riferimento alla postazione"
+      },
+      {
+        "q": "Se LpA supera 80 dB(A), le istruzioni indicano il livello di potenza acustica ponderato A (LWA)",
+        "doc": "istruzioni",
+        "ok": "valore LWA in dB(A) dichiarato",
+        "no": "solo LpA quando questo supera 80 dB(A)",
+        "smentita": "il manuale dichiara LpA superiore a 80 dB(A) e afferma che la potenza acustica non viene indicata"
+      },
+      {
+        "q": "I valori di rumore dichiarati riportano l'incertezza, le condizioni di funzionamento e il metodo di misura (norma o codice di prova)",
+        "doc": "istruzioni",
+        "ok": "incertezza K in dB, condizioni di funzionamento durante la prova, norma o codice di misura usato",
+        "no": "valore senza incertezza né condizioni"
+      },
+      {
+        "q": "Un rapporto di prova riporta le misure di rumore effettuate sulla macchina o su una macchina comparabile",
+        "doc": "rapporti_prova",
+        "ok": "rapporto con LpA (ed eventualmente LWA, picco ponderato C), punti di misura, strumenti, incertezza",
+        "no": "stima teorica senza misura"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-v": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come soccorrere una persona coinvolta, incluso come liberarla dalla macchina (es. movimentazione manuale, rilascio freni)",
+        "doc": "istruzioni",
+        "ok": "procedura di liberazione di una persona intrappolata, mezzi o dispositivi da usare, precauzioni per i soccorritori",
+        "no": "solo il numero dell'assistenza o generico 'chiamare i soccorsi'"
+      },
+      {
+        "q": "Le istruzioni indicano i dispositivi o mezzi di soccorso necessari o forniti (es. leva di sblocco, attrezzo di rilascio manuale)",
+        "doc": "istruzioni",
+        "ok": "dispositivo nominato con posizione e modo d'uso",
+        "no": "riferimento a dotazioni di primo soccorso generiche dello stabilimento"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-w": {
+    "condition": "La macchina può emettere radiazioni non ionizzanti potenzialmente nocive (campi elettromagnetici, UV, infrarossi, laser)",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono le radiazioni non ionizzanti emesse (tipo, intensità o campo, zone interessate)",
+        "doc": "istruzioni",
+        "ok": "tipo di radiazione, valori o distanze di esposizione, zone di rischio",
+        "no": "sola dichiarazione di conformità alla compatibilità elettromagnetica (EMC)"
+      },
+      {
+        "q": "Le istruzioni avvertono i portatori di dispositivi medici impiantabili (es. pacemaker) e indicano distanze o precauzioni",
+        "doc": "istruzioni",
+        "ok": "avvertenza esplicita per portatori di impianti con distanza minima o divieto di accesso",
+        "no": "avvertenze generiche sui campi elettrici"
+      },
+      {
+        "q": "Un rapporto di prova o calcolo riporta i livelli di radiazione o di campo misurati attorno alla macchina",
+        "doc": "rapporti_prova",
+        "ok": "misure di campo elettromagnetico o radiazione ottica con punti e distanze",
+        "no": "prove EMC di immunità o di emissione condotta"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-x": {
+    "condition": "La macchina può emettere sostanze pericolose (polveri, fumi, vapori, aerosol)",
+    "points": [
+      {
+        "q": "Le istruzioni indicano le caratteristiche del dispositivo di captazione, filtrazione o scarico da collegare se non fornito (portata, depressione, diametro attacco)",
+        "doc": "istruzioni",
+        "ok": "portata d'aria, depressione, velocità, diametro della bocchetta, classe di filtrazione richiesta",
+        "no": "generico 'collegare ad aspirazione adeguata'"
+      },
+      {
+        "q": "Le istruzioni riportano almeno uno tra: portata di emissione, concentrazione attorno alla macchina, efficacia del dispositivo di captazione",
+        "doc": "istruzioni",
+        "ok": "valore numerico di emissione (es. mg/h), concentrazione (mg/m³) o efficienza di captazione (%)",
+        "no": "elenco qualitativo delle sostanze senza valori"
+      },
+      {
+        "q": "Le istruzioni indicano come mantenere nel tempo l'efficacia del dispositivo di captazione o filtrazione (pulizia, sostituzione filtri)",
+        "doc": "istruzioni",
+        "ok": "intervalli di sostituzione o pulizia dei filtri, controlli di efficienza",
+        "no": "manutenzione generale senza riferimento al sistema di captazione"
+      },
+      {
+        "q": "Un rapporto di prova riporta i valori di emissione o concentrazione misurati sulla macchina o su una comparabile",
+        "doc": "rapporti_prova",
+        "ok": "misure di emissione o concentrazione con metodo e condizioni",
+        "no": "schede di sicurezza delle sostanze usate"
+      }
+    ]
+  },
+  "MR-III-1.7.5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le specifiche o brochure riportano gli stessi valori di emissione (rumore, vibrazioni) indicati nelle istruzioni",
+        "doc": "specifiche",
+        "ok": "valori di rumore o vibrazioni nella scheda commerciale identici a quelli delle istruzioni",
+        "no": "scheda commerciale senza dati di emissione pur descrivendo le prestazioni",
+        "smentita": "la brochure dichiara valori di rumore o vibrazione diversi da quelli delle istruzioni"
+      },
+      {
+        "q": "Le specifiche o brochure non contraddicono le istruzioni su limiti d'uso e sicurezza (carichi, velocità, ambienti ammessi)",
+        "doc": "specifiche",
+        "ok": "prestazioni e limiti coerenti con quelli del manuale",
+        "no": "dati commerciali non legati alla sicurezza",
+        "smentita": "la brochure indica un carico, una velocità o un uso non ammessi dalle istruzioni (es. uso senza ripari, carico superiore al massimo)"
+      }
+    ]
+  },
+  "MR-III-2.1.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le specifiche indicano i materiali a contatto con il prodotto e la loro idoneità al contatto alimentare o farmaceutico (es. Reg. 1935/2004)",
+        "doc": "specifiche",
+        "ok": "materiali delle parti a contatto (es. acciaio AISI 316, polimeri idonei) con dichiarazione di idoneità al contatto",
+        "no": "materiali della struttura non a contatto; generico 'materiali idonei'"
+      },
+      {
+        "q": "Disegni o specifiche descrivono superfici a contatto lisce, raccordate e senza interstizi (rugosità, raggi interni, saldature)",
+        "doc": "disegni",
+        "ok": "rugosità Ra, raggi di raccordo degli angoli interni, saldature levigate, assenza di fessure",
+        "no": "affermazioni di 'design igienico' senza dettagli"
+      },
+      {
+        "q": "I disegni o le istruzioni mostrano che liquidi di processo e di lavaggio defluiscono completamente all'esterno (scarichi, pendenze, posizione di pulizia)",
+        "doc": "disegni",
+        "ok": "pendenze, punti di scarico, posizione di pulizia, assenza di ristagni",
+        "no": "scarico del solo circuito di raffreddamento"
+      },
+      {
+        "q": "Le specifiche mostrano che lubrificanti e altri prodotti ausiliari non possono contaminare il prodotto (lubrificanti per uso alimentare, separazione)",
+        "doc": "specifiche",
+        "ok": "lubrificanti idonei al contatto accidentale (es. NSF H1), tenute, separazione fisica tra zona meccanica e zona prodotto",
+        "no": "solo indicazioni di lubrificazione senza tipo di lubrificante",
+        "smentita": "le istruzioni prescrivono un lubrificante non idoneo al contatto alimentare in parti sopra la zona prodotto"
+      }
+    ]
+  },
+  "MR-III-2.1.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano i prodotti raccomandati per pulizia, disinfezione e risciacquo (tipo di detergente o disinfettante, concentrazione)",
+        "doc": "istruzioni",
+        "ok": "detergenti o disinfettanti nominati o per tipo, con concentrazione o temperatura",
+        "no": "generico 'pulire con prodotti adatti'"
+      },
+      {
+        "q": "Le istruzioni descrivono il metodo di pulizia anche per le parti non accessibili o di cui è sconsigliato l'accesso (es. lavaggio in circuito, smontaggio)",
+        "doc": "istruzioni",
+        "ok": "procedura per parti interne: lavaggio CIP, smontaggio previsto, sequenza e frequenza",
+        "no": "pulizia delle sole superfici esterne"
+      }
+    ]
+  },
+  "MR-III-2.2.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono le impugnature e i mezzi di presa e come tenere la macchina in modo stabile durante l'uso",
+        "doc": "istruzioni",
+        "ok": "numero e posizione delle impugnature, impugnatura ausiliaria, superficie di appoggio, modo di presa",
+        "no": "foto della macchina senza indicazioni di presa"
+      },
+      {
+        "q": "Le istruzioni indicano che i comandi di avvio e arresto si azionano senza lasciare le impugnature e che la macchina si ferma al rilascio",
+        "doc": "istruzioni",
+        "ok": "interruttore sull'impugnatura ad azione mantenuta, arresto al rilascio, blocco contro l'avvio involontario",
+        "no": "comando di avvio descritto senza posizione né comportamento al rilascio",
+        "smentita": "la macchina ha un blocco in marcia che la mantiene in funzione dopo il rilascio, senza misure compensative descritte"
+      },
+      {
+        "q": "Le istruzioni indicano il sistema di raccolta o scarico delle emissioni (attacco per aspirazione) quando la macchina produce polveri o fumi",
+        "doc": "istruzioni",
+        "ok": "attacco di aspirazione, sacco di raccolta, diametro di collegamento",
+        "no": "solo uso di mascherina da parte dell'operatore"
+      }
+    ]
+  },
+  "MR-III-2.2.1.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano il valore totale delle vibrazioni mano-braccio (ah) in m/s² con la relativa incertezza K",
+        "doc": "istruzioni",
+        "ok": "valore ah in m/s² e incertezza K in m/s²",
+        "no": "sola indicazione 'basse vibrazioni'; valore senza unità o senza incertezza"
+      },
+      {
+        "q": "Le istruzioni indicano le condizioni di funzionamento durante la misura delle vibrazioni o la norma di misura applicata",
+        "doc": "istruzioni",
+        "ok": "modalità operativa (es. foratura su calcestruzzo, avvitatura) o norma di prova citata",
+        "no": "valore isolato senza contesto"
+      },
+      {
+        "q": "Un rapporto di prova riporta la misura delle vibrazioni mano-braccio sulla macchina o su una comparabile",
+        "doc": "rapporti_prova",
+        "ok": "rapporto con valori per asse o totale, condizioni e incertezza",
+        "no": "dati di vibrazione strutturale non riferiti alla mano"
+      }
+    ]
+  },
+  "MR-III-2.2.2.1": {
+    "condition": "La macchina è un apparecchio portatile di fissaggio o un'altra macchina a impatto",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono il dispositivo di consenso che impedisce l'impatto se l'apparecchio non è appoggiato con pressione adeguata sul materiale",
+        "doc": "istruzioni",
+        "ok": "dispositivo di contatto o consenso con descrizione del funzionamento",
+        "no": "solo il grilletto di azionamento",
+        "smentita": "il manuale descrive un funzionamento a sparo libero senza appoggio sul pezzo"
+      },
+      {
+        "q": "Le istruzioni descrivono la sequenza di azionamento che impedisce l'azionamento involontario o per urto (es. sequenza consenso-grilletto, sicura)",
+        "doc": "istruzioni",
+        "ok": "azionamento sequenziale, sicura meccanica, protezione contro lo sparo per caduta",
+        "no": "avvertenze generiche di non puntare l'apparecchio"
+      },
+      {
+        "q": "Le istruzioni indicano i ripari paraschegge forniti o disponibili e le operazioni sicure di carico e scarico",
+        "doc": "istruzioni",
+        "ok": "paraschegge con codice, procedura di carico e scarico con apparecchio scollegato o in sicura",
+        "no": "carico descritto senza precauzioni"
+      }
+    ]
+  },
+  "MR-III-2.2.2.2": {
+    "condition": "La macchina è un apparecchio portatile di fissaggio o un'altra macchina a impatto",
+    "points": [
+      {
+        "q": "Le istruzioni elencano gli accessori e le attrezzature intercambiabili utilizzabili",
+        "doc": "istruzioni",
+        "ok": "elenco di accessori con codice o tipo",
+        "no": "rimando al catalogo commerciale"
+      },
+      {
+        "q": "Le istruzioni indicano gli elementi di fissaggio utilizzabili (chiodi, perni: tipo e dimensioni) e, se pertinente, le cartucce appropriate",
+        "doc": "istruzioni",
+        "ok": "tipo, lunghezza, diametro degli elementi; calibro e potenza (colore) delle cartucce",
+        "no": "generico 'usare elementi originali'"
+      }
+    ]
+  },
+  "MR-III-2.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come posizionare e guidare il pezzo in sicurezza (guide, spingipezzo, banco, trascinatori)",
+        "doc": "istruzioni",
+        "ok": "guide, spingitoio, morse o trascinatore, stabilità del banco",
+        "no": "istruzioni di lavorazione senza riferimento alla guida del pezzo"
+      },
+      {
+        "q": "Le istruzioni descrivono le misure contro la proiezione di pezzi o schegge (dispositivi antirigetto, coltello divisore, cuffie)",
+        "doc": "istruzioni",
+        "ok": "dispositivo antirigetto, coltello divisore, cuffia di protezione, schermi",
+        "no": "solo uso di occhiali di protezione"
+      },
+      {
+        "q": "Le specifiche o le istruzioni indicano il freno automatico dell'utensile e il tempo di arresto",
+        "doc": "specifiche",
+        "ok": "freno automatico con tempo di frenatura in secondi",
+        "no": "freno manuale; arresto per inerzia",
+        "smentita": "le istruzioni indicano che l'utensile si arresta per inerzia, senza freno, con tempo di rallentamento lungo"
+      },
+      {
+        "q": "Un rapporto di prova riporta la misura del tempo di frenatura dell'utensile",
+        "doc": "rapporti_prova",
+        "ok": "tempo di frenatura misurato in secondi",
+        "no": "valore dichiarato senza prova"
+      }
+    ]
+  },
+  "MR-III-2.4.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi analizza l'esposizione non intenzionale dell'ambiente ai prodotti fitosanitari (deriva, perdite, gocciolamento)",
+        "doc": "valutazione_rischi",
+        "ok": "pericoli ambientali analizzati: deriva, perdite, contaminazione delle acque, con misure adottate",
+        "no": "valutazione dei soli rischi per l'operatore"
+      },
+      {
+        "q": "Le specifiche descrivono le misure contro le fuoriuscite (tenute, valvole antigoccia, coperchi, serbatoi chiusi)",
+        "doc": "specifiche",
+        "ok": "valvole antigoccia, tenute, coperchio a tenuta, troppopieno controllato",
+        "no": "solo raccomandazioni all'utilizzatore di evitare perdite"
+      }
+    ]
+  },
+  "MR-III-2.4.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono i comandi dalla postazione operativa per attivare, controllare e arrestare subito l'irrorazione",
+        "doc": "istruzioni",
+        "ok": "centralina o comandi in cabina con apertura e chiusura delle sezioni e arresto immediato",
+        "no": "comandi posti solo sulla macchina, lontani dalla postazione operativa"
+      }
+    ]
+  },
+  "MR-III-2.4.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono i mezzi per un riempimento preciso (indicatore di livello, premiscelatore, contalitri)",
+        "doc": "istruzioni",
+        "ok": "indicatore di livello leggibile, contalitri, premiscelatore, dispositivo antiriflusso",
+        "no": "solo capacità del serbatoio"
+      },
+      {
+        "q": "Le istruzioni descrivono lo svuotamento completo del serbatoio e come evitare dispersioni e contaminazione delle fonti idriche",
+        "doc": "istruzioni",
+        "ok": "valvola di svuotamento, residuo minimo, dispositivo antiriflusso verso la fonte idrica, raccolta del residuo",
+        "no": "frase generica sul rispetto dell'ambiente"
+      }
+    ]
+  },
+  "MR-III-2.4.5.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono i dispositivi e la procedura per regolare con precisione il tasso di applicazione (L/ha)",
+        "doc": "istruzioni",
+        "ok": "regolatore di pressione o portata, computer di irrorazione, tabelle di taratura",
+        "no": "solo indicazione delle portate degli ugelli"
+      }
+    ]
+  },
+  "MR-III-2.4.5.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le specifiche descrivono le soluzioni per limitare la deriva e depositare il prodotto sul bersaglio (ugelli antideriva, convogliatori, regolazione della barra)",
+        "doc": "specifiche",
+        "ok": "ugelli antideriva, assistenza d'aria regolabile, altezza della barra, sezioni chiudibili",
+        "no": "affermazioni generiche di 'basso impatto ambientale'"
+      },
+      {
+        "q": "Un rapporto di prova riporta l'uniformità di distribuzione o di deposizione",
+        "doc": "rapporti_prova",
+        "ok": "coefficiente di variazione della distribuzione, prove di deposizione o di deriva",
+        "no": "prova della sola portata"
+      }
+    ]
+  },
+  "MR-III-2.4.5.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esistono rapporti di prova sul tipo di macchina per la regolazione del tasso di applicazione e per la distribuzione o deposizione",
+        "doc": "rapporti_prova",
+        "ok": "rapporti con risultati su precisione del dosaggio e uniformità di distribuzione, norma di prova",
+        "no": "collaudo funzionale di fine linea senza misure di distribuzione"
+      }
+    ]
+  },
+  "MR-III-2.4.5.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le specifiche indicano dispositivi che evitano gocciolamento o dispersione alla chiusura dell'irrorazione (valvole antigoccia, chiusura rapida)",
+        "doc": "specifiche",
+        "ok": "valvole antigoccia sugli ugelli, chiusura istantanea delle sezioni, ricircolo",
+        "no": "solo arresto della pompa"
+      }
+    ]
+  },
+  "MR-III-2.4.6.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono la pulizia interna ed esterna senza contaminare l'ambiente (serbatoio lavaggio, ugelli lavaserbatoio, gestione delle acque)",
+        "doc": "istruzioni",
+        "ok": "serbatoio di acqua pulita, ugello lavaserbatoio, procedura di risciacquo in campo, smaltimento delle acque di lavaggio",
+        "no": "generico 'pulire dopo l'uso'"
+      }
+    ]
+  },
+  "MR-III-2.4.6.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come sostituire le parti usurate (ugelli, filtri, membrane) senza contaminazione, previa bonifica",
+        "doc": "istruzioni",
+        "ok": "procedura di sostituzione con svuotamento e risciacquo preventivo, raccolta dei residui",
+        "no": "sostituzione descritta senza precauzioni ambientali"
+      }
+    ]
+  },
+  "MR-III-2.4.7": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano punti di collegamento per strumenti di misura (es. attacco per manometro di controllo, flussimetro)",
+        "doc": "istruzioni",
+        "ok": "attacco dedicato per manometro o misuratore di portata con posizione",
+        "no": "solo il manometro di bordo"
+      }
+    ]
+  },
+  "MR-III-2.4.8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le specifiche indicano che ugelli e filtri sono contrassegnati con tipo e dimensione (codice colore, sigla, maglia)",
+        "doc": "specifiche",
+        "ok": "codice colore ISO degli ugelli, sigla stampata, numero di maglie dei filtri",
+        "no": "elenco ugelli senza marcatura"
+      }
+    ]
+  },
+  "MR-III-2.4.9": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano il supporto sulla macchina su cui scrivere il nome del prodotto fitosanitario in uso",
+        "doc": "istruzioni",
+        "ok": "portaetichetta o targhetta scrivibile con posizione sulla macchina",
+        "no": "registro cartaceo dei trattamenti"
+      }
+    ]
+  },
+  "MR-III-2.4.10": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano le precauzioni contro la contaminazione ambientale in miscelazione, carico, applicazione, svuotamento, lavaggio, riparazione e trasporto",
+        "doc": "istruzioni",
+        "ok": "precauzioni distinte per fase operativa",
+        "no": "avvertenze solo sulla protezione dell'operatore"
+      },
+      {
+        "q": "Le istruzioni indicano le regolazioni per i diversi ambienti operativi e la gamma di ugelli e filtri utilizzabili",
+        "doc": "istruzioni",
+        "ok": "tabelle di regolazione per coltura o ambiente, elenco di tipi e dimensioni di ugelli e filtri",
+        "no": "un solo assetto senza alternative"
+      },
+      {
+        "q": "Le istruzioni indicano taratura, manutenzione giornaliera, preparazione per l'inverno e frequenza e criteri di sostituzione delle parti usurate",
+        "doc": "istruzioni",
+        "ok": "procedura di taratura, rimessaggio invernale, intervalli e criteri di sostituzione degli ugelli",
+        "no": "manutenzione generica del telaio"
+      },
+      {
+        "q": "Le istruzioni avvertono che la macchina può essere soggetta a ispezioni periodiche nazionali (direttiva 2009/128/CE) e indicano come collegare gli strumenti di misura",
+        "doc": "istruzioni",
+        "ok": "riferimento alle ispezioni obbligatorie e istruzioni di collegamento degli strumenti",
+        "no": "nessuna menzione delle ispezioni"
+      }
+    ]
+  },
+  "MR-III-3.2.1": {
+    "condition": "La macchina ha una postazione di guida",
+    "points": [
+      {
+        "q": "Le istruzioni o specifiche descrivono la visibilità dalla postazione di guida e i dispositivi che la integrano (specchi, telecamere, sensori)",
+        "doc": "istruzioni",
+        "ok": "specchi retrovisori, telecamere, sensori di prossimità, zone cieche indicate",
+        "no": "solo illuminazione di lavoro",
+        "smentita": "il manuale indica zone non visibili dal posto di guida senza alcun dispositivo che le compensi"
+      },
+      {
+        "q": "Le specifiche indicano la cabina o la predisposizione per la cabina e il vano per le istruzioni per l'uso",
+        "doc": "specifiche",
+        "ok": "cabina di serie o opzionale, alloggiamento portadocumenti in cabina",
+        "no": "solo dimensioni della macchina"
+      },
+      {
+        "q": "Disegni o specifiche mostrano che il conducente non può toccare involontariamente ruote o cingoli dalla postazione (parafanghi, carter)",
+        "doc": "disegni",
+        "ok": "parafanghi, schermi, distanza tra sedile e ruote/cingoli",
+        "no": "vista d'insieme senza i dettagli della postazione"
+      }
+    ]
+  },
+  "MR-III-3.2.2": {
+    "condition": "Esiste un rischio di schiacciamento delle persone trasportate in caso di ribaltamento (es. macchina con struttura di protezione ROPS/FOPS)",
+    "points": [
+      {
+        "q": "Le specifiche o le istruzioni indicano il sistema di ritenuta dei sedili (cintura di sicurezza o equivalente)",
+        "doc": "specifiche",
+        "ok": "cintura di sicurezza o sistema di ritenuta montato sui sedili",
+        "no": "cintura indicata solo come optional senza valutazione"
+      },
+      {
+        "q": "Le istruzioni descrivono il segnale visivo e acustico al posto di guida quando il sistema di ritenuta non è allacciato",
+        "doc": "istruzioni",
+        "ok": "spia e cicalino di cintura non allacciata",
+        "no": "sola avvertenza scritta ad allacciare la cintura"
+      },
+      {
+        "q": "Le istruzioni indicano che lo spostamento è impedito se il sistema di ritenuta non è in uso in condizioni a rischio di ribaltamento",
+        "doc": "istruzioni",
+        "ok": "interblocco tra cintura e trazione, o limitazione del movimento",
+        "no": "raccomandazione all'operatore",
+        "smentita": "il manuale afferma che la macchina può muoversi su pendenze a rischio senza cintura e senza alcun interblocco"
+      }
+    ]
+  },
+  "MR-III-3.2.3": {
+    "condition": "La macchina trasporta o fa lavorare a bordo persone oltre al conducente",
+    "points": [
+      {
+        "q": "Le istruzioni o specifiche indicano le postazioni previste per le persone trasportate oltre al conducente e il loro numero massimo",
+        "doc": "istruzioni",
+        "ok": "posti passeggero o piattaforme di lavoro con numero massimo di persone, sedili, corrimano",
+        "no": "nessuna postazione definita pur prevedendo persone a bordo",
+        "smentita": "il manuale ammette persone a bordo in posizioni non previste (es. sui parafanghi o sul cassone)"
+      },
+      {
+        "q": "Disegni o specifiche mostrano protezioni delle postazioni passeggeri da ruote o cingoli",
+        "doc": "disegni",
+        "ok": "parafanghi, schermi, distanze dalle ruote",
+        "no": "solo protezioni del posto di guida"
+      }
+    ]
+  },
+  "MR-III-3.2.4": {
+    "condition": "La macchina è mobile autonoma",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono la funzione di supervisione da remoto e le informazioni ricevute dal supervisore (posizione, stato, video, allarmi)",
+        "doc": "istruzioni",
+        "ok": "interfaccia di supervisione con stato, posizione, immagini della zona, allarmi su situazioni pericolose",
+        "no": "solo telemetria di produzione"
+      },
+      {
+        "q": "Le istruzioni indicano che dalla supervisione sono consentite solo azioni di arresto, avvio o spostamento in posizione sicura",
+        "doc": "istruzioni",
+        "ok": "elenco limitato dei comandi remoti (stop, start, ritorno in posizione sicura)",
+        "no": "controllo remoto completo descritto senza limiti",
+        "smentita": "il manuale consente da remoto la guida libera o la modifica dei parametri di sicurezza"
+      },
+      {
+        "q": "Le istruzioni indicano che la macchina non può funzionare se la funzione di supervisione non è attiva",
+        "doc": "istruzioni",
+        "ok": "arresto o inibizione del funzionamento alla perdita del collegamento di supervisione",
+        "no": "la supervisione è descritta come facoltativa",
+        "smentita": "il manuale indica che la macchina prosegue in autonomia anche senza supervisione attiva"
+      },
+      {
+        "q": "La valutazione dei rischi tratta le condizioni di visibilità della zona di lavoro e l'operatività dei dispositivi di protezione durante i comandi remoti",
+        "doc": "valutazione_rischi",
+        "ok": "analisi di visibilità diretta/indiretta e consenso ai comandi solo con protezioni attive",
+        "no": "valutazione della macchina senza modalità autonoma"
+      }
+    ]
+  },
+  "MR-III-3.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono il sistema contro l'uso non autorizzato dei comandi (chiave, codice, badge)",
+        "doc": "istruzioni",
+        "ok": "chiave di avviamento, codice PIN, badge, password",
+        "no": "solo raccomandazione di custodire la macchina"
+      },
+      {
+        "q": "Le istruzioni indicano che ogni unità di telecomando identifica la macchina comandata e risponde solo ai propri segnali (codifica, abbinamento)",
+        "doc": "istruzioni",
+        "ok": "etichetta identificativa sul telecomando, codifica univoca, procedura di abbinamento",
+        "no": "dati radio (frequenza) senza identificazione o codifica",
+        "smentita": "il manuale indica che un telecomando può comandare più macchine senza selezione esplicita"
+      },
+      {
+        "q": "La documentazione descrive come le funzioni di sicurezza delle macchine autonome operano indipendentemente dai comandi di supervisione remota",
+        "doc": "schemi",
+        "ok": "funzioni di sicurezza a bordo (rilevamento ostacoli, arresto) non disattivabili da remoto",
+        "no": "architettura di comunicazione senza funzioni di sicurezza"
+      }
+    ]
+  },
+  "MR-III-3.3.1": {
+    "condition": "La macchina è mobile con conducente",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono i comandi raggiungibili dalla postazione di guida e quelli posti altrove, con la loro funzione",
+        "doc": "istruzioni",
+        "ok": "disegno o elenco dei comandi in cabina e degli eventuali comandi esterni",
+        "no": "solo elenco delle spie"
+      },
+      {
+        "q": "Le istruzioni indicano che i comandi di movimenti pericolosi tornano in posizione neutra al rilascio",
+        "doc": "istruzioni",
+        "ok": "leve o joystick a ritorno automatico in folle",
+        "no": "comandi descritti senza comportamento al rilascio",
+        "smentita": "il manuale descrive una leva di movimento pericoloso che resta inserita al rilascio senza posizione predeterminata"
+      },
+      {
+        "q": "Le specifiche o istruzioni indicano pedali antisdrucciolo e sterzo con riduzione dei contraccolpi (servosterzo)",
+        "doc": "specifiche",
+        "ok": "pedali con superficie antiscivolo, servosterzo o idroguida",
+        "no": "solo descrizione del volante"
+      },
+      {
+        "q": "Le istruzioni indicano il segnale acustico o luminoso di retromarcia",
+        "doc": "istruzioni",
+        "ok": "cicalino o luce di retromarcia",
+        "no": "solo clacson"
+      }
+    ]
+  },
+  "MR-III-3.3.2": {
+    "condition": "La macchina è semovente",
+    "points": [
+      {
+        "q": "Le istruzioni indicano che lo spostamento è possibile solo con il conducente al posto di comando (sensore di presenza sul sedile)",
+        "doc": "istruzioni",
+        "ok": "sensore di presenza operatore che inibisce la trazione",
+        "no": "avvertenza di non scendere con la macchina accesa",
+        "smentita": "il manuale descrive la possibilità di muovere la macchina con conducente trasportato ma assente dal posto di guida"
+      },
+      {
+        "q": "Le istruzioni indicano che all'avviamento del motore la macchina non si muove (avviamento solo in folle o con freno inserito)",
+        "doc": "istruzioni",
+        "ok": "consenso all'avviamento solo con cambio in folle o freno di stazionamento inserito",
+        "no": "procedura di avviamento senza condizioni"
+      },
+      {
+        "q": "Le istruzioni descrivono come verificare dal posto di guida che stabilizzatori, bracci o altri elementi sporgenti sono in posizione di trasferimento",
+        "doc": "istruzioni",
+        "ok": "spie di posizione, finecorsa, interblocco trazione con elementi non in posizione",
+        "no": "solo controllo visivo esterno raccomandato"
+      }
+    ]
+  },
+  "MR-III-3.3.3": {
+    "condition": "La macchina è semovente",
+    "points": [
+      {
+        "q": "Le specifiche indicano freno di servizio, freno di emergenza indipendente (se richiesto) e freno di stazionamento",
+        "doc": "specifiche",
+        "ok": "tipi di freno e loro azionamento, freno di stazionamento meccanico o a molla",
+        "no": "solo velocità massima"
+      },
+      {
+        "q": "Un rapporto di prova riporta le prestazioni di frenatura nelle condizioni di carico e pendenza previste",
+        "doc": "rapporti_prova",
+        "ok": "spazi o decelerazioni di frenata, tenuta in pendenza con carico",
+        "no": "collaudo senza misure di frenatura"
+      },
+      {
+        "q": "Per macchine telecomandate, le istruzioni indicano l'arresto automatico per perdita di segnale, comando di stop, guasto o mancata conferma entro un tempo",
+        "doc": "istruzioni",
+        "ok": "arresto per perdita di collegamento con tempo di intervento, tasto di stop sul telecomando",
+        "no": "solo portata del radiocomando",
+        "smentita": "il manuale indica che alla perdita di segnale la macchina continua l'ultimo comando"
+      },
+      {
+        "q": "Per macchine autonome, le istruzioni descrivono la zona protetta perimetralmente o i dispositivi di rilevamento di persone e ostacoli",
+        "doc": "istruzioni",
+        "ok": "scanner laser, sensori di ostacolo con campo e distanza di arresto, oppure recinzione della zona",
+        "no": "sola navigazione senza rilevamento persone"
+      }
+    ]
+  },
+  "MR-III-3.3.4": {
+    "condition": "La macchina è semovente con conducente a piedi",
+    "points": [
+      {
+        "q": "Le istruzioni indicano che lo spostamento richiede un'azione continua sul comando (azione mantenuta) e che non avviene all'avvio del motore",
+        "doc": "istruzioni",
+        "ok": "leva o maniglia ad azione mantenuta, arresto al rilascio",
+        "no": "descrizione dei comandi senza comportamento al rilascio",
+        "smentita": "il manuale descrive un comando di avanzamento che resta inserito al rilascio"
+      },
+      {
+        "q": "Le specifiche indicano una velocità di spostamento compatibile con il passo del conducente",
+        "doc": "specifiche",
+        "ok": "velocità massima in km/h compatibile con il passo d'uomo",
+        "no": "solo velocità di lavoro dell'utensile"
+      },
+      {
+        "q": "Le istruzioni indicano che l'utensile rotante non funziona in retromarcia o, se necessario, a velocità ridotta",
+        "doc": "istruzioni",
+        "ok": "interblocco utensile/retromarcia o limitazione di velocità in retromarcia",
+        "no": "avvertenza generica sull'utensile"
+      }
+    ]
+  },
+  "MR-III-3.3.5": {
+    "condition": "La macchina è dotata di servosterzo o è mobile autonoma",
+    "points": [
+      {
+        "q": "Le istruzioni o specifiche indicano che con il servosterzo in avaria la macchina resta sterzabile fino all'arresto",
+        "doc": "istruzioni",
+        "ok": "sterzatura di emergenza, sterzo meccanico residuo, pompa di emergenza",
+        "no": "solo descrizione del servosterzo"
+      },
+      {
+        "q": "Per macchine autonome, la valutazione dei rischi indica come il guasto dello sterzo viene rilevato e porta la macchina in stato sicuro",
+        "doc": "valutazione_rischi",
+        "ok": "rilevamento del guasto sterzo con arresto sicuro",
+        "no": "assenza di analisi del guasto"
+      }
+    ]
+  },
+  "MR-III-3.4.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano le condizioni di spostamento che garantiscono la stabilità (posizione del carico o dei bracci, velocità, pendenza massima)",
+        "doc": "istruzioni",
+        "ok": "pendenza massima, posizione di trasferimento, carico abbassato, velocità limitata",
+        "no": "frasi generiche di prudenza"
+      },
+      {
+        "q": "Un rapporto di prova o calcolo verifica la stabilità della macchina durante lo spostamento",
+        "doc": "rapporti_prova",
+        "ok": "calcolo o prova di stabilità dinamica, prova su piano inclinato",
+        "no": "calcolo di stabilità solo statica a macchina ferma"
+      }
+    ]
+  },
+  "MR-III-3.4.2": {
+    "condition": "La macchina ha un motore con compartimento accessibile",
+    "points": [
+      {
+        "q": "Le istruzioni o disegni indicano che i ripari del vano motore si aprono solo con utensile o chiave, o con comando dalla cabina chiusa a chiave",
+        "doc": "istruzioni",
+        "ok": "cofano con serratura o apertura con attrezzo, sgancio dalla cabina chiudibile",
+        "no": "cofano descritto senza modalità di apertura",
+        "smentita": "il manuale descrive un cofano del vano motore apribile a mano senza attrezzo né chiave e senza interblocco"
+      }
+    ]
+  },
+  "MR-III-3.4.3": {
+    "condition": "La macchina semovente ha persone a bordo ed esiste rischio di ribaltamento",
+    "points": [
+      {
+        "q": "Le specifiche indicano la struttura di protezione contro il ribaltamento (ROPS) montata",
+        "doc": "specifiche",
+        "ok": "struttura ROPS con modello o norma di riferimento",
+        "no": "cabina senza indicazione di protezione al ribaltamento"
+      },
+      {
+        "q": "Un rapporto di prova attesta le prove della struttura di protezione al ribaltamento per il tipo di struttura",
+        "doc": "rapporti_prova",
+        "ok": "prova ROPS con esito e volume limite di deformazione rispettato",
+        "no": "calcolo strutturale generico del telaio"
+      },
+      {
+        "q": "La struttura di protezione è marcata (targhetta ROPS) con riferimento alla prova",
+        "doc": "targa",
+        "ok": "targhetta ROPS con fabbricante, modello, norma o numero certificato",
+        "no": "marcatura CE della macchina"
+      }
+    ]
+  },
+  "MR-III-3.4.4": {
+    "condition": "La macchina semovente ha persone a bordo ed esiste rischio di caduta di oggetti",
+    "points": [
+      {
+        "q": "Le specifiche indicano la struttura di protezione contro la caduta di oggetti (FOPS) o il tetto di protezione",
+        "doc": "specifiche",
+        "ok": "struttura FOPS o tettuccio di protezione con livello o norma",
+        "no": "parabrezza o cabina non certificati"
+      },
+      {
+        "q": "Un rapporto di prova attesta le prove della struttura contro la caduta di oggetti",
+        "doc": "rapporti_prova",
+        "ok": "prova FOPS con esito e volume limite di deformazione",
+        "no": "prova di sola resistenza del vetro"
+      }
+    ]
+  },
+  "MR-III-3.4.5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o disegni indicano maniglie, gradini e appigli per salire al posto di guida, avvertendo di non usare i comandi come appiglio",
+        "doc": "istruzioni",
+        "ok": "posizione di gradini e maniglioni, regola dei tre punti di appoggio",
+        "no": "solo dimensioni della cabina",
+        "smentita": "le istruzioni indicano di usare il volante o le leve di comando per salire"
+      }
+    ]
+  },
+  "MR-III-3.4.6": {
+    "condition": "La macchina traina o è trainata",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono il dispositivo di traino o rimorchio, l'aggancio e lo sgancio sicuri e il bloccaggio contro lo sgancio accidentale",
+        "doc": "istruzioni",
+        "ok": "tipo di gancio, perno con sicura, procedura di aggancio/sgancio",
+        "no": "solo carico trainabile",
+        "smentita": "il manuale indica un aggancio senza sicura contro lo sgancio accidentale"
+      },
+      {
+        "q": "Le specifiche indicano carichi ammessi sul gancio o timone e la presenza del piede di appoggio del timone",
+        "doc": "specifiche",
+        "ok": "carico verticale ammesso, massa trainabile, piedino di appoggio",
+        "no": "massa della sola macchina"
+      }
+    ]
+  },
+  "MR-III-3.4.7": {
+    "condition": "La macchina è collegata a una macchina semovente o a un trattore tramite dispositivo amovibile di trasmissione meccanica (albero cardanico)",
+    "points": [
+      {
+        "q": "Le istruzioni indicano l'albero cardanico da usare, protetto per tutta la lunghezza, e il carter sul lato macchina azionata",
+        "doc": "istruzioni",
+        "ok": "tipo di albero con protezione omologata, cuffia o carter sull'albero condotto",
+        "no": "solo regime della presa di forza"
+      },
+      {
+        "q": "Le istruzioni indicano la posizione del limitatore di coppia o ruota libera (lato macchina azionata) e il senso di montaggio dell'albero",
+        "doc": "istruzioni",
+        "ok": "limitatore lato macchina, simbolo del senso di montaggio",
+        "no": "limitatore citato senza posizione",
+        "smentita": "il manuale indica il limitatore o la ruota libera sul lato trattore"
+      },
+      {
+        "q": "Disegni o istruzioni mostrano il supporto di appoggio dell'albero cardanico a macchina staccata e le catenelle anti-rotazione della protezione",
+        "doc": "disegni",
+        "ok": "supporto di parcheggio dell'albero, catenelle di fermo della protezione",
+        "no": "vista generale senza dettaglio dell'albero"
+      }
+    ]
+  },
+  "MR-III-3.5.1": {
+    "condition": "La macchina è dotata di batteria",
+    "points": [
+      {
+        "q": "I disegni o le istruzioni indicano l'alloggiamento della batteria chiuso o ventilato, separato dal posto dell'operatore",
+        "doc": "disegni",
+        "ok": "vano batteria chiuso con coperchio, ventilazione, posizione lontana dal posto di guida",
+        "no": "solo dati elettrici della batteria"
+      },
+      {
+        "q": "Le istruzioni indicano il dispositivo di disinserimento della batteria (staccabatteria) e la sua posizione",
+        "doc": "istruzioni",
+        "ok": "sezionatore o staccabatteria facilmente accessibile con posizione",
+        "no": "istruzioni per scollegare i morsetti con attrezzi"
+      },
+      {
+        "q": "Per ricarica automatica, le istruzioni descrivono come la macchina evita urti con persone o altre macchine andando alla stazione di ricarica",
+        "doc": "istruzioni",
+        "ok": "rilevamento ostacoli attivo nel percorso verso la ricarica, zona di ricarica protetta, contatti di ricarica non accessibili",
+        "no": "solo specifiche del caricabatterie"
+      }
+    ]
+  },
+  "MR-III-3.5.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o specifiche indicano l'estintore di bordo o il supporto per installarlo, oppure un sistema di estinzione integrato",
+        "doc": "istruzioni",
+        "ok": "posizione del supporto per estintore, estintore fornito, impianto antincendio automatico",
+        "no": "avvertenze generiche sul rischio di incendio"
+      }
+    ]
+  }
+}

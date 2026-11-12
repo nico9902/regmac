@@ -1,0 +1,817 @@
+{
+  "MR-ART10-8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE accompagna la macchina, oppure le istruzioni riportano l'indirizzo internet o il codice QR per consultarla",
+        "doc": "istruzioni",
+        "ok": "copia della dichiarazione allegata al manuale, oppure URL o codice a lettura ottica che rimanda alla dichiarazione di conformità",
+        "no": "il solo rimando al sito del fabbricante senza indicare la dichiarazione; menzione generica della marcatura CE",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Il fabbricante dichiara che la dichiarazione di conformità digitale resta accessibile online per almeno 10 anni o per la vita prevista della macchina",
+        "doc": "istruzioni",
+        "ok": "frase che indica la durata di disponibilità online della dichiarazione (almeno 10 anni o ciclo di vita previsto)",
+        "no": "solo l'indirizzo internet senza indicazione della durata di disponibilità",
+        "smentita": "il documento indica una disponibilità online inferiore a 10 anni",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART10-9": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esiste una procedura del fabbricante per gestire le non conformità dopo l'immissione sul mercato: azioni correttive, ritiro o richiamo",
+        "doc": "certificati",
+        "ok": "procedura documentata (sistema qualità o procedura interna) che descrive azioni correttive, ritiro o richiamo dei prodotti venduti",
+        "no": "la sola garanzia commerciale; assistenza tecnica generica; dichiarazione di impegno senza procedura",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La procedura prevede di informare subito le autorità nazionali competenti quando la macchina presenta un rischio, con dettagli su non conformità e azioni correttive",
+        "doc": "certificati",
+        "ok": "passo della procedura che indica la notifica alle autorità di vigilanza del mercato e il contenuto della comunicazione",
+        "no": "comunicazioni solo ai clienti o ai distributori; riferimento generico agli obblighi di legge",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART10-10": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Il fabbricante ha una procedura per fornire alle autorità competenti, su richiesta motivata, la documentazione tecnica in formato cartaceo o digitale",
+        "doc": "certificati",
+        "ok": "procedura o responsabile designato per le richieste delle autorità, con modalità di consegna della documentazione e della relativa lingua",
+        "no": "il solo indirizzo di contatto del fabbricante; dichiarazione generica di disponibilità a collaborare",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART11-1": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La documentazione della quasi-macchina elenca i requisiti essenziali dell'allegato III applicati e rispettati dal fabbricante",
+        "doc": "dichiarazione",
+        "ok": "elenco dei punti dell'allegato III (es. 1.1.2, 1.3.7, 1.5.1) dichiarati applicati e soddisfatti",
+        "no": "frase generica di conformità al Regolamento senza l'elenco dei requisiti; solo l'elenco delle norme"
+      },
+      {
+        "q": "La valutazione dei rischi della quasi-macchina descrive le misure adottate per i requisiti essenziali che il fabbricante dichiara soddisfatti",
+        "doc": "valutazione_rischi",
+        "ok": "tabella pericoli-misure riferita ai requisiti dell'allegato III, con indicazione di quali restano a carico dell'integratore",
+        "no": "valutazione riferita alla macchina finale o alla cella dell'utilizzatore; elenco dei pericoli senza misure"
+      }
+    ]
+  },
+  "MR-ART11-2": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "Esiste la documentazione tecnica della quasi-macchina secondo l'allegato IV, parte B (descrizione, valutazione dei rischi, disegni, norme, prove)",
+        "doc": "valutazione_rischi",
+        "ok": "indice o fascicolo tecnico con le sezioni dell'allegato IV parte B, o rimandi ai documenti che le compongono",
+        "no": "il solo manuale d'uso; la sola scheda tecnica commerciale"
+      },
+      {
+        "q": "Il fabbricante ha redatto la dichiarazione di incorporazione UE della quasi-macchina",
+        "doc": "dichiarazione",
+        "ok": "documento intitolato dichiarazione di incorporazione con dati del fabbricante, identificazione della quasi-macchina e firma",
+        "no": "dichiarazione CE di conformità al posto della dichiarazione di incorporazione; dichiarazione del fornitore di un componente",
+        "smentita": "la quasi-macchina è accompagnata da una dichiarazione di conformità CE con marcatura CE invece che da una dichiarazione di incorporazione"
+      }
+    ]
+  },
+  "MR-ART11-3": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "Il fabbricante dichiara di conservare documentazione tecnica e dichiarazione di incorporazione per almeno 10 anni dall'immissione sul mercato",
+        "doc": "dichiarazione",
+        "ok": "indicazione del periodo di conservazione (almeno 10 anni) e della persona o sede che custodisce il fascicolo tecnico",
+        "no": "la sola indicazione della persona autorizzata a costituire il fascicolo senza durata di conservazione",
+        "smentita": "il documento indica un periodo di conservazione inferiore a 10 anni"
+      },
+      {
+        "q": "Il fabbricante prevede di rendere disponibile alle autorità, su richiesta motivata, il codice sorgente o la logica di programmazione del software di sicurezza",
+        "doc": "certificati",
+        "ok": "procedura o dichiarazione che indica come codice sorgente o logica del software di sicurezza vengono forniti alle autorità",
+        "no": "riferimenti al software applicativo senza funzioni di sicurezza; licenze d'uso del software"
+      }
+    ]
+  },
+  "MR-ART11-4": {
+    "condition": "Il prodotto è una quasi-macchina prodotta in serie",
+    "points": [
+      {
+        "q": "Esistono procedure di produzione e controllo che mantengono la conformità della quasi-macchina prodotta in serie (collaudi finali, controlli di processo)",
+        "doc": "certificati",
+        "ok": "piano dei controlli, collaudo di fine linea, sistema qualità certificato con procedure di produzione",
+        "no": "certificato ISO 9001 citato senza procedure; dichiarazione generica di qualità"
+      },
+      {
+        "q": "Le procedure prevedono il riesame quando cambiano progetto, processo produttivo o norme armonizzate applicate",
+        "doc": "certificati",
+        "ok": "procedura di gestione delle modifiche o di aggiornamento normativo con verifica dell'impatto sulla conformità",
+        "no": "il solo elenco delle norme applicate; registro delle revisioni del manuale"
+      }
+    ]
+  },
+  "MR-ART11-5": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La targa della quasi-macchina riporta designazione, modello o tipo, numero di serie e anno di costruzione",
+        "doc": "targa",
+        "ok": "foto o descrizione della targa con designazione, modello/tipo, numero di serie o lotto e anno di costruzione",
+        "no": "targa con il solo nome del fabbricante; anno di costruzione mancante; dati presenti solo sul catalogo"
+      }
+    ]
+  },
+  "MR-ART11-6": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La quasi-macchina (o imballaggio o documento di accompagnamento) riporta nome o marchio del fabbricante, indirizzo postale e un contatto digitale",
+        "doc": "targa",
+        "ok": "nome o marchio registrato, indirizzo postale unico e sito internet o e-mail del fabbricante",
+        "no": "solo il logo; solo il nome del distributore o rivenditore; indirizzo incompleto"
+      }
+    ]
+  },
+  "MR-ART11-7": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La quasi-macchina è accompagnata da istruzioni per l'assemblaggio che descrivono le condizioni per incorporarla correttamente nella macchina finale",
+        "doc": "istruzioni",
+        "ok": "capitolo o documento \"istruzioni di assemblaggio/incorporazione\" con condizioni di montaggio, collegamenti e requisiti per l'integratore",
+        "no": "il solo manuale d'uso dell'operatore; istruzioni di imballo e trasporto"
+      },
+      {
+        "q": "Se le istruzioni di assemblaggio sono digitali, è indicato come accedervi e che sono scaricabili, stampabili e disponibili online per almeno 10 anni",
+        "doc": "istruzioni",
+        "ok": "URL o codice QR delle istruzioni con indicazione di download/stampa e durata di disponibilità online",
+        "no": "indirizzo generico del sito senza riferimento alle istruzioni; istruzioni consultabili solo dall'interfaccia della macchina",
+        "smentita": "le istruzioni sono disponibili solo online senza possibilità di scaricarle o stamparle"
+      },
+      {
+        "q": "Le istruzioni di assemblaggio sono redatte nella lingua dello Stato membro dell'integratore",
+        "doc": "istruzioni",
+        "ok": "istruzioni in italiano (o nella lingua del paese di destinazione) o elenco delle lingue disponibili",
+        "no": "solo l'indicazione che le traduzioni sono disponibili su richiesta",
+        "smentita": "le istruzioni sono fornite solo in una lingua diversa da quella del paese di destinazione"
+      }
+    ]
+  },
+  "MR-ART11-8": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La dichiarazione di incorporazione accompagna la quasi-macchina, oppure le istruzioni di assemblaggio indicano l'indirizzo internet o il codice ottico per consultarla",
+        "doc": "istruzioni",
+        "ok": "copia della dichiarazione di incorporazione allegata, oppure URL o codice QR che rimanda alla dichiarazione",
+        "no": "il solo rimando al sito del fabbricante senza indicare la dichiarazione; dichiarazione di conformità CE al posto di quella di incorporazione"
+      },
+      {
+        "q": "Il fabbricante dichiara che la dichiarazione di incorporazione digitale resta accessibile online per almeno 10 anni",
+        "doc": "istruzioni",
+        "ok": "frase che indica la disponibilità online della dichiarazione per almeno 10 anni",
+        "no": "solo l'indirizzo internet senza durata",
+        "smentita": "il documento indica una disponibilità online inferiore a 10 anni"
+      }
+    ]
+  },
+  "MR-ART11-9": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "Esiste una procedura del fabbricante per gestire le non conformità della quasi-macchina venduta: azioni correttive, ritiro o richiamo",
+        "doc": "certificati",
+        "ok": "procedura documentata di azioni correttive, ritiro o richiamo dei prodotti immessi sul mercato",
+        "no": "la sola garanzia commerciale; assistenza tecnica generica"
+      },
+      {
+        "q": "La procedura prevede di informare subito le autorità nazionali competenti quando la quasi-macchina presenta un rischio",
+        "doc": "certificati",
+        "ok": "passo della procedura che indica la notifica alle autorità di vigilanza con dettagli sulla non conformità e sulle azioni correttive",
+        "no": "comunicazioni solo ai clienti; riferimento generico agli obblighi di legge"
+      }
+    ]
+  },
+  "MR-ART11-10": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "Il fabbricante ha una procedura per fornire alle autorità, su richiesta motivata, la documentazione della quasi-macchina in formato cartaceo o digitale",
+        "doc": "certificati",
+        "ok": "procedura o responsabile designato per le richieste delle autorità, con modalità di consegna e lingua della documentazione",
+        "no": "il solo indirizzo di contatto del fabbricante; dichiarazione generica di collaborazione"
+      }
+    ]
+  },
+  "MR-ART21-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE attesta che la macchina soddisfa i requisiti essenziali dell'allegato III del Regolamento (UE) 2023/1230",
+        "doc": "dichiarazione",
+        "ok": "frase di conformità con riferimento esplicito al Regolamento (UE) 2023/1230 e ai requisiti essenziali",
+        "no": "riferimento alla sola Direttiva 2006/42/CE; dichiarazione del costruttore di un componente; certificato di collaudo",
+        "smentita": "la dichiarazione esclude la conformità ad alcuni requisiti essenziali applicabili o rimanda la conformità a terzi",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART21-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE contiene gli elementi dell'allegato V parte A: fabbricante, identificazione della macchina, norme, luogo, data e firma",
+        "doc": "dichiarazione",
+        "ok": "nome e indirizzo del fabbricante, descrizione/modello/numero di serie, atti e norme applicati, eventuale organismo notificato, luogo, data, nome e firma",
+        "no": "dichiarazione priva di identificazione della macchina o di firma; modulo in bianco",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE è disponibile nella lingua dello Stato membro di destinazione ed è aggiornata",
+        "doc": "dichiarazione",
+        "ok": "dichiarazione in italiano (o lingua del paese di destinazione), con data o revisione coerente con la versione della macchina",
+        "no": "dichiarazione solo in inglese senza traduzione; indicazione generica di traduzioni disponibili",
+        "smentita": "la dichiarazione cita norme ritirate o la Direttiva 2006/42/CE per una macchina immessa dopo il 20 gennaio 2027",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART21-3": {
+    "condition": "Alla macchina si applicano più atti giuridici dell'Unione che richiedono una dichiarazione di conformità (es. EMC, RED, CRA)",
+    "points": [
+      {
+        "q": "Esiste un'unica dichiarazione di conformità UE che elenca tutti gli atti dell'Unione applicabili con i riferimenti di pubblicazione",
+        "doc": "dichiarazione",
+        "ok": "un solo documento che cita, ad esempio, Regolamento 2023/1230, Direttiva 2014/30/UE, Regolamento 2024/2847 con numero e data o riferimento GU",
+        "no": "dichiarazioni separate per ciascun atto; elenco di atti senza estremi di pubblicazione",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART21-4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE è emessa sotto la responsabilità esclusiva del fabbricante ed è firmata da una persona autorizzata",
+        "doc": "dichiarazione",
+        "ok": "formula \"sotto la sola responsabilità del fabbricante\" e nome, funzione e firma del firmatario",
+        "no": "dichiarazione non firmata; firmata dal rivenditore senza indicare il fabbricante",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART22-1": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La dichiarazione di incorporazione elenca i requisiti essenziali dell'allegato III applicati e rispettati per la quasi-macchina",
+        "doc": "dichiarazione",
+        "ok": "elenco dei punti dell'allegato III dichiarati applicati e soddisfatti, con riferimento al Regolamento (UE) 2023/1230",
+        "no": "frase generica di conformità senza elenco dei requisiti; riferimento alla sola Direttiva 2006/42/CE"
+      }
+    ]
+  },
+  "MR-ART22-2": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La dichiarazione di incorporazione contiene gli elementi dell'allegato V parte B, incluso il divieto di messa in servizio prima della dichiarazione della macchina finale",
+        "doc": "dichiarazione",
+        "ok": "dati del fabbricante, descrizione/modello/serie, requisiti applicati, impegno a fornire la documentazione, divieto di messa in servizio, luogo, data e firma",
+        "no": "dichiarazione priva del divieto di messa in servizio o dell'identificazione della quasi-macchina"
+      },
+      {
+        "q": "La dichiarazione di incorporazione è disponibile nella lingua dello Stato membro di destinazione",
+        "doc": "dichiarazione",
+        "ok": "dichiarazione in italiano o nella lingua del paese di destinazione",
+        "no": "indicazione generica di traduzioni disponibili su richiesta",
+        "smentita": "la dichiarazione è fornita solo in una lingua diversa da quella del paese di destinazione"
+      }
+    ]
+  },
+  "MR-ART22-3": {
+    "condition": "Alla quasi-macchina si applicano altri atti giuridici dell'Unione che richiedono una dichiarazione di conformità (es. EMC, RED, CRA)",
+    "points": [
+      {
+        "q": "La dichiarazione di incorporazione dichiara la conformità agli altri atti dell'Unione applicabili, con i riferimenti di pubblicazione",
+        "doc": "dichiarazione",
+        "ok": "citazione di altri atti (es. Direttiva 2014/30/UE, Regolamento 2024/2847) con numero e data o riferimento GU",
+        "no": "elenco di atti senza estremi; solo l'elenco delle norme armonizzate"
+      }
+    ]
+  },
+  "MR-ART22-4": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La dichiarazione di incorporazione è emessa sotto la responsabilità del fabbricante della quasi-macchina ed è firmata da una persona autorizzata",
+        "doc": "dichiarazione",
+        "ok": "formula di responsabilità del fabbricante e nome, funzione e firma del firmatario",
+        "no": "dichiarazione non firmata; firmata da un distributore senza indicare il fabbricante"
+      }
+    ]
+  },
+  "MR-ART24-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La marcatura CE è apposta sulla macchina in modo visibile, leggibile e indelebile (es. su targa metallica o incisa)",
+        "doc": "targa",
+        "ok": "foto o descrizione della targa con il marchio CE e il materiale/metodo di apposizione (rivettata, incisa, etichetta resistente)",
+        "no": "marchio CE solo sul manuale o sull'imballaggio quando la macchina potrebbe riceverlo",
+        "smentita": "la marcatura CE è riportata solo su un'etichetta adesiva removibile o non è presente sulla macchina",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART24-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La marcatura CE è presente sulla macchina alla consegna, prima dell'immissione sul mercato o della messa in servizio",
+        "doc": "targa",
+        "ok": "targa con marchio CE descritta come applicata in fabbrica o presente alla consegna",
+        "no": "indicazione che la marcatura sarà apposta dall'utilizzatore o dopo l'installazione",
+        "smentita": "le istruzioni indicano che la marcatura CE viene apposta dopo la messa in servizio o da terzi",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART24-3": {
+    "condition": "La conformità è valutata con il coinvolgimento di un organismo notificato (moduli B+C, H o G)",
+    "points": [
+      {
+        "q": "La marcatura CE sulla targa è seguita dal numero di identificazione a quattro cifre dell'organismo notificato",
+        "doc": "targa",
+        "ok": "marchio CE seguito dal numero dell'organismo notificato (es. CE 0123)",
+        "no": "numero del certificato al posto del numero dell'organismo; nome dell'organismo senza numero",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE riporta nome e numero dell'organismo notificato coinvolto nella procedura",
+        "doc": "dichiarazione",
+        "ok": "nome, indirizzo e numero dell'organismo notificato e riferimento al certificato nella dichiarazione",
+        "no": "organismo citato solo per prove volontarie non legate alla procedura di valutazione",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART24-4": {
+    "condition": "Sulla macchina è presente un pittogramma o marchio aggiuntivo vicino alla marcatura CE",
+    "points": [
+      {
+        "q": "Gli eventuali pittogrammi o marchi accanto alla marcatura CE indicano un rischio o un impiego particolare",
+        "doc": "targa",
+        "ok": "descrizione della targa con marchio CE seguito da pittogramma di rischio o di impiego (es. marchio Ex per atmosfere esplosive)",
+        "no": "loghi commerciali o marchi di certificazione volontaria descritti come marchio di rischio",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART25-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione indica quale procedura di valutazione della conformità è stata applicata (modulo A, B+C, H o G)",
+        "doc": "dichiarazione",
+        "ok": "indicazione esplicita del modulo o della procedura (es. controllo interno della produzione, allegato VI)",
+        "no": "solo l'elenco delle norme applicate; dichiarazione di conformità senza indicazione della procedura",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART25-2": {
+    "condition": "La macchina rientra in una categoria dell'allegato I, parte A",
+    "points": [
+      {
+        "q": "Per la categoria dell'allegato I parte A è stata applicata una procedura con organismo notificato: esame UE del tipo + modulo C, modulo H o modulo G",
+        "doc": "certificati",
+        "ok": "certificato di esame UE del tipo, di approvazione del sistema qualità totale o di verifica dell'unico prodotto rilasciato da un organismo notificato",
+        "no": "autocertificazione con controllo interno (modulo A); rapporto di prova di laboratorio non notificato",
+        "smentita": "la dichiarazione indica il controllo interno della produzione (modulo A) per una macchina dell'allegato I parte A",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE indica la categoria dell'allegato I parte A e l'organismo notificato con il numero di certificato",
+        "doc": "dichiarazione",
+        "ok": "riferimento alla categoria dell'allegato I, nome e numero dell'organismo notificato e numero del certificato",
+        "no": "organismo notificato citato senza numero di certificato",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART25-3": {
+    "condition": "La macchina rientra in una categoria dell'allegato I, parte B",
+    "points": [
+      {
+        "q": "La documentazione indica la procedura scelta per la categoria dell'allegato I parte B: modulo A, B+C, H o G",
+        "doc": "dichiarazione",
+        "ok": "indicazione della categoria dell'allegato I parte B e del modulo applicato",
+        "no": "dichiarazione senza indicazione della categoria né della procedura",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Se si usa il modulo A, la dichiarazione elenca norme armonizzate specifiche della categoria che coprono tutti i requisiti essenziali pertinenti",
+        "doc": "dichiarazione",
+        "ok": "elenco di norme di tipo C specifiche della categoria applicate integralmente (es. EN ISO 10218-1 per robot)",
+        "no": "solo norme di base (EN ISO 12100) o applicate parzialmente; norme non armonizzate",
+        "smentita": "si applica il modulo A ma la documentazione dichiara l'applicazione parziale delle norme o l'uso di specifiche non armonizzate",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Se non sono applicate integralmente norme armonizzate o specifiche comuni, esiste un certificato di organismo notificato (modulo B, H o G)",
+        "doc": "certificati",
+        "ok": "certificato di esame UE del tipo, di sistema qualità totale o di verifica dell'unico prodotto",
+        "no": "rapporto di prova volontario; certificato di sistema qualità ISO 9001",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-ART25-4": {
+    "condition": "La macchina non rientra nelle categorie dell'allegato I",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità indica il controllo interno della produzione (modulo A, allegato VI) come procedura applicata",
+        "doc": "dichiarazione",
+        "ok": "riferimento al modulo A o all'allegato VI, o dichiarazione che la macchina non rientra nell'allegato I",
+        "no": "dichiarazione senza alcuna indicazione della procedura",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-a": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione descrive la macchina in modo completo: composizione, gruppi principali, funzionamento e caratteristiche tecniche",
+        "doc": "istruzioni",
+        "ok": "descrizione dei gruppi o componenti principali, del ciclo di funzionamento e dei dati tecnici della macchina",
+        "no": "frase commerciale di presentazione; solo il nome del modello",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione definisce l'uso previsto della macchina: funzione, materiali lavorati, ambiente e utilizzatori previsti, usi scorretti vietati",
+        "doc": "istruzioni",
+        "ok": "paragrafo \"uso previsto\" con funzione, materiali, ambiente d'impiego, utenti previsti e usi non consentiti",
+        "no": "solo un elenco di avvertenze generali di sicurezza",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-b": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi descrive la procedura seguita: limiti della macchina, identificazione dei pericoli, stima e riduzione del rischio",
+        "doc": "valutazione_rischi",
+        "ok": "metodo dichiarato (es. EN ISO 12100) con limiti, elenco dei pericoli e stima del rischio prima e dopo le misure",
+        "no": "solo l'elenco delle norme; frase che dichiara eseguita l'analisi senza contenuti",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La valutazione dei rischi contiene l'elenco dei requisiti essenziali dell'allegato III applicabili alla macchina",
+        "doc": "valutazione_rischi",
+        "ok": "tabella o lista dei punti dell'allegato III (es. 1.3.7, 1.4.2, 1.7.4) con indicazione di applicabilità",
+        "no": "elenco dei pericoli senza collegamento ai requisiti essenziali",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La valutazione dei rischi descrive le misure di protezione adottate per ciascun requisito applicabile e indica i rischi residui",
+        "doc": "valutazione_rischi",
+        "ok": "misure concrete (ripari, dispositivi, funzioni di sicurezza, avvertenze) associate ai pericoli ed elenco dei rischi residui",
+        "no": "misure generiche (\"adeguate protezioni\"); rischi residui non indicati",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-c": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esistono disegni d'assieme e di dettaglio della macchina e dei suoi componenti e sottoinsiemi",
+        "doc": "disegni",
+        "ok": "disegni d'assieme, layout, distinte o disegni di dettaglio con numero e revisione",
+        "no": "fotografie o immagini commerciali; schizzi senza riferimenti",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Esistono gli schemi dei circuiti della macchina (elettrici, pneumatici, idraulici, di comando)",
+        "doc": "schemi",
+        "ok": "schemi elettrici, pneumatici o idraulici con numero e revisione, inclusi i circuiti di sicurezza",
+        "no": "solo lo schema a blocchi commerciale; elenco dei componenti senza schema",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-d": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione contiene descrizioni che spiegano disegni e schemi: legende, funzione dei circuiti e dei dispositivi di sicurezza",
+        "doc": "schemi",
+        "ok": "legenda dei simboli, descrizione della funzione dei circuiti e dei componenti di sicurezza riportati negli schemi",
+        "no": "schemi senza legenda né descrizione",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione descrive il funzionamento della macchina: modi operativi, sequenza di ciclo, comandi e logica di controllo",
+        "doc": "istruzioni",
+        "ok": "descrizione dei modi di funzionamento, del ciclo di lavoro e della logica dei comandi",
+        "no": "solo l'elenco dei pulsanti del pannello senza descrizione del funzionamento",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-e": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione elenca le norme armonizzate o le specifiche comuni applicate nella progettazione, con codice e anno di edizione",
+        "doc": "dichiarazione",
+        "ok": "elenco di norme con codice ed edizione (es. EN ISO 12100:2010, EN 60204-1:2018)",
+        "no": "riferimento generico \"norme vigenti\"; norme senza codice",
+        "quasi": "integratore"
+      },
+      {
+        "q": "In caso di applicazione parziale di una norma armonizzata, la documentazione indica le parti o i punti applicati",
+        "doc": "valutazione_rischi",
+        "ok": "indicazione dei capitoli o clausole applicati per ciascuna norma usata solo in parte",
+        "no": "dichiarazione di applicazione parziale senza indicare quali parti",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-f": {
+    "condition": "Le norme armonizzate o le specifiche comuni non sono applicate o sono applicate solo in parte",
+    "points": [
+      {
+        "q": "La documentazione descrive le altre specifiche tecniche usate per soddisfare i requisiti essenziali non coperti da norme armonizzate",
+        "doc": "valutazione_rischi",
+        "ok": "elenco di norme non armonizzate, specifiche interne o metodi tecnici collegati ai requisiti essenziali che coprono",
+        "no": "solo l'elenco delle norme armonizzate; frase generica di \"buona tecnica\"",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-g": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esistono rapporti di prova o di misura per verificare i requisiti essenziali (es. rumore, vibrazioni, prove elettriche, compatibilità elettromagnetica)",
+        "doc": "rapporti_prova",
+        "ok": "rapporto con data, metodo, strumenti e risultati delle prove o misure eseguite sulla macchina",
+        "no": "solo il riferimento a una norma di prova senza risultati; certificati dei componenti acquistati",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Esistono calcoli di progettazione o la validazione delle funzioni di sicurezza (es. PL o SIL calcolato e verificato)",
+        "doc": "rapporti_prova",
+        "ok": "calcoli strutturali o di stabilità, report di validazione delle funzioni di sicurezza con PL/SIL raggiunto",
+        "no": "PL richiesto dichiarato senza calcolo o verifica",
+        "smentita": "il PL o SIL raggiunto risulta inferiore a quello richiesto dalla valutazione dei rischi",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-h": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione descrive i controlli eseguiti in produzione per assicurare che la macchina corrisponda al progetto (collaudo finale, controlli di processo)",
+        "doc": "certificati",
+        "ok": "piano dei controlli, procedura o verbale tipo di collaudo finale con verifiche di sicurezza",
+        "no": "certificato ISO 9001 citato senza descrizione dei controlli",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-i": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Il fascicolo tecnico contiene una copia delle istruzioni per l'uso della macchina con le informazioni dell'allegato III punto 1.7.4",
+        "doc": "istruzioni",
+        "ok": "manuale d'uso della macchina con installazione, uso, manutenzione, rischi residui e dati di emissione",
+        "no": "solo manuali dei componenti acquistati; scheda commerciale",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-j": {
+    "condition": "La macchina incorpora quasi-macchine",
+    "points": [
+      {
+        "q": "La documentazione contiene la dichiarazione di incorporazione di ciascuna quasi-macchina incorporata",
+        "doc": "dichiarazione",
+        "ok": "dichiarazioni di incorporazione dei fornitori delle quasi-macchine (es. robot, assi, unità di lavoro)",
+        "no": "dichiarazione di conformità CE della quasi-macchina; schede tecniche del fornitore",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione contiene le istruzioni di assemblaggio delle quasi-macchine incorporate",
+        "doc": "istruzioni",
+        "ok": "istruzioni di assemblaggio/incorporazione fornite dal fabbricante della quasi-macchina",
+        "no": "solo il manuale d'uso dell'operatore della quasi-macchina",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-k": {
+    "condition": "La macchina incorpora macchine o prodotti soggetti ad altre normative di armonizzazione dell'Unione",
+    "points": [
+      {
+        "q": "La documentazione contiene le dichiarazioni UE di conformità delle macchine e dei prodotti incorporati (es. motori, componenti radio, dispositivi di sicurezza)",
+        "doc": "dichiarazione",
+        "ok": "copie delle dichiarazioni UE di conformità dei componenti marcati CE incorporati",
+        "no": "schede tecniche o cataloghi dei componenti; certificati di prodotto non UE",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-l": {
+    "condition": "La macchina è prodotta in serie",
+    "points": [
+      {
+        "q": "La documentazione descrive le misure interne per mantenere conformi le macchine prodotte in serie, inclusa la gestione delle modifiche",
+        "doc": "certificati",
+        "ok": "procedure di controllo produzione, gestione delle modifiche di progetto e aggiornamento normativo",
+        "no": "certificato del sistema qualità senza procedure; dichiarazione di impegno",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-m": {
+    "condition": "La macchina impiega software che svolge funzioni di sicurezza",
+    "points": [
+      {
+        "q": "Il fabbricante conserva codice sorgente o logica di programmazione del software di sicurezza ed è in grado di fornirli alle autorità su richiesta",
+        "doc": "certificati",
+        "ok": "identificazione del software di sicurezza (nome, versione, checksum) e procedura di consegna alle autorità",
+        "no": "riferimento al solo software applicativo senza funzioni di sicurezza; licenza d'uso",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione identifica il software relativo alla sicurezza e le funzioni di sicurezza che realizza",
+        "doc": "rapporti_prova",
+        "ok": "elenco delle funzioni di sicurezza realizzate via software, versione del programma e documentazione della logica (es. diagramma o specifica)",
+        "no": "descrizione generica del PLC senza funzioni di sicurezza",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-n": {
+    "condition": "La macchina utilizza sistemi basati su sensori per il controllo delle operazioni di sicurezza",
+    "points": [
+      {
+        "q": "La documentazione descrive caratteristiche, capacità e limitazioni del sistema a sensori che controlla le operazioni di sicurezza",
+        "doc": "specifiche",
+        "ok": "tipo di sensori, campo di rilevamento, condizioni ambientali di funzionamento, limiti noti (es. riflessi, polvere, luce)",
+        "no": "solo il nome commerciale del sensore",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione descrive i dati, lo sviluppo, le prove e la convalida del sistema a sensori che controlla la sicurezza",
+        "doc": "rapporti_prova",
+        "ok": "rapporto di convalida con scenari di prova, dati usati, risultati e criteri di accettazione",
+        "no": "certificato del sensore del fornitore senza prove sull'applicazione",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-A-o": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esistono risultati di prove o ricerche del fabbricante su macchina, componenti o accessori per verificare montaggio e messa in servizio sicuri",
+        "doc": "rapporti_prova",
+        "ok": "verbali di collaudo di montaggio o messa in servizio, prove su prototipo, prove di accessori",
+        "no": "istruzioni di montaggio senza risultati di prova; collaudo presso un cliente specifico",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-IV-B-a": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La documentazione descrive in modo completo la quasi-macchina: composizione, funzionamento e caratteristiche tecniche",
+        "doc": "istruzioni",
+        "ok": "descrizione dei gruppi principali, del funzionamento e dei dati tecnici della quasi-macchina",
+        "no": "frase commerciale; solo il nome del modello"
+      },
+      {
+        "q": "La documentazione descrive la funzione prevista della quasi-macchina una volta incorporata in altre macchine o assemblata con esse",
+        "doc": "istruzioni",
+        "ok": "descrizione del tipo di macchine o impianti di destinazione e del ruolo della quasi-macchina, con limiti di impiego",
+        "no": "descrizione dell'uso della sola quasi-macchina senza riferimento all'incorporazione"
+      }
+    ]
+  },
+  "MR-IV-B-b": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La valutazione dei rischi della quasi-macchina descrive la procedura seguita e contiene l'elenco dei requisiti essenziali dell'allegato III applicabili",
+        "doc": "valutazione_rischi",
+        "ok": "metodo dichiarato (es. EN ISO 12100) e tabella dei punti dell'allegato III con indicazione di applicabilità",
+        "no": "solo l'elenco delle norme; elenco dei pericoli senza collegamento ai requisiti"
+      },
+      {
+        "q": "La valutazione dei rischi descrive le misure di protezione attuate per i pericoli identificati e indica i rischi residui per l'integratore",
+        "doc": "valutazione_rischi",
+        "ok": "misure concrete associate ai pericoli ed elenco dei rischi residui da gestire nella macchina finale",
+        "no": "misure generiche; valutazione della cella dell'utilizzatore invece che della quasi-macchina"
+      }
+    ]
+  },
+  "MR-IV-B-c": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "Esistono disegni d'assieme e di dettaglio della quasi-macchina e dei suoi componenti e sottoinsiemi",
+        "doc": "disegni",
+        "ok": "disegni d'assieme, dimensionali o di dettaglio con numero e revisione",
+        "no": "fotografie o immagini commerciali"
+      },
+      {
+        "q": "Esistono gli schemi dei circuiti della quasi-macchina (elettrici, pneumatici, idraulici, di comando)",
+        "doc": "schemi",
+        "ok": "schemi elettrici, pneumatici o idraulici con numero e revisione, inclusi gli ingressi/uscite di sicurezza",
+        "no": "solo schema a blocchi commerciale; elenco dei componenti"
+      }
+    ]
+  },
+  "MR-IV-B-d": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La documentazione contiene legende e spiegazioni che rendono comprensibili disegni e schemi della quasi-macchina",
+        "doc": "schemi",
+        "ok": "legenda dei simboli e descrizione della funzione dei circuiti e dei segnali di interfaccia",
+        "no": "schemi senza legenda né descrizione"
+      },
+      {
+        "q": "La documentazione descrive il funzionamento della quasi-macchina: modi operativi, comandi e interfacce verso la macchina finale",
+        "doc": "istruzioni",
+        "ok": "descrizione dei modi di funzionamento, dei segnali di comando e delle interfacce di sicurezza da collegare",
+        "no": "solo l'elenco dei componenti"
+      }
+    ]
+  },
+  "MR-IV-B-e": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La documentazione elenca le norme armonizzate o specifiche comuni applicate alla quasi-macchina, con codice e anno di edizione",
+        "doc": "dichiarazione",
+        "ok": "elenco di norme con codice ed edizione (es. EN ISO 10218-1:2011, EN 60204-1:2018)",
+        "no": "riferimento generico \"norme vigenti\"; norme senza codice"
+      },
+      {
+        "q": "In caso di applicazione parziale di una norma armonizzata, la documentazione indica le parti o i punti applicati",
+        "doc": "valutazione_rischi",
+        "ok": "indicazione dei capitoli o clausole applicati per ciascuna norma usata solo in parte",
+        "no": "dichiarazione di applicazione parziale senza indicare quali parti"
+      }
+    ]
+  },
+  "MR-IV-B-f": {
+    "condition": "Il prodotto è una quasi-macchina e le norme armonizzate o le specifiche comuni non sono applicate o lo sono solo in parte",
+    "points": [
+      {
+        "q": "La documentazione descrive le altre specifiche tecniche usate per soddisfare i requisiti essenziali non coperti da norme armonizzate",
+        "doc": "valutazione_rischi",
+        "ok": "elenco di norme non armonizzate, specifiche interne o metodi tecnici collegati ai requisiti che coprono",
+        "no": "solo l'elenco delle norme armonizzate; frase generica di \"buona tecnica\""
+      }
+    ]
+  },
+  "MR-IV-B-g": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "Esistono rapporti di prova, misura o calcolo eseguiti sulla quasi-macchina per verificare i requisiti essenziali dichiarati applicati",
+        "doc": "rapporti_prova",
+        "ok": "rapporti con data, metodo e risultati di prove, misure o calcoli di progettazione sulla quasi-macchina",
+        "no": "solo il riferimento a una norma di prova senza risultati; certificati dei componenti acquistati"
+      },
+      {
+        "q": "Esiste la validazione delle funzioni di sicurezza realizzate dalla quasi-macchina, con PL o SIL raggiunto",
+        "doc": "rapporti_prova",
+        "ok": "report di validazione con funzioni di sicurezza, PL/SIL calcolato e verificato",
+        "no": "PL dichiarato senza calcolo o verifica",
+        "smentita": "il PL o SIL raggiunto risulta inferiore a quello dichiarato o richiesto"
+      }
+    ]
+  }
+}

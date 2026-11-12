@@ -1,0 +1,1005 @@
+{
+ "MR-III-3.5.3": {
+  "condition": "La macchina ha come funzione principale l'applicazione di sostanze pericolose",
+  "points": [
+   {
+    "q": "La valutazione dei rischi analizza l'esposizione dell'operatore alle sostanze pericolose applicate dalla macchina e indica le misure di protezione adottate",
+    "doc": "valutazione_rischi",
+    "ok": "pericolo di esposizione a sostanze pericolose (nebbie, vapori, polveri) con misura di protezione indicata: cabina, aspirazione, schermatura",
+    "no": "solo l'obbligo per l'utilizzatore di usare DPI; schede di sicurezza delle sostanze senza misure sulla macchina"
+   },
+   {
+    "q": "Le istruzioni o le specifiche descrivono la cabina di filtrazione (o misura equivalente) del posto di guida, con classe o tipo di filtrazione",
+    "doc": "specifiche",
+    "ok": "cabina con filtrazione dell'aria, categoria della cabina o tipo di filtri, pressurizzazione",
+    "no": "cabina descritta solo per comfort o climatizzazione; filtro dell'aria del motore",
+    "smentita": "la macchina mobile con conducente è dichiarata priva di cabina e di sistemi di filtrazione"
+   },
+   {
+    "q": "Le istruzioni indicano la manutenzione e la sostituzione dei filtri della cabina o dei sistemi di protezione dalle emissioni",
+    "doc": "istruzioni",
+    "ok": "intervalli di sostituzione dei filtri, verifica della tenuta o della pressurizzazione",
+    "no": "manutenzione generica del motore o dell'impianto di irrorazione"
+   }
+  ]
+ },
+ "MR-III-3.5.4": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni avvertono del rischio di contatto o arco con linee elettriche aeree e indicano le distanze minime o i limiti di altezza da rispettare",
+    "doc": "istruzioni",
+    "ok": "distanze di sicurezza dalle linee aeree, altezza massima raggiungibile, divieto di operare in prossimità di linee in tensione",
+    "no": "avvertenze sull'impianto elettrico di bordo; rischio elettrico generico"
+   },
+   {
+    "q": "Le specifiche indicano l'altezza massima raggiungibile dalla macchina nelle configurazioni d'uso previste",
+    "doc": "specifiche",
+    "ok": "altezza massima di lavoro o di ingombro in metri, per configurazione",
+    "no": "dimensioni di trasporto soltanto"
+   },
+   {
+    "q": "La valutazione dei rischi tratta il contatto con linee elettriche aeree e le misure adottate (limitatori di altezza, isolamento, avvisatori di prossimità)",
+    "doc": "valutazione_rischi",
+    "ok": "pericolo di contatto o arco con linee aeree e misura specifica: limitatore di altezza o rotazione, isolamento, rilevatore di prossimità di tensione",
+    "no": "solo rimando alle istruzioni o alla formazione dell'operatore"
+   }
+  ]
+ },
+ "MR-III-3.6.1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni elencano le iscrizioni, i pittogrammi e le targhe di avvertimento applicati sulla macchina, con la loro posizione",
+    "doc": "istruzioni",
+    "ok": "elenco o figura dei segnali di sicurezza con significato e posizione; indicazione di sostituirli se illeggibili",
+    "no": "riferimento generico alla segnaletica senza elenco; segnali del luogo di lavoro"
+   },
+   {
+    "q": "Le specifiche o le istruzioni indicano l'avvisatore acustico e il sistema di segnalazione luminosa della macchina con conducente trasportato",
+    "doc": "specifiche",
+    "ok": "clacson, segnalatore di retromarcia, luci di lavoro o lampeggiante descritti come dotazione",
+    "no": "fari stradali richiesti solo dal codice della strada senza dotazione descritta"
+   },
+   {
+    "q": "Le istruzioni descrivono i mezzi che segnalano gli spostamenti della macchina telecomandata o in retromarcia senza visibilità posteriore",
+    "doc": "istruzioni",
+    "ok": "segnale acustico o luminoso di movimento o retromarcia, telecamera posteriore, sensori di presenza",
+    "no": "raccomandazione all'operatore di guardarsi intorno"
+   },
+   {
+    "q": "Le istruzioni o gli schemi indicano che i dispositivi di avvertimento non possono essere disinseriti involontariamente e che il loro guasto è segnalato",
+    "doc": "istruzioni",
+    "ok": "dispositivo di avvertimento sempre attivo con la macchina in movimento, diagnosi o spia di guasto del segnalatore",
+    "no": "descrizione del solo pulsante del clacson",
+    "smentita": "le istruzioni indicano che il segnalatore di retromarcia può essere escluso dall'operatore con un interruttore"
+   }
+  ]
+ },
+ "MR-III-3.6.2": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La targa della macchina riporta la potenza nominale in kW e la massa nella configurazione più usuale in kg",
+    "doc": "targa",
+    "ok": "valori di potenza in kW e massa in kg leggibili sulla targa o sulla sua riproduzione",
+    "no": "potenza o massa indicate solo nella scheda tecnica"
+   },
+   {
+    "q": "La targa riporta lo sforzo massimo di trazione e lo sforzo verticale massimo al gancio di traino in newton, se la macchina ha un gancio di traino",
+    "doc": "targa",
+    "ok": "valori in N per trazione orizzontale e carico verticale al gancio",
+    "no": "massa rimorchiabile in kg senza sforzi in N; valori solo nel manuale"
+   },
+   {
+    "q": "Le istruzioni riproducono la targa e indicano la sua posizione sulla macchina",
+    "doc": "istruzioni",
+    "ok": "figura della targa con i dati, posizione di fissaggio",
+    "no": "riferimento generico alla targa di identificazione"
+   }
+  ]
+ },
+ "MR-III-3.6.3.1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni dichiarano il valore delle vibrazioni trasmesse al sistema mano-braccio in m/s², con l'incertezza di misura",
+    "doc": "istruzioni",
+    "ok": "valore totale in m/s² (o indicazione che non supera 2,5 m/s²) e incertezza K",
+    "no": "affermazioni qualitative ('basse vibrazioni'); valori senza unità"
+   },
+   {
+    "q": "Le istruzioni dichiarano il valore quadratico medio massimo dell'accelerazione ponderata trasmessa a tutto il corpo, o che non supera 0,5 m/s²",
+    "doc": "istruzioni",
+    "ok": "valore in m/s² per il corpo intero con incertezza, o dichiarazione che è ≤ 0,5 m/s²",
+    "no": "valori per il solo sedile senza riferimento all'esposizione; dati di comfort"
+   },
+   {
+    "q": "Le istruzioni o i rapporti di prova indicano il codice di misura delle vibrazioni usato e le condizioni di funzionamento durante la misura",
+    "doc": "rapporti_prova",
+    "ok": "norma o codice di prova citato e descrizione del ciclo, carico, velocità, terreno durante la misura",
+    "no": "solo il valore senza metodo; rimando generico alla norma armonizzata di prodotto"
+   }
+  ]
+ },
+ "MR-III-3.6.3.2": {
+  "condition": "La macchina consente usi diversi con attrezzature intercambiabili",
+  "points": [
+   {
+    "q": "Le istruzioni elencano le attrezzature intercambiabili ammesse sulla macchina di base, con i limiti di compatibilità",
+    "doc": "istruzioni",
+    "ok": "elenco delle attrezzature ammesse con masse, portate o attacchi compatibili",
+    "no": "riferimento generico ad 'accessori opzionali'",
+    "smentita": "le istruzioni ammettono qualsiasi attrezzatura senza limiti di massa o compatibilità"
+   },
+   {
+    "q": "Le istruzioni descrivono la procedura di montaggio, bloccaggio e smontaggio delle attrezzature intercambiabili in sicurezza",
+    "doc": "istruzioni",
+    "ok": "passi di aggancio, verifica del bloccaggio, collegamento idraulico o elettrico, posizione sicura durante il cambio",
+    "no": "solo l'uso dell'attrezzatura già montata"
+   },
+   {
+    "q": "Le istruzioni indicano le avvertenze d'uso sicuro della macchina per ciascuna attrezzatura (stabilità, carichi, velocità)",
+    "doc": "istruzioni",
+    "ok": "limiti di carico o stabilità per attrezzatura, zavorre necessarie, comandi specifici",
+    "no": "avvertenze generali della macchina valide per tutti gli usi"
+   }
+  ]
+ },
+ "MR-III-3.6.3.3": {
+  "condition": "La macchina è mobile e autonoma",
+  "points": [
+   {
+    "q": "Le istruzioni descrivono le caratteristiche delle zone di spostamento e di lavoro della macchina autonoma (delimitazione, pendenze, superfici, ostacoli)",
+    "doc": "istruzioni",
+    "ok": "requisiti del suolo, pendenza massima, larghezza dei passaggi, modalità di delimitazione dell'area",
+    "no": "descrizione della sola navigazione o del software di mappatura"
+   },
+   {
+    "q": "Le istruzioni definiscono le zone pericolose attorno alla macchina autonoma e come vanno segnalate o protette",
+    "doc": "istruzioni",
+    "ok": "distanze o aree di pericolo, campi di protezione dei sensori, segnaletica o recinzioni richieste",
+    "no": "avvertenza generica di non avvicinarsi alla macchina"
+   }
+  ]
+ },
+ "MR-III-4.1.2.1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "I rapporti di prova o i calcoli verificano la stabilità della macchina di sollevamento in servizio, fuori servizio e durante trasporto, montaggio e smontaggio",
+    "doc": "rapporti_prova",
+    "ok": "calcolo o prova di stabilità con le configurazioni considerate (carico, vento, pendenza, fasi di montaggio)",
+    "no": "affermazione di stabilità senza calcolo o prova; sola stabilità a vuoto"
+   },
+   {
+    "q": "La valutazione dei rischi considera la perdita di stabilità per guasti prevedibili di componenti",
+    "doc": "valutazione_rischi",
+    "ok": "guasti considerati (cedimento di uno stabilizzatore, perdita di pressione, rottura di un appoggio) e misure adottate",
+    "no": "pericolo di ribaltamento citato senza riferimento a guasti"
+   },
+   {
+    "q": "Le istruzioni indicano le condizioni di stabilità: pendenza massima, portata del terreno, uso degli stabilizzatori, velocità del vento ammessa",
+    "doc": "istruzioni",
+    "ok": "valori limite di pendenza, pressione al suolo, vento; procedura di stabilizzazione",
+    "no": "raccomandazione generica di lavorare su terreno piano"
+   }
+  ]
+ },
+ "MR-III-4.1.2.2": {
+  "condition": "La macchina si sposta lungo guide o vie di corsa",
+  "points": [
+   {
+    "q": "Le specifiche o i disegni indicano i dispositivi antideragliamento che agiscono sulle guide o vie di corsa",
+    "doc": "disegni",
+    "ok": "controrulli, rulli di guida, flange, ganasce antideragliamento",
+    "no": "solo i dati delle rotaie o dei binari"
+   },
+   {
+    "q": "I disegni o le istruzioni indicano i dispositivi che impediscono la caduta di attrezzature o del carico e il ribaltamento in caso di deragliamento o rottura di un organo di guida",
+    "doc": "disegni",
+    "ok": "staffe di ritenuta, appoggi di sicurezza, ganci antiribaltamento, tamponi",
+    "no": "fine corsa o respingenti di fine via soltanto"
+   }
+  ]
+ },
+ "MR-III-4.1.2.3": {
+  "condition": "",
+  "points": [
+   {
+    "q": "I calcoli strutturali verificano la resistenza della macchina e degli accessori di sollevamento a carichi, fatica e usura per la vita prevista",
+    "doc": "rapporti_prova",
+    "ok": "calcolo con carichi, combinazioni, classe di servizio o numero di cicli, verifica a fatica",
+    "no": "solo la portata nominale; dichiarazione generica di robustezza"
+   },
+   {
+    "q": "I rapporti di prova riportano le prove statiche di sovraccarico con il coefficiente di prova statica usato e l'esito senza deformazioni permanenti",
+    "doc": "rapporti_prova",
+    "ok": "coefficiente di prova statica (es. 1,25 o 1,5), carico applicato, esito senza deformazioni o disfunzioni",
+    "no": "prova a carico nominale senza sovraccarico",
+    "smentita": "il rapporto registra deformazioni permanenti dopo la prova statica"
+   },
+   {
+    "q": "Le specifiche indicano i materiali scelti e le condizioni ambientali di esercizio considerate (temperature, corrosione, agenti atmosferici)",
+    "doc": "specifiche",
+    "ok": "materiali con qualità o trattamenti, campo di temperatura, protezione dalla corrosione, carico del vento",
+    "no": "solo l'elenco dei materiali senza condizioni di esercizio"
+   }
+  ]
+ },
+ "MR-III-4.1.2.4": {
+  "condition": "La macchina di sollevamento impiega funi o catene",
+  "points": [
+   {
+    "q": "Le specifiche o i calcoli indicano il coefficiente di utilizzazione dell'insieme fune e terminale",
+    "doc": "rapporti_prova",
+    "ok": "coefficiente di utilizzazione dichiarato per fune e terminale (in generale 5)",
+    "no": "solo il carico di rottura della fune senza coefficiente"
+   },
+   {
+    "q": "Le specifiche o i calcoli indicano il coefficiente di utilizzazione delle catene di sollevamento",
+    "doc": "rapporti_prova",
+    "ok": "coefficiente di utilizzazione della catena (in generale 4)",
+    "no": "classe o grado della catena senza coefficiente"
+   },
+   {
+    "q": "I disegni o le specifiche mostrano diametri di pulegge e tamburi compatibili con fune o catena e dispositivi che impediscono lo scavalcamento",
+    "doc": "disegni",
+    "ok": "rapporto diametro tamburo/fune, gola delle pulegge, guidafune, premifune",
+    "no": "solo il diametro della fune"
+   },
+   {
+    "q": "I rapporti di prova documentano le prove per ciascun tipo di fune, catena e terminale usato per il sollevamento",
+    "doc": "rapporti_prova",
+    "ok": "certificati o prove di rottura per tipo di fune, catena e terminale",
+    "no": "certificato del solo fornitore della macchina senza dati di prova"
+   }
+  ]
+ },
+ "MR-III-4.1.2.5": {
+  "condition": "Il prodotto è un accessorio di sollevamento o ne comprende",
+  "points": [
+   {
+    "q": "I calcoli dimensionano l'accessorio di sollevamento a fatica e invecchiamento per il numero di cicli della vita prevista",
+    "doc": "rapporti_prova",
+    "ok": "numero di cicli o durata di progetto, verifica a fatica",
+    "no": "solo carico massimo di utilizzazione"
+   },
+   {
+    "q": "Le specifiche indicano il coefficiente di utilizzazione dei componenti: fune metallica e terminale (5), catene (4), fibre tessili (7), componenti metallici di imbracature (4)",
+    "doc": "specifiche",
+    "ok": "coefficiente di utilizzazione dichiarato per ciascun tipo di componente presente",
+    "no": "solo il carico di rottura o la portata",
+    "smentita": "coefficiente dichiarato inferiore ai valori generali senza giustificazione (es. fune metallica con coefficiente 3)"
+   },
+   {
+    "q": "I rapporti di prova documentano le prove per ciascun tipo di componente (funi, catene, fibre tessili, componenti metallici)",
+    "doc": "rapporti_prova",
+    "ok": "prove di rottura o di carico per tipo di componente con esito",
+    "no": "dichiarazione generica di prova eseguita"
+   },
+   {
+    "q": "Le specifiche indicano che le catene a maglie saldate sono a maglia corta e che funi e imbracature non hanno nodi o impiombature intermedie",
+    "doc": "specifiche",
+    "ok": "tipo di catena a maglia corta, costruzione della fune o braca con sole terminazioni di estremità",
+    "no": "descrizione commerciale generica dell'imbracatura"
+   }
+  ]
+ },
+ "MR-III-4.1.2.6": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni o gli schemi descrivono i finecorsa o limitatori che mantengono i movimenti entro i limiti previsti",
+    "doc": "istruzioni",
+    "ok": "finecorsa di salita, discesa, rotazione, traslazione; limitatori di ampiezza; eventuale segnale prima dell'intervento",
+    "no": "elenco dei movimenti senza limitatori"
+   },
+   {
+    "q": "Le istruzioni o gli schemi indicano che il carico non cade né deriva in caso di mancanza di energia o rilascio del comando (freni a riposo, valvole di blocco)",
+    "doc": "schemi",
+    "ok": "freni normalmente chiusi, valvole di blocco o paracadute sui cilindri, irreversibilità del riduttore",
+    "no": "solo la descrizione del freno di servizio",
+    "smentita": "il manuale indica che in mancanza di energia il carico scende per gravità senza controllo"
+   },
+   {
+    "q": "Le specifiche indicano che la discesa del carico non avviene sotto il solo controllo di un freno a frizione",
+    "doc": "specifiche",
+    "ok": "discesa motorizzata o controllata, freno di stazionamento separato",
+    "no": "presenza del freno senza descrizione della discesa"
+   },
+   {
+    "q": "Le istruzioni descrivono gli organi di presa e come impediscono la caduta improvvisa del carico (es. ventose con riserva di vuoto, magneti con batteria tampone)",
+    "doc": "istruzioni",
+    "ok": "dispositivo di presa con mantenimento in caso di mancanza di energia, allarme di perdita presa",
+    "no": "portata dell'organo di presa soltanto"
+   }
+  ]
+ },
+ "MR-III-4.1.2.7": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni o i disegni indicano la posizione della postazione di manovra e la visibilità sulle traiettorie dei carichi, con eventuali ausili (telecamere, specchi)",
+    "doc": "istruzioni",
+    "ok": "posizione del posto di comando, campo visivo, telecamere o comando a distanza per visibilità",
+    "no": "raccomandazione generica di prestare attenzione"
+   },
+   {
+    "q": "Per le macchine a carico guidato, la valutazione dei rischi tratta le lesioni dovute ai movimenti di carico, supporto o contrappesi e le protezioni adottate",
+    "doc": "valutazione_rischi",
+    "ok": "pericoli di schiacciamento da carico o contrappeso con ripari, recinzioni del vano o guide del contrappeso",
+    "no": "solo rischi di caduta del carico"
+   }
+  ]
+ },
+ "MR-III-4.1.2.8.1": {
+  "condition": "La macchina collega piani definiti",
+  "points": [
+   {
+    "q": "Le specifiche o i disegni indicano che il supporto del carico si muove su guide rigide (o sistema a forbice) verso e ai piani",
+    "doc": "disegni",
+    "ok": "guide rigide, montanti di guida o meccanismo a forbice",
+    "no": "sospensione a funi senza guide",
+    "smentita": "il supporto del carico è sospeso liberamente a funi senza guide"
+   }
+  ]
+ },
+ "MR-III-4.1.2.8.2": {
+  "condition": "Le persone hanno accesso al supporto del carico",
+  "points": [
+   {
+    "q": "Le istruzioni o gli schemi descrivono come il supporto del carico resta immobile durante l'accesso, il carico e lo scarico",
+    "doc": "istruzioni",
+    "ok": "freno di stazionamento al piano, blocco meccanico, livellamento con interblocco porte",
+    "no": "istruzione all'operatore di non muovere il supporto"
+   },
+   {
+    "q": "Le specifiche indicano la precisione di fermata o livellamento al piano che evita dislivelli e inciampi",
+    "doc": "specifiche",
+    "ok": "tolleranza di arresto al piano in mm, rilivellamento automatico, rampe",
+    "no": "velocità del supporto soltanto"
+   }
+  ]
+ },
+ "MR-III-4.1.2.8.3": {
+  "condition": "",
+  "points": [
+   {
+    "q": "I disegni o le istruzioni indicano come il percorso del supporto del carico è reso inaccessibile durante il funzionamento normale",
+    "doc": "disegni",
+    "ok": "vano chiuso, recinzioni del percorso, porte interbloccate",
+    "no": "cartelli di divieto soltanto"
+   },
+   {
+    "q": "Le istruzioni o i disegni indicano i volumi di rifugio o i dispositivi meccanici di blocco del supporto del carico per ispezione e manutenzione",
+    "doc": "istruzioni",
+    "ok": "spazio libero in fossa o testata con dimensioni, puntello o blocco meccanico e procedura d'uso",
+    "no": "solo la messa fuori tensione prima della manutenzione"
+   }
+  ]
+ },
+ "MR-III-4.1.2.8.4": {
+  "condition": "",
+  "points": [
+   {
+    "q": "I disegni o le specifiche descrivono le protezioni contro la caduta del carico dal supporto (pareti, sponde, cancelli, fermi)",
+    "doc": "disegni",
+    "ok": "pareti o sponde con altezza, cancelli del supporto, sistemi di ritenuta del carico",
+    "no": "istruzione di fissare il carico senza mezzi previsti sulla macchina"
+   }
+  ]
+ },
+ "MR-III-4.1.2.8.5": {
+  "condition": "La macchina collega piani definiti",
+  "points": [
+   {
+    "q": "I disegni o le istruzioni descrivono i ripari ai piani contro la caduta nel percorso del supporto del carico e il loro verso di apertura",
+    "doc": "disegni",
+    "ok": "porte o cancelli di piano che non si aprono verso il vano",
+    "no": "ripari del solo supporto del carico",
+    "smentita": "le porte di piano si aprono verso il percorso del supporto"
+   },
+   {
+    "q": "Gli schemi o le istruzioni descrivono l'interblocco dei ripari di piano: nessun movimento con ripari aperti e nessuna apertura se il supporto non è al piano",
+    "doc": "schemi",
+    "ok": "serratura con interblocco comandata dalla posizione del supporto, contatti di porta nel circuito di sicurezza",
+    "no": "semplice contatto di presenza porta senza bloccaggio"
+   },
+   {
+    "q": "La valutazione dei rischi tratta il contatto delle persone ai piani con il supporto in movimento o altri elementi mobili",
+    "doc": "valutazione_rischi",
+    "ok": "pericoli di cesoiamento e schiacciamento ai piani con misure (ripari, distanze, porte)",
+    "no": "solo rischi interni al supporto del carico"
+   }
+  ]
+ },
+ "MR-III-4.1.3": {
+  "condition": "",
+  "points": [
+   {
+    "q": "I rapporti di prova documentano le prove statiche e dinamiche eseguite sulla macchina di sollevamento pronta per la messa in servizio, con carichi applicati ed esito",
+    "doc": "rapporti_prova",
+    "ok": "verbale con carico statico (sovraccarico) e dinamico, numero di matricola, esito",
+    "no": "prova di tipo su un prototipo soltanto; sola prova funzionale a vuoto"
+   },
+   {
+    "q": "Le istruzioni indicano le prove da eseguire sul luogo di utilizzo se la macchina non è montata presso il fabbricante",
+    "doc": "istruzioni",
+    "ok": "procedura di collaudo dopo il montaggio con carichi di prova e verifiche",
+    "no": "rimando alle verifiche periodiche dell'utilizzatore"
+   }
+  ]
+ },
+ "MR-III-4.2.1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni descrivono i comandi dei movimenti come ad azione mantenuta (il movimento si arresta al rilascio)",
+    "doc": "istruzioni",
+    "ok": "joystick o pulsanti ad azione mantenuta, ritorno automatico in posizione neutra",
+    "no": "elenco dei comandi senza modalità di azionamento",
+    "smentita": "un movimento con rischio di urto è comandato con pulsante ad autoritenuta"
+   },
+   {
+    "q": "Le istruzioni indicano quali movimenti avvengono con arresto automatico in posizioni preselezionate e perché non c'è rischio di urto",
+    "doc": "istruzioni",
+    "ok": "movimenti automatici elencati con posizioni preselezionate e motivazione dell'assenza di rischio",
+    "no": "funzioni automatiche descritte senza limiti di posizione"
+   }
+  ]
+ },
+ "MR-III-4.2.2": {
+  "condition": "Carico massimo di utilizzazione di almeno 1 000 kg o momento di rovesciamento di almeno 40 000 Nm",
+  "points": [
+   {
+    "q": "Le istruzioni descrivono il limitatore di carico o di momento che avverte il conducente e blocca i movimenti pericolosi in caso di sovraccarico",
+    "doc": "istruzioni",
+    "ok": "limitatore di carico o momento con allarme e blocco dei movimenti aggravanti",
+    "no": "solo la tabella dei carichi; indicatore di carico senza blocco",
+    "smentita": "il limitatore può essere escluso dall'operatore durante il normale lavoro"
+   },
+   {
+    "q": "Le istruzioni descrivono il controllo del momento di rovesciamento con avviso e blocco dei movimenti",
+    "doc": "istruzioni",
+    "ok": "controllo di stabilità o di momento con soglia di preallarme e arresto",
+    "no": "avvertenza di non superare i carichi ammessi"
+   },
+   {
+    "q": "I rapporti di prova verificano l'intervento del limitatore alle soglie di carico o momento previste",
+    "doc": "rapporti_prova",
+    "ok": "prova con carico di intervento, tolleranza ed esito",
+    "no": "taratura dichiarata senza prova"
+   }
+  ]
+ },
+ "MR-III-4.2.3": {
+  "condition": "La macchina è un impianto guidato da funi",
+  "points": [
+   {
+    "q": "Le specifiche o i disegni indicano che le funi portanti o traenti sono tese da contrappesi o da un dispositivo di controllo permanente della tensione",
+    "doc": "disegni",
+    "ok": "contrappeso di tensione, tenditore idraulico con controllo della tensione",
+    "no": "regolazione manuale periodica della tensione",
+    "smentita": "la tensione delle funi è regolata solo manualmente senza controllo"
+   }
+  ]
+ },
+ "MR-III-4.3.1": {
+  "condition": "Il prodotto comprende catene, funi o cinghie di sollevamento fornite non in un insieme",
+  "points": [
+   {
+    "q": "La marcatura o targa della catena, fune o cinghia riporta i riferimenti del fabbricante e l'identificazione dell'attestazione",
+    "doc": "targa",
+    "ok": "marchio o nome del fabbricante e numero o codice dell'attestazione su marcatura, targhetta o anello",
+    "no": "solo diametro o grado della catena"
+   },
+   {
+    "q": "L'attestazione della catena o fune riporta fabbricante, dimensioni nominali, costruzione, materiale, trattamenti, metodo di prova e carico massimo di esercizio",
+    "doc": "certificati",
+    "ok": "certificato con tutti i dati elencati, compreso il carico massimo o la forcella di valori",
+    "no": "certificato di sola qualità del materiale senza carico massimo né metodo di prova"
+   }
+  ]
+ },
+ "MR-III-4.3.2": {
+  "condition": "Il prodotto è un accessorio di sollevamento",
+  "points": [
+   {
+    "q": "La marcatura dell'accessorio di sollevamento riporta il carico massimo di utilizzazione e, se necessario, l'identificazione del materiale",
+    "doc": "targa",
+    "ok": "WLL/carico massimo marcato sull'accessorio o su targhetta fissata, grado del materiale",
+    "no": "carico indicato solo nel catalogo o nelle istruzioni"
+   },
+   {
+    "q": "Le istruzioni o i disegni indicano la posizione della marcatura, scelta per non usurarsi né indebolire l'accessorio",
+    "doc": "disegni",
+    "ok": "posizione della marcatura o targhetta in zona non sollecitata, metodo di marcatura",
+    "no": "marcatura citata senza posizione"
+   }
+  ]
+ },
+ "MR-III-4.3.3": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La targa o marcatura della macchina di sollevamento riporta in modo visibile il carico massimo di utilizzazione",
+    "doc": "targa",
+    "ok": "portata massima in kg o t marcata sulla macchina",
+    "no": "portata solo nelle specifiche o nel manuale"
+   },
+   {
+    "q": "Se la portata dipende dalla configurazione, le istruzioni mostrano la tabella o il diagramma dei carichi presente a ogni postazione di lavoro",
+    "doc": "istruzioni",
+    "ok": "diagramma o tabella dei carichi per sbraccio, altezza o configurazione e sua collocazione al posto di comando",
+    "no": "un solo valore di portata per una macchina a configurazione variabile"
+   },
+   {
+    "q": "Per le macchine per sole cose con supporto accessibile, la targa o le istruzioni mostrano l'avvertenza di divieto di sollevamento di persone visibile da ogni accesso",
+    "doc": "targa",
+    "ok": "cartello o pittogramma 'vietato il trasporto di persone' presso gli accessi",
+    "no": "divieto scritto solo nel manuale"
+   }
+  ]
+ },
+ "MR-III-4.4.1": {
+  "condition": "Il prodotto è un accessorio di sollevamento",
+  "points": [
+   {
+    "q": "Le istruzioni dell'accessorio di sollevamento indicano l'uso previsto e i limiti di utilizzazione",
+    "doc": "istruzioni",
+    "ok": "uso previsto, carichi ammessi, angoli, temperature, superfici e condizioni escluse (es. per ventose o magneti)",
+    "no": "descrizione commerciale del prodotto"
+   },
+   {
+    "q": "Le istruzioni dell'accessorio di sollevamento contengono le indicazioni di montaggio, uso e manutenzione",
+    "doc": "istruzioni",
+    "ok": "procedure di aggancio, ispezioni, criteri di scarto, manutenzione",
+    "no": "solo avvertenze generiche di sicurezza"
+   },
+   {
+    "q": "Le istruzioni o le specifiche indicano il coefficiente di prova statica utilizzato",
+    "doc": "istruzioni",
+    "ok": "valore del coefficiente di prova statica (es. 1,5 o 2)",
+    "no": "coefficiente di utilizzazione al posto del coefficiente di prova statica"
+   }
+  ]
+ },
+ "MR-III-4.4.2": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni indicano il carico massimo di utilizzazione, le reazioni sugli appoggi o incastri e, se del caso, le caratteristiche delle guide e delle zavorre",
+    "doc": "istruzioni",
+    "ok": "portata massima, rimando alla tabella dei carichi, reazioni sugli appoggi in kN, zavorre e loro montaggio",
+    "no": "dati dimensionali senza carichi né reazioni"
+   },
+   {
+    "q": "Le istruzioni riportano il contenuto del registro di controllo o forniscono il registro con la macchina",
+    "doc": "istruzioni",
+    "ok": "registro di controllo allegato o elenco delle registrazioni richieste (verifiche, prove, riparazioni)",
+    "no": "invito generico a eseguire controlli periodici"
+   },
+   {
+    "q": "Le istruzioni danno raccomandazioni d'uso per quando l'operatore non vede direttamente il carico",
+    "doc": "istruzioni",
+    "ok": "uso di segnalatore a terra, segnali gestuali, telecamere, comunicazione radio",
+    "no": "avvertenza generica di attenzione al carico"
+   },
+   {
+    "q": "Le istruzioni includono o richiamano la relazione delle prove statiche e dinamiche e, per macchine montate sul posto, le prove prima della prima messa in servizio",
+    "doc": "istruzioni",
+    "ok": "relazione di prova con carichi applicati; procedura di collaudo dopo montaggio",
+    "no": "dichiarazione di prova eseguita senza contenuto"
+   }
+  ]
+ },
+ "MR-III-5.1": {
+  "condition": "La macchina comprende armature semoventi per lavori sotterranei",
+  "points": [
+   {
+    "q": "Le istruzioni descrivono come orientare le armature semoventi durante lo spostamento e come prevenirne il ribaltamento prima e durante la messa in pressione e dopo la decompressione",
+    "doc": "istruzioni",
+    "ok": "dispositivi o procedura di guida, condizioni di stabilità nelle fasi di pressurizzazione",
+    "no": "descrizione generale della volta mobile"
+   },
+   {
+    "q": "I disegni mostrano gli ancoraggi della piastra di testa per i raccordi idraulici individuali",
+    "doc": "disegni",
+    "ok": "ancoraggi o supporti della piastra di testa dei raccordi idraulici",
+    "no": "schema idraulico senza ancoraggi"
+   }
+  ]
+ },
+ "MR-III-5.2": {
+  "condition": "La macchina comprende armature semoventi per lavori sotterranei",
+  "points": [
+   {
+    "q": "I disegni o le specifiche indicano i passaggi liberi per la circolazione delle persone lungo le armature semoventi",
+    "doc": "disegni",
+    "ok": "passaggio pedonale con larghezza e altezza libere quotate",
+    "no": "dimensioni d'ingombro complessive soltanto"
+   }
+  ]
+ },
+ "MR-III-5.3": {
+  "condition": "La macchina è destinata a lavori sotterranei e scorre su rotaia o comprende armature semoventi",
+  "points": [
+   {
+    "q": "Le istruzioni indicano che acceleratore e freni della macchina su rotaia sono azionati a mano (pedale ammesso solo per il dispositivo di consenso)",
+    "doc": "istruzioni",
+    "ok": "comandi manuali di trazione e frenatura, pedale di consenso",
+    "no": "elenco dei comandi senza tipo di azionamento",
+    "smentita": "acceleratore o freno sono comandati a pedale"
+   },
+   {
+    "q": "Le istruzioni o i disegni indicano che i comandi delle armature semoventi sono posti in modo che l'operatore resti sotto un'armatura fissa durante l'avanzamento",
+    "doc": "disegni",
+    "ok": "posizione del banco di comando sotto armatura fissa, comando a distanza",
+    "no": "descrizione dei soli movimenti di avanzamento"
+   },
+   {
+    "q": "Le istruzioni o le specifiche descrivono le protezioni dei comandi contro l'azionamento involontario",
+    "doc": "istruzioni",
+    "ok": "comandi incassati, ripari delle leve, doppio consenso",
+    "no": "avvertenza a non toccare i comandi"
+   }
+  ]
+ },
+ "MR-III-5.4": {
+  "condition": "La macchina è una locomotiva per lavori sotterranei",
+  "points": [
+   {
+    "q": "Le istruzioni o gli schemi descrivono il dispositivo di consenso (uomo morto) che arresta lo spostamento se il conducente non lo comanda più",
+    "doc": "schemi",
+    "ok": "dispositivo uomo morto o di vigilanza inserito nel circuito di comando della trazione con arresto al rilascio",
+    "no": "freno di emergenza manuale soltanto"
+   }
+  ]
+ },
+ "MR-III-5.5": {
+  "condition": "La macchina è destinata a lavori sotterranei",
+  "points": [
+   {
+    "q": "Le specifiche indicano un sistema di frenatura progettato per non produrre scintille né causare incendi",
+    "doc": "specifiche",
+    "ok": "freni a bagno d'olio o materiali di attrito antiscintilla, limitazione delle temperature",
+    "no": "prestazioni di frenatura senza riferimento a scintille"
+   },
+   {
+    "q": "Le specifiche indicano che il motore a combustione interna usa combustibile a bassa tensione di vapore (es. gasolio) e non ha accensione a scintilla elettrica",
+    "doc": "specifiche",
+    "ok": "motore diesel, tipo di combustibile",
+    "no": "potenza del motore soltanto",
+    "smentita": "motore a benzina o a gas con accensione a candela"
+   },
+   {
+    "q": "Le istruzioni o le specifiche descrivono il sistema antincendio per le parti ad alto rischio di infiammabilità",
+    "doc": "istruzioni",
+    "ok": "impianto di estinzione integrato o estintori facilmente accessibili, con posizione",
+    "no": "avvertenza generica sul rischio incendio"
+   }
+  ]
+ },
+ "MR-III-5.6": {
+  "condition": "La macchina per lavori sotterranei ha un motore a combustione interna",
+  "points": [
+   {
+    "q": "Le specifiche o i disegni indicano che lo scarico dei gas del motore non è diretto verso l'alto",
+    "doc": "disegni",
+    "ok": "posizione e orientamento del terminale di scarico (laterale o verso il basso)",
+    "no": "dati di emissione del motore",
+    "smentita": "lo scarico è verticale verso l'alto"
+   }
+  ]
+ },
+ "MR-III-6.1.1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le specifiche indicano il numero massimo di persone e il carico massimo di utilizzazione del supporto del carico, e i calcoli ne verificano la resistenza",
+    "doc": "rapporti_prova",
+    "ok": "calcolo del supporto del carico (incluse botole) con numero di persone e carico massimo",
+    "no": "dimensioni del supporto senza verifica di resistenza"
+   },
+   {
+    "q": "I calcoli indicano coefficienti di utilizzazione di funi, catene e accessori raddoppiati rispetto ai punti 4.1.2.4 e 4.1.2.5",
+    "doc": "rapporti_prova",
+    "ok": "coefficienti dichiarati (es. fune 10, catena 8) per il sollevamento di persone",
+    "no": "coefficienti per il solo sollevamento di cose"
+   },
+   {
+    "q": "I disegni o le specifiche indicano almeno due funi o catene indipendenti, ciascuna con il proprio ancoraggio, o un sistema di sospensione che evita la caduta del supporto",
+    "doc": "disegni",
+    "ok": "due o più funi o catene con ancoraggi separati; paracadute o sistema di sostegno",
+    "no": "numero di funi non indicato",
+    "smentita": "il supporto del carico è sospeso a una sola fune"
+   }
+  ]
+ },
+ "MR-III-6.1.2": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni descrivono il dispositivo di controllo di sovraccarico o rovesciamento che avverte e impedisce i movimenti pericolosi, indipendentemente dalla portata",
+    "doc": "istruzioni",
+    "ok": "limitatore di carico sulla piattaforma, controllo del momento, allarme e blocco",
+    "no": "solo la portata massima indicata"
+   },
+   {
+    "q": "Se il dispositivo manca, la valutazione dei rischi dimostra che non vi sono rischi di sovraccarico o rovesciamento",
+    "doc": "valutazione_rischi",
+    "ok": "giustificazione tecnica dell'assenza di rischio (struttura sovradimensionata, impossibilità fisica di sovraccarico)",
+    "no": "affermazione senza motivazione"
+   }
+  ]
+ },
+ "MR-III-6.2": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni descrivono i comandi di salita e discesa presenti sul supporto del carico e la loro priorità sugli altri comandi dello stesso movimento",
+    "doc": "istruzioni",
+    "ok": "pulsantiera sulla piattaforma con priorità sui comandi a terra (salvo arresto di emergenza)",
+    "no": "solo comandi a terra o in cabina esterna"
+   },
+   {
+    "q": "Le istruzioni indicano che i comandi del supporto del carico sono ad azione mantenuta o, se è completamente chiuso, quali movimenti sono automatici",
+    "doc": "istruzioni",
+    "ok": "comandi ad azione mantenuta; oppure supporto chiuso con arresti a piani preselezionati",
+    "no": "comandi descritti senza modalità di azionamento",
+    "smentita": "supporto aperto con movimenti avviati da pulsante ad autoritenuta"
+   }
+  ]
+ },
+ "MR-III-6.3.1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le specifiche indicano velocità, accelerazioni o decelerazioni del supporto del carico, comprese le frenate",
+    "doc": "specifiche",
+    "ok": "valori di velocità e accelerazione/decelerazione, rampe di avvio e arresto",
+    "no": "solo la velocità nominale"
+   },
+   {
+    "q": "I rapporti di prova verificano che le decelerazioni in arresto (anche di emergenza o del paracadute) restano entro limiti non pericolosi per le persone",
+    "doc": "rapporti_prova",
+    "ok": "misura della decelerazione in m/s² o in g con esito",
+    "no": "prova di frenatura senza misura della decelerazione"
+   }
+  ]
+ },
+ "MR-III-6.3.2": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni o le specifiche indicano l'inclinazione massima ammessa del supporto del carico e il dispositivo di livellamento o di controllo",
+    "doc": "istruzioni",
+    "ok": "inclinazione massima in gradi, sistema di autolivellamento, sensore di inclinazione con blocco",
+    "no": "pendenza ammessa per il telaio della macchina soltanto"
+   },
+   {
+    "q": "I disegni o le istruzioni indicano i punti di ancoraggio per i dispositivi anticaduta, il loro numero e la loro resistenza",
+    "doc": "disegni",
+    "ok": "numero di punti di ancoraggio pari al numero di persone, carico di resistenza",
+    "no": "obbligo di indossare imbracature senza punti di ancoraggio previsti"
+   },
+   {
+    "q": "I disegni o le istruzioni descrivono botole e portelli con chiusura contro l'apertura involontaria e verso di apertura contrario al rischio di caduta",
+    "doc": "disegni",
+    "ok": "cancelli a chiusura automatica, aperture verso l'interno, chiavistelli",
+    "no": "presenza di parapetti senza descrizione degli accessi",
+    "smentita": "il cancello del supporto si apre verso l'esterno senza chiusura automatica"
+   }
+  ]
+ },
+ "MR-III-6.3.3": {
+  "condition": "Esiste il rischio di caduta di oggetti sul supporto del carico",
+  "points": [
+   {
+    "q": "I disegni o le specifiche indicano la copertura di protezione del supporto del carico contro la caduta di oggetti",
+    "doc": "disegni",
+    "ok": "tetto o copertura protettiva del supporto con caratteristiche",
+    "no": "obbligo di casco per gli occupanti"
+   }
+  ]
+ },
+ "MR-III-6.4.1": {
+  "condition": "La macchina collega piani definiti",
+  "points": [
+   {
+    "q": "I disegni o le istruzioni indicano che il supporto del carico è chiuso e ha porte interbloccate che impediscono i movimenti con porte aperte",
+    "doc": "disegni",
+    "ok": "cabina chiusa, porte con contatti di sicurezza nel circuito di comando",
+    "no": "parapetti aperti senza valutazione del contatto con parti fisse"
+   },
+   {
+    "q": "Le istruzioni o gli schemi indicano che le porte restano chiuse se il supporto si arresta tra i piani",
+    "doc": "schemi",
+    "ok": "serratura delle porte del supporto fuori zona di piano",
+    "no": "porte con solo contatto di presenza"
+   },
+   {
+    "q": "Le specifiche o i rapporti di prova descrivono il dispositivo contro movimenti incontrollati in salita o discesa (paracadute, limitatore di velocità) e la prova a carico e velocità massimi",
+    "doc": "rapporti_prova",
+    "ok": "paracadute o freno di sicurezza con prova a pieno carico e velocità massima, decelerazione misurata",
+    "no": "freno di servizio soltanto"
+   }
+  ]
+ },
+ "MR-III-6.4.2": {
+  "condition": "La macchina collega piani definiti",
+  "points": [
+   {
+    "q": "Le istruzioni o gli schemi indicano che i comandi ai piani (non di emergenza) non avviano movimenti quando sono azionati i comandi nel supporto o quando il supporto non è a un piano",
+    "doc": "schemi",
+    "ok": "logica di priorità ed esclusione dei comandi di piano descritta",
+    "no": "descrizione dei soli comandi di chiamata"
+   }
+  ]
+ },
+ "MR-III-6.4.3": {
+  "condition": "La macchina collega piani definiti",
+  "points": [
+   {
+    "q": "I disegni o le istruzioni descrivono i ripari ai piani e sul supporto del carico e come consentono il trasferimento sicuro di persone e cose",
+    "doc": "disegni",
+    "ok": "porte di piano e del supporto con dimensioni del passaggio, soglie, distanze tra supporto e piano",
+    "no": "dimensioni della cabina soltanto"
+   }
+  ]
+ },
+ "MR-III-6.5": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La marcatura nel supporto del carico indica il numero massimo di persone consentito e il carico di utilizzazione massimo",
+    "doc": "targa",
+    "ok": "targhetta nel supporto con numero di persone e carico in kg",
+    "no": "valori indicati solo nel manuale o sulla targa esterna della macchina"
+   }
+  ]
+ },
+ "MR-ART10-1": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La dichiarazione UE (di conformità o incorporazione) dichiara la conformità ai requisiti essenziali dell'allegato III del regolamento (UE) 2023/1230",
+    "doc": "dichiarazione",
+    "ok": "richiamo esplicito al regolamento (UE) 2023/1230 e ai requisiti dell'allegato III (per la quasi-macchina, elenco dei requisiti applicati)",
+    "no": "riferimento alla sola direttiva 2006/42/CE; dichiarazione generica di qualità"
+   },
+   {
+    "q": "La valutazione dei rischi elenca i requisiti essenziali dell'allegato III applicabili e le misure adottate per ciascuno",
+    "doc": "valutazione_rischi",
+    "ok": "tabella requisiti applicabili/non applicabili con misure o norme usate",
+    "no": "elenco dei pericoli senza collegamento ai requisiti"
+   }
+  ]
+ },
+ "MR-ART10-2": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La dichiarazione di conformità UE indica la procedura di valutazione della conformità seguita (modulo) ed eventualmente l'organismo notificato",
+    "doc": "dichiarazione",
+    "ok": "modulo (A, B+C, H, G) e nome e numero dell'organismo notificato se coinvolto",
+    "no": "solo l'elenco delle norme applicate",
+    "quasi": "integratore"
+   },
+   {
+    "q": "La targa o la marcatura del prodotto riporta la marcatura CE",
+    "doc": "targa",
+    "ok": "simbolo CE sulla targa o sul prodotto",
+    "no": "marcatura CE solo sull'imballaggio o nel manuale",
+    "quasi": "integratore"
+   },
+   {
+    "q": "Esiste un indice o elenco della documentazione tecnica secondo l'allegato IV (descrizione, disegni, valutazione dei rischi, norme, rapporti di prova, istruzioni)",
+    "doc": "certificati",
+    "ok": "indice del fascicolo tecnico con le parti dell'allegato IV, parte A (o parte B per quasi-macchine)",
+    "no": "solo il manuale d'uso"
+   }
+  ]
+ },
+ "MR-ART10-3": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La dichiarazione o la documentazione indica la persona o il luogo in cui il fascicolo tecnico è conservato e disponibile per le autorità",
+    "doc": "dichiarazione",
+    "ok": "nome e indirizzo della persona autorizzata a costituire il fascicolo tecnico",
+    "no": "indirizzo del fabbricante senza riferimento alla documentazione tecnica"
+   },
+   {
+    "q": "Le procedure del fabbricante prevedono la conservazione della documentazione tecnica e della dichiarazione per almeno 10 anni e la messa a disposizione del codice sorgente su richiesta motivata",
+    "doc": "certificati",
+    "ok": "procedura di archiviazione con durata di almeno 10 anni; disponibilità del codice o logica di programmazione per le autorità",
+    "no": "conservazione per durata non indicata",
+    "smentita": "la procedura prevede la conservazione per un periodo inferiore a 10 anni"
+   }
+  ]
+ },
+ "MR-ART10-4": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Il sistema qualità o le procedure del fabbricante descrivono il controllo della conformità della produzione in serie e la gestione delle modifiche di progetto e delle norme",
+    "doc": "certificati",
+    "ok": "procedura di controllo di produzione, gestione delle modifiche, aggiornamento rispetto a norme armonizzate",
+    "no": "certificato ISO 9001 citato senza procedure per la conformità del prodotto"
+   },
+   {
+    "q": "Le procedure del fabbricante prevedono prove a campione dei prodotti sul mercato e un registro di reclami, non conformità e richiami",
+    "doc": "certificati",
+    "ok": "piano di campionamento, registro dei reclami e dei richiami, informazione ai distributori",
+    "no": "politica di assistenza clienti generica"
+   }
+  ]
+ },
+ "MR-ART10-5": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La targa del prodotto riporta la designazione del modello, serie o tipo e l'anno di costruzione",
+    "doc": "targa",
+    "ok": "modello/tipo e anno di costruzione leggibili sulla targa",
+    "no": "solo il codice articolo commerciale; data di vendita"
+   },
+   {
+    "q": "La targa riporta il numero di serie o di lotto o altro elemento di identificazione del singolo prodotto",
+    "doc": "targa",
+    "ok": "numero di matricola o di serie, lotto",
+    "no": "modello senza identificativo individuale"
+   }
+  ]
+ },
+ "MR-ART10-6": {
+  "condition": "",
+  "points": [
+   {
+    "q": "La targa del prodotto riporta nome o marchio registrato del fabbricante e indirizzo postale",
+    "doc": "targa",
+    "ok": "ragione sociale o marchio e indirizzo postale completo",
+    "no": "solo il logo; nome del distributore"
+   },
+   {
+    "q": "La targa, l'imballaggio o un documento di accompagnamento riportano un contatto digitale del fabbricante (sito internet o posta elettronica)",
+    "doc": "targa",
+    "ok": "indirizzo web o e-mail del fabbricante",
+    "no": "numero di telefono dell'assistenza di un rivenditore"
+   }
+  ]
+ },
+ "MR-ART10-7": {
+  "condition": "",
+  "points": [
+   {
+    "q": "Le istruzioni per l'uso identificano chiaramente il modello di prodotto a cui si riferiscono",
+    "doc": "istruzioni",
+    "ok": "nome del modello, tipo o codice e versione delle istruzioni in copertina",
+    "no": "istruzioni generiche per una famiglia senza indicazione dei modelli"
+   },
+   {
+    "q": "Le istruzioni sono redatte nella lingua del paese di utilizzo (es. italiano) e comprendono le informazioni di sicurezza",
+    "doc": "istruzioni",
+    "ok": "testo nella lingua richiesta, indicazione di istruzioni originali o traduzione",
+    "no": "manuale solo in inglese per il mercato italiano",
+    "smentita": "le istruzioni sono fornite solo in una lingua diversa da quella del paese di utilizzo"
+   },
+   {
+    "q": "Se fornite in formato digitale, le istruzioni o la targa indicano come accedervi, il formato scaricabile e stampabile e la disponibilità online per almeno 10 anni",
+    "doc": "istruzioni",
+    "ok": "indirizzo web o codice QR, formato PDF scaricabile, durata di disponibilità di almeno 10 anni",
+    "no": "riferimento a un portale senza modalità di accesso"
+   },
+   {
+    "q": "Le istruzioni indicano la possibilità di richiedere gratuitamente la copia cartacea entro un mese dall'acquisto",
+    "doc": "istruzioni",
+    "ok": "dichiarazione che la copia cartacea è fornita gratuitamente su richiesta, con il contatto",
+    "no": "copia cartacea a pagamento",
+    "smentita": "la versione cartacea è disponibile solo a pagamento"
+   }
+  ]
+ }
+}

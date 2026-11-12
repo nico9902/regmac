@@ -51,7 +51,7 @@ function Row({r, open, del}: {r: DossierRow; open: () => void; del: () => void})
     {s.done === 0 ? <div className="tiny mute">{run ? 'in elaborazione' : 'nessun esito'}</div>
       : s.notEvaluable && !run ? <div className="row" style={{gap: 10}}><span className="chip part"><AlertTriangle size={12}/>Non valutabile</span><span className="tiny mute">documentazione insufficiente · copertura {pct(s.coverage)}</span></div>
       : <div className="row" style={{gap: 14}}><div><div className="sc-mini">{pct(s.score)}</div><div className="tiny mute">{run ? 'provvisorio' : 'score'}</div></div>
-        <div className="grow"><ScoreBar s={s}/><div className="tiny mute" style={{marginTop: 4}}>fino a {pct(s.max)} con le evidenze mancanti · {s.gapsTech + s.gapsDoc + s.gapsApp} gap</div></div></div>}
+        <div className="grow"><ScoreBar s={s}/><div className="tiny mute" style={{marginTop: 4}}>fino a {pct(s.max)} con le evidenze mancanti · {s.gapsTech + s.gapsDoc + s.gapsApp} gap{s.gapsTech ? ` · ${s.gapsTech} possibili non conformità` : ''}</div></div></div>}
     <div>{state}</div>
     <span className="rowdel" role="button" tabIndex={0} title="Elimina fascicolo" onClick={e => { e.stopPropagation(); del(); }}><Trash2 size={15}/></span>
     <ChevronRight size={16} style={{display: 'none'}}/>

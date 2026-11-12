@@ -1,0 +1,3288 @@
+{
+ "schema": "regmac-schede-v0.1",
+ "model": "qwen3:8b",
+ "note": "Bozze generate con AI locale da rivedere; 'rivista' = scritta o controllata da una persona. Condizioni di applicabilità generate filtrate a mano (tenute solo quelle plausibili).",
+ "schede": {
+  "CRA-ART13-1": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per la sicurezza cibernetica",
+    "Le istruzioni indicano le procedure per l'aggiornamento dei sistemi software",
+    "La dichiarazione di conformità menziona la conformità ai requisiti essenziali di cibersicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-10": {
+   "condition": "",
+   "points": [
+    "La documentazione indica la versione più recente del software disponibile gratuitamente",
+    "Le istruzioni forniscono accesso gratuito all’ultima versione del software",
+    "La macchina è dotata di meccanismi per aggiornare il software senza costi aggiuntivi",
+    "La documentazione chiarisce come gli utenti possono ottenere l’ultima versione del software"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-11": {
+   "condition": "",
+   "points": [
+    "La documentazione fornisce informazioni chiare sui rischi dell'uso di software non assistito",
+    "Le istruzioni descrivono i modi di funzionamento della macchina in modo chiaro",
+    "La documentazione include una valutazione dei rischi completa e accessibile"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-12": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include una valutazione dei rischi completa e approfondita",
+    "La dichiarazione di conformità UE è redatta in modo chiaro e dettagliato",
+    "I schemi tecnici mostrano l'architettura di rete e le protezioni di sicurezza implementate"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-13": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include la dichiarazione di conformità UE",
+    "La valutazione dei rischi descrive le misure di protezione implementate",
+    "Gli schemi mostrano la disposizione dei componenti elettrici e meccanici"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-14": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle vulnerabilità cibernetiche",
+    "Le dichiarazioni attestano conformità alle specifiche comuni di cibersicurezza",
+    "Gli schemi mostrano misure di protezione contro accessi non autorizzati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-15": {
+   "condition": "",
+   "points": [
+    "Il numero di tipo è indicato nel documento di accompagnamento",
+    "Le informazioni di identificazione sono presenti sul manuale tecnico",
+    "Il numero di serie è visibile nell'etichetta della macchina",
+    "Le specifiche tecniche menzionano il numero di lotto del prodotto"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-16": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il nome e l’indirizzo del fabbricante",
+    "Le istruzioni menzionano il sito web del fabbricante, se presente",
+    "Le informazioni di contatto sono redatte in una lingua facilmente comprensibile"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-17": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il punto di contatto unico del fabbricante",
+    "Il punto di contatto è facilmente identificabile nel manuale utente",
+    "Le informazioni includono il punto di contatto unico come richiesto"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-18": {
+   "condition": "",
+   "points": [
+    "Le istruzioni forniscono informazioni chiare sulle misure di protezione individuale",
+    "Le istruzioni descrivono le procedure di interruzione d'emergenza in modo accessibile",
+    "Le istruzioni sono disponibili in una lingua facilmente comprensibile per gli utenti"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-19": {
+   "condition": "",
+   "points": [
+    "La documentazione indica chiaramente la data di fine assistenza con mese e anno",
+    "La notifica di fine assistenza è inclusa nella documentazione tecnica",
+    "La data di fine assistenza è accessibile e facilmente leggibile nel manuale"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-2": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi specifiche per la sicurezza cibernetica",
+    "Le istruzioni descrivono le misure di protezione contro accessi non autorizzati",
+    "La documentazione menziona procedure per la gestione degli incidenti cibernetici",
+    "I schemi tecnici indicano l'uso di protocolli di comunicazione sicuri"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-20": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità UE include l’indirizzo Internet della versione completa",
+    "La valutazione dei rischi descrive le misure adottate per ridurre i rischi meccanici",
+    "Gli schemi mostrano la disposizione degli organi di comando e di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-21": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per la sicurezza cibernetica",
+    "Le istruzioni descrivono le procedure per l'aggiornamento dei sistemi digitali della macchina",
+    "La dichiarazione di conformità menziona la conformità ai requisiti essenziali di cibersicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-22": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per i dispositivi digitali",
+    "Le istruzioni descrivono le misure di sicurezza implementate per i componenti digitali",
+    "La dichiarazione di conformità menziona i requisiti essenziali di cibersicurezza applicabili",
+    "Gli schemi tecnici indicano le protezioni contro accessi non autorizzati ai sistemi digitali"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-23": {
+   "condition": "",
+   "points": [
+    "La documentazione indica i contatti del fabbricante in caso di cessazione dell'attività",
+    "La documentazione fornisce informazioni sull'imminente cessazione dell'attività del fabbricante",
+    "La documentazione elenca i mezzi utilizzati per informare gli utilizzatori della cessazione dell'attività"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-3": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include un'analisi dei rischi di cibersicurezza basata sull'uso previsto del prodotto",
+    "La valutazione dei rischi indica come i requisiti di sicurezza dell'allegato I, parte I, punto 2, sono applicati al prodotto",
+    "La documentazione descrive le modalità di attuazione dei requisiti di sicurezza derivati dalla valutazione dei rischi",
+    "La valutazione dei rischi menziona le procedure di gestione delle vulnerabilità previste dall'allegato I, parte II"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-4": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include la valutazione dei rischi di cibersicurezza conforme all'Art. 13, par. 4",
+    "La valutazione dei rischi menziona i requisiti essenziali di cibersicurezza applicabili alla macchina",
+    "La documentazione tecnica giustifica la non applicabilità di alcuni requisiti essenziali di cibersicurezza",
+    "Le istruzioni forniscono informazioni chiare sulla gestione delle vulnerabilità identificate"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-5": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi per la cibersicurezza",
+    "I componenti software open source sono elencati con le relative versioni",
+    "Le istruzioni descrivono le misure di protezione contro accessi non autorizzati",
+    "La dichiarazione tecnica menziona la provenienza dei componenti esterni"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-6": {
+   "condition": "",
+   "points": [
+    "La documentazione include un elenco delle vulnerabilità identificate nei componenti open source",
+    "Le istruzioni descrivono le procedure per segnalare e correggere vulnerabilità nei componenti",
+    "La documentazione fornisce il codice o la descrizione tecnica delle modifiche apportate per risolvere vulnerabilità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-7": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi di cibersicurezza del prodotto",
+    "La documentazione indica le vulnerabilità note relative al prodotto",
+    "La documentazione fornisce informazioni su eventuali dati sensibili trattati dal prodotto"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-8": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include le informazioni utilizzate per determinare il periodo di assistenza",
+    "Le istruzioni indicano il periodo di assistenza previsto per la macchina",
+    "Le istruzioni descrivono le procedure per la gestione delle vulnerabilità",
+    "La documentazione tecnica menziona la durata di vita prevista del prodotto"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART13-9": {
+   "condition": "",
+   "points": [
+    "La documentazione indica la disponibilità degli aggiornamenti di sicurezza per almeno dieci anni",
+    "La scheda tecnica menziona il periodo di assistenza superiore ai dieci anni, se applicabile",
+    "Le istruzioni forniscono informazioni sui tempi di conservazione degli aggiornamenti di sicurezza",
+    "La dichiarazione di conformità include la garanzia di disponibilità degli aggiornamenti di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-1": {
+   "condition": "",
+   "points": [
+    "La documentazione indica il tipo di vulnerabilità segnalata al CSIRT e a ENISA",
+    "La documentazione descrive la modalità di segnalazione tramite la piattaforma unica",
+    "La documentazione menziona la data di segnalazione della vulnerabilità",
+    "La documentazione include informazioni sulla vulnerabilità attivamente sfruttata"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-2": {
+   "condition": "",
+   "points": [
+    "Il manuale indica le misure correttive disponibili per la vulnerabilità segnalata",
+    "La relazione finale descrive la gravità e l'impatto della vulnerabilità segnalata",
+    "Le istruzioni forniscono informazioni dettagliate sull'aggiornamento di sicurezza messo a disposizione",
+    "La documentazione indica gli Stati membri dove la macchina è stata messa a disposizione"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-3": {
+   "condition": "",
+   "points": [
+    "La documentazione indica il tipo di sistema operativo utilizzato nella macchina",
+    "Le istruzioni descrivono le procedure per la gestione degli incidenti critici",
+    "La valutazione dei rischi include un'analisi degli scenari di vulnerabilità",
+    "La dichiarazione tecnica menziona la presenza di elementi digitali nella macchina"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure correttive per incidenti di sicurezza",
+    "La documentazione menziona gli Stati membri dove la macchina è stata messa a disposizione",
+    "La relazione finale descrive dettagliatamente la gravità e l'impatto dell'incidente",
+    "Le istruzioni forniscono una valutazione iniziale dell'incidente e le misure di attenuazione"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro l'introduzione di codice maligno",
+    "La valutazione dei rischi menziona l'impatto sulla disponibilità dei dati critici",
+    "Le dichiarazioni tecniche descrivono le funzioni sensibili protette da meccanismi di sicurezza",
+    "Gli schemi elettrici mostrano la presenza di dispositivi di controllo della sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-7": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per le funzioni digitali",
+    "Le dichiarazioni attestano la conformità alle norme di sicurezza cibernetica",
+    "Gli schemi tecnici descrivono chiaramente le interfacce di comunicazione digitali"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART14-8": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di mitigazione per vulnerabilità note",
+    "La documentazione include informazioni strutturate su incidenti di sicurezza",
+    "Le istruzioni descrivono le procedure per applicare correzioni di sicurezza",
+    "La documentazione menziona i canali di contatto per segnalazioni di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART28-1": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità UE attesta il rispetto dei requisiti essenziali di cibersicurezza",
+    "Le istruzioni indicano le misure di protezione contro accessi non autorizzati",
+    "La valutazione dei rischi include analisi delle vulnerabilità di sicurezza",
+    "Gli schemi tecnici descrivono le funzioni di sicurezza implementate"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART28-2": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità UE include la struttura tipo dell’allegato V",
+    "La dichiarazione di conformità UE è aggiornata in base alle procedure di valutazione della conformità",
+    "La dichiarazione di conformità UE è disponibile nelle lingue richieste dallo Stato membro"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART28-3": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità UE include i riferimenti di tutti gli atti giuridici applicabili",
+    "La dichiarazione di conformità UE indica i requisiti di conformità soddisfatti",
+    "La dichiarazione di conformità UE è redatta in lingua italiana",
+    "La dichiarazione di conformità UE è accompagnata da documenti tecnici completi"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART28-4": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità include la descrizione delle caratteristiche tecniche della macchina",
+    "La valutazione dei rischi comprende l'analisi dei rischi legati all'uso improprio della macchina",
+    "Gli schemi tecnici mostrano la disposizione degli elementi digitali della macchina"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART30-1": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità indica chiaramente la marcatura CE",
+    "La marcatura CE è visibile, leggibile e indelebile sul prodotto o sull'imballaggio",
+    "La marcatura CE è presente sulla dichiarazione di conformità UE per software",
+    "La sezione del sito web con la marcatura CE è facilmente accessibile ai consumatori"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART30-2": {
+   "condition": "",
+   "points": [
+    "La marcatura CE è visibile e leggibile sulla macchina",
+    "La marcatura CE ha un' altezza inferiore a 5 mm",
+    "La documentazione tecnica include informazioni sulla marcatura CE"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART30-3": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica indica la presenza di elementi digitali",
+    "La marcatura CE è visibile sul prodotto con elementi digitali",
+    "La documentazione include un pittogramma o marchio relativo a rischi di cibersicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART30-4": {
+   "condition": "",
+   "points": [
+    "La marcatura CE è accompagnata dal numero di identificazione dell’organismo notificato",
+    "Il numero di identificazione è apposto dall’organismo notificato o da chi ne ha ricevuto istruzioni",
+    "La documentazione indica chi ha effettuato la valutazione della conformità",
+    "La valutazione è basata sulla garanzia della qualità totale (modulo H)"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART31-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle vulnerabilità di sistema",
+    "Le dichiarazioni attestano conformità ai requisiti essenziali di cibersicurezza",
+    "Gli schemi mostrano protezioni contro accessi non autorizzati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART31-2": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive chiaramente le procedure di manutenzione preventiva",
+    "La valutazione dei rischi include l'analisi delle emissioni termiche della macchina",
+    "Le dichiarazioni tecniche indicano la classe di emissione acustica della macchina",
+    "Gli schemi elettrici sono accompagnati da note di sicurezza specifiche per la macchina"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART31-3": {
+   "condition": "",
+   "points": [
+    "La documentazione include le informazioni richieste dall'allegato VII",
+    "La valutazione dei rischi descrive le misure di protezione adottate",
+    "Le dichiarazioni attestano la conformità alle norme di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART31-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include un'analisi delle emissioni di rumore",
+    "La dichiarazione di conformità menziona la lingua utilizzata per la documentazione"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART32-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include un'analisi delle vulnerabilità di sicurezza informatica",
+    "Le dichiarazioni attestano la conformità ai requisiti essenziali di cibersicurezza",
+    "Gli schemi tecnici descrivono le misure di protezione contro accessi non autorizzati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART32-2": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include una valutazione dei rischi completa conforme al rischio cibernetico",
+    "Le istruzioni forniscono informazioni dettagliate sulle misure di protezione contro accessi non autorizzati",
+    "La dichiarazione di conformità menziona il rispetto dei requisiti essenziali di cibersicurezza",
+    "Gli schemi tecnici indicano l'implementazione di meccanismi di autenticazione utente"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART32-3": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include una valutazione dei rischi completa conforme al regolamento macchine",
+    "La macchina è dotata di un sistema di controllo accesso con autenticazione utente",
+    "La dichiarazione di conformità include un riferimento al modulo H o a un sistema di certificazione conforme"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART32-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle vulnerabilità di rete",
+    "Le dichiarazioni attestano la conformità ai requisiti di sicurezza informatica",
+    "Gli schemi mostrano la protezione contro accessi non autorizzati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART32-5": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include una valutazione completa dei rischi per la sicurezza cibernetica",
+    "Le istruzioni descrivono chiaramente le procedure di accesso e di configurazione del sistema",
+    "La dichiarazione di conformità menziona la versione del software e le sue caratteristiche principali",
+    "Gli schemi tecnici mostrano la struttura e le interfacce di comunicazione del sistema digitale"
+   ],
+   "status": "bozza"
+  },
+  "CRA-ART7-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi delle emissioni elettromagnetiche",
+    "La dichiarazione di conformità menziona la classe di emissione elettromagnetica",
+    "Gli schemi tecnici indicano la presenza di componenti digitali essenziali"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-1": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per gli aspetti cibersicuri",
+    "Le istruzioni indicano le misure di protezione implementate contro accessi non autorizzati",
+    "La macchina dispone di un sistema di aggiornamento software sicuro e verificabile",
+    "Le specifiche tecniche descrivono le funzionalità di sicurezza attive e passive"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2a": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include una valutazione completa dei rischi",
+    "La dichiarazione di conformità menziona l'assenza di vulnerabilità note",
+    "Gli schemi elettrici non mostrano componenti non certificati o non conformi"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2b": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le impostazioni di sicurezza attive predefinite",
+    "La configurazione predefinita limita l'accesso a funzioni pericolose",
+    "Le istruzioni indicano come ripristinare la configurazione originale",
+    "La valutazione dei rischi conferma la configurazione sicura predefinita"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2c": {
+   "condition": "",
+   "points": [
+    "La macchina dispone di un sistema di aggiornamenti di sicurezza abilitato di default",
+    "La documentazione descrive un meccanismo chiaro per disattivare gli aggiornamenti di sicurezza",
+    "La macchina notifica agli utenti gli aggiornamenti di sicurezza disponibili attraverso canali chiari",
+    "La documentazione indica la possibilità di rinviare temporaneamente gli aggiornamenti di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2d": {
+   "condition": "",
+   "points": [
+    "La documentazione descrive i meccanismi di autenticazione utilizzati sulla macchina",
+    "Le istruzioni indicano le procedure per gestire l'accesso autorizzato alla macchina",
+    "La valutazione dei rischi menziona controlli per prevenire accessi non autorizzati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2e": {
+   "condition": "La macchina tratta dati personali o sensibili",
+   "points": [
+    "La documentazione descrive metodi di crittografia per dati a riposo",
+    "La documentazione indica tecniche di protezione per dati in transito",
+    "Le istruzioni menzionano misure per prevenire accessi non autorizzati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2f": {
+   "condition": "La macchina memorizza dati di configurazione e programma",
+   "points": [
+    "La documentazione descrive procedure per verificare l'integrità dei dati di configurazione",
+    "I comandi e i programmi sono protetti da meccanismi di controllo dell'integrità",
+    "La documentazione segnala metodi per rilevare modifiche non autorizzate ai programmi"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2g": {
+   "condition": "",
+   "points": [
+    "La documentazione limita i dati raccolti ai soli necessari per la funzionalità",
+    "Le dichiarazioni specificano i dati personali trattati e la loro finalità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2h": {
+   "condition": "",
+   "points": [
+    "La documentazione descrive procedure per ripristinare le funzioni essenziali dopo un'interruzione",
+    "Le istruzioni indicano misure di resilienza contro attacchi di negazione del servizio",
+    "La valutazione dei rischi menziona strategie per mantenere la disponibilità delle funzioni base",
+    "I schemi tecnici mostrano design che limita l'impatto di attacchi di tipo DoS"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2i": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano misure per evitare interferenze con altre reti",
+    "La documentazione descrive limiti di potenza per prevenire sovraccarichi",
+    "Le specifiche tecniche menzionano isolamento elettrico adeguato",
+    "Le istruzioni forniscono procedure per ridurre l'interferenza con dispositivi esterni"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2j": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le superfici di attacco accessibili durante l'uso normale",
+    "La valutazione dei rischi identifica le interfacce esterne come potenziali superfici di attacco",
+    "Lo schema elettrico mostra limitazioni per ridurre le superfici di attacco accessibili",
+    "La dichiarazione di conformità menziona limitazione delle superfici di attacco durante l'installazione"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2k": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le misure di protezione contro l'accesso non autorizzato",
+    "La valutazione dei rischi include analisi delle conseguenze di incidenti potenziali",
+    "Gli schemi mostrano dispositivi di arresto d'emergenza accessibili all'operatore",
+    "Le dichiarazioni indicano l'uso di materiali resistenti a temperature elevate"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2l": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le attività interne registrate per la sicurezza",
+    "Le istruzioni indicano il meccanismo di disattivazione per l'utilizzatore",
+    "La documentazione include un sistema di monitoraggio delle modifiche ai dati",
+    "Le funzioni di accesso sono registrate e monitorate nel manuale tecnico"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-1-2m": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono un metodo per la cancellazione definitiva dei dati",
+    "Le istruzioni indicano come eliminare in modo sicuro le impostazioni predefinite",
+    "Le istruzioni forniscono informazioni su come trasferire dati a dispositivi compatibili in modo sicuro"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-1": {
+   "condition": "",
+   "points": [
+    "La documentazione include una distinta base del software in formato leggibile da dispositivi automatici",
+    "L'SBOM elenca almeno le dipendenze di primo livello del prodotto",
+    "La documentazione identifica le vulnerabilità note presenti nei componenti digitali",
+    "Le informazioni sui componenti digitali sono chiaramente distinte e facilmente accessibili"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-2": {
+   "condition": "",
+   "points": [
+    "La documentazione indica la procedura per applicare aggiornamenti di sicurezza separati da quelli funzionali",
+    "Le istruzioni descrivono come verificare la presenza di vulnerabilità note nel sistema",
+    "La dichiarazione di conformità menziona la frequenza prevista per la correzione delle vulnerabilità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-3": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle vulnerabilità digitali",
+    "I schemi elettrici mostrano protezioni contro sovraccarichi e cortocircuiti"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-4": {
+   "condition": "",
+   "points": [
+    "Le informazioni sulle vulnerabilità risolte sono disponibili in un documento pubblico",
+    "Le vulnerabilità sono descritte con dettaglio sull'impatto e la gravità",
+    "Le istruzioni indicano come identificare il prodotto interessato digitalmente",
+    "Le istruzioni forniscono istruzioni chiare per correggere le vulnerabilità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-5": {
+   "condition": "",
+   "points": [
+    "La documentazione descrive i canali di comunicazione utilizzati per la segnalazione delle vulnerabilità",
+    "Le procedure di segnalazione sono documentate e disponibili per gli utenti autorizzati",
+    "La politica di divulgazione è allineata con gli standard di sicurezza riconosciuti"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-6": {
+   "condition": "",
+   "points": [
+    "La documentazione fornisce un indirizzo email per segnalare vulnerabilità",
+    "Le istruzioni indicano un canale di contatto per la segnalazione di problemi di sicurezza",
+    "La dichiarazione di conformità menziona un punto di contatto per vulnerabilità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-7": {
+   "condition": "",
+   "points": [
+    "La documentazione descrive il processo di distribuzione sicura degli aggiornamenti",
+    "Le istruzioni indicano le procedure per applicare gli aggiornamenti di sicurezza in modo automatico",
+    "La macchina include meccanismi per verificare l'integrità degli aggiornamenti ricevuti"
+   ],
+   "status": "bozza"
+  },
+  "CRA-I-2-8": {
+   "condition": "",
+   "points": [
+    "La documentazione indica i canali disponibili per l'aggiornamento gratuito",
+    "I messaggi di avviso includono informazioni sulle misure da adottare per la sicurezza",
+    "La documentazione descrive il processo per ottenere gli aggiornamenti tempestivamente"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-1": {
+   "condition": "",
+   "points": [
+    "Il fabbricante indica il proprio nome e la denominazione commerciale registrata",
+    "Il fabbricante fornisce un indirizzo postale completo",
+    "Il fabbricante include un indirizzo di posta elettronica valido",
+    "Il fabbricante riporta un sito web accessibile per ulteriori informazioni"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-2": {
+   "condition": "",
+   "points": [
+    "La documentazione indica il punto di contatto unico per segnalare vulnerabilità",
+    "La politica CVD è disponibile nella documentazione tecnica della macchina",
+    "Le informazioni sulle vulnerabilità sono accessibili attraverso il punto di contatto unico",
+    "La politica CVD è chiaramente descritta e facilmente reperibile"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-3": {
+   "condition": "",
+   "points": [
+    "Il manuale indica il nome e il tipo della macchina con dati tecnici univoci",
+    "La dichiarazione di conformità include informazioni univoche per l'identificazione del prodotto",
+    "Gli schemi elettrici riportano dati univoci per l'identificazione del prodotto",
+    "Le istruzioni forniscono dati univi per identificare il prodotto in modo digitale"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le funzionalità essenziali del prodotto",
+    "La documentazione descrive le proprietà di sicurezza integrate",
+    "Le informazioni menzionano l'ambiente di sicurezza fornito dal produttore",
+    "Le istruzioni forniscono dettagli sulle misure di protezione implementate"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per l'aggiornamento del software",
+    "Le istruzioni indicano le misure di protezione contro accessi non autorizzati",
+    "La valutazione dei rischi menziona possibili vulnerabilità del sistema digitale"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-6": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità UE è accessibile tramite un indirizzo internet indicato nel manuale",
+    "L’indirizzo internet della dichiarazione di conformità UE è riportato nella valutazione dei rischi",
+    "La dichiarazione di conformità UE è disponibile online attraverso un link specifico nel documento tecnico"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-7": {
+   "condition": "",
+   "points": [
+    "La documentazione indica il tipo di assistenza tecnica di sicurezza fornita dal fabbricante",
+    "La data finale del periodo di assistenza è menzionata nella documentazione tecnica",
+    "La documentazione specifica la durata del periodo di assistenza di sicurezza",
+    "La documentazione fornisce informazioni sui canali di supporto per la gestione delle vulnerabilità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-8": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per la messa in servizio iniziale e durante l'uso",
+    "Le istruzioni descrivono come le modifiche influiscono sulla sicurezza dei dati",
+    "Le istruzioni forniscono modalità di installazione sicura degli aggiornamenti",
+    "Le istruzioni descrivono il processo di smantellamento e la distruzione sicura dei dati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-II-9": {
+   "condition": "",
+   "points": [
+    "La documentazione indica il luogo di accesso alla distinta base del software",
+    "La distinta base del software è disponibile in formato leggibile e strutturato",
+    "Le istruzioni forniscono un link o un indirizzo per accedere alla distinta base del software"
+   ],
+   "status": "bozza"
+  },
+  "CRA-V": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità include il nome e il tipo univoco della macchina",
+    "La dichiarazione indica il nome e l'indirizzo del fabbricante o del rappresentante autorizzato",
+    "La dichiarazione attesta che è stata redatta sotto la responsabilità esclusiva del fornitore",
+    "La dichiarazione include una fotografia o un identificativo digitale univoco della macchina"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-1": {
+   "condition": "",
+   "points": [
+    "La descrizione del prodotto include informazioni sulle versioni software rilevanti per la cibersicurezza",
+    "Le fotografie mostrano chiaramente la marcatura e la disposizione interna del prodotto",
+    "Le istruzioni forniscono dettagli sull'uso sicuro e corretto del prodotto"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-2": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive l'architettura del sistema e le interazioni tra componenti software",
+    "La documentazione include una distinta base del software e un indirizzo per segnalare vulnerabilità",
+    "Le istruzioni indicano i processi di produzione e i metodi di convalida applicati",
+    "La politica di gestione delle vulnerabilità è descritta con specificità e chiarezza"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-3": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle vulnerabilità di comunicazione dati",
+    "Le istruzioni descrivono le misure di protezione contro accessi non autorizzati",
+    "La documentazione indica le procedure per il rilevamento di intrusioni informatiche",
+    "Le dichiarazioni menzionano l'uso di protocolli di sicurezza per la trasmissione dati"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-4": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per l'ambiente di lavoro",
+    "I manuali descrivono chiaramente le procedure di manutenzione periodica",
+    "Le dichiarazioni tecniche menzionano i parametri di emissione elettromagnetica rilevanti"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-5": {
+   "condition": "",
+   "points": [
+    "La documentazione elenca le norme armonizzate applicate integralmente o in parte",
+    "Le specifiche tecniche menzionate soddisfano i requisiti essenziali di cibersicurezza",
+    "La descrizione include le soluzioni adottate quando non si applicano norme armonizzate",
+    "La documentazione indica le parti delle norme armonizzate applicate parzialmente"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-6": {
+   "condition": "",
+   "points": [
+    "La documentazione include una valutazione dei rischi completa per le vulnerabilità cibernetiche",
+    "Le istruzioni descrivono i processi di gestione delle vulnerabilità in uso sulla macchina",
+    "La dichiarazione tecnica menziona i requisiti essenziali applicabili di cui all’allegato I",
+    "Gli schemi illustrano le misure di sicurezza implementate per la protezione cibernetica"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-7": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità include il numero di serie della macchina",
+    "La dichiarazione di conformità indica la data di emissione del documento",
+    "La dichiarazione di conformità riporta il nome e l'indirizzo del responsabile della conformità"
+   ],
+   "status": "bozza"
+  },
+  "CRA-VII-8": {
+   "condition": "",
+   "points": [
+    "La documentazione include la distinta base del software (SBOM) completa e aggiornata",
+    "L'SBOM elenca tutti i componenti software e le loro versioni utilizzati nella macchina",
+    "La distinta base del software è disponibile in formato leggibile e accessibile"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-1": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le misure di protezione contro i rischi meccanici",
+    "La valutazione dei rischi include l'analisi dei rischi elettrici",
+    "La macchina è dotata di dispositivi di interruzione d'emergenza accessibili"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-10": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+    "Le dichiarazioni attestano la conformità alle norme di sicurezza meccanica",
+    "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'urto"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-2": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi meccanici e termici",
+    "La dichiarazione di conformità menziona la norma applicabile UNI EN ISO 12100",
+    "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-3": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include la valutazione dei rischi completa e approvata",
+    "La dichiarazione di conformità riporta la data di immissione sul mercato",
+    "La logica di programmazione è disponibile su richiesta delle autorità competenti"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi legati all'accesso alle parti in movimento",
+    "Le dichiarazioni attestano la conformità alle norme armonizzate applicabili",
+    "I manuali descrivono le procedure di manutenzione e di ispezione periodica"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-5": {
+   "condition": "",
+   "points": [
+    "Il manuale indica il modello e la serie della macchina",
+    "La valutazione dei rischi menziona l'anno di costruzione",
+    "Gli schemi riportano un numero di lotto o di serie",
+    "Il documento di accompagnamento include informazioni identificative della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-6": {
+   "condition": "",
+   "points": [
+    "Le informazioni di contatto sono visibili sul manuale della macchina",
+    "Le informazioni di contatto sono in una lingua facilmente comprensibile",
+    "Le informazioni di contatto includono nome, marca e indirizzo del fabbricante"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-7": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano chiaramente il modello della macchina",
+    "Le istruzioni sono disponibili in formato digitale e accessibili online",
+    "Le istruzioni forniscono informazioni sulla sicurezza essenziali per l'utilizzo sicuro",
+    "Le istruzioni sono redatte in una lingua facilmente comprensibile dagli utilizzatori"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-8": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità è accessibile online per almeno 10 anni",
+    "Le istruzioni forniscono informazioni sui dispositivi di protezione individuale",
+    "La valutazione dei rischi include analisi delle emissioni pericolose"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART10-9": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+    "Le dichiarazioni attestano la conformità alle norme di sicurezza meccanica",
+    "Gli schemi mostrano la presenza di dispositivi di blocco meccanico"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+    "Le dichiarazioni attestano conformità ai requisiti essenziali di sicurezza",
+    "Gli schemi mostrano dispositivi di interruzione d'emergenza accessibili"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-10": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+    "Le dichiarazioni attestano la conformità ai requisiti essenziali di sicurezza",
+    "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-2": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi meccanici e termici",
+    "La dichiarazione di incorporazione UE attesta la conformità ai requisiti essenziali di sicurezza",
+    "Gli schemi tecnici mostrano la disposizione dei dispositivi di protezione meccanica"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-3": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica include la dichiarazione di conformità UE",
+    "La valutazione dei rischi descrive le misure di protezione implementate",
+    "Gli schemi elettrici sono disponibili e corrispondono alla descrizione tecnica"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi meccanici e degli impatti termici",
+    "Le dichiarazioni di conformità menzionano le norme armonizzate applicabili",
+    "Gli schemi tecnici mostrano la disposizione dei dispositivi di protezione meccanica"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-5": {
+   "condition": "",
+   "points": [
+    "Il manuale indica il modello e la serie della quasi-macchina",
+    "La dichiarazione tecnica riporta l'anno di costruzione della quasi-macchina",
+    "Le informazioni di identificazione sono presenti sul documento di accompagnamento"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-6": {
+   "condition": "",
+   "points": [
+    "La quasi-macchina indica il nome del fabbricante in una lingua facilmente comprensibile",
+    "L'indirizzo postale del fabbricante è indicato in una lingua facilmente comprensibile",
+    "Il sito internet del fabbricante è indicato in una lingua facilmente comprensibile"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-7": {
+   "condition": "",
+   "points": [
+    "Le istruzioni per l'assemblaggio sono disponibili in formato digitale",
+    "Le istruzioni per l'assemblaggio indicano le modalità di accesso online",
+    "Le istruzioni per l'assemblaggio sono accessibili online per almeno 10 anni",
+    "Le istruzioni per l'assemblaggio sono redatte in una lingua comprensibile"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-8": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di incorporazione UE è accessibile online per almeno 10 anni",
+    "Le istruzioni forniscono l'indirizzo internet o il codice ottico per la dichiarazione di incorporazione UE",
+    "La dichiarazione di incorporazione UE è inclusa nel manuale o disponibile nelle istruzioni per l'assemblaggio"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART11-9": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di rumore",
+    "Le dichiarazioni attestano conformità ai requisiti essenziali di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART21-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi delle emissioni termiche",
+    "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'emergenza",
+    "La dichiarazione di conformità menziona la conformità all'allegato III"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART21-2": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità include il numero di serie della macchina",
+    "La valutazione dei rischi descrive le misure di protezione adottate",
+    "Gli schemi tecnici mostrano la disposizione dei componenti elettrici"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART21-3": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità indica i riferimenti completi degli atti giuridici applicabili",
+    "Le istruzioni riportano i limiti di esposizione ai rischi identificati durante la valutazione",
+    "Lo schema tecnico mostra la disposizione dei componenti pericolosi e le loro protezioni",
+    "La valutazione dei rischi descrive le misure adottate per ridurre i rischi residui"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART21-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi delle emissioni termiche della macchina",
+    "Gli schemi tecnici mostrano la disposizione dei dispositivi di interruzione d'emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART22-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+    "I schemi mostrano la disposizione dei dispositivi di protezione meccanica",
+    "La dichiarazione attesta la conformità ai requisiti essenziali di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART22-2": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di incorporazione UE include la descrizione tecnica della quasi-macchina",
+    "La valutazione dei rischi comprende l'analisi dei rischi specifici della quasi-macchina",
+    "Gli schemi tecnici mostrano la disposizione e le caratteristiche principali della quasi-macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART22-3": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di incorporazione UE indica gli atti giuridici dell'Unione applicabili",
+    "La dichiarazione di incorporazione UE include i riferimenti delle pubblicazioni degli atti giuridici",
+    "La dichiarazione di incorporazione UE dichiara la conformità a tutti gli atti giuridici applicabili",
+    "La dichiarazione di incorporazione UE è redatta in modo chiaro e completo"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART22-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi legati all'uso improprio",
+    "I schemi mostrano la disposizione degli organi di comando e di sicurezza",
+    "La dichiarazione conferma la conformità ai requisiti di sicurezza previsti"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART24-1": {
+   "condition": "",
+   "points": [
+    "La marcatura CE è visibile, leggibile e indelebile sulla macchina o sul suo imballaggio",
+    "La marcatura CE è indicata nei documenti di accompagnamento della macchina",
+    "La marcatura CE è posizionata in un punto accessibile e non ostacolato",
+    "La marcatura CE è conforme alle norme di marcatura previste per il settore di applicazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART24-2": {
+   "condition": "",
+   "points": [
+    "La macchina presenta un'indicazione chiara del livello di pressione acustica al posto di lavoro",
+    "La dichiarazione di conformità include la descrizione completa della macchina e dei suoi componenti principali",
+    "Le istruzioni forniscono informazioni dettagliate sulle modalità di utilizzo e di manutenzione",
+    "La valutazione dei rischi include un'analisi completa dei rischi meccanici e delle misure di protezione adottate"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART24-3": {
+   "condition": "",
+   "points": [
+    "La marcatura CE è accompagnata dal numero di identificazione dell'organismo notificato",
+    "Il numero di identificazione è apposto dall'organismo notificato o da chi ne ha ricevuto istruzioni",
+    "La documentazione tecnica include il riferimento all'organismo notificato coinvolto",
+    "La marcatura CE è visibile e leggibile sulla macchina o sul suo packaging"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART24-4": {
+   "condition": "",
+   "points": [
+    "La marcatura CE è visibile e chiaramente indicata sulla macchina",
+    "Il pittogramma o il marchio indicano un rischio specifico della macchina",
+    "La documentazione include un numero di identificazione dell'organismo notificato",
+    "Le istruzioni riportano un pittogramma coerente con i rischi identificati"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART25-1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni di rumore",
+    "La dichiarazione di conformità menziona la classe di emissione sonora",
+    "Lo schema di montaggio mostra la posizione dei dispositivi di protezione"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART25-2": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi meccanici e termici",
+    "Le dichiarazioni di conformità menzionano la norma EN ISO 12100 applicabile",
+    "Lo schema di collegamento elettrico rispetta le norme CEI EN 60439"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART25-3": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di dispositivi di blocco per prevenire l'avviamento accidentale",
+    "La valutazione dei rischi include l'analisi delle emissioni di sostanze nocive",
+    "Le istruzioni descrivono chiaramente le procedure di manutenzione e ispezione"
+   ],
+   "status": "bozza"
+  },
+  "MR-ART25-4": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include l'analisi dei rischi meccanici e degli impatti sulle persone",
+    "La dichiarazione di conformità menziona la categoria di macchina e il numero di serie",
+    "Gli schemi tecnici mostrano la disposizione dei dispositivi di protezione e di interruzione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni termiche durante l'uso",
+    "I schemi elettrici mostrano protezioni contro sovraccarico e cortocircuiti",
+    "La dichiarazione di conformità menziona l'applicazione dei requisiti di sicurezza per quasi-macchine"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.2": {
+   "condition": "",
+   "points": [
+    "È stata eseguita e documentata una valutazione dei rischi della macchina",
+    "Le misure seguono l'ordine: eliminazione dei rischi in progettazione, poi protezioni, poi informazioni sui rischi residui",
+    "La valutazione considera anche l'uso scorretto ragionevolmente prevedibile"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.1.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per il recupero e l'evacuazione dei fluidi",
+    "Le istruzioni menzionano i materiali utilizzati e la loro compatibilità con la salute",
+    "Le istruzioni forniscono informazioni sui rischi legati all'utilizzo dei fluidi"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.4": {
+   "condition": "",
+   "points": [
+    "La macchina ha un'illuminazione incorporata adeguata nelle zone di lavoro, regolazione o manutenzione dove l'illuminazione ambiente non basta, oppure è dimostrato che non serve"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.1.5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le modalità sicure per il trasporto e il fissaggio della macchina",
+    "La documentazione descrive le misure per prevenire lo spostamento intempestivo durante il trasporto",
+    "La macchina è progettata per essere movimentata a mano con dispositivi di presa sicuri",
+    "Le istruzioni forniscono informazioni sui mezzi di sollevamento compatibili con la macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.6": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le dimensioni minime del posto di lavoro",
+    "La macchina permette movimenti e posture non impegnativi per l'operatore",
+    "L'interfaccia utente è adatta alle caratteristiche prevedibili degli operatori"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.7": {
+   "condition": "",
+   "points": [
+    "La cabina è progettata per proteggere l'operatore da gas di scarico e mancanza di ossigeno",
+    "Le istruzioni indicano le procedure per l'uscita di emergenza in direzione diversa dall'ingresso",
+    "La documentazione menziona l'ubicazione di un'uscita di sicurezza accessibile in emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.8": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive la posizione e l'adattabilità del sedile rispetto ai comandi",
+    "La documentazione indica la presenza di un poggiapiedi antisdrucciolo",
+    "Le istruzioni menzionano la riduzione delle vibrazioni tramite il sedile",
+    "La valutazione dei rischi include l'analisi della postazione seduta dell'operatore"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.9-c1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di sicurezza per l'accesso non autorizzato",
+    "La valutazione dei rischi include analisi delle interfacce esterne di comunicazione",
+    "I schemi elettrici mostrano protezioni contro l'interferenza esterna",
+    "La dichiarazione tecnica menziona limiti di connettività esterna"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.9-c2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono i meccanismi di protezione contro l'alterazione dei componenti hardware critici",
+    "La valutazione dei rischi include analisi delle vulnerabilità di alterazione dei componenti hardware",
+    "I schemi elettrici indicano misure di sicurezza per prevenire l'alterazione di segnali critici",
+    "La dichiarazione tecnica menziona prove di rilevamento di interventi illegittimi su componenti hardware"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.9-c3": {
+   "condition": "",
+   "points": [
+    "La documentazione identifica software critici per la sicurezza e la loro protezione contro alterazioni",
+    "Le istruzioni descrivono misure di protezione contro modifiche accidentali o intenzionali dei dati critici",
+    "La valutazione dei rischi menziona controlli per prevenire alterazioni di software e dati essenziali",
+    "Le dichiarazioni tecniche indicano procedure per garantire l'integrità dei dati e del software critici"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.9-c4": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive chiaramente il software necessario per il funzionamento in sicurezza",
+    "La valutazione dei rischi include informazioni sul software di sicurezza installato",
+    "Le dichiarazioni tecniche indicano il software essenziale per la sicurezza della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.1.9-c5": {
+   "condition": "",
+   "points": [
+    "La documentazione indica le procedure per verificare l'integrità del software",
+    "Le istruzioni descrivono come rilevare modifiche non autorizzate al software",
+    "La valutazione dei rischi menziona metodi per tracciare interventi sul sistema",
+    "La dichiarazione tecnica include prove di controllo delle configurazioni"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-1a": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro tentativi di accesso non autorizzato",
+    "La valutazione dei rischi include analisi delle sollecitazioni esterne previste durante l'uso",
+    "Gli schemi elettrici mostrano protezioni contro sovraccarichi e cortocircuiti",
+    "Le dichiarazioni tecniche menzionano resistenza a condizioni ambientali estreme previste"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-1b": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per gestire guasti del sistema di comando",
+    "La valutazione dei rischi identifica scenari di guasto e relative misure di sicurezza",
+    "Gli schemi elettrici indicano isolamenti e protezioni contro guasti logici",
+    "La dichiarazione tecnica menziona test di affidabilità del sistema di comando"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-1c": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per gestire errori di logica del sistema di comando",
+    "La valutazione dei rischi identifica scenari di guasto e relative misure di sicurezza",
+    "Gli schemi elettrici indicano isolamenti e protezioni contro errori logici",
+    "La dichiarazione tecnica menziona test di validazione della logica del sistema di comando"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-1d": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include la definizione dei limiti delle funzioni di sicurezza",
+    "Le istruzioni indicano i limiti delle funzioni di sicurezza stabiliti durante la valutazione dei rischi",
+    "Le impostazioni di sicurezza non possono essere modificate dagli operatori secondo il manuale"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-1e": {
+   "condition": "",
+   "points": [
+    "Le istruzioni forniscono procedure per prevenire errori di manovra",
+    "I comandi sono disposti per ridurre il rischio di azioni errate",
+    "La documentazione include misure per mitigare errori umani prevedibili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-1f": {
+   "condition": "",
+   "points": [
+    "La documentazione include un registro delle versioni del software di sicurezza con data e ora del caricamento",
+    "La registrazione dei dati di tracciamento è descritta come disponibile per un periodo di cinque anni",
+    "La macchina è dotata di un sistema per la conservazione dei dati di tracciamento conforme al requisito",
+    "La documentazione menziona la finalità della registrazione come dimostrazione della conformità alla normativa"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-2a": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente i limiti di movimento della macchina",
+    "La valutazione dei rischi identifica azioni non previste del sistema di controllo",
+    "Gli schemi tecnici indicano meccanismi per bloccare movimenti fuori dallo spazio definito"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-2b": {
+   "condition": "",
+   "points": [
+    "La documentazione include un registro dei dati decisionali per la sicurezza",
+    "I dati di sicurezza sono conservati per un periodo minimo di un anno",
+    "La macchina è dotata di sistemi di controllo con logica auto-evolutiva",
+    "I dati sono registrati in modo accessibile per verifiche esterne"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-2c": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le procedure per la correzione della macchina in caso di malfunzionamento",
+    "La valutazione dei rischi include misure per garantire la sicurezza intrinseca durante la correzione",
+    "Gli schemi elettrici indicano circuiti di emergenza per interrompere il funzionamento della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3a": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per l'avviamento sequenziale della macchina",
+    "La valutazione dei rischi include analisi per prevenire avviamenti inattesi",
+    "Gli schemi elettrici indicano interruzioni di alimentazione per blocco del sistema",
+    "Le dichiarazioni tecniche menzionano dispositivi di arresto immediato in caso di emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3b": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i limiti di temperatura della macchina",
+    "La valutazione dei rischi descrive le misure per prevenire variazioni impreviste dei parametri",
+    "I schemi elettrici mostrano la protezione contro variazioni anomale delle prestazioni"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3c": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per ripristinare le impostazioni originali",
+    "La documentazione descrive i rischi derivanti da modifiche non autorizzate",
+    "Le specifiche tecniche elencano le funzioni non modificabili per sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3d": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per l'arresto immediato della macchina",
+    "La documentazione include un piano di emergenza per l'arresto della macchina",
+    "I schemi elettrici indicano circuiti dedicati all'arresto di emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3e": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono i meccanismi di blocco per elementi mobili",
+    "La documentazione include schemi che indicano le giunzioni di fissaggio",
+    "La valutazione dei rischi menziona misure per prevenire espulsioni di parti mobili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3f": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le procedure per l'arresto manuale degli elementi mobili",
+    "La valutazione dei rischi include misure per l'arresto automatico degli elementi mobili",
+    "Gli schemi elettrici indicano dispositivi per l'arresto automatico degli elementi mobili",
+    "La dichiarazione tecnica menziona sistemi di arresto manuale e automatico degli elementi mobili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3g": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente le funzioni di arresto di emergenza",
+    "I dispositivi di protezione sono descritti come sempre attivi e funzionanti",
+    "La documentazione indica come i comandi di arresto siano accessibili e visibili",
+    "Le istruzioni forniscono informazioni sui tempi di risposta dei dispositivi di protezione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-3h": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente le funzioni di sicurezza del sistema di comando",
+    "La documentazione include una valutazione dei rischi relativa al sistema di controllo",
+    "Gli schemi tecnici mostrano la connessione tra le parti del sistema di controllo e la sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-c1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per interrompere l'operazione in emergenza",
+    "La valutazione dei rischi descrive le misure adottate per prevenire errori di comando",
+    "Gli schemi elettrici mostrano l'isolamento delle parti pericolose da quelli accessibili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.1-c2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per gestire la perdita di segnale wireless",
+    "La documentazione include test di connessione per verificare la sicurezza in caso di guasto",
+    "I schemi elettrici indicano misure di sicurezza attive in caso di interruzione della comunicazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.2": {
+   "condition": "",
+   "points": [
+    "I dispositivi di comando sono chiaramente visibili e identificati, se del caso con pittogrammi",
+    "I dispositivi di comando sono posizionati fuori dalle zone pericolose",
+    "I comandi sono protetti contro l'azionamento accidentale"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.2.3": {
+   "condition": "",
+   "points": [
+    "L'avviamento è possibile solo con un'azione volontaria su un dispositivo di comando previsto a tale scopo",
+    "Dopo un arresto, il riavvio richiede una nuova azione volontaria"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.2.4.1": {
+   "condition": "",
+   "points": [
+    "Esiste un dispositivo di comando per l'arresto generale in condizioni di sicurezza",
+    "L'ordine di arresto ha priorità sugli ordini di avviamento"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.2.4.2": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive il comando di arresto senza interruzione dell'alimentazione degli azionatori",
+    "La valutazione dei rischi include la descrizione della condizione di arresto monitorata",
+    "Gli schemi elettrici indicano la manutenzione della condizione di arresto durante l'arresto operativo",
+    "La dichiarazione tecnica conferma la monitorazione della condizione di arresto durante l'arresto operativo"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.4.3": {
+   "condition": "",
+   "points": [
+    "Uno o più dispositivi di arresto di emergenza sono raggiungibili da ogni postazione di lavoro",
+    "I comandi di arresto di emergenza sono chiaramente individuabili, ben visibili e rapidamente accessibili",
+    "Il comando di emergenza resta bloccato finché non viene sbloccato con una manovra apposita",
+    "Lo sblocco del comando di emergenza non riavvia la macchina"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.2.4.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente i comandi di arresto e i dispositivi di emergenza",
+    "La valutazione dei rischi include l'analisi delle interconnessioni con attrezzature esterne",
+    "Gli schemi elettrici indicano la connessione dei dispositivi di arresto di emergenza con le attrezzature collegate"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.2.5": {
+   "condition": "La macchina dispone di più modi di comando o di funzionamento",
+   "points": [
+    "Il selettore di modo è bloccabile in ogni posizione (es. a chiave)",
+    "Nei modi con protezioni escluse i movimenti avvengono solo a velocità ridotta o con comando ad azione mantenuta"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.2.6": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le procedure per il ripristino dell'alimentazione senza avviamento inatteso",
+    "La valutazione dei rischi indica misure per prevenire cambiamenti incontrollati dei parametri",
+    "I dispositivi di protezione sono descritti come sempre attivi durante interruzioni di alimentazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.1": {
+   "condition": "",
+   "points": [
+    "La macchina è stabile contro il ribaltamento durante uso, trasporto e installazione",
+    "Le istruzioni indicano i mezzi di ancoraggio o fissaggio necessari"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.3.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i criteri di sostituzione degli elementi soggetti ad usura",
+    "Le tubazioni sono fissate o protette per evitare rischi in caso di rottura",
+    "Le istruzioni descrivono le frequenze e i tipi di ispezioni e manutenzioni necessarie",
+    "Gli elementi sono progettati per resistere agli sforzi previsti durante l'utilizzazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure per prevenire la caduta di oggetti",
+    "La documentazione descrive le protezioni contro la proiezione di materiali",
+    "Le istruzioni forniscono informazioni sui dispositivi di fissaggio degli oggetti",
+    "La valutazione dei rischi menziona misure per ridurre i rischi di proiezione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.4": {
+   "condition": "",
+   "points": [
+    "Le superfici accessibili sono lisce e prive di spigoli vivi",
+    "I bordi delle parti esposte sono arrotondati o smussati",
+    "La documentazione include una descrizione delle superfici non lesive",
+    "Le istruzioni menzionano la manutenzione per preservare la superficie liscia"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono come disattivare singolarmente ogni elemento della macchina",
+    "La documentazione indica le procedure per arrestare ogni elemento separatamente",
+    "Gli schemi mostrano elementi non protetti con collegamenti individuali di comando"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.6": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente le condizioni operative possibili della macchina",
+    "La documentazione indica come regolare le condizioni di funzionamento in modo sicuro",
+    "Le istruzioni forniscono informazioni sui limiti delle condizioni di impiego della macchina",
+    "La macchina è progettata per gestire variazioni delle condizioni di funzionamento senza rischi"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.7": {
+   "condition": "",
+   "points": [
+    "Gli elementi mobili che possono causare infortuni sono protetti da ripari o dispositivi di protezione"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.3.8": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente i rischi legati agli elementi mobili",
+    "I dispositivi di protezione sono selezionati in base al tipo di rischio identificato",
+    "La documentazione indica le caratteristiche tecniche dei ripari o dispositivi di protezione",
+    "Le misure di protezione sono adatte al tipo di movimento e velocità degli elementi mobili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.8.1": {
+   "condition": "La macchina ha elementi mobili di trasmissione (cinghie, catene, pulegge, alberi, giunti)",
+   "points": [
+    "Gli elementi mobili di trasmissione sono protetti da ripari fissi o da ripari mobili interbloccati"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.3.8.2": {
+   "condition": "",
+   "points": [
+    "La documentazione indica i tipi di ripari installati sulla macchina",
+    "I ripari sono descritti come fissi, mobili interbloccati o regolabili",
+    "La documentazione menziona dispositivi di protezione conforme al punto 1.4.3",
+    "La macchina è dotata di ripari che impediscono l'accesso alle parti non utilizzate per la lavorazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.3.9": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per bloccare la deriva dopo l'arresto della macchina",
+    "La valutazione dei rischi include analisi della deriva meccanica in caso di arresto non programmato",
+    "Gli schemi tecnici indicano dispositivi di blocco per prevenire movimenti incontrollati"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.4.1": {
+   "condition": "",
+   "points": [
+    "I ripari sono costruiti in materiali robusti e resistenti",
+    "I dispositivi di protezione sono fissati in modo permanente e sicuro",
+    "I ripari sono posizionati a distanza sufficiente dalla zona pericolosa"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.4.2.1": {
+   "condition": "La macchina ha ripari fissi",
+   "points": [
+    "I ripari fissi si possono aprire o smontare solo con un utensile",
+    "Gli elementi di fissaggio restano attaccati al riparo o alla macchina quando il riparo è rimosso"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.4.2.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente il funzionamento dei ripari mobili interbloccati",
+    "I ripari mobili interbloccati rimangono collegati alla macchina quando sono aperti",
+    "I dispositivi di interblocco impediscono l'avviamento quando i ripari sono chiusi",
+    "I ripari mobili sono associati a dispositivi di bloccaggio in caso di accesso anticipato alla zona pericolosa"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.4.2.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono come regolare i ripari in base al tipo di lavorazione",
+    "La documentazione indica i metodi di regolazione senza l'uso di attrezzi",
+    "I disegni tecnici mostrano ripari con meccanismi di regolazione accessibili",
+    "La valutazione dei rischi menziona la facilità di regolazione dei ripari"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.4.3": {
+   "condition": "",
+   "points": [
+    "I dispositivi di protezione sono integrati nel sistema di comando della macchina",
+    "La regolazione dei dispositivi di protezione richiede un intervento volontario da parte dell'operatore",
+    "I dispositivi di protezione impediscono l'avviamento degli elementi mobili in caso di guasto",
+    "I dispositivi di protezione impediscono l'accesso agli elementi mobili in movimento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.1": {
+   "condition": "La macchina è alimentata con energia elettrica",
+   "points": [
+    "L'equipaggiamento elettrico è progettato secondo una norma di sicurezza elettrica (es. EN 60204-1)",
+    "Sono previste protezioni contro i contatti diretti e indiretti"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.5.10": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il livello di radiazione non ionizzante durante l'uso",
+    "La macchina è dotata di dispositivi di protezione contro le radiazioni ionizzanti",
+    "Le istruzioni descrivono le misure di riduzione delle emissioni di radiazioni durante la pulizia"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.11": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro radiazioni esterne",
+    "La valutazione dei rischi include analisi delle radiazioni esterne",
+    "Gli schemi mostrano isolamenti e schermature contro radiazioni esterne"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.12": {
+   "condition": "La macchina impiega dispositivi laser",
+   "points": [
+    "I dispositivi laser sono progettati per evitare radiazioni involontarie"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.5.13": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di contenimento per sostanze pericolose",
+    "La valutazione dei rischi descrive metodi di captazione delle sostanze pericolose",
+    "Gli schemi mostrano dispositivi di filtrazione per sostanze pericolose"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.14": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono procedure per liberare una persona imprigionata all'interno della macchina",
+    "La macchina è dotata di un sistema di allarme per chiedere aiuto in caso di blocco",
+    "Le istruzioni indicano l'accesso a un contatto di emergenza esterno",
+    "La macchina include un mezzo per comunicare con l'esterno in caso di imprigionamento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.15": {
+   "condition": "",
+   "points": [
+    "Le superfici di accesso sono progettate per ridurre il rischio di scivolamento",
+    "Le parti accessibili sono dotate di mezzi di presa fissi per garantire la stabilità",
+    "Le istruzioni indicano misure per prevenire inciambi o cadute durante l'uso",
+    "La macchina è progettata per evitare accessi a zone pericolose da parte degli operatori"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.16": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di un sistema di scarica a terra per fulmini",
+    "Le istruzioni descrivono le procedure per la protezione contro i fulmini",
+    "La documentazione include schemi elettrici con collegamenti a terra",
+    "La macchina presenta dispositivi di protezione contro sovratensioni da fulmini"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano misure per ridurre la formazione di cariche elettrostatiche",
+    "La macchina è dotata di dispositivi per la scarica di cariche elettrostatiche",
+    "Le istruzioni descrivono procedure per prevenire la formazione di cariche pericolose",
+    "La documentazione menziona materiali utilizzati per ridurre l'accumulo di cariche elettrostatiche"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.3": {
+   "condition": "La macchina è alimentata da fonti di energia diverse dall'energia elettrica",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro le fonti di energia alternative",
+    "La valutazione dei rischi include analisi specifiche per le fonti di energia non elettriche",
+    "Gli schemi tecnici mostrano dispositivi di interruzione per le fonti di energia alternative"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il senso di movimento degli elementi mobili",
+    "I pezzi sono contrassegnati per evitare montaggi errati",
+    "Le indicazioni sui carteri prevennero raccordi impropri"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le temperature massime e minime delle parti accessibili",
+    "Le istruzioni descrivono le misure di protezione contro proiezioni di calore o freddo",
+    "Le istruzioni segnalano le zone della macchina a rischio di contatto con materiali a temperatura estrema",
+    "Le istruzioni forniscono informazioni sui dispositivi di interruzione automatica in caso di sovraccarico termico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.6": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro il surriscaldamento",
+    "La valutazione dei rischi include analisi delle sostanze combustibili utilizzate",
+    "I materiali utilizzati sono selezionati per ridurre il rischio di incendio",
+    "Le istruzioni descrivono procedure per prevenire la formazione di polveri infiammabili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.7": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro esplosioni",
+    "La macchina è conforme alle normative di armonizzazione UE per atmosfere esplosive",
+    "I materiali utilizzati non presentano rischi di generazione di polveri esplosive",
+    "Le istruzioni forniscono informazioni sui limiti di concentrazione di gas o vapori"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.5.8": {
+   "condition": "",
+   "points": [
+    "Il rumore emesso è ridotto alla fonte con misure di progettazione",
+    "Il livello di emissione sonora è misurato e dichiarato"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.5.9": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano misure per ridurre le vibrazioni durante l'uso",
+    "La documentazione riporta valori di vibrazione confrontabili con macchine simili",
+    "Le istruzioni descrivono modalità operative per minimizzare le vibrazioni",
+    "La macchina è progettata con elementi che limitano la trasmissione delle vibrazioni"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.6.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la posizione dei punti di manutenzione fuori dalle zone pericolose",
+    "Le operazioni di manutenzione sono descritte come eseguibili quando la macchina è ferma",
+    "La macchina è dotata di dispositivo di connessione per la diagnosi delle avarie",
+    "Gli elementi sostituibili sono descritti come facilmente smontabili in sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.6.2": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive chiaramente le zone accessibili per la manutenzione",
+    "Le istruzioni indicano le procedure per l'accesso sicuro alle postazioni di lavoro",
+    "La documentazione include schemi che mostrano le aree accessibili durante la manutenzione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.6.3": {
+   "condition": "",
+   "points": [
+    "Esiste un dispositivo che isola la macchina da ciascuna fonte di energia, chiaramente identificato",
+    "Il dispositivo di isolamento è bloccabile (es. con lucchetto) in posizione di isolamento",
+    "Le energie residue (es. pressione idraulica, condensatori) possono essere scaricate"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.6.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per l'intervento dell'operatore in sicurezza",
+    "La macchina è dotata di dispositivi di interruzione automatica per l'intervento manuale",
+    "Le istruzioni forniscono informazioni chiare sulle condizioni di sicurezza durante l'intervento",
+    "La macchina presenta accessi protetti per l'intervento dell'operatore"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.6.5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono come svuotare le parti interne dall'esterno",
+    "Le istruzioni indicano come pulire le parti interne senza entrare in contatto diretto",
+    "La valutazione dei rischi menziona misure per garantire la sicurezza durante la pulizia"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.1": {
+   "condition": "",
+   "points": [
+    "Le avvertenze sono rappresentate da simboli o pittogrammi facilmente comprensibili",
+    "Le informazioni sono fornite in una lingua stabilita dallo Stato membro interessato",
+    "Le istruzioni menzionano le misure di protezione contro i rischi identificati"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.1.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano chiaramente le informazioni relative alla sicurezza dell'operatore",
+    "Le informazioni sono presentate in modo semplice e facilmente comprensibile per l'operatore",
+    "La documentazione include una descrizione chiara delle funzioni principali della macchina",
+    "Le istruzioni forniscono informazioni sufficienti per la corretta gestione delle emergenze"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.1.2": {
+   "condition": "",
+   "points": [
+    "I dispositivi di allarme sono descritti con colori e segnali conformi agli atti giuridici dell'Unione",
+    "La documentazione menziona procedure per verificare l'efficienza dei dispositivi di allarme",
+    "I segnali di allarme sono descritti come chiari e facilmente percepibili dall'operatore"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i rischi residui e le relative avvertenze",
+    "La documentazione include dispositivi di avvertenza per i rischi residui",
+    "Le misure di protezione complementari sono descritte con relative avvertenze",
+    "Le avvertenze sono visibili e accessibili al personale operatore"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.3-c1": {
+   "condition": "",
+   "points": [
+    "La marcatura è visibile, leggibile e indelebile sulla macchina",
+    "La marcatura include il numero di serie della macchina",
+    "La marcatura indica la data di immatricolazione della macchina",
+    "La marcatura riporta il nome e l'indirizzo del fabbricante"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.3-c2": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di dispositivi di blocco per prevenire l'avviamento accidentale",
+    "La dichiarazione di conformità include la valutazione dei rischi completa",
+    "Gli schemi elettrici mostrano l'ubicazione dei dispositivi di interruzione d'urgenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.3-c3": {
+   "condition": "",
+   "points": [
+    "La macchina indica la marcatura specifica per atmosfere esplosive",
+    "La documentazione tecnica menziona la marcatura richiesta per l'ambiente di utilizzo",
+    "La dichiarazione di conformità include la marcatura per atmosfere esplosive",
+    "Le istruzioni operative riportano la marcatura necessaria per l'ambiente esplosivo"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.3-c4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il tipo di macchina e le sue caratteristiche principali",
+    "La valutazione dei rischi include analisi delle fonti di pericolo e misure di protezione",
+    "La dichiarazione di conformità menziona i requisiti di sicurezza applicabili",
+    "Gli schemi tecnici mostrano le indicazioni di sicurezza accessibili all'utente"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.3-c5": {
+   "condition": "",
+   "points": [
+    "La documentazione indica la massa dell'elemento movimentabile in modo leggibile e indelebile",
+    "La massa dell'elemento movimentabile è specificata in modo non ambiguo nel manuale di utilizzo",
+    "La valutazione dei rischi menziona la massa dell'elemento movimentabile in modo chiaro e preciso"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni per l'uso sono fornite nella lingua del paese di utilizzo",
+    "Le istruzioni descrivono uso previsto, installazione, regolazione e manutenzione in sicurezza",
+    "Le istruzioni indicano i rischi residui e le misure di protezione a carico dell'utilizzatore"
+   ],
+   "status": "rivista"
+  },
+  "MR-III-1.7.4.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i rischi derivanti dall'uso scorretto della macchina",
+    "Le istruzioni forniscono istruzioni chiare per l'uso da parte di operatori non professionali",
+    "Le istruzioni menzionano le misure di protezione contro l'accesso non autorizzato",
+    "Le istruzioni descrivono le procedure di emergenza in caso di guasto"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-a": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la ragione sociale del fabbricante",
+    "Le istruzioni riportano l'indirizzo completo del fabbricante",
+    "Le istruzioni menzionano il mandatario, se presente"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-b": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la designazione della macchina come indicata sulla stessa",
+    "Le istruzioni menzionano il prodotto correlato, se presente, come indicato sul prodotto stesso",
+    "Le istruzioni riportano la designazione della macchina in modo chiaro e leggibile",
+    "Le istruzioni includono la designazione della macchina in corrispondenza delle istruzioni operative"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-c": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano l'indirizzo internet per la dichiarazione di conformità UE",
+    "Le istruzioni riportano il codice ottico per accedere alla dichiarazione di conformità UE",
+    "Le istruzioni menzionano la dichiarazione di conformità UE in modo visibile e accessibile"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-d": {
+   "condition": "",
+   "points": [
+    "Le istruzioni forniscono una descrizione chiara della macchina",
+    "Le istruzioni menzionano le caratteristiche principali del prodotto",
+    "Le istruzioni descrivono l'uso previsto del prodotto correlato"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-e": {
+   "condition": "",
+   "points": [
+    "Le istruzioni includono disegni dettagliati per la manutenzione dei componenti accessibili",
+    "Le istruzioni descrivono passaggi chiari per la verifica del corretto funzionamento dei sistemi",
+    "Le istruzioni forniscono spiegazioni su come riparare elementi soggetti a usura"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-f": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le postazioni di lavoro occupabili dagli operatori",
+    "Le istruzioni indicano le caratteristiche delle postazioni di lavoro occupabili",
+    "Le istruzioni menzionano le condizioni di sicurezza per le postazioni di lavoro"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-g": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente l'uso previsto della macchina",
+    "Le istruzioni indicano le condizioni ambientali necessarie per l'uso",
+    "Le istruzioni menzionano le attività operative tipiche della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-h": {
+   "condition": "La macchina presenta modalità di funzionamento diverse",
+   "points": [
+    "Le istruzioni indicano i modi di utilizzo non consentiti per ogni modalità di funzionamento",
+    "Le istruzioni elencano le conseguenze potenziali di un uso improprio per ogni modalità di funzionamento",
+    "Le istruzioni specificano le limitazioni operative per ogni modalità di funzionamento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-i": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono dettagliatamente il sistema di fissaggio della macchina",
+    "Le istruzioni includono disegni e diagrammi per il collegamento elettrico",
+    "Le istruzioni indicano la designazione del telaio su cui la macchina deve essere montata"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-j": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per ridurre le vibrazioni durante l'installazione",
+    "Le istruzioni forniscono istruzioni dettagliate per l'installazione silenziosa",
+    "Le istruzioni menzionano l'uso di elementi di fissaggio per ridurre le vibrazioni"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-k": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per la messa in servizio della macchina",
+    "Le istruzioni forniscono istruzioni dettagliate per l'uso sicuro della macchina",
+    "Le istruzioni indicano le modalità di formazione degli operatori previste"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-l": {
+   "condition": "",
+   "points": [
+    "Le istruzioni per l'uso elencano i rischi residui non eliminabili",
+    "Le istruzioni indicano le misure di protezione integrate nella progettazione",
+    "Le istruzioni descrivono le protezioni complementari adottate"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-m": {
+   "condition": "La macchina richiede l'uso di attrezzature di protezione individuale",
+   "points": [
+    "Le istruzioni indicano le attrezzature di protezione individuale da fornire",
+    "Le istruzioni descrivono le misure di protezione da adottare dall'utilizzatore",
+    "Le istruzioni specificano le procedure di sicurezza durante l'uso della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-n": {
+   "condition": "La macchina è dotata di utensili montabili",
+   "points": [
+    "Le istruzioni elencano le caratteristiche tecniche degli utensili montabili",
+    "Le istruzioni descrivono le dimensioni degli utensili compatibili con la macchina",
+    "Le istruzioni indicano le limitazioni di utilizzo per ciascun utensile"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-o": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le condizioni di stabilità durante il trasporto e il montaggio",
+    "Le istruzioni descrivono le condizioni di stabilità durante le prove e le avarie prevedibili",
+    "Le istruzioni menzionano le condizioni di stabilità in condizioni di fuori servizio",
+    "Le istruzioni specificano le condizioni di stabilità durante l'utilizzo della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-p": {
+   "condition": "La macchina richiede trasporto e movimentazione di elementi separati",
+   "points": [
+    "Le istruzioni indicano la massa della macchina durante il trasporto",
+    "Le istruzioni descrivono le operazioni di movimentazione in sicurezza",
+    "Le istruzioni specificano le modalità di stoccaggio sicuro degli elementi"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-q": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono il protocollo operativo da seguire in caso di infortunio",
+    "Le istruzioni indicano il metodo sicuro per sbloccare la macchina in emergenza",
+    "Le istruzioni forniscono informazioni dettagliate sulle procedure di interruzione dell'attività"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-r": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le operazioni di regolazione da eseguire dall'utilizzatore",
+    "Le istruzioni indicano le misure preventive per la manutenzione della macchina",
+    "Le istruzioni elencano le operazioni di manutenzione necessarie durante l'uso"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-s": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per la regolazione in sicurezza",
+    "Le istruzioni descrivono le misure di protezione durante la manutenzione",
+    "Le istruzioni specificano le precauzioni per l'accesso alle parti a rischio"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-t": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le specifiche dei pezzi di ricambio per la sicurezza degli operatori",
+    "Le istruzioni elencano i materiali dei pezzi di ricambio che influiscono sulla salute degli operatori",
+    "Le istruzioni descrivono le caratteristiche tecniche dei pezzi di ricambio per la sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-u": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il livello di pressione acustica al posto operatore",
+    "Le istruzioni riportano il valore massimo della pressione acustica istantanea",
+    "Le istruzioni specificano il livello di potenza acustica se supera 80 dB(A)",
+    "Le istruzioni descrivono le condizioni di misurazione e i metodi utilizzati"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-v": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i dispositivi necessari per il soccorso immediato delle persone",
+    "Le istruzioni descrivono i mezzi di soccorso da utilizzare in caso di emergenza",
+    "Le istruzioni forniscono istruzioni dettagliate per la manipolazione sicura delle persone coinvolte"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-w": {
+   "condition": "La macchina è in grado di emettere radiazioni non ionizzanti potenzialmente nocive",
+   "points": [
+    "Le istruzioni indicano le misure di protezione per l'operatore esposto alle radiazioni",
+    "Le istruzioni descrivono i limiti di esposizione alle radiazioni non ionizzanti",
+    "Le istruzioni forniscono informazioni sui dispositivi medici impiantabili a rischio di interferenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.4.2-x": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le caratteristiche del dispositivo di captazione o filtrazione",
+    "Le istruzioni riportano la portata delle emissioni di sostanze pericolose",
+    "Le istruzioni descrivono la concentrazione di sostanze pericolose nell'ambiente di lavoro"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-1.7.5": {
+   "condition": "",
+   "points": [
+    "Le pubblicazioni promozionali menzionano le emissioni come indicato nelle istruzioni",
+    "Le caratteristiche di prestazione sono descritte in modo coerente con le istruzioni per l'uso",
+    "Le informazioni sulle emissioni sono presenti sia nel manuale che nelle pubblicazioni promozionali"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.1.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono i materiali a contatto con prodotti alimentari e indicano la loro conformità normativa",
+    "Le superfici a contatto sono progettate per essere lisce, prive di rugosità e facilmente pulibili",
+    "La macchina è progettata per permettere il deflusso completo dei liquidi e gas aerosol verso l'esterno"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.1.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i metodi di pulizia delle parti difficilmente accessibili",
+    "Le istruzioni menzionano le tecniche di disinfezione specifiche per la macchina",
+    "Le istruzioni descrivono i passaggi per la risciacquatura completa della macchina",
+    "Le istruzioni elencano i prodotti consigliati per la pulizia e la disinfezione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.2.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la posizione e il numero dei mezzi di presa",
+    "Le istruzioni descrivono i dispositivi di comando manuali per avviamento e arresto",
+    "Le istruzioni menzionano misure compensative per l'avviamento intempestivo",
+    "Le istruzioni indicano le aree visibili per osservare le zone pericolose"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.2.1.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il valore totale delle vibrazioni sul sistema mano-braccio",
+    "Le istruzioni riportano il valore medio dell'ampiezza di picco delle vibrazioni",
+    "Le istruzioni specificano l'incertezza delle misurazioni delle vibrazioni",
+    "Le istruzioni menzionano le condizioni di funzionamento durante la misurazione delle vibrazioni"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.2.2.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente il componente intermedio per la trasmissione dell'energia",
+    "Il manuale indica l'uso di un dispositivo di consenso per prevenire l'impatto non intenzionale",
+    "Le istruzioni spiegano la sequenza necessaria per azionare l'impatto in modo sicuro",
+    "La macchina è dotata di ripari paraschegge conforme alle specifiche del produttore"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.2.2.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano gli accessori intercambiabili compatibili con la macchina",
+    "Le istruzioni descrivono gli elementi necessari per fissare la macchina in sicurezza",
+    "Le istruzioni specificano le cartucce appropriate da utilizzare con la macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le modalità di posizionamento sicuro del pezzo da lavorare",
+    "La macchina è dotata di freno automatico per l'utensile in caso di rallentamento",
+    "Le istruzioni descrivono misure per prevenire proiezioni di parti durante la lavorazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.10": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le precauzioni per evitare la contaminazione ambientale durante l'uso",
+    "Le istruzioni descrivono le condizioni d'uso per diversi ambienti operativi e le regolazioni necessarie",
+    "Le istruzioni elencano i tipi e le dimensioni degli ugelli e filtri compatibili con la macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per prevenire fuoriuscite di prodotti fitosanitari",
+    "La valutazione dei rischi include analisi dell'esposizione non intenzionale dell'ambiente",
+    "I disegni tecnici mostrano dispositivi per contenere i prodotti fitosanitari durante l'uso",
+    "Le dichiarazioni tecniche menzionano misure per ridurre il rischio di contaminazione ambientale"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente le procedure per il comando e l'arresto immediato",
+    "Le postazioni operative sono indicate con precisione nel manuale tecnico",
+    "Le istruzioni forniscono informazioni dettagliate sul controllo dell'applicazione dei prodotti fitosanitari"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono il processo di riempimento con precisione",
+    "Le istruzioni indicano le procedure per lo svuotamento completo",
+    "Le istruzioni menzionano misure per prevenire dispersioni accidentali",
+    "Le istruzioni descrivono come evitare la contaminazione delle fonti idriche"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.5.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono come regolare il tasso di applicazione",
+    "La macchina presenta un sistema per impostare il tasso di applicazione",
+    "Le specifiche tecniche indicano la gamma di regolazione del tasso di applicazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.5.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono il sistema di distribuzione del prodotto fitosanitario",
+    "Le istruzioni indicano le misure per ridurre la dispersione ambientale",
+    "Le istruzioni menzionano dispositivi per garantire una deposizione omogenea"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.5.3": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di dispositivi di protezione contro le emissioni di sostanze tossiche",
+    "Le istruzioni descrivono le procedure per il controllo delle emissioni di sostanze nocive",
+    "La macchina è munita di sistemi di allarme per la segnalazione di condizioni pericolose"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.5.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le procedure per la disattivazione sicura del sistema di applicazione",
+    "La documentazione include schemi che mostrano il sistema di chiusura del circuito di applicazione",
+    "Le dichiarazioni tecniche indicano la presenza di dispositivi di interruzione automatica"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.6.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono i procedimenti di pulizia accessibili a tutti i componenti della macchina",
+    "Le istruzioni indicano le aree critiche da pulire per prevenire la contaminazione",
+    "La macchina è dotata di accessi facilitati per la pulizia di parti interne e di componenti mobili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.6.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano come sostituire le parti usurate senza contaminare l'ambiente",
+    "La documentazione descrive le procedure per la manutenzione senza rischio di contaminazione",
+    "Le schemi mostrano accessi facilitati per la sostituzione delle parti senza contaminazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.7": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive chiaramente le procedure per l'installazione degli strumenti di misura",
+    "La valutazione dei rischi include la verifica della correttezza delle misurazioni effettuate",
+    "Sono indicati i tipi di strumenti necessari per il controllo del funzionamento della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.8": {
+   "condition": "",
+   "points": [
+    "I filtri sono contrassegnati con il loro tipo e dimensione visibili sul manuale tecnico",
+    "Sul manuale sono indicati i dettagli del tipo e della dimensione degli ugelli",
+    "Gli schemi tecnici mostrano la marcatura chiara dei filtri a cestello e degli ugelli"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-2.4.9": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il prodotto fitosanitario in uso",
+    "La macchina presenta un supporto dedicato per l'apposizione del prodotto fitosanitario",
+    "La valutazione dei rischi menziona il prodotto fitosanitario in uso",
+    "Lo schema tecnico mostra un supporto per l'indicazione del prodotto fitosanitario"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.2.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni per l'uso sono disponibili nella cabina del conducente",
+    "La visibilità dalla postazione di guida è descritta come sufficiente per le operazioni previste",
+    "La macchina è progettata per prevenire contatti involontari con le ruote o i cingoli",
+    "La documentazione indica dispositivi supplementari per migliorare la visibilità in caso di necessità"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.2.2": {
+   "condition": "La macchina è dotata di una struttura di protezione conforme ai punti 3.4.3 o 3.4.4",
+   "points": [
+    "La macchina è dotata di un sistema di ritenuta che mantiene le persone sui sedili senza ostacolare i movimenti",
+    "Il sistema di ritenuta è progettato in base ai principi ergonomici e non aumenta i rischi per l'operatore",
+    "Il manuale descrive chiaramente l'uso e la manutenzione del sistema di ritenuta"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.2.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le posizioni di lavoro sicure per le persone trasportate",
+    "Le postazioni per altre persone sono descritte con dettaglio tecnico nel manuale",
+    "La macchina ha postazioni specifiche per il trasporto di persone non conducenti",
+    "Le istruzioni menzionano misure di protezione per le postazioni non conducenti"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.2.4": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le funzioni di supervisione attive in modalità autonoma",
+    "Le informazioni fornite consentono una visuale completa del movimento e posizionamento della macchina",
+    "Le istruzioni indicano come il supervisore possa interrompere o avviare la macchina da remoto",
+    "Le informazioni avvisano del verificarsi di situazioni impreviste o pericolose durante la modalità autonoma"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.3": {
+   "condition": "",
+   "points": [
+    "Le unità di telecomando indicano chiaramente le macchine a cui sono destinati",
+    "Il sistema di telecomando influisce solo sulla funzione specifica della macchina",
+    "La macchina risponde esclusivamente ai segnali delle unità di comando previste",
+    "Il sistema di comando assicura le funzioni di sicurezza anche in assenza di supervisione da remoto"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.3.1": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive chiaramente la posizione e l'uso dei dispositivi di comando",
+    "I pedali sono progettati con superficie antisdrucciolo e facili da pulire",
+    "I dispositivi di comando ritornano in posizione neutra quando l'operatore li lascia",
+    "Il comando di blocco del differenziale permette lo sblocco in movimento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.3.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la posizione sicura degli elementi mobili prima dello spostamento",
+    "La macchina è dotata di dispositivi per verificare la posizione sicura degli accessori esterni",
+    "Lo spostamento è subordinato alla posizione definita di elementi critici per la sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.3.3": {
+   "condition": "La macchina è dotata di telecomando",
+   "points": [
+    "Il sistema di telecomando include un arresto automatico in caso di perdita di controllo",
+    "Il sistema di telecomando attiva l'arresto quando riceve un segnale di arresto",
+    "Il sistema di telecomando prevede la rilevazione di un'eventuale avaria nel sistema di controllo",
+    "Il sistema di telecomando effettua un arresto immediato in caso di mancato rilevamento di un segnale di convalida"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.3.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la velocità di spostamento compatibile con l'andatura del conducente",
+    "Il sistema di comando richiede un'azione continua del conducente per lo spostamento della macchina",
+    "L'utensile rotante non può essere azionato quando il comando di retromarcia è attivo",
+    "Le istruzioni descrivono misure per ridurre i rischi di schiacciamento durante lo spostamento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.3.5": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive le procedure per arrestare la macchina in caso di guasto del servosterzo",
+    "La documentazione include schemi elettrici del circuito di comando del servosterzo",
+    "Le istruzioni indicano il tempo massimo di guida in caso di guasto del servosterzo",
+    "La macchina è dotata di sistema di arresto di emergenza accessibile al conducente"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure per limitare le oscillazioni del baricentro durante lo spostamento",
+    "La valutazione dei rischi descrive le strategie per prevenire sforzi eccessivi sulla struttura",
+    "Gli schemi mostrano l'installazione su supporto mobile o dispositivi di stabilizzazione",
+    "La dichiarazione tecnica menziona la progettazione per evitare instabilità durante lo spostamento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.2": {
+   "condition": "",
+   "points": [
+    "I ripari mobili del compartimento motore non sono provvisti di dispositivi di interblocco",
+    "L'apertura dei ripari mobili richiede l'uso di un utensile o di una chiave",
+    "L'apertura dei ripari mobili è possibile solo dopo aver azionato un comando sulla postazione di guida",
+    "La postazione di guida è ubicata in una cabina completamente chiusa con serratura"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.3": {
+   "condition": "",
+   "points": [
+    "La struttura di protezione è descritta nei disegni tecnici con dettagli delle zone di deformazione",
+    "Le istruzioni indicano i limiti di deformazione previsti per la struttura di protezione",
+    "La valutazione dei rischi menziona la presenza di una struttura di protezione adeguata",
+    "Le prove di resistenza sono documentate nel fascicolo tecnico della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.4": {
+   "condition": "",
+   "points": [
+    "La struttura di protezione è descritta nei disegni tecnici con dettaglio delle caratteristiche costruttive",
+    "Le istruzioni indicano le misure di protezione contro la caduta di oggetti o materiali",
+    "La documentazione include prove effettuate per verificare la deformazione limitata della struttura",
+    "La macchina è dotata di una struttura di protezione conforme alle specifiche tecniche"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la posizione e l'uso corretto dei mezzi di appoggio",
+    "La documentazione descrive la disposizione intuitiva dei mezzi di sostegno",
+    "I dispositivi di accesso sono descritti come facilmente accessibili senza comandi"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.6": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente il sistema di collegamento e sganciamento",
+    "I dispositivi di traino sono progettati per evitare sganciamenti accidentali",
+    "Le istruzioni indicano come effettuare il collegamento e lo sganciamento in modo sicuro",
+    "La macchina è munita di supporto adatto al carico e al terreno quando necessario"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.4.7": {
+   "condition": "La macchina è collegata a una macchina semovente tramite dispositivo amovibile di trasmissione meccanica",
+   "points": [
+    "Il riparo fisso sulla macchina semovente copre l'albero motore fino alle ganasce interne",
+    "Il carter di protezione sulla macchina azionata chiude l'albero comandato",
+    "Il dispositivo amovibile di trasmissione indica il senso di montaggio per la trasmissione cardanica"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.5.1": {
+   "condition": "",
+   "points": [
+    "L'alloggiamento della batteria è progettato per impedire la proiezione dell'elettrolita",
+    "La batteria può essere disinserita con un dispositivo accessibile e identificabile",
+    "Le istruzioni descrivono le misure per evitare l'accumulo di vapori vicino agli operatori",
+    "La batteria è progettata per prevenire contatti o urti durante la ricarica automatica"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.5.2": {
+   "condition": "",
+   "points": [
+    "Il manuale indica la posizione e il tipo di estintori da installare",
+    "La macchina è dotata di un sistema di estinzione integrato nel design",
+    "La valutazione dei rischi menziona la protezione contro incendi specifica",
+    "Gli schemi tecnici mostrano l'integrazione di sistemi estintori nella struttura"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.5.3": {
+   "condition": "La macchina ha come funzione principale l'applicazione di sostanze pericolose",
+   "points": [
+    "La documentazione tecnica indica misure di filtrazione per la cabina dell'operatore",
+    "Le istruzioni descrivono procedure per ridurre l'esposizione alle emissioni pericolose",
+    "La macchina è dotata di cabina di filtrazione o di misure equivalenti"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.5.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure per evitare il contatto con linee elettriche aeree",
+    "La macchina è progettata per non creare archi elettrici con linee aeree sotto tensione",
+    "Le istruzioni forniscono informazioni sui rischi elettrici in caso di contatto con linee aeree",
+    "La macchina è dotata di dispositivi che prevenirebbero pericoli elettrici da linee aeree"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.6.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le modalità di regolazione della segnalazione luminosa",
+    "Le istruzioni descrivono i dispositivi di segnalazione acustica e le loro caratteristiche",
+    "Le istruzioni menzionano i sistemi di collegamento tra la macchina e il rimorchio",
+    "Le istruzioni segnalano i rischi di urto o schiacciamento e le misure di protezione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.6.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano la potenza nominale espressa in chilowatt (kW)",
+    "Le istruzioni indicano la massa nella configurazione più usuale in chilogrammi (kg)",
+    "Le istruzioni indicano lo sforzo massimo di trazione previsto al gancio di traino in newton (N)",
+    "Le istruzioni indicano lo sforzo verticale massimo previsto sul gancio di traino in newton (N)"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.6.3.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il valore totale delle vibrazioni sul sistema mano-braccio",
+    "Le istruzioni riportano il valore medio dell'ampiezza di picco delle vibrazioni da urti ripetuti",
+    "Le istruzioni specificano il valore quadratico medio massimo delle vibrazioni su tutto il corpo",
+    "Le istruzioni descrivono le condizioni di funzionamento durante la misurazione delle vibrazioni"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.6.3.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le modalità di montaggio sicuro delle attrezzature intercambiabili",
+    "Le istruzioni forniscono informazioni sui limiti di utilizzo delle attrezzature intercambiabili",
+    "Le istruzioni descrivono le procedure di messa in servizio delle attrezzature intercambiabili",
+    "Le istruzioni menzionano le precauzioni specifiche per ogni tipo di attrezzatura intercambiabile"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-3.6.3.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le dimensioni e la forma della zona di lavoro",
+    "Le istruzioni descrivono le caratteristiche della zona di spostamento",
+    "Le istruzioni identificano le aree pericolose con segnalazione visiva",
+    "Le istruzioni specificano le limitazioni di movimento della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure per garantire la stabilità durante il trasporto",
+    "La valutazione dei rischi include analisi della stabilità in tutte le fasi operative",
+    "Gli schemi mostrano la distribuzione dei pesi per garantire la stabilità della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono dispositivi per evitare deragliamenti delle guide",
+    "La documentazione include schemi con indicazione dei dispositivi di blocco delle guide",
+    "Le valutazioni dei rischi menzionano misure per prevenire cadute di carico in caso di guasto"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.3": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi menziona l'uso di materiali resistenti alla corrosione",
+    "Le prove statiche sono descritte con coefficiente di prova statica 1,5 o 1,25",
+    "Le prove dinamiche sono eseguite con carico massimo moltiplicato per 1,1"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.4": {
+   "condition": "",
+   "points": [
+    "Le pulegge sono dimensionate in base alle dimensioni delle funi o catene utilizzate",
+    "Le funi utilizzate non presentano impiombature oltre quelle alle estremità",
+    "Il coefficiente di utilizzazione della fune è pari a 5, come indicato nella documentazione",
+    "Le catene di sollevamento hanno un coefficiente di utilizzazione pari a 4, come dichiarato"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.5": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il coefficiente di utilizzazione delle funi metalliche",
+    "Le catene a maglie saldate sono del tipo a maglie corte e indicano il coefficiente di utilizzazione",
+    "Le funi di fibre tessili non presentano nodi o collegamenti diversi da quelli delle estremità"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.6": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive i limiti di movimento dei componenti della macchina",
+    "La macchina è dotata di dispositivi per evitare urti tra macchine in movimento",
+    "Le istruzioni indicano misure per prevenire la caduta improvvisa dei carichi",
+    "La macchina non permette l'abbassamento del carico senza controllo di un freno a frizione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.7": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente le traiettorie degli elementi mobili durante la movimentazione",
+    "La macchina è dotata di dispositivi di segnalazione visiva per i movimenti del carico",
+    "Le istruzioni indicano le misure di protezione contro urti durante la movimentazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.8.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono il movimento del supporto del carico verso i piani definiti",
+    "La documentazione indica che i movimenti del supporto del carico avvengono a guida rigida",
+    "Gli schemi tecnici mostrano un sistema a forbice come sistema a guida rigida"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.8.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono misure per mantenere il supporto del carico fermo durante l'accesso",
+    "La documentazione indica il dislivello massimo tra supporto del carico e piano servito",
+    "Le istruzioni forniscono informazioni sui dispositivi di blocco del supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.8.3": {
+   "condition": "",
+   "points": [
+    "Il percorso del supporto del carico è descritto come inaccessibile durante il funzionamento normale",
+    "La documentazione indica la presenza di volumi di rifugio o dispositivi di blocco meccanico",
+    "Le istruzioni specificano misure per evitare schiacciamento tra supporto del carico e parti fisse",
+    "La macchina include dispositivi per interrompere il movimento del supporto del carico in caso di accesso non autorizzato"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.8.4": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano misure per prevenire la caduta del carico",
+    "La valutazione dei rischi menziona dispositivi di fissaggio del carico",
+    "Gli schemi mostrano sistemi di blocco del carico in posizione statica"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.2.8.5": {
+   "condition": "",
+   "points": [
+    "I ripari sono montati con un dispositivo di interblocco controllato dalla posizione del supporto del carico",
+    "I ripari non aprono in direzione del percorso del supporto del carico durante il movimento",
+    "La documentazione indica la posizione dei ripari rispetto al percorso del supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.1.3": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di dispositivi di blocco per prevenire movimenti accidentali",
+    "Le prove statiche e dinamiche sono descritte nel manuale tecnico",
+    "La macchina è progettata per operare in condizioni di sicurezza previste dal manuale"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.2.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano l'uso di comandi a azione mantenuta per il controllo della macchina",
+    "La documentazione descrive movimenti senza rischio di urto da sostituire con comandi a posizioni preselezionate",
+    "Le istruzioni menzionano l'eventuale utilizzo di comandi con arresti automatici a posizioni preselezionate",
+    "La valutazione dei rischi chiarisce quando è possibile utilizzare comandi senza azione mantenuta"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.2.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano i limiti di carico massimo e momento di rovesciamento",
+    "La macchina è dotata di dispositivi di allarme per sovraccarico",
+    "I dispositivi di allarme interrompono i movimenti pericolosi in caso di sovraccarico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.2.3": {
+   "condition": "",
+   "points": [
+    "Le funi portanti sono tese da contrappesi o dispositivi di controllo della tensione",
+    "La documentazione descrive il sistema di tensione delle funi con dati tecnici specifici",
+    "Le istruzioni indicano le procedure per verificare la tensione delle funi",
+    "La valutazione dei rischi menziona misure per garantire la tensione delle funi"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.3.1": {
+   "condition": "",
+   "points": [
+    "La documentazione indica il nome e l'indirizzo del fabbricante della catena",
+    "La descrizione della catena include le dimensioni nominali e la costruzione",
+    "L'attestazione menziona il materiale e eventuali trattamenti metallurgici della catena",
+    "La documentazione specifica il carico massimo che la catena deve sopportare"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.3.2": {
+   "condition": "",
+   "points": [
+    "La targa indica il carico di utilizzazione massimo dell'accessorio di sollevamento",
+    "Le informazioni sono visibili e non compromettono la resistenza dell'accessorio",
+    "La targa è fissata saldamente sull'accessorio di sollevamento",
+    "L'identificazione del materiale è indicata quando necessaria per la sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.3.3": {
+   "condition": "",
+   "points": [
+    "La macchina indica chiaramente il carico massimo di utilizzazione su una superficie visibile",
+    "La targa dei carichi mostra i valori di carico consentiti per ogni configurazione della macchina",
+    "La macchina presenta un'indicazione indelebile che vieta il sollevamento di persone"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.4.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano l'uso previsto dell'accessorio di sollevamento",
+    "Le istruzioni specificano i limiti di utilizzazione dell'accessorio",
+    "Le istruzioni descrivono le istruzioni per il montaggio e la manutenzione",
+    "Le istruzioni riportano il coefficiente di prova statico utilizzato"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-4.4.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il carico massimo di utilizzazione della macchina",
+    "Le istruzioni descrivono le reazioni sugli appoggi e le caratteristiche delle guide",
+    "Le istruzioni forniscono raccomandazioni per migliorare la visibilità del carico",
+    "Le istruzioni includono le istruzioni per l'installazione delle zavorre, se applicabili"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-5.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono il sistema di orientamento durante lo spostamento",
+    "La macchina è dotata di ancoraggi per la piastra di testa dei raccordi idraulici",
+    "Le istruzioni indicano misure per prevenire ribaltamenti durante la messa sotto pressione",
+    "Le istruzioni menzionano procedure per garantire stabilità dopo la decompressione"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-5.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono percorsi di circolazione liberi da ostacoli",
+    "La macchina presenta spazi accessibili per il movimento delle persone",
+    "Le informazioni tecniche indicano la presenza di aree di passaggio sicure"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-5.3": {
+   "condition": "",
+   "points": [
+    "I dispositivi di comando dell'acceleratore sono azionati a mano",
+    "I dispositivi di comando dei freni sono azionati a mano",
+    "I dispositivi di comando sono protetti da azionamento involontario",
+    "I dispositivi di comando sono disposti per proteggere gli operatori da armatura fissa"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-5.4": {
+   "condition": "",
+   "points": [
+    "Il dispositivo di arresto è collegato al circuito di comando della macchina",
+    "Le istruzioni descrivono il funzionamento del dispositivo di arresto",
+    "La macchina è dotata di un sistema di arresto automatico in caso di mancanza di comando"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-5.5": {
+   "condition": "",
+   "points": [
+    "Il sistema di frenatura non produce scintille né causa incendio",
+    "Il motore utilizza un combustibile a bassa tensione di vapore"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-5.6": {
+   "condition": "",
+   "points": [
+    "Il manuale descrive il sistema di evacuazione dei gas di scarico verso l'alto",
+    "La valutazione dei rischi indica misure per prevenire l'accumulo di gas di scarico",
+    "Lo schema tecnico mostra l'evacuazione dei gas di scarico in direzione non verticale"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.1.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano il numero massimo di persone consentito nel supporto del carico",
+    "Le istruzioni specificano il carico massimo di utilizzazione del supporto del carico",
+    "La documentazione dichiara l'uso di almeno due funi o catene indipendenti per la sospensione",
+    "La documentazione descrive il sistema di sospensione o sostegno del supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.1.2": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di dispositivi di arresto d'emergenza accessibili",
+    "Le istruzioni descrivono le procedure per la manutenzione e la pulizia",
+    "La macchina è fornita di un sistema di allarme per sovraccarico meccanico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.2": {
+   "condition": "",
+   "points": [
+    "I dispositivi di comando per il movimento del supporto del carico sono del tipo ad azione mantenuta",
+    "Le istruzioni indicano la posizione dei dispositivi di comando per il movimento del supporto del carico",
+    "I dispositivi di comando per il movimento del supporto del carico hanno precedenza sugli altri dispositivi dello stesso movimento"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.3.1": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono le accelerazioni massime del supporto del carico",
+    "La valutazione dei rischi include analisi delle forze durante il movimento",
+    "Gli schemi indicano limiti di accelerazione per il supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.3.2": {
+   "condition": "",
+   "points": [
+    "Il supporto del carico è progettato per garantire la stabilità durante i movimenti",
+    "I punti di ancoraggio sono sufficienti e resistenti per l'uso di dispositivi di protezione individuale",
+    "Le botole e portelli sono progettati per non aprire involontariamente e si aprono in senso sicuro"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.3.3": {
+   "condition": "",
+   "points": [
+    "La documentazione tecnica descrive la presenza di una copertura di protezione sul supporto del carico",
+    "Le istruzioni indicano misure per prevenire la caduta di oggetti sul supporto del carico",
+    "La valutazione dei rischi menziona la protezione del supporto del carico da oggetti cadenti",
+    "Lo schema della macchina mostra una copertura di protezione sul supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.4.1": {
+   "condition": "",
+   "points": [
+    "Le porte del supporto del carico sono munite di dispositivo di interblocco",
+    "Il supporto del carico è completamente chiuso e accessibile solo da porte chiuse",
+    "Le istruzioni indicano dispositivi per arrestare il supporto del carico in discesa",
+    "Le istruzioni descrivono come evitare decelerazioni dannose per gli occupanti"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.4.2": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano quando i comandi ai piani non attivano movimenti del supporto del carico",
+    "La documentazione descrive le condizioni in cui i comandi ai piani non innescano movimenti del supporto del carico",
+    "La valutazione dei rischi menziona l'assenza di movimenti del supporto del carico quando i comandi ai piani sono attivi"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.4.3": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente le procedure per accedere al supporto del carico",
+    "La valutazione dei rischi include analisi delle condizioni di accesso al supporto del carico",
+    "Gli schemi mostrano dispositivi di protezione per l'accesso al supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-6.5": {
+   "condition": "",
+   "points": [
+    "Il supporto del carico indica il numero massimo di persone ammesse",
+    "La documentazione riporta il carico di utilizzazione massimo del supporto del carico",
+    "Le istruzioni specificano le limitazioni di carico per il supporto del carico",
+    "La valutazione dei rischi menziona il numero di persone consentito nel supporto del carico"
+   ],
+   "status": "bozza"
+  },
+  "MR-III-B1": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi identifica i pericoli derivanti dall'interazione con altre macchine",
+    "Le misure di protezione sono applicate nell'ordine indicato nel punto 1.1.2, lettera b)",
+    "La macchina è progettata per eliminare o ridurre al minimo i rischi identificati"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-a": {
+   "condition": "",
+   "points": [
+    "La macchina è dotata di dispositivi di blocco per prevenire l'avviamento accidentale",
+    "Le istruzioni descrivono chiaramente le modalità di funzionamento della macchina",
+    "La documentazione include una descrizione dettagliata del sistema di comando e controllo"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-b": {
+   "condition": "",
+   "points": [
+    "La documentazione include un elenco completo dei requisiti essenziali di sicurezza applicabili"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-c": {
+   "condition": "",
+   "points": [
+    "I disegni riportano le dimensioni e la posizione degli organi di comando",
+    "La valutazione dei rischi include l'analisi dei rischi legati all'accesso ai circuiti elettrici",
+    "Le dichiarazioni indicano la classe di protezione degli elementi elettrici",
+    "Gli schemi mostrano la connessione elettrica dei componenti principali"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-d": {
+   "condition": "",
+   "points": [
+    "Le istruzioni descrivono chiaramente il funzionamento del sistema di controllo",
+    "I disegni indicano la posizione e il tipo di dispositivi di sicurezza presenti",
+    "La documentazione spiega come viene effettuata la manutenzione della macchina",
+    "Le descrizioni chiariscono l'interazione tra i diversi componenti meccanici"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-e": {
+   "condition": "",
+   "points": [
+    "La documentazione indica le norme armonizzate applicate durante la progettazione",
+    "Le specifiche comuni adottate sono elencate con riferimento alla loro normativa di origine",
+    "La documentazione chiarisce le parti parzialmente applicate delle norme armonizzate",
+    "Le istruzioni menzionano le norme armonizzate utilizzate per la sicurezza della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-f": {
+   "condition": "",
+   "points": [
+    "La documentazione include una descrizione completa delle specifiche tecniche applicate",
+    "Le specifiche tecniche sono correlate ai requisiti essenziali di sicurezza e salute",
+    "Le specifiche tecniche sono descritte in modo chiaro e accessibile",
+    "Le specifiche tecniche sono verificate e confermate da dati misurati o test"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-g": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle forze meccaniche agenti sul corpo umano",
+    "Le dichiarazioni attestano la conformità ai requisiti di sicurezza per l'accesso alle zone pericolose"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-h": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle forze meccaniche applicate",
+    "Gli schemi elettrici mostrano l'ubicazione dei dispositivi di interruzione d'emergenza"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-i": {
+   "condition": "",
+   "points": [
+    "Le istruzioni per l'uso indicano le misure di protezione contro i rischi identificati",
+    "Le istruzioni forniscono informazioni sui limiti di sicurezza della macchina",
+    "Le istruzioni descrivono le procedure di manutenzione e ispezione previste",
+    "Le istruzioni menzionano le informazioni relative all'installazione sicura della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-j": {
+   "condition": "",
+   "points": [
+    "Le istruzioni di assemblaggio descrivono chiaramente le parti principali della macchina",
+    "La dichiarazione di incorporazione indica chiaramente il modello e la serie della macchina",
+    "Le istruzioni forniscono informazioni dettagliate sulle operazioni di montaggio e smontaggio",
+    "La documentazione include un diagramma schematico che rappresenta la macchina in modo chiaro"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-k": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di conformità include la valutazione dei rischi completa",
+    "Gli schemi mostrano la disposizione degli organi di sicurezza",
+    "Le dichiarazioni UE menzionano le norme di armonizzazione applicabili"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-l": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle forze meccaniche applicate agli operatori",
+    "I schemi elettrici mostrano l'ubicazione e la funzione di tutti i componenti di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-m": {
+   "condition": "",
+   "points": [
+    "Il software di sicurezza è descritto in modo chiaro nel manuale tecnico",
+    "La logica del software è documentata con schemi e commenti esplicativi",
+    "La valutazione dei rischi include analisi della logica di controllo del software"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-n": {
+   "condition": "La macchina utilizza sistemi basati su sensori per il controllo delle operazioni di sicurezza",
+   "points": [
+    "La documentazione descrive le capacità del sistema basato su sensori",
+    "Le prove del sistema sono documentate e verificate in modo completo",
+    "La convalida dei dati del sistema è descritta nel manuale tecnico"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-A-o": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle condizioni di montaggio e messa in servizio",
+    "I schemi mostrano disposizioni per prevenire accessi non autorizzati durante l'uso",
+    "La dichiarazione conferma la conformità alle norme per la messa in servizio sicura"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-a": {
+   "condition": "",
+   "points": [
+    "La descrizione tecnica menziona la funzione prevista della quasi-macchina",
+    "Le istruzioni descrivono chiaramente le operazioni di montaggio e smontaggio",
+    "La documentazione include una descrizione dettagliata delle parti principali"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-b": {
+   "condition": "",
+   "points": [
+    "La valutazione del rischio elenca i requisiti essenziali di sicurezza applicabili alla quasi-macchina",
+    "Le misure di protezione sono descritte nel documento tecnico e correlate ai pericoli identificati",
+    "La documentazione indica i rischi residui non eliminabili attraverso le misure di protezione",
+    "Le istruzioni forniscono informazioni dettagliate sulle misure di protezione adottate"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-c": {
+   "condition": "",
+   "points": [
+    "I disegni mostrano la disposizione dei componenti principali della quasi-macchina",
+    "La valutazione dei rischi include un'analisi dei rischi legati all'accesso ai circuiti elettrici",
+    "Le istruzioni descrivono la sequenza di montaggio dei sottoinsiemi principali",
+    "La documentazione include schemi elettrici dettagliati per la parte di controllo"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-d": {
+   "condition": "",
+   "points": [
+    "Le descrizioni spiegano come i componenti principali interagiscono tra loro",
+    "Gli schemi mostrano la distribuzione degli alimentatori elettrici della macchina",
+    "Le istruzioni descrivono il funzionamento del sistema di blocco meccanico",
+    "Le figure illustrano la posizione e la funzione dei dispositivi di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-e": {
+   "condition": "",
+   "points": [
+    "La documentazione indica le norme armonizzate applicate durante la progettazione",
+    "Le specifiche comuni adottate sono elencate con riferimento alla loro normativa",
+    "La documentazione chiarisce le parti parzialmente applicate delle norme armonizzate",
+    "Le norme armonizzate sono citate con il loro numero e titolo completo"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-f": {
+   "condition": "",
+   "points": [
+    "La documentazione include una descrizione completa delle specifiche tecniche applicate",
+    "Le specifiche tecniche sono correlate ai requisiti essenziali di sicurezza e salute",
+    "Le descrizioni delle specifiche tecniche sono chiare e facilmente verificabili"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-g": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle forze meccaniche agenti sul corpo umano",
+    "Le dichiarazioni attestano la conformità ai requisiti essenziali di sicurezza"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-h": {
+   "condition": "",
+   "points": [
+    "La documentazione include schemi elettrici conformi alle norme di sicurezza",
+    "Le specifiche tecniche descrivono i mezzi di controllo della qualità durante la produzione",
+    "La valutazione dei rischi include misure per garantire la conformità alla progettazione"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-i": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le procedure per l'accesso ai dispositivi di comando",
+    "Le istruzioni descrivono le misure di protezione contro i rischi meccanici",
+    "Le istruzioni riportano le informazioni sulle prestazioni elettriche della macchina"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-j": {
+   "condition": "",
+   "points": [
+    "La valutazione dei rischi include analisi delle emissioni termiche durante l'uso",
+    "I schemi elettrici mostrano protezioni contro sovraccarico e cortocircuiti"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-k": {
+   "condition": "",
+   "points": [
+    "Il codice sorgente è fornito in formato leggibile e completo",
+    "La logica del software è descritta in modo chiaro e dettagliato",
+    "Le istruzioni indicano i parametri di sicurezza critici del sistema"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-l": {
+   "condition": "La macchina è alimentata da sensori e azionata in modo remoto o autonomo",
+   "points": [
+    "La documentazione descrive le capacità del sistema basato su sensori",
+    "Le prove del sistema sono documentate con dati di validazione specifici",
+    "Le limitazioni del sistema sono chiaramente indicate nella descrizione tecnica"
+   ],
+   "status": "bozza"
+  },
+  "MR-IV-B-m": {
+   "condition": "",
+   "points": [
+    "Le istruzioni indicano le misure di protezione contro gli infortuni meccanici",
+    "La valutazione dei rischi include analisi delle condizioni di montaggio e manutenzione",
+    "I disegni tecnici mostrano l'ubicazione e la funzionalità dei dispositivi di blocco"
+   ],
+   "status": "bozza"
+  },
+  "MR-V-A": {
+   "condition": "",
+   "points": [
+    "La dichiarazione include il numero di serie o il modello della macchina",
+    "La dichiarazione indica le norme armonizzate applicate alla macchina",
+    "La dichiarazione riporta l'indirizzo del luogo di installazione della macchina",
+    "La dichiarazione include un'immagine chiara della macchina o del prodotto correlato"
+   ],
+   "status": "bozza"
+  },
+  "MR-V-B": {
+   "condition": "",
+   "points": [
+    "La dichiarazione di incorporazione include il numero di serie della quasi-macchina",
+    "La documentazione tecnica menziona le norme armonizzate applicate",
+    "La dichiarazione dichiara la conformità ai requisiti essenziali di sicurezza"
+   ],
+   "status": "bozza"
+  }
+ }
+}

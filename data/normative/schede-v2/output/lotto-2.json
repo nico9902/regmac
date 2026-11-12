@@ -1,0 +1,929 @@
+{
+  "MR-III-1.3.9": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o le specifiche descrivono il mezzo che mantiene fermi gli elementi arrestati (freno di stazionamento, freno motore, valvola di blocco, irreversibilità)",
+        "doc": "istruzioni",
+        "ok": "freni sugli assi o sui motori, valvole di blocco/ritegno sui cilindri, riduttori irreversibili, controllo di arresto monitorato (es. safe operating stop)",
+        "no": "descrizione del solo comando di arresto senza indicare come è impedita la deriva; avvertenze generiche sui movimenti",
+        "smentita": "il manuale dichiara che a macchina ferma o senza alimentazione gli elementi possono muoversi per gravità senza alcun mezzo di trattenuta"
+      },
+      {
+        "q": "La valutazione dei rischi considera la deriva o la caduta per gravità degli elementi arrestati (anche in mancanza di energia) e la misura adottata",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo di movimento residuo/caduta per gravità di assi o carichi con misura indicata (freno, valvola, bilanciamento)",
+        "no": "elenco generico dei pericoli meccanici senza riferimento alla deriva dalla posizione di arresto"
+      },
+      {
+        "q": "I rapporti di prova riportano la verifica del freno o del mantenimento della posizione di arresto (coppia di tenuta, prova di caduta, test periodico dei freni)",
+        "doc": "rapporti_prova",
+        "ok": "valori di coppia di frenatura o di tenuta misurati, esito di prova di mantenimento della posizione sotto carico",
+        "no": "prove di altre funzioni di arresto (es. tempi di arresto) senza verifica del mantenimento in posizione"
+      }
+    ]
+  },
+  "MR-III-1.4.1": {
+    "condition": "Il prodotto è dotato di ripari o dispositivi di protezione",
+    "points": [
+      {
+        "q": "Le istruzioni o i disegni descrivono i ripari e i dispositivi di protezione: tipo, materiale, fissaggio e posizione rispetto alla zona pericolosa",
+        "doc": "disegni",
+        "ok": "materiale e spessore dei ripari, sistema di fissaggio, layout con posizione dei ripari e dei dispositivi rispetto alle parti pericolose",
+        "no": "dichiarazione generica che la macchina è protetta; foto senza descrizione",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione indica le distanze di sicurezza dei ripari o dei dispositivi di protezione dalla zona pericolosa e il criterio usato per calcolarle",
+        "doc": "rapporti_prova",
+        "ok": "distanze calcolate o misurate (es. secondo EN ISO 13857 o EN ISO 13855) con valori in mm, tempo di arresto usato nel calcolo",
+        "no": "il solo rimando alla norma senza valori; distanze generiche non riferite alla macchina",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Le istruzioni spiegano come cambiare utensile, regolare o manutenere accedendo solo al settore necessario, senza smontare ripari o disattivare protezioni",
+        "doc": "istruzioni",
+        "ok": "procedura con apertura di uno sportello dedicato, modalità di regolazione protetta, accesso limitato alla zona dell'intervento",
+        "no": "procedure di manutenzione che non dicono come si accede alla zona; avvertenze generiche di sicurezza",
+        "smentita": "il manuale prescrive di rimuovere i ripari o di escludere i dispositivi di protezione per le normali operazioni di regolazione o cambio utensile"
+      },
+      {
+        "q": "La valutazione dei rischi considera l'elusione dei ripari e dei dispositivi di protezione e i pericoli aggiuntivi che creano (schiacciamento, proiezioni)",
+        "doc": "valutazione_rischi",
+        "ok": "analisi della manomissione/elusione con contromisure (es. sensori codificati, fissaggi con utensile), analisi di schiacciamento tra riparo e parti fisse, protezione dalla proiezione di oggetti",
+        "no": "elenco dei ripari presenti senza analisi di elusione o pericoli aggiuntivi",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-III-1.4.2.1": {
+    "condition": "La macchina ha ripari fissi",
+    "points": [
+      {
+        "q": "Disegni o istruzioni indicano che i ripari fissi sono fissati con viti o sistemi che richiedono un utensile per l'apertura o lo smontaggio",
+        "doc": "disegni",
+        "ok": "viti, bulloni o chiusure a chiave specificati per il fissaggio dei ripari fissi; istruzione di usare un utensile per rimuoverli",
+        "no": "descrizione dei ripari senza indicazione del fissaggio",
+        "smentita": "i ripari fissi sono trattenuti da chiusure a scatto, ganci, pomelli o magneti apribili a mano senza utensili"
+      },
+      {
+        "q": "Disegni o specifiche indicano fissaggi imperdibili (viti che restano attaccate al riparo o alla macchina quando il riparo è rimosso)",
+        "doc": "disegni",
+        "ok": "viti imperdibili, rondelle di ritenuta, distinta dei componenti con elementi di fissaggio captive",
+        "no": "semplice elenco di viterie senza indicare che restano attaccate al riparo"
+      },
+      {
+        "q": "Disegni o istruzioni mostrano che il riparo fisso non resta in posizione senza i suoi fissaggi (es. cade o non si regge da solo)",
+        "doc": "disegni",
+        "ok": "riparo privo di ganci di appoggio, cerniere o guide che lo tengano in sede senza viti; dichiarazione esplicita in tal senso",
+        "no": "assenza di informazioni sul comportamento del riparo senza viti"
+      }
+    ]
+  },
+  "MR-III-1.4.2.2": {
+    "condition": "La macchina ha ripari mobili interbloccati",
+    "points": [
+      {
+        "q": "Schemi o istruzioni descrivono il dispositivo di interblocco dei ripari mobili: impedisce l'avvio a riparo aperto e comanda l'arresto all'apertura",
+        "doc": "schemi",
+        "ok": "interruttore di interblocco collegato al circuito di sicurezza, descrizione di arresto all'apertura e di inibizione del riavvio a riparo aperto",
+        "no": "presenza di sportelli senza descrizione dell'interblocco; sensori di sola segnalazione non collegati al comando",
+        "smentita": "il manuale indica che la macchina può funzionare in produzione con il riparo mobile aperto senza modalità di funzionamento dedicata",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione indica il bloccaggio del riparo (elettroserratura) fino a cessazione del pericolo, se il tempo di arresto supera il tempo di accesso",
+        "doc": "schemi",
+        "ok": "dispositivo di interblocco con bloccaggio, sblocco ritardato o comandato da rilevamento di fermo; confronto tra tempo di arresto e tempo di accesso",
+        "no": "interblocco senza bloccaggio senza alcuna giustificazione basata sui tempi di arresto",
+        "quasi": "integratore"
+      },
+      {
+        "q": "I rapporti di prova o la validazione delle funzioni di sicurezza dimostrano che il guasto di un elemento dell'interblocco impedisce l'avvio o provoca l'arresto",
+        "doc": "rapporti_prova",
+        "ok": "PL o SIL calcolato per la funzione di interblocco, ridondanza e monitoraggio, prova di iniezione dei guasti",
+        "no": "il solo elenco dei componenti di sicurezza senza calcolo o prova della funzione",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Disegni o istruzioni indicano che i ripari mobili restano uniti alla macchina quando aperti (cerniere, guide) e che la loro regolazione richiede un intervento volontario",
+        "doc": "disegni",
+        "ok": "ripari incernierati o scorrevoli su guide; regolazioni bloccate da viti o con utensile",
+        "no": "descrizione dei ripari senza indicazioni su come sono vincolati alla macchina",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-III-1.4.2.3": {
+    "condition": "La macchina ha ripari regolabili che limitano l'accesso alle parti mobili di lavorazione",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come regolare i ripari regolabili in funzione della lavorazione (es. altezza del pezzo) e senza l'uso di attrezzi",
+        "doc": "istruzioni",
+        "ok": "procedura di regolazione con pomelli, leve o regolazione automatica; indicazione della posizione corretta in base al pezzo",
+        "no": "descrizione dei ripari fissi; avvertenze generiche sull'uso dei ripari",
+        "smentita": "il manuale prescrive l'uso di chiavi o utensili per regolare il riparo a ogni cambio di lavorazione"
+      }
+    ]
+  },
+  "MR-III-1.4.3": {
+    "condition": "La macchina è dotata di dispositivi di protezione (barriere fotoelettriche, scanner laser, tappeti sensibili, comandi a due mani o simili)",
+    "points": [
+      {
+        "q": "Schemi o istruzioni descrivono come i dispositivi di protezione sono collegati al sistema di comando e arrestano o impediscono il moto quando una persona entra nella zona",
+        "doc": "schemi",
+        "ok": "collegamento delle uscite di sicurezza (OSSD) al circuito di sicurezza, descrizione di arresto all'intervento e di inibizione dell'avvio",
+        "no": "elenco dei dispositivi presenti senza descrizione della loro funzione nel comando",
+        "quasi": "integratore"
+      },
+      {
+        "q": "I rapporti di prova validano la funzione di sicurezza del dispositivo: tempo di arresto, distanza di sicurezza e comportamento in caso di guasto",
+        "doc": "rapporti_prova",
+        "ok": "tempo di arresto misurato, distanza minima calcolata, PL/SIL della funzione, prova che il guasto del dispositivo porta all'arresto",
+        "no": "certificato del solo dispositivo acquistato senza verifica della sua integrazione nella macchina",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Le istruzioni indicano che la regolazione o configurazione dei dispositivi di protezione (campi dello scanner, muting) è protetta da password, chiave o utensile",
+        "doc": "istruzioni",
+        "ok": "configurazione protetta da password o software dedicato, regolazione meccanica con utensile, accesso riservato a personale autorizzato",
+        "no": "procedure di regolazione senza indicazione di come sono protette",
+        "smentita": "il manuale indica che campi di protezione o muting possono essere modificati dall'operatore senza password o autorizzazione"
+      }
+    ]
+  },
+  "MR-III-1.5.1": {
+    "condition": "La macchina è alimentata con energia elettrica",
+    "points": [
+      {
+        "q": "Le specifiche riportano i dati dell'alimentazione elettrica: tensione, frequenza, corrente o potenza, grado di protezione IP",
+        "doc": "specifiche",
+        "ok": "valori di tensione, frequenza, corrente/potenza assorbita, grado IP, eventuale corrente di cortocircuito",
+        "no": "il solo rimando a una norma elettrica senza dati"
+      },
+      {
+        "q": "Gli schemi elettrici mostrano le protezioni contro contatti diretti e indiretti e i sovraccarichi: collegamento a terra, interruttori di protezione, involucri",
+        "doc": "schemi",
+        "ok": "circuito di protezione (PE), interruttori magnetotermici/differenziali dimensionati, sezionatore generale",
+        "no": "schema di comando senza circuito di potenza o di terra"
+      },
+      {
+        "q": "I rapporti di prova riportano le verifiche elettriche secondo EN 60204-1 o norma equivalente (continuità del circuito di protezione, isolamento, tensione applicata)",
+        "doc": "rapporti_prova",
+        "ok": "valori misurati di continuità di terra, resistenza di isolamento, esito della prova di tensione",
+        "no": "dichiarazione di conformità a EN 60204-1 senza risultati di prova"
+      },
+      {
+        "q": "Le istruzioni indicano i requisiti di collegamento elettrico per l'installazione (protezione a monte, sezione dei cavi, collegamento a terra)",
+        "doc": "istruzioni",
+        "ok": "taglia del fusibile/interruttore a monte, sezione dei cavi, istruzione di collegare il conduttore di protezione",
+        "no": "avvertenza generica di affidare il collegamento a un elettricista qualificato"
+      }
+    ]
+  },
+  "MR-III-1.5.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi considera la formazione di cariche elettrostatiche (nastri, materiali plastici, polveri, fluidi in movimento) e la misura adottata",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo elettrostatico valutato con esito (non pertinente motivato oppure misura come messa a terra o materiali conduttivi)",
+        "no": "valutazione dei soli rischi elettrici da alimentazione"
+      },
+      {
+        "q": "Schemi, disegni o istruzioni indicano i mezzi per scaricare le cariche elettrostatiche (collegamenti equipotenziali, spazzole, ionizzatori, materiali antistatici)",
+        "doc": "schemi",
+        "ok": "collegamenti equipotenziali delle parti, spazzole o barre antistatiche, materiali conduttivi specificati",
+        "no": "il solo collegamento a terra dell'alimentazione elettrica senza riferimento alle cariche elettrostatiche"
+      }
+    ]
+  },
+  "MR-III-1.5.3": {
+    "condition": "La macchina è alimentata da fonti di energia diverse dall'energia elettrica",
+    "points": [
+      {
+        "q": "Le specifiche riportano i dati delle alimentazioni non elettriche (pressione pneumatica o idraulica, combustibile, vapore) e i loro limiti",
+        "doc": "specifiche",
+        "ok": "pressione nominale e massima, portata, tipo di fluido o combustibile",
+        "no": "menzione dell'alimentazione senza valori"
+      },
+      {
+        "q": "Gli schemi pneumatici o idraulici mostrano i dispositivi di protezione: valvola di sezionamento e scarico, limitatori di pressione, valvole di sicurezza",
+        "doc": "schemi",
+        "ok": "valvola generale con scarico, valvola limitatrice o di sicurezza tarata, regolatore di pressione, pressostato",
+        "no": "schema senza dispositivi di sicurezza; il solo elenco dei componenti"
+      },
+      {
+        "q": "La valutazione dei rischi considera i pericoli delle fonti non elettriche (rottura tubi, getto di fluido, sovrapressione, perdita di pressione) con le misure",
+        "doc": "valutazione_rischi",
+        "ok": "pericoli di tubi flessibili, getti, colpi di frusta, perdita di pressione con misura adottata",
+        "no": "valutazione limitata ai pericoli meccanici o elettrici"
+      }
+    ]
+  },
+  "MR-III-1.5.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Disegni o istruzioni mostrano che i pezzi non si possono montare in modo errato (forme asimmetriche, spine di riferimento) o recano indicazioni di montaggio",
+        "doc": "disegni",
+        "ok": "spine o forme di centraggio, marcature di orientamento sui pezzi, frecce del senso di rotazione",
+        "no": "istruzioni di montaggio generiche senza riferimento agli errori possibili"
+      },
+      {
+        "q": "La documentazione indica che i collegamenti (connettori, tubi, raccordi) sono codificati o marcati in modo da rendere impossibili collegamenti errati",
+        "doc": "schemi",
+        "ok": "connettori codificati o di tipo diverso, raccordi di diametro diverso, marcature dei tubi e dei cavi corrispondenti allo schema",
+        "no": "il solo schema di collegamento senza codifica o marcatura dei connettori",
+        "smentita": "connettori o raccordi identici e non marcati possono essere scambiati, causando inversioni pericolose"
+      },
+      {
+        "q": "Le istruzioni avvertono dei rischi di montaggio o collegamento errato e del senso di moto corretto dove necessario",
+        "doc": "istruzioni",
+        "ok": "avvertenze su verifica del senso di rotazione, coppie di serraggio, ordine di collegamento, controlli dopo il rimontaggio",
+        "no": "istruzioni di montaggio senza alcuna avvertenza sugli errori"
+      }
+    ]
+  },
+  "MR-III-1.5.5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi identifica le parti o i materiali a temperatura molto alta o molto bassa raggiungibili e le misure contro contatto o proiezione",
+        "doc": "valutazione_rischi",
+        "ok": "parti calde/fredde individuate con temperature e misure (ripari, isolamento, distanza), oppure motivazione di non pertinenza",
+        "no": "menzione generica del rischio termico senza indicare parti e misure"
+      },
+      {
+        "q": "Le specifiche o i rapporti di prova riportano le temperature superficiali delle parti accessibili",
+        "doc": "rapporti_prova",
+        "ok": "temperature superficiali misurate o dichiarate in °C con confronto con i limiti (es. EN ISO 13732)",
+        "no": "temperatura ambiente di funzionamento; temperature interne non accessibili"
+      },
+      {
+        "q": "Le istruzioni e le avvertenze sulla macchina segnalano le superfici calde o fredde e le precauzioni (tempi di raffreddamento, guanti)",
+        "doc": "istruzioni",
+        "ok": "pittogramma superficie calda, tempo di attesa prima degli interventi, dispositivi di protezione individuale indicati",
+        "no": "avvertenze generiche di prudenza"
+      }
+    ]
+  },
+  "MR-III-1.5.6": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi considera incendio e surriscaldamento (motori, componenti elettrici, fluidi infiammabili, polveri) con le misure adottate",
+        "doc": "valutazione_rischi",
+        "ok": "fonti di innesco e materiali combustibili individuati, misure come protezioni termiche, materiali autoestinguenti, sensori di temperatura",
+        "no": "il solo rimando alle norme antincendio dei luoghi di lavoro"
+      },
+      {
+        "q": "Schemi o specifiche indicano protezioni contro il surriscaldamento (protezione termica dei motori, sensori di temperatura, protezione da sovracorrente)",
+        "doc": "schemi",
+        "ok": "relè termici, termistori nei motori, termostati, interruttori di protezione dimensionati",
+        "no": "dati di potenza senza dispositivi di protezione"
+      },
+      {
+        "q": "Le istruzioni danno indicazioni di prevenzione incendio: pulizia dei depositi, fluidi ammessi, condotta in caso di incendio",
+        "doc": "istruzioni",
+        "ok": "frequenza di pulizia di polveri o trucioli, tipi di lubrificante o fluido ammessi, mezzi di estinzione adatti",
+        "no": "avvertenza generica di non fumare o di tenere un estintore senza collegamento con la macchina"
+      }
+    ]
+  },
+  "MR-III-1.5.7": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi considera il rischio di esplosione (gas, vapori, polveri prodotti o usati, recipienti in pressione) e le misure adottate",
+        "doc": "valutazione_rischi",
+        "ok": "sostanze esplosive o atmosfere individuate con misure, oppure motivazione esplicita di non pertinenza",
+        "no": "valutazione che non menziona l'esplosione"
+      },
+      {
+        "q": "Se destinato ad atmosfera potenzialmente esplosiva, la dichiarazione o i certificati indicano la conformità ATEX (direttiva 2014/34/UE), categoria e gruppo",
+        "doc": "dichiarazione",
+        "ok": "riferimento alla direttiva 2014/34/UE, categoria (es. II 3G), certificato ATEX di un organismo notificato se richiesto",
+        "no": "menzione di zone ATEX dell'impianto senza conformità del prodotto"
+      },
+      {
+        "q": "Le istruzioni indicano se il prodotto può o non può essere usato in atmosfera potenzialmente esplosiva",
+        "doc": "istruzioni",
+        "ok": "divieto esplicito di uso in zone ATEX oppure zone e categoria ammesse",
+        "no": "istruzioni prive di qualsiasi indicazione sull'atmosfera esplosiva"
+      }
+    ]
+  },
+  "MR-III-1.5.8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "I rapporti di prova o le specifiche riportano il rumore emesso: livello di pressione acustica ponderato A al posto di lavoro e, se necessario, potenza sonora",
+        "doc": "rapporti_prova",
+        "ok": "valori in dB(A) misurati con il metodo o la norma usata e le condizioni di funzionamento",
+        "no": "dichiarazione che la macchina è silenziosa senza valori; livelli dell'ambiente di lavoro"
+      },
+      {
+        "q": "La valutazione dei rischi o la documentazione tecnica descrivono le misure di riduzione del rumore alla fonte (cappottature, silenziatori, smorzatori)",
+        "doc": "valutazione_rischi",
+        "ok": "misure costruttive di riduzione del rumore elencate, confronto con macchine simili o con lo stato dell'arte",
+        "no": "il solo obbligo per l'utilizzatore di indossare protezioni dell'udito"
+      }
+    ]
+  },
+  "MR-III-1.5.9": {
+    "condition": "",
+    "points": [
+      {
+        "q": "I rapporti di prova o le specifiche riportano le vibrazioni trasmesse al sistema mano-braccio o al corpo intero, con il metodo di misura",
+        "doc": "rapporti_prova",
+        "ok": "valori in m/s² con incertezza e norma di misura, oppure dichiarazione motivata che non vi sono vibrazioni trasmesse all'operatore",
+        "no": "dati di vibrazione di componenti interni senza riferimento all'operatore"
+      },
+      {
+        "q": "La documentazione descrive le misure di riduzione delle vibrazioni alla fonte (supporti antivibranti, bilanciamento, impugnature smorzate)",
+        "doc": "valutazione_rischi",
+        "ok": "misure costruttive elencate, confronto con macchine simili",
+        "no": "il solo limite di tempo di esposizione per l'utilizzatore"
+      }
+    ]
+  },
+  "MR-III-1.5.10": {
+    "condition": "La macchina emette radiazioni ionizzanti o non ionizzanti (es. raggi X, UV, infrarossi, campi elettromagnetici, radiofrequenze)",
+    "points": [
+      {
+        "q": "La valutazione dei rischi identifica le radiazioni emesse (tipo e sorgente) e le misure per ridurle a livelli senza effetti sulle persone",
+        "doc": "valutazione_rischi",
+        "ok": "sorgenti di radiazione individuate, misure (schermature, interblocchi, distanze), limiti di esposizione considerati",
+        "no": "menzione generica delle radiazioni senza sorgente o misure"
+      },
+      {
+        "q": "I rapporti di prova o le specifiche riportano i livelli di radiazione o campo misurati confrontati con i limiti di esposizione",
+        "doc": "rapporti_prova",
+        "ok": "valori misurati (es. µSv/h, W/m², µT, V/m) con il limite di riferimento",
+        "no": "certificati di compatibilità elettromagnetica che riguardano solo le emissioni di disturbo verso altre apparecchiature"
+      },
+      {
+        "q": "Le istruzioni indicano le precauzioni contro le radiazioni durante regolazione, funzionamento e pulizia",
+        "doc": "istruzioni",
+        "ok": "distanze minime, schermature da non rimuovere, segnaletica, dispositivi di protezione individuale",
+        "no": "avvertenze generiche di sicurezza non relative alle radiazioni"
+      }
+    ]
+  },
+  "MR-III-1.5.11": {
+    "condition": "",
+    "points": [
+      {
+        "q": "I rapporti di prova o la dichiarazione indicano l'immunità della macchina alle radiazioni e ai disturbi esterni (compatibilità elettromagnetica, prove di immunità)",
+        "doc": "rapporti_prova",
+        "ok": "esito di prove di immunità (es. EN 61000-6-2) o conformità alla direttiva 2014/30/UE con norme indicate",
+        "no": "prove di sole emissioni elettromagnetiche"
+      },
+      {
+        "q": "Le istruzioni indicano le condizioni ambientali di installazione per evitare perturbazioni da radiazioni esterne (sorgenti EMC, luce solare su sensori, distanze)",
+        "doc": "istruzioni",
+        "ok": "ambiente elettromagnetico ammesso, distanze da trasmettitori, protezione dei sensori ottici da luce esterna",
+        "no": "condizioni ambientali di temperatura e umidità soltanto"
+      }
+    ]
+  },
+  "MR-III-1.5.12": {
+    "condition": "La macchina impiega dispositivi laser",
+    "points": [
+      {
+        "q": "Le specifiche indicano classe, lunghezza d'onda e potenza dei laser montati sulla macchina",
+        "doc": "specifiche",
+        "ok": "classe laser secondo EN 60825-1, lunghezza d'onda, potenza o energia",
+        "no": "menzione del laser senza classe"
+      },
+      {
+        "q": "Disegni o istruzioni descrivono le protezioni contro radiazioni dirette, riflesse e diffuse (cabina, schermi, interblocchi della cabina, otturatore)",
+        "doc": "disegni",
+        "ok": "cabina o schermature con materiale idoneo, interblocco che spegne il laser all'apertura, otturatore del fascio",
+        "no": "il solo obbligo di indossare occhiali protettivi",
+        "smentita": "il manuale prevede l'uso del laser di classe 3B o 4 a fascio aperto senza schermature, con la sola protezione degli occhiali"
+      },
+      {
+        "q": "Le istruzioni indicano che i dispositivi ottici di osservazione o regolazione del laser sono filtrati o protetti, e le precauzioni per l'allineamento",
+        "doc": "istruzioni",
+        "ok": "finestre di osservazione con filtro specifico, procedura di allineamento a bassa potenza o con laser pilota",
+        "no": "avvertenze generiche sul laser senza riferimento ai dispositivi ottici"
+      }
+    ]
+  },
+  "MR-III-1.5.13": {
+    "condition": "La macchina produce o utilizza materie o sostanze pericolose (polveri, fumi, vapori, nebbie, liquidi)",
+    "points": [
+      {
+        "q": "La valutazione dei rischi identifica le sostanze pericolose prodotte o emesse e le vie di esposizione (inalazione, contatto, ingestione) con le misure",
+        "doc": "valutazione_rischi",
+        "ok": "sostanze e vie di esposizione individuate, misure di eliminazione o contenimento",
+        "no": "riferimento alle schede di sicurezza delle sostanze dell'utilizzatore senza analisi della macchina"
+      },
+      {
+        "q": "Disegni o specifiche descrivono i dispositivi di contenimento, captazione, aspirazione o filtrazione e la loro posizione rispetto alla sorgente",
+        "doc": "disegni",
+        "ok": "cappe o bocchette di aspirazione vicino alla sorgente, cabina chiusa, filtri con classe e portata d'aria",
+        "no": "indicazione che l'aspirazione deve essere fornita dall'utilizzatore senza specificarne caratteristiche e punto di collegamento"
+      },
+      {
+        "q": "Le istruzioni indicano requisiti e manutenzione dei sistemi di aspirazione o filtrazione (portata minima, sostituzione filtri)",
+        "doc": "istruzioni",
+        "ok": "portata o depressione minima richiesta, frequenza di sostituzione o pulizia dei filtri, controlli di efficienza",
+        "no": "il solo obbligo di indossare mascherine"
+      }
+    ]
+  },
+  "MR-III-1.5.14": {
+    "condition": "Le persone possono entrare o restare all'interno della macchina (cabine, celle, recinti con accesso)",
+    "points": [
+      {
+        "q": "Disegni o istruzioni descrivono i mezzi per uscire dall'interno della macchina (apertura dall'interno delle porte, maniglie antipanico) o per chiedere aiuto",
+        "doc": "disegni",
+        "ok": "porte apribili dall'interno, sblocco di fuga dell'elettroserratura, pulsante di allarme o di emergenza all'interno",
+        "no": "procedure di accesso senza indicare come si esce o si chiede aiuto",
+        "smentita": "le porte della zona interna si possono aprire solo dall'esterno e non esiste un mezzo di allarme interno",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-III-1.5.15": {
+    "condition": "Sulla macchina sono previsti spostamento o stazionamento di persone (pedane, passerelle, scale, piani di accesso)",
+    "points": [
+      {
+        "q": "Disegni o specifiche indicano superfici antiscivolo, assenza di dislivelli di inciampo e parapetti sulle parti su cui si cammina o si sta",
+        "doc": "disegni",
+        "ok": "grigliati o lamiere antiscivolo, parapetti con altezza, fermapiede, scale conformi (es. EN ISO 14122)",
+        "no": "il solo invito a tenere pulite le superfici"
+      },
+      {
+        "q": "Disegni o istruzioni indicano mezzi di presa fissi (corrimano, maniglie) dove la persona deve mantenere la stabilità",
+        "doc": "disegni",
+        "ok": "corrimano, maniglie o appigli posizionati sulle scale e sui punti di accesso",
+        "no": "indicazioni d'uso di scale portatili non fornite con la macchina"
+      }
+    ]
+  },
+  "MR-III-1.5.16": {
+    "condition": "La macchina necessita di protezione dai fulmini durante l'uso (es. installazione o uso all'aperto, strutture elevate)",
+    "points": [
+      {
+        "q": "Schemi, disegni o istruzioni descrivono il collegamento della struttura a terra per scaricare le scariche atmosferiche",
+        "doc": "schemi",
+        "ok": "punti di messa a terra della struttura, conduttori di discesa, scaricatori di sovratensione, istruzioni di collegamento all'impianto di terra",
+        "no": "il solo conduttore di protezione dell'alimentazione elettrica"
+      }
+    ]
+  },
+  "MR-III-1.6.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano che regolazione, manutenzione, riparazione e pulizia si eseguono a macchina ferma e descrivono come portarla in stato sicuro",
+        "doc": "istruzioni",
+        "ok": "procedura di arresto e messa in sicurezza prima degli interventi, elenco degli interventi a macchina ferma",
+        "no": "piano di manutenzione con le sole frequenze",
+        "smentita": "il manuale richiede interventi di regolazione o pulizia a macchina in moto senza modalità protetta dedicata"
+      },
+      {
+        "q": "Le istruzioni descrivono le misure di sicurezza per gli interventi a macchina in funzione (modalità manutenzione, velocità ridotta, azione mantenuta)",
+        "doc": "istruzioni",
+        "ok": "selettore di modalità, velocità ridotta, comando ad azione mantenuta o dispositivo di abilitazione",
+        "no": "il solo divieto di intervenire a macchina in moto, se poi la procedura lo richiede"
+      },
+      {
+        "q": "Disegni o istruzioni mostrano che i punti di regolazione, lubrificazione e manutenzione sono raggiungibili da fuori delle zone pericolose",
+        "doc": "disegni",
+        "ok": "punti di lubrificazione centralizzati, regolazioni accessibili dall'esterno dei ripari, layout dei punti di manutenzione",
+        "no": "elenco dei punti di manutenzione senza indicarne la posizione"
+      },
+      {
+        "q": "Per macchine automatizzate, la documentazione indica la presa per la diagnosi dei guasti e lo smontaggio sicuro dei pezzi sostituiti spesso",
+        "doc": "istruzioni",
+        "ok": "porta di diagnostica (es. Ethernet, USB, seriale) o software di diagnosi; procedura di sostituzione di parti di usura con utensili indicati",
+        "no": "elenco dei ricambi senza procedura di sostituzione"
+      }
+    ]
+  },
+  "MR-III-1.6.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Disegni o istruzioni descrivono gli accessi sicuri alle zone di intervento per funzionamento, regolazione e manutenzione (porte, passerelle, piattaforme)",
+        "doc": "disegni",
+        "ok": "layout con accessi, dimensioni delle aperture, piattaforme o scale per i punti in quota",
+        "no": "generica affermazione che la macchina è facilmente accessibile"
+      },
+      {
+        "q": "Se le persone devono entrare nella macchina, la documentazione indica le dimensioni degli accessi adatte al soccorso di emergenza con attrezzature di soccorso",
+        "doc": "disegni",
+        "ok": "dimensioni delle aperture di accesso in mm, percorsi idonei a barella o imbracature di recupero",
+        "no": "procedure di accesso senza riferimento al soccorso"
+      }
+    ]
+  },
+  "MR-III-1.6.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Schemi o istruzioni indicano i dispositivi di sezionamento per ogni fonte di energia (elettrica, pneumatica, idraulica) e la loro identificazione",
+        "doc": "schemi",
+        "ok": "sezionatore generale elettrico, valvola di sezionamento pneumatica o idraulica, targhette identificative",
+        "no": "il solo pulsante di arresto o di emergenza (non è un dispositivo di sezionamento)",
+        "smentita": "la macchina non ha un sezionatore e l'unico mezzo per togliere energia è un pulsante di arresto"
+      },
+      {
+        "q": "Le istruzioni indicano che i sezionatori sono lucchettabili in posizione aperta e descrivono la procedura di blocco prima degli interventi",
+        "doc": "istruzioni",
+        "ok": "sezionatore lucchettabile, procedura di blocco e segnalazione (lockout/tagout), oppure spina sempre visibile dall'operatore",
+        "no": "invito generico a togliere tensione senza mezzo di blocco"
+      },
+      {
+        "q": "Le istruzioni o gli schemi indicano come dissipare l'energia residua o immagazzinata (condensatori, accumulatori, molle, pressione) dopo il sezionamento",
+        "doc": "istruzioni",
+        "ok": "valvole di scarico della pressione, tempo di scarica dei condensatori, procedura di scarico degli accumulatori",
+        "no": "procedura di sezionamento senza riferimento all'energia residua"
+      },
+      {
+        "q": "La documentazione individua i circuiti che restano alimentati dopo il sezionamento e le misure di sicurezza per essi",
+        "doc": "schemi",
+        "ok": "circuiti esclusi dal sezionamento identificati e segnalati (cavi di colore diverso, targhe), con misure di protezione",
+        "no": "schema senza indicazione dei circuiti che restano in tensione"
+      }
+    ]
+  },
+  "MR-III-1.6.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono gli interventi dell'operatore previsti (carico, scarico, sblocco inceppamenti, cambio formato) e come eseguirli in sicurezza",
+        "doc": "istruzioni",
+        "ok": "procedura passo per passo dell'intervento con stato della macchina richiesto e mezzi da usare",
+        "no": "elenco degli interventi senza modalità di esecuzione"
+      },
+      {
+        "q": "Specifiche o istruzioni descrivono funzioni che riducono la necessità di intervento (alimentazione automatica, autodiagnosi, sblocco a distanza)",
+        "doc": "specifiche",
+        "ok": "caricatori automatici, lubrificazione automatica, funzioni di diagnosi o di recupero dall'HMI",
+        "no": "descrizioni commerciali generiche di automazione"
+      }
+    ]
+  },
+  "MR-III-1.6.5": {
+    "condition": "La macchina ha parti interne che contengono sostanze o miscele pericolose",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come pulire e svuotare completamente dall'esterno le parti interne che hanno contenuto sostanze pericolose",
+        "doc": "istruzioni",
+        "ok": "procedura di lavaggio dall'esterno (es. pulizia in circuito, CIP), rubinetti o scarichi di svuotamento accessibili dall'esterno",
+        "no": "procedure di pulizia delle sole superfici esterne"
+      },
+      {
+        "q": "Se è necessario entrare nelle parti interne, le istruzioni descrivono le misure di sicurezza (bonifica, ventilazione, sezionamento, sorveglianza)",
+        "doc": "istruzioni",
+        "ok": "procedura di accesso con bonifica, misura dell'atmosfera, sezionamento delle energie, persona di sorveglianza",
+        "no": "il solo divieto di entrare senza autorizzazione"
+      }
+    ]
+  },
+  "MR-III-1.7.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o la descrizione della marcatura mostrano che le avvertenze sulla macchina usano pittogrammi o simboli normalizzati",
+        "doc": "istruzioni",
+        "ok": "elenco o immagini dei pittogrammi applicati con il loro significato e posizione (es. simboli EN ISO 7010)",
+        "no": "avvertenze solo testuali nel manuale"
+      },
+      {
+        "q": "Le istruzioni indicano che le avvertenze scritte o vocali sulla macchina e sull'interfaccia sono disponibili nella lingua del paese di utilizzo",
+        "doc": "istruzioni",
+        "ok": "lingua delle targhe e dei messaggi HMI selezionabile o fornita nella lingua del paese di destinazione",
+        "no": "lingua del solo manuale",
+        "smentita": "le avvertenze sulla macchina e i messaggi dell'interfaccia sono disponibili solo in una lingua diversa da quella del paese di utilizzo"
+      }
+    ]
+  },
+  "MR-III-1.7.1.1": {
+    "condition": "La macchina ha un'interfaccia operatore (pannello, display, HMI, pulsantiera)",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono l'interfaccia operatore: schermate, indicatori, significato dei messaggi e dei codici di allarme",
+        "doc": "istruzioni",
+        "ok": "descrizione delle schermate o dei comandi, tabella dei messaggi e codici di allarme con il significato e l'azione da compiere",
+        "no": "descrizione commerciale dell'interfaccia senza spiegazioni d'uso"
+      }
+    ]
+  },
+  "MR-III-1.7.1.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Specifiche o schemi indicano i segnali di avvertenza sonori o luminosi (colonna luminosa, sirena) e gli stati o le avarie che li attivano",
+        "doc": "specifiche",
+        "ok": "colonna luminosa con colori e significati, segnalatore acustico, condizioni di attivazione (avaria, avvio automatico)",
+        "no": "messaggi solo sul display non percepibili a distanza, per macchine che funzionano senza sorveglianza"
+      },
+      {
+        "q": "Le istruzioni spiegano il significato dei segnali di avvertenza e come l'operatore verifica che funzionino (prova lampade, test della sirena)",
+        "doc": "istruzioni",
+        "ok": "tabella colori/suoni e significato, procedura di prova periodica dei segnalatori",
+        "no": "elenco dei segnalatori senza significato né verifica"
+      }
+    ]
+  },
+  "MR-III-1.7.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi elenca i rischi residui dopo le misure di protezione e le avvertenze previste per ciascuno",
+        "doc": "valutazione_rischi",
+        "ok": "elenco dei rischi residui con avvertenza, pittogramma o dispositivo di avvertenza associato",
+        "no": "elenco dei pericoli senza indicare quali restano dopo le misure"
+      },
+      {
+        "q": "Le istruzioni o la descrizione della marcatura indicano le avvertenze applicate sulla macchina per i rischi residui e la loro posizione",
+        "doc": "istruzioni",
+        "ok": "elenco o figura delle etichette di avvertenza con posizione sulla macchina",
+        "no": "avvertenze presenti solo nel manuale senza alcuna segnaletica sulla macchina"
+      }
+    ]
+  },
+  "MR-III-1.7.3-c1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La targa (foto o descrizione) è visibile, leggibile e indelebile: materiale e metodo di applicazione",
+        "doc": "targa",
+        "ok": "targa metallica o etichetta resistente incisa/stampata, applicata in posizione visibile; foto leggibile della targa",
+        "no": "dati della marcatura riportati solo nel manuale senza la targa"
+      }
+    ]
+  },
+  "MR-III-1.7.3-c2": {
+    "condition": "La macchina rientra in una delle categorie dei capi da 2 a 6 dell'Allegato III (es. macchine alimentari, portatili, per il legno, mobili, di sollevamento, per il sollevamento di persone)",
+    "points": [
+      {
+        "q": "La targa riporta le marcature supplementari richieste dal capo dell'Allegato III applicabile (es. carico massimo di utilizzazione per macchine di sollevamento)",
+        "doc": "targa",
+        "ok": "dati supplementari del capo applicabile (es. carico massimo, numero di persone ammesse, potenza nominale)",
+        "no": "targa con i soli dati di base del fabbricante"
+      }
+    ]
+  },
+  "MR-III-1.7.3-c3": {
+    "condition": "La macchina è progettata e costruita per l'utilizzo in atmosfera esplosiva",
+    "points": [
+      {
+        "q": "La targa riporta la marcatura specifica per atmosfera esplosiva (simbolo Ex, gruppo, categoria, tipo di atmosfera)",
+        "doc": "targa",
+        "ok": "simbolo Ex in esagono con gruppo e categoria (es. II 2G), modo di protezione e classe di temperatura",
+        "no": "dichiarazione di idoneità ATEX solo nel manuale"
+      }
+    ]
+  },
+  "MR-III-1.7.3-c4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La targa riporta l'identificazione completa del tipo (modello, serie, anno di costruzione, numero di serie)",
+        "doc": "targa",
+        "ok": "designazione del tipo o modello, numero di serie, anno di costruzione",
+        "no": "solo il nome commerciale o il logo del fabbricante"
+      },
+      {
+        "q": "La targa o la marcatura riportano i dati indispensabili alla sicurezza d'uso (tensione, pressione, velocità massima, carico massimo o massa)",
+        "doc": "targa",
+        "ok": "dati elettrici o pneumatici di alimentazione, limiti di velocità, carico o pressione ammessi",
+        "no": "dati riportati solo nel manuale o nella scheda tecnica"
+      }
+    ]
+  },
+  "MR-III-1.7.3-c5": {
+    "condition": "Elementi della macchina devono essere movimentati con mezzi di sollevamento durante l'utilizzo",
+    "points": [
+      {
+        "q": "La marcatura indica la massa degli elementi da sollevare in modo leggibile e indelebile direttamente sull'elemento",
+        "doc": "targa",
+        "ok": "massa in kg riportata su targa o marcatura dell'elemento sollevabile",
+        "no": "massa indicata solo nella scheda tecnica o nel manuale"
+      },
+      {
+        "q": "Le istruzioni indicano la massa degli elementi da sollevare e i punti di aggancio per il sollevamento",
+        "doc": "istruzioni",
+        "ok": "massa in kg di ciascun elemento, figura con punti di imbracatura o golfari",
+        "no": "massa complessiva della macchina senza riferimento agli elementi movimentati durante l'uso"
+      }
+    ]
+  },
+  "MR-III-1.7.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni per l'uso sono fornite nella lingua del paese di utilizzo (o la documentazione dichiara le lingue disponibili)",
+        "doc": "istruzioni",
+        "ok": "manuale nella lingua del paese di destinazione, elenco delle lingue disponibili, indicazione «istruzioni originali» o «traduzione delle istruzioni originali»",
+        "no": "manuale disponibile in una sola lingua diversa da quella del paese di utilizzo senza traduzione"
+      },
+      {
+        "q": "Se le istruzioni di manutenzione sono in una sola lingua, sono indicate come destinate al personale specializzato incaricato dal fabbricante",
+        "doc": "istruzioni",
+        "ok": "manuale di manutenzione o service dichiarato riservato al personale del fabbricante o del mandatario",
+        "no": "manuale di manutenzione in lingua straniera destinato all'utilizzatore finale"
+      }
+    ]
+  },
+  "MR-III-1.7.4.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono l'uso scorretto ragionevolmente prevedibile oltre all'uso previsto",
+        "doc": "istruzioni",
+        "ok": "sezione o elenco di usi scorretti prevedibili (es. materiali non ammessi, superamento del carico, uso da parte di persone non addestrate)",
+        "no": "sola descrizione dell'uso previsto; divieto generico di usi «non conformi»"
+      },
+      {
+        "q": "Se il prodotto è destinato a utilizzatori non professionali, le istruzioni usano un linguaggio semplice con figure adatte a chi non ha formazione tecnica",
+        "doc": "istruzioni",
+        "ok": "indicazione del pubblico non professionale e testo semplice con illustrazioni passo per passo",
+        "no": "manuale tecnico specialistico per un prodotto destinato al pubblico"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-a": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni riportano la ragione sociale e l'indirizzo completo del fabbricante e, se esiste, del mandatario",
+        "doc": "istruzioni",
+        "ok": "nome della società e indirizzo postale completo (via, città, paese)",
+        "no": "solo il logo, il sito web o un indirizzo email"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-b": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni riportano la designazione della macchina (modello, tipo) corrispondente a quella sulla targa",
+        "doc": "istruzioni",
+        "ok": "nome del modello o codice tipo uguale a quello della targa",
+        "no": "nome commerciale generico della famiglia di prodotti",
+        "smentita": "il modello indicato nelle istruzioni non corrisponde a quello riportato sulla targa"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-c": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni contengono la dichiarazione di conformità UE (o di incorporazione) oppure l'indirizzo internet o il codice QR per accedervi",
+        "doc": "istruzioni",
+        "ok": "copia della dichiarazione nel manuale, URL o codice ottico che rimanda alla dichiarazione",
+        "no": "semplice affermazione che il prodotto è conforme o marcato CE"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-d": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni contengono una descrizione generale della macchina: componenti principali e funzionamento",
+        "doc": "istruzioni",
+        "ok": "figura con le parti principali e descrizione del funzionamento",
+        "no": "solo i dati tecnici o lo slogan commerciale"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-e": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni contengono disegni, diagrammi e spiegazioni per uso, manutenzione e riparazione",
+        "doc": "istruzioni",
+        "ok": "figure, esplosi, schemi con le procedure di uso, manutenzione e riparazione",
+        "no": "testo senza alcuna figura; disegni commerciali"
+      },
+      {
+        "q": "Le istruzioni descrivono come verificare il corretto funzionamento della macchina (controlli iniziali, prove periodiche delle funzioni di sicurezza)",
+        "doc": "istruzioni",
+        "ok": "elenco dei controlli di funzionamento con frequenza ed esito atteso, prova dei dispositivi di sicurezza",
+        "no": "piano di manutenzione che riguarda solo lubrificazione e pulizia"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-f": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono le postazioni di lavoro che gli operatori possono occupare (posizione, compiti svolti in ciascuna)",
+        "doc": "istruzioni",
+        "ok": "figura o layout con le postazioni dell'operatore e le attività associate",
+        "no": "descrizione della macchina senza indicare dove si trova l'operatore"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-g": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono l'uso previsto: funzione, materiali o carichi ammessi, ambiente e utilizzatori previsti",
+        "doc": "istruzioni",
+        "ok": "sezione «uso previsto» con funzione, materiali lavorabili, limiti e ambiente di impiego",
+        "no": "frase generica «la macchina va usata solo per lo scopo previsto» senza dire quale"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-h": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni contengono avvertenze su modi concreti in cui la macchina non deve essere usata",
+        "doc": "istruzioni",
+        "ok": "elenco di divieti specifici (es. sollevare persone, lavorare materiali non ammessi, usare all'aperto, superare i limiti)",
+        "no": "divieto generico di uso improprio senza esempi"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-i": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono montaggio, installazione e collegamento con disegni e diagrammi",
+        "doc": "istruzioni",
+        "ok": "procedura di installazione con figure, collegamenti elettrici o pneumatici, ordine delle operazioni",
+        "no": "invito a far installare la macchina da personale qualificato senza istruzioni"
+      },
+      {
+        "q": "Le istruzioni indicano i sistemi di fissaggio e il basamento o la struttura su cui montare la macchina (requisiti di carico, fori, coppie di serraggio)",
+        "doc": "istruzioni",
+        "ok": "schema di foratura, tipo e numero di viti, coppie di serraggio, carichi trasmessi al basamento o al pavimento",
+        "no": "indicazione generica di installare su superficie stabile"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-j": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni di installazione indicano misure per ridurre rumore e vibrazioni (supporti antivibranti, livellamento, fissaggio, distanze dalle pareti)",
+        "doc": "istruzioni",
+        "ok": "uso di supporti antivibranti, istruzioni di livellamento e di fissaggio a pavimento finalizzate a rumore e vibrazioni",
+        "no": "valori di rumore dichiarati senza istruzioni di installazione"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-k": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono la messa in servizio: controlli e prove prima del primo avvio",
+        "doc": "istruzioni",
+        "ok": "elenco dei controlli e delle prove di primo avviamento, sequenza di avvio",
+        "no": "sola procedura di uso quotidiano"
+      },
+      {
+        "q": "Le istruzioni descrivono l'uso della macchina: avvio, arresto, modalità di funzionamento e comandi",
+        "doc": "istruzioni",
+        "ok": "procedure di avvio e arresto, descrizione delle modalità e dei comandi",
+        "no": "elenco dei comandi senza procedura d'uso"
+      },
+      {
+        "q": "Le istruzioni indicano la formazione richiesta agli operatori e i suoi contenuti, se necessaria",
+        "doc": "istruzioni",
+        "ok": "qualifiche richieste per ciascun ruolo (operatore, manutentore), argomenti della formazione",
+        "no": "frase generica «personale addestrato» senza indicare cosa"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-l": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni contengono un elenco dei rischi residui che permangono nonostante le misure di protezione, con indicazioni su come evitarli",
+        "doc": "istruzioni",
+        "ok": "sezione rischi residui con ciascun rischio specifico (es. schiacciamento in zona X, superfici calde) e comportamento da tenere",
+        "no": "avvertenze generiche di sicurezza senza rischi specifici della macchina",
+        "smentita": "le istruzioni dichiarano che la macchina non presenta alcun rischio residuo"
+      }
+    ]
+  },
+  "MR-III-1.7.4.2-m": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano le misure di protezione che l'utilizzatore deve adottare (delimitazione della zona, procedure, segnaletica)",
+        "doc": "istruzioni",
+        "ok": "misure specifiche a carico dell'utilizzatore: aree da delimitare, procedure di lavoro, protezioni aggiuntive",
+        "no": "invito generico a rispettare le norme di sicurezza vigenti"
+      },
+      {
+        "q": "Le istruzioni elencano i dispositivi di protezione individuale da usare e per quali operazioni, se necessari",
+        "doc": "istruzioni",
+        "ok": "dispositivi di protezione individuale specifici (guanti, occhiali, otoprotettori) associati alle operazioni",
+        "no": "frase generica «usare dispositivi di protezione adeguati» senza specificarli"
+      }
+    ]
+  }
+}

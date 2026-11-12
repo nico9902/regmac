@@ -1,0 +1,43 @@
+MECCANICA ROSSI S.r.l. — NASTRO TRASPORTATORE NT-300
+ISTRUZIONI PER L'USO E LA MANUTENZIONE (istruzioni originali, rev. 2, marzo 2026)
+
+1. DESCRIZIONE GENERALE
+Il nastro trasportatore NT-300 è composto da un telaio in acciaio zincato lungo 3 m, un nastro in PVC alimentare largo 300 mm, un rullo motore e un rullo di rinvio, un motoriduttore a vite senza fine da 0,75 kW e un quadro elettrico di comando montato sul lato operatore. Il motoriduttore trascina il rullo motore tramite una catena di trasmissione.
+
+2. USO PREVISTO E USI VIETATI
+Il nastro è destinato al trasporto orizzontale di scatole e colli di cartone fino a 20 kg ciascuno, in ambienti interni di magazzino, con temperatura da 5 a 40 °C.
+È vietato: trasportare persone o animali, salire sul nastro, trasportare liquidi sfusi o materiali incandescenti, usare la macchina in atmosfere esplosive.
+
+3. COMANDI
+Sul quadro elettrico sono presenti: il pulsante verde START, il pulsante nero STOP, il selettore a chiave MANUALE/AUTOMATICO e il pulsante di arresto di emergenza.
+Il nastro si avvia esclusivamente premendo il pulsante verde START; nessun altro comando può avviarlo.
+In modalità MANUALE il nastro avanza solo finché si tiene premuto START (comando ad azione mantenuta).
+
+4. ARRESTO DI EMERGENZA
+Sono installati due pulsanti di arresto di emergenza a fungo rosso su fondo giallo: uno sul quadro elettrico e uno sul lato opposto, in corrispondenza del rullo di rinvio.
+L'arresto di emergenza toglie immediatamente l'alimentazione al motore (arresto di categoria 0 secondo EN 60204-1) ed è attivo sia in modalità manuale sia in automatico.
+Il pulsante premuto resta bloccato meccanicamente. Dopo lo sblocco del pulsante di emergenza il nastro riparte automaticamente alla velocità impostata, senza bisogno di premere START.
+
+5. MANCANZA DI TENSIONE
+In caso di mancanza dell'alimentazione elettrica il contattore di linea si apre e il nastro si ferma. Al ritorno della tensione il nastro non riparte da solo: occorre premere di nuovo START.
+Il motoriduttore a vite senza fine è irreversibile e mantiene fermo il nastro e il carico anche senza alimentazione.
+
+6. INSTALLAZIONE E COLLEGAMENTO ELETTRICO
+Alimentazione: 400 V trifase, 50 Hz. Prevedere a monte un interruttore magnetotermico differenziale da 16 A curva C, Idn 30 mA, e un cavo 4G2,5 mm² con conduttore di protezione collegato al morsetto PE del quadro.
+ATTENZIONE: al primo avvio verificare che il nastro avanzi nel senso indicato dalla freccia sul telaio. Se si muove al contrario, togliere tensione e invertire due fasi dell'alimentazione.
+
+7. MANUTENZIONE
+Prima di qualsiasi intervento portare il sezionatore generale QS1 in posizione 0 (OFF) e bloccarlo con un lucchetto personale; appendere il cartello "Manutenzione in corso". Il sezionatore è lucchettabile solo in posizione aperta.
+Ogni settimana verificare il funzionamento dei due pulsanti di arresto di emergenza e del microinterruttore dello sportello di ispezione: con il nastro in moto, azionare ciascun dispositivo e controllare che il nastro si fermi.
+Ogni mese controllare la tensione della catena e del nastro.
+
+8. RISCHI RESIDUI E PROTEZIONI INDIVIDUALI
+Rimane un rischio residuo di trascinamento delle mani al rullo di rinvio durante la pulizia con nastro in moto: la pulizia va eseguita solo a macchina ferma e sezionata.
+Gli operatori devono indossare guanti di protezione e scarpe antinfortunistiche e devono essere formati sull'uso dei comandi e sulle procedure di emergenza.
+
+9. RUMORE
+Livello di pressione acustica continuo equivalente ponderato A al posto di lavoro: inferiore a 70 dB(A).
+
+10. RIPARI
+La catena di trasmissione è chiusa da un carter fisso in lamiera. Lo sportello di ispezione della tramoggia di carico è incernierato al telaio e dotato di microinterruttore di sicurezza.
+La macchina è conforme alle norme vigenti.

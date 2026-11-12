@@ -1,0 +1,987 @@
+[
+ {
+  "id": "MR-IV-B-h",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera h)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Mezzi per assicurare la conformità in produzione",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "h) una descrizione dei mezzi usati dal fabbricante durante la produzione della quasi-macchina per assicurare la conformità della quasi-macchina fabbricata rispetto alle specifiche di progettazione;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include schemi elettrici conformi alle norme di sicurezza",
+   "Le specifiche tecniche descrivono i mezzi di controllo della qualità durante la produzione",
+   "La valutazione dei rischi include misure per garantire la conformità alla progettazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-i",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera i)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Copia delle istruzioni di assemblaggio (All. XI)",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "i) una copia delle istruzioni di assemblaggio per la quasi-macchina di cui all'allegato XI;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per l'accesso ai dispositivi di comando",
+   "Le istruzioni descrivono le misure di protezione contro i rischi meccanici",
+   "Le istruzioni riportano le informazioni sulle prestazioni elettriche della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-j",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera j)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Misure interne per la produzione in serie",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "j) nel caso di quasi-macchine fabbricate in serie, le misure interne che saranno attuate per garantire che tali quasi-macchine restino conformi ai requisiti essenziali di sicurezza e di tutela della salute applicati;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni termiche durante l'uso",
+   "I schemi elettrici mostrano protezioni contro sovraccarico e cortocircuiti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-k",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera k)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Codice sorgente / logica del software di sicurezza (su richiesta)",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "k) il codice sorgente o la logica di programmazione del software relativo alla sicurezza, su richiesta motivata da parte di un'autorità nazionale competente, a condizione che tale codice sorgente o logica di programmazione siano necessari affinché tali autorità siano in grado di verificare il rispetto dei requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III;",
+  "old_condition": "",
+  "old_points": [
+   "Il codice sorgente è fornito in formato leggibile e completo",
+   "La logica del software è descritta in modo chiaro e dettagliato",
+   "Le istruzioni indicano i parametri di sicurezza critici del sistema"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-l",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera l)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Sistemi basati su sensori, remoti o autonomi",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "l) per una quasi-macchina alimentata da sensori, azionata da remoto o autonoma, se le operazioni relative alla sicurezza sono controllate da dati provenienti da sensori, una descrizione, se del caso, delle caratteristiche generali, delle capacità e delle limitazioni del sistema, dei dati, dello sviluppo, delle prove e della convalida dei processi utilizzati;",
+  "old_condition": "La macchina è alimentata da sensori e azionata in modo remoto o autonomo",
+  "old_points": [
+   "La documentazione descrive le capacità del sistema basato su sensori",
+   "Le prove del sistema sono documentate con dati di validazione specifici",
+   "Le limitazioni del sistema sono chiaramente indicate nella descrizione tecnica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-m",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera m)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Ricerche e prove per incorporazione sicura",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "m) i risultati di ricerche e prove su componenti, accessori o sulla quasi-macchina svolte dal fabbricante per stabilire se la macchina, in conseguenza della sua progettazione o costruzione, possa essere montata e incorporata in condizioni di sicurezza.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione contro gli infortuni meccanici",
+   "La valutazione dei rischi include analisi delle condizioni di montaggio e manutenzione",
+   "I disegni tecnici mostrano l'ubicazione e la funzionalità dei dispositivi di blocco"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-V-A",
+  "law": "MR",
+  "ref": "All. V, parte A",
+  "group": "All. V — Dichiarazioni",
+  "title": "Contenuto della dichiarazione di conformità UE",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "PARTE A\nDichiarazione di conformità UE di macchine e prodotti correlati n. … (1)\nLa dichiarazione di conformità UE deve riportare le indicazioni seguenti:\n1. Macchina o prodotto correlato (prodotto, tipo, modello, lotto o numero di serie) o macchina o prodotto correlato che ha subito modifiche sostanziali.\n2. Nome e indirizzo del fabbricante e, se del caso, del suo mandatario.\n3. Per le macchine di sollevamento destinate ad essere installate in modo permanente in un edificio o in una struttura e che non possono essere assemblate nei locali del fabbricante ma che possono essere montate solo sul luogo di utilizzazione, l'indirizzo di tale luogo.\n4. La presente dichiarazione di conformità è rilasciata sotto l'esclusiva responsabilità del fabbricante.\n5. Oggetto della dichiarazione (identificazione della macchina o del prodotto correlato che ne consenta la rintracciabilità; se necessario per l'identificazione della macchina o del prodotto correlato, si può includere un'immagine a colori sufficientemente chiara).\n6. L'oggetto della dichiarazione di cui al punto 5 è conforme alla normativa di armonizzazione dell'Unione seguente.\n7. Riferimenti alle norme armonizzate di cui all'articolo 20, paragrafo 1, o alle specifiche comuni adottate dalla Commissione conformemente all'articolo 20, paragrafo 3, che sono state applicate, compresa la data della puboppure riferimenti ad altre specifiche tecniche, compresa la data, in relazione alla quale si dichiara la conformità. In caso di applicazione parziale delle norme armonizzate o delle specifiche comuni la dichiarazione UE di conformità deve specificare le parti che sono state applicate.\n8. Laddove applicabile, l'organismo notificato… (nome, numero) … ha effettuato l'esame UE del tipo (modulo B) e ha emesso il certificato di esame UE del tipo… (riferimento a tale certificato), seguito dalla conformità al tipo basata sul controllo interno della produzione (modulo C) o la conformità basata sulla verifica di un unico prodotto (modulo G) o sulla garanzia qualità totale (modulo H).\n9. Laddove applicabile, la macchina o il prodotto correlato sono soggetti alla procedura di valutazione della conformità basata sul controllo interno della produzione (modulo A).\n10. Informazioni supplementari:\nFirmato a nome e per conto di: …\n(luogo e data del rilascio):\n(nome e cognome, funzione) (firma):\n(1) L'assegnazione di un numero, da parte del fabbricante, alla dichiarazione di conformità è opzionale.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione include il numero di serie o il modello della macchina",
+   "La dichiarazione indica le norme armonizzate applicate alla macchina",
+   "La dichiarazione riporta l'indirizzo del luogo di installazione della macchina",
+   "La dichiarazione include un'immagine chiara della macchina o del prodotto correlato"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-V-B",
+  "law": "MR",
+  "ref": "All. V, parte B",
+  "group": "All. V — Dichiarazioni",
+  "title": "Contenuto della dichiarazione di incorporazione UE",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "Dichiarazione di incorporazione UE di quasi-macchine n. … (2)\nLa dichiarazione di incorporazione deve contenere gli elementi seguenti:\n1. Quasi-macchina (numero di prodotto, di tipo, di modello, di lotto o di serie).\n2. Nome e indirizzo del fabbricante e, se del caso, del suo mandatario.\n3. La presente dichiarazione di incorporazione è rilasciata sotto l'esclusiva responsabilità del fabbricante.\n4. Oggetto della dichiarazione (identificazione della quasi-macchina che ne consenta la rintracciabilità; se necessario per l'identificazione della quasi-macchina, si può includere un'immagine a colori sufficientemente chiara).\n5. Un'indicazione con la quale si dichiara esplicitamente quali requisiti essenziali di sicurezza e di tutela della salute di cui all’allegato III del regolamento (UE) 2023/1230 del Parlamento europeo e del Consiglio (3) sono applicati e rispettati e che la documentazione tecnica pertinente è stata compilata in conformità dell'allegato IV, parte B e, se del caso, un'indicazione con la quale si dichiara che la quasi-macchina è conforme rispetto ad altra normativa di armonizzazione dell'Unione pertinente.\n6. Riferimenti alle norme armonizzate di cui all'articolo 20, paragrafo 1, o alle specifiche comuni adottate dalla Commissione conformemente all'articolo 20, paragrafo 3, che sono state applicate, compresa la data della norma o della specifica comune, oppure riferimenti ad altre specifiche tecniche, compresa la data, in relazione alla quale si dichiara la conformità. In caso di applicazione parziale delle norme armonizzate o delle specifiche comuni la dichiarazione UE di incorporazione deve specificare le parti che sono state applicate.\n7. Un impegno a trasmettere, in risposta a una richiesta adeguatamente motivata da parte delle autorità nazionali, informazioni pertinenti sulle quasi-macchine. L'impegno deve comprendere le modalità di trasmissione e lasciare impregiudicati i diritti di proprietà intellettuale del fabbricante della quasi-macchina.\n8. Una dichiarazione secondo cui la quasi-macchina non deve essere messa in servizio finché la macchina finale in cui deve essere incorporata non è stata dichiarata conforme al presente regolamento.\n9. Informazioni supplementari:\nFirmato a nome e per conto di: …\n(luogo e data del rilascio):\n(nome e cognome, funzione) (firma):\n(2) L'assegnazione di un numero alla dichiarazione di conformità è opzionale. (3) Regolamento (UE) 2023/1230 del Parlamento europeo e del Consiglio, del 14 giugno 2023, relativo alle macchine e che abroga la direttiva 2006/42/CE del Parlamento europeo e del Consiglio e la direttiva 73/361/CEE del Consiglio (GU L 165 del 29.6.2023, pag. 1).",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di incorporazione include il numero di serie della quasi-macchina",
+   "La documentazione tecnica menziona le norme armonizzate applicate",
+   "La dichiarazione dichiara la conformità ai requisiti essenziali di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-1",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 1",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Livello adeguato di cibersicurezza in base ai rischi",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "I prodotti con elementi digitali sono progettati, sviluppati e prodotti in modo da garantire un livello adeguato di cibersicurezza in base ai rischi.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una valutazione dei rischi completa per gli aspetti cibersicuri",
+   "Le istruzioni indicano le misure di protezione implementate contro accessi non autorizzati",
+   "La macchina dispone di un sistema di aggiornamento software sicuro e verificabile",
+   "Le specifiche tecniche descrivono le funzionalità di sicurezza attive e passive"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2a",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera a)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Nessuna vulnerabilità sfruttabile nota",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "sono messi a disposizione sul mercato senza vulnerabilità sfruttabili note;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include una valutazione completa dei rischi",
+   "La dichiarazione di conformità menziona l'assenza di vulnerabilità note",
+   "Gli schemi elettrici non mostrano componenti non certificati o non conformi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2b",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera b)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Configurazione sicura per impostazione predefinita",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "sono messi a disposizione sul mercato con una configurazione sicura per impostazione predefinita, salvo diverso accordo tra il fabbricante e l’utilizzatore commerciale in relazione a un prodotto su misura con elementi digitali, con la possibilità di ripristinare il prodotto allo stato originale;",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le impostazioni di sicurezza attive predefinite",
+   "La configurazione predefinita limita l'accesso a funzioni pericolose",
+   "Le istruzioni indicano come ripristinare la configurazione originale",
+   "La valutazione dei rischi conferma la configurazione sicura predefinita"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2c",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera c)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Gestione delle vulnerabilità tramite aggiornamenti di sicurezza",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "garantiscono che le vulnerabilità possano essere affrontate mediante aggiornamenti di sicurezza, anche, se del caso, mediante aggiornamenti di sicurezza automatici installati entro un periodo di tempo adeguato, abilitato come impostazione predefinita, con un meccanismo di disattivazione chiaro e di facile utilizzo, attraverso la notifica agli utilizzatori degli aggiornamenti disponibili e la possibilità di rinviarli temporaneamente;",
+  "old_condition": "",
+  "old_points": [
+   "La macchina dispone di un sistema di aggiornamenti di sicurezza abilitato di default",
+   "La documentazione descrive un meccanismo chiaro per disattivare gli aggiornamenti di sicurezza",
+   "La macchina notifica agli utenti gli aggiornamenti di sicurezza disponibili attraverso canali chiari",
+   "La documentazione indica la possibilità di rinviare temporaneamente gli aggiornamenti di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2d",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera d)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Protezione dall'accesso non autorizzato",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "garantiscono la protezione dall’accesso non autorizzato mediante adeguati meccanismi di controllo, tra cui, a titolo esemplificativo ma non esaustivo, sistemi di autenticazione e di gestione dell’identità o dell’accesso, e segnalano eventuali accessi non autorizzati;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione descrive i meccanismi di autenticazione utilizzati sulla macchina",
+   "Le istruzioni indicano le procedure per gestire l'accesso autorizzato alla macchina",
+   "La valutazione dei rischi menziona controlli per prevenire accessi non autorizzati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2e",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera e)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Riservatezza dei dati",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "proteggono la riservatezza dei dati personali o di altro tipo conservati, trasmessi o altrimenti trattati, ad esempio criptando i pertinenti dati a riposo o in transito mediante meccanismi all’avanguardia, e utilizzando altri mezzi tecnici;",
+  "old_condition": "La macchina tratta dati personali o sensibili",
+  "old_points": [
+   "La documentazione descrive metodi di crittografia per dati a riposo",
+   "La documentazione indica tecniche di protezione per dati in transito",
+   "Le istruzioni menzionano misure per prevenire accessi non autorizzati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2f",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera f)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Integrità di dati, comandi, programmi e configurazione",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "proteggono l’integrità dei dati personali o di altro tipo conservati, trasmessi o altrimenti trattati, dei comandi, dei programmi e della configurazione da qualsiasi manipolazione o modifica non autorizzata da parte dell’utilizzatore, e segnalano le corruzioni;",
+  "old_condition": "La macchina memorizza dati di configurazione e programma",
+  "old_points": [
+   "La documentazione descrive procedure per verificare l'integrità dei dati di configurazione",
+   "I comandi e i programmi sono protetti da meccanismi di controllo dell'integrità",
+   "La documentazione segnala metodi per rilevare modifiche non autorizzate ai programmi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2g",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera g)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Minimizzazione dei dati",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "trattano solo dati, personali o di altro tipo, adeguati, pertinenti e limitati a quanto necessario in relazione alla finalità prevista del prodotto con elementi digitali («minimizzazione dei dati»);",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione limita i dati raccolti ai soli necessari per la funzionalità",
+   "Le dichiarazioni specificano i dati personali trattati e la loro finalità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2h",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera h)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Disponibilità delle funzioni essenziali e resilienza (DoS)",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "proteggono la disponibilità delle funzioni essenziali e di base, anche dopo un incidente, anche attraverso misure di resilienza e di attenuazione contro gli attacchi di negazione del servizio (denial of service);",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione descrive procedure per ripristinare le funzioni essenziali dopo un'interruzione",
+   "Le istruzioni indicano misure di resilienza contro attacchi di negazione del servizio",
+   "La valutazione dei rischi menziona strategie per mantenere la disponibilità delle funzioni base",
+   "I schemi tecnici mostrano design che limita l'impatto di attacchi di tipo DoS"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2i",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera i)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Impatto minimo su altri dispositivi o reti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "riducono al minimo l’impatto negativo dei prodotti stessi o dei dispositivi connessi sulla disponibilità dei servizi forniti da altri dispositivi o reti;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano misure per evitare interferenze con altre reti",
+   "La documentazione descrive limiti di potenza per prevenire sovraccarichi",
+   "Le specifiche tecniche menzionano isolamento elettrico adeguato",
+   "Le istruzioni forniscono procedure per ridurre l'interferenza con dispositivi esterni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2j",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera j)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Limitazione delle superfici di attacco",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "sono progettati, sviluppati e prodotti per limitare le superfici di attacco, comprese le interfacce esterne;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le superfici di attacco accessibili durante l'uso normale",
+   "La valutazione dei rischi identifica le interfacce esterne come potenziali superfici di attacco",
+   "Lo schema elettrico mostra limitazioni per ridurre le superfici di attacco accessibili",
+   "La dichiarazione di conformità menziona limitazione delle superfici di attacco durante l'installazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2k",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera k)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Attenuazione dell'impatto degli incidenti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "sono progettati, sviluppati e prodotti per ridurre l’impatto degli incidenti utilizzando meccanismi e tecniche di attenuazione dello sfruttamento adeguati;",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le misure di protezione contro l'accesso non autorizzato",
+   "La valutazione dei rischi include analisi delle conseguenze di incidenti potenziali",
+   "Gli schemi mostrano dispositivi di arresto d'emergenza accessibili all'operatore",
+   "Le dichiarazioni indicano l'uso di materiali resistenti a temperature elevate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2l",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera l)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Registrazione e monitoraggio delle attività",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "forniscono informazioni sulla sicurezza registrando e monitorando le attività interne pertinenti, compresi l’accesso a dati, servizi o funzioni o la modifica degli stessi, con un meccanismo di disattivazione per l’utilizzatore;",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le attività interne registrate per la sicurezza",
+   "Le istruzioni indicano il meccanismo di disattivazione per l'utilizzatore",
+   "La documentazione include un sistema di monitoraggio delle modifiche ai dati",
+   "Le funzioni di accesso sono registrate e monitorate nel manuale tecnico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-1-2m",
+  "law": "CRA",
+  "ref": "All. I, parte I, punto 2, lettera m)",
+  "group": "All. I, parte I — Proprietà di sicurezza del prodotto",
+  "title": "Rimozione sicura di dati e impostazioni",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "offrono agli utenti la possibilità di rimuovere in modo sicuro e agevole, su base permanente, tutti i dati e tutte le impostazioni e, qualora tali dati possano essere trasferiti ad altri prodotti o sistemi, garantiscono che ciò avvenga in modo sicuro.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono un metodo per la cancellazione definitiva dei dati",
+   "Le istruzioni indicano come eliminare in modo sicuro le impostazioni predefinite",
+   "Le istruzioni forniscono informazioni su come trasferire dati a dispositivi compatibili in modo sicuro"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-1",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 1",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Identificazione delle vulnerabilità e SBOM",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "identificano e documentano le vulnerabilità e i componenti contenuti nel prodotto con elementi digitali, redigendo anche una distinta base del software in un formato di uso comune e leggibile da un dispositivo automatico, che includa almeno le dipendenze di primo livello del prodotto;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una distinta base del software in formato leggibile da dispositivi automatici",
+   "L'SBOM elenca almeno le dipendenze di primo livello del prodotto",
+   "La documentazione identifica le vulnerabilità note presenti nei componenti digitali",
+   "Le informazioni sui componenti digitali sono chiaramente distinte e facilmente accessibili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-2",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 2",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Correzione tempestiva delle vulnerabilità",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "in relazione ai rischi posti dai prodotti con elementi digitali, affrontano e correggono tempestivamente le vulnerabilità, anche fornendo aggiornamenti di sicurezza; ove tecnicamente fattibile, nuovi aggiornamenti di sicurezza sono forniti separatamente dagli aggiornamenti della funzionalità;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica la procedura per applicare aggiornamenti di sicurezza separati da quelli funzionali",
+   "Le istruzioni descrivono come verificare la presenza di vulnerabilità note nel sistema",
+   "La dichiarazione di conformità menziona la frequenza prevista per la correzione delle vulnerabilità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-3",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 3",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Prove e riesami periodici di sicurezza",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "effettuano prove e riesami efficaci e periodici della sicurezza del prodotto con elementi digitali;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle vulnerabilità digitali",
+   "I schemi elettrici mostrano protezioni contro sovraccarichi e cortocircuiti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-4",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 4",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Divulgazione delle vulnerabilità risolte",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "una volta reso disponibile un aggiornamento di sicurezza, condividono e divulgano pubblicamente informazioni sulle vulnerabilità risolte, compresi una descrizione delle vulnerabilità, informazioni che consentano agli utilizzatori di identificare il prodotto con elementi digitali interessato, l’impatto delle vulnerabilità, la loro gravità e informazioni chiare e accessibili che aiutino gli utilizzatori a correggere le vulnerabilità; in casi debitamente giustificati, qualora ritengano che i rischi di sicurezza legati alla divulgazione siano superiori ai benefici in termini di sicurezza, i fabbricanti possono ritardare la divulgazione di informazioni su una vulnerabilità risolta fino a quando gli utilizzatori non abbiano avuto la possibilità di applicare la pertinente patch;",
+  "old_condition": "",
+  "old_points": [
+   "Le informazioni sulle vulnerabilità risolte sono disponibili in un documento pubblico",
+   "Le vulnerabilità sono descritte con dettaglio sull'impatto e la gravità",
+   "Le istruzioni indicano come identificare il prodotto interessato digitalmente",
+   "Le istruzioni forniscono istruzioni chiare per correggere le vulnerabilità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-5",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 5",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Politica di divulgazione coordinata (CVD)",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "mettono in atto e applicano una politica di divulgazione coordinata delle vulnerabilità;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione descrive i canali di comunicazione utilizzati per la segnalazione delle vulnerabilità",
+   "Le procedure di segnalazione sono documentate e disponibili per gli utenti autorizzati",
+   "La politica di divulgazione è allineata con gli standard di sicurezza riconosciuti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-6",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 6",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Condivisione informazioni e contatto per segnalazioni",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "adottano misure per facilitare la condivisione di informazioni sulle potenziali vulnerabilità nel loro prodotto con elementi digitali e nei componenti di terzi contenuti in tale prodotto, fornendo anche un indirizzo di contatto per la segnalazione delle vulnerabilità individuate nel prodotto con elementi digitali;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione fornisce un indirizzo email per segnalare vulnerabilità",
+   "Le istruzioni indicano un canale di contatto per la segnalazione di problemi di sicurezza",
+   "La dichiarazione di conformità menziona un punto di contatto per vulnerabilità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-7",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 7",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Distribuzione sicura degli aggiornamenti",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "prevedono meccanismi per distribuire in modo sicuro gli aggiornamenti dei prodotti con elementi digitali, per garantire che le vulnerabilità siano corrette o attenuate in modo tempestivo e, ove applicabile per gli aggiornamenti di sicurezza, in modo automatico;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione descrive il processo di distribuzione sicura degli aggiornamenti",
+   "Le istruzioni indicano le procedure per applicare gli aggiornamenti di sicurezza in modo automatico",
+   "La macchina include meccanismi per verificare l'integrità degli aggiornamenti ricevuti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-I-2-8",
+  "law": "CRA",
+  "ref": "All. I, parte II, punto 8",
+  "group": "All. I, parte II — Gestione delle vulnerabilità",
+  "title": "Diffusione tempestiva e gratuita degli aggiornamenti",
+  "tags": [
+   "cra"
+  ],
+  "always": true,
+  "text": "garantiscono che, qualora disponibili, siano diffusi tempestivamente e gratuitamente, salvo diversamente convenuto tra un fabbricante e un utilizzatore commerciale in relazione a un prodotto su misura con elementi digitali, aggiornamenti di sicurezza per risolvere i problemi di sicurezza individuati, accompagnati da messaggi di avviso che forniscano agli utilizzatori le informazioni pertinenti, comprese le potenziali misure da adottare.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica i canali disponibili per l'aggiornamento gratuito",
+   "I messaggi di avviso includono informazioni sulle misure da adottare per la sicurezza",
+   "La documentazione descrive il processo per ottenere gli aggiornamenti tempestivamente"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART7-1",
+  "law": "CRA",
+  "ref": "Art. 7, par. 1",
+  "group": "Art. 7 — Prodotti con elementi digitali importanti",
+  "title": "Prodotti con elementi digitali importanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I prodotti con elementi digitali che hanno la funzionalità principale di una categoria di prodotti di cui all’allegato III sono considerati prodotti con elementi digitali importanti e sono soggetti alle procedure di valutazione della conformità di cui all’articolo 32, paragrafi 2 e 3. L’integrazione di un prodotto con elementi digitali che ha la funzionalità principale di una categoria di prodotti di cui all’allegato III non rende di per sé il prodotto in cui è integrato assoggettato alle procedure di valutazione della conformità di cui all’articolo 32, paragrafi 2 e 3.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi delle emissioni elettromagnetiche",
+   "La dichiarazione di conformità menziona la classe di emissione elettromagnetica",
+   "Gli schemi tecnici indicano la presenza di componenti digitali essenziali"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-1",
+  "law": "CRA",
+  "ref": "Art. 13, par. 1",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "All’atto dell’immissione sul mercato di un prodotto con elementi digitali, i fabbricanti assicurano che esso sia stato progettato, sviluppato e prodotto conformemente ai requisiti essenziali di cibersicurezza di cui all’allegato I, parte I.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una valutazione dei rischi completa per la sicurezza cibernetica",
+   "Le istruzioni indicano le procedure per l'aggiornamento dei sistemi software",
+   "La dichiarazione di conformità menziona la conformità ai requisiti essenziali di cibersicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-2",
+  "law": "CRA",
+  "ref": "Art. 13, par. 2",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "Ai fini della conformità al paragrafo 1, i fabbricanti effettuano una valutazione dei rischi di cibersicurezza associati a un prodotto con elementi digitali e tengono conto dei risultati di tale valutazione durante le fasi di pianificazione, progettazione, sviluppo, produzione, consegna e manutenzione del prodotto con elementi digitali, allo scopo di ridurre al minimo i rischi di cibersicurezza, prevenire gli incidenti e ridurne al minimo il loro impatto, anche in relazione alla salute e alla sicurezza degli utilizzatori.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi specifiche per la sicurezza cibernetica",
+   "Le istruzioni descrivono le misure di protezione contro accessi non autorizzati",
+   "La documentazione menziona procedure per la gestione degli incidenti cibernetici",
+   "I schemi tecnici indicano l'uso di protocolli di comunicazione sicuri"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-3",
+  "law": "CRA",
+  "ref": "Art. 13, par. 3",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "La valutazione dei rischi di cibersicurezza è documentata e aggiornata, se del caso, durante un periodo di assistenza da determinare conformemente al paragrafo 8 del presente articolo. Tale valutazione comprende almeno un’analisi dei rischi di cibersicurezza basata sulla finalità prevista e sull’uso ragionevolmente prevedibile del prodotto con elementi digitali, nonché sulle sue condizioni d’uso, quali l’ambiente operativo o gli attivi da proteggere, tenendo conto della durata di utilizzo del prodotto prevista. La valutazione dei rischi di cibersicurezza indica se, ed eventualmente in che modo, i requisiti di sicurezza di cui all’allegato I, parte I, punto 2, sono applicabili al pertinente prodotto con elementi digitali e le modalità di attuazione di tali requisiti sulla base della valutazione dei rischi di cibersicurezza. Indica inoltre le modalità con cui il fabbricante intende applicare l’allegato I, parte I, punto 1, e i requisiti di gestione delle vulnerabilità di cui all’allegato I, parte II.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include un'analisi dei rischi di cibersicurezza basata sull'uso previsto del prodotto",
+   "La valutazione dei rischi indica come i requisiti di sicurezza dell'allegato I, parte I, punto 2, sono applicati al prodotto",
+   "La documentazione descrive le modalità di attuazione dei requisiti di sicurezza derivati dalla valutazione dei rischi",
+   "La valutazione dei rischi menziona le procedure di gestione delle vulnerabilità previste dall'allegato I, parte II"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-4",
+  "law": "CRA",
+  "ref": "Art. 13, par. 4",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "All’atto dell’immissione sul mercato di un prodotto con elementi digitali, il fabbricante include la valutazione dei rischi di cibersicurezza di cui al paragrafo 3 del presente articolo nella documentazione tecnica richiesta a norma dell’articolo 31 e dell’allegato VII. Per i prodotti con elementi digitali di cui all’articolo 12, che sono soggetti anche ad altri atti giuridici dell’Unione, la valutazione dei rischi di cibersicurezza può far parte della valutazione dei rischi prevista da tali atti giuridici dell’Unione. Se alcuni requisiti essenziali di cibersicurezza non sono applicabili al prodotto con elementi digitali, il fabbricante fornisce una chiara giustificazione in tal senso nella suddetta documentazione tecnica.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include la valutazione dei rischi di cibersicurezza conforme all'Art. 13, par. 4",
+   "La valutazione dei rischi menziona i requisiti essenziali di cibersicurezza applicabili alla macchina",
+   "La documentazione tecnica giustifica la non applicabilità di alcuni requisiti essenziali di cibersicurezza",
+   "Le istruzioni forniscono informazioni chiare sulla gestione delle vulnerabilità identificate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-5",
+  "law": "CRA",
+  "ref": "Art. 13, par. 5",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "Ai fini dell’adempimento dell’obbligo di cui al paragrafo 1, i fabbricanti esercitano la dovuta diligenza quando integrano componenti provenienti da terzi affinché tali componenti non compromettano la cibersicurezza del prodotto con elementi digitali, anche quando integrano componenti di software liberi e open source che non sono stati messi a disposizione sul mercato nel corso di un’attività commerciale.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una valutazione dei rischi per la cibersicurezza",
+   "I componenti software open source sono elencati con le relative versioni",
+   "Le istruzioni descrivono le misure di protezione contro accessi non autorizzati",
+   "La dichiarazione tecnica menziona la provenienza dei componenti esterni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-6",
+  "law": "CRA",
+  "ref": "Art. 13, par. 6",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "Quando è individuata una vulnerabilità in un componente, compreso un componente open source, integrato nel prodotto con elementi digitali, i fabbricanti la segnalano alla persona o al soggetto che si occupa della fabbricazione o della manutenzione del componente e affrontano e correggono la vulnerabilità conformemente ai requisiti di gestione delle vulnerabilità di cui all’allegato I, parte II. Qualora abbiano sviluppato una modifica del software o dell’hardware per affrontare la vulnerabilità di tale componente, i fabbricanti condividono il codice o la documentazione pertinenti con la persona o il soggetto che si occupa della fabbricazione o della manutenzione del componente, se del caso in un formato leggibile da un dispositivo automatico.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include un elenco delle vulnerabilità identificate nei componenti open source",
+   "Le istruzioni descrivono le procedure per segnalare e correggere vulnerabilità nei componenti",
+   "La documentazione fornisce il codice o la descrizione tecnica delle modifiche apportate per risolvere vulnerabilità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-7",
+  "law": "CRA",
+  "ref": "Art. 13, par. 7",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti documentano sistematicamente, in modo proporzionato alla natura e ai rischi di cibersicurezza, gli aspetti pertinenti di cibersicurezza relativi al prodotto con elementi digitali, comprese le vulnerabilità di cui vengono a conoscenza e qualsiasi informazione pertinente fornita da terzi e, se del caso, aggiornano la valutazione dei rischi di cibersicurezza del prodotto.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una valutazione dei rischi di cibersicurezza del prodotto",
+   "La documentazione indica le vulnerabilità note relative al prodotto",
+   "La documentazione fornisce informazioni su eventuali dati sensibili trattati dal prodotto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-8",
+  "law": "CRA",
+  "ref": "Art. 13, par. 8",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "All’atto dell’immissione sul mercato di un prodotto con elementi digitali e per la durata del periodo di assistenza, i fabbricanti garantiscono che le vulnerabilità di tale prodotto, compresi i suoi componenti, siano gestite in modo efficace e in conformità dei requisiti essenziali di cibersicurezza di cui all’allegato I, parte II.\nI fabbricanti determinano il periodo di assistenza in modo che rifletta la durata di utilizzo prevista del prodotto, tenendo conto, in particolare, delle ragionevoli aspettative degli utilizzatori, della natura del prodotto, compresa la sua finalità prevista, nonché del pertinente diritto dell’Unione che determina la durata di vita dei prodotti con elementi digitali. Nel determinare il periodo di assistenza, i fabbricanti possono tenere conto anche dei periodi di assistenza dei prodotti con elementi digitali che offrono funzionalità analoghe immessi sul mercato da altri fabbricanti, della disponibilità dell’ambiente operativo, dei periodi di assistenza dei componenti integrati che forniscono funzioni essenziali e che provengono da terzi, nonché degli orientamenti pertinenti forniti dall’apposito gruppo di cooperazione amministrativa (ADCO) istituito a norma dell’articolo 52, paragrafo 15, e dalla Commissione. Le questioni da prendere in considerazione per determinare il periodo di assistenza sono prese in considerazione in modo da garantire la proporzionalità.\nFatto salvo il secondo comma, il periodo di assistenza è di almeno cinque anni. Se si prevede che il prodotto con elementi digitali sarà utilizzato per meno di cinque anni, il periodo di assistenza corrisponde alla durata di utilizzo prevista.\nTenendo conto delle raccomandazioni dell’ADCO di cui all’articolo 52, paragrafo 16, la Commissione può adottare atti delegati conformemente all’articolo 61 al fine di integrare il presente regolamento specificando il periodo minimo di assistenza per determinate categorie di prodotti qualora i dati di vigilanza del mercato suggeriscano l’inadeguatezza dei periodi di assistenza.\nI fabbricanti includono nella documentazione tecnica di cui all’allegato VII le informazioni prese in considerazione per determinare il periodo di assistenza di un prodotto con elementi digitali.\nI fabbricanti dispongono di politiche e procedure adeguate, comprese politiche di divulgazione coordinata delle vulnerabilità, di cui all’allegato I, parte II, punto 5, per trattare e correggere potenziali vulnerabilità del prodotto con elementi digitali segnalate da fonti interne o esterne.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include le informazioni utilizzate per determinare il periodo di assistenza",
+   "Le istruzioni indicano il periodo di assistenza previsto per la macchina",
+   "Le istruzioni descrivono le procedure per la gestione delle vulnerabilità",
+   "La documentazione tecnica menziona la durata di vita prevista del prodotto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-9",
+  "law": "CRA",
+  "ref": "Art. 13, par. 9",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che ciascun aggiornamento di sicurezza di cui all’allegato I, parte II, punto 8, che è stato messo a disposizione degli utilizzatori durante il periodo di assistenza, rimanga disponibile dopo il rilascio per un minimo di dieci anni o per il restante periodo di assistenza, se quest’ultimo è superiore.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica la disponibilità degli aggiornamenti di sicurezza per almeno dieci anni",
+   "La scheda tecnica menziona il periodo di assistenza superiore ai dieci anni, se applicabile",
+   "Le istruzioni forniscono informazioni sui tempi di conservazione degli aggiornamenti di sicurezza",
+   "La dichiarazione di conformità include la garanzia di disponibilità degli aggiornamenti di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-10",
+  "law": "CRA",
+  "ref": "Art. 13, par. 10",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "Il fabbricante che abbia immesso sul mercato versioni successive sostanzialmente modificate di un software può garantire la conformità al requisito essenziale di cibersicurezza di cui all’allegato I, parte II, punto 2, solo per l’ultima versione immessa sul mercato, a condizione che gli utilizzatori delle versioni precedentemente immesse sul mercato abbiano accesso gratuito all’ultima versione immessa sul mercato e non debbano sostenere costi aggiuntivi per adeguare l’ambiente hardware e software in cui utilizzano la versione originale del prodotto.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica la versione più recente del software disponibile gratuitamente",
+   "Le istruzioni forniscono accesso gratuito all’ultima versione del software",
+   "La macchina è dotata di meccanismi per aggiornare il software senza costi aggiuntivi",
+   "La documentazione chiarisce come gli utenti possono ottenere l’ultima versione del software"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-11",
+  "law": "CRA",
+  "ref": "Art. 13, par. 11",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti possono tenere archivi pubblici di software per migliorare l’accesso degli utilizzatori alle versioni precedenti. In questi casi, gli utilizzatori sono informati in modo chiaro e facilmente accessibile dei rischi associati all’uso di software privi di assistenza.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione fornisce informazioni chiare sui rischi dell'uso di software non assistito",
+   "Le istruzioni descrivono i modi di funzionamento della macchina in modo chiaro",
+   "La documentazione include una valutazione dei rischi completa e accessibile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-12",
+  "law": "CRA",
+  "ref": "Art. 13, par. 12",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "Prima di immettere un prodotto con elementi digitali sul mercato, i fabbricanti redigono la documentazione tecnica di cui all’articolo 31.\nEssi seguono o fanno eseguire le procedure di valutazione della conformità prescelte di cui all’articolo 32.\nSe tale procedura di valutazione della conformità dimostra la conformità del prodotto con elementi digitali ai requisiti essenziali di cibersicurezza di cui all’allegato I, parte I, e dei processi messi in atto dal fabbricante ai requisiti essenziali di cibersicurezza di cui all’allegato I, parte II, i fabbricanti redigono la dichiarazione di conformità UE conformemente all’articolo 28 e appongono la marcatura CE conformemente all’articolo 30.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include una valutazione dei rischi completa e approfondita",
+   "La dichiarazione di conformità UE è redatta in modo chiaro e dettagliato",
+   "I schemi tecnici mostrano l'architettura di rete e le protezioni di sicurezza implementate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-13",
+  "law": "CRA",
+  "ref": "Art. 13, par. 13",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti tengono la documentazione tecnica e la dichiarazione di conformità UE a disposizione delle autorità di vigilanza del mercato per un periodo di almeno dieci anni dalla data di immissione sul mercato del prodotto con elementi digitali o per il periodo di assistenza, se quest’ultimo è superiore.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include la dichiarazione di conformità UE",
+   "La valutazione dei rischi descrive le misure di protezione implementate",
+   "Gli schemi mostrano la disposizione dei componenti elettrici e meccanici"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-14",
+  "law": "CRA",
+  "ref": "Art. 13, par. 14",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti si assicurano che siano predisposte le procedure necessarie affinché i prodotti con elementi digitali fabbricati nell’ambito di una produzione in serie rimangano conformi al presente regolamento. I fabbricanti tengono adeguatamente conto delle modifiche del processo di sviluppo e di produzione o della progettazione o delle caratteristiche del prodotto con elementi digitali, nonché delle modifiche delle norme armonizzate, dei sistemi europei di certificazione della cibersicurezza o delle specifiche comuni di cui all’articolo 27 con riferimento alle quali è dichiarata la conformità del prodotto con elementi digitali o mediante applicazione delle quali tale conformità è verificata.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle vulnerabilità cibernetiche",
+   "Le dichiarazioni attestano conformità alle specifiche comuni di cibersicurezza",
+   "Gli schemi mostrano misure di protezione contro accessi non autorizzati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-15",
+  "law": "CRA",
+  "ref": "Art. 13, par. 15",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che i loro prodotti con elementi digitali rechino un numero di tipo, di lotto o di serie o qualsiasi altro elemento che ne consenta l’identificazione, oppure, qualora ciò non sia possibile, che tali informazioni siano fornite sull’imballaggio o in un documento di accompagnamento del prodotto con elementi digitali.",
+  "old_condition": "",
+  "old_points": [
+   "Il numero di tipo è indicato nel documento di accompagnamento",
+   "Le informazioni di identificazione sono presenti sul manuale tecnico",
+   "Il numero di serie è visibile nell'etichetta della macchina",
+   "Le specifiche tecniche menzionano il numero di lotto del prodotto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-16",
+  "law": "CRA",
+  "ref": "Art. 13, par. 16",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti indicano il loro nome, la loro denominazione commerciale registrata o il loro marchio registrato, l’indirizzo postale, l’indirizzo di posta elettronica o altri dati di contatto digitale nonché, se disponibile, il sito web presso cui possono essere contattati, sul prodotto con elementi digitali, sull’imballaggio o in un documento di accompagnamento del prodotto con elementi digitali. Tali informazioni sono incluse anche nelle informazioni e nelle istruzioni per l’utilizzatore di cui all’allegato II. I dati di recapito sono redatti in una lingua facilmente comprensibile dagli utilizzatori e dalle autorità di vigilanza del mercato.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il nome e l’indirizzo del fabbricante",
+   "Le istruzioni menzionano il sito web del fabbricante, se presente",
+   "Le informazioni di contatto sono redatte in una lingua facilmente comprensibile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-17",
+  "law": "CRA",
+  "ref": "Art. 13, par. 17",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "Ai fini del presente regolamento, i fabbricanti designano un punto di contatto unico che consenta agli utilizzatori di comunicare direttamente e rapidamente con loro, anche per facilitare la segnalazione di vulnerabilità del prodotto con elementi digitali.\nI fabbricanti garantiscono che il punto di contatto unico sia facilmente identificabile dagli utilizzatori. Essi includono inoltre il punto di contatto unico nelle informazioni e istruzioni per l’utilizzatore di cui all’allegato II.\nIl punto di contatto unico consente agli utilizzatori di scegliere i mezzi di comunicazione preferiti, senza limitarli agli strumenti automatizzati.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il punto di contatto unico del fabbricante",
+   "Il punto di contatto è facilmente identificabile nel manuale utente",
+   "Le informazioni includono il punto di contatto unico come richiesto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-18",
+  "law": "CRA",
+  "ref": "Art. 13, par. 18",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti provvedono affinché i prodotti con elementi digitali siano accompagnati dalle informazioni e dalle istruzioni per l’utilizzatore di cui all’allegato II in forma cartacea o elettronica. Tali informazioni e istruzioni sono fornite in una lingua facilmente comprensibile dagli utilizzatori e dalle autorità di vigilanza del mercato. Sono chiare, comprensibili, intelligibili e leggibili. Consentono un’installazione, un funzionamento e un utilizzo sicuri dei prodotti con elementi digitali. I fabbricanti mantengono a disposizione degli utilizzatori e delle autorità di vigilanza del mercato le informazioni e istruzioni per l’utilizzatore di cui all’allegato II per un periodo di almeno dieci anni dalla data in cui il prodotto con elementi digitali è stato immesso sul mercato o per il periodo di assistenza, se quest’ultimo è superiore. Qualora tali informazioni e istruzioni siano fornite online, i fabbricanti garantiscono che siano accessibili, di facile uso e disponibili online per un periodo di almeno dieci anni dalla data in cui il prodotto con elementi digitali è stato immesso sul mercato o per il periodo di assistenza, se quest’ultimo è superiore.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni forniscono informazioni chiare sulle misure di protezione individuale",
+   "Le istruzioni descrivono le procedure di interruzione d'emergenza in modo accessibile",
+   "Le istruzioni sono disponibili in una lingua facilmente comprensibile per gli utenti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-19",
+  "law": "CRA",
+  "ref": "Art. 13, par. 19",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che la data finale del periodo di assistenza di cui al paragrafo 8, comprendente almeno il mese e l’anno, sia specificata in modo chiaro e comprensibile al momento dell’acquisto in modo facilmente accessibile e, se del caso, sul prodotto con elementi digitali, sul suo imballaggio o con mezzi digitali.\nOve tecnicamente fattibile alla luce della natura del prodotto con elementi digitali, i fabbricanti inviano una notifica agli utilizzatori per informarli che il loro prodotto con elementi digitali ha raggiunto la fine del periodo di assistenza.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica chiaramente la data di fine assistenza con mese e anno",
+   "La notifica di fine assistenza è inclusa nella documentazione tecnica",
+   "La data di fine assistenza è accessibile e facilmente leggibile nel manuale"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "CRA-ART13-20",
+  "law": "CRA",
+  "ref": "Art. 13, par. 20",
+  "group": "Art. 13 — Obblighi dei fabbricanti",
+  "title": "Obblighi dei fabbricanti",
+  "tags": [
+   "cra"
+  ],
+  "always": false,
+  "text": "I fabbricanti forniscono una copia della dichiarazione di conformità UE o una dichiarazione di conformità UE semplificata con il prodotto con elementi digitali. Se è fornita una dichiarazione di conformità UE semplificata, questa contiene l’esatto indirizzo Internet dove è possibile accedere alla dichiarazione di conformità UE completa.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di conformità UE include l’indirizzo Internet della versione completa",
+   "La valutazione dei rischi descrive le misure adottate per ridurre i rischi meccanici",
+   "Gli schemi mostrano la disposizione degli organi di comando e di sicurezza"
+  ],
+  "old_status": "bozza"
+ }
+]

@@ -23,29 +23,33 @@ export function Drop({onFiles, compact}: {onFiles: (f: File[]) => void; compact?
 let catalogCache: Promise<CatalogData> | null = null;
 export const catalog = () => (catalogCache ??= api.catalog());
 
-export function scopeCount(cat: CatalogData, values: Record<string, boolean>) {
-  const tags = ['generale', values.quasi_macchina ? 'quasi_macchina' : 'macchina', ...Object.keys(values).filter(k => k !== 'quasi_macchina' && values[k])];
+export function scopeCount(cat: CatalogData, values: Record<string, boolean | null>) {
+  const tags = ['generale', values.quasi_macchina ? 'quasi_macchina' : 'macchina', ...cat.questions.filter(q => q.tag !== 'quasi_macchina' && values[q.tag] === true).map(q => q.tag)];
   const sc = cat.requirements.filter(r => (r.always && (r.law === 'MR' || tags.includes('cra'))) || r.tags.some(t => tags.includes(t)));
   return {total: sc.length, mr: sc.filter(r => r.law === 'MR').length, cra: sc.filter(r => r.law === 'CRA').length};
 }
 
-/** Profilo proposto dall'AI: ogni domanda con la frase che lo giustifica; le risposte non determinate sono evidenziate. */
-export function ProfileEditor({answers, values, setValues}: {answers: Answer[]; values: Record<string, boolean>; setValues: (v: Record<string, boolean>) => void}) {
+/** Tutte le domande hanno risposta Sì o No (nessun "non so": includerebbe in silenzio requisiti estranei alla macchina). */
+export const profileComplete = (cat: CatalogData | null, values: Record<string, boolean | null>) => !!cat && cat.questions.every(q => values[q.tag] === true || values[q.tag] === false);
+
+/** Profilo proposto dall'AI: ogni domanda con la frase che lo giustifica; le risposte da dare sono evidenziate. */
+export function ProfileEditor({answers, values, setValues}: {answers: Answer[]; values: Record<string, boolean | null>; setValues: (v: Record<string, boolean | null>) => void}) {
   const [cat, setCat] = useState<CatalogData | null>(null);
   useEffect(() => { void catalog().then(setCat); }, []);
   if (!cat) return <p className="mute">Caricamento…</p>;
   return <div>{cat.questions.map(q => {
-    const a = answers.find(x => x.tag === q.tag), unsure = !a || a.verdict === 'UNKNOWN', v = !!values[q.tag];
+    const a = answers.find(x => x.tag === q.tag), unsure = v0(values[q.tag]), v = values[q.tag];
     return <div className={'q ' + (unsure ? 'unsure' : '')} key={q.tag}>
       <div className="grow"><b className="small">{q.label}</b>
         <div className="tiny mute">{a?.quote ? <>«{a.quote}» — {a.doc}{a.page && a.page > 1 ? ', p. ' + a.page : ''}</> : q.hint}</div>
-        <div className="tiny" style={{color: unsure ? 'var(--part)' : 'var(--mute)'}}>{unsure ? 'L\'AI non ha trovato elementi: verifica tu' : a!.verdict === 'TRUE' ? 'Proposta AI: sì' : 'Proposta AI: no'}</div></div>
-      <div className="yn"><button className={v ? 'on' : ''} onClick={() => setValues({...values, [q.tag]: true})}>Sì</button><button className={!v ? 'on' : ''} onClick={() => setValues({...values, [q.tag]: false})}>No</button></div>
+        <div className="tiny" style={{color: unsure ? 'var(--part)' : 'var(--mute)'}}>{!a || a.verdict === 'UNKNOWN' ? 'L\'AI non ha trovato elementi nei documenti: rispondi Sì o No' : a.verdict === 'TRUE' ? 'Proposta AI: sì' : 'Proposta AI: no'}</div></div>
+      <div className="yn"><button className={v === true ? 'on' : ''} onClick={() => setValues({...values, [q.tag]: true})}>Sì</button><button className={v === false ? 'on' : ''} onClick={() => setValues({...values, [q.tag]: false})}>No</button></div>
     </div>;
   })}</div>;
 }
 
-export const valuesFrom = (f: Fascicolo, answers?: Answer[]) => Object.fromEntries((answers || f.profile).map(a => [a.tag, a.value ?? a.verdict === 'TRUE']));
+const v0 = (v: boolean | null | undefined) => v !== true && v !== false;
+export const valuesFrom = (f: Fascicolo, answers?: Answer[]) => Object.fromEntries((answers || f.profile).map(a => [a.tag, f.profileConfirmed ? a.value : a.verdict === 'UNKNOWN' ? null : a.verdict === 'TRUE']));
 
 /** Procedura guidata: macchina e documenti → profilo proposto dall'AI → avvio della pre-valutazione. */
 export function Wizard({close, done}: {close: () => void; done: (id: string) => void}) {
@@ -54,7 +58,7 @@ export function Wizard({close, done}: {close: () => void; done: (id: string) => 
   const [files, setFiles] = useState<File[]>([]);
   const [id, setId] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Answer[]>([]);
-  const [values, setValues] = useState<Record<string, boolean>>({});
+  const [values, setValues] = useState<Record<string, boolean | null>>({});
   const [busy, setBusy] = useState('');
   const [error, setError] = useState('');
   const [cat, setCat] = useState<CatalogData | null>(null);
@@ -69,10 +73,12 @@ export function Wizard({close, done}: {close: () => void; done: (id: string) => 
         setBusy('Salvataggio dei documenti…');
         const f = id ? await api.update(id, d) : await api.create(d);
         setId(f.id);
-        await api.upload(f.id, files);
+        const uploaded = await api.upload(f.id, files);
+        const failed = uploaded.filter(x => x.error);
+        if (failed.length) setError('Documenti non analizzati: ' + failed.map(x => x.name).join(', ') + '. Gli altri file sono stati conservati.');
         setBusy('L\'AI legge i documenti e propone il profilo della macchina…');
         const a = await api.propose(f.id);
-        setAnswers(a); setValues(Object.fromEntries(a.map(x => [x.tag, x.verdict === 'TRUE'])));
+        setAnswers(a); setValues(Object.fromEntries(a.map(x => [x.tag, x.verdict === 'UNKNOWN' ? null : x.verdict === 'TRUE'])));
         setStep(1);
       } else if (step === 1) {
         setBusy('Salvataggio del profilo…');
@@ -100,16 +106,16 @@ export function Wizard({close, done}: {close: () => void; done: (id: string) => 
         {files.map((f, i) => <div className="row small" key={i}><FileText size={14}/><span className="grow">{f.name}</span><span className="tiny mute">{(f.size / 1e6).toFixed(1)} MB</span>
           <button className="iconbtn" aria-label="Rimuovi" onClick={() => setFiles(files.filter((_, j) => j !== i))}><X size={13}/></button></div>)}
       </div>
-      : step === 1 ? <><p className="small mute" style={{marginBottom: 10}}>L'AI ha letto i documenti e propone il profilo. Controlla soprattutto le risposte <b style={{color: 'var(--part)'}}>evidenziate</b>.</p>
+      : step === 1 ? <><p className="small mute" style={{marginBottom: 10}}>L'AI ha letto i documenti e propone il profilo. Ogni domanda richiede <b>Sì</b> o <b>No</b>: il profilo decide quali requisiti si applicano. Rispondi alle domande <b style={{color: 'var(--part)'}}>evidenziate</b>.</p>
         <ProfileEditor answers={answers} values={values} setValues={setValues}/></>
       : <div><div style={{textAlign: 'center', padding: '10px 0'}}><div className="eyebrow">Perimetro</div><div className="count">{n?.total} requisiti</div>
           <div className="small mute">{n?.mr} Regolamento Macchine · {n?.cra} Cyber Resilience Act</div></div>
         <div className="card" style={{marginTop: 12}}><div className="row"><Cpu size={16} color="var(--brand)"/><div className="grow"><b>Pre-valutazione AI</b>
-          <div className="tiny mute">circa {Math.max(1, Math.round((n?.total || 0) * 1.6 / 60))}–{Math.max(2, Math.round((n?.total || 0) * 3 / 60))} minuti · prosegue in sottofondo, puoi rivedere i primi esiti subito</div></div></div></div></div>}
+          <div className="tiny mute">La durata dipende dai documenti e dal computer. Prosegue in sottofondo; puoi rivedere i primi esiti subito.</div></div></div></div></div>}
       {error && <div className="err" style={{marginTop: 12}}><AlertTriangle size={14}/>{error}</div>}
     </div>
     <div className="mf">{step > 0 && !busy && <button className="btn" onClick={() => setStep(step - 1)}><ChevronLeft size={14}/>Indietro</button>}<span className="grow"/>
-      {!busy && <button className="btn pri" onClick={next}>{['Proponi il profilo', 'Conferma il profilo', 'Avvia la pre-valutazione'][step]} <ChevronRight size={14}/></button>}</div>
+      {!busy && <button className="btn pri" disabled={step === 1 && !profileComplete(cat, values)} onClick={next}>{['Proponi il profilo', 'Conferma il profilo', 'Avvia la pre-valutazione'][step]} <ChevronRight size={14}/></button>}</div>
   </div></div>;
 }
 

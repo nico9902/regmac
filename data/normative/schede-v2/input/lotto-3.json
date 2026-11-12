@@ -1,0 +1,995 @@
+[
+ {
+  "id": "MR-III-1.7.4.2-n",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera n)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. n)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nn) le caratteristiche essenziali degli utensili che possono essere montati sulla macchina o sul prodotto correlato;",
+  "old_condition": "La macchina è dotata di utensili montabili",
+  "old_points": [
+   "Le istruzioni elencano le caratteristiche tecniche degli utensili montabili",
+   "Le istruzioni descrivono le dimensioni degli utensili compatibili con la macchina",
+   "Le istruzioni indicano le limitazioni di utilizzo per ciascun utensile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-o",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera o)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. o)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\no) le condizioni in cui la macchina o il prodotto correlato soddisfano i requisiti di stabilità durante l'utilizzo, il trasporto, il montaggio, lo smontaggio, in condizioni di fuori servizio, durante le prove o le avarie prevedibili;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le condizioni di stabilità durante il trasporto e il montaggio",
+   "Le istruzioni descrivono le condizioni di stabilità durante le prove e le avarie prevedibili",
+   "Le istruzioni menzionano le condizioni di stabilità in condizioni di fuori servizio",
+   "Le istruzioni specificano le condizioni di stabilità durante l'utilizzo della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-p",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera p)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. p)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\np) le istruzioni per effettuare in condizioni di sicurezza le operazioni di trasporto, movimentazione e stoccaggio, indicanti la massa della macchina o del prodotto correlato nonché dei suoi vari elementi allorché devono essere regolarmente trasportati separatamente;",
+  "old_condition": "La macchina richiede trasporto e movimentazione di elementi separati",
+  "old_points": [
+   "Le istruzioni indicano la massa della macchina durante il trasporto",
+   "Le istruzioni descrivono le operazioni di movimentazione in sicurezza",
+   "Le istruzioni specificano le modalità di stoccaggio sicuro degli elementi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-q",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera q)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. q)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nq) il protocollo operativo da rispettare in caso di infortunio o avaria; se si può verificare un blocco, il metodo operativo da rispettare per permettere di sbloccare la macchina in condizioni di sicurezza;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono il protocollo operativo da seguire in caso di infortunio",
+   "Le istruzioni indicano il metodo sicuro per sbloccare la macchina in emergenza",
+   "Le istruzioni forniscono informazioni dettagliate sulle procedure di interruzione dell'attività"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-r",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera r)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. r)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nr) la descrizione delle operazioni di regolazione e manutenzione che devono essere effettuate dall'utilizzatore nonché le misure di manutenzione preventiva da rispettare tenendo conto della progettazione e dell'utilizzo della macchina o del prodotto correlato;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le operazioni di regolazione da eseguire dall'utilizzatore",
+   "Le istruzioni indicano le misure preventive per la manutenzione della macchina",
+   "Le istruzioni elencano le operazioni di manutenzione necessarie durante l'uso"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-s",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera s)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. s)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\ns) le istruzioni per effettuare in condizioni di sicurezza la regolazione e la manutenzione, incluse le misure di protezione che dovrebbero essere adottate durante tali operazioni;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per la regolazione in sicurezza",
+   "Le istruzioni descrivono le misure di protezione durante la manutenzione",
+   "Le istruzioni specificano le precauzioni per l'accesso alle parti a rischio"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-t",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera t)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. t)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nt) le specifiche dei pezzi di ricambio da utilizzare, se incidono sulla salute e la sicurezza degli operatori;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le specifiche dei pezzi di ricambio per la sicurezza degli operatori",
+   "Le istruzioni elencano i materiali dei pezzi di ricambio che influiscono sulla salute degli operatori",
+   "Le istruzioni descrivono le caratteristiche tecniche dei pezzi di ricambio per la sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-u",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera u)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. u)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nu) le informazioni seguenti relative all'emissione di rumore aereo:\ni) il livello di pressione acustica dell'emissione ponderato A nelle postazioni di lavoro, se supera 70 dB (A); se tale livello non supera 70 dB (A), deve essere indicato;\nii) il valore massimo della pressione acustica istantanea ponderata C nelle postazioni di lavoro, se supera 63 Pa (130 dB rispetto a 20 μPa),\niii) il livello di potenza acustica ponderato A emesso dalla macchina o dal prodotto correlato, se il livello di pressione acustica dell'emissione ponderato A nelle postazioni di lavoro supera 80 dB (A). I suddetti valori devono essere quelli misurati effettivamente sulla macchina o sul prodotto correlato in questione, oppure quelli stabiliti sulla base di misurazioni effettuate su una macchina o un prodotto correlato tecnicamente comparabili rappresentativi della macchina o del prodotto correlato da produrre. Quando si tratta di una macchina o di un prodotto correlato di grandissime dimensioni, invece del livello di potenza acustica ponderato A possono essere indicati livelli di pressione acustica dell'emissione ponderati A in appositi punti intorno alla macchina o al prodotto correlato. Qualora non possano essere applicate le norme armonizzate o le specifiche comuni adottate dalla Commissione conformemente all'articolo 20, paragrafo 3, i dati acustici devono essere misurati usando il codice di misurazione più appropriato adeguato alla macchina o al prodotto correlato. Ogniqualvolta sono indicati i valori dell'emissione acustica, devono essere specificate le incertezze relative a tali valori. Devono essere descritte le condizioni di funzionamento della macchina o del prodotto correlato durante la misurazione e i metodi utilizzati per effettuarla. Se la postazione o le postazioni di lavoro non sono o non possono essere definite, i livelli di pressione acustica ponderati A devono essere misurati a 1 m dalla superficie della macchina o del prodotto correlato e a 1,60 m di altezza dal suolo o dalla piattaforma di accesso. Devono essere indicati la posizione e il valore della pressione acustica massima. Per quanto concerne le macchine o i prodotti correlati atti a ridurre il rumore, le istruzioni per l’uso devono specificare, se del caso, le modalità per montare e installare correttamente tali dispositivi (cfr. anche il punto 1.7.4.2, punto 1, lettera j)). Qualora atti giuridici specifici dell'Unione stabiliscano altre indicazioni per la misurazione del livello di pressione acustica o del livello di potenza acustica, tali atti giuridici si applicano e non si applicano le prescrizioni corrispondenti del presente punto;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il livello di pressione acustica al posto operatore",
+   "Le istruzioni riportano il valore massimo della pressione acustica istantanea",
+   "Le istruzioni specificano il livello di potenza acustica se supera 80 dB(A)",
+   "Le istruzioni descrivono le condizioni di misurazione e i metodi utilizzati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-v",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera v)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. v)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nv) le informazioni sulle precauzioni, sui dispositivi e sui mezzi necessari per soccorrere immediatamente e con cautela le persone;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i dispositivi necessari per il soccorso immediato delle persone",
+   "Le istruzioni descrivono i mezzi di soccorso da utilizzare in caso di emergenza",
+   "Le istruzioni forniscono istruzioni dettagliate per la manipolazione sicura delle persone coinvolte"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-w",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera w)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. w)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nw) se le macchine o i prodotti correlati possono emettere radiazioni non ionizzanti che potrebbero nuocere alle persone, in particolare se portatrici di dispositivi medici impiantabili attivi o non attivi, le informazioni riguardanti le radiazioni emesse per l'operatore e le persone esposte;",
+  "old_condition": "La macchina è in grado di emettere radiazioni non ionizzanti potenzialmente nocive",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione per l'operatore esposto alle radiazioni",
+   "Le istruzioni descrivono i limiti di esposizione alle radiazioni non ionizzanti",
+   "Le istruzioni forniscono informazioni sui dispositivi medici impiantabili a rischio di interferenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-x",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera x)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. x)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nx) se la progettazione delle macchine o dei prodotti correlati consente emissioni di sostanze pericolose dalla macchina o dal prodotto correlato, le caratteristiche del dispositivo di captazione, filtrazione o scarico, qualora tale dispositivo non sia fornito con la macchina o il prodotto correlato, nonché una qualsiasi delle informazioni seguenti:\ni) la portata per l'emissione di sostanze e materiali pericolosi dalla macchina o dal prodotto correlato;\nii) la concentrazione di sostanze e materiali pericolosi attorno alla macchina o al prodotto correlato provenienti da questi ultimi o da materiali o sostanze utilizzati con la macchina o il prodotto correlato;\niii) l'efficacia del dispositivo di captazione o filtrazione e le condizioni da rispettare per preservarne l'efficacia nel tempo. I valori di cui al primo comma devono essere misurati effettivamente per la macchina o il prodotto correlato in questione oppure stabiliti in base a misure relative a una unità di macchina o prodotto correlato tecnicamente comparabile, rappresentativa dello stato dell'arte.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le caratteristiche del dispositivo di captazione o filtrazione",
+   "Le istruzioni riportano la portata delle emissioni di sostanze pericolose",
+   "Le istruzioni descrivono la concentrazione di sostanze pericolose nell'ambiente di lavoro"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.5",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.5",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Pubblicazioni illustrative o promozionali",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le pubblicazioni illustrative o promozionali che descrivono la macchina o il prodotto correlato non possono essere in contraddizione con le istruzioni per l'uso per quanto concerne gli aspetti relativi alla salute e alla sicurezza. Le pubblicazioni illustrative o promozionali che descrivono le caratteristiche delle prestazioni della macchina o del prodotto correlato devono contenere le stesse informazioni delle istruzioni per l'uso per quanto concerne le emissioni.",
+  "old_condition": "",
+  "old_points": [
+   "Le pubblicazioni promozionali menzionano le emissioni come indicato nelle istruzioni",
+   "Le caratteristiche di prestazione sono descritte in modo coerente con le istruzioni per l'uso",
+   "Le informazioni sulle emissioni sono presenti sia nel manuale che nelle pubblicazioni promozionali"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.1.1",
+  "law": "MR",
+  "ref": "All. III, punto 2.1.1",
+  "group": "Allegato III — 2.1. Macchine e prodotti correlati alimentari e macchine e prodotti correlati per prodotti cosmetici o farmaceutici",
+  "title": "Considerazioni generali",
+  "tags": [
+   "alimentari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati destinati ad essere utilizzati per prodotti alimentari o per prodotti cosmetici o farmaceutici devono essere progettati e costruiti in modo da evitare qualsiasi rischio di infezione, di malattia e di contagio.\nDevono essere rispettati i requisiti seguenti:\na) i materiali a contatto o che possono venire a contatto con prodotti alimentari, acque destinate al consumo umano o prodotti cosmetici o farmaceutici devono soddisfare le condizioni stabilite nei pertinenti agli atti giuridici dell'Unione; la macchina o il prodotto correlato devono essere progettati e costruiti in modo tale che detti materiali possano essere puliti prima di ogni utilizzazione e, se ciò non è possibile, devono essere utilizzati elementi monouso;\nb) tutte le superfici a contatto con i prodotti alimentari, le acque destinate al consumo umano o i prodotti cosmetici o farmaceutici ad eccezione di quelle degli elementi monouso devono:\ni) essere lisce e prive di rugosità o spazi in cui possono fermarsi materie organiche; lo stesso requisito va rispettato per i collegamenti fra le superfici;\nii) essere progettate e costruite in modo da ridurre al minimo le sporgenze, i bordi e gli angoli;\niii) poter essere pulite e disinfettate facilmente, se del caso, dopo aver asportato le parti facilmente smontabili; gli angoli interni devono essere raccordati con raggi tali da consentire una pulizia completa;\nc) i liquidi e i gas aerosol provenienti da prodotti alimentari, cosmetici o farmaceutici e dai prodotti di pulizia, di disinfezione e di risciacquatura devono poter defluire completamente verso l'esterno della macchina o del prodotto correlato (se possibile in una posizione «pulizia»);\nd) le macchine o i prodotti correlati devono essere progettati e costruiti al fine di evitare l'ingresso di sostanze o di esseri viventi, in particolare insetti, o accumuli di materie organiche, in zone impossibili da pulire;\ne) le macchine o i prodotti correlati devono essere progettati e costruiti in modo che i prodotti ausiliari pericolosi per la salute, inclusi i lubrificanti, non possano entrare in contatto con i prodotti alimentari o l’acqua destinata al consumo umano, cosmetici o farmaceutici. All'occorrenza, la macchina o i prodotti correlati devono essere progettati e costruiti per permettere di verificare regolarmente il rispetto di tale requisito.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono i materiali a contatto con prodotti alimentari e indicano la loro conformità normativa",
+   "Le superfici a contatto sono progettate per essere lisce, prive di rugosità e facilmente pulibili",
+   "La macchina è progettata per permettere il deflusso completo dei liquidi e gas aerosol verso l'esterno"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.1.2",
+  "law": "MR",
+  "ref": "All. III, punto 2.1.2",
+  "group": "Allegato III — 2.1. Macchine e prodotti correlati alimentari e macchine e prodotti correlati per prodotti cosmetici o farmaceutici",
+  "title": "Istruzioni per l'uso",
+  "tags": [
+   "alimentari"
+  ],
+  "always": false,
+  "text": "Le istruzioni per l'uso delle macchine o dei prodotti correlati alimentari e delle macchine o dei prodotti correlati per prodotti cosmetici o farmaceutici devono indicare i prodotti e i metodi raccomandati per la pulizia, la disinfezione e la risciacquatura non solo delle parti facilmente accessibili ma anche delle parti alle quali è impossibile o sconsigliato accedere.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i metodi di pulizia delle parti difficilmente accessibili",
+   "Le istruzioni menzionano le tecniche di disinfezione specifiche per la macchina",
+   "Le istruzioni descrivono i passaggi per la risciacquatura completa della macchina",
+   "Le istruzioni elencano i prodotti consigliati per la pulizia e la disinfezione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.2.1",
+  "law": "MR",
+  "ref": "All. III, punto 2.2.1",
+  "group": "Allegato III — 2.2. Macchine o prodotti correlati portatili tenuti o condotti a mano",
+  "title": "Considerazioni generali",
+  "tags": [
+   "portatili"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati portatili tenuti o condotti a mano devono:\na) a seconda del tipo, avere una superficie di appoggio sufficiente e disporre in numero sufficiente di mezzi di presa e di mantenimento correttamente dimensionati, sistemati in modo da garantire la stabilità della macchina o del prodotto correlato nelle condizioni di funzionamento previste;\nb) tranne quando sia tecnicamente impossibile o quando esista un dispositivo di comando indipendente, se le impugnature non possono essere abbandonate in tutta sicurezza, essere muniti di dispositivi di comando manuali per l'avviamento e l'arresto disposti in modo tale che l'operatore non debba abbandonare i mezzi di presa per azionarli;\nc) essere esenti dai rischi dovuti all'avviamento intempestivo o al mantenimento in funzione dopo che l'operatore ha abbandonato i mezzi di presa; se tale requisito non è tecnicamente realizzabile, occorre adottare misure compensative;\nd) consentire, all'occorrenza, l'osservazione visiva delle zone pericolose e dell'azione dell'utensile sul materiale lavorato;\ne) disporre di un dispositivo o un sistema di scarico correlato, con una presa di collegamento di estrazione o un sistema equivalente per captare o ridurre le emissioni di sostanze pericolose. Il presente requisito non si applica quando comporta un nuovo pericolo o quando la funzione principale della macchina o del prodotto correlato consiste nell'applicazione di sostanze pericolose e non si applica nemmeno alle emissioni dei motori a combustione interna;\nf) essere progettati e costruiti in modo che le impugnature delle macchine o dei prodotti correlati portatili consentano un avviamento e un arresto facili e agevoli.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la posizione e il numero dei mezzi di presa",
+   "Le istruzioni descrivono i dispositivi di comando manuali per avviamento e arresto",
+   "Le istruzioni menzionano misure compensative per l'avviamento intempestivo",
+   "Le istruzioni indicano le aree visibili per osservare le zone pericolose"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.2.1.1",
+  "law": "MR",
+  "ref": "All. III, punto 2.2.1.1",
+  "group": "Allegato III — 2.2. Macchine o prodotti correlati portatili tenuti o condotti a mano",
+  "title": "Istruzioni per l'uso",
+  "tags": [
+   "portatili"
+  ],
+  "always": false,
+  "text": "Le istruzioni per l'uso devono fornire le indicazioni seguenti relative alle vibrazioni, espresse come accelerazione (m/s2) e trasmesse da macchine o prodotti correlati portatili tenuti o condotti a mano:\na) il valore totale delle vibrazioni continue a cui è sottoposto il sistema mano-braccio;\nb) il valore medio dell'ampiezza di picco dell'accelerazione ottenuto da vibrazioni da urti ripetuti, cui è sottoposto il sistema mano-braccio;\nc) l'incertezza di entrambe le misurazioni.\nI valori di cui al primo comma devono essere quelli misurati effettivamente per la macchina o il prodotto correlato in questione oppure quelli stabiliti in base a misure relative a una macchina o un prodotto correlato tecnicamente comparabili, rappresentativi dello stato dell'arte.\nQualora non possano essere applicate le norme armonizzate o le specifiche comuni adottate dalla Commissione conformemente all'articolo 20, paragrafo 3, i dati sulle vibrazioni devono essere misurati usando il codice di misurazione più appropriato per la macchina o al prodotto correlato.\nDevono essere specificati le condizioni di funzionamento della macchina durante la misurazione e i metodi utilizzati per effettuarla oppure il riferimento alla norma armonizzata applicata.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il valore totale delle vibrazioni sul sistema mano-braccio",
+   "Le istruzioni riportano il valore medio dell'ampiezza di picco delle vibrazioni",
+   "Le istruzioni specificano l'incertezza delle misurazioni delle vibrazioni",
+   "Le istruzioni menzionano le condizioni di funzionamento durante la misurazione delle vibrazioni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.2.2.1",
+  "law": "MR",
+  "ref": "All. III, punto 2.2.2.1",
+  "group": "Allegato III — 2.2. Macchine o prodotti correlati portatili tenuti o condotti a mano",
+  "title": "Considerazioni generali",
+  "tags": [
+   "portatili"
+  ],
+  "always": false,
+  "text": "Le macchine o prodotti correlati portatili per il fissaggio e altre macchine o altri prodotti correlati ad impatto devono essere progettati e costruiti in modo da:\na) effettuare la trasmissione dell'energia al pezzo propulso tramite un componente intermedio che non si separa dal dispositivo;\nb) impedire l'impatto, tramite un dispositivo di consenso, se la macchina o il prodotto correlato non sono posizionati correttamente con una pressione adeguata sul materiale di base,\nc) impedire l'azionamento involontario; se del caso, per azionare l'impatto deve essere necessaria una sequenza appropriata di azioni sul dispositivo di consenso e sul dispositivo di comando;\nd) impedire l'azionamento intempestivo durante la movimentazione o in caso di urto;\ne) poter effettuare le operazioni di carico e scarico facilmente e in condizioni di sicurezza.\nSe necessario, deve essere possibile dotare il dispositivo di uno o più ripari paraschegge e i ripari appropriati devono essere forniti dal fabbricante della macchina o del prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente il componente intermedio per la trasmissione dell'energia",
+   "Il manuale indica l'uso di un dispositivo di consenso per prevenire l'impatto non intenzionale",
+   "Le istruzioni spiegano la sequenza necessaria per azionare l'impatto in modo sicuro",
+   "La macchina è dotata di ripari paraschegge conforme alle specifiche del produttore"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.2.2.2",
+  "law": "MR",
+  "ref": "All. III, punto 2.2.2.2",
+  "group": "Allegato III — 2.2. Macchine o prodotti correlati portatili tenuti o condotti a mano",
+  "title": "Istruzioni per l'uso",
+  "tags": [
+   "portatili"
+  ],
+  "always": false,
+  "text": "Le istruzioni per l'uso devono fornire le indicazioni necessarie riguardanti:\na) gli accessori e le attrezzature intercambiabili che possono essere impiegati con la macchina o con il prodotto correlato;\nb) gli elementi appropriati per il fissaggio o altro impatto da utilizzare con la macchina o con il prodotto correlato;\nc) se del caso, le cartucce appropriate da utilizzare.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano gli accessori intercambiabili compatibili con la macchina",
+   "Le istruzioni descrivono gli elementi necessari per fissare la macchina in sicurezza",
+   "Le istruzioni specificano le cartucce appropriate da utilizzare con la macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.3",
+  "law": "MR",
+  "ref": "All. III, punto 2.3",
+  "group": "Allegato III — 2. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER TALUNE CATEGORIE DI MACCHINE O DI PRODOTTI CORRELATI",
+  "title": "Macchine o prodotti correlati per la lavorazione del legno e di materie con caratteristiche fisiche",
+  "tags": [
+   "legno"
+  ],
+  "always": false,
+  "text": "simili Le macchine o i prodotti correlati per la lavorazione del legno e di materie con caratteristiche fisiche simili devono rispettare i requisiti seguenti:\na) la macchina o il prodotto correlato devono essere progettati, costruiti o attrezzati in modo che il pezzo da lavorare possa essere posizionato e guidato in condizioni di sicurezza; quando il pezzo è tenuto manualmente su un banco di lavoro, quest'ultimo deve garantire una stabilità sufficiente durante la lavorazione e non deve ostacolare lo spostamento del pezzo;\nb) se la macchina o il prodotto correlato possono essere utilizzati in condizioni che comportano un rischio di proiezione di pezzi o loro parti, essi devono essere progettati, costruiti o attrezzati in modo da impedire tale proiezione o, qualora ciò non sia possibile, in modo che la proiezione non produca danni per l'operatore e/o le persone esposte;\nc) la macchina o il prodotto correlato devono essere equipaggiati di freno automatico che arresti l'utensile in tempo sufficientemente breve in caso di rischio di contatto con l'utensile in fase di rallentamento;\nd) quando l'utensile è integrato in una macchina non completamente automatizzata o in un prodotto correlato non completamente automatizzato, tale macchina o prodotto correlato devono essere progettati e costruiti in modo tale da eliminare o ridurre i rischi di infortuni alle persone.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le modalità di posizionamento sicuro del pezzo da lavorare",
+   "La macchina è dotata di freno automatico per l'utensile in caso di rallentamento",
+   "Le istruzioni descrivono misure per prevenire proiezioni di parti durante la lavorazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.2",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.2",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Considerazioni generali",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Il fabbricante di una macchina o di prodotti correlati per l'applicazione di prodotti fitosanitari deve garantire che sia effettuata una valutazione del rischio di esposizione non intenzionale dell'ambiente ai prodotti fitosanitari, in conformità della procedura di valutazione del rischio e di riduzione del rischio di cui ai Principi generali, punto 1.\nLe macchine o i prodotti correlati per l'applicazione di prodotti fitosanitari devono essere progettati e costruiti tenendo in considerazione i risultati della valutazione del rischio di cui al primo comma in modo da poter essere utilizzati, regolati e sottoposti a manutenzione senza causare un'esposizione non intenzionale dell'ambiente ai prodotti fitosanitari.\nDevono sempre essere evitate fuoriuscite.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per prevenire fuoriuscite di prodotti fitosanitari",
+   "La valutazione dei rischi include analisi dell'esposizione non intenzionale dell'ambiente",
+   "I disegni tecnici mostrano dispositivi per contenere i prodotti fitosanitari durante l'uso",
+   "Le dichiarazioni tecniche menzionano misure per ridurre il rischio di contaminazione ambientale"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.3",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.3",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Comando e controllo",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Devono essere possibili, con facilità e accuratezza, il comando, il controllo e l'arresto immediato dell'applicazione di prodotti fitosanitari dalle postazioni operative.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente le procedure per il comando e l'arresto immediato",
+   "Le postazioni operative sono indicate con precisione nel manuale tecnico",
+   "Le istruzioni forniscono informazioni dettagliate sul controllo dell'applicazione dei prodotti fitosanitari"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.4",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.4",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Riempimento e svuotamento",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo tale da facilitare il riempimento preciso con la quantità necessaria di prodotti fitosanitari e assicurare lo svuotamento agevole e completo, prevenendo ogni dispersione accidentale di prodotti fitosanitari ed evitando ogni contaminazione di fonti idriche nel corso di tali operazioni.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono il processo di riempimento con precisione",
+   "Le istruzioni indicano le procedure per lo svuotamento completo",
+   "Le istruzioni menzionano misure per prevenire dispersioni accidentali",
+   "Le istruzioni descrivono come evitare la contaminazione delle fonti idriche"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.5.1",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.5.1",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Tasso di applicazione",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere muniti di dispositivi che permettano di regolare in modo facile, preciso e affidabile il tasso di applicazione.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono come regolare il tasso di applicazione",
+   "La macchina presenta un sistema per impostare il tasso di applicazione",
+   "Le specifiche tecniche indicano la gamma di regolazione del tasso di applicazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.5.2",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.5.2",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Distribuzione, deposizione e dispersione di prodotti fitosanitari",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da assicurare che il prodotto fitosanitario sia depositato nelle zone bersaglio, da ridurre al minimo le perdite nelle altre zone e da evitare la dispersione di prodotti fitosanitari nell'ambiente. Se del caso, deve essere garantita una distribuzione uniforme e una deposizione omogenea.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono il sistema di distribuzione del prodotto fitosanitario",
+   "Le istruzioni indicano le misure per ridurre la dispersione ambientale",
+   "Le istruzioni menzionano dispositivi per garantire una deposizione omogenea"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.5.3",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.5.3",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Prove",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Per accertare se le componenti corrispondenti della macchina o del prodotto correlato sono conformi ai requisiti stabiliti nei punti 2.4.5.1 e 2.4.5.2, il fabbricante deve effettuare, o far effettuare, prove adeguate per ogni tipo di macchina o di prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di dispositivi di protezione contro le emissioni di sostanze tossiche",
+   "Le istruzioni descrivono le procedure per il controllo delle emissioni di sostanze nocive",
+   "La macchina è munita di sistemi di allarme per la segnalazione di condizioni pericolose"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.5.4",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.5.4",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Dispersione durante la disattivazione",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo tale da prevenire la dispersione in fase di disattivazione della funzione di applicazione dei prodotti fitosanitari.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per la disattivazione sicura del sistema di applicazione",
+   "La documentazione include schemi che mostrano il sistema di chiusura del circuito di applicazione",
+   "Le dichiarazioni tecniche indicano la presenza di dispositivi di interruzione automatica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.6.1",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.6.1",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Pulizia",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da consentire una pulizia agevole e completa senza contaminazione dell'ambiente.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono i procedimenti di pulizia accessibili a tutti i componenti della macchina",
+   "Le istruzioni indicano le aree critiche da pulire per prevenire la contaminazione",
+   "La macchina è dotata di accessi facilitati per la pulizia di parti interne e di componenti mobili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.6.2",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.6.2",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Riparazione",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da facilitare la sostituzione delle parti usurate senza contaminazione dell'ambiente.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano come sostituire le parti usurate senza contaminare l'ambiente",
+   "La documentazione descrive le procedure per la manutenzione senza rischio di contaminazione",
+   "Le schemi mostrano accessi facilitati per la sostituzione delle parti senza contaminazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.7",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.7",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Ispezioni",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Deve essere possibile collegare con facilità alle macchine o ai prodotti correlati gli strumenti di misura necessari per verificare il buon funzionamento degli stessi.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive chiaramente le procedure per l'installazione degli strumenti di misura",
+   "La valutazione dei rischi include la verifica della correttezza delle misurazioni effettuate",
+   "Sono indicati i tipi di strumenti necessari per il controllo del funzionamento della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.8",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.8",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Marcatura di ugelli, filtri a cestello e altri filtri",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Ugelli, filtri a cestello e altri filtri devono essere contrassegnati in modo che il loro tipo e la loro dimensione possano essere identificati chiaramente.",
+  "old_condition": "",
+  "old_points": [
+   "I filtri sono contrassegnati con il loro tipo e dimensione visibili sul manuale tecnico",
+   "Sul manuale sono indicati i dettagli del tipo e della dimensione degli ugelli",
+   "Gli schemi tecnici mostrano la marcatura chiara dei filtri a cestello e degli ugelli"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.9",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.9",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Indicazione del prodotto fitosanitario in uso",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Se del caso, le macchine o i prodotti correlati devono essere muniti di uno specifico supporto su cui l'operatore possa apporre il nome del prodotto fitosanitario in uso.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il prodotto fitosanitario in uso",
+   "La macchina presenta un supporto dedicato per l'apposizione del prodotto fitosanitario",
+   "La valutazione dei rischi menziona il prodotto fitosanitario in uso",
+   "Lo schema tecnico mostra un supporto per l'indicazione del prodotto fitosanitario"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-2.4.10",
+  "law": "MR",
+  "ref": "All. III, punto 2.4.10",
+  "group": "Allegato III — 2.4. Macchine o prodotti correlati per l'applicazione di prodotti fitosanitari",
+  "title": "Istruzioni per l'uso",
+  "tags": [
+   "fitosanitari"
+  ],
+  "always": false,
+  "text": "Nelle istruzioni per l'uso devono figurare le indicazioni seguenti:\na) le precauzioni da adottare durante le operazioni di miscelazione, carico, applicazione, svuotamento, lavaggio, riparazione e trasporto per evitare la contaminazione dell'ambiente;\nb) le condizioni dettagliate d'uso per i diversi ambienti operativi previsti, comprese le corrispondenti predisposizioni e regolazioni richieste per assicurare la deposizione del prodotto fitosanitario nelle zone bersaglio, riducendo al minimo le perdite nelle altre zone e, se del caso, per assicurare la distribuzione uniforme e la deposizione omogenea del prodotto fitosanitario;\nc) la gamma dei tipi e delle dimensioni degli ugelli, dei filtri a cestello e degli altri filtri che possono essere utilizzati con la macchina o il prodotto correlato;\nd) la frequenza dei controlli e i criteri e i metodi per la sostituzione delle parti soggette a usura che influiscono sul corretto funzionamento della macchina o del prodotto correlato, come gli ugelli, i filtri a cestello e gli altri filtri;\ne) le specifiche della taratura, della manutenzione giornaliera, della preparazione per l'inverno e degli altri controlli necessari per assicurare il corretto funzionamento della macchina o del prodotto correlato;\nf) i tipi di prodotto fitosanitario che possono provocare anomalie nel funzionamento della macchina o del prodotto correlato;\ng) l'indicazione che l'operatore dovrebbe tenere aggiornato il nome del prodotto fitosanitario in uso nel supporto specifico di cui al punto 2.4.9;\nh) il collegamento e l'uso di attrezzature e di accessori speciali e le necessarie precauzioni da prendere;\ni) l'indicazione che la macchina o il prodotto correlato possono essere soggetti ai requisiti nazionali in materia di ispezioni regolari da parte degli organi designati, come previsto nella direttiva 2009/128/CE del Parlamento europeo e del Consiglio (2);\nj) le caratteristiche delle macchine o dei prodotti correlati che devono essere sottoposte a controllo per assicurarne il corretto funzionamento;\nk) le istruzioni per il collegamento dei necessari strumenti di misurazione.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le precauzioni per evitare la contaminazione ambientale durante l'uso",
+   "Le istruzioni descrivono le condizioni d'uso per diversi ambienti operativi e le regolazioni necessarie",
+   "Le istruzioni elencano i tipi e le dimensioni degli ugelli e filtri compatibili con la macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.2.1",
+  "law": "MR",
+  "ref": "All. III, punto 3.2.1",
+  "group": "Allegato III — 3.2. Postazioni di lavoro",
+  "title": "Postazione di guida",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "La visibilità dalla postazione di guida deve essere tale da consentire al conducente di far muovere la macchina o il prodotto correlato e i suoi utensili nelle condizioni di impiego ragionevolmente prevedibili, in tutta sicurezza per sé stesso e per le persone esposte. In caso di necessità, adeguati dispositivi devono rimediare ai rischi dovuti a insufficiente visibilità diretta.\nLa macchina o il prodotto correlato su cui è trasportato il conducente devono essere progettati e costruiti in modo che alle postazioni di guida non si presentino per il conducente rischi dovuti al contatto involontario con le ruote o con i cingoli.\nSe le dimensioni lo consentono e se i rischi non ne sono aumentati, la postazione di guida del conducente trasportato deve essere progettata e costruita in modo da poter essere dotata di cabina. La cabina deve comportare un luogo destinato alla sistemazione delle istruzioni per l'uso necessarie al conducente.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni per l'uso sono disponibili nella cabina del conducente",
+   "La visibilità dalla postazione di guida è descritta come sufficiente per le operazioni previste",
+   "La macchina è progettata per prevenire contatti involontari con le ruote o i cingoli",
+   "La documentazione indica dispositivi supplementari per migliorare la visibilità in caso di necessità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.2.2",
+  "law": "MR",
+  "ref": "All. III, punto 3.2.2",
+  "group": "Allegato III — 3.2. Postazioni di lavoro",
+  "title": "Sedili",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Laddove vi sia il rischio che gli operatori o altre persone trasportati dalla macchina possano essere schiacciati tra elementi della macchina e l'ambiente circostante in caso di ribaltamento o rovesciamento laterale, in particolare per le macchine munite di una struttura di protezione di cui ai punti 3.4.3 o 3.4.4:\na) la macchina deve essere progettata o munita di un sistema di ritenuta in modo da mantenere le persone sui loro sedili o all'interno della struttura di protezione, senza opporsi ai movimenti necessari alle operazioni né ai movimenti dovuti alla sospensione dei sedili rispetto alla struttura;\nnon deve essere possibile lo spostamento della macchina laddove vi sia un rischio significativo di ribaltamento o rovesciamento laterale e non sia utilizzato un sistema di ritenuta;\ndetti sistemi di ritenuta o soluzioni devono tenere conto dei principi dell'ergonomia e non devono essere montati se aumentano i rischi;\nb) deve essere emesso un segnale visivo e sonoro presso la postazione di guida per avvisare il conducente quando si trova in posizione di guida e il sistema di ritenuta non è in uso.",
+  "old_condition": "La macchina è dotata di una struttura di protezione conforme ai punti 3.4.3 o 3.4.4",
+  "old_points": [
+   "La macchina è dotata di un sistema di ritenuta che mantiene le persone sui sedili senza ostacolare i movimenti",
+   "Il sistema di ritenuta è progettato in base ai principi ergonomici e non aumenta i rischi per l'operatore",
+   "Il manuale descrive chiaramente l'uso e la manutenzione del sistema di ritenuta"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.2.3",
+  "law": "MR",
+  "ref": "All. III, punto 3.2.3",
+  "group": "Allegato III — 3.2. Postazioni di lavoro",
+  "title": "Postazioni per altre persone",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Se le condizioni di utilizzazione prevedono che, oltre al conducente, siano saltuariamente o regolarmente trasportate sulla macchina o vi lavorino altre persone, devono essere previste postazioni adeguate affinché il loro trasporto o lavoro avvenga senza rischi.\nIl punto 3.2.1, secondo e terzo comma, si applica anche alle postazioni delle persone diverse dal conducente.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le posizioni di lavoro sicure per le persone trasportate",
+   "Le postazioni per altre persone sono descritte con dettaglio tecnico nel manuale",
+   "La macchina ha postazioni specifiche per il trasporto di persone non conducenti",
+   "Le istruzioni menzionano misure di protezione per le postazioni non conducenti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.2.4",
+  "law": "MR",
+  "ref": "All. III, punto 3.2.4",
+  "group": "Allegato III — 3.2. Postazioni di lavoro",
+  "title": "Funzione di supervisione",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Se del caso, le macchine o i prodotti correlati mobili autonomi devono disporre di una funzione di supervisione specifica per la modalità autonoma. Tale funzione deve consentire al supervisore di ricevere da remoto informazioni dalla macchina. La funzione di supervisione deve consentire soltanto azioni per arrestare e avviare la macchina o il prodotto correlato da remoto o spostarli in una posizione sicura e in uno stato sicuro per evitare di provocare altri rischi. Deve inoltre essere progettata e costruita in maniera tale da consentire tali azioni soltanto quando il supervisore può vedere direttamente o indirettamente la zona di movimento e di lavoro della macchina e i dispositivi di protezione sono operativi.\nLe informazioni che il supervisore riceve dalla macchina quando la funzione di supervisione è attiva devono consentire al supervisore di disporre di una visuale completa e precisa del funzionamento, del movimento e del posizionamento sicuro della macchina nella sua zona di spostamento e lavoro.\nTali informazioni devono avvisare il supervisore del verificarsi di situazioni impreviste o pericolose presenti o imminenti, che richiedono il suo intervento.\nSe la funzione di supervisione non è attiva, la macchina non deve essere in grado di funzionare.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le funzioni di supervisione attive in modalità autonoma",
+   "Le informazioni fornite consentono una visuale completa del movimento e posizionamento della macchina",
+   "Le istruzioni indicano come il supervisore possa interrompere o avviare la macchina da remoto",
+   "Le informazioni avvisano del verificarsi di situazioni impreviste o pericolose durante la modalità autonoma"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.3",
+  "law": "MR",
+  "ref": "All. III, punto 3.3",
+  "group": "Allegato III — 3. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER OVVIARE AI RISCHI DOVUTI ALLA MOBILITÀ",
+  "title": "Sistemi di comando",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Se necessario, devono essere previsti sistemi atti ad impedire l’uso non autorizzato dei comandi.\nNelle macchine o nei prodotti correlati dotati di telecomando, ogni unità di comando deve indicare chiaramente quali siano le macchine o i prodotti correlati che essa è destinata a comandare.\nIl sistema di telecomando deve essere progettato e costruito in modo da influenzare soltanto:\na) la macchina o il prodotto correlato in questione;\nb) le funzioni in questione.\nLe macchine o i prodotti correlati dotati di telecomando devono essere progettati e costruiti in modo da rispondere unicamente ai segnali delle unità di comando previste.\nPer le macchine o i prodotti correlati mobili autonomi, il sistema di comando deve essere progettato in maniera tale da svolgere le funzioni di sicurezza autonomamente, come stabilito al presente punto, anche quando le azioni sono ordinate utilizzando una funzione di supervisione da remoto.",
+  "old_condition": "",
+  "old_points": [
+   "Le unità di telecomando indicano chiaramente le macchine a cui sono destinati",
+   "Il sistema di telecomando influisce solo sulla funzione specifica della macchina",
+   "La macchina risponde esclusivamente ai segnali delle unità di comando previste",
+   "Il sistema di comando assicura le funzioni di sicurezza anche in assenza di supervisione da remoto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.3.1",
+  "law": "MR",
+  "ref": "All. III, punto 3.3.1",
+  "group": "Allegato III — 3.3. Sistemi di comando",
+  "title": "Dispositivi di controllo",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Dalla postazione di manovra il conducente deve poter azionare tutti i dispositivi di comando necessari al funzionamento della macchina o del prodotto correlato, tranne per quanto riguarda le funzioni che possono essere esercitate in condizioni di sicurezza solo mediante dispositivi di comando collocati altrove. Dette funzioni includono, in particolare, quelle di cui sono responsabili operatori diversi dal conducente o per le quali è necessario che il conducente lasci la postazione di manovra per comandarle in condizioni di sicurezza.\nI pedali eventuali devono essere progettati, costruiti e disposti in modo che possano essere azionati da un conducente in modo sicuro con il minimo rischio di azionamento errato. Devono avere una superficie antisdrucciolo ed essere facili da pulire.\nQuando il loro azionamento può comportare pericoli, in particolare movimenti pericolosi, i dispositivi di comando, ad esclusione di quelli a posizioni predeterminate, devono ritornare in posizione neutra non appena l'operatore li lascia liberi.\nNel caso di una macchina a ruote, il meccanismo di sterzo deve essere progettato e costruito in modo da ridurre la forza dei movimenti bruschi del volante o della leva di sterzo, dovuti ai colpi subiti dalle ruote sterzanti.\nIl comando di blocco del differenziale deve essere progettato e disposto in modo da permettere di sbloccare il differenziale quando la macchina è in movimento.\nIl sesto comma del punto 1.2.2, concernente i segnali di avviamento sonori e/o visivi, si applica unicamente in caso di retromarcia.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive chiaramente la posizione e l'uso dei dispositivi di comando",
+   "I pedali sono progettati con superficie antisdrucciolo e facili da pulire",
+   "I dispositivi di comando ritornano in posizione neutra quando l'operatore li lascia",
+   "Il comando di blocco del differenziale permette lo sblocco in movimento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.3.2",
+  "law": "MR",
+  "ref": "All. III, punto 3.3.2",
+  "group": "Allegato III — 3.3. Sistemi di comando",
+  "title": "Avviamento/spostamento",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Qualsiasi spostamento comandato di una macchina semovente con conducente trasportato deve essere possibile soltanto se il conducente si trova al posto di comando.\nQuando, per il suo lavoro, una macchina è attrezzata con dispositivi che superano la sua sagoma normale (ad esempio stabilizzatore, freccia, ecc.), è necessario che il conducente disponga di mezzi che gli consentano di verificare facilmente, prima di spostare la macchina, che detti dispositivi siano in una posizione che consente uno spostamento sicuro.\nCiò vale anche per la posizione di tutti gli altri elementi che, per consentire uno spostamento sicuro, devono occupare una posizione definita, se necessario bloccata.\nQuando ciò non genera altri rischi, lo spostamento della macchina deve essere subordinato alla posizione sicura degli elementi sopra indicati.\nUno spostamento involontario della macchina non deve essere possibile all'atto dell'avviamento del motore.\nLo spostamento di una macchina mobile autonoma deve tenere conto dei rischi relativi alla zona nella quale è destinata a muoversi e lavorare.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la posizione sicura degli elementi mobili prima dello spostamento",
+   "La macchina è dotata di dispositivi per verificare la posizione sicura degli accessori esterni",
+   "Lo spostamento è subordinato alla posizione definita di elementi critici per la sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.3.3",
+  "law": "MR",
+  "ref": "All. III, punto 3.3.3",
+  "group": "Allegato III — 3.3. Sistemi di comando",
+  "title": "Funzione di spostamento",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Fatte salve le disposizioni relative alla circolazione stradale, le macchine semoventi e i loro rimorchi devono rispettare i requisiti in materia di rallentamento, di arresto, di frenatura e di immobilizzazione che garantiscano la sicurezza in tutte le condizioni di funzionamento, di carico, di velocità, di caratteristiche del suolo e di pendenza previste.\nIl rallentamento e l'arresto della macchina semovente devono poter essere ottenuti dal conducente attraverso un dispositivo principale. Se la sicurezza lo esige, in caso di guasto del dispositivo principale o in mancanza di energia per azionare tale dispositivo, un dispositivo d'emergenza con un dispositivo di comando interamente indipendente e facilmente accessibile deve consentire il rallentamento e l'arresto.\nSe la sicurezza lo esige, l'immobilizzazione della macchina deve essere mantenuta con un dispositivo di sosta. Questo dispositivo può essere combinato con uno dei dispositivi di cui al secondo comma, se ha un'azione puramente meccanica.\nLe macchine dotate di telecomando devono disporre di sistemi atti ad azionare automaticamente e immediatamente l'arresto e a prevenire il funzionamento potenzialmente pericoloso nelle situazioni seguenti:\na) quando il conducente ne ha perso il controllo;\nb) quando è ricevuto un segnale di arresto;\nc) quando è individuata un'avaria in un elemento del sistema di controllo legato alla sicurezza;\nd) quando un segnale di convalida non è stato rilevato entro un termine specificato.\nIl punto 1.2.4 non si applica alla funzione spostamento.\nLe macchine o i prodotti correlati mobili autonomi devono essere conformi a una delle condizioni seguenti o a entrambe, ove necessario in base alla valutazione del rischio:\ni) devono spostarsi e funzionare in una zona chiusa dotata di un sistema di protezione periferica comprendente ripari o dispositivi di protezione;\nii) devono essere dotati di dispositivi destinati a rilevare qualsiasi essere umano, animale domestico o qualsiasi altro ostacolo nelle loro vicinanze, laddove tali ostacoli potrebbero costituire un rischio per la salute e la sicurezza delle persone o di animali domestici o per il funzionamento sicuro della macchina o del prodotto correlato.\nGli spostamenti di macchine o prodotti correlati mobili correlati con uno o più rimorchi o apparecchiature rimorchiate, tra cui macchine o prodotti correlati mobili autonomi correlati a uno o più rimorchi o apparecchiature trainate, non devono generare rischi per persone, animali domestici o qualsiasi altro ostacolo presente nella zona pericolosa di tali macchine o prodotti correlati nonché di rimorchi o apparecchiature trainate.",
+  "old_condition": "La macchina è dotata di telecomando",
+  "old_points": [
+   "Il sistema di telecomando include un arresto automatico in caso di perdita di controllo",
+   "Il sistema di telecomando attiva l'arresto quando riceve un segnale di arresto",
+   "Il sistema di telecomando prevede la rilevazione di un'eventuale avaria nel sistema di controllo",
+   "Il sistema di telecomando effettua un arresto immediato in caso di mancato rilevamento di un segnale di convalida"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.3.4",
+  "law": "MR",
+  "ref": "All. III, punto 3.3.4",
+  "group": "Allegato III — 3.3. Sistemi di comando",
+  "title": "Spostamento delle macchine con conducente a piedi",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Ogni spostamento di una macchina semovente con conducente a piedi deve essere possibile solo se quest'ultimo esercita un'azione continua sul dispositivo di comando corrispondente. In particolare, nessuno spostamento deve essere possibile all'atto d'avviamento del motore. Il sistema di comando delle macchine con conducente a piedi deve essere progettato in modo da ridurre al minimo i rischi connessi allo spostamento inopinato della macchina verso il conducente, in particolare i rischi:\na) di schiacciamento;\nb) di lesioni provocate da utensili rotanti.\nLa velocità di spostamento della macchina deve essere compatibile con l'andatura del conducente.\nSulle macchine che possono essere munite di un utensile rotante, quest'ultimo non deve potere essere azionato quando il comando di retromarcia è inserito, salvo che lo spostamento della macchina risulti dal movimento dell'utensile. In quest'ultimo caso la velocità in retromarcia deve essere sufficientemente ridotta, in modo da non presentare rischi per il conducente.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la velocità di spostamento compatibile con l'andatura del conducente",
+   "Il sistema di comando richiede un'azione continua del conducente per lo spostamento della macchina",
+   "L'utensile rotante non può essere azionato quando il comando di retromarcia è attivo",
+   "Le istruzioni descrivono misure per ridurre i rischi di schiacciamento durante lo spostamento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.3.5",
+  "law": "MR",
+  "ref": "All. III, punto 3.3.5",
+  "group": "Allegato III — 3.3. Sistemi di comando",
+  "title": "Guasto del circuito di comando",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "In caso di guasto dell'alimentazione del servosterzo, la macchina deve poter essere guidata per il tempo necessario ad arrestarla.\nNel caso di una macchina mobile autonoma, un guasto del meccanismo di sterzo non deve incidere sulla sicurezza della macchina.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le procedure per arrestare la macchina in caso di guasto del servosterzo",
+   "La documentazione include schemi elettrici del circuito di comando del servosterzo",
+   "Le istruzioni indicano il tempo massimo di guida in caso di guasto del servosterzo",
+   "La macchina è dotata di sistema di arresto di emergenza accessibile al conducente"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.1",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.1",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Movimenti incontrollati",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati, costruiti ed eventualmente montati su un supporto mobile in modo che al momento dello spostamento le oscillazioni incontrollate del baricentro non ne pregiudichino la stabilità né comportino sforzi eccessivi per la struttura.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure per limitare le oscillazioni del baricentro durante lo spostamento",
+   "La valutazione dei rischi descrive le strategie per prevenire sforzi eccessivi sulla struttura",
+   "Gli schemi mostrano l'installazione su supporto mobile o dispositivi di stabilizzazione",
+   "La dichiarazione tecnica menziona la progettazione per evitare instabilità durante lo spostamento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.2",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.2",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Elementi mobili di trasmissione",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "In deroga al punto 1.3.8.1, nel caso dei motori, i ripari mobili che impediscono l'accesso agli elementi mobili del compartimento motore non devono essere provvisti di dispositivi di interblocco, a condizione che la loro apertura sia possibile soltanto con l'impiego di un utensile o di una chiave, oppure dopo aver azionato un comando situato sulla postazione di guida, se quest'ultima si trova in una cabina completamente chiusa con una serratura per impedire l'accesso non autorizzato.",
+  "old_condition": "",
+  "old_points": [
+   "I ripari mobili del compartimento motore non sono provvisti di dispositivi di interblocco",
+   "L'apertura dei ripari mobili richiede l'uso di un utensile o di una chiave",
+   "L'apertura dei ripari mobili è possibile solo dopo aver azionato un comando sulla postazione di guida",
+   "La postazione di guida è ubicata in una cabina completamente chiusa con serratura"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.3",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.3",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Ribaltamento o rovesciamento laterale",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Quando per una macchina semovente con conducente, operatore/i o altra/e persona/e trasportati esiste il rischio di ribaltamento o rovesciamento laterale, tale macchina deve essere munita di una struttura di protezione appropriata, a meno che ciò non accresca i rischi.\nDetta struttura deve essere tale da garantire alle persone trasportate, in caso di ribaltamento o rovesciamento laterale, un adeguato volume limite di deformazione.\nAl fine di verificare che la struttura soddisfi il requisito di cui al secondo comma, il fabbricante deve effettuare, o far effettuare, prove appropriate per ciascun tipo di struttura.",
+  "old_condition": "",
+  "old_points": [
+   "La struttura di protezione è descritta nei disegni tecnici con dettagli delle zone di deformazione",
+   "Le istruzioni indicano i limiti di deformazione previsti per la struttura di protezione",
+   "La valutazione dei rischi menziona la presenza di una struttura di protezione adeguata",
+   "Le prove di resistenza sono documentate nel fascicolo tecnico della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.4",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.4",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Caduta di oggetti",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Quando per una macchina semovente con conducente, operatore/i altra/e o persona/e trasportati esistono rischi dovuti alla caduta di oggetti o di materiali, essa deve essere progettata e costruita in modo da tenere conto di tali rischi; essa deve inoltre essere munita, se le sue dimensioni lo consentono, di una struttura di protezione appropriata.\nDetta struttura deve esser tale che in caso di caduta di oggetti o di materiali sia garantito alla persona o alle persone trasportate un adeguato volume limite di deformazione.\nAl fine di verificare che la struttura soddisfi il requisito di cui al secondo comma, il fabbricante deve effettuare, o far effettuare, prove appropriate per ciascun tipo di struttura.",
+  "old_condition": "",
+  "old_points": [
+   "La struttura di protezione è descritta nei disegni tecnici con dettaglio delle caratteristiche costruttive",
+   "Le istruzioni indicano le misure di protezione contro la caduta di oggetti o materiali",
+   "La documentazione include prove effettuate per verificare la deformazione limitata della struttura",
+   "La macchina è dotata di una struttura di protezione conforme alle specifiche tecniche"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.5",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.5",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Mezzi di accesso",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Mezzi di appoggio o di sostegno devono essere progettati, costruiti e disposti in modo che gli operatori li utilizzino istintivamente e non ricorrano ai dispositivi di comando per facilitare l'accesso.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la posizione e l'uso corretto dei mezzi di appoggio",
+   "La documentazione descrive la disposizione intuitiva dei mezzi di sostegno",
+   "I dispositivi di accesso sono descritti come facilmente accessibili senza comandi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.6",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.6",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Dispositivi di traino",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Ogni macchina utilizzata per trainare o destinata ad essere trainata deve essere munita di dispositivi di rimorchio o di traino progettati, costruiti e disposti in modo da garantire che il collegamento e lo sganciamento possano essere effettuati facilmente e in modo sicuro e da impedire uno sganciamento accidentale durante l'utilizzazione.\nQualora il carico sul timone lo richieda, tali macchine devono essere munite di un supporto con una superficie d'appoggio adattata al carico e al terreno.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente il sistema di collegamento e sganciamento",
+   "I dispositivi di traino sono progettati per evitare sganciamenti accidentali",
+   "Le istruzioni indicano come effettuare il collegamento e lo sganciamento in modo sicuro",
+   "La macchina è munita di supporto adatto al carico e al terreno quando necessario"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.4.7",
+  "law": "MR",
+  "ref": "All. III, punto 3.4.7",
+  "group": "Allegato III — 3.4. Misure di protezione contro i rischi meccanici",
+  "title": "Trasmissione di potenza tra la macchina semovente (o il trattore) e la macchina azionata",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "I dispositivi amovibili di trasmissione meccanica che collegano una macchina semovente (o un trattore) al primo supporto fisso di una macchina azionata devono essere progettati e costruiti in modo che tutte le parti in movimento durante il funzionamento siano protette per tutta la lunghezza.\nSul lato della macchina semovente o del trattore, la presa di forza alla quale è correlato il dispositivo amovibile di trasmissione meccanica deve essere protetta da un riparo fisso correlato alla macchina semovente (o al trattore) oppure da qualsiasi altro dispositivo che garantisca una protezione equivalente.\nDeve essere possibile aprire tale riparo per accedere al dispositivo amovibile di trasmissione. Una volta collocata, deve esservi abbastanza spazio per impedire all'albero motore di danneggiare il riparo quando la macchina (o il trattore) è in movimento.\nSul lato della macchina azionata, l'albero comandato deve essere chiuso in un carter di protezione fissato sulla macchina.\nLa presenza di un limitatore di coppia o di una ruota libera è autorizzata per la trasmissione cardanica soltanto sul lato in cui avviene il collegamento con la macchina azionata. In tal caso occorre indicare sul dispositivo amovibile di trasmissione meccanica il senso del montaggio.\nOgni macchina azionata il cui funzionamento implica la presenza di un dispositivo amovibile di trasmissione meccanica che la colleghi ad una macchina semovente (o a un trattore) deve possedere un sistema di aggancio del dispositivo amovibile di trasmissione meccanica tale che, quando la macchina è staccata, il dispositivo amovibile di trasmissione meccanica e il suo riparo non vengano danneggiati dal contatto con il suolo o con un elemento della macchina.\nGli elementi esterni del riparo devono essere progettati, costruiti e disposti in modo da non poter ruotare con il dispositivo amovibile di trasmissione meccanica. Il riparo deve coprire l'albero di trasmissione fino alle estremità delle ganasce interne nel caso di giunti cardanici semplici e almeno fino al centro del giunto o dei giunti esterni nel caso di cardani detti a grandangolo.\nSe sono previsti accessi alle postazioni di lavoro in prossimità del dispositivo amovibile di trasmissione meccanica, essi devono essere progettati e costruiti in modo da evitare che i ripari di tali alberi possano servire da predellini, a meno che non siano progettati e costruiti a tal fine.",
+  "old_condition": "La macchina è collegata a una macchina semovente tramite dispositivo amovibile di trasmissione meccanica",
+  "old_points": [
+   "Il riparo fisso sulla macchina semovente copre l'albero motore fino alle ganasce interne",
+   "Il carter di protezione sulla macchina azionata chiude l'albero comandato",
+   "Il dispositivo amovibile di trasmissione indica il senso di montaggio per la trasmissione cardanica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.5.1",
+  "law": "MR",
+  "ref": "All. III, punto 3.5.1",
+  "group": "Allegato III — 3.5. Misure di protezione contro altri rischi",
+  "title": "Batteria d'accumulatori",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "L'alloggiamento della batteria deve essere progettato e costruito in modo da impedire la proiezione dell'elettrolita sull'operatore in caso di ribaltamento o rovesciamento laterale e da evitare l'accumulo di vapori vicino ai posti occupati dagli operatori.\nLe macchine o i prodotti correlati devono essere progettati e costruiti in modo che la batteria possa essere disinserita con un dispositivo facilmente accessibile previsto a tal fine.\nLe batterie con ricarica automatica per macchine mobili o prodotti correlati, tra cui macchine o prodotti correlati mobili autonomi, sono progettate per prevenire i pericoli di cui ai punti 1.3.8.2 e 1.5.1, compresi i rischi di contatto o di urto della macchina o del prodotto correlato con una persona o un'altra macchina o un altro prodotto correlato quando la macchina o i prodotti correlati si muovono autonomamente verso la stazione di ricarica.",
+  "old_condition": "",
+  "old_points": [
+   "L'alloggiamento della batteria è progettato per impedire la proiezione dell'elettrolita",
+   "La batteria può essere disinserita con un dispositivo accessibile e identificabile",
+   "Le istruzioni descrivono le misure per evitare l'accumulo di vapori vicino agli operatori",
+   "La batteria è progettata per prevenire contatti o urti durante la ricarica automatica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.5.2",
+  "law": "MR",
+  "ref": "All. III, punto 3.5.2",
+  "group": "Allegato III — 3.5. Misure di protezione contro altri rischi",
+  "title": "Incendio",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "A seconda dei pericoli previsti dal fabbricante la macchina deve, qualora le dimensioni lo consentano:\na) permettere l'installazione di estintori facilmente accessibili; oppure\nb) essere munita di sistemi di estinzione che siano parte integrante della macchina.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale indica la posizione e il tipo di estintori da installare",
+   "La macchina è dotata di un sistema di estinzione integrato nel design",
+   "La valutazione dei rischi menziona la protezione contro incendi specifica",
+   "Gli schemi tecnici mostrano l'integrazione di sistemi estintori nella struttura"
+  ],
+  "old_status": "bozza"
+ }
+]

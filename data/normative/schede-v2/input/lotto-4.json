@@ -1,0 +1,993 @@
+[
+ {
+  "id": "MR-III-3.5.3",
+  "law": "MR",
+  "ref": "All. III, punto 3.5.3",
+  "group": "Allegato III — 3.5. Misure di protezione contro altri rischi",
+  "title": "Emissioni di sostanze pericolose",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Il punto 1.5.13, secondo e terzo comma, non si applica quando la funzione principale della macchina è l'applicazione di sostanze pericolose. Tuttavia l'operatore deve essere protetto dal rischio di esposizione a tali emissioni pericolose.\nLe macchine mobili che trasportano il conducente aventi come loro funzione principale l'applicazione di sostanze pericolose devono essere dotate di cabine di filtrazione o misure di sicurezza equivalenti.",
+  "old_condition": "La macchina ha come funzione principale l'applicazione di sostanze pericolose",
+  "old_points": [
+   "La documentazione tecnica indica misure di filtrazione per la cabina dell'operatore",
+   "Le istruzioni descrivono procedure per ridurre l'esposizione alle emissioni pericolose",
+   "La macchina è dotata di cabina di filtrazione o di misure equivalenti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.5.4",
+  "law": "MR",
+  "ref": "All. III, punto 3.5.4",
+  "group": "Allegato III — 3.5. Misure di protezione contro altri rischi",
+  "title": "Rischio di contatto con linee elettriche aeree sotto tensione",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "A seconda della loro altezza, in relazione all’uso previsto, una macchina o un prodotto correlato mobile devono essere progettati, costruiti ed equipaggiati in maniera tale da prevenire il rischio di contatto con una linea elettrica aerea sotto tensione o il rischio di creare un arco elettrico tra qualsiasi parte della macchina o un operatore che conduce la macchina e una linea elettrica aerea sotto tensione.\nQuando il rischio di contatto con una linea elettrica aerea sotto tensione non può essere evitato completamente per le persone che operano la macchina, le macchine o i prodotti correlati mobili devono essere progettati, costruiti ed equipaggiati in maniera tale da prevenire qualsiasi pericolo elettrico.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure per evitare il contatto con linee elettriche aeree",
+   "La macchina è progettata per non creare archi elettrici con linee aeree sotto tensione",
+   "Le istruzioni forniscono informazioni sui rischi elettrici in caso di contatto con linee aeree",
+   "La macchina è dotata di dispositivi che prevenirebbero pericoli elettrici da linee aeree"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.6.1",
+  "law": "MR",
+  "ref": "All. III, punto 3.6.1",
+  "group": "Allegato III — 3.6. Informazioni e indicazioni",
+  "title": "Iscrizioni, segnalazioni e avvertimenti",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere tutti provvisti di iscrizioni e/o di targhe con le istruzioni per l'uso, la regolazione e la manutenzione, ovunque necessario, per garantire la tutela della salute e la sicurezza delle persone. Tali mezzi devono essere scelti, progettati e realizzati in modo da essere chiaramente visibili e indelebili.\nFatte salve le disposizioni relative alla circolazione stradale, le macchine o i prodotti correlati con conducente trasportato devono essere dotati dell’attrezzatura seguente:\na) un avvisatore acustico che consenta di avvertire le persone;\nb) un sistema di segnalazione luminosa che tenga conto delle condizioni di impiego previste; ciò non si applica alle macchine o ai prodotti correlati destinati esclusivamente ai lavori sotterranei e sprovvisti di alimentazione elettrica;\nc) all'occorrenza, vi deve essere un appropriato sistema di collegamento tra il rimorchio e la macchina o un prodotto correlato per l'azionamento dei segnali.\nLe macchine o i prodotti correlati dotati di telecomando, le cui condizioni di impiego normali espongono le persone a rischi di urto o di schiacciamento, devono essere muniti di mezzi adeguati per segnalare i loro spostamenti o di mezzi per proteggere le persone contro tali rischi. Lo stesso vale per le macchine o i prodotti correlati la cui utilizzazione implica la ripetizione sistematica di avanzamento e arretramento lungo uno stesso asse e il cui conducente non ha visibilità posteriore diretta.\nLe macchine o i prodotti correlati devono essere costruiti in modo tale che i dispositivi di avvertimento e di segnalazione non possano essere disinseriti involontariamente. Laddove indispensabile ai fini della sicurezza, tali dispositivi devono essere muniti di mezzi di controllo del buon funzionamento e un loro guasto deve essere reso apparente all'operatore.\nQualora il movimento delle macchine o dei loro utensili sia particolarmente pericoloso, devono essere previste indicazioni sulle macchine stesse che avvertano di non avvicinarsi alle macchine durante il lavoro; tali indicazioni devono essere leggibili a distanza sufficiente per garantire la sicurezza delle persone che operano nei pressi delle macchine.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le modalità di regolazione della segnalazione luminosa",
+   "Le istruzioni descrivono i dispositivi di segnalazione acustica e le loro caratteristiche",
+   "Le istruzioni menzionano i sistemi di collegamento tra la macchina e il rimorchio",
+   "Le istruzioni segnalano i rischi di urto o schiacciamento e le misure di protezione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.6.2",
+  "law": "MR",
+  "ref": "All. III, punto 3.6.2",
+  "group": "Allegato III — 3.6. Informazioni e indicazioni",
+  "title": "Marcatura",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "1) Le macchine o i prodotti correlati devono tutti recare, in modo leggibile e indelebile, le indicazioni seguenti:\na) la potenza nominale espressa in chilowatt (kW);\nb) la massa, nella configurazione più usuale, in chilogrammi (kg);\n2) Inoltre, se del caso, le macchine o i prodotti correlati devono tutti recare, in modo leggibile e indelebile, le indicazioni seguenti:\na) lo sforzo massimo di trazione previsto dal fabbricante al gancio di traino in newton (N);\nb) lo sforzo verticale massimo previsto sul gancio di traino in newton (N).",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la potenza nominale espressa in chilowatt (kW)",
+   "Le istruzioni indicano la massa nella configurazione più usuale in chilogrammi (kg)",
+   "Le istruzioni indicano lo sforzo massimo di trazione previsto al gancio di traino in newton (N)",
+   "Le istruzioni indicano lo sforzo verticale massimo previsto sul gancio di traino in newton (N)"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.6.3.1",
+  "law": "MR",
+  "ref": "All. III, punto 3.6.3.1",
+  "group": "Allegato III — 3.6. Informazioni e indicazioni",
+  "title": "Vibrazioni",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Le istruzioni per l'uso devono fornire le indicazioni seguenti relative alle vibrazioni, espresse come accelerazione (m/s2), trasmesse dalla macchina o dai prodotti correlati al sistema mano-braccio o a tutto il corpo:\na) il valore totale delle vibrazioni continue a cui è sottoposto il sistema mano-braccio;\nb) il valore medio dell'ampiezza di picco dell'accelerazione ottenuto da vibrazioni da urti ripetuti, cui è sottoposto il sistema mano-braccio;\nc) il valore quadratico medio massimo dell'accelerazione ponderata cui è esposto tutto il corpo, quando superi 0,5 m/s2. Se tale livello è inferiore o pari a 0,5 m/s2, deve essere indicato;\nd) l'incertezza delle misurazioni.\nI suddetti valori devono essere quelli misurati effettivamente sulla macchina o sul prodotto correlato in questione, oppure quelli stabiliti sulla base di misurazioni effettuate su una macchina o su prodotti correlati tecnicamente comparabili rappresentativi della macchina o dei prodotti correlati da produrre.\nQualora non possano essere applicate le norme armonizzate o le specifiche comuni adottate dalla Commissione conformemente all'articolo 20, paragrafo 3, le vibrazioni devono essere misurate usando il codice di misurazione più appropriato adeguato alla macchina o ai prodotti correlati interessati.\nDevono essere descritte le condizioni di funzionamento durante la misurazione e il codice di misurazione utilizzato per effettuarla.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il valore totale delle vibrazioni sul sistema mano-braccio",
+   "Le istruzioni riportano il valore medio dell'ampiezza di picco delle vibrazioni da urti ripetuti",
+   "Le istruzioni specificano il valore quadratico medio massimo delle vibrazioni su tutto il corpo",
+   "Le istruzioni descrivono le condizioni di funzionamento durante la misurazione delle vibrazioni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.6.3.2",
+  "law": "MR",
+  "ref": "All. III, punto 3.6.3.2",
+  "group": "Allegato III — 3.6. Informazioni e indicazioni",
+  "title": "Usi molteplici",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Le istruzioni per l'uso di una macchina o di un prodotto correlato che consente vari usi a seconda dell'attrezzatura impiegata e le istruzioni per l'uso delle attrezzature intercambiabili devono contenere le informazioni necessarie a consentire il montaggio e l'impiego in sicurezza della macchina o del prodotto correlato di base nonché delle attrezzature intercambiabili che possono esservi montate.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le modalità di montaggio sicuro delle attrezzature intercambiabili",
+   "Le istruzioni forniscono informazioni sui limiti di utilizzo delle attrezzature intercambiabili",
+   "Le istruzioni descrivono le procedure di messa in servizio delle attrezzature intercambiabili",
+   "Le istruzioni menzionano le precauzioni specifiche per ogni tipo di attrezzatura intercambiabile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-3.6.3.3",
+  "law": "MR",
+  "ref": "All. III, punto 3.6.3.3",
+  "group": "Allegato III — 3.6. Informazioni e indicazioni",
+  "title": "Macchine o prodotti correlati mobili autonomi",
+  "tags": [
+   "mobilita"
+  ],
+  "always": false,
+  "text": "Le istruzioni per l'uso di macchine o prodotti correlati mobili autonomi devono specificare le caratteristiche delle loro zone di spostamento e di lavoro nonché delle zone pericolose.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le dimensioni e la forma della zona di lavoro",
+   "Le istruzioni descrivono le caratteristiche della zona di spostamento",
+   "Le istruzioni identificano le aree pericolose con segnalazione visiva",
+   "Le istruzioni specificano le limitazioni di movimento della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.1",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.1",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Rischi dovuti alla mancanza di stabilità",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo che la stabilità prescritta al punto 1.3.1 sia mantenuta sia in servizio che fuori servizio, incluse tutte le fasi di trasporto, montaggio e smontaggio, in caso di guasti prevedibili di componenti e durante le prove effettuate in conformità delle istruzioni per l'uso. A tal fine il fabbricante deve utilizzare i metodi di verifica appropriati.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure per garantire la stabilità durante il trasporto",
+   "La valutazione dei rischi include analisi della stabilità in tutte le fasi operative",
+   "Gli schemi mostrano la distribuzione dei pesi per garantire la stabilità della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.2",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.2",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Macchine o prodotti correlati che si spostano lungo guide o su vie di scor",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "rimento Le macchine o i prodotti correlati devono essere muniti di dispositivi che agiscono sulle guide o vie di scorrimento in modo da evitare i deragliamenti.\nSe, nonostante la presenza di simili dispositivi, permane un rischio di deragliamento o di guasto di un organo di guida o di scorrimento, si devono prevedere dispositivi che impediscano la caduta di attrezzature, di componenti o del carico, nonché il ribaltamento della macchina.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono dispositivi per evitare deragliamenti delle guide",
+   "La documentazione include schemi con indicazione dei dispositivi di blocco delle guide",
+   "Le valutazioni dei rischi menzionano misure per prevenire cadute di carico in caso di guasto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.3",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.3",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Resistenza meccanica",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati, inclusi gli accessori di sollevamento e i relativi componenti, devono poter resistere alle sollecitazioni cui sono soggetti nel corso della loro intera vita, durante il funzionamento e, se del caso, anche quando sono fuori servizio, nelle condizioni di installazione e di esercizio previste e in tutte le relative configurazioni, tenendo conto eventualmente degli effetti degli agenti atmosferici e degli sforzi esercitati dalle persone. Questo requisito deve essere soddisfatto anche durante il trasporto, il montaggio e lo smontaggio.\nLe macchine o i prodotti correlati, inclusi gli accessori di sollevamento, devono essere progettati e costruiti in modo tale da evitare guasti dovuti alla fatica e all'usura tenuto conto dell'uso previsto e di qualsiasi uso scorretto ragionevolmente prevedibile.\nI materiali utilizzati devono essere scelti tenendo conto degli ambienti di esercizio previsti, soprattutto per quanto riguarda la corrosione, l'abrasione, gli urti, le temperature estreme, la fatica, la fragilità, le radiazioni e l'invecchiamento.\nLa macchina o i prodotti correlati, inclusi gli accessori di sollevamento, devono essere progettati e costruiti in modo tale da sopportare i sovraccarichi applicati nelle prove statiche senza presentare deformazioni permanenti né disfunzioni manifeste. Il calcolo della resistenza deve tenere conto del valore del coefficiente di prova statica che è scelto in modo tale da garantire un livello adeguato di sicurezza. In generale, tale coefficiente ha i valori seguenti:\na) macchine o prodotti correlati mossi dalla forza umana, inclusi accessori di sollevamento: 1,5;\nb) altre macchine o altri prodotti correlati: 1,25.\nLe macchine o i prodotti correlati devono essere progettati e costruiti in modo tale da sopportare perfettamente le prove dinamiche effettuate con il carico massimo di utilizzazione moltiplicato per il coefficiente di prova dinamica. Il coefficiente di prova dinamica è scelto in modo da garantire un livello di sicurezza adeguato; tale coefficiente è, in generale, pari a 1,1. Le prove sono generalmente eseguite alle velocità nominali previste. Qualora il circuito di comando della macchina o del prodotto correlato autorizzi più movimenti simultanei le prove devono essere effettuate nelle condizioni più sfavorevoli, in generale combinando i relativi movimenti.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi menziona l'uso di materiali resistenti alla corrosione",
+   "Le prove statiche sono descritte con coefficiente di prova statica 1,5 o 1,25",
+   "Le prove dinamiche sono eseguite con carico massimo moltiplicato per 1,1"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.4",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.4",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Pulegge, tamburi, rulli, funi e catene",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "I diametri delle pulegge, dei tamburi e dei rulli devono essere compatibili con le dimensioni delle funi o delle catene di cui possono essere muniti.\nI tamburi e i rulli devono essere progettati, costruiti ed installati in modo che le funi o le catene di cui sono muniti possano avvolgersi senza lasciare lateralmente l'alloggiamento previsto.\nLe funi utilizzate direttamente per il sollevamento o il supporto del carico non devono comportare alcuna impiombatura a parte quelle alle loro estremità. Le impiombature sono tuttavia tollerate negli impianti destinati per progettazione ad essere modificati regolarmente in funzione delle esigenze di utilizzazione.\nIl coefficiente di utilizzazione dell'insieme fune e terminale deve essere scelto in modo tale da garantire un livello adeguato di sicurezza. Questo coefficiente è, in generale, pari a 5.\nIl coefficiente di utilizzazione delle catene di sollevamento deve essere scelto in modo tale da garantire un livello adeguato di sicurezza. Questo coefficiente è, in generale, pari a 4.\nAl fine di verificare che sia stato raggiunto il coefficiente di utilizzazione adeguato, il fabbricante deve effettuare, o far effettuare, prove appropriate per ciascun tipo di catena e di fune utilizzato direttamente per il sollevamento del carico e per ciascun tipo di terminale di fune.",
+  "old_condition": "",
+  "old_points": [
+   "Le pulegge sono dimensionate in base alle dimensioni delle funi o catene utilizzate",
+   "Le funi utilizzate non presentano impiombature oltre quelle alle estremità",
+   "Il coefficiente di utilizzazione della fune è pari a 5, come indicato nella documentazione",
+   "Le catene di sollevamento hanno un coefficiente di utilizzazione pari a 4, come dichiarato"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.5",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.5",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Accessori di sollevamento e relativi componenti",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Gli accessori di sollevamento e i relativi componenti devono essere dimensionati tenendo conto dei fenomeni di fatica e di invecchiamento per un numero di cicli di funzionamento conforme alla durata di vita prevista alle condizioni di funzionamento specificate per l'applicazione prevista.\nInoltre:\na) il coefficiente di utilizzazione degli insiemi fune metallico e terminale deve essere scelto in modo tale da garantire un livello adeguato di sicurezza; questo coefficiente è, in generale, pari a 5. Le funi non devono comportare nessun intreccio o anello diverso da quelli delle estremità;\nb) allorché sono utilizzate catene a maglie saldate, queste devono essere del tipo a maglie corte. Il coefficiente di utilizzazione delle catene deve essere scelto in modo tale da garantire un livello adeguato di sicurezza; questo coefficiente è, in generale, pari a 4;\nc) il coefficiente di utilizzazione delle funi, delle imbracature o delle cinghie di fibre tessili dipende dal materiale, dal processo di fabbricazione, dalle dimensioni e dall'utilizzazione. Questo coefficiente deve essere scelto in modo da garantire un livello di sicurezza adeguato; esso è, in generale, pari a 7, a condizione che i materiali utilizzati siano di ottima qualità controllata e che il processo di fabbricazione sia adeguato all'uso previsto. In caso contrario, il coefficiente è in generale più elevato per garantire un livello di sicurezza equivalente. Le funi, le imbracature o le cinghie di fibre tessili non devono presentare alcun nodo, impiombatura o collegamento, a parte quelli dell'estremità dell'imbracatura o della chiusura di un'imbracatura senza estremità;\nd) il coefficiente d'utilizzazione di tutti i componenti metallici di un'imbracatura o utilizzati con un'imbracatura deve essere scelto in modo da garantire un livello adeguato di sicurezza; questo coefficiente è, in generale, pari a 4;\ne) il carico massimo di utilizzazione di una braca a trefoli è stabilito tenendo conto del coefficiente di utilizzazione del trefolo più debole, del numero di trefoli e di un fattore di riduzione che dipende dal tipo di imbracatura;\nf) al fine di verificare che sia stato raggiunto il coefficiente di utilizzazione adeguato, il fabbricante deve effettuare, o far effettuare, prove appropriate per ciascun tipo di componente di cui alle lettere da a) a d).",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il coefficiente di utilizzazione delle funi metalliche",
+   "Le catene a maglie saldate sono del tipo a maglie corte e indicano il coefficiente di utilizzazione",
+   "Le funi di fibre tessili non presentano nodi o collegamenti diversi da quelli delle estremità"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.6",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.6",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Comando dei movimenti",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "I dispositivi di controllo dei movimenti devono agire in modo da mantenere in condizioni di sicurezza la macchina o il prodotto correlato su cui sono installati.\na) Le macchine o i prodotti correlati devono essere progettati, costruiti o attrezzati con dispositivi che mantengono l'ampiezza dei movimenti dei loro componenti entro i limiti previsti. L'attività di questi dispositivi deve essere preceduta eventualmente da un segnale;\nb) Se più macchine o prodotti correlati fissi o traslanti su rotaie possono compiere evoluzioni simultanee con rischio di urti, tali macchine devono essere progettate e costruite per poter essere equipaggiate di sistemi che consentano di evitare tali rischi.\nc) Le macchine o i prodotti correlati devono essere progettati e costruiti in modo che i carichi non possano derivare pericolosamente o cadere improvvisamente in caduta libera anche in caso di interruzione parziale o totale di energia o quando cessa l'azione dell'operatore.\nd) Tranne che per le macchine o i prodotti correlati il cui lavoro richieda una siffatta applicazione, nelle normali condizioni di esercizio non deve essere possibile abbassare il carico soltanto sotto il controllo di un freno a frizione.\ne) Gli organi di presa devono essere progettati e costruiti in modo da evitare la caduta improvvisa dei carichi.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive i limiti di movimento dei componenti della macchina",
+   "La macchina è dotata di dispositivi per evitare urti tra macchine in movimento",
+   "Le istruzioni indicano misure per prevenire la caduta improvvisa dei carichi",
+   "La macchina non permette l'abbassamento del carico senza controllo di un freno a frizione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.7",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.7",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Movimenti di carichi durante la movimentazione",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "La postazione di manovra della macchina deve essere posizionata in modo tale da assicurare la più ampia visuale possibile delle traiettorie degli elementi mobili, per evitare la possibilità di urtare persone, materiali o altre macchine che possono funzionare simultaneamente e quindi presentare un pericolo.\nLe macchine a carico guidato devono essere progettate e costruite in modo tale da prevenire lesioni alle persone dovute ai movimenti del carico, del supporto del carico o degli eventuali contrappesi.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente le traiettorie degli elementi mobili durante la movimentazione",
+   "La macchina è dotata di dispositivi di segnalazione visiva per i movimenti del carico",
+   "Le istruzioni indicano le misure di protezione contro urti durante la movimentazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.8.1",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.8.1",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Movimenti del supporto del carico",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Il movimento del supporto del carico delle macchine che collegano piani definiti deve essere a guida rigida verso e ai piani. Anche i sistemi a forbice sono considerati a guida rigida.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono il movimento del supporto del carico verso i piani definiti",
+   "La documentazione indica che i movimenti del supporto del carico avvengono a guida rigida",
+   "Gli schemi tecnici mostrano un sistema a forbice come sistema a guida rigida"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.8.2",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.8.2",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Accesso al supporto del carico",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Se al supporto del carico hanno accesso persone, la macchina deve essere progettata e costruita in modo da garantire che il supporto del carico resti immobile durante l'accesso, in particolare al momento del carico o dello scarico.\nLa macchina deve essere progettata e costruita in modo da garantire che il dislivello tra il supporto del carico e il piano servito non crei rischi di inciampo.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono misure per mantenere il supporto del carico fermo durante l'accesso",
+   "La documentazione indica il dislivello massimo tra supporto del carico e piano servito",
+   "Le istruzioni forniscono informazioni sui dispositivi di blocco del supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.8.3",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.8.3",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Rischi dovuti al contatto con il supporto del carico in movimento",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Se necessario, per soddisfare i requisiti di cui al punto 4.1.2.7, secondo comma, il percorso del supporto del carico deve essere reso inaccessibile durante il funzionamento normale.\nLaddove, durante l'ispezione o la manutenzione, vi sia il rischio che le persone situate al di sotto o al di sopra del supporto del carico siano schiacciate tra il supporto del carico e le parti fisse, deve essere lasciato spazio libero sufficiente tramite volumi di rifugio o dispositivi meccanici di blocco del movimento del supporto del carico.",
+  "old_condition": "",
+  "old_points": [
+   "Il percorso del supporto del carico è descritto come inaccessibile durante il funzionamento normale",
+   "La documentazione indica la presenza di volumi di rifugio o dispositivi di blocco meccanico",
+   "Le istruzioni specificano misure per evitare schiacciamento tra supporto del carico e parti fisse",
+   "La macchina include dispositivi per interrompere il movimento del supporto del carico in caso di accesso non autorizzato"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.8.4",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.8.4",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Rischio di caduta del carico dal supporto del carico",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "In caso di rischio di caduta del carico dal supporto del carico, la macchina deve essere progettata e costruita in modo da prevenire tale rischio.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano misure per prevenire la caduta del carico",
+   "La valutazione dei rischi menziona dispositivi di fissaggio del carico",
+   "Gli schemi mostrano sistemi di blocco del carico in posizione statica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.2.8.5",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.2.8.5",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Piani",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Devono essere prevenuti i rischi dovuti al contatto delle persone ai piani con il supporto del carico in movimento o altri elementi mobili.\nIn caso di rischio di caduta di persone nel percorso del supporto del carico quando quest'ultimo non è presente ai piani, devono essere installati ripari per prevenire tale rischio. Detti ripari non devono aprirsi in direzione del percorso del supporto del carico. Devono essere montati con un dispositivo di interblocco controllato dalla posizione del supporto del carico che impedisce:\na) movimenti pericolosi del supporto del carico finché i ripari non sono chiusi e bloccati;\nb) l'apertura pericolosa di un riparo finché il supporto del carico non si sia arrestato al piano corrispondente.",
+  "old_condition": "",
+  "old_points": [
+   "I ripari sono montati con un dispositivo di interblocco controllato dalla posizione del supporto del carico",
+   "I ripari non aprono in direzione del percorso del supporto del carico durante il movimento",
+   "La documentazione indica la posizione dei ripari rispetto al percorso del supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.1.3",
+  "law": "MR",
+  "ref": "All. III, punto 4.1.3",
+  "group": "Allegato III — 4.1. Considerazioni generali",
+  "title": "Idoneità all'impiego",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Il fabbricante si accerta, all'atto dell'immissione sul mercato o della prima messa in servizio delle macchine di sollevamento o dei prodotti correlati, inclusi gli accessori di sollevamento, con adeguate misure che egli adotta o fa adottare, che le macchine di sollevamento o i prodotti correlati, inclusi gli accessori di sollevamento, pronti ad essere utilizzati, a operazione manuale o a operazione motorizzata, possano svolgere le funzioni previste in condizioni di sicurezza.\nLe prove statiche e dinamiche di cui al punto 4.1.2.3 devono essere eseguite su tutte le macchine di sollevamento o prodotti correlati pronti per essere messi in servizio.\nSe le macchine o i prodotti correlati non possono essere montati nei locali del fabbricante le misure appropriate devono essere adottate sul luogo dell'utilizzazione dal fabbricante. In caso contrario, esse possono essere adottate tanto nei locali del fabbricante quanto sul luogo dell'utilizzazione.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di dispositivi di blocco per prevenire movimenti accidentali",
+   "Le prove statiche e dinamiche sono descritte nel manuale tecnico",
+   "La macchina è progettata per operare in condizioni di sicurezza previste dal manuale"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.2.1",
+  "law": "MR",
+  "ref": "All. III, punto 4.2.1",
+  "group": "Allegato III — 4.2. Requisiti per le macchine o i prodotti correlati mossi da energia diversa da quella umana",
+  "title": "Comando dei movimenti",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Devono essere utilizzati dispositivi di comando ad azione mantenuta per il comando della macchina o dei prodotti correlati o delle loro attrezzature. Tuttavia, per i movimenti, parziali o totali, per i quali non si corre il rischio di urto da parte del carico o della macchina o del prodotto correlato, si possono sostituire detti comandi con dispositivi di comando che consentono movimenti con arresti automatici a posizioni preselezionate senza dover mantenere l'azionamento da parte dell'operatore.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano l'uso di comandi a azione mantenuta per il controllo della macchina",
+   "La documentazione descrive movimenti senza rischio di urto da sostituire con comandi a posizioni preselezionate",
+   "Le istruzioni menzionano l'eventuale utilizzo di comandi con arresti automatici a posizioni preselezionate",
+   "La valutazione dei rischi chiarisce quando è possibile utilizzare comandi senza azione mantenuta"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.2.2",
+  "law": "MR",
+  "ref": "All. III, punto 4.2.2",
+  "group": "Allegato III — 4.2. Requisiti per le macchine o i prodotti correlati mossi da energia diversa da quella umana",
+  "title": "Controllo delle sollecitazioni",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati con un carico massimo di utilizzazione pari almeno a 1 000 kg o il cui momento di rovesciamento è pari almeno a 40 000 Nm devono essere dotati di dispositivi che avvertano il conducente e impediscano i movimenti pericolosi in caso:\na) di sovraccarico sia per eccesso di carico massimo di utilizzazione, sia per superamento del momento massimo di utilizzazione dovuto a tale carico; o\nb) di superamento del momento di rovesciamento.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i limiti di carico massimo e momento di rovesciamento",
+   "La macchina è dotata di dispositivi di allarme per sovraccarico",
+   "I dispositivi di allarme interrompono i movimenti pericolosi in caso di sovraccarico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.2.3",
+  "law": "MR",
+  "ref": "All. III, punto 4.2.3",
+  "group": "Allegato III — 4.2. Requisiti per le macchine o i prodotti correlati mossi da energia diversa da quella umana",
+  "title": "Impianti guidati da funi",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Le funi portanti, traenti o portanti e traenti devono essere tese da contrappesi o da un dispositivo che consente di controllare in permanenza la tensione.",
+  "old_condition": "",
+  "old_points": [
+   "Le funi portanti sono tese da contrappesi o dispositivi di controllo della tensione",
+   "La documentazione descrive il sistema di tensione delle funi con dati tecnici specifici",
+   "Le istruzioni indicano le procedure per verificare la tensione delle funi",
+   "La valutazione dei rischi menziona misure per garantire la tensione delle funi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.3.1",
+  "law": "MR",
+  "ref": "All. III, punto 4.3.1",
+  "group": "Allegato III — 4.3. Informazioni e marcatura",
+  "title": "Catene, funi e cinghie",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Ogni lunghezza di catena, fune o cinghia di sollevamento che non faccia parte di un insieme deve recare una marcatura o, se ciò non è possibile, una targa o un anello inamovibile con i riferimenti del fabbricante e l'identificazione della relativa attestazione.\nL'attestazione sopra menzionata deve contenere almeno le indicazioni seguenti:\na) il nome e indirizzo del fabbricante;\nb) la descrizione della catena o della fune comprendente:\ni) le dimensioni nominali;\nii) la costruzione;\niii) il materiale di fabbricazione; e\niv) qualsiasi trattamento metallurgico speciale subito dal materiale;\nc) il metodo di prova impiegato;\nd) il carico massimo che deve essere sopportato, durante il funzionamento, dalla catena o dalla fune. Una forcella di valori può essere indicata in funzione delle applicazioni previste.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica il nome e l'indirizzo del fabbricante della catena",
+   "La descrizione della catena include le dimensioni nominali e la costruzione",
+   "L'attestazione menziona il materiale e eventuali trattamenti metallurgici della catena",
+   "La documentazione specifica il carico massimo che la catena deve sopportare"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.3.2",
+  "law": "MR",
+  "ref": "All. III, punto 4.3.2",
+  "group": "Allegato III — 4.3. Informazioni e marcatura",
+  "title": "Accessori di sollevamento",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Gli accessori di sollevamento devono recare le indicazioni seguenti:\na) l’identificazione del materiale, qualora tale informazione sia necessaria per la sicurezza di utilizzo;\nb) il carico di utilizzazione massimo.\nPer gli accessori di sollevamento sui quali la marcatura è materialmente impossibile, le indicazioni di cui al primo comma devono essere riportate su una targa o un altro mezzo equivalente fissato saldamente all'accessorio.\nLe indicazioni devono essere leggibili e situate in un punto in cui non rischino di scomparire per effetto dell'usura né di compromettere la resistenza dell'accessorio.",
+  "old_condition": "",
+  "old_points": [
+   "La targa indica il carico di utilizzazione massimo dell'accessorio di sollevamento",
+   "Le informazioni sono visibili e non compromettono la resistenza dell'accessorio",
+   "La targa è fissata saldamente sull'accessorio di sollevamento",
+   "L'identificazione del materiale è indicata quando necessaria per la sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.3.3",
+  "law": "MR",
+  "ref": "All. III, punto 4.3.3",
+  "group": "Allegato III — 4.3. Informazioni e marcatura",
+  "title": "Macchine di sollevamento o prodotti correlati",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Il carico massimo di utilizzazione deve essere marcato in modo ben visibile sulla macchina di sollevamento o sul prodotto correlato. Questa marcatura deve essere leggibile, indelebile e chiara.\nSe il carico massimo di utilizzazione dipende dalla configurazione della macchina di sollevamento o del prodotto correlato, ogni postazione di lavoro deve essere munita di una targa dei carichi che indichi sotto forma di tabelle o di diagrammi i carichi di utilizzazione consentiti per ogni singola configurazione.\nLe macchine o i prodotti correlati destinati al sollevamento di sole cose, munite di un supporto del carico accessibile alle persone, devono recare un'avvertenza chiara ed indelebile che vieti il sollevamento di persone. Tale avvertenza deve essere visibile da ciascun posto da cui è possibile l'accesso.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina indica chiaramente il carico massimo di utilizzazione su una superficie visibile",
+   "La targa dei carichi mostra i valori di carico consentiti per ogni configurazione della macchina",
+   "La macchina presenta un'indicazione indelebile che vieta il sollevamento di persone"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.4.1",
+  "law": "MR",
+  "ref": "All. III, punto 4.4.1",
+  "group": "Allegato III — 4.4. Istruzioni per l'uso",
+  "title": "Accessori di sollevamento",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Ogni accessorio di sollevamento, o ciascuna partita di accessori di sollevamento commercialmente indivisibile, deve essere accompagnato da istruzioni che forniscano almeno le indicazioni seguenti:\na) l'uso previsto;\nb) i limiti di utilizzazione (in particolare per gli accessori di sollevamento quali ventose magnetiche o a vuoto che non soddisfano pienamente le disposizioni di cui al punto 4.1.2.6, lettera e));\nc) le istruzioni per il montaggio, l'uso e la manutenzione;\nd) il coefficiente di prova statica utilizzato.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano l'uso previsto dell'accessorio di sollevamento",
+   "Le istruzioni specificano i limiti di utilizzazione dell'accessorio",
+   "Le istruzioni descrivono le istruzioni per il montaggio e la manutenzione",
+   "Le istruzioni riportano il coefficiente di prova statico utilizzato"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-4.4.2",
+  "law": "MR",
+  "ref": "All. III, punto 4.4.2",
+  "group": "Allegato III — 4.4. Istruzioni per l'uso",
+  "title": "Macchine di sollevamento o prodotti correlati",
+  "tags": [
+   "sollevamento"
+  ],
+  "always": false,
+  "text": "Le macchine di sollevamento o i prodotti correlati devono essere accompagnati da istruzioni per l'uso che forniscano le informazioni seguenti:\na) le caratteristiche tecniche della macchina di sollevamento o del prodotto correlato, in particolare:\ni) il carico massimo di utilizzazione ed eventualmente un richiamo alla targa dei carichi o alla tabella dei carichi di cui al punto 4.3.3, secondo comma;\nii) le reazioni sugli appoggi o sugli incastri e, se del caso, le caratteristiche delle guide;\niii) se del caso, la definizione ed i mezzi di installazione delle zavorre;\nb) il contenuto del registro di controllo della macchina di sollevamento, se non è fornito insieme a quest'ultima;\nc) le raccomandazioni per l'uso, in particolare per ovviare alle insufficienze della visione diretta del carico da parte dell'operatore;\nd) se del caso, una relazione di prova che descriva dettagliatamente le prove statiche e dinamiche effettuate dal fabbricante, o per suo conto;\ne) per le macchine di sollevamento o i prodotti correlati che non sono montati presso il fabbricante nella loro configurazione di utilizzazione, le istruzioni necessarie per attuare le disposizioni di cui al punto 4.1.3 prima della loro prima messa in servizio.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il carico massimo di utilizzazione della macchina",
+   "Le istruzioni descrivono le reazioni sugli appoggi e le caratteristiche delle guide",
+   "Le istruzioni forniscono raccomandazioni per migliorare la visibilità del carico",
+   "Le istruzioni includono le istruzioni per l'installazione delle zavorre, se applicabili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-5.1",
+  "law": "MR",
+  "ref": "All. III, punto 5.1",
+  "group": "Allegato III — 5. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI DESTINATI AD ESSERE UTILIZZATI IN LAVORI SOTTERRANEI",
+  "title": "Rischi dovuti alla mancanza di stabilità",
+  "tags": [
+   "sotterraneo"
+  ],
+  "always": false,
+  "text": "Le armature semoventi devono essere progettate e costruite in modo da permettere un adeguato orientamento, quando vengono spostate, e non devono ribaltarsi prima e durante la messa sotto pressione e dopo la decompressione. Devono disporre di ancoraggi per la piastra di testa dei raccordi idraulici individuali.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono il sistema di orientamento durante lo spostamento",
+   "La macchina è dotata di ancoraggi per la piastra di testa dei raccordi idraulici",
+   "Le istruzioni indicano misure per prevenire ribaltamenti durante la messa sotto pressione",
+   "Le istruzioni menzionano procedure per garantire stabilità dopo la decompressione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-5.2",
+  "law": "MR",
+  "ref": "All. III, punto 5.2",
+  "group": "Allegato III — 5. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI DESTINATI AD ESSERE UTILIZZATI IN LAVORI SOTTERRANEI",
+  "title": "Circolazione",
+  "tags": [
+   "sotterraneo"
+  ],
+  "always": false,
+  "text": "Le armature semoventi devono permettere alle persone di circolare senza intralci.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono percorsi di circolazione liberi da ostacoli",
+   "La macchina presenta spazi accessibili per il movimento delle persone",
+   "Le informazioni tecniche indicano la presenza di aree di passaggio sicure"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-5.3",
+  "law": "MR",
+  "ref": "All. III, punto 5.3",
+  "group": "Allegato III — 5. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI DESTINATI AD ESSERE UTILIZZATI IN LAVORI SOTTERRANEI",
+  "title": "Dispositivi di comando",
+  "tags": [
+   "sotterraneo"
+  ],
+  "always": false,
+  "text": "I dispositivi di comando dell'acceleratore e dei freni che consentono di spostare le macchine che scorrono su rotaia devono essere azionati a mano. Tuttavia i dispositivi di consenso possono essere a pedale.\nI dispositivi di comando delle armature semoventi devono essere progettati, costruiti e disposti in modo da permettere che, durante l'operazione di avanzamento, gli operatori siano protetti da un'armatura fissa. I dispositivi di comando devono essere protetti da qualsiasi azionamento involontario.",
+  "old_condition": "",
+  "old_points": [
+   "I dispositivi di comando dell'acceleratore sono azionati a mano",
+   "I dispositivi di comando dei freni sono azionati a mano",
+   "I dispositivi di comando sono protetti da azionamento involontario",
+   "I dispositivi di comando sono disposti per proteggere gli operatori da armatura fissa"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-5.4",
+  "law": "MR",
+  "ref": "All. III, punto 5.4",
+  "group": "Allegato III — 5. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI DESTINATI AD ESSERE UTILIZZATI IN LAVORI SOTTERRANEI",
+  "title": "Arresto dello spostamento",
+  "tags": [
+   "sotterraneo"
+  ],
+  "always": false,
+  "text": "Le locomotive destinate ad essere impiegate nei lavori sotterranei devono essere munite di un dispositivo di consenso che agisca sul circuito di comando dello spostamento della macchina di modo che si arresti, se il conducente non è più in grado di comandarlo.",
+  "old_condition": "",
+  "old_points": [
+   "Il dispositivo di arresto è collegato al circuito di comando della macchina",
+   "Le istruzioni descrivono il funzionamento del dispositivo di arresto",
+   "La macchina è dotata di un sistema di arresto automatico in caso di mancanza di comando"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-5.5",
+  "law": "MR",
+  "ref": "All. III, punto 5.5",
+  "group": "Allegato III — 5. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI DESTINATI AD ESSERE UTILIZZATI IN LAVORI SOTTERRANEI",
+  "title": "Incendio",
+  "tags": [
+   "sotterraneo"
+  ],
+  "always": false,
+  "text": "La lettera b) del punto 3.5.2 è obbligatoria per le macchine o i prodotti correlati comprendenti parti ad alto rischio di infiammabilità.\nIl sistema di frenatura delle macchine o dei prodotti correlati destinati ad essere impiegati nei lavori sotterranei deve essere progettato e costruito in modo da non produrre scintille o essere causa di incendio.\nLe macchine o i prodotti correlati a motore a combustione interna destinati ad essere impiegati in lavori sotterranei devono essere dotati esclusivamente di motore che utilizzi un combustibile a bassa tensione di vapore che escluda qualsiasi scintilla di origine elettrica.",
+  "old_condition": "",
+  "old_points": [
+   "Il sistema di frenatura non produce scintille né causa incendio",
+   "Il motore utilizza un combustibile a bassa tensione di vapore"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-5.6",
+  "law": "MR",
+  "ref": "All. III, punto 5.6",
+  "group": "Allegato III — 5. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI DESTINATI AD ESSERE UTILIZZATI IN LAVORI SOTTERRANEI",
+  "title": "Emissioni di gas di scarico",
+  "tags": [
+   "sotterraneo"
+  ],
+  "always": false,
+  "text": "I gas di scarico emessi da motori a combustione interna non devono essere evacuati verso l'alto.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive il sistema di evacuazione dei gas di scarico verso l'alto",
+   "La valutazione dei rischi indica misure per prevenire l'accumulo di gas di scarico",
+   "Lo schema tecnico mostra l'evacuazione dei gas di scarico in direzione non verticale"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.1.1",
+  "law": "MR",
+  "ref": "All. III, punto 6.1.1",
+  "group": "Allegato III — 6.1. Considerazioni generali",
+  "title": "Resistenza meccanica",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "Il supporto del carico, incluse eventuali botole, deve essere progettato e costruito in modo da offrire lo spazio e la resistenza corrispondenti al numero massimo di persone consentito nel supporto del carico e al carico massimo di utilizzazione.\nI coefficienti di utilizzazione dei componenti di cui ai punti 4.1.2.4 e 4.1.2.5 non sono sufficienti per le macchine o i prodotti correlati destinati al sollevamento di persone e devono, come regola generale, essere raddoppiati. Le macchine o i prodotti correlati destinati al sollevamento di persone o di persone e cose devono essere muniti di un sistema di sospensione o di sostegno del supporto del carico, progettato e costruito in modo tale da garantire un adeguato livello globale di sicurezza e di evitare il rischio di caduta del supporto del carico.\nSe per sospendere il supporto del carico sono utilizzate funi o catene, come regola generale sono richieste almeno due funi o catene indipendenti, ciascuna con il proprio ancoraggio.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il numero massimo di persone consentito nel supporto del carico",
+   "Le istruzioni specificano il carico massimo di utilizzazione del supporto del carico",
+   "La documentazione dichiara l'uso di almeno due funi o catene indipendenti per la sospensione",
+   "La documentazione descrive il sistema di sospensione o sostegno del supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.1.2",
+  "law": "MR",
+  "ref": "All. III, punto 6.1.2",
+  "group": "Allegato III — 6.1. Considerazioni generali",
+  "title": "Controllo delle sollecitazioni per le macchine o i prodotti correlati mossi da una forza diversa dalla forza umana",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "I requisiti di cui al punto 4.2.2 si applicano a prescindere dal carico massimo di utilizzazione e dal momento di rovesciamento, a meno che il fabbricante possa dimostrare che non vi sono rischi di sovraccarico o di rovesciamento.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di dispositivi di arresto d'emergenza accessibili",
+   "Le istruzioni descrivono le procedure per la manutenzione e la pulizia",
+   "La macchina è fornita di un sistema di allarme per sovraccarico meccanico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.2",
+  "law": "MR",
+  "ref": "All. III, punto 6.2",
+  "group": "Allegato III — 6. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI CHE PRESENTANO PERICOLI PARTICOLARI DOVUTI AL SOLLEVAMENTO DI PERSONE",
+  "title": "Dispositivi di comando",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "Se i requisiti di sicurezza non impongono altre soluzioni, come regola generale il supporto del carico deve essere progettato e costruito in modo che le persone che vi si trovano dispongano di dispositivi di comando dei movimenti di salita e discesa e, se del caso, di altri movimenti del supporto del carico.\nTali dispositivi di comando devono avere la precedenza sugli altri dispositivi di comando dello stesso movimento salvo sui dispositivi di arresto di emergenza.\nI dispositivi di comando per i movimenti di cui al primo comma devono essere del tipo ad azione mantenuta, tranne quando il supporto del carico è completamente chiuso. Se non vi è alcun rischio per le persone o le cose che si trovano sul supporto del carico in caso di urto o caduta e se non vi è alcun rischio dovuto a movimenti verso l'alto e verso il basso del supporto del carico, si possono utilizzare dispositivi di comando che consentono movimenti con arresti automatici a posizioni preselezionate, anziché dispositivi di comando di tipo ad azione mantenuta.",
+  "old_condition": "",
+  "old_points": [
+   "I dispositivi di comando per il movimento del supporto del carico sono del tipo ad azione mantenuta",
+   "Le istruzioni indicano la posizione dei dispositivi di comando per il movimento del supporto del carico",
+   "I dispositivi di comando per il movimento del supporto del carico hanno precedenza sugli altri dispositivi dello stesso movimento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.3.1",
+  "law": "MR",
+  "ref": "All. III, punto 6.3.1",
+  "group": "Allegato III — 6.3. Rischi per le persone che si trovano nel supporto del carico o sopra di esso",
+  "title": "Rischi dovuti ai movimenti del supporto del carico",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati per il sollevamento di persone devono essere progettati, costruiti e attrezzati in modo tale che le accelerazioni o le decelerazioni del supporto del carico non generino rischi per le persone.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le accelerazioni massime del supporto del carico",
+   "La valutazione dei rischi include analisi delle forze durante il movimento",
+   "Gli schemi indicano limiti di accelerazione per il supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.3.2",
+  "law": "MR",
+  "ref": "All. III, punto 6.3.2",
+  "group": "Allegato III — 6.3. Rischi per le persone che si trovano nel supporto del carico o sopra di esso",
+  "title": "Rischio di caduta delle persone dal supporto del carico",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "Il supporto del carico non deve inclinarsi tanto da comportare un rischio di caduta per i suoi occupanti, anche durante i movimenti della macchina o del prodotto correlato e del supporto del carico.\nSe il supporto del carico è progettato per fungere da postazione di lavoro, devono essere adottate disposizioni per garantirne la stabilità e impedire movimenti pericolosi.\nSe le misure di cui al punto 1.5.15 non sono sufficienti, i supporti del carico devono essere muniti di ancoraggi appropriati in numero adeguato al numero di persone consentito nel supporto del carico. I punti di ancoraggio devono essere sufficientemente resistenti per l'uso di attrezzature per la protezione individuale contro le cadute dall'alto.\nEventuali botole nel pavimento o nel soffitto o portelli laterali devono essere progettati e costruiti in modo da impedire l'apertura involontaria e devono aprirsi in senso contrario al rischio di caduta in caso di apertura inopinata.",
+  "old_condition": "",
+  "old_points": [
+   "Il supporto del carico è progettato per garantire la stabilità durante i movimenti",
+   "I punti di ancoraggio sono sufficienti e resistenti per l'uso di dispositivi di protezione individuale",
+   "Le botole e portelli sono progettati per non aprire involontariamente e si aprono in senso sicuro"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.3.3",
+  "law": "MR",
+  "ref": "All. III, punto 6.3.3",
+  "group": "Allegato III — 6.3. Rischi per le persone che si trovano nel supporto del carico o sopra di esso",
+  "title": "Rischio dovuto alla caduta di oggetti sul supporto del carico",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "In caso di rischio di caduta di oggetti sul supporto del carico con conseguente pericolo per le persone, il supporto del carico deve essere munito di una copertura di protezione.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica descrive la presenza di una copertura di protezione sul supporto del carico",
+   "Le istruzioni indicano misure per prevenire la caduta di oggetti sul supporto del carico",
+   "La valutazione dei rischi menziona la protezione del supporto del carico da oggetti cadenti",
+   "Lo schema della macchina mostra una copertura di protezione sul supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.4.1",
+  "law": "MR",
+  "ref": "All. III, punto 6.4.1",
+  "group": "Allegato III — 6.4. Macchine o prodotti correlati che collegano piani definiti",
+  "title": "Rischi per le persone che si trovano nel supporto del carico o sopra di esso",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "Il supporto del carico deve essere progettato e costruito in modo da prevenire i rischi dovuti al contatto tra le persone e/o le cose, che si trovano nel supporto del carico o sopra di esso, con elementi fissi o mobili. Se necessario, per soddisfare questo requisito, il supporto del carico stesso deve essere completamente chiuso e con porte munite di un dispositivo di interblocco che impedisca movimenti pericolosi del supporto del carico, se le porte non sono chiuse. Le porte devono restare chiuse se il supporto del carico si arresta tra i piani, qualora vi sia il rischio di caduta dal supporto del carico.\nLa macchina o i prodotti correlati devono essere progettati, costruiti e, se necessario, muniti di dispositivi in modo da impedire movimenti incontrollati in salita o in discesa del supporto del carico. Tali dispositivi devono essere in grado di arrestare il supporto del carico in condizioni di carico di utilizzazione massimo e di velocità massima prevedibile.\nL'azione di arresto non deve causare decelerazioni dannose per gli occupanti, in qualsiasi condizione di carico.",
+  "old_condition": "",
+  "old_points": [
+   "Le porte del supporto del carico sono munite di dispositivo di interblocco",
+   "Il supporto del carico è completamente chiuso e accessibile solo da porte chiuse",
+   "Le istruzioni indicano dispositivi per arrestare il supporto del carico in discesa",
+   "Le istruzioni descrivono come evitare decelerazioni dannose per gli occupanti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.4.2",
+  "law": "MR",
+  "ref": "All. III, punto 6.4.2",
+  "group": "Allegato III — 6.4. Macchine o prodotti correlati che collegano piani definiti",
+  "title": "Comandi ai piani",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "I comandi ai piani, ad eccezione di quelli di emergenza, non devono avviare movimenti del supporto del carico quando:\na) i dispositivi di comando nel supporto del carico sono azionati;\nb) il supporto del carico non si trova a un piano.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano quando i comandi ai piani non attivano movimenti del supporto del carico",
+   "La documentazione descrive le condizioni in cui i comandi ai piani non innescano movimenti del supporto del carico",
+   "La valutazione dei rischi menziona l'assenza di movimenti del supporto del carico quando i comandi ai piani sono attivi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.4.3",
+  "law": "MR",
+  "ref": "All. III, punto 6.4.3",
+  "group": "Allegato III — 6.4. Macchine o prodotti correlati che collegano piani definiti",
+  "title": "Accesso al supporto del carico",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "I ripari ai piani e sul supporto del carico devono essere progettati e costruiti in modo da garantire il trasferimento in condizioni di sicurezza verso il supporto del carico e viceversa, tenuto conto della gamma prevedibile di cose e persone da sollevare.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente le procedure per accedere al supporto del carico",
+   "La valutazione dei rischi include analisi delle condizioni di accesso al supporto del carico",
+   "Gli schemi mostrano dispositivi di protezione per l'accesso al supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-6.5",
+  "law": "MR",
+  "ref": "All. III, punto 6.5",
+  "group": "Allegato III — 6. REQUISITI ESSENZIALI SUPPLEMENTARI DI SICUREZZA E DI TUTELA DELLA SALUTE PER LE MACCHINE O I PRODOTTI CORRELATI CHE PRESENTANO PERICOLI PARTICOLARI DOVUTI AL SOLLEVAMENTO DI PERSONE",
+  "title": "Marcature",
+  "tags": [
+   "sollevamento_persone"
+  ],
+  "always": false,
+  "text": "Nel supporto del carico devono figurare le informazioni necessarie per garantire la sicurezza, inclusi:\na) il numero di persone consentito nel supporto del carico;\nb) il carico di utilizzazione massimo.",
+  "old_condition": "",
+  "old_points": [
+   "Il supporto del carico indica il numero massimo di persone ammesse",
+   "La documentazione riporta il carico di utilizzazione massimo del supporto del carico",
+   "Le istruzioni specificano le limitazioni di carico per il supporto del carico",
+   "La valutazione dei rischi menziona il numero di persone consentito nel supporto del carico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-1",
+  "law": "MR",
+  "ref": "Art. 10, par. 1",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "All'atto dell'immissione sul mercato o della messa in servizio di una macchina o di un prodotto correlato, i fabbricanti garantiscono che siano stati progettati e fabbricati conformemente ai requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le misure di protezione contro i rischi meccanici",
+   "La valutazione dei rischi include l'analisi dei rischi elettrici",
+   "La macchina è dotata di dispositivi di interruzione d'emergenza accessibili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-2",
+  "law": "MR",
+  "ref": "Art. 10, par. 2",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Prima dell'immissione sul mercato o della messa in servizio di una macchina o di un prodotto correlato, i fabbricanti redigono la documentazione tecnica di cui all'allegato IV, parte A, ed eseguono o fanno eseguire la pertinente procedura di valutazione della conformità di cui all'articolo 25.\nSe la conformità della macchina o di un prodotto correlato rispetto ai requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III è stata dimostrata da tale procedura di valutazione della conformità, i fabbricanti redigono la dichiarazione di conformità UE conformemente all'articolo 21 e appongono la marcatura CE conformemente all' articolo 24.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi meccanici e termici",
+   "La dichiarazione di conformità menziona la norma applicabile UNI EN ISO 12100",
+   "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-3",
+  "law": "MR",
+  "ref": "Art. 10, par. 3",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti mantengono la documentazione tecnica e la dichiarazione di conformità UE a disposizione delle autorità di vigilanza del mercato per un periodo di almeno 10 anni dalla data di immissione sul mercato o dalla messa in servizio della macchina o del prodotto correlato. Se pertinente, il codice sorgente o la logica di programmazione integrati nella documentazione tecnica, su richiesta motivata da parte delle autorità nazionali competenti, sono messi a disposizione di tali autorità a condizione che tale codice sorgente o logica di programmazione siano necessari affinché esse siano in grado di verificare il rispetto dei requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include la valutazione dei rischi completa e approvata",
+   "La dichiarazione di conformità riporta la data di immissione sul mercato",
+   "La logica di programmazione è disponibile su richiesta delle autorità competenti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-4",
+  "law": "MR",
+  "ref": "Art. 10, par. 4",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che siano predisposte le procedure necessarie affinché le macchine o i prodotti correlati fabbricati nell'ambito di una produzione in serie rimangano conformi al presente regolamento. Le modifiche del processo produttivo o della progettazione o delle caratteristiche delle macchine o dei prodotti correlati, nonché le modifiche delle norme armonizzate, di altre specifiche tecniche o delle specifiche comuni di cui all'articolo 20 con riferimento alle quali è dichiarata la conformità delle macchine o dei prodotti correlati devono essere tenute debitamente in considerazione.\nLaddove ritenuto necessario in considerazione dei rischi presentati dalle macchine o dai prodotti correlati, al fine di proteggere la salute e la sicurezza degli utilizzatori, i fabbricanti effettuano una prova a campione delle macchine o dei prodotti correlati messi a disposizione sul mercato e ne esaminano i risultati. Se del caso, i fabbricanti mantengono un registro dei reclami, delle macchine o dei prodotti correlati non conformi e dei richiami di macchine e di prodotti correlati, e informano i distributori di tale monitoraggio.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi legati all'accesso alle parti in movimento",
+   "Le dichiarazioni attestano la conformità alle norme armonizzate applicabili",
+   "I manuali descrivono le procedure di manutenzione e di ispezione periodica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-5",
+  "law": "MR",
+  "ref": "Art. 10, par. 5",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che sulle macchine o sui prodotti correlati da loro immessi sul mercato o messi in servizio siano apposti almeno una designazione del modello della macchina o del prodotto correlato, della serie o del tipo, l'anno di costruzione, vale a dire l'anno in cui il processo di fabbricazione si è concluso, nonché, eventualmente, un numero di lotto o di serie oppure qualsiasi altro elemento che ne consenta l'identificazione, oppure, qualora le dimensioni o la natura della macchina o del prodotto correlato non lo consentano, garantiscono che le informazioni prescritte siano fornite sull'imballaggio o in un documento di accompagnamento della macchina o del prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale indica il modello e la serie della macchina",
+   "La valutazione dei rischi menziona l'anno di costruzione",
+   "Gli schemi riportano un numero di lotto o di serie",
+   "Il documento di accompagnamento include informazioni identificative della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-6",
+  "law": "MR",
+  "ref": "Art. 10, par. 6",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti indicano il proprio nome, la propria denominazione commerciale registrata o il proprio marchio registrato, nonché l'indirizzo postale e il sito internet, l'indirizzo di posta elettronica o altri contatti digitali ai quali possono essere contattati sulla macchina o sul prodotto correlato oppure, ove ciò non sia possibile, sull'imballaggio o in un documento di accompagnamento della macchina o del prodotto correlato. L'indirizzo indica un unico recapito presso il quale il fabbricante può essere contattato. Le informazioni relative al contatto sono in una lingua facilmente comprensibile dagli utilizzatori e le autorità di vigilanza del mercato.",
+  "old_condition": "",
+  "old_points": [
+   "Le informazioni di contatto sono visibili sul manuale della macchina",
+   "Le informazioni di contatto sono in una lingua facilmente comprensibile",
+   "Le informazioni di contatto includono nome, marca e indirizzo del fabbricante"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-7",
+  "law": "MR",
+  "ref": "Art. 10, par. 7",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che le macchine o i prodotti correlati siano accompagnati dalle istruzioni per l’uso e dalle informazioni di cui all’allegato III. Le istruzioni possono essere fornite in formato digitale. Tali istruzioni e informazioni descrivono chiaramente il modello di prodotto al quale corrispondono.\nQuando le istruzioni per l’uso sono fornite in formato digitale, il fabbricante deve:\na) indicare sulla macchina o sul prodotto correlato, oppure, ove ciò non sia possibile, sull’imballaggio o in un documento di accompagnamento, le modalità di accesso alle istruzioni in formato digitale;\nb) presentare le istruzioni per l’uso in un formato che consenta all’utilizzatore di stamparle e scaricarle, nonché di salvarle su un dispositivo elettronico in maniera da potervi accedere in qualsiasi momento, in particolare in caso di avaria della macchina o del prodotto correlato; tale requisito si applica anche quando le istruzioni per l’uso sono integrate nel software della macchina o del prodotto correlato;\nc) renderle accessibili online durante il ciclo di vita previsto della macchina o del prodotto correlato e per un periodo di almeno 10 anni dopo l’immissione sul mercato della macchina o del prodotto correlato.\nTuttavia, su richiesta dell’utilizzatore al momento dell’acquisto, il fabbricante fornisce gratuitamente le istruzioni per l’uso in formato cartaceo entro un mese.\nNel caso di una macchina o di un prodotto correlato destinati a utilizzatori non professionali o che possono, in condizioni ragionevolmente prevedibili, essere utilizzati da utilizzatori non professionali, anche se non ad essi destinati, il fabbricante fornisce, in formato cartaceo, le informazioni sulla sicurezza essenziali per mettere in servizio la macchina o il prodotto correlato e per utilizzarli in modo sicuro.\nLe istruzioni per l’uso, le informazioni sulla sicurezza e le informazioni di cui all'allegato III sono redatte in una lingua facilmente comprensibile dagli utilizzatori, secondo quanto stabilito dallo Stato membro interessato, e sono chiare, comprensibili e leggibili.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano chiaramente il modello della macchina",
+   "Le istruzioni sono disponibili in formato digitale e accessibili online",
+   "Le istruzioni forniscono informazioni sulla sicurezza essenziali per l'utilizzo sicuro",
+   "Le istruzioni sono redatte in una lingua facilmente comprensibile dagli utilizzatori"
+  ],
+  "old_status": "bozza"
+ }
+]

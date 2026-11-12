@@ -214,3 +214,8 @@ a{color:var(--brand)}
 .mrow{cursor:pointer}
 .yn button:disabled{opacity:.5}
 .welcome .r{margin:0 auto}
+/* tipi di documento: chip selezionabili */
+.types{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.tchip{font:inherit;font-size:10.5px;padding:2px 7px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--mute);cursor:pointer}
+.tchip.on{background:var(--brand2);border-color:var(--brand);color:var(--brand);font-weight:600}
+.tchip:disabled{cursor:default;opacity:.6}

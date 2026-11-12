@@ -1,0 +1,331 @@
+{
+  "scope": "UR5e a livello di modello; cinque PDF inglesi, nessuna cella identificata. Le istruzioni non provano la loro esecuzione.",
+  "cases": [
+    {
+      "id": "UR5E-01",
+      "claim": "Il manuale prescrive di cambiare la password predefinita prima di collegare il robot alla rete.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        29
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-02",
+      "claim": "Le impostazioni di sicurezza software sono protette da password.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        33
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-03",
+      "claim": "Le istruzioni raccomandano di disabilitare SSH quando non necessario.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        28
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-04",
+      "claim": "Tutte le interfacce di comunicazione del robot dispongono di autenticazione e cifratura.",
+      "expected": "C",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        29
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-05",
+      "claim": "Le istruzioni richiedono un tunnel SSH per accessi che attraversano il confine della zona fidata.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        29
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-06",
+      "claim": "Le istruzioni indicano come eliminare dati sensibili alla dismissione.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        29
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-07",
+      "claim": "Il software permette il backup dei file su un supporto USB.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        230
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-08",
+      "claim": "Il file di supporto tecnico esportato è uno ZIP non protetto da password.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        226
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-09",
+      "claim": "Il robot impone automaticamente il cambio password al primo accesso.",
+      "expected": "I",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        29
+      ],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-10",
+      "claim": "In modalità Recovery tutti i limiti di posizione dei giunti e dell’utensile restano attivi.",
+      "expected": "C",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        38
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-11",
+      "claim": "In modalità simulazione il braccio del robot non si muove.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        15
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-12",
+      "claim": "Il software offre modalità di controllo locale e remoto.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        15
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-13",
+      "claim": "Il menu About permette di visualizzare il numero di serie del robot.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        231
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-14",
+      "claim": "Il software permette di esportare rapporti relativi agli arresti di emergenza.",
+      "expected": "S",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        225
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-15",
+      "claim": "L’arresto di emergenza rimuove l’alimentazione degli attuatori e degli I/O utensile.",
+      "expected": "S",
+      "document": "05_Funzioni_sicurezza_EN_2025_11_01.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-16",
+      "claim": "La funzione Safeguard Stop lascia inalterati gli I/O utensile.",
+      "expected": "S",
+      "document": "05_Funzioni_sicurezza_EN_2025_11_01.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-17",
+      "claim": "Il pulsante di emergenza è destinato a sostituire un dispositivo automatico di protezione.",
+      "expected": "C",
+      "document": "05_Funzioni_sicurezza_EN_2025_11_01.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-18",
+      "claim": "I limiti di posizione possono essere impostati separatamente per ogni giunto.",
+      "expected": "S",
+      "document": "05_Funzioni_sicurezza_EN_2025_11_01.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-19",
+      "claim": "Il robot UR5e ha uno sbraccio nominale di 850 mm.",
+      "expected": "S",
+      "document": "02_UR5e_Scheda_tecnica_EN.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-20",
+      "claim": "La portata nominale del robot UR5e è 5 kg.",
+      "expected": "S",
+      "document": "02_UR5e_Scheda_tecnica_EN.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-21",
+      "claim": "La portata nominale del robot UR5e è 10 kg.",
+      "expected": "C",
+      "document": "02_UR5e_Scheda_tecnica_EN.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-22",
+      "claim": "La dichiarazione identifica UR5e come quasi-macchina da incorporare.",
+      "expected": "S",
+      "document": "06_eSeries_Dichiarazione_incorporazione_2026_02_12.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-23",
+      "claim": "La dichiarazione condiziona la messa in servizio all’integrazione nella macchina finale.",
+      "expected": "S",
+      "document": "06_eSeries_Dichiarazione_incorporazione_2026_02_12.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-24",
+      "claim": "Il fabbricante dichiara di aver compilato la documentazione pertinente secondo l’allegato VII parte B.",
+      "expected": "S",
+      "document": "06_eSeries_Dichiarazione_incorporazione_2026_02_12.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "documented",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-25",
+      "claim": "Nel fascicolo è presente la dichiarazione di conformità della cella completa effettivamente installata.",
+      "expected": "I",
+      "document": "06_eSeries_Dichiarazione_incorporazione_2026_02_12.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-26",
+      "claim": "Il numero 33 riportato sul documento identifica l’organismo notificato.",
+      "expected": "I",
+      "document": "06_eSeries_Dichiarazione_incorporazione_2026_02_12.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-27",
+      "claim": "Il fascicolo identifica la matricola dello specifico esemplare installato presso l’utilizzatore.",
+      "expected": "I",
+      "document": "06_eSeries_Dichiarazione_incorporazione_2026_02_12.pdf",
+      "pdfPages": [
+        1
+      ],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-28",
+      "claim": "Il fascicolo contiene la valutazione dei rischi validata della specifica cella installata.",
+      "expected": "I",
+      "document": null,
+      "pdfPages": [],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-29",
+      "claim": "La documentazione stabilisce una data di fine supporto degli aggiornamenti di sicurezza.",
+      "expected": "I",
+      "document": null,
+      "pdfPages": [],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    },
+    {
+      "id": "UR5E-30",
+      "claim": "I dati sensibili sono già stati cancellati dal robot installato.",
+      "expected": "I",
+      "document": "04_PolyScope_Manuale_software_EN_SW5_24.pdf",
+      "pdfPages": [
+        29
+      ],
+      "kind": "missing_or_not_proven",
+      "review": "Revisione documentale del campione; non certificazione. Pagine fisiche PDF."
+    }
+  ]
+}

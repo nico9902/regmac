@@ -1,0 +1,11 @@
+MECCANICA ROSSI S.r.l. — VALUTAZIONE DEI RISCHI — NASTRO TRASPORTATORE NT-300
+Metodo: EN ISO 12100:2010. Redatta da: Ufficio tecnico, 10/02/2026.
+
+Criterio di riduzione dei rischi: per ogni pericolo sono state applicate le misure nell'ordine seguente: 1) eliminazione o riduzione con la progettazione intrinsecamente sicura; 2) ripari e dispositivi di protezione; 3) informazioni per l'uso sui rischi residui.
+
+P1 — Trascinamento tra catena e pignone del motoriduttore. Misura: carter fisso in lamiera fissato con viti (misura di tipo 2). Rischio residuo: trascurabile.
+P2 — Trascinamento al rullo di rinvio. Misura: riduzione della velocità del nastro a 0,3 m/s (tipo 1) e avvertenza nelle istruzioni (tipo 3). Rischio residuo: basso.
+P3 — Accesso alla tramoggia durante il funzionamento. Misura: sportello di ispezione interbloccato con microinterruttore di sicurezza che arresta il nastro all'apertura e ne impedisce l'avvio (tipo 2).
+P4 — Contatto elettrico diretto e indiretto. Misura: quadro IP55, interruttore differenziale, collegamento equipotenziale (tipo 2).
+P5 — Interruzione e ritorno dell'alimentazione. Misura: contattore di linea che si apre alla mancanza di tensione; nessun riavvio automatico al ritorno (tipo 1).
+P6 — Caduta del carico dal nastro. Misura: sponde laterali alte 60 mm (tipo 1).
