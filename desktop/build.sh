@@ -9,7 +9,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 ROOT=$(cd .. && pwd)
-VERSION=1.2.0
+VERSION=1.3.0
 case "$(uname -s)" in
   Darwin) DEFAULT=app,dmg; JAVA_HOME=${JAVA_HOME:-$(/usr/libexec/java_home -v 21)} ;;
   MINGW*|MSYS*|CYGWIN*) DEFAULT=msi,nsis ;;

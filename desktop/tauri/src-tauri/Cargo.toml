@@ -1,6 +1,6 @@
 [package]
 name = "regmac"
-version = "1.2.0"
+version = "1.3.0"
 description = "RegMac — pre-assessment di macchine con AI locale"
 edition = "2021"
 

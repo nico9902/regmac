@@ -1,8 +1,9 @@
+import {reasonLabel} from './api';
 import {useCallback, useEffect, useMemo, useState} from 'react';
 import {AlertTriangle, Check, ChevronLeft, ChevronRight, Cpu, Download, ExternalLink, FileText, Pause, Play, Search, Trash2, Upload} from 'lucide-react';
-import {ANS, api, DossierFull, OUT, pct, ReqView, running} from './api';
+import {ANS, api, CatalogData, DossierFull, MOTIVE, OUT, pct, ReqView, running} from './api';
 import type {Toast} from './App';
-import {DeleteModal, Drop, ProfileEditor, ScoreBar, valuesFrom} from './parts';
+import {catalog, DeleteModal, Drop, profileComplete, ProfileEditor, ScoreBar, valuesFrom} from './parts';
 
 type Tab = 'panoramica' | 'documenti' | 'requisiti' | 'gap' | 'report';
 
@@ -61,6 +62,7 @@ function RunBox({d, reload, toast}: {d: DossierFull; reload: () => void; toast: 
     <p className="tiny mute" style={{marginTop: 6}}>Puoi già rivedere i requisiti valutati. Se chiudi RegMac, la potrai riprendere.</p></div>;
   if (['stopped', 'interrupted', 'error'].includes(r.state)) return <div className="card run row" style={{borderColor: 'var(--part)'}}><AlertTriangle size={16} color="var(--part)"/>
     <div className="grow"><b>{r.state === 'error' ? 'La pre-valutazione si è fermata per un errore' : 'Pre-valutazione interrotta'}</b><div className="tiny mute">{r.message} · {r.done} di {r.total} requisiti</div></div>
+    <button className="btn sm" onClick={() => window.confirm('Rianalizzare da zero, senza riusare i giudizi in memoria?') && act(api.run(d.fascicolo.id, true))}>Da zero</button>
     <button className="btn pri sm" onClick={() => act(api.run(d.fascicolo.id))}><Play size={13}/>Riprendi</button></div>;
   return null;
 }
@@ -68,11 +70,19 @@ function RunBox({d, reload, toast}: {d: DossierFull; reload: () => void; toast: 
 function Overview({d, reload, setTab, goto, toast}: {d: DossierFull; reload: () => void; setTab: (t: Tab) => void; goto: (rid: string) => void; toast: Toast}) {
   const f = d.fascicolo, s = d.assessment.summary, g = d.assessment.gaps, run = running(f.run);
   const [values, setValues] = useState(valuesFrom(f));
-  const [editing, setEditing] = useState(!f.profileConfirmed);
+  const [cat, setCat] = useState<CatalogData | null>(null);
+  useEffect(() => { void catalog().then(setCat); }, []);
+  // profili confermati con la vecchia risposta "Non so": vanno completati con Sì o No
+  const incomplete = f.profileConfirmed && f.profile.some(a => a.value !== true && a.value !== false);
+  const [editing, setEditing] = useState(!f.profileConfirmed || incomplete);
   const [busy, setBusy] = useState(false);
-  async function propose() { setBusy(true); try { const a = await api.propose(f.id); setValues(Object.fromEntries(a.map(x => [x.tag, x.verdict === 'TRUE']))); await reload(); } catch (e) { toast((e as Error).message); } finally { setBusy(false); } }
+  async function propose() { setBusy(true); try { const a = await api.propose(f.id); setValues(Object.fromEntries(a.map(x => [x.tag, x.verdict === 'UNKNOWN' ? null : x.verdict === 'TRUE']))); await reload(); } catch (e) { toast((e as Error).message); } finally { setBusy(false); } }
   async function confirm() { try { await api.confirmProfile(f.id, values); setEditing(false); await reload(); } catch (e) { toast((e as Error).message); } }
   async function start() { try { await api.run(f.id); await reload(); } catch (e) { toast((e as Error).message); } }
+  async function fresh() {
+    if (!window.confirm('Rianalizzare da zero? L\'AI rivaluta tutti i requisiti senza riusare i giudizi in memoria: richiede il tempo di una prima analisi. Gli esiti attuali restano archiviati.')) return;
+    try { await api.run(f.id, true); await reload(); } catch (e) { toast((e as Error).message); }
+  }
 
   const steps: [string, string, boolean][] = [
     ['Documenti caricati e indicizzati', `${d.documents.length} documenti · ${d.documents.reduce((a, x) => a + x.passages, 0)} brani`, d.documents.length > 0],
@@ -86,34 +96,36 @@ function Overview({d, reload, setTab, goto, toast}: {d: DossierFull; reload: () 
   return <div className="page"><RunBox d={d} reload={reload} toast={toast}/>
     {editing ? <div className="card"><div className="row"><h2 className="grow">Profilo della macchina</h2>
         <button className="btn sm" disabled={busy || !d.documents.length} onClick={propose}>{busy ? 'L\'AI sta leggendo…' : f.profile.length ? 'Riproponi con l\'AI' : 'Proponi con l\'AI'}</button></div>
-      <p className="tiny mute" style={{margin: '4px 0 8px'}}>Il profilo decide quali requisiti entrano nella pre-valutazione.</p>
+      <p className="tiny mute" style={{margin: '4px 0 8px'}}>Il profilo decide quali requisiti entrano nella pre-valutazione: rispondi Sì o No a ogni domanda.{incomplete && <b style={{color: 'var(--part)'}}> Il profilo salvato contiene risposte «Non so», non più ammesse: completalo.</b>}</p>
       <ProfileEditor answers={f.profile} values={values} setValues={setValues}/>
       <div className="row" style={{marginTop: 10}}><span className="grow"/>{f.profileConfirmed && <button className="btn" onClick={() => setEditing(false)}>Annulla</button>}
-        <button className="btn pri" onClick={confirm}>Conferma il profilo</button></div></div>
+        <button className="btn pri" disabled={!profileComplete(cat, values)} onClick={confirm}>Conferma il profilo</button></div></div>
     : <div className="grid2" style={{gridTemplateColumns: '1.1fr 1fr'}}>
       <div className="card"><span className="eyebrow">Compliance score</span>
         {s.done === 0 ? <p className="mute" style={{marginTop: 10}}>Ancora nessun esito.</p>
         : s.notEvaluable && !run ? <><div className="row" style={{margin: '8px 0 10px'}}><span className="chip part" style={{fontSize: 14, padding: '6px 10px'}}><AlertTriangle size={15}/>Non valutabile</span></div>
-          <p className="small">I documenti rispondono solo al <b>{pct(s.coverage)}</b> dei punti di controllo (soglia 30%). Uno score calcolato su così poche evidenze sarebbe fuorviante.</p>
-          <p className="small mute" style={{marginTop: 8}}>Carica istruzioni per l'uso, valutazione dei rischi e schemi, poi rilancia la pre-valutazione.</p>
+          <p className="small">Il sistema ha riconosciuto evidenze per il <b>{pct(s.coverage)}</b> dei punti di controllo (soglia 30%). Uno score calcolato su così poche evidenze sarebbe fuorviante.</p>
+          <p className="small mute" style={{marginTop: 8}}>Verifica il profilo, i documenti non letti e le evidenze recuperate prima di concludere che la documentazione sia insufficiente.</p>
           <div className="row" style={{marginTop: 12}}><button className="btn pri sm" onClick={() => setTab('documenti')}><Upload size={13}/>Carica documenti</button></div></>
         : <><div className="row" style={{alignItems: 'flex-end', gap: 16, margin: '4px 0 10px'}}><div className="score">{pct(s.score)}</div>
             <div className="small mute" style={{paddingBottom: 9}}>{run && 'provvisorio · '}può arrivare fino a <b>{pct(s.max)}</b> con le evidenze mancanti<br/>copertura evidenze <b>{pct(s.coverage)}</b></div></div>
-          <ScoreBar s={s}/><div className="row tiny mute" style={{marginTop: 6, gap: 14}}><span><i className="lg sc"/>score</span><span><i className="lg mx"/>recuperabile con le evidenze</span><span><i className="lg rest"/>gap tecnici</span></div>
-          <div className="grid3" style={{marginTop: 14, gap: 8}}>{([['Pienamente soddisfatti', s.full, 'ok'], ['Con gap tecnici', s.gapsTech, 'nc'], ['Con gap documentali', s.gapsDoc, 'mute']] as const).map(([l, v, c]) =>
+          <ScoreBar s={s}/><div className="row tiny mute" style={{marginTop: 6, gap: 14}}><span><i className="lg sc"/>score</span><span><i className="lg mx"/>recuperabile con le evidenze</span><span><i className="lg rest"/>possibili non conformità</span></div>
+          <div className="grid2" style={{marginTop: 14, gap: 8, gridTemplateColumns: '1fr 1fr'}}>{([['Pienamente soddisfatti', s.full, 'ok'], ['Possibili non conformità', s.gapsTech, 'nc'], ['Con documento assente', s.gapsMissing, 'mute'], ['Con evidenza mancante', s.gapsEvidence, 'mute']] as const).map(([l, v, c]) =>
             <div className="mini" key={l}><span className="tiny mute">{l}</span><b style={{color: `var(--${c})`}}>{v}</b></div>)}</div>
-          <p className="tiny mute" style={{marginTop: 10}}>{s.applicable} requisiti applicabili · {s.na} non applicabili o da confermare · score = media sui requisiti applicabili della quota di punti di controllo supportati</p></>}
+          <p className="tiny mute" style={{marginTop: 10}}>{s.applicable} requisiti applicabili · {s.na} non applicabili o da confermare{s.integrator > 0 && ` · ${s.integrator} punti a carico dell'integratore, esclusi dallo score`} · score = media sui requisiti applicabili della quota di punti di controllo supportati</p></>}
       </div>
       <div className="card"><h2>Percorso</h2><div className="steps" style={{marginTop: 6}}>{steps.map((x, i) =>
         <div className="step" key={x[0]}><div className={'sn ' + (x[2] ? 'done' : i === cur ? 'cur' : '')}>{x[2] ? <Check size={13}/> : i + 1}</div>
           <div className="grow"><b>{x[0]}</b><div className="tiny mute">{x[1]}</div></div>
           {i === cur && !run && <button className="btn pri sm" onClick={action[i]}>{['Carica', 'Conferma', 'Avvia', 'Rivedi', 'Apri'][i]}</button>}
-          {i === 2 && x[2] && <button className="btn sm" onClick={start} title="Rivaluta: i requisiti non cambiati restano come sono">Aggiorna</button>}</div>)}</div></div>
+          {i === 2 && x[2] && !run && <><button className="btn sm" onClick={start} title="Rivaluta: i requisiti non cambiati restano come sono">Aggiorna</button>
+            <button className="btn sm" onClick={fresh} title="Rivaluta tutto senza memoria dei giudizi">Da zero</button></>}</div>)}</div></div>
     </div>}
+    {d.documents.some(x => x.error) && <div className="card small" style={{marginTop: 14, color: 'var(--nc)'}}>Analisi parziale: {d.documents.filter(x => x.error).map(x => x.name).join(', ')} non analizzati. Consulta la scheda Documenti.</div>}
     {!editing && <div className="grid2" style={{gridTemplateColumns: '1.1fr 1fr', marginTop: 16}}>
       <div className="card"><div className="row"><h2 className="grow">Gap principali</h2><button className="btn ghost sm" onClick={() => setTab('gap')}>Tutti i {g.length}</button></div>
-        {g.slice(0, 5).map(x => <div className="block" key={x.rid}><span className={'chip ' + (x.priority === 1 ? 'nc' : x.priority === 2 ? 'und' : 'part')}>{x.kind}</span>
-          <div className="grow"><button className="linkbtn" onClick={() => goto(x.rid)}><b>{x.ref}</b> {x.title}</button><div className="tiny mute">{x.points[0]?.text || x.condition}</div></div></div>)}
+        {g.filter(x => x.priority < 4).slice(0, 5).map(x => <div className="block" key={x.rid}><span className={'chip ' + (MOTIVE[x.kind] || 'und')}>{x.kind}</span>
+          <div className="grow"><button className="linkbtn" onClick={() => goto(x.rid)}><b>{x.ref}</b> {x.title}</button><div className="tiny mute">{x.points[0]?.text}{x.points[0] && <> · <b>atteso:</b> {x.points[0].expectedLabel}</>}</div></div></div>)}
         {!g.length && <p className="mute small">Nessun gap.</p>}</div>
       <div className="card"><div className="row"><h2 className="grow">Macchina</h2><button className="btn ghost sm" onClick={() => setEditing(true)}>Modifica profilo</button></div>
         <dl className="kv" style={{marginTop: 10}}><dt>Modello</dt><dd>{[f.model, f.serial && 'matr. ' + f.serial, f.year].filter(Boolean).join(' · ') || '—'}</dd><dt>Fabbricante</dt><dd>{f.maker || '—'}</dd>
@@ -124,20 +136,28 @@ function Overview({d, reload, setTab, goto, toast}: {d: DossierFull; reload: () 
 
 function Documents({d, reload, toast}: {d: DossierFull; reload: () => void; toast: Toast}) {
   const [busy, setBusy] = useState(false);
+  const [cat, setCat] = useState<CatalogData | null>(null);
+  useEffect(() => { void catalog().then(setCat); }, []);
+  const toggle = (docId: string, cur: string[], t: string) => api.setDocTypes(d.fascicolo.id, docId, cur.includes(t) ? cur.filter(x => x !== t) : [...cur, t]).then(reload).catch(e => toast(e.message));
   const [pending, setPending] = useState<string | null>(null);
   async function add(files: File[]) {
     if (!files.length) return; setBusy(true);
-    try { await api.upload(d.fascicolo.id, files); await reload(); toast(files.length === 1 ? 'Documento aggiunto' : files.length + ' documenti aggiunti'); } catch (e) { toast((e as Error).message); } finally { setBusy(false); }
+    try { const docs = await api.upload(d.fascicolo.id, files); await reload(); const failed = docs.filter(x => x.error); toast(failed.length ? 'Non analizzati: ' + failed.map(x => x.name).join(', ') + '. Gli altri documenti sono disponibili.' : 'Caricamento completato'); } catch (e) { toast((e as Error).message); } finally { setBusy(false); }
   }
   const run = running(d.fascicolo.run);
   return <div className="page">{busy ? <div className="card empty">Caricamento e lettura dei documenti…</div> : <Drop onFiles={add}/>}
-    <div className="card" style={{marginTop: 14, padding: '6px 8px'}}><table><thead><tr><th>Documento</th><th>Pagine</th><th>Brani letti</th><th>Impronta SHA-256</th><th/></tr></thead><tbody>
+    <div className="card" style={{marginTop: 14, padding: '6px 8px'}}><table><thead><tr><th>Documento e tipo</th><th>Pagine</th><th>Brani letti</th><th>Impronta SHA-256</th><th/></tr></thead><tbody>
       {d.documents.map(x => <tr key={x.id}><td><button className="linkbtn row" title="Apri con l'applicazione predefinita" onClick={() => api.openDoc(d.fascicolo.id, x.id).catch(e => toast(e.message))}><FileText size={15}/><b>{x.name}</b></button>
-        {x.warning && <div className="tiny" style={{color: 'var(--part)'}}><AlertTriangle size={11}/> {x.warning}</div>}</td><td>{x.pages}</td>
+        {x.error && <div className="tiny" style={{color: 'var(--nc)'}}>{x.error}</div>}
+        {x.warning && <div className="tiny" style={{color: 'var(--part)'}}><AlertTriangle size={11}/> {x.warning}</div>}
+        {!x.error && cat && <div className="types">{Object.entries(cat.docTypes).map(([k, label]) => { const cur = x.types || []; return <button key={k} title={label} disabled={run}
+          className={'tchip ' + (cur.includes(k) ? 'on' : '')} onClick={() => void toggle(x.id, cur, k)}>{label.split(' (')[0].split(' /')[0]}</button>; })}</div>}
+        {!x.error && x.types == null && <div className="tiny mute">Tipo proposto alla prossima analisi</div>}</td><td>{x.pages}</td>
         <td>{x.passages ? <span className="chip ok">{x.passages}</span> : <span className="chip part">0</span>}</td><td><code className="tiny mute" title={x.sha256}>{x.sha256.slice(0, 8)}…{x.sha256.slice(-6)}</code></td>
         <td>{pending === x.id ? <span className="row" style={{gap: 6}}><button className="btn danger pri sm" onClick={() => { setPending(null); void api.removeDoc(d.fascicolo.id, x.id).then(reload); }}>Rimuovi</button><button className="btn sm" onClick={() => setPending(null)}>Annulla</button></span>
           : <button className="iconbtn" aria-label="Rimuovi documento" disabled={run} onClick={() => setPending(x.id)}><Trash2 size={14}/></button>}</td></tr>)}
       {!d.documents.length && <tr><td colSpan={5} className="mute">Nessun documento.</td></tr>}</tbody></table></div>
+    <p className="tiny mute" style={{marginTop: 8}}>Il tipo di documento è proposto automaticamente: correggilo se serve. Ogni punto di controllo cerca le evidenze solo nei documenti del tipo atteso; se nessun documento ha quel tipo, il punto diventa un gap «Documento assente».</p>
     {d.fascicolo.run.state !== 'idle' && !run && <div className="card row" style={{marginTop: 14, background: 'var(--brand3)'}}><div className="grow"><b>Hai aggiunto o rimosso documenti?</b>
       <div className="tiny mute">Aggiorna la pre-valutazione: i giudizi già fatti restano in memoria, si ricalcola solo ciò che cambia.</div></div>
       <button className="btn pri" onClick={() => api.run(d.fascicolo.id).then(reload).catch(e => toast(e.message))}><Play size={13}/>Aggiorna la pre-valutazione</button></div>}
@@ -153,14 +173,14 @@ function Requirements({d, setD, sel, setSel}: {d: DossierFull; setD: (x: Dossier
   const shown = useMemo(() => reqs.filter(r => {
     if (filter === 'todo' && (!r.result || r.result.confirmed)) return false;
     if (filter === 'gap' && !['NC', 'PART', 'INS'].includes(r.outcome || '')) return false;
-    if (filter === 'na' && r.outcome !== 'NA') return false;
+    if (filter === 'na' && r.outcome !== 'NA' && r.outcome !== 'INT') return false;
     return !q || (r.ref + ' ' + r.title).toLowerCase().includes(q.toLowerCase());
   }), [reqs, filter, q]);
   const cur = reqs.find(r => r.id === sel) || shown.find(r => r.result && !r.result.confirmed) || shown[0] || reqs[0];
   useEffect(() => { setNote(cur?.result?.note || ''); }, [cur?.id, cur?.result?.note]);
   const idx = reqs.findIndex(r => r.id === cur?.id);
   const move = (k: number) => { const n = reqs[Math.max(0, Math.min(reqs.length - 1, idx + k))]; if (n) setSel(n.id); };
-  async function save(body: {points?: (string | null)[]; confirmed?: boolean; note?: string}, advance = false) {
+  async function save(body: {points?: (string | null)[]; confirmed?: boolean; note?: string; applicability?: 'TRUE' | 'FALSE' | 'AUTO'}, advance = false) {
     const x = await api.review(d.fascicolo.id, cur.id, body); setD(x);
     if (advance) { const n = x.assessment.requirements.slice(idx + 1).find(r => r.result && !r.result.confirmed); if (n) setSel(n.id); }
   }
@@ -209,22 +229,34 @@ function Requirements({d, setD, sel, setSel}: {d: DossierFull; setD: (x: Dossier
   </div>;
 }
 
-function Card({r, d, save, note, setNote}: {r: ReqView; d: DossierFull; save: (b: {points?: (string | null)[]; confirmed?: boolean; note?: string}) => Promise<void>; note: string; setNote: (s: string) => void}) {
+function Card({r, d, save, note, setNote}: {r: ReqView; d: DossierFull; save: (b: {points?: (string | null)[]; confirmed?: boolean; note?: string; applicability?: 'TRUE' | 'FALSE' | 'AUTO'}) => Promise<void>; note: string; setNote: (s: string) => void}) {
   const x = r.result;
+  const [cat, setCat] = useState<CatalogData | null>(null);
+  useEffect(() => { void catalog().then(setCat); }, []);
   if (!x) return <div className="card empty"><span className="spin"><Cpu size={22}/></span><p style={{marginTop: 8}}>{running(d.fascicolo.run) ? 'Requisito in coda: l\'AI lo valuterà a breve.' : 'Requisito non ancora valutato.'}</p></div>;
-  if (x.applicability !== 'TRUE') return <div className="card"><div className="row"><span className="eyebrow grow">Esito dell'AI</span>
-      <span className={'chip ' + (x.applicability === 'FALSE' ? 'na' : 'part')}>{x.applicability === 'FALSE' ? 'Non applicabile' : 'Applicabilità da confermare'}</span></div>
-    <p className="small" style={{marginTop: 10}}><b>Si applica se:</b> {r.sheet.condition}</p>
-    {x.appQuote ? <><q>{x.appQuote}</q><div className="tiny mute">{x.appDoc}{x.appPage && x.appPage > 1 ? ', p. ' + x.appPage : ''}</div></> : <p className="small mute" style={{marginTop: 6}}>Nei documenti non c'è nulla che dica se la condizione è vera: il requisito è escluso dallo score ed è elencato tra i gap di applicabilità.</p>}</div>;
+  const app = x.appUser ?? x.applicability;
+  // applicabilità: proposta dal programma (profilo o evidenze), decisione finale del revisore
+  const appBar = (r.sheet.condition || x.appUser) ? <div className="row wrap small" style={{gap: 6, margin: '8px 0 4px'}}>
+    <span className="grow"><b>Si applica se:</b> {r.sheet.condition || '—'}
+      <span className="tiny mute"> · {x.appUser ? 'deciso dal revisore' : x.applicability === 'TRUE' ? (x.appQuote || 'confermato dalle evidenze trovate') : x.applicability === 'FALSE' ? 'escluso dal profilo' : 'da verificare: nessuna evidenza la conferma'}</span></span>
+    <span className="yn"><button className={app === 'TRUE' ? 'on ok' : ''} onClick={() => void save({applicability: 'TRUE'})}>Si applica</button>
+      <button className={app === 'FALSE' ? 'on na' : ''} onClick={() => void save({applicability: 'FALSE'})}>Non si applica</button>
+      {x.appUser && <button onClick={() => void save({applicability: 'AUTO'})} title="Torna alla proposta del programma">Automatica</button>}</span></div> : null;
+  if (app === 'FALSE') return <div className="card"><div className="row"><span className="eyebrow grow">Esito</span><span className="chip na">Non applicabile</span></div>{appBar}
+    <p className="small mute" style={{marginTop: 6}}>Il requisito è escluso dallo score.</p></div>;
   const eff = x.points.map(p => p.user ?? p.answer);
   return <div className="card"><div className="row wrap"><span className="eyebrow grow">Esito dell'AI</span>
       {r.outcome && <span className={'chip ' + OUT[r.outcome][1]}>{OUT[r.outcome][0]}</span>}
       {r.value != null && <span className="chip brand" title="Contributo del requisito allo score">vale {pct(r.value)}{r.max! > r.value ? ' · max ' + pct(r.max!) : ''}</span>}</div>
-    {r.sheet.condition && <p className="tiny mute" style={{margin: '6px 0 0'}}>Applicabile: {x.appQuote ? `«${x.appQuote}»` : r.sheet.condition}</p>}
+    {appBar}
+    {app === 'UNKNOWN' && <p className="tiny" style={{color: 'var(--part)', margin: '0 0 4px'}}>Applicabilità da verificare: i punti sono stati valutati, ma il requisito non entra nello score finché non indichi se si applica.</p>}
     {x.points.map((p, i) => <div className="pt" key={i}><div className="row" style={{alignItems: 'flex-start'}}><span className="pn">{i + 1}</span>
       <div className="grow"><div className="small"><b>{p.text}</b></div>
+        {p.expected && <div className="tiny mute">Documento atteso: {cat?.docTypes[p.expected] || p.expected}</div>}
         {p.quote && eff[i] !== 'I' ? <><q>{p.quote}</q><div className="tiny mute"><FileText size={11}/> {p.docId ? <button className="linkbtn" style={{color: 'var(--brand)', fontSize: 11}} onClick={() => void api.openDoc(d.fascicolo.id, p.docId!)}>{p.doc}</button> : p.doc}{p.page && p.page > 1 ? ' · p. ' + p.page : ''}</div></>
-          : <div className="tiny mute" style={{marginTop: 4}}>{p.user === 'I' ? 'Segnato dal revisore come senza evidenze.' : 'Nessuna frase dei documenti dimostra o contraddice questo punto.'}</div>}
+          : p.user === 'I' ? <div className="tiny mute" style={{marginTop: 4}}>Segnato dal revisore come senza evidenze.</div> : null}
+        {eff[i] === 'C' && <div className="tiny" style={{color: 'var(--nc)', marginTop: 4}}><AlertTriangle size={11}/> Possibile non conformità{p.user ? ' confermata dal revisore' : ': da confermare'}</div>}
+        {p.answer === 'I' && !p.user && <div className="tiny mute" style={{marginTop: 4}}>{reasonLabel(p.reason)}{p.candidates ? ` · ${p.candidates} brani esaminati` : ''}</div>}
         {p.user && <div className="tiny" style={{color: 'var(--brand)', marginTop: 3}}>Corretto dal revisore (proposta AI: {ANS[p.answer][0].toLowerCase()})</div>}</div>
       <div className="yn">{(['S', 'C', 'I'] as const).map(k => <button key={k} className={eff[i] === k ? 'on ' + ANS[k][1] : ''}
         onClick={() => void save({points: eff.map((v, j) => j === i ? k : v)})}>{ANS[k][0]}</button>)}</div></div></div>)}
@@ -245,18 +277,22 @@ function LegalText({id}: {id: string}) {
 function Gaps({d, goto}: {d: DossierFull; goto: (rid: string) => void}) {
   const g = d.assessment.gaps;
   const [k, setK] = useState('all');
-  const list = g.filter(x => k === 'all' || x.kind === k), cnt = (x: string) => g.filter(y => y.kind === x).length;
-  return <div className="page"><div className="row"><div className="grow"><h2>Registro dei gap</h2><p className="tiny mute">Tecnico: i documenti contraddicono il requisito. Documentale: manca la prova. Applicabilità: non è chiaro se il requisito si applica.</p></div></div>
-    <div className="filters" style={{margin: '12px 0'}}>{[['all', `Tutti · ${g.length}`], ['Tecnico', `Tecnici · ${cnt('Tecnico')}`], ['Documentale', `Documentali · ${cnt('Documentale')}`], ['Applicabilità', `Applicabilità · ${cnt('Applicabilità')}`]].map(([v, l]) =>
+  const kinds = ['Possibile non conformità', 'Documento assente', 'Evidenza mancante', 'Applicabilità da verificare', 'A carico dell\'integratore'];
+  // un requisito compare sotto ogni motivo dei suoi punti
+  const list = g.filter(x => k === 'all' ? x.priority < 4 : x.points.some(p => p.motive === k));
+  const cnt = (m: string) => g.filter(y => y.points.some(p => p.motive === m)).length;
+  return <div className="page"><div className="row"><div className="grow"><h2>Registro dei gap</h2>
+    <p className="tiny mute">Ogni punto indica il motivo e il documento atteso. <b>Possibile non conformità</b>: un documento smentisce il punto (da confermare). <b>Documento assente</b>: nel fascicolo manca il tipo di documento atteso. <b>Evidenza mancante</b>: il documento c'è ma non contiene la prova. <b>A carico dell'integratore</b>: per una quasi-macchina spetta a chi realizza la macchina finale (escluso dallo score).</p></div></div>
+    <div className="filters" style={{margin: '12px 0'}}>{[['all', `Tutti · ${g.filter(x => x.priority < 4).length}`], ...kinds.map(m => [m, `${m} · ${cnt(m)}`])].map(([v, l]) =>
       <button key={v} className={k === v ? 'on' : ''} onClick={() => setK(v)}>{l}</button>)}</div>
-    <div className="card" style={{padding: '6px 8px'}}><table><thead><tr><th style={{width: 110}}>Priorità</th><th style={{width: 230}}>Requisito</th><th>Punti non soddisfatti ed evidenze</th></tr></thead><tbody>
-      {list.map(x => <tr key={x.rid}><td><span className={'chip ' + (x.priority === 1 ? 'nc' : x.priority === 2 ? 'und' : 'part')}>{['', 'Alta', 'Media', 'Bassa'][x.priority]}</span>
-        <div className="tiny mute" style={{marginTop: 4}}>{x.kind}{x.priority < 3 ? ' · requisito al ' + pct(x.value) : ''}</div></td>
-        <td><button className="linkbtn" onClick={() => goto(x.rid)}><b>{x.ref}</b> {x.title}</button></td>
-        <td>{x.condition ? <span className="small">Da confermare se si applica: {x.condition}</span> : x.points.map((p, i) => <div className="gp" key={i}>
-          <span className={'chip ' + ANS[(p.user ?? p.answer) as 'S' | 'C' | 'I'][1]}>{ANS[(p.user ?? p.answer) as 'S' | 'C' | 'I'][0]}</span> {p.text}
-          {(p.user ?? p.answer) === 'C' && p.quote && <><q>{p.quote}</q><div className="tiny mute">{p.doc}{p.page && p.page > 1 ? ' · p. ' + p.page : ''}</div></>}</div>)}</td></tr>)}
-      {!list.length && <tr><td colSpan={3} className="mute">Nessun gap.</td></tr>}</tbody></table></div></div>;
+    <div className="card" style={{padding: '6px 8px'}}><table><thead><tr><th style={{width: 230}}>Requisito</th><th>Punti, motivo e documento atteso</th></tr></thead><tbody>
+      {list.map(x => <tr key={x.rid}><td><button className="linkbtn" onClick={() => goto(x.rid)}><b>{x.ref}</b> {x.title}</button>
+        {x.priority < 3 && <div className="tiny mute" style={{marginTop: 4}}>requisito al {pct(x.value)}</div>}</td>
+        <td>{x.points.filter(p => k === 'all' ? p.motive !== 'A carico dell\'integratore' : p.motive === k).map((p, i) => <div className="gp" key={i}>
+          <span className={'chip ' + (MOTIVE[p.motive] || 'und')}>{p.motive}</span> {p.text}
+          <div className="tiny mute">Documento atteso: <b>{p.expectedLabel}</b>{p.reviewed ? ' · rivisto' : ''}</div>
+          {p.answer === 'C' && p.quote && <><q>{p.quote}</q><div className="tiny mute">{p.doc}{p.page && p.page > 1 ? ' · p. ' + p.page : ''}</div></>}</div>)}</td></tr>)}
+      {!list.length && <tr><td colSpan={2} className="mute">Nessun gap.</td></tr>}</tbody></table></div></div>;
 }
 
 function Report({d, reload, goto, toast}: {d: DossierFull; reload: () => void; goto: () => void; toast: Toast}) {
@@ -268,13 +304,14 @@ function Report({d, reload, goto, toast}: {d: DossierFull; reload: () => void; g
       <div style={{marginTop: 8}}>
         <div className="block"><span style={{color: `var(--${s.done && s.confirmed === s.done ? 'ok' : 'part'})`}}>{s.done && s.confirmed === s.done ? <Check size={16}/> : <AlertTriangle size={16}/>}</span>
           <span className="grow">{s.done && s.confirmed === s.done ? 'Tutti gli esiti rivisti' : `${s.done - s.confirmed} esiti non ancora rivisti`}</span>{s.confirmed < s.done && <button className="btn sm" onClick={goto}>Rivedi</button>}</div>
-        <div className="block"><span style={{color: 'var(--ok)'}}><Check size={16}/></span><span className="grow">Ogni esito positivo o negativo cita la frase del documento</span></div>
+        <div className="block"><span style={{color: 'var(--ok)'}}><Check size={16}/></span><span className="grow">Ogni esito positivo cita la frase del documento; le possibili non conformità sono in evidenza e da confermare</span></div>
         {s.notEvaluable && <div className="block"><span style={{color: 'var(--part)'}}><AlertTriangle size={16}/></span><span className="grow">Documentazione insufficiente: il report dirà «non valutabile» invece dello score</span></div>}
         {run && <div className="block"><span style={{color: 'var(--part)'}}><AlertTriangle size={16}/></span><span className="grow">Pre-valutazione ancora in corso: il report sarebbe parziale</span></div>}
       </div>
       <p className="tiny mute" style={{margin: '8px 0 12px'}}>Puoi esportare anche con esiti non rivisti: il report lo dichiara. Una copia resta archiviata nel fascicolo.</p>
       <button className="btn pri" disabled={saving} onClick={save}><Download size={14}/>{saving ? 'Creazione del report…' : 'Salva il report PDF'}</button></div>
-    <div className="card"><h3>Documenti da richiedere</h3>{d.assessment.docsNeeded.length ? <ul className="small" style={{paddingLeft: 18, margin: '8px 0 0', lineHeight: 1.8}}>{d.assessment.docsNeeded.map(x => <li key={x}>{x}</li>)}</ul> : <p className="small mute">Nessuno.</p>}</div>
+    <div className="card"><h3>Documenti da richiedere</h3>{d.assessment.docsNeeded.length ? <ul className="small" style={{paddingLeft: 18, margin: '8px 0 0', lineHeight: 1.8}}>{d.assessment.docsNeeded.map(x =>
+      <li key={x.label + x.missing + x.integrator}><b>{x.label}</b> — {x.integrator ? 'a carico dell\'integratore' : x.missing ? 'assente dal fascicolo' : 'presente, ma senza le evidenze richieste'} <span className="tiny mute">({x.points} punti, {x.requirements} requisiti)</span></li>)}</ul> : <p className="small mute">Nessuno.</p>}</div>
     <div className="card"><h3>Score per area</h3><table style={{marginTop: 8}}><tbody>{d.assessment.areas.map(a => <tr key={a.name}><td>{a.name} <span className="tiny mute">({a.n})</span></td><td style={{width: 60}}><b>{pct(a.score)}</b></td><td style={{width: 60}} className="mute">{pct(a.max)}</td><td style={{width: 180}}><ScoreBar s={a}/></td></tr>)}</tbody></table></div>
   </div></div>;
 }

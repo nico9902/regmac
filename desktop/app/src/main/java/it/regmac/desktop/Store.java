@@ -27,13 +27,41 @@ public class Store {
   public record Fascicolo(String id, String name, String model, String serial, String year, String maker, String use,
                           Instant createdAt, Instant updatedAt, List<Answer> profile, List<String> tags, boolean profileConfirmed,
                           Run run, Instant exportedAt) { }
-  public record Doc(String id, String name, String file, long size, int pages, String sha256, int passages, String warning, Instant addedAt) { }
+  /** types: tipi di documento (vedi Catalog.DOC_TYPES) proposti al caricamento e modificabili dall'utente; un manuale può contenere anche la dichiarazione. */
+  public record Doc(String id, String name, String file, long size, int pages, String sha256, int passages, String warning, Instant addedAt, String error, List<String> types) {
+    public Doc(String id, String name, String file, long size, int pages, String sha256, int passages, String warning, Instant addedAt) {
+      this(id, name, file, size, pages, sha256, passages, warning, addedAt, null, null);
+    }
+    public Doc(String id, String name, String file, long size, int pages, String sha256, int passages, String warning, Instant addedAt, String error) {
+      this(id, name, file, size, pages, sha256, passages, warning, addedAt, error, null);
+    }
+    public Doc withTypes(List<String> t) { return new Doc(id, name, file, size, pages, sha256, passages, warning, addedAt, error, t); }
+    public List<String> typesOrEmpty() { return types == null ? List.of() : types; }
+  }
   public record Chunk(String id, String docId, int page, String section, String text, float[] vec) { }
-  public record Point(String text, String answer, String quote, String docId, String doc, Integer page, Double support, String user) {
+  /**
+   * Esito di un punto. expected = tipo di documento atteso; reason = motivo dell'esito
+   * (EVIDENCE_FOUND, POSSIBLE_NC, DOC_MISSING, NO_EVIDENCE, INTEGRATOR, APPLICABILITY_UNRESOLVED).
+   */
+  public record Point(String text, String answer, String quote, String docId, String doc, Integer page, Double support, String user, String reason, int candidates, String expected) {
+    public Point(String text, String answer, String quote, String docId, String doc, Integer page, Double support, String user) {
+      this(text, answer, quote, docId, doc, page, support, user, null, 0, null);
+    }
+    public Point(String text, String answer, String quote, String docId, String doc, Integer page, Double support, String user, String reason, int candidates) {
+      this(text, answer, quote, docId, doc, page, support, user, reason, candidates, null);
+    }
+    public Point withUser(String u) { return new Point(text, answer, quote, docId, doc, page, support, u, reason, candidates, expected); }
     public String effective() { return user != null ? user : answer; }
   }
+  /** appUser: applicabilità decisa dal revisore (TRUE/FALSE), prevale su quella proposta dal programma e resta valida nei ricalcoli. */
   public record Result(String rid, String applicability, String appQuote, String appDoc, Integer appPage, List<Point> points,
-                       boolean confirmed, String note, String hash, Instant at) { }
+                       boolean confirmed, String note, String hash, Instant at, String appUser) {
+    public Result(String rid, String applicability, String appQuote, String appDoc, Integer appPage, List<Point> points,
+                  boolean confirmed, String note, String hash, Instant at) {
+      this(rid, applicability, appQuote, appDoc, appPage, points, confirmed, note, hash, at, null);
+    }
+    public String effectiveApplicability() { return appUser != null ? appUser : applicability; }
+  }
 
   final ObjectMapper json = new ObjectMapper().registerModule(new JavaTimeModule())
       .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS).disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
@@ -95,8 +123,31 @@ public class Store {
   public void saveResults(String id, Map<String, Result> r) { write(dir(id).resolve("esiti.json"), r); }
   public Map<String, String> judgements(String id) { return read(dir(id).resolve("giudizi.json"), new TypeReference<Map<String, String>>() { }).orElse(new HashMap<>()); }
   public void saveJudgements(String id, Map<String, String> j) { write(dir(id).resolve("giudizi.json"), j); }
-  public Map<String, float[]> queryCache() { return read(root.resolve("cache-query.json"), new TypeReference<Map<String, float[]>>() { }).orElse(new HashMap<>()); }
-  public void saveQueryCache(Map<String, float[]> c) { write(root.resolve("cache-query.json"), c); }
+  /** Giudizi dell'AI comuni a tutti i fascicoli: la chiave contiene versione, modello, domanda e testo del brano, quindi si riusano solo a parità di contenuto. */
+  public Map<String, String> sharedJudgements() { return read(root.resolve("giudizi-comuni.json"), new TypeReference<Map<String, String>>() { }).orElse(new HashMap<>()); }
+  public synchronized void mergeSharedJudgements(Map<String, String> j) {
+    Map<String, String> all = sharedJudgements();
+    all.putAll(j);
+    write(root.resolve("giudizi-comuni.json"), all);
+  }
+  public Map<String, float[]> queryCache() { return read(root.resolve("cache-query-" + Engine.sha(Ollama.EMBED_VERSION).substring(0, 12) + ".json"), new TypeReference<Map<String, float[]>>() { }).orElse(new HashMap<>()); }
+  public void saveQueryCache(Map<String, float[]> c) { write(root.resolve("cache-query-" + Engine.sha(Ollama.EMBED_VERSION).substring(0, 12) + ".json"), c); }
+
+  public String indexVersion(String id) { return read(dir(id).resolve("indice-versione.json"), String.class).orElse(""); }
+  public void saveIndexVersion(String id, String version) { write(dir(id).resolve("indice-versione.json"), version); }
+
+  /** Copia immutabile degli esiti prima di un ricalcolo; nessuna modifica agli originali PDF. */
+  public synchronized void archiveAnalysis(String id) {
+    if (!Files.exists(dir(id).resolve("esiti.json"))) return;
+    Path archive = dir(id).resolve("storico").resolve(Instant.now().toString().replace(':', '-') + "-" + UUID.randomUUID().toString().substring(0, 8));
+    try {
+      Files.createDirectories(archive);
+      for (String name : List.of("fascicolo.json", "documenti.json", "esiti.json", "giudizi.json", "indice-versione.json")) {
+        Path source = dir(id).resolve(name);
+        if (Files.exists(source)) Files.copy(source, archive.resolve(name));
+      }
+    } catch (IOException e) { throw new IllegalStateException("Impossibile conservare l'analisi precedente", e); }
+  }
 
   // ---------- utilità ----------
   <T> Optional<T> read(Path p, Class<T> c) {

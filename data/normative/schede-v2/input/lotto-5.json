@@ -1,0 +1,980 @@
+[
+ {
+  "id": "MR-ART10-8",
+  "law": "MR",
+  "ref": "Art. 10, par. 8",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che la macchina o il prodotto correlato siano accompagnati dalla dichiarazione di conformità UE di cui all'allegato V, parte A, o, in alternativa, i fabbricanti forniscono l'indirizzo internet o codici a lettura ottica dove è possibile accedere a tale dichiarazione di conformità UE nelle istruzioni per l'uso e nelle informazioni di cui all'allegato III.\nLe dichiarazioni di conformità UE digitali sono rese accessibili online per il ciclo di vita previsto della macchina o del prodotto correlato e, in ogni caso, per un periodo di almeno 10 anni dopo l'immissione sul mercato o la messa in servizio della macchina o del prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di conformità è accessibile online per almeno 10 anni",
+   "Le istruzioni forniscono informazioni sui dispositivi di protezione individuale",
+   "La valutazione dei rischi include analisi delle emissioni pericolose"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-9",
+  "law": "MR",
+  "ref": "Art. 10, par. 9",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti che ritengono o hanno motivo di ritenere che una macchina o un prodotto correlato da essi immesso sul mercato o messo in servizio non sia conforme al presente regolamento adottano immediatamente le azioni correttive necessarie per rendere conforme tale macchina o prodotto correlato, ritirarli o richiamarli, a seconda dei casi. Inoltre, se la macchina o il prodotto correlato presentano un rischio per la salute e la sicurezza delle persone nonché, all’occorrenza, degli animali domestici e per la tutela dei beni e, se del caso, dell'ambiente, i fabbricanti ne informano immediatamente le autorità nazionali competenti degli Stati membri in cui hanno messo a disposizione la macchina o il prodotto correlato sul mercato o li hanno messi in servizio, dando in particolare informazioni dettagliate sulla non conformità e su eventuali azioni correttive adottate.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+   "Le dichiarazioni attestano la conformità alle norme di sicurezza meccanica",
+   "Gli schemi mostrano la presenza di dispositivi di blocco meccanico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART10-10",
+  "law": "MR",
+  "ref": "Art. 10, par. 10",
+  "group": "Art. 10 — Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "title": "Obblighi dei fabbricanti di macchine e di prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "A seguito di una richiesta motivata da parte di un'autorità nazionale competente, i fabbricanti forniscono a tale autorità, in formato cartaceo o digitale, tutte le informazioni e la documentazione necessarie a dimostrare la conformità delle macchine o dei prodotti correlati rispetto al presente regolamento, in una lingua facilmente comprensibile da tale autorità. Essi cooperano con tale autorità, su sua richiesta, a qualsiasi azione intrapresa per eliminare i rischi presentati dalle macchine o dai prodotti correlati che hanno immesso sul mercato o messo in servizio.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+   "Le dichiarazioni attestano la conformità alle norme di sicurezza meccanica",
+   "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'urto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-1",
+  "law": "MR",
+  "ref": "Art. 11, par. 1",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "All'atto dell'immissione sul mercato di una quasi-macchina, i fabbricanti garantiscono che sia stata progettata e fabbricata conformemente ai pertinenti requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+   "Le dichiarazioni attestano conformità ai requisiti essenziali di sicurezza",
+   "Gli schemi mostrano dispositivi di interruzione d'emergenza accessibili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-2",
+  "law": "MR",
+  "ref": "Art. 11, par. 2",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "Prima dell'immissione sul mercato di una quasi-macchina, i fabbricanti redigono la documentazione tecnica di cui all'allegato IV, parte B.\nSe la conformità della quasi-macchina rispetto ai pertinenti requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III è stata dimostrata nella documentazione tecnica di cui all'allegato IV, parte B, i fabbricanti redigono la dichiarazione di incorporazione UE conformemente all'articolo 22.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi meccanici e termici",
+   "La dichiarazione di incorporazione UE attesta la conformità ai requisiti essenziali di sicurezza",
+   "Gli schemi tecnici mostrano la disposizione dei dispositivi di protezione meccanica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-3",
+  "law": "MR",
+  "ref": "Art. 11, par. 3",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti mantengono la documentazione tecnica e la dichiarazione di incorporazione UE a disposizione delle autorità di vigilanza del mercato per un periodo di almeno 10 anni dalla data di immissione sul mercato della quasi-macchina. Se pertinente, il codice sorgente o la logica di programmazione integrati nella documentazione tecnica, su richiesta motivata da parte delle autorità nazionali competenti, sono messi a disposizione di tali autorità a condizione che tale codice sorgente o logica di programmazione siano necessari affinché esse siano in grado di verificare il rispetto dei pertinenti requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione tecnica include la dichiarazione di conformità UE",
+   "La valutazione dei rischi descrive le misure di protezione implementate",
+   "Gli schemi elettrici sono disponibili e corrispondono alla descrizione tecnica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-4",
+  "law": "MR",
+  "ref": "Art. 11, par. 4",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti si assicurano che siano predisposte le procedure necessarie affinché la quasi-macchina fabbricata nell'ambito di una produzione in serie continui a essere conforme al presente regolamento. Si tiene debitamente conto delle modifiche del processo produttivo o della progettazione o delle caratteristiche delle quasi-macchine, nonché delle modifiche delle norme armonizzate o di altre specifiche tecniche, o delle specifiche comuni di cui all'articolo 20, con riferimento alle quali è dichiarata o è verificata la conformità delle quasi-macchine.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi meccanici e degli impatti termici",
+   "Le dichiarazioni di conformità menzionano le norme armonizzate applicabili",
+   "Gli schemi tecnici mostrano la disposizione dei dispositivi di protezione meccanica"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-5",
+  "law": "MR",
+  "ref": "Art. 11, par. 5",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che sulle quasi-macchine da loro immesse sul mercato siano apposti almeno una designazione della quasi-macchina, l'anno di costruzione, vale a dire l'anno in cui il processo di fabbricazione si è concluso, il modello e la serie o il tipo nonché, eventualmente, un numero di lotto o di serie oppure qualsiasi altro elemento che ne consenta l'identificazione, oppure, qualora le dimensioni o la natura della quasi-macchina non lo consentano, garantiscono che le informazioni prescritte siano fornite sull'imballaggio o in un documento di accompagnamento della quasi-macchina.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale indica il modello e la serie della quasi-macchina",
+   "La dichiarazione tecnica riporta l'anno di costruzione della quasi-macchina",
+   "Le informazioni di identificazione sono presenti sul documento di accompagnamento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-6",
+  "law": "MR",
+  "ref": "Art. 11, par. 6",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti indicano il proprio nome, la propria denominazione commerciale registrata o il proprio marchio registrato, nonché l'indirizzo postale e il sito internet, l'indirizzo di posta elettronica o altri contatti digitali ai quali possono essere contattati sulla quasi-macchina oppure, ove ciò non sia possibile, sull'imballaggio o in un documento di accompagnamento della quasi-macchina. L'indirizzo indica un unico recapito presso il quale il fabbricante può essere contattato. Le informazioni relative al contatto sono scritte in una lingua facilmente comprensibile dalla persona incaricata dell'incorporazione della quasi-macchina e per le autorità di vigilanza del mercato.",
+  "old_condition": "",
+  "old_points": [
+   "La quasi-macchina indica il nome del fabbricante in una lingua facilmente comprensibile",
+   "L'indirizzo postale del fabbricante è indicato in una lingua facilmente comprensibile",
+   "Il sito internet del fabbricante è indicato in una lingua facilmente comprensibile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-7",
+  "law": "MR",
+  "ref": "Art. 11, par. 7",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che le quasi-macchine siano accompagnate dalle istruzioni per l'assemblaggio di cui all'allegato XI.\nLe istruzioni per l'assemblaggio possono essere fornite dal fabbricante in formato digitale.\nQuando le istruzioni per l'assemblaggio vengono fornite in formato digitale, il fabbricante deve:\na) indicare sulla quasi-macchina, oppure, ove ciò non sia possibile, sull'imballaggio o in un documento di accompagnamento le modalità di accesso alle istruzioni per l'assemblaggio in formato digitale;\nb) presentare le istruzioni per l'assemblaggio in un formato che consenta alla persona incaricata dell'incorporazione della quasi-macchina di stamparle e scaricarle, nonché di salvarle su un dispositivo elettronico in maniera da potervi accedere in qualsiasi momento, in particolare in caso di avaria della quasi-macchina; tale requisito si applica anche quando le istruzioni per l'assemblaggio sono integrate nel software della quasi-macchina;\nc) renderle accessibili online per un periodo di almeno 10 anni dopo l'immissione sul mercato della quasi-macchina.\nTuttavia, su richiesta della persona incaricata dell'incorporazione della quasi-macchina al momento dell'acquisto, il fabbricante fornisce gratuitamente le istruzioni per l'assemblaggio in formato cartaceo entro un mese.\nLe istruzioni per l'assemblaggio sono redatte in una lingua facilmente comprensibile dalla persona incaricata dell'incorporazione della quasi-macchina, secondo quanto stabilito dallo Stato membro interessato, e sono chiare, comprensibili e leggibili.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni per l'assemblaggio sono disponibili in formato digitale",
+   "Le istruzioni per l'assemblaggio indicano le modalità di accesso online",
+   "Le istruzioni per l'assemblaggio sono accessibili online per almeno 10 anni",
+   "Le istruzioni per l'assemblaggio sono redatte in una lingua comprensibile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-8",
+  "law": "MR",
+  "ref": "Art. 11, par. 8",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti garantiscono che la quasi-macchina sia accompagnata dalla dichiarazione di incorporazione UE di cui all'allegato V, parte B, o, in alternativa, i fabbricanti forniscono l'indirizzo internet o il codice ottico dove è possibile accedere a tale dichiarazione di incorporazione UE nelle istruzioni per l'assemblaggio di cui all'allegato XI.\nLe dichiarazioni di incorporazione UE digitali sono rese accessibili online per un periodo di almeno 10 anni dopo l'immissione sul mercato della quasi-macchina.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di incorporazione UE è accessibile online per almeno 10 anni",
+   "Le istruzioni forniscono l'indirizzo internet o il codice ottico per la dichiarazione di incorporazione UE",
+   "La dichiarazione di incorporazione UE è inclusa nel manuale o disponibile nelle istruzioni per l'assemblaggio"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-9",
+  "law": "MR",
+  "ref": "Art. 11, par. 9",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "I fabbricanti che ritengono o hanno motivo di ritenere che la quasi-macchina che hanno immesso sul mercato non sia conforme al presente regolamento adottano immediatamente le azioni correttive necessarie a renderla conforme, ritirarla o richiamarla, a seconda dei casi. Inoltre, se la quasi-macchina presenta un rischio per quanto riguarda i pertinenti requisiti essenziali di sicurezza e di tutela della salute, i fabbricanti ne informano immediatamente le autorità nazionali competenti degli Stati membri in cui hanno messo a disposizione la quasi-macchina sul mercato, dando in particolare informazioni dettagliate sulla non conformità e su eventuali azioni correttive intraprese.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di rumore",
+   "Le dichiarazioni attestano conformità ai requisiti essenziali di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART11-10",
+  "law": "MR",
+  "ref": "Art. 11, par. 10",
+  "group": "Art. 11 — Obblighi dei fabbricanti di quasi-macchine",
+  "title": "Obblighi dei fabbricanti di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "A seguito di una richiesta motivata da parte di un'autorità nazionale competente, i fabbricanti forniscono a tale autorità, in formato cartaceo o digitale, tutte le informazioni e la documentazione necessarie a dimostrare la conformità della quasi-macchina rispetto al presente regolamento, in una lingua facilmente comprensibile da tale autorità. Essi cooperano con tale autorità, su sua richiesta, a qualsiasi azione intrapresa per eliminare i rischi relativi ai pertinenti requisiti essenziali di sicurezza e di tutela della salute presentati dalla quasi-macchina che hanno immesso sul mercato.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+   "Le dichiarazioni attestano la conformità ai requisiti essenziali di sicurezza",
+   "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART21-1",
+  "law": "MR",
+  "ref": "Art. 21, par. 1",
+  "group": "Art. 21 — Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "title": "Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "La dichiarazione di conformità UE attesta che la conformità ai requisiti essenziali di sicurezza e di tutela della salute applicabili di cui all'allegato III è stata dimostrata.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi delle emissioni termiche",
+   "Gli schemi mostrano la disposizione dei dispositivi di interruzione d'emergenza",
+   "La dichiarazione di conformità menziona la conformità all'allegato III"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART21-2",
+  "law": "MR",
+  "ref": "Art. 21, par. 2",
+  "group": "Art. 21 — Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "title": "Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "La dichiarazione di conformità UE ha la struttura tipo di cui all'allegato V, parte A, e contiene gli elementi specificati nei moduli pertinenti di cui agli allegati VI, VIII, IX e X. È continuamente aggiornata ed è tradotta nella lingua o nelle lingue richieste dallo Stato membro sul cui mercato la macchina o il prodotto correlato sono immessi, messi a disposizione o messi in servizio.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di conformità include il numero di serie della macchina",
+   "La valutazione dei rischi descrive le misure di protezione adottate",
+   "Gli schemi tecnici mostrano la disposizione dei componenti elettrici"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART21-3",
+  "law": "MR",
+  "ref": "Art. 21, par. 3",
+  "group": "Art. 21 — Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "title": "Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Se alla macchina o al prodotto correlato si applicano più atti giuridici dell'Unione che prescrivono una dichiarazione di conformità UE, è compilata un'unica dichiarazione di conformità UE in relazione a tali atti. Tale dichiarazione contiene gli estremi degli atti giuridici dell'Unione in questione, compresi i riferimenti della loro pubblicazione.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di conformità indica i riferimenti completi degli atti giuridici applicabili",
+   "Le istruzioni riportano i limiti di esposizione ai rischi identificati durante la valutazione",
+   "Lo schema tecnico mostra la disposizione dei componenti pericolosi e le loro protezioni",
+   "La valutazione dei rischi descrive le misure adottate per ridurre i rischi residui"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART21-4",
+  "law": "MR",
+  "ref": "Art. 21, par. 4",
+  "group": "Art. 21 — Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "title": "Dichiarazione di conformità UE per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Con la dichiarazione di conformità UE, il fabbricante si assume la responsabilità della conformità della macchina o del prodotto correlato ai requisiti stabiliti dal presente regolamento.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi delle emissioni termiche della macchina",
+   "Gli schemi tecnici mostrano la disposizione dei dispositivi di interruzione d'emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART22-1",
+  "law": "MR",
+  "ref": "Art. 22, par. 1",
+  "group": "Art. 22 — Dichiarazione di incorporazione UE di quasi-macchine",
+  "title": "Dichiarazione di incorporazione UE di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "La dichiarazione di incorporazione UE attesta che la conformità ai pertinenti requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III è stata dimostrata.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di sostanze nocive",
+   "I schemi mostrano la disposizione dei dispositivi di protezione meccanica",
+   "La dichiarazione attesta la conformità ai requisiti essenziali di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART22-2",
+  "law": "MR",
+  "ref": "Art. 22, par. 2",
+  "group": "Art. 22 — Dichiarazione di incorporazione UE di quasi-macchine",
+  "title": "Dichiarazione di incorporazione UE di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "La dichiarazione di incorporazione UE ha la struttura tipo di cui all'allegato V, parte B. È costantemente aggiornata e tradotta nella lingua o nelle lingue richieste dallo Stato membro sul cui mercato la quasi-macchina è immessa o messa a disposizione.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di incorporazione UE include la descrizione tecnica della quasi-macchina",
+   "La valutazione dei rischi comprende l'analisi dei rischi specifici della quasi-macchina",
+   "Gli schemi tecnici mostrano la disposizione e le caratteristiche principali della quasi-macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART22-3",
+  "law": "MR",
+  "ref": "Art. 22, par. 3",
+  "group": "Art. 22 — Dichiarazione di incorporazione UE di quasi-macchine",
+  "title": "Dichiarazione di incorporazione UE di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "Se alla quasi-macchina si applicano più atti giuridici dell'Unione che prescrivono una dichiarazione di conformità UE, la dichiarazione di incorporazione UE contiene un'indicazione con la quale si dichiara la conformità a tali atti. Tale dichiarazione contiene gli estremi degli atti giuridici dell'Unione in questione, compresi i riferimenti della loro pubblicazione.",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di incorporazione UE indica gli atti giuridici dell'Unione applicabili",
+   "La dichiarazione di incorporazione UE include i riferimenti delle pubblicazioni degli atti giuridici",
+   "La dichiarazione di incorporazione UE dichiara la conformità a tutti gli atti giuridici applicabili",
+   "La dichiarazione di incorporazione UE è redatta in modo chiaro e completo"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART22-4",
+  "law": "MR",
+  "ref": "Art. 22, par. 4",
+  "group": "Art. 22 — Dichiarazione di incorporazione UE di quasi-macchine",
+  "title": "Dichiarazione di incorporazione UE di quasi-macchine",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "Con la dichiarazione di incorporazione UE, il fabbricante si assume la responsabilità della conformità della quasi-macchina ai requisiti stabiliti dal presente regolamento.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi legati all'uso improprio",
+   "I schemi mostrano la disposizione degli organi di comando e di sicurezza",
+   "La dichiarazione conferma la conformità ai requisiti di sicurezza previsti"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART24-1",
+  "law": "MR",
+  "ref": "Art. 24, par. 1",
+  "group": "Art. 24 — Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "title": "Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "La marcatura CE è apposta sulla macchina o sul prodotto correlato in modo visibile, leggibile e indelebile. Qualora non sia possibile o la natura della macchina o del prodotto correlato non lo consenta, essa è apposta sul suo imballaggio e sui documenti di accompagnamento della macchina o del prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "La marcatura CE è visibile, leggibile e indelebile sulla macchina o sul suo imballaggio",
+   "La marcatura CE è indicata nei documenti di accompagnamento della macchina",
+   "La marcatura CE è posizionata in un punto accessibile e non ostacolato",
+   "La marcatura CE è conforme alle norme di marcatura previste per il settore di applicazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART24-2",
+  "law": "MR",
+  "ref": "Art. 24, par. 2",
+  "group": "Art. 24 — Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "title": "Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "La marcatura CE è apposta sulla macchina o sul prodotto correlato prima dell'immissione sul mercato o della messa in servizio.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina presenta un'indicazione chiara del livello di pressione acustica al posto di lavoro",
+   "La dichiarazione di conformità include la descrizione completa della macchina e dei suoi componenti principali",
+   "Le istruzioni forniscono informazioni dettagliate sulle modalità di utilizzo e di manutenzione",
+   "La valutazione dei rischi include un'analisi completa dei rischi meccanici e delle misure di protezione adottate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART24-3",
+  "law": "MR",
+  "ref": "Art. 24, par. 3",
+  "group": "Art. 24 — Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "title": "Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Qualora la conformità di una macchina o di un prodotto correlato sia valutata conformemente alla procedura di valutazione della conformità di cui all'articolo 25, paragrafo 2, lettere a), b) e c), e all'articolo 25, paragrafo 3, lettere b),\nc) e d), la marcatura CE è seguita dal numero di identificazione dell'organismo notificato coinvolto nella procedura.\nIl numero di identificazione di tale organismo notificato è apposto dall'organismo stesso o, in base alle istruzioni di quest'ultimo, dal fabbricante o dal mandatario del fabbricante.",
+  "old_condition": "",
+  "old_points": [
+   "La marcatura CE è accompagnata dal numero di identificazione dell'organismo notificato",
+   "Il numero di identificazione è apposto dall'organismo notificato o da chi ne ha ricevuto istruzioni",
+   "La documentazione tecnica include il riferimento all'organismo notificato coinvolto",
+   "La marcatura CE è visibile e leggibile sulla macchina o sul suo packaging"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART24-4",
+  "law": "MR",
+  "ref": "Art. 24, par. 4",
+  "group": "Art. 24 — Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "title": "Norme per l'apposizione della marcatura CE alle macchine e ai prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "La marcatura CE e, se del caso, il numero di identificazione dell'organismo notificato possono essere seguiti da un pittogramma o qualsiasi altro marchio che indichi un rischio o un impiego particolare.",
+  "old_condition": "",
+  "old_points": [
+   "La marcatura CE è visibile e chiaramente indicata sulla macchina",
+   "Il pittogramma o il marchio indicano un rischio specifico della macchina",
+   "La documentazione include un numero di identificazione dell'organismo notificato",
+   "Le istruzioni riportano un pittogramma coerente con i rischi identificati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART25-1",
+  "law": "MR",
+  "ref": "Art. 25, par. 1",
+  "group": "Art. 25 — Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "title": "Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Il fabbricante o la persona fisica o giuridica di cui all'articolo 18 applica una delle procedure per la valutazione della conformità di cui ai paragrafi 2, 3 e 4.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni di rumore",
+   "La dichiarazione di conformità menziona la classe di emissione sonora",
+   "Lo schema di montaggio mostra la posizione dei dispositivi di protezione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART25-2",
+  "law": "MR",
+  "ref": "Art. 25, par. 2",
+  "group": "Art. 25 — Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "title": "Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Se la categoria di macchine o prodotti correlati è elencata nell'allegato I, parte A, il fabbricante o la persona fisica o giuridica di cui all'articolo 18 applica una delle procedure seguenti:\na) l’esame UE del tipo (modulo B) di cui all'allegato VII, seguito dalla conformità al tipo basata sul controllo interno della produzione (modulo C) di cui all'allegato VIII;\nb) la conformità basata sulla garanzia qualità totale (modulo H) di cui all'allegato IX;\nc) la conformità basata sulla verifica di un unico prodotto (modulo G) di cui all'allegato X.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi meccanici e termici",
+   "Le dichiarazioni di conformità menzionano la norma EN ISO 12100 applicabile",
+   "Lo schema di collegamento elettrico rispetta le norme CEI EN 60439"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART25-3",
+  "law": "MR",
+  "ref": "Art. 25, par. 3",
+  "group": "Art. 25 — Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "title": "Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Se la categoria di macchine o prodotti correlati è elencata nell'allegato I, parte B, il fabbricante o la persona fisica o giuridica di cui all'articolo 18 applica una delle procedure seguenti:\na) il controllo interno della produzione (modulo A) di cui all'allegato VI;\nb) l'esame UE del tipo (modulo B) di cui all'allegato VII, seguito dalla conformità al tipo basata sul controllo interno della produzione (modulo C) di cui all'allegato VIII;\nc) la conformità basata sulla garanzia qualità totale (modulo H) di cui all'allegato IX;\nd) la conformità basata sulla verifica di un unico prodotto (modulo G) di cui all'allegato X.\nSe applica la procedura di controllo interno della produzione di cui alla lettera a), il fabbricante progetta e costruisce la macchina o il prodotto correlato conformemente alle norme armonizzate o alle specifiche comuni proprie a tale categoria di macchine o prodotti correlati riguardanti tutti i pertinenti requisiti essenziali di sicurezza e di tutela della salute.\nSe la categoria di macchine o prodotti correlati è elencata nell'allegato I, parte B, e la macchina o il prodotto correlato non sono stati fabbricati conformemente alle norme armonizzate o alle specifiche comuni riguardanti tutti i pertinenti requisiti essenziali di sicurezza di tutela della salute per tale categoria di macchine o prodotti correlati, il fabbricante, compresa una persona fisica o giuridica di cui all’articolo 18, applica una delle procedure di cui alle lettere b), c) o d) del presente paragrafo.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di dispositivi di blocco per prevenire l'avviamento accidentale",
+   "La valutazione dei rischi include l'analisi delle emissioni di sostanze nocive",
+   "Le istruzioni descrivono chiaramente le procedure di manutenzione e ispezione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-ART25-4",
+  "law": "MR",
+  "ref": "Art. 25, par. 4",
+  "group": "Art. 25 — Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "title": "Procedure di valutazione della conformità per le macchine e i prodotti correlati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "Se la categoria di macchine o prodotti correlati non è elencata nell'allegato I, il fabbricante, compresa la persona fisica o giuridica di cui all'articolo 18 applica la procedura di controllo interno della produzione (modulo A) di cui all'allegato VI.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include l'analisi dei rischi meccanici e degli impatti sulle persone",
+   "La dichiarazione di conformità menziona la categoria di macchina e il numero di serie",
+   "Gli schemi tecnici mostrano la disposizione dei dispositivi di protezione e di interruzione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-a",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera a)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Descrizione completa e uso previsto",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "a) una descrizione completa della macchina o del prodotto correlato e del suo uso previsto;",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di dispositivi di blocco per prevenire l'avviamento accidentale",
+   "Le istruzioni descrivono chiaramente le modalità di funzionamento della macchina",
+   "La documentazione include una descrizione dettagliata del sistema di comando e controllo"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-b",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera b)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Documentazione della valutazione del rischio",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "b) la documentazione relativa alla valutazione del rischio che deve dimostrare la procedura seguita, inclusi:\ni) un elenco dei requisiti essenziali di sicurezza e di tutela della salute applicabili alla macchina o al prodotto correlato;\nii) la descrizione delle misure di protezione attuate per soddisfare tutti i requisiti essenziali di sicurezza e di tutela della salute applicabili e, se del caso, l'indicazione dei rischi residui connessi con la macchina o il prodotto correlato;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include un elenco completo dei requisiti essenziali di sicurezza applicabili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-c",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera c)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Disegni e schemi di progettazione e fabbricazione",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "c) disegni e schemi di progettazione e fabbricazione della macchina o del prodotto correlato nonché dei suoi componenti, sottoinsiemi e circuiti;",
+  "old_condition": "",
+  "old_points": [
+   "I disegni riportano le dimensioni e la posizione degli organi di comando",
+   "La valutazione dei rischi include l'analisi dei rischi legati all'accesso ai circuiti elettrici",
+   "Le dichiarazioni indicano la classe di protezione degli elementi elettrici",
+   "Gli schemi mostrano la connessione elettrica dei componenti principali"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-d",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera d)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Descrizioni per la comprensione di disegni e funzionamento",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "d) le descrizioni e le spiegazioni necessarie alla comprensione dei disegni e degli schemi di cui alla lettera c) nonché del funzionamento della macchina o del prodotto correlato;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente il funzionamento del sistema di controllo",
+   "I disegni indicano la posizione e il tipo di dispositivi di sicurezza presenti",
+   "La documentazione spiega come viene effettuata la manutenzione della macchina",
+   "Le descrizioni chiariscono l'interazione tra i diversi componenti meccanici"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-e",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera e)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Norme armonizzate / specifiche comuni applicate",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "e) i riferimenti delle norme armonizzate di cui all'articolo 20, paragrafo 1, o delle specifiche comuni adottate dalla Commissione a norma dell'articolo 20, paragrafo 3, che sono state applicate per la progettazione e la fabbricazione della macchina o del prodotto correlato. In caso di applicazione parziale delle norme armonizzate o delle specifiche comuni la documentazione tecnica deve specificare le parti che sono state applicate;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica le norme armonizzate applicate durante la progettazione",
+   "Le specifiche comuni adottate sono elencate con riferimento alla loro normativa di origine",
+   "La documentazione chiarisce le parti parzialmente applicate delle norme armonizzate",
+   "Le istruzioni menzionano le norme armonizzate utilizzate per la sicurezza della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-f",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera f)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Altre specifiche tecniche applicate",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "f) se le norme armonizzate o le specifiche comuni non sono state applicate o lo sono state solo parzialmente, la descrizione delle altre specifiche tecniche che sono state applicate al fine di soddisfare tutti i requisiti essenziali di sicurezza e di tutela della salute e applicabili;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una descrizione completa delle specifiche tecniche applicate",
+   "Le specifiche tecniche sono correlate ai requisiti essenziali di sicurezza e salute",
+   "Le specifiche tecniche sono descritte in modo chiaro e accessibile",
+   "Le specifiche tecniche sono verificate e confermate da dati misurati o test"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-g",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera g)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Relazioni di calcolo, prove, ispezioni ed esami",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "g) le relazioni e/o i risultati dei calcoli di progettazione, delle prove, delle ispezioni e degli esami effettuati per verificare la conformità della macchina o del prodotto correlato rispetto ai requisiti essenziali di sicurezza e di tutela della salute applicabili;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle forze meccaniche agenti sul corpo umano",
+   "Le dichiarazioni attestano la conformità ai requisiti di sicurezza per l'accesso alle zone pericolose"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-h",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera h)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Mezzi per assicurare la conformità in produzione",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "h) una descrizione dei mezzi usati dal fabbricante durante la produzione della macchina o del prodotto correlato per assicurare la conformità della macchina o del prodotto correlato fabbricato rispetto alle specifiche di progettazione;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle forze meccaniche applicate",
+   "Gli schemi elettrici mostrano l'ubicazione dei dispositivi di interruzione d'emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-i",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera i)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Copia delle istruzioni per l'uso",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "i) una copia delle istruzioni per l'uso e delle informazioni che figurano nell'allegato III, punto 1.7.4;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni per l'uso indicano le misure di protezione contro i rischi identificati",
+   "Le istruzioni forniscono informazioni sui limiti di sicurezza della macchina",
+   "Le istruzioni descrivono le procedure di manutenzione e ispezione previste",
+   "Le istruzioni menzionano le informazioni relative all'installazione sicura della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-j",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera j)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Dichiarazione di incorporazione e istruzioni di assemblaggio",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "j) se del caso, la dichiarazione UE di incorporazione per le quasi-macchine di cui all'allegato V, parte B, e le istruzioni di assemblaggio di cui all’allegato XI;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni di assemblaggio descrivono chiaramente le parti principali della macchina",
+   "La dichiarazione di incorporazione indica chiaramente il modello e la serie della macchina",
+   "Le istruzioni forniscono informazioni dettagliate sulle operazioni di montaggio e smontaggio",
+   "La documentazione include un diagramma schematico che rappresenta la macchina in modo chiaro"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-k",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera k)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Dichiarazioni UE di prodotti incorporati",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "k) se del caso, copie delle dichiarazioni UE di conformità delle macchine o dei prodotti correlati, nonché di qualsiasi prodotto disciplinato da altre normative di armonizzazione dell'Unione incorporate nella macchina o nel prodotto correlato;",
+  "old_condition": "",
+  "old_points": [
+   "La dichiarazione di conformità include la valutazione dei rischi completa",
+   "Gli schemi mostrano la disposizione degli organi di sicurezza",
+   "Le dichiarazioni UE menzionano le norme di armonizzazione applicabili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-l",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera l)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Misure interne per la produzione in serie",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "l) per le macchine o i prodotti correlati fabbricati in serie, le misure interne che saranno attuate per garantire che tali macchine o prodotti correlati restino conformi al presente regolamento;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle forze meccaniche applicate agli operatori",
+   "I schemi elettrici mostrano l'ubicazione e la funzione di tutti i componenti di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-m",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera m)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Codice sorgente / logica del software di sicurezza (su richiesta)",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "m) il codice sorgente o la logica di programmazione del software relativo alla sicurezza al fine di dimostrare la conformità della macchina o del prodotto correlato rispetto al presente regolamento a seguito di una richiesta motivata da parte di un'autorità nazionale competente, a condizione che sia necessario/a affinché tali autorità siano in grado di verificare il rispetto dei requisiti essenziali di sicurezza e di tutela della salute di cui all'allegato III;",
+  "old_condition": "",
+  "old_points": [
+   "Il software di sicurezza è descritto in modo chiaro nel manuale tecnico",
+   "La logica del software è documentata con schemi e commenti esplicativi",
+   "La valutazione dei rischi include analisi della logica di controllo del software"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-n",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera n)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Sistemi basati su sensori, remoti o autonomi",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "n) per le macchine alimentate da sensori, azionate da remoto o autonome o i prodotti correlati, se le operazioni relative alla sicurezza sono controllate da dati provenienti da sensori, una descrizione, se del caso, delle caratteristiche generali, delle capacità e delle limitazioni del sistema, dei dati, dello sviluppo, delle prove e della convalida dei processi utilizzati;",
+  "old_condition": "La macchina utilizza sistemi basati su sensori per il controllo delle operazioni di sicurezza",
+  "old_points": [
+   "La documentazione descrive le capacità del sistema basato su sensori",
+   "Le prove del sistema sono documentate e verificate in modo completo",
+   "La convalida dei dati del sistema è descritta nel manuale tecnico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-A-o",
+  "law": "MR",
+  "ref": "All. IV, parte A, lettera o)",
+  "group": "All. IV, parte A — Documentazione tecnica (macchine e prodotti correlati)",
+  "title": "Ricerche e prove per montaggio e messa in servizio sicuri",
+  "tags": [
+   "macchina"
+  ],
+  "always": false,
+  "text": "o) i risultati di ricerche e prove su componenti, accessori o sulla macchina o il prodotto correlato svolte dal fabbricante per stabilire se la macchina o il prodotto correlato, in conseguenza della sua progettazione o costruzione, possano essere montati e messi in servizio in condizioni di sicurezza.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle condizioni di montaggio e messa in servizio",
+   "I schemi mostrano disposizioni per prevenire accessi non autorizzati durante l'uso",
+   "La dichiarazione conferma la conformità alle norme per la messa in servizio sicura"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-a",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera a)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Descrizione completa e funzione prevista",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "a) una descrizione completa della quasi-macchina e della sua funzione prevista ove incorporata o assemblata ad altre macchine o ad altre quasi-macchine o apparecchi;",
+  "old_condition": "",
+  "old_points": [
+   "La descrizione tecnica menziona la funzione prevista della quasi-macchina",
+   "Le istruzioni descrivono chiaramente le operazioni di montaggio e smontaggio",
+   "La documentazione include una descrizione dettagliata delle parti principali"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-b",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera b)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Documentazione della valutazione del rischio",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "b) la documentazione relativa alla valutazione del rischio che dimostra la procedura seguita, inclusi:\ni) un elenco dei requisiti essenziali di sicurezza e di tutela della salute applicabili alla quasi-macchina,\nii) una descrizione delle misure di protezione attuate per eliminare i pericoli identificati o per ridurre i rischi e, se del caso, l'indicazione dei rischi residui;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione del rischio elenca i requisiti essenziali di sicurezza applicabili alla quasi-macchina",
+   "Le misure di protezione sono descritte nel documento tecnico e correlate ai pericoli identificati",
+   "La documentazione indica i rischi residui non eliminabili attraverso le misure di protezione",
+   "Le istruzioni forniscono informazioni dettagliate sulle misure di protezione adottate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-c",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera c)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Disegni e schemi di progettazione e fabbricazione",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "c) disegni e schemi di progettazione e fabbricazione della quasi-macchina nonché dei suoi componenti, sottoinsiemi e circuiti;",
+  "old_condition": "",
+  "old_points": [
+   "I disegni mostrano la disposizione dei componenti principali della quasi-macchina",
+   "La valutazione dei rischi include un'analisi dei rischi legati all'accesso ai circuiti elettrici",
+   "Le istruzioni descrivono la sequenza di montaggio dei sottoinsiemi principali",
+   "La documentazione include schemi elettrici dettagliati per la parte di controllo"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-d",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera d)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Descrizioni per la comprensione di disegni e funzionamento",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "d) le descrizioni e le spiegazioni necessarie alla comprensione dei disegni e degli schemi di cui alla lettera c) nonché del funzionamento della quasi-macchina;",
+  "old_condition": "",
+  "old_points": [
+   "Le descrizioni spiegano come i componenti principali interagiscono tra loro",
+   "Gli schemi mostrano la distribuzione degli alimentatori elettrici della macchina",
+   "Le istruzioni descrivono il funzionamento del sistema di blocco meccanico",
+   "Le figure illustrano la posizione e la funzione dei dispositivi di sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-e",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera e)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Norme armonizzate / specifiche comuni applicate",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "e) i riferimenti delle norme armonizzate a norma dell'articolo 20, paragrafo 1, o delle specifiche comuni adottate dalla Commissione a norma dell'articolo 20, paragrafo 3, che sono state applicate per la progettazione e la fabbricazione della quasi-macchina. In caso di applicazione parziale delle norme armonizzate o delle specifiche comuni la documentazione tecnica deve specificare le parti che sono state applicate;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica le norme armonizzate applicate durante la progettazione",
+   "Le specifiche comuni adottate sono elencate con riferimento alla loro normativa",
+   "La documentazione chiarisce le parti parzialmente applicate delle norme armonizzate",
+   "Le norme armonizzate sono citate con il loro numero e titolo completo"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-f",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera f)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Altre specifiche tecniche applicate",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "f) se le norme armonizzate o le specifiche comuni non sono state applicate o lo sono state solo parzialmente, le descrizioni delle altre specifiche tecniche che sono state applicate al fine di soddisfare tutti i requisiti essenziali di sicurezza e di tutela della salute e di applicabili;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include una descrizione completa delle specifiche tecniche applicate",
+   "Le specifiche tecniche sono correlate ai requisiti essenziali di sicurezza e salute",
+   "Le descrizioni delle specifiche tecniche sono chiare e facilmente verificabili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-IV-B-g",
+  "law": "MR",
+  "ref": "All. IV, parte B, lettera g)",
+  "group": "All. IV, parte B — Documentazione tecnica (quasi-macchine)",
+  "title": "Relazioni di calcolo, prove, ispezioni ed esami",
+  "tags": [
+   "quasi_macchina"
+  ],
+  "always": false,
+  "text": "g) le relazioni e/o i risultati dei calcoli di progettazione, delle prove, delle ispezioni e degli esami effettuati per verificare la conformità della quasi-macchina rispetto ai requisiti essenziali di sicurezza e di tutela della salute applicabili;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle forze meccaniche agenti sul corpo umano",
+   "Le dichiarazioni attestano la conformità ai requisiti essenziali di sicurezza"
+  ],
+  "old_status": "bozza"
+ }
+]

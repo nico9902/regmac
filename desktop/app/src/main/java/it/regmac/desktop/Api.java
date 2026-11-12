@@ -53,7 +53,7 @@ public class Api {
     out.put("dataDir", Paths.dataDir().toString());
     out.put("os", System.getProperty("os.name"));
     out.put("schede", catalog.schedeVersion());
-    out.put("version", "1.2.0");
+    out.put("version", "1.3.0");
     return out;
   }
 
@@ -102,7 +102,7 @@ public class Api {
   // ---------- catalogo ----------
   @GetMapping("/catalog")
   public Map<String, Object> catalog() {
-    return Map.of("laws", catalog.laws(), "requirements", catalog.all(), "questions", Catalog.QUESTIONS, "schede", catalog.schedeVersion());
+    return Map.of("laws", catalog.laws(), "requirements", catalog.all(), "questions", Catalog.QUESTIONS, "schede", catalog.schedeVersion(), "docTypes", Catalog.DOC_TYPES);
   }
 
   // ---------- fascicoli ----------
@@ -153,7 +153,7 @@ public class Api {
   // ---------- documenti ----------
   @PostMapping("/fascicoli/{id}/documents")
   public List<Doc> upload(@PathVariable String id, @RequestParam("file") List<MultipartFile> files) throws Exception {
-    store.get(id);
+    if (Set.of("running", "queued", "indexing").contains(store.get(id).run().state())) throw new IllegalStateException("Attendi o interrompi l’analisi prima di modificare i documenti");
     List<Doc> docs = new ArrayList<>(store.docs(id));
     for (MultipartFile f : files) {
       String name = Optional.ofNullable(f.getOriginalFilename()).orElse("documento").replaceAll("[\\\\/:*?\"<>|]", "_");
@@ -161,12 +161,21 @@ public class Api {
       if (!Set.of(".pdf", ".docx", ".txt", ".md").contains(ext)) throw new IllegalArgumentException(name + ": formato non supportato (PDF, DOCX, TXT, MD)");
       byte[] bytes = f.getBytes();
       String sha = Engine.sha(bytes);
-      if (docs.stream().anyMatch(x -> x.sha256().equals(sha))) continue;
+      if (docs.stream().anyMatch(x -> x.sha256().equals(sha) && x.error() == null)) continue;
+      docs.removeIf(x -> x.sha256().equals(sha));
       String docId = sha.substring(0, 12);
       Path target = store.dir(id).resolve("documenti").resolve(docId + ext);
       Files.write(target, bytes);
-      var res = TextExtractor.extract(target); // verifica subito che il file sia leggibile
-      docs.add(new Doc(docId, name, docId + ext, bytes.length, res.pages(), sha, res.passages().size(), res.warning(), Instant.now()));
+      try {
+        var res = TextExtractor.extract(target);
+        if (res.passages().isEmpty()) throw new IllegalArgumentException("Nessun testo estraibile; scansioni senza OCR non analizzabili");
+        List<String> types = DocTypes.propose(name, res.pages(), String.join(" ", res.passages().stream().map(TextExtractor.Passage::text).toList()));
+        docs.add(new Doc(docId, name, docId + ext, bytes.length, res.pages(), sha, res.passages().size(), res.warning(), Instant.now(), null, types));
+      } catch (Exception e) {
+        docs.add(new Doc(docId, name, docId + ext, bytes.length, 0, sha, 0, null, Instant.now(),
+            "Non analizzato: " + Optional.ofNullable(e.getMessage()).orElse("lettura non riuscita") + ". Nessun testo parziale utilizzato."));
+      }
+      store.saveDocs(id, docs); // ogni file ha un esito indipendente, anche se un successivo file fallisce
     }
     store.saveDocs(id, docs);
     touch(id);
@@ -183,6 +192,22 @@ public class Api {
     return docs;
   }
 
+  public record DocTypesChoice(List<String> types) { }
+
+  /** Tipi del documento confermati o corretti dall'utente: decidono dove cercare le evidenze di ogni punto. */
+  @PutMapping("/fascicoli/{id}/documents/{docId}/types")
+  public List<Doc> setDocTypes(@PathVariable String id, @PathVariable String docId, @RequestBody DocTypesChoice c) {
+    if (Set.of("running", "queued", "indexing").contains(store.get(id).run().state())) throw new IllegalStateException("Attendi o interrompi l’analisi prima di modificare i documenti");
+    List<String> types = c.types() == null ? List.of() : c.types().stream().filter(Catalog.DOC_TYPES::containsKey).distinct().toList();
+    List<Doc> docs = new ArrayList<>(store.docs(id));
+    boolean found = false;
+    for (int i = 0; i < docs.size(); i++) if (docs.get(i).id().equals(docId)) { docs.set(i, docs.get(i).withTypes(types)); found = true; }
+    if (!found) throw new NoSuchElementException("Documento non trovato");
+    store.saveDocs(id, docs);
+    touch(id);
+    return docs;
+  }
+
   @GetMapping("/fascicoli/{id}/documents/{docId}")
   public ResponseEntity<byte[]> openDoc(@PathVariable String id, @PathVariable String docId) throws Exception {
     Doc d = store.docs(id).stream().filter(x -> x.id().equals(docId)).findFirst().orElseThrow(() -> new NoSuchElementException("Documento non trovato"));
@@ -194,7 +219,7 @@ public class Api {
   // ---------- profilo della macchina ----------
   @PostMapping("/fascicoli/{id}/profile/propose")
   public List<Answer> propose(@PathVariable String id) throws Exception {
-    if (store.docs(id).isEmpty()) throw new IllegalArgumentException("Carica almeno un documento");
+    if (store.docs(id).stream().noneMatch(d -> d.error() == null && d.passages() > 0)) throw new IllegalArgumentException("Carica almeno un documento leggibile");
     List<Answer> a = engine.proposeProfile(id);
     Fascicolo f = store.get(id);
     store.save(new Fascicolo(id, f.name(), f.model(), f.serial(), f.year(), f.maker(), f.use(), f.createdAt(), f.updatedAt(), a, f.tags(), false, f.run(), f.exportedAt()));
@@ -206,30 +231,35 @@ public class Api {
   @PutMapping("/fascicoli/{id}/profile")
   public Fascicolo confirmProfile(@PathVariable String id, @RequestBody ProfileChoice c) {
     Fascicolo f = store.get(id);
+    // ogni domanda richiede Sì o No: un "non so" includeva in silenzio requisiti estranei alla macchina
+    for (var q : Catalog.QUESTIONS) if (c.values() == null || c.values().get(q.tag()) == null)
+      throw new IllegalArgumentException("Rispondi Sì o No alla domanda: " + q.label());
     List<String> tags = new ArrayList<>(List.of("generale"));
     tags.add(Boolean.TRUE.equals(c.values().get("quasi_macchina")) ? "quasi_macchina" : "macchina");
     for (var q : Catalog.QUESTIONS) if (!q.tag().equals("quasi_macchina") && Boolean.TRUE.equals(c.values().get(q.tag()))) tags.add(q.tag());
     List<Answer> answers = new ArrayList<>();
     for (var q : Catalog.QUESTIONS) {
-      Answer a = f.profile().stream().filter(x -> x.tag().equals(q.tag())).findFirst().orElse(new Answer(q.tag(), "UNKNOWN", "", null, null, false));
-      answers.add(new Answer(a.tag(), a.verdict(), a.quote(), a.doc(), a.page(), Boolean.TRUE.equals(c.values().get(q.tag()))));
+      Answer a = f.profile().stream().filter(x -> x.tag().equals(q.tag())).findFirst().orElse(new Answer(q.tag(), "UNKNOWN", "", null, null, null));
+      answers.add(new Answer(a.tag(), a.verdict(), a.quote(), a.doc(), a.page(), c.values().get(q.tag())));
     }
     return store.save(new Fascicolo(id, f.name(), f.model(), f.serial(), f.year(), f.maker(), f.use(), f.createdAt(), f.updatedAt(), answers, tags, true, f.run(), f.exportedAt()));
   }
 
   // ---------- pre-valutazione ----------
   @PostMapping("/fascicoli/{id}/run")
-  public Fascicolo run(@PathVariable String id) {
+  public Fascicolo run(@PathVariable String id, @RequestParam(defaultValue = "false") boolean fresh) {
     if (!store.get(id).profileConfirmed()) throw new IllegalArgumentException("Conferma prima il profilo della macchina");
-    if (store.docs(id).isEmpty()) throw new IllegalArgumentException("Carica almeno un documento");
-    engine.start(id);
+    if (store.get(id).profile().stream().anyMatch(x -> x.value() == null))
+      throw new IllegalArgumentException("Il profilo contiene risposte «Non so», non più ammesse: rispondi Sì o No a ogni domanda e conferma");
+    if (store.docs(id).stream().noneMatch(d -> d.error() == null && d.passages() > 0)) throw new IllegalArgumentException("Carica almeno un documento leggibile");
+    engine.start(id, fresh);
     return store.get(id);
   }
 
   @PostMapping("/fascicoli/{id}/stop")
   public Fascicolo stop(@PathVariable String id) { engine.stop(id); return store.get(id); }
 
-  public record Review(List<String> points, Boolean confirmed, String note) { }
+  public record Review(List<String> points, Boolean confirmed, String note, String applicability) { }
 
   @PutMapping("/fascicoli/{id}/results/{rid}")
   public Map<String, Object> review(@PathVariable String id, @PathVariable String rid, @RequestBody Review rv) {
@@ -240,10 +270,12 @@ public class Api {
       if (rv.points() != null) for (int i = 0; i < pts.size() && i < rv.points().size(); i++) {
         String u = rv.points().get(i); Point p = pts.get(i);
         String user = u == null || u.equals(p.answer()) ? null : (Set.of("S", "C", "I").contains(u) ? u : null);
-        pts.set(i, new Point(p.text(), p.answer(), p.quote(), p.docId(), p.doc(), p.page(), p.support(), user));
+        pts.set(i, p.withUser(user));
       }
+      // applicabilità del revisore: "TRUE"/"FALSE"; "AUTO" torna alla proposta del programma
+      String appUser = rv.applicability() == null ? r.appUser() : Set.of("TRUE", "FALSE").contains(rv.applicability()) ? rv.applicability() : null;
       all.put(rid, new Result(r.rid(), r.applicability(), r.appQuote(), r.appDoc(), r.appPage(), pts,
-          rv.confirmed() != null ? rv.confirmed() : r.confirmed(), rv.note() != null ? rv.note() : r.note(), r.hash(), r.at()));
+          rv.confirmed() != null ? rv.confirmed() : r.confirmed(), rv.note() != null ? rv.note() : r.note(), r.hash(), r.at(), appUser));
       store.saveResults(id, all);
     }
     touch(id);

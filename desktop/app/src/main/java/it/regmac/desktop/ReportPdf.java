@@ -40,8 +40,8 @@ public class ReportPdf {
     // score
     PdfPTable box = new PdfPTable(new float[]{1.1f, 2.4f}); box.setWidthPercentage(100);
     if (s.notEvaluable()) {
-      PdfPCell c = cell(t("NON VALUTABILE — documentazione insufficiente.\nI documenti esaminati rispondono al " + pct(s.coverage()) + " dei punti di controllo (soglia "
-          + pct(Views.MIN_COVERAGE) + "): lo score non viene calcolato. Vedi i documenti da richiedere."), new Font(Font.HELVETICA, 10, Font.BOLD, AMBER));
+      PdfPCell c = cell(t("NON VALUTABILE — evidenze riconosciute insufficienti.\nIl sistema ha riconosciuto evidenze per il " + pct(s.coverage()) + " dei punti di controllo (soglia "
+          + pct(Views.MIN_COVERAGE) + "): lo score non viene mostrato. Verificare profilo, lettura e ricerca prima di attribuire lacune ai documenti."), new Font(Font.HELVETICA, 10, Font.BOLD, AMBER));
       c.setColspan(2); c.setBorderColor(AMBER); c.setBorderWidth(1.2f); c.setPadding(10); box.addCell(c);
     } else {
       PdfPCell c1 = new PdfPCell(); c1.setBorder(Rectangle.NO_BORDER);
@@ -49,12 +49,14 @@ public class ReportPdf {
       box.addCell(c1);
       PdfPCell c2 = new PdfPCell(); c2.setBorder(Rectangle.NO_BORDER); c2.setPaddingTop(10);
       c2.addElement(p(t("Può arrivare fino a " + pct(s.max()) + " con le evidenze mancanti · copertura delle evidenze " + pct(s.coverage())), BB, 4));
-      c2.addElement(p(t(s.applicable() + " requisiti applicabili · " + s.full() + " pienamente soddisfatti · " + s.gapsTech() + " con gap tecnici · " + s.gapsDoc()
-          + " con gap documentali · " + s.na() + " non applicabili o da confermare"), B, 6));
+      c2.addElement(p(t(s.applicable() + " requisiti applicabili · " + s.full() + " pienamente soddisfatti · " + s.gapsTech() + " con possibili non conformità · "
+          + s.gapsMissing() + " con documento assente · " + s.gapsEvidence() + " con evidenza mancante · " + s.na() + " non applicabili o da confermare"
+          + (s.integrator() > 0 ? " · " + s.integrator() + " punti a carico dell'integratore (esclusi dallo score)" : "")), B, 6));
       c2.addElement(bar(s.score(), s.max()));
       box.addCell(c2);
     }
     doc.add(box);
+    for (Doc source : docs) if (source.error() != null) doc.add(p(t("DOCUMENTO NON ANALIZZATO: " + source.name() + " — " + source.error()), S, 6));
     if (s.confirmed() < s.done()) doc.add(p(t("Esiti rivisti da una persona: " + s.confirmed() + " su " + s.done() + ". Gli altri sono proposte dell'AI non ancora riviste."), S, 6));
 
     doc.add(p("1. Score per area", H2, 6));
@@ -66,37 +68,55 @@ public class ReportPdf {
     }
     doc.add(ar);
 
-    doc.add(p("2. Gap per requisito", H2, 6));
-    if (a.gaps().isEmpty()) doc.add(p("Nessun gap.", B, 4));
-    PdfPTable g = new PdfPTable(new float[]{1.1f, 1.3f, 6f}); g.setWidthPercentage(100); g.setHeaderRows(1);
-    head(g, "Requisito", "Tipo", "Punti non soddisfatti ed evidenze");
-    for (var x : a.gaps()) {
+    // possibili non conformità in evidenza: da confermare da parte di un revisore
+    var ncs = a.gaps().stream().filter(x -> Views.NC.equals(x.kind())).toList();
+    doc.add(p("2. Possibili non conformità (da confermare)", H2, 6));
+    if (ncs.isEmpty()) doc.add(p("Nessuna: nessun documento smentisce esplicitamente un punto di controllo.", B, 4));
+    for (var x : ncs) for (var pt : x.points()) if (Views.NC.equals(pt.motive())) {
+      doc.add(p(t(x.ref() + " " + x.title() + " — " + pt.text()), BB, 1));
+      if (pt.quote() != null) doc.add(p(t("«" + pt.quote() + "» — " + pt.doc() + (pt.page() != null && pt.page() > 1 ? ", p. " + pt.page() : "")), Q, 1));
+      doc.add(p(pt.reviewed() ? "Confermata dal revisore." : "Proposta dell'AI, non ancora confermata da un revisore.", S, 5));
+    }
+
+    doc.add(p("3. Gap per requisito", H2, 6));
+    var others = a.gaps().stream().filter(x -> !Views.INTEGRATOR.equals(x.kind())).toList();
+    if (others.isEmpty()) doc.add(p("Nessun gap.", B, 4));
+    PdfPTable g = new PdfPTable(new float[]{1.1f, 1.4f, 6f}); g.setWidthPercentage(100); g.setHeaderRows(1);
+    head(g, "Requisito", "Motivo", "Punti non soddisfatti e documento atteso");
+    for (var x : others) {
       g.addCell(cell(t(x.ref()), BB));
-      g.addCell(cell(x.kind() + (x.priority() < 3 ? "\nal " + pct(x.value()) : ""), new Font(Font.HELVETICA, 8.5f, Font.BOLD, x.priority() == 1 ? RED : x.priority() == 2 ? GREY : AMBER)));
+      g.addCell(cell(t(x.kind()) + (x.priority() < 3 ? "\nal " + pct(x.value()) : ""), new Font(Font.HELVETICA, 8.5f, Font.BOLD, x.priority() == 1 ? RED : x.priority() == 2 ? GREY : AMBER)));
       PdfPCell c = new PdfPCell(); c.setBorderColor(LINE); c.setPadding(5);
       c.addElement(p(t(x.title()), BB, 2));
-      if (x.condition() != null) c.addElement(p(t("Da confermare se si applica: " + x.condition()), B, 2));
-      for (Point pt : x.points()) {
-        String lab = "C".equals(pt.effective()) ? "Contraddetto: " : "Senza evidenze: ";
-        c.addElement(p(t(lab + pt.text()), B, 1));
-        if ("C".equals(pt.effective()) && pt.quote() != null) c.addElement(p(t("«" + pt.quote() + "» — " + pt.doc() + (pt.page() != null && pt.page() > 1 ? ", p. " + pt.page() : "")), Q, 3));
+      for (var pt : x.points()) {
+        if (Views.INTEGRATOR.equals(pt.motive())) continue;
+        c.addElement(p(t(pt.motive() + ": " + pt.text()), B, 0));
+        c.addElement(p(t("Documento atteso: " + pt.expectedLabel()), S, 2));
       }
       g.addCell(c);
     }
     doc.add(g);
 
-    doc.add(p("3. Documenti da richiedere", H2, 6));
-    if (a.docsNeeded().isEmpty()) doc.add(p("Nessuno.", B, 4));
-    for (String d : a.docsNeeded()) doc.add(p("• " + t(d), B, 2));
+    var integ = a.gaps().stream().flatMap(x -> x.points().stream().filter(pt -> Views.INTEGRATOR.equals(pt.motive())).map(pt -> x.ref() + " " + pt.text() + " (" + pt.expectedLabel() + ")")).toList();
+    if (!integ.isEmpty()) {
+      doc.add(p("Punti a carico dell'integratore (quasi-macchina, esclusi dallo score)", BB, 3));
+      for (String x : integ) doc.add(p("• " + t(x), S, 1));
+    }
 
-    doc.add(p("4. Documenti esaminati", H2, 6));
+    doc.add(p("4. Documenti da richiedere", H2, 6));
+    if (a.docsNeeded().isEmpty()) doc.add(p("Nessuno.", B, 4));
+    for (var d : a.docsNeeded()) doc.add(p("• " + t(d.label() + (d.integrator() ? " — a carico dell'integratore" : d.missing() ? " — assente dal fascicolo" : " — presente ma senza le evidenze richieste")
+        + " (" + d.points() + " punti, " + d.requirements() + " requisiti)"), B, 2));
+
+    doc.add(p("5. Documenti esaminati", H2, 6));
     PdfPTable dt = new PdfPTable(new float[]{5f, 1f, 3.2f}); dt.setWidthPercentage(100);
-    head(dt, "Documento", "Pagine", "Impronta SHA-256");
-    for (Doc d : docs) { dt.addCell(cell(t(d.name()) + (d.warning() != null ? "\n" + t(d.warning()) : ""), B)); dt.addCell(cell(String.valueOf(d.pages()), B)); dt.addCell(cell(d.sha256(), S)); }
+    head(dt, "Documento e tipo", "Pagine", "Impronta SHA-256");
+    for (Doc d : docs) { dt.addCell(cell(t(d.name()) + "\n" + t(String.join(", ", d.typesOrEmpty().stream().map(Views::label).toList())) + (d.warning() != null ? "\n" + t(d.warning()) : ""), B));
+      dt.addCell(cell(String.valueOf(d.pages()), B)); dt.addCell(cell(d.sha256(), S)); }
     doc.add(dt);
 
     doc.newPage();
-    doc.add(p("5. Dettaglio per requisito", H2, 6));
+    doc.add(p("6. Dettaglio per requisito", H2, 6));
     PdfPTable rt = new PdfPTable(new float[]{1.1f, 4.6f, 1.4f, 0.9f}); rt.setWidthPercentage(100); rt.setHeaderRows(1);
     head(rt, "Requisito", "Titolo e punti di controllo", "Esito", "Valore");
     for (var r : a.requirements()) {
@@ -112,9 +132,10 @@ public class ReportPdf {
     }
     doc.add(rt);
 
-    doc.add(p("6. Metodo e limiti", H2, 6));
+    doc.add(p("7. Metodo e limiti", H2, 6));
     doc.add(p(t("Pre-assessment documentale eseguito con AI locale (Ollama, modello " + Ollama.CHAT + ", indice " + Ollama.EMBED + "), schede di verifica " + schede
-        + ". Per ogni punto di controllo l'AI confronta le frasi più pertinenti dei documenti e indica se lo dimostrano, lo contraddicono o non lo riguardano; "
+        + ". Ogni punto di controllo indica il documento atteso, cosa conta come prova e, dove previsto, cosa conta come smentita; l'AI esamina solo i documenti del tipo atteso "
+        + "(se mancano il punto è un gap \"documento assente\") e i valori numerici sono confrontati dal programma. Una smentita è sempre una possibile non conformità da confermare; "
         + "ogni esito positivo o negativo cita la frase da cui deriva. Score = media sui requisiti applicabili della quota di punti supportati; massimo = come se le "
         + "evidenze mancanti risultassero favorevoli. Sotto il " + pct(Views.MIN_COVERAGE) + " di copertura delle evidenze il fascicolo è dichiarato non valutabile."), B, 4));
     doc.add(p(t("Il pre-assessment non è una valutazione della conformità ai sensi del Reg. (UE) 2023/1230 (art. 25) o del Reg. (UE) 2024/2847 (art. 32), "
@@ -127,7 +148,7 @@ public class ReportPdf {
   static String outcome(String o, String app) {
     if (o == null) return "—";
     if ("NA".equals(o)) return "UNKNOWN".equals(app) ? "Da confermare" : "Non applicabile";
-    return switch (o) { case "OK" -> "Soddisfatto"; case "PART" -> "Parziale"; case "NC" -> "Contraddetto"; default -> "Senza evidenze"; };
+    return switch (o) { case "OK" -> "Soddisfatto"; case "PART" -> "Parziale"; case "NC" -> "Possibile non conformità"; case "INT" -> "A carico dell'integratore"; default -> "Senza evidenze"; };
   }
 
   static PdfPTable bar(double v, double max) {

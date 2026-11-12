@@ -1,0 +1,1012 @@
+{
+  "MR-III-B1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi definisce i limiti della macchina: uso previsto, uso scorretto ragionevolmente prevedibile, limiti di spazio e di tempo",
+        "doc": "valutazione_rischi",
+        "ok": "descrizione dell'uso previsto e di almeno un uso scorretto prevedibile; limiti di spazio, di tempo o di vita utile",
+        "no": "la sola descrizione commerciale della macchina; l'uso previsto riportato solo nelle istruzioni senza analisi"
+      },
+      {
+        "q": "La valutazione dei rischi elenca i pericoli e le situazioni pericolose per le fasi del ciclo di vita (trasporto, installazione, uso, manutenzione, smantellamento)",
+        "doc": "valutazione_rischi",
+        "ok": "tabella o elenco di pericoli associati a zone, fasi o operazioni della macchina",
+        "no": "elenco di norme applicate; dichiarazione generica che i rischi sono stati valutati"
+      },
+      {
+        "q": "La valutazione dei rischi stima ogni rischio con gravità e probabilità e indica la misura di riduzione adottata e il rischio residuo",
+        "doc": "valutazione_rischi",
+        "ok": "indici o classi di gravità e probabilità per i pericoli; misura di protezione e rischio residuo per ciascuno",
+        "no": "elenco di pericoli senza stima; misure elencate senza collegarle ai pericoli"
+      },
+      {
+        "q": "La valutazione dei rischi considera i pericoli derivanti dall'interazione con altre macchine collegate o, se presente, dal comportamento auto-evolutivo",
+        "doc": "valutazione_rischi",
+        "ok": "sezione su interfacce con macchine a monte/a valle o sull'evoluzione del comportamento del sistema autonomo",
+        "no": "la sola indicazione che la macchina può essere integrata in un impianto"
+      }
+    ]
+  },
+  "MR-III-1.1.1": {
+    "condition": "Il prodotto è una quasi-macchina",
+    "points": [
+      {
+        "q": "La dichiarazione di incorporazione elenca i requisiti essenziali di sicurezza (Allegato III) applicati e rispettati dalla quasi-macchina",
+        "doc": "dichiarazione",
+        "ok": "elenco puntuale dei requisiti dell'Allegato III applicati (es. 1.1.2, 1.2.4.3, 1.3.7)",
+        "no": "la sola frase 'conforme ai requisiti applicabili'; elenco di norme armonizzate senza requisiti",
+        "smentita": "la dichiarazione afferma che nessun requisito essenziale è stato applicato"
+      },
+      {
+        "q": "Le istruzioni di assemblaggio indicano le condizioni da rispettare per incorporare correttamente la quasi-macchina senza compromettere la sicurezza",
+        "doc": "istruzioni",
+        "ok": "requisiti di installazione, fissaggio, interfacce di comando e di sicurezza richieste all'integratore",
+        "no": "istruzioni d'uso generiche; rimandi al solo installatore senza indicare cosa deve fare"
+      },
+      {
+        "q": "La documentazione indica quali requisiti essenziali restano a carico di chi realizza la macchina finale",
+        "doc": "valutazione_rischi",
+        "ok": "elenco dei pericoli o requisiti non coperti e da gestire in fase di integrazione (es. ripari della cella)",
+        "no": "la sola raccomandazione di fare una valutazione dei rischi dell'impianto"
+      }
+    ]
+  },
+  "MR-III-1.1.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi applica l'ordine delle misure: prima eliminazione per progettazione, poi protezioni, infine informazione sui rischi residui",
+        "doc": "valutazione_rischi",
+        "ok": "per i pericoli, misura classificata come intrinseca, di protezione o informativa, con le prime preferite",
+        "no": "elenco di misure senza indicazione del tipo; sole avvertenze nelle istruzioni"
+      },
+      {
+        "q": "Le istruzioni elencano i rischi residui e indicano formazione richiesta e dispositivi di protezione individuale necessari",
+        "doc": "istruzioni",
+        "ok": "sezione rischi residui; DPI specifici (es. guanti, occhiali); formazione o qualifica richiesta per le operazioni",
+        "no": "avvertenza generica 'usare con cautela'; rimando alle norme sulla sicurezza del lavoro"
+      },
+      {
+        "q": "Le istruzioni indicano l'uso previsto e le controindicazioni o gli usi scorretti da evitare",
+        "doc": "istruzioni",
+        "ok": "paragrafo uso previsto e elenco di usi non consentiti o controindicazioni concrete",
+        "no": "la sola dichiarazione che la macchina va usata secondo le istruzioni",
+        "smentita": "il manuale ammette espressamente un uso che la valutazione dei rischi indica come pericoloso"
+      },
+      {
+        "q": "Le istruzioni descrivono come l'utilizzatore verifica le funzioni di sicurezza (prove funzionali, frequenza, attrezzature necessarie)",
+        "doc": "istruzioni",
+        "ok": "procedura di prova di arresto di emergenza, interblocchi o sensori con frequenza o esito atteso",
+        "no": "il solo invito a controllare periodicamente la sicurezza; manutenzione non legata alle funzioni di sicurezza"
+      }
+    ]
+  },
+  "MR-III-1.1.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione identifica i materiali o le sostanze utilizzati od originati (fluidi, polveri, fumi) e i relativi rischi per la salute",
+        "doc": "valutazione_rischi",
+        "ok": "elenco di sostanze, fluidi o emissioni con pericolo associato; schede di sicurezza richiamate per i fluidi",
+        "no": "dichiarazione generica di materiali 'non pericolosi' senza indicarli; conformità RoHS citata da sola"
+      },
+      {
+        "q": "Le istruzioni descrivono come riempire, scaricare e recuperare i fluidi in sicurezza (tipo di fluido, quantità, procedure)",
+        "doc": "istruzioni",
+        "ok": "procedura di rabbocco o scarico, tipo e quantità di olio, refrigerante o grasso, punti di carico e scarico",
+        "no": "il solo rimando alle norme sullo smaltimento; indicazioni di pulizia generica"
+      },
+      {
+        "q": "Le specifiche indicano i materiali delle parti a contatto con l'operatore o con il prodotto lavorato",
+        "doc": "specifiche",
+        "ok": "materiale dichiarato (es. acciaio inox, alluminio, polimero) per parti esterne o a contatto",
+        "no": "materiale citato senza riferimento alla parte"
+      }
+    ]
+  },
+  "MR-III-1.1.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o le specifiche indicano l'illuminazione integrata della macchina o il livello di illuminazione richiesto nell'area di lavoro",
+        "doc": "istruzioni",
+        "ok": "presenza di lampade nella zona di lavoro o di manutenzione; valore in lux richiesto per l'ambiente",
+        "no": "spie luminose di stato; luci di segnalazione"
+      },
+      {
+        "q": "La valutazione dei rischi tratta l'illuminazione: zone d'ombra, abbagliamento, effetto stroboscopico su parti in movimento",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo da illuminazione insufficiente o stroboscopica analizzato con la misura adottata o motivazione di non pertinenza",
+        "no": "il solo elenco dei pericoli senza la voce illuminazione"
+      },
+      {
+        "q": "Le istruzioni indicano come illuminare le parti interne da ispezionare o regolare spesso e le zone di manutenzione",
+        "doc": "istruzioni",
+        "ok": "luce interna al quadro o al vano; uso di lampada portatile prescritto per le ispezioni",
+        "no": "istruzioni di manutenzione senza alcun riferimento all'illuminazione"
+      }
+    ]
+  },
+  "MR-III-1.1.5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano massa, dimensioni e modalità di sollevamento e trasporto della macchina o dei suoi elementi",
+        "doc": "istruzioni",
+        "ok": "peso in kg, punti di aggancio, uso di carrello o gru, schema di imbracatura",
+        "no": "il solo invito a movimentare con cautela; dati di imballo senza modalità"
+      },
+      {
+        "q": "La macchina dispone di punti di sollevamento, golfari, maniglie o predisposizioni per il fissaggio di accessori di sollevamento",
+        "doc": "disegni",
+        "ok": "golfari, fori di sollevamento, tasche per forche o maniglie indicati su disegni o istruzioni",
+        "no": "accessori di sollevamento da reperire a cura dell'utilizzatore senza punti predisposti"
+      },
+      {
+        "q": "Le istruzioni descrivono imballo, bloccaggio delle parti mobili durante il trasporto e condizioni di immagazzinamento",
+        "doc": "istruzioni",
+        "ok": "blocchi di trasporto, posizione di trasporto, temperatura o umidità di stoccaggio",
+        "no": "indicazioni commerciali sulla spedizione"
+      }
+    ]
+  },
+  "MR-III-1.1.6": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi tratta i rischi ergonomici: posture, sforzi manuali, ritmo imposto dalla macchina, concentrazione prolungata",
+        "doc": "valutazione_rischi",
+        "ok": "voci su posture, carichi movimentati a mano, altezze di lavoro o cadenza con misura adottata",
+        "no": "il solo riferimento a norme di ergonomia"
+      },
+      {
+        "q": "Le istruzioni o i disegni indicano altezze di lavoro, posizioni dei comandi o regolazioni per adattarsi a operatori diversi",
+        "doc": "istruzioni",
+        "ok": "altezza del piano di lavoro, postazione regolabile, sforzi o pesi massimi movimentati a mano",
+        "no": "descrizione dell'interfaccia senza dati dimensionali o di regolazione"
+      },
+      {
+        "q": "Le istruzioni descrivono come l'interfaccia uomo-macchina comunica stato e azioni pianificate della macchina all'operatore",
+        "doc": "istruzioni",
+        "ok": "schermate, segnali luminosi o messaggi che indicano lo stato e il movimento successivo",
+        "no": "elenco di pulsanti senza spiegazione dei segnali"
+      }
+    ]
+  },
+  "MR-III-1.1.7": {
+    "condition": "La macchina prevede una postazione di lavoro per l'operatore",
+    "points": [
+      {
+        "q": "La valutazione dei rischi tratta i rischi alla postazione di lavoro da gas di scarico, mancanza di ossigeno o ambiente pericoloso",
+        "doc": "valutazione_rischi",
+        "ok": "analisi di emissioni o atmosfera alla postazione con misura (aspirazione, cabina, ventilazione) o motivata non pertinenza",
+        "no": "solo i rischi meccanici della postazione"
+      },
+      {
+        "q": "Le istruzioni o i disegni descrivono la cabina o i mezzi di protezione dell'operatore e le uscite, compresa quella di sicurezza",
+        "doc": "disegni",
+        "ok": "cabina con ventilazione o filtrazione; uscita normale e uscita di emergenza in direzione diversa",
+        "no": "descrizione della postazione senza mezzi di protezione né uscite"
+      }
+    ]
+  },
+  "MR-III-1.1.8": {
+    "condition": "La macchina ha una postazione di lavoro integrata in cui l'operatore lavora o può lavorare seduto",
+    "points": [
+      {
+        "q": "Le istruzioni o le specifiche indicano che il sedile è fornito con la macchina e quali regolazioni consente (altezza, distanza dai comandi)",
+        "doc": "istruzioni",
+        "ok": "sedile in dotazione con regolazioni descritte",
+        "no": "il solo suggerimento di usare una sedia adatta",
+        "smentita": "il manuale indica che l'operatore lavora seduto ma il sedile non è fornito"
+      },
+      {
+        "q": "Le specifiche o le prove indicano sedile antivibrante, ancoraggio del sedile e presenza di poggiapiedi antisdrucciolo",
+        "doc": "specifiche",
+        "ok": "sedile con sospensione o classe antivibrazione; fissaggio del sedile; poggiapiedi",
+        "no": "dati di comfort generici"
+      }
+    ]
+  },
+  "MR-III-1.1.9-c1": {
+    "condition": "Il prodotto può essere collegato ad altri dispositivi o comunicare con dispositivi remoti",
+    "points": [
+      {
+        "q": "La valutazione dei rischi tratta i pericoli derivanti dal collegamento di dispositivi esterni o remoti (porte, interfacce di rete, app, pendant)",
+        "doc": "valutazione_rischi",
+        "ok": "elenco delle interfacce di collegamento con pericoli analizzati e misure adottate",
+        "no": "la sola elencazione delle interfacce disponibili"
+      },
+      {
+        "q": "Le istruzioni indicano quali dispositivi possono essere collegati e i limiti dei comandi accettati da remoto",
+        "doc": "istruzioni",
+        "ok": "dispositivi compatibili, comandi da remoto disabilitati o consentiti solo in certi modi, autorizzazione richiesta",
+        "no": "le sole caratteristiche elettriche delle porte",
+        "smentita": "il manuale indica che un dispositivo remoto può avviare movimenti pericolosi senza conferma locale"
+      },
+      {
+        "q": "Le funzioni di sicurezza restano attive e prevalenti quando la macchina è comandata da un dispositivo collegato o remoto",
+        "doc": "schemi",
+        "ok": "schema o descrizione in cui arresto di emergenza e interblocchi sono cablati indipendentemente dall'interfaccia remota",
+        "no": "affermazione generica di sicurezza della rete"
+      }
+    ]
+  },
+  "MR-III-1.1.9-c2": {
+    "condition": "Il prodotto ha componenti hardware che trasmettono segnali o dati per accedere al software critico per la sicurezza",
+    "points": [
+      {
+        "q": "La documentazione identifica i componenti hardware che danno accesso al software critico per la sicurezza (porte, connettori, schede)",
+        "doc": "cybersicurezza",
+        "ok": "elenco di porte di servizio, interfacce di programmazione o bus con il loro ruolo",
+        "no": "elenco completo dei componenti senza indicare quelli critici"
+      },
+      {
+        "q": "Le istruzioni o le specifiche descrivono le protezioni contro l'alterazione di tali componenti (sigilli, chiusure, accesso con chiave o password)",
+        "doc": "istruzioni",
+        "ok": "quadro chiuso a chiave, porte di servizio sigillate o disabilitate, accesso con credenziali",
+        "no": "raccomandazione all'utente di proteggere la rete",
+        "smentita": "la porta di programmazione delle funzioni di sicurezza è accessibile senza protezione né credenziali"
+      },
+      {
+        "q": "Il prodotto registra gli interventi, legittimi o meno, sui componenti hardware di accesso al software critico",
+        "doc": "specifiche",
+        "ok": "registro eventi di apertura, collegamento o sostituzione; sigilli antimanomissione tracciabili",
+        "no": "registro dei soli allarmi di processo"
+      }
+    ]
+  },
+  "MR-III-1.1.9-c3": {
+    "condition": "Il prodotto impiega software o dati da cui dipendono funzioni di sicurezza",
+    "points": [
+      {
+        "q": "La documentazione identifica il software e i dati critici per la sicurezza (firmware del controllore di sicurezza, parametri di sicurezza)",
+        "doc": "cybersicurezza",
+        "ok": "elenco nominativo di software, firmware o set di parametri che realizzano funzioni di sicurezza",
+        "no": "elenco generico del software installato senza indicare quelli critici"
+      },
+      {
+        "q": "Le istruzioni o le specifiche descrivono come tali software e dati sono protetti dall'alterazione (password, checksum, firma)",
+        "doc": "istruzioni",
+        "ok": "configurazione di sicurezza protetta da password, checksum o firma digitale; livelli di accesso",
+        "no": "backup dei dati; sola protezione antivirus del PC",
+        "smentita": "i parametri di sicurezza sono modificabili da qualsiasi utente senza autorizzazione"
+      }
+    ]
+  },
+  "MR-III-1.1.9-c4": {
+    "condition": "Il prodotto impiega software necessario al funzionamento in sicurezza",
+    "points": [
+      {
+        "q": "Le istruzioni indicano come visualizzare in qualsiasi momento il software installato e la sua versione (menu, pagina informazioni)",
+        "doc": "istruzioni",
+        "ok": "procedura o schermata che mostra nome e versione del software o firmware",
+        "no": "versione riportata solo in copertina del manuale"
+      },
+      {
+        "q": "La documentazione elenca il software necessario al funzionamento sicuro con identificativo e versione",
+        "doc": "specifiche",
+        "ok": "tabella di software o firmware con versione o identificativo",
+        "no": "nome commerciale del controllore senza versione software"
+      }
+    ]
+  },
+  "MR-III-1.1.9-c5": {
+    "condition": "Il prodotto impiega software o configurazioni modificabili",
+    "points": [
+      {
+        "q": "Il prodotto registra le modifiche al software o alla configurazione (registro modifiche, log, codice di versione)",
+        "doc": "specifiche",
+        "ok": "log di aggiornamenti o modifiche con data, utente o checksum; contatore di modifiche della configurazione",
+        "no": "registro degli allarmi di produzione"
+      },
+      {
+        "q": "Le istruzioni descrivono come consultare il registro degli interventi sul software o sulla configurazione",
+        "doc": "istruzioni",
+        "ok": "procedura di accesso al log, esportazione o visualizzazione",
+        "no": "consiglio di annotare manualmente gli interventi",
+        "smentita": "il manuale indica che le modifiche di configurazione non sono registrate"
+      }
+    ]
+  },
+  "MR-III-1.2.1-c1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione individua le funzioni di sicurezza del sistema di comando e per ciascuna il livello richiesto (PL o SIL)",
+        "doc": "valutazione_rischi",
+        "ok": "elenco funzioni di sicurezza (arresto di emergenza, interblocco, ecc.) con PLr o SIL",
+        "no": "elenco di dispositivi senza funzione né livello"
+      },
+      {
+        "q": "Un rapporto di validazione dimostra che le funzioni di sicurezza raggiungono il livello richiesto",
+        "doc": "rapporti_prova",
+        "ok": "calcolo PL/SIL (categoria, MTTFd, DC, CCF) o rapporto di validazione con esito",
+        "no": "il solo rimando a EN ISO 13849-1 o IEC 62061"
+      },
+      {
+        "q": "Le specifiche dichiarano il livello di prestazione delle funzioni di sicurezza (PL, categoria o SIL)",
+        "doc": "specifiche",
+        "ok": "valori dichiarati come 'PL d, categoria 3' per funzioni nominate",
+        "no": "certificazione del solo componente senza riferimento alla funzione"
+      }
+    ]
+  },
+  "MR-III-1.2.1-1a": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le specifiche indicano le condizioni ambientali e di servizio che il sistema di comando sopporta (temperatura, EMC, vibrazioni, grado IP)",
+        "doc": "specifiche",
+        "ok": "range di temperatura, grado IP, immunità EMC o resistenza a vibrazioni dichiarati",
+        "no": "condizioni ambientali della sola macchina senza riferimento al comando"
+      },
+      {
+        "q": "La valutazione dei rischi considera influssi esterni e tentativi deliberati di terzi sul sistema di comando (manomissione, accesso non autorizzato)",
+        "doc": "valutazione_rischi",
+        "ok": "pericoli da interferenze, manomissione o attacco informatico analizzati con misure",
+        "no": "la sola nota che la rete deve essere protetta dal cliente"
+      },
+      {
+        "q": "Un rapporto di prova attesta l'immunità elettromagnetica del sistema di comando",
+        "doc": "rapporti_prova",
+        "ok": "prove di immunità EMC con esito, eventualmente specifiche per funzioni di sicurezza",
+        "no": "prove di sole emissioni"
+      }
+    ]
+  },
+  "MR-III-1.2.1-1b": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le funzioni di sicurezza usano un'architettura tollerante ai guasti (ridondanza, monitoraggio, sicurezza positiva)",
+        "doc": "schemi",
+        "ok": "canali ridondanti, relè di sicurezza monitorati, contatti ad apertura positiva negli schemi o descrizioni",
+        "no": "elenco componenti senza architettura"
+      },
+      {
+        "q": "La validazione delle funzioni di sicurezza analizza i guasti hardware e il loro rilevamento (categoria, copertura diagnostica)",
+        "doc": "rapporti_prova",
+        "ok": "analisi FMEA o dei guasti, categoria, DC, comportamento al guasto",
+        "no": "il solo valore di PL senza analisi dei guasti"
+      },
+      {
+        "q": "Le istruzioni descrivono il comportamento della macchina in caso di guasto del sistema di comando (stato sicuro, allarme)",
+        "doc": "istruzioni",
+        "ok": "arresto o stato sicuro al rilevamento del guasto; messaggi di diagnostica",
+        "no": "elenco di codici di errore senza effetto sulla macchina"
+      }
+    ]
+  },
+  "MR-III-1.2.1-1c": {
+    "condition": "Il sistema di comando impiega software o logica programmabile",
+    "points": [
+      {
+        "q": "La documentazione descrive come è stato sviluppato e verificato il software di sicurezza (specifica, codifica, test)",
+        "doc": "rapporti_prova",
+        "ok": "verifica e validazione del software (es. secondo EN ISO 13849-1 o IEC 62061), test delle funzioni, revisione del codice",
+        "no": "dichiarazione generica che il software è stato testato"
+      },
+      {
+        "q": "Le funzioni di sicurezza sono realizzate in un controllore o modulo di sicurezza separato o certificato",
+        "doc": "schemi",
+        "ok": "PLC di sicurezza, relè di sicurezza o modulo certificato indicato per le funzioni di sicurezza",
+        "no": "PLC standard senza indicazioni sulla gestione della sicurezza",
+        "smentita": "le funzioni di sicurezza dipendono solo dal software di un PLC standard non di sicurezza"
+      }
+    ]
+  },
+  "MR-III-1.2.1-1d": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi fissa i limiti delle funzioni di sicurezza (velocità, forze, zone, tempi) che non devono essere superati",
+        "doc": "valutazione_rischi",
+        "ok": "valori limite di velocità, forza, zona o tempo di arresto associati a funzioni di sicurezza",
+        "no": "elenco funzioni senza limiti"
+      },
+      {
+        "q": "Le istruzioni indicano che i parametri delle funzioni di sicurezza non sono modificabili, o lo sono solo con protezione e autorizzazione",
+        "doc": "istruzioni",
+        "ok": "parametri di sicurezza bloccati, protetti da password o modificabili solo da personale autorizzato con verifica",
+        "no": "regolazioni dei parametri di processo",
+        "smentita": "il manuale consente all'operatore di modificare liberamente i limiti di sicurezza"
+      }
+    ]
+  },
+  "MR-III-1.2.1-1e": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi considera gli errori umani prevedibili nelle manovre e le misure per evitarne le conseguenze",
+        "doc": "valutazione_rischi",
+        "ok": "errori di manovra analizzati (pulsante errato, sequenza errata) con misure (conferme, interblocchi)",
+        "no": "il solo richiamo alla formazione degli operatori"
+      },
+      {
+        "q": "Le istruzioni descrivono conferme, blocchi o interblocchi che impediscono manovre errate pericolose",
+        "doc": "istruzioni",
+        "ok": "richiesta di conferma, pulsanti a due mani, sequenze bloccate, comandi abilitati solo in certe condizioni",
+        "no": "avvertenza di non sbagliare manovra"
+      }
+    ]
+  },
+  "MR-III-1.2.1-1f": {
+    "condition": "Il prodotto impiega software di sicurezza che può essere caricato o aggiornato dopo l'immissione sul mercato",
+    "points": [
+      {
+        "q": "Il prodotto registra le versioni del software di sicurezza caricate e i dati degli interventi, con conservazione per cinque anni",
+        "doc": "specifiche",
+        "ok": "registro di aggiornamenti del software di sicurezza con versione, data e durata di conservazione di almeno 5 anni",
+        "no": "log senza indicazione della conservazione; registro dei soli allarmi",
+        "smentita": "il registro degli aggiornamenti viene sovrascritto o cancellato prima di cinque anni"
+      },
+      {
+        "q": "Le istruzioni descrivono come consultare o esportare il registro delle versioni del software di sicurezza",
+        "doc": "istruzioni",
+        "ok": "procedura per visualizzare o esportare lo storico delle versioni",
+        "no": "procedura di aggiornamento senza riferimento al registro"
+      }
+    ]
+  },
+  "MR-III-1.2.1-2a": {
+    "condition": "Il prodotto ha comportamento o logica auto-evolutivi ed è progettato per funzionare con livelli variabili di autonomia",
+    "points": [
+      {
+        "q": "La documentazione definisce compito e spazio di movimento consentiti della macchina autonoma",
+        "doc": "istruzioni",
+        "ok": "area di lavoro, compiti ammessi e limiti dichiarati",
+        "no": "descrizione delle prestazioni senza limiti"
+      },
+      {
+        "q": "Una funzione di sicurezza indipendente dalla logica auto-evolutiva limita azioni e movimenti entro compito e spazio definiti",
+        "doc": "specifiche",
+        "ok": "limitazione sicura di zona, velocità o funzioni con controllo indipendente dall'apprendimento",
+        "no": "limiti affidati solo al modello di apprendimento"
+      }
+    ]
+  },
+  "MR-III-1.2.1-2b": {
+    "condition": "Il prodotto ha comportamento o logica auto-evolutivi ed è progettato per funzionare con livelli variabili di autonomia",
+    "points": [
+      {
+        "q": "Il prodotto registra i dati sul processo decisionale dei sistemi di sicurezza basati su software e li conserva per un anno",
+        "doc": "specifiche",
+        "ok": "registro delle decisioni di sicurezza con durata di conservazione di almeno un anno",
+        "no": "log di produzione o di allarme senza dati decisionali"
+      },
+      {
+        "q": "Le istruzioni indicano come accedere ai dati registrati sul processo decisionale di sicurezza",
+        "doc": "istruzioni",
+        "ok": "procedura di consultazione o esportazione dei dati registrati",
+        "no": "riferimento generico alla diagnostica"
+      }
+    ]
+  },
+  "MR-III-1.2.1-2c": {
+    "condition": "Il prodotto ha comportamento o logica auto-evolutivi ed è progettato per funzionare con livelli variabili di autonomia",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come correggere in qualsiasi momento la macchina autonoma (intervento manuale, ripristino del comportamento, arresto)",
+        "doc": "istruzioni",
+        "ok": "comando di presa di controllo, ripristino a configurazione validata, disattivazione dell'apprendimento",
+        "no": "la sola presenza dell'arresto di emergenza"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3a": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono che il riavvio richiede un comando volontario dopo arresto, apertura di riparo o ritorno dell'alimentazione",
+        "doc": "istruzioni",
+        "ok": "riarmo manuale richiesto; nessuna ripartenza automatica alla chiusura del riparo o al ritorno dell'energia",
+        "no": "descrizione del solo avviamento normale",
+        "smentita": "il manuale indica che la macchina riparte automaticamente alla chiusura del riparo o al ritorno della tensione"
+      },
+      {
+        "q": "Gli schemi mostrano funzioni di prevenzione dell'avviamento inatteso (riarmo manuale, sezionamento, consenso)",
+        "doc": "schemi",
+        "ok": "circuito di riarmo, relè di sicurezza con reset manuale, sezionatore lucchettabile",
+        "no": "schema di potenza senza funzioni di sicurezza"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3b": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o le specifiche indicano che i parametri critici sono protetti da modifiche incontrollate (accesso protetto, limiti, verifica)",
+        "doc": "istruzioni",
+        "ok": "parametri protetti da password, limiti di regolazione, conferma della modifica",
+        "no": "descrizione dei parametri senza protezione"
+      },
+      {
+        "q": "La valutazione dei rischi tratta la variazione incontrollata dei parametri (velocità, pressione, temperatura) e le misure adottate",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo da deriva o perdita di parametri analizzato con misura (monitoraggio, limitatore)",
+        "no": "elenco di parametri di processo"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3c": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano chi può modificare impostazioni e regole della macchina e come sono impedite modifiche pericolose",
+        "doc": "istruzioni",
+        "ok": "livelli di accesso, impostazioni di sicurezza bloccate, validazione delle modifiche",
+        "no": "procedura di impostazione senza limiti",
+        "smentita": "il manuale consente all'operatore di disattivare o modificare impostazioni di sicurezza senza autorizzazione"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3d": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni o gli schemi indicano che il comando di arresto ha priorità su ogni altro comando e non può essere annullato",
+        "doc": "istruzioni",
+        "ok": "priorità dell'arresto; arresto cablato o di sicurezza indipendente dalla logica",
+        "no": "descrizione del pulsante di arresto senza priorità",
+        "smentita": "il ciclo in corso viene completato prima di eseguire l'arresto comandato"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3e": {
+    "condition": "La macchina ha elementi mobili o trattiene pezzi (pinze, morse, ventose, mandrini)",
+    "points": [
+      {
+        "q": "Le specifiche o le istruzioni descrivono come i pezzi o gli elementi trattenuti restano bloccati in caso di guasto o mancanza di energia",
+        "doc": "specifiche",
+        "ok": "pinze o morse con mantenimento della presa, valvole di ritegno, freni di stazionamento, ventose con trattenuta",
+        "no": "forza di presa nominale senza comportamento al guasto"
+      },
+      {
+        "q": "La valutazione dei rischi tratta la caduta o l'espulsione di pezzi o elementi trattenuti",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo di caduta o proiezione del pezzo analizzato con misura",
+        "no": "il solo pericolo di schiacciamento"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3f": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano che l'arresto manuale o automatico degli elementi mobili è sempre possibile in ogni modo di funzionamento",
+        "doc": "istruzioni",
+        "ok": "arresto disponibile in tutti i modi; arresto automatico da sensori o protezioni",
+        "no": "descrizione dell'arresto in un solo modo",
+        "smentita": "in un modo di funzionamento l'arresto degli elementi mobili è escluso"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3g": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Gli schemi o la validazione mostrano che i dispositivi di protezione, in caso di guasto, danno un comando di arresto",
+        "doc": "schemi",
+        "ok": "interblocchi o barriere monitorati che comandano l'arresto al guasto o alla disconnessione",
+        "no": "dispositivi elencati senza monitoraggio"
+      },
+      {
+        "q": "Le istruzioni descrivono il comportamento della macchina se un dispositivo di protezione si guasta o viene scollegato",
+        "doc": "istruzioni",
+        "ok": "arresto e allarme al guasto del dispositivo; impossibilità di avviare",
+        "no": "elenco dei dispositivi di protezione",
+        "smentita": "il manuale consente di continuare a lavorare con un dispositivo di protezione guasto o escluso"
+      }
+    ]
+  },
+  "MR-III-1.2.1-3h": {
+    "condition": "Il prodotto fa parte o è destinato a far parte di un insieme di macchine o quasi-macchine",
+    "points": [
+      {
+        "q": "La documentazione descrive come le funzioni di sicurezza si estendono all'intero insieme (arresti, interblocchi condivisi, segnali di sicurezza tra macchine)",
+        "doc": "schemi",
+        "ok": "segnali di sicurezza scambiati tra macchine; arresto di emergenza comune; zone di arresto definite",
+        "no": "comunicazione di processo tra macchine",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Le istruzioni indicano le interfacce di sicurezza disponibili per il collegamento all'insieme",
+        "doc": "istruzioni",
+        "ok": "ingressi o uscite di sicurezza per arresto di emergenza e interblocchi esterni",
+        "no": "interfacce di sola comunicazione dati"
+      }
+    ]
+  },
+  "MR-III-1.2.1-c2": {
+    "condition": "Il prodotto dispone di comandi wireless o di comunicazione senza fili per il comando",
+    "points": [
+      {
+        "q": "Le istruzioni o le specifiche indicano che la perdita della comunicazione wireless porta la macchina in uno stato sicuro (arresto)",
+        "doc": "istruzioni",
+        "ok": "arresto automatico alla perdita del segnale; tempo di reazione dichiarato",
+        "no": "portata o frequenza radio senza comportamento al guasto",
+        "smentita": "alla perdita del segnale il movimento in corso prosegue"
+      },
+      {
+        "q": "La validazione o le prove verificano il comportamento della macchina in caso di guasto o disturbo della connessione wireless",
+        "doc": "rapporti_prova",
+        "ok": "prova di perdita del segnale con esito; funzione di arresto radio certificata",
+        "no": "certificato di conformità radio (RED) senza prova funzionale"
+      }
+    ]
+  },
+  "MR-III-1.2.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono i dispositivi di comando con funzione, posizione e simboli o pittogrammi",
+        "doc": "istruzioni",
+        "ok": "tabella o figura dei comandi con funzione e marcatura",
+        "no": "elenco di comandi senza funzione"
+      },
+      {
+        "q": "Le istruzioni indicano che i comandi pericolosi richiedono un'azione deliberata (comando ad azione mantenuta, protezione contro azionamento accidentale)",
+        "doc": "istruzioni",
+        "ok": "pulsanti incassati o protetti, azione mantenuta, consenso a tre posizioni",
+        "no": "descrizione dei comandi senza protezione"
+      },
+      {
+        "q": "Le istruzioni o i disegni indicano che le postazioni di comando sono fuori dalle zone pericolose e permettono di vedere le zone pericolose",
+        "doc": "disegni",
+        "ok": "posizione del pannello di comando fuori dalla zona pericolosa; visibilità o segnale di avvertimento prima dell'avvio",
+        "no": "posizione dei comandi senza riferimento alle zone pericolose"
+      },
+      {
+        "q": "Con più postazioni di comando, l'uso di una esclude le altre tranne gli arresti",
+        "doc": "istruzioni",
+        "ok": "selezione della postazione attiva; arresto e arresto di emergenza attivi da tutte",
+        "no": "descrizione di una sola postazione",
+        "smentita": "il manuale ammette comandi di movimento contemporanei da più postazioni"
+      }
+    ]
+  },
+  "MR-III-1.2.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano che avvio e riavvio avvengono solo con un comando volontario su un dispositivo previsto",
+        "doc": "istruzioni",
+        "ok": "pulsante di avvio dedicato; riavvio dopo arresto con riarmo e nuovo avvio",
+        "no": "descrizione dell'accensione dell'alimentazione",
+        "smentita": "la macchina si avvia all'accensione dell'interruttore generale o alla chiusura del riparo"
+      },
+      {
+        "q": "Se la macchina funziona in automatico, la documentazione indica le condizioni di sicurezza per avviamento o ripartenza senza intervento esterno",
+        "doc": "valutazione_rischi",
+        "ok": "condizioni (zona protetta, interblocchi chiusi) che rendono sicuro l'avvio automatico",
+        "no": "descrizione del ciclo automatico senza condizioni"
+      },
+      {
+        "q": "Con più comandi di avviamento o sequenze obbligate, la documentazione descrive i dispositivi che evitano pericoli reciproci o sequenze errate",
+        "doc": "istruzioni",
+        "ok": "consensi tra postazioni, sequenze vincolate dal sistema di comando",
+        "no": "consiglio agli operatori di coordinarsi"
+      }
+    ]
+  },
+  "MR-III-1.2.4.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono il comando di arresto generale e gli arresti disponibili a ogni postazione di lavoro",
+        "doc": "istruzioni",
+        "ok": "pulsante di arresto e sua posizione; arresto totale o di singole funzioni",
+        "no": "il solo arresto di emergenza"
+      },
+      {
+        "q": "Le istruzioni o gli schemi indicano che l'arresto ha priorità sull'avvio e interrompe l'alimentazione degli azionatori",
+        "doc": "schemi",
+        "ok": "circuito in cui l'arresto prevale sull'avvio; diseccitazione di contattori, valvole o azionamenti",
+        "no": "schema senza logica di arresto",
+        "smentita": "dopo l'arresto gli azionatori restano alimentati senza arresto operativo monitorato"
+      }
+    ]
+  },
+  "MR-III-1.2.4.2": {
+    "condition": "La macchina prevede un arresto operativo che non interrompe l'alimentazione degli azionatori",
+    "points": [
+      {
+        "q": "Le istruzioni o le specifiche descrivono l'arresto operativo con monitoraggio dello stato di fermo (es. arresto di categoria 2, arresto sicuro monitorato)",
+        "doc": "specifiche",
+        "ok": "funzione di fermo monitorato (SOS, arresto sicuro di funzionamento) che interviene al movimento",
+        "no": "pausa o fermo ciclo senza monitoraggio",
+        "smentita": "l'arresto operativo non è monitorato"
+      }
+    ]
+  },
+  "MR-III-1.2.4.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono i dispositivi di arresto di emergenza: posizione, tipo e categoria di arresto",
+        "doc": "istruzioni",
+        "ok": "pulsanti a fungo con posizione; categoria di arresto 0 o 1",
+        "no": "il solo rimando a EN ISO 13850"
+      },
+      {
+        "q": "Le istruzioni indicano che il dispositivo di emergenza resta bloccato e che lo sblocco non riavvia la macchina",
+        "doc": "istruzioni",
+        "ok": "blocco meccanico, sblocco per rotazione o chiave, riarmo e nuovo avvio necessari",
+        "no": "avvertenze generiche sull'emergenza",
+        "smentita": "lo sblocco del pulsante di emergenza fa ripartire la macchina"
+      },
+      {
+        "q": "L'arresto di emergenza è disponibile in tutti i modi di funzionamento",
+        "doc": "istruzioni",
+        "ok": "dichiarazione che l'emergenza è attiva in automatico, manuale e manutenzione",
+        "no": "descrizione dell'emergenza in un solo modo",
+        "smentita": "in un modo di funzionamento l'arresto di emergenza è escluso"
+      },
+      {
+        "q": "La validazione della funzione di arresto di emergenza indica il livello di prestazione raggiunto",
+        "doc": "rapporti_prova",
+        "ok": "PL o SIL della funzione di emergenza; prova di intervento con esito",
+        "no": "certificato del solo pulsante"
+      }
+    ]
+  },
+  "MR-III-1.2.4.4": {
+    "condition": "Il prodotto è progettato per lavorare assemblato con altre macchine o attrezzature",
+    "points": [
+      {
+        "q": "Gli schemi o le istruzioni mostrano che arresto ed emergenza possono fermare anche le attrezzature collegate (ingressi/uscite di emergenza)",
+        "doc": "schemi",
+        "ok": "uscite di arresto di emergenza verso altre macchine; ingresso di emergenza esterno",
+        "no": "segnali di processo tra macchine"
+      },
+      {
+        "q": "Le istruzioni indicano come collegare gli arresti di emergenza della macchina a quelli dell'insieme",
+        "doc": "istruzioni",
+        "ok": "morsetti o connettori dedicati, schema di collegamento della catena di emergenza",
+        "no": "la sola raccomandazione di integrare le emergenze",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "MR-III-1.2.5": {
+    "condition": "La macchina dispone di più modi di comando o di funzionamento",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono il selettore dei modi (o accesso equivalente), bloccabile, con un solo modo per posizione",
+        "doc": "istruzioni",
+        "ok": "selettore a chiave o selezione protetta da password; elenco dei modi",
+        "no": "elenco dei modi senza descrizione della selezione"
+      },
+      {
+        "q": "Nel modo con ripari aperti o protezioni neutralizzate, i movimenti pericolosi sono possibili solo con comando ad azione mantenuta e a velocità o forza ridotte",
+        "doc": "istruzioni",
+        "ok": "comando ad azione mantenuta o dispositivo di consenso; velocità ridotta dichiarata",
+        "no": "descrizione del modo manuale senza limitazioni",
+        "smentita": "con riparo aperto la macchina può funzionare a velocità normale"
+      },
+      {
+        "q": "Il modo selezionato ha priorità sugli altri, salvo l'arresto di emergenza",
+        "doc": "istruzioni",
+        "ok": "esclusione degli altri modi e dei comandi remoti nel modo selezionato",
+        "no": "descrizione dei modi senza priorità"
+      }
+    ]
+  },
+  "MR-III-1.2.6": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono il comportamento della macchina alla mancanza e al ritorno dell'alimentazione o della rete: niente riavvio automatico",
+        "doc": "istruzioni",
+        "ok": "riarmo richiesto al ritorno della tensione; stato sicuro alla perdita di rete",
+        "no": "valori di tensione di alimentazione",
+        "smentita": "al ritorno dell'alimentazione la macchina riprende automaticamente il ciclo"
+      },
+      {
+        "q": "Le specifiche indicano come sono trattenuti carichi e pezzi alla mancanza di energia (freni, valvole, pinze con mantenimento)",
+        "doc": "specifiche",
+        "ok": "freni di stazionamento, valvole di blocco, pinze a mantenimento",
+        "no": "consumo di energia della macchina"
+      },
+      {
+        "q": "La valutazione dei rischi tratta interruzione, ripristino e variazione dell'alimentazione e della connessione di rete",
+        "doc": "valutazione_rischi",
+        "ok": "pericoli da caduta di tensione, sbalzi, perdita di aria o di rete analizzati con misure",
+        "no": "la sola protezione elettrica contro i contatti"
+      }
+    ]
+  },
+  "MR-III-1.3.1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano come fissare o ancorare la macchina se la sua forma o installazione non garantisce stabilità",
+        "doc": "istruzioni",
+        "ok": "tasselli, piedi regolabili, coppie di serraggio, caratteristiche del pavimento",
+        "no": "consiglio di posare su superficie piana senza altro"
+      },
+      {
+        "q": "Un calcolo o una prova verifica la stabilità della macchina in uso, trasporto e montaggio",
+        "doc": "rapporti_prova",
+        "ok": "calcolo di ribaltamento, carichi sugli ancoraggi, prova di stabilità",
+        "no": "peso della macchina senza verifica"
+      },
+      {
+        "q": "Le istruzioni indicano precauzioni di stabilità durante trasporto, montaggio e smontaggio",
+        "doc": "istruzioni",
+        "ok": "baricentro, sequenze di montaggio, supporti provvisori",
+        "no": "istruzioni di sollevamento senza riferimento alla stabilità"
+      }
+    ]
+  },
+  "MR-III-1.3.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano tipi e frequenze di ispezioni e manutenzioni necessarie per la sicurezza, con parti soggette a usura e criteri di sostituzione",
+        "doc": "istruzioni",
+        "ok": "tabella di manutenzione con intervalli; parti usurabili e criterio di sostituzione",
+        "no": "manutenzione di pulizia generica; il solo 'controllare periodicamente'"
+      },
+      {
+        "q": "Un calcolo o una prova dimostra la resistenza delle parti strutturali ai carichi d'uso, compresi fatica e corrosione",
+        "doc": "rapporti_prova",
+        "ok": "calcolo strutturale, coefficienti di sicurezza, prove di carico",
+        "no": "materiale indicato senza verifica"
+      },
+      {
+        "q": "La documentazione descrive la protezione contro rottura o frammenti di parti e tubazioni in pressione",
+        "doc": "disegni",
+        "ok": "carter di contenimento, tubi flessibili protetti o fissati, pressioni di esercizio delle tubazioni",
+        "no": "pressione nominale del circuito senza protezioni"
+      }
+    ]
+  },
+  "MR-III-1.3.3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi tratta caduta e proiezione di oggetti (pezzi, trucioli, utensili, fluidi) e le misure adottate",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo di proiezione o caduta con misura (riparo di contenimento, schermo)",
+        "no": "il solo pericolo di urto con parti mobili"
+      },
+      {
+        "q": "Le specifiche o i disegni descrivono i ripari o schermi che trattengono oggetti proiettati",
+        "doc": "disegni",
+        "ok": "carter, schermi in policarbonato, reti, resistenza all'impatto dichiarata",
+        "no": "ripari descritti solo contro l'accesso"
+      }
+    ]
+  },
+  "MR-III-1.3.4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi tratta spigoli vivi, angoli acuti e superfici rugose delle parti accessibili",
+        "doc": "valutazione_rischi",
+        "ok": "pericolo di taglio o abrasione con misura (sbavatura, arrotondamento, protezione)",
+        "no": "il solo taglio da utensili di lavorazione"
+      },
+      {
+        "q": "I disegni o le specifiche indicano la finitura delle parti accessibili (smussi, raggi, bordi arrotondati)",
+        "doc": "disegni",
+        "ok": "indicazioni di smussatura, sbavatura o raggi sui disegni",
+        "no": "tolleranze dimensionali senza finitura dei bordi"
+      }
+    ]
+  },
+  "MR-III-1.3.5": {
+    "condition": "La macchina è combinata: esegue diversi tipi di operazioni con ripresa manuale del pezzo tra un'operazione e l'altra",
+    "points": [
+      {
+        "q": "Le istruzioni indicano che ciascun elemento della macchina combinata può essere avviato e arrestato separatamente",
+        "doc": "istruzioni",
+        "ok": "comandi di avvio e arresto separati per ogni unità; selezione dell'unità attiva",
+        "no": "comando unico per tutta la macchina",
+        "smentita": "le unità non protette si avviano tutte insieme con un comando unico"
+      },
+      {
+        "q": "La valutazione dei rischi tratta l'uso di un elemento mentre gli altri sono fermi o in funzione",
+        "doc": "valutazione_rischi",
+        "ok": "pericoli dagli elementi non utilizzati e relative protezioni",
+        "no": "analisi della sola macchina nel suo insieme"
+      }
+    ]
+  },
+  "MR-III-1.3.6": {
+    "condition": "La macchina può operare in condizioni di impiego diverse (velocità, carichi, materiali, utensili)",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono come selezionare e regolare in sicurezza le condizioni di impiego (procedure, limiti, protezioni durante la regolazione)",
+        "doc": "istruzioni",
+        "ok": "procedura di regolazione o cambio formato con limiti e condizioni di sicurezza",
+        "no": "tabella di parametri senza procedura"
+      },
+      {
+        "q": "Le specifiche indicano i campi ammessi delle condizioni di impiego (velocità, carichi, materiali)",
+        "doc": "specifiche",
+        "ok": "valori minimi e massimi ammessi per i parametri regolabili",
+        "no": "solo valori nominali"
+      }
+    ]
+  },
+  "MR-III-1.3.7": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi individua gli elementi mobili accessibili e la misura scelta (progettazione, riparo o dispositivo di protezione)",
+        "doc": "valutazione_rischi",
+        "ok": "elenco di zone di schiacciamento, cesoiamento, trascinamento con misura",
+        "no": "pericoli meccanici citati genericamente"
+      },
+      {
+        "q": "Le istruzioni descrivono come sbloccare in sicurezza gli elementi mobili bloccati e quali attrezzi o dispositivi usare",
+        "doc": "istruzioni",
+        "ok": "procedura di sbloccaggio con macchina in stato sicuro, utensile dedicato, rotazione manuale",
+        "no": "il solo invito a chiamare l'assistenza"
+      },
+      {
+        "q": "Se la macchina condivide lo spazio con persone o collabora con esse, la documentazione descrive le misure contro il contatto (limiti di forza e velocità, monitoraggio)",
+        "doc": "specifiche",
+        "ok": "limiti di forza o potenza, monitoraggio di velocità e distanza, valori dichiarati",
+        "no": "la sola definizione 'collaborativo'",
+        "smentita": "il manuale ammette la presenza di persone nell'area di lavoro senza limitazione di forza né protezioni"
+      }
+    ]
+  },
+  "MR-III-1.3.8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La valutazione dei rischi motiva la scelta del tipo di riparo o dispositivo di protezione per ciascun elemento mobile",
+        "doc": "valutazione_rischi",
+        "ok": "per ogni zona: riparo fisso, mobile interbloccato o dispositivo sensibile con motivazione (frequenza di accesso, tipo di rischio)",
+        "no": "elenco dei ripari senza motivazione"
+      },
+      {
+        "q": "Le istruzioni o i disegni indicano i ripari e i dispositivi di protezione presenti e la zona che proteggono",
+        "doc": "disegni",
+        "ok": "figura o tabella dei ripari con posizione e tipo",
+        "no": "dispositivi citati senza zona protetta"
+      }
+    ]
+  },
+  "MR-III-1.3.8.1": {
+    "condition": "La macchina ha elementi mobili di trasmissione (cinghie, catene, pulegge, alberi, giunti)",
+    "points": [
+      {
+        "q": "I disegni o le istruzioni indicano che gli elementi di trasmissione sono protetti da ripari fissi o mobili interbloccati",
+        "doc": "disegni",
+        "ok": "carter fissi con viti o ripari interbloccati sulle trasmissioni",
+        "no": "trasmissioni descritte senza protezione",
+        "smentita": "una trasmissione è accessibile senza riparo durante il funzionamento"
+      },
+      {
+        "q": "Se l'accesso alle trasmissioni è frequente, le istruzioni indicano ripari mobili interbloccati",
+        "doc": "istruzioni",
+        "ok": "riparo apribile con interblocco per regolazioni o tensionamenti frequenti",
+        "no": "riparo fisso da smontare per interventi frequenti"
+      }
+    ]
+  },
+  "MR-III-1.3.8.2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione indica per gli elementi che partecipano alla lavorazione i ripari fissi, mobili interbloccati o dispositivi di protezione adottati",
+        "doc": "disegni",
+        "ok": "riparo o dispositivo (barriera, tappeto, scanner) indicato per la zona di lavorazione",
+        "no": "zona di lavorazione descritta senza protezioni"
+      },
+      {
+        "q": "Se l'operatore deve accedere alla zona di lavoro, le istruzioni descrivono ripari regolabili che limitano l'accesso alle sole parti necessarie",
+        "doc": "istruzioni",
+        "ok": "riparo regolabile sull'utensile con procedura di regolazione",
+        "no": "consiglio di tenere le mani lontane dall'utensile"
+      }
+    ]
+  }
+}

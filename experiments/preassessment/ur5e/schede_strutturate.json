@@ -1,0 +1,83 @@
+{
+  "nota": "Prova: 20 schede con più falsi supporti sulla UR5e, riscritte con documento atteso e criteri di prova. Bozza di Claude, da rivedere.",
+  "tipiDocumento": {
+    "01_": "istruzioni", "04_": "istruzioni", "03_": "istruzioni", "05_": "istruzioni",
+    "02_": "specifiche", "06_": "dichiarazione"
+  },
+  "schede": {
+    "MR-III-1.1.9-c5": [
+      {"q": "Le istruzioni spiegano come proteggere le impostazioni di sicurezza o il software da modifiche non autorizzate (es. password, blocco)", "doc": "istruzioni", "ok": "procedura o funzione concreta che impedisce o rileva modifiche", "no": "frasi generiche sulla sicurezza o sulla valutazione dei rischi"},
+      {"q": "Le istruzioni indicano come verificare quale versione del software o configurazione di sicurezza è installata (es. checksum, versione)", "doc": "istruzioni", "ok": "checksum, firma, numero di versione visualizzabile", "no": "obbligo generico di verificare le modifiche"},
+      {"q": "La valutazione dei rischi tratta le modifiche non autorizzate al software di sicurezza", "doc": "valutazione_rischi", "ok": "analisi presente nella valutazione dei rischi", "no": "istruzioni che chiedono di farla"}
+    ],
+    "MR-III-1.2.1-1e": [
+      {"q": "Le istruzioni descrivono accorgimenti contro errori di manovra prevedibili (es. conferme, modalità protette, abilitazione)", "doc": "istruzioni", "ok": "funzione o procedura specifica contro l'errore dell'operatore", "no": "limitazioni di movimento per proteggere parti del corpo; avvertenze generiche"},
+      {"q": "La valutazione dei rischi considera gli errori umani prevedibili nell'uso dei comandi", "doc": "valutazione_rischi", "ok": "analisi presente nella valutazione dei rischi", "no": "istruzioni che chiedono di farla"}
+    ],
+    "MR-III-1.2.1-3a": [
+      {"q": "Le istruzioni descrivono come la macchina evita un avviamento inatteso (es. riavvio solo con comando volontario dopo arresto o ripristino)", "doc": "istruzioni", "ok": "comportamento al ripristino, comando di avvio esplicito", "no": "procedura di prima installazione; frasi sull'arresto di emergenza"},
+      {"q": "Gli schemi elettrici mostrano il sezionamento dell'alimentazione per impedire l'avviamento", "doc": "schemi", "ok": "schema o disegno elettrico", "no": "elenco di componenti nel testo"}
+    ],
+    "MR-III-1.5.9": [
+      {"q": "La documentazione riporta valori misurati di vibrazione della macchina", "doc": "specifiche", "ok": "valore numerico di vibrazione", "no": "imballaggio per ridurre vibrazioni nel trasporto"},
+      {"q": "Le istruzioni indicano misure per ridurre le vibrazioni trasmesse all'operatore durante l'uso", "doc": "istruzioni", "ok": "misura specifica contro le vibrazioni in uso", "no": "limiti di posizione o velocità; frasi sulla valutazione dei rischi"}
+    ],
+    "MR-III-1.7.2": [
+      {"q": "Le istruzioni elencano i rischi residui specifici del prodotto con le relative avvertenze", "doc": "istruzioni", "ok": "elenco o avvertenza su un rischio residuo specifico (es. schiacciamento, urto)", "no": "spiegazione generale dei simboli di avvertenza; invito all'integratore a informare gli utenti"},
+      {"q": "Le istruzioni descrivono misure di protezione complementari (es. arresto di emergenza) con i loro limiti", "doc": "istruzioni", "ok": "descrizione di una misura complementare e dei suoi limiti", "no": "frasi generiche"}
+    ],
+    "MR-III-1.7.3-c4": [
+      {"q": "Le istruzioni indicano il tipo di macchina e le sue caratteristiche principali", "doc": "istruzioni", "ok": "identificazione del modello e dati principali", "no": "frasi generiche"},
+      {"q": "La valutazione dei rischi identifica le fonti di pericolo e le misure adottate", "doc": "valutazione_rischi", "ok": "analisi presente nella valutazione dei rischi", "no": "istruzioni che chiedono di farla"}
+    ],
+    "MR-III-1.7.4.2-s": [
+      {"q": "Le istruzioni descrivono come mettere in sicurezza il prodotto prima di manutenzione o regolazione (es. spegnimento, sezionamento, blocco)", "doc": "istruzioni", "ok": "procedura concreta di messa in sicurezza", "no": "invito generico a leggere i messaggi di sicurezza o a proteggere il personale"}
+    ],
+    "MR-IV-B-e": [
+      {"q": "La dichiarazione elenca le norme armonizzate applicate con il loro numero", "doc": "dichiarazione", "ok": "elenco di norme EN/ISO/IEC con numero", "no": "frase sulla dichiarazione di conformità della macchina completa"}
+    ],
+    "MR-III-1.1.2": [
+      {"q": "Nel fascicolo è presente la valutazione dei rischi del prodotto", "doc": "valutazione_rischi", "ok": "documento di valutazione dei rischi", "no": "istruzioni che chiedono all'integratore di farla"},
+      {"q": "Le istruzioni indicano i limiti d'uso e l'uso scorretto ragionevolmente prevedibile", "doc": "istruzioni", "ok": "elenco di usi non consentiti o scorretti", "no": "invito a fare la valutazione dei rischi"}
+    ],
+    "MR-III-1.1.9-c4": [
+      {"q": "Le istruzioni indicano il software o la versione software necessaria per le funzioni di sicurezza", "doc": "istruzioni", "ok": "nome o versione del software di sicurezza", "no": "definizione generica della valutazione dei rischi"}
+    ],
+    "MR-III-1.2.1-2a": [
+      {"q": "Le istruzioni descrivono i limiti di movimento configurabili (posizione, velocità, spazio)", "doc": "istruzioni", "ok": "funzione di limitazione specifica", "no": "frasi generiche"},
+      {"q": "Gli schemi tecnici mostrano i dispositivi che bloccano movimenti fuori dallo spazio definito", "doc": "schemi", "ok": "schema o disegno tecnico", "no": "testo del manuale"}
+    ],
+    "MR-III-1.2.1-2c": [
+      {"q": "Le istruzioni descrivono come intervenire in sicurezza in caso di malfunzionamento o guasto (es. modalità di recupero, sblocco freni)", "doc": "istruzioni", "ok": "procedura concreta in caso di guasto", "no": "frasi sulla valutazione dei rischi"},
+      {"q": "Gli schemi elettrici mostrano il circuito di arresto di emergenza", "doc": "schemi", "ok": "schema elettrico", "no": "istruzioni sull'uso del pulsante"}
+    ],
+    "MR-III-1.2.1-3e": [
+      {"q": "Le istruzioni descrivono come fissare il prodotto (viti, coppie di serraggio, fori di montaggio)", "doc": "istruzioni", "ok": "dati di fissaggio concreti", "no": "frasi generiche"},
+      {"q": "La valutazione dei rischi tratta l'espulsione o la rottura di parti mobili", "doc": "valutazione_rischi", "ok": "analisi presente nella valutazione dei rischi", "no": "istruzioni che chiedono di farla"}
+    ],
+    "MR-III-1.2.1-3g": [
+      {"q": "Le istruzioni descrivono il funzionamento dell'arresto di emergenza (categoria di arresto, ripristino)", "doc": "istruzioni", "ok": "categoria di arresto o modalità di ripristino", "no": "solo riferimento a una norma"},
+      {"q": "Le istruzioni riportano tempi o distanze di arresto delle funzioni di sicurezza", "doc": "istruzioni", "ok": "valori o tabelle di tempi/distanze di arresto", "no": "frasi generiche"}
+    ],
+    "MR-III-1.3.3": [
+      {"q": "Le istruzioni indicano misure contro la caduta o la proiezione del pezzo o dell'utensile (es. perdita di presa, mancanza di alimentazione)", "doc": "istruzioni", "ok": "misura specifica sulla caduta o proiezione di oggetti", "no": "stabilità del basamento o ribaltamento di piattaforme mobili"}
+    ],
+    "MR-III-1.3.6": [
+      {"q": "Le istruzioni indicano i limiti delle condizioni d'impiego (temperatura, umidità, carico, ambiente)", "doc": "istruzioni", "ok": "valori o elenco delle condizioni ammesse", "no": "limiti di orientamento dell'utensile"},
+      {"q": "Le specifiche riportano le condizioni ambientali di funzionamento", "doc": "specifiche", "ok": "valori ambientali", "no": "frasi generiche"}
+    ],
+    "MR-III-1.4.3": [
+      {"q": "Le istruzioni descrivono come i dispositivi di protezione esterni si collegano al sistema di comando di sicurezza", "doc": "istruzioni", "ok": "ingressi di sicurezza per dispositivi di protezione", "no": "frasi generiche"},
+      {"q": "La regolazione o configurazione dei dispositivi di protezione richiede una password o un intervento volontario", "doc": "istruzioni", "ok": "password o procedura protetta", "no": "frasi generiche"}
+    ],
+    "MR-III-1.5.7": [
+      {"q": "Le istruzioni indicano se il prodotto può essere usato in atmosfere esplosive", "doc": "istruzioni", "ok": "indicazione esplicita su atmosfere esplosive", "no": "avvertenze generiche"}
+    ],
+    "MR-III-1.5.15": [
+      {"q": "Le istruzioni indicano misure contro scivolamenti, inciampi o cadute delle persone (es. cavi a terra)", "doc": "istruzioni", "ok": "misura specifica contro inciampo o caduta", "no": "limitazioni di movimento del robot; avvertenze generiche"}
+    ],
+    "MR-III-1.6.4": [
+      {"q": "Le istruzioni descrivono come l'operatore interviene in sicurezza nella zona di lavoro (es. modalità manuale, velocità ridotta, dispositivo di abilitazione)", "doc": "istruzioni", "ok": "modalità o dispositivo specifico per l'intervento", "no": "invito generico a proteggere il personale"}
+    ]
+  }
+}

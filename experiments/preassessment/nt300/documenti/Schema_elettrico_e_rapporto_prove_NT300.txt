@@ -1,0 +1,16 @@
+MECCANICA ROSSI S.r.l. — NT-300 — SCHEMA ELETTRICO (descrizione) E RAPPORTO DI PROVA
+
+SCHEMA ELETTRICO, foglio 1/2 — Potenza
+QS1: sezionatore generale rotativo 4 poli, 25 A, lucchettabile in posizione 0, identificato con targhetta "SEZIONATORE GENERALE".
+QF1: interruttore magnetotermico motore 2,5 A. KM1: contattore di linea con bobina a 24 V AC.
+M1: motore asincrono trifase 0,75 kW, 400 V. PE: barra di terra collegata al telaio e al motore.
+SCHEMA ELETTRICO, foglio 2/2 — Comandi
+Circuito di emergenza: S1 e S2 (pulsanti di emergenza, contatti NC ad apertura positiva) in serie sulla bobina di KM1.
+SQ1: microinterruttore di sicurezza dello sportello di ispezione, contatto NC ad apertura positiva in serie al circuito di comando: con sportello aperto KM1 non si eccita e il nastro non può avviarsi.
+Trasformatore TC1 400/24 V per i circuiti di comando.
+
+RAPPORTO DI PROVA n. 26/014 — Verifiche secondo EN 60204-1:2018, cap. 18 — esito: superate
+Continuità del circuito di protezione: 0,08 ohm (limite 0,3 ohm). Esito: positivo.
+Resistenza di isolamento a 500 V DC tra circuiti di potenza e terra: 120 MOhm (minimo 1 MOhm). Esito: positivo.
+Prova funzionale dei pulsanti di emergenza S1 e S2 e del microinterruttore SQ1: arresto del nastro verificato. Esito: positivo.
+Validazione della funzione di arresto di emergenza secondo EN ISO 13849-2: livello di prestazione raggiunto PL c (richiesto PLr c).

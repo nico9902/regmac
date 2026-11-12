@@ -1,0 +1,5 @@
+MECCANICA ROSSI S.r.l. — NT-300 — DISEGNO D'ASSIEME N. NT300-000 (note e legenda)
+Pos. 1 telaio; pos. 2 rullo motore; pos. 3 rullo di rinvio; pos. 4 motoriduttore; pos. 5 catena di trasmissione 1/2";
+pos. 6 carter fisso della catena in lamiera da 1,5 mm, fissato al telaio con 4 viti a testa cava esagonale M6: per lo smontaggio è necessaria una chiave a brugola;
+pos. 7 sportello di ispezione della tramoggia, incernierato al telaio (pos. 7.1 cerniere), con microinterruttore SQ1 (pos. 7.2);
+pos. 8 quadro elettrico; pos. 9 pulsante di emergenza lato rinvio; pos. 10 sponde laterali h 60 mm.

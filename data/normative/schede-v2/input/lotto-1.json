@@ -1,0 +1,983 @@
+[
+ {
+  "id": "MR-III-B1",
+  "law": "MR",
+  "ref": "All. III, parte B, punto 1",
+  "group": "Allegato III — Parte B: Principi generali",
+  "title": "Valutazione e riduzione del rischio",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "Il fabbricante di una macchina o di un prodotto correlato deve provvedere affinché sia effettuata una valutazione del rischio per stabilire i requisiti essenziali di sicurezza e di tutela della salute che concernono la macchina o il prodotto correlato. La macchina o il prodotto correlato devono inoltre essere progettati e costruiti per eliminare i rischi o, ove non sia possibile, ridurre al minimo tutti i rischi pertinenti, tenendo conto dei risultati della valutazione del rischio.\nCon il processo iterativo della valutazione del rischio e della riduzione del rischio di cui al primo comma, il fabbricante:\na) stabilisce i limiti della macchina o del prodotto correlato, il che comprende l'uso previsto e l'uso scorretto ragionevolmente prevedibile;\nb) individua i pericoli cui può dare origine la macchina o il prodotto correlato e le situazioni pericolose che ne derivano;\nc) stima i rischi, tenendo conto della gravità dell'eventuale lesione o danno alla salute e della probabilità che si verifichi;\nd) valuta i rischi al fine di stabilire se sia richiesta una riduzione del rischio conformemente all'obiettivo del presente regolamento;\ne) elimina i pericoli o riduce i rischi che ne derivano, applicando le misure di protezione nell'ordine indicato nel punto 1.1.2, lettera b).\nLa valutazione del rischio e la riduzione del rischio includono i pericoli che possono manifestarsi durante il ciclo di vita della macchina o del prodotto correlato prevedibili al momento dell'immissione della macchina o del prodotto correlato sul mercato come un'evoluzione prevista del suo comportamento o della sua logica integralmente o parzialmente autoevolutivi in ragione del fatto che tale macchina o prodotto correlato è progettato per funzionare con livelli variabili di autonomia. La valutazione del rischio e la riduzione del rischio comprendono i rischi derivanti dalle interazioni tra macchine che per raggiungere uno stesso risultato sono disposte e comandate in modo da avere un funzionamento solidale, formando così una macchina come definita all'articolo 3, punto 1), lettera d).",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi identifica i pericoli derivanti dall'interazione con altre macchine",
+   "Le misure di protezione sono applicate nell'ordine indicato nel punto 1.1.2, lettera b)",
+   "La macchina è progettata per eliminare o ridurre al minimo i rischi identificati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.1",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Applicabilità",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Gli obblighi previsti dai requisiti essenziali di sicurezza e di tutela della salute si applicano alle quasi-macchine nella misura in cui tali requisiti sono pertinenti.\nI requisiti pertinenti relativi alle quasi-macchine non riguardano i requisiti che possono essere soddisfatti solo al momento dell'incorporazione della quasi-macchina. Tuttavia, i principi di integrazione della sicurezza di cui al punto 1.1.2 sono applicabili in tutti i casi.",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include analisi delle emissioni termiche durante l'uso",
+   "I schemi elettrici mostrano protezioni contro sovraccarico e cortocircuiti",
+   "La dichiarazione di conformità menziona l'applicazione dei requisiti di sicurezza per quasi-macchine"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.2",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Principi d'integrazione della sicurezza",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "a) Per progettazione e costruzione, le macchine o i prodotti correlati devono essere atti a funzionare, ad essere azionati, ad essere regolati e a subire la manutenzione senza che tali operazioni espongano a rischi le persone, se effettuate nelle condizioni previste tenendo anche conto dell'uso scorretto ragionevolmente prevedibile. Le misure di protezione devono avere lo scopo di eliminare ogni rischio durante l'esistenza prevedibile della macchina o del prodotto correlato, comprese le fasi di trasporto, montaggio, smontaggio, smantellamento (messa fuori servizio) e rottamazione.\nb) Per la scelta delle soluzioni più opportune il fabbricante deve applicare i principi seguenti, nell'ordine indicato:\ni) eliminare i pericoli o, qualora non sia possibile, ridurre al minimo i rischi (integrazione della sicurezza nella progettazione e nella costruzione della macchina o dei prodotti correlati);\nii) adottare i necessari provvedimenti protettivi contro i rischi che non possono essere eliminati;\niii) informare gli utilizzatori dei rischi residui dovuti all'incompleta efficacia delle misure di protezione adottate, indicare se è richiesta una formazione particolare e segnalare se è necessario prevedere un dispositivo di protezione individuale.\nc) In sede di progettazione e di costruzione di una macchina o di un prodotto correlato, nonché all'atto della redazione delle istruzioni per l'uso, il fabbricante deve prendere in considerazione non solo l'uso previsto della macchina o del prodotto correlato, ma anche l'uso scorretto ragionevolmente prevedibile. La macchina o il prodotto correlato devono essere progettati e costruiti in modo da evitare che siano utilizzati in modo anormale, se ciò può comportare un rischio. Negli altri casi le istruzioni per l'uso devono richiamare l'attenzione dell'utilizzatore sulle controindicazioni nell'uso della macchina o del prodotto correlato che potrebbero presentarsi, in base all'esperienza.\nd) La macchina o il prodotto correlato devono essere progettati e costruiti tenendo conto delle limitazioni imposte all'operatore dall'uso necessario o prevedibile delle attrezzature di protezione individuale.\ne) La macchina o il prodotto correlato, devono essere progettati e costruiti in modo tale da consentire all'utilizzatore, se del caso, di verificare le funzioni di sicurezza. La macchina o il prodotto correlato devono essere forniti completi di tutte le attrezzature e gli accessori speciali e, se del caso, della descrizione delle procedure di prova funzionale specifiche, essenziali per poterli verificare, regolare, eseguirne la manutenzione e utilizzarli in condizioni di sicurezza.",
+  "old_condition": "",
+  "old_points": [
+   "È stata eseguita e documentata una valutazione dei rischi della macchina",
+   "Le misure seguono l'ordine: eliminazione dei rischi in progettazione, poi protezioni, poi informazioni sui rischi residui",
+   "La valutazione considera anche l'uso scorretto ragionevolmente prevedibile"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.1.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.3",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Materiali e prodotti",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I materiali utilizzati per la costruzione di macchine o dei prodotti correlati o i prodotti utilizzati od originati durante la loro utilizzazione non devono presentare rischi per la salute e la sicurezza delle persone. In particolare, se sono usati dei fluidi, le macchine o i prodotti correlati devono essere progettati e costruiti in modo da prevenire rischi dovuti al riempimento, all'utilizzazione, al recupero e all'evacuazione.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per il recupero e l'evacuazione dei fluidi",
+   "Le istruzioni menzionano i materiali utilizzati e la loro compatibilità con la salute",
+   "Le istruzioni forniscono informazioni sui rischi legati all'utilizzo dei fluidi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.4",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.4",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Illuminazione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere forniti di un'illuminazione incorporata adeguata alle operazioni laddove, malgrado un'illuminazione ambiente avente un valore normale, la mancanza di tale dispositivo potrebbe determinare rischi.\nLe macchine o i prodotti correlati devono essere progettati e costruiti in modo che non vi siano zone d'ombra che possano causare disturbo, né fastidiosi abbagliamenti, né effetti stroboscopici pericolosi sugli elementi mobili dovuti all'illuminazione.\nLe parti interne che devono essere ispezionate e regolate frequentemente devono essere munite di opportuni dispositivi di illuminazione; lo stesso dicasi per le zone di manutenzione.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina ha un'illuminazione incorporata adeguata nelle zone di lavoro, regolazione o manutenzione dove l'illuminazione ambiente non basta, oppure è dimostrato che non serve"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.1.5",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.5",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Progettazione di una macchina o di un prodotto correlato ai fini della movimentazione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato o ciascuno dei suoi diversi elementi devono:\na) poter essere movimentati e trasportati in modo sicuro,\nb) essere imballati o progettati per essere immagazzinati in modo sicuro e senza deterioramenti.\nDurante il trasporto della macchina o del prodotto correlato o dei suoi elementi non devono potersi verificare spostamenti intempestivi né pericoli dovuti all'instabilità se la macchina o il prodotto correlato o i suoi elementi sono sottoposti a movimentazione secondo le istruzioni.\nSe la massa, le dimensioni o la forma di una macchina o di un prodotto correlato o dei suoi vari elementi non ne consentono lo spostamento a mano, la macchina o il prodotto correlato o ciascuno dei suoi vari elementi devono essere:\na) muniti di accessori che consentano di afferrarli con un mezzo di sollevamento; oppure\nb) progettati in modo da consentire il fissaggio di detti accessori; oppure\nc) di forma tale che i normali mezzi di sollevamento possano adattarvisi facilmente.\nSe la macchina il un prodotto correlato o uno dei suoi elementi devono essere spostati a mano, devono essere:\na) facilmente spostabili; oppure\nb) muniti di dispositivi di presa che ne consentano la movimentazione in modo sicuro.\nSono necessarie disposizioni speciali per il trasporto di utensili e/o di parti di macchine o di prodotti correlati, anche leggeri, potenzialmente pericolosi.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le modalità sicure per il trasporto e il fissaggio della macchina",
+   "La documentazione descrive le misure per prevenire lo spostamento intempestivo durante il trasporto",
+   "La macchina è progettata per essere movimentata a mano con dispositivi di presa sicuri",
+   "Le istruzioni forniscono informazioni sui mezzi di sollevamento compatibili con la macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.6",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.6",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Ergonomia",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Nelle condizioni d'uso previste devono essere eliminati o ridotti al minimo possibile il disagio, la fatica e le tensioni psichiche e fisiche (stress) dell'operatore, tenuto conto almeno dei principi seguenti dell'ergonomia:\na) tener conto della variabilità delle dimensioni fisiche, della forza e della resistenza dell'operatore;\nb) evitare la necessità di movimenti o posture lavorativi impegnativi e sforzi manuali superiori alla capacità dell'operatore;\nc) offrire lo spazio necessario per i movimenti delle parti del corpo dell'operatore,\nd) evitare un ritmo di lavoro condizionato dalla macchina;\ne) evitare un controllo che richiede una concentrazione prolungata;\nf) adeguare l'interfaccia tra uomo e macchina alle caratteristiche prevedibili degli operatori, anche rispetto a una macchina o a un prodotto correlato dotati di un comportamento o una logica integralmente o parzialmente auto-evolutivi e che sono progettati per funzionare con livelli variabili di autonomia;\ng) se del caso, adeguare una macchina o un prodotto correlato dotati di un comportamento o una logica integralmente o parzialmente auto-evolutivi e che sono progettati per funzionare con livelli variabili di autonomia affinché rispondano alle persone adeguatamente e appropriatamente (ad esempio verbalmente attraverso parole e non verbalmente attraverso gesti, espressioni facciali o movimento del corpo) e comunichino le loro azioni pianificate (ad esempio cosa faranno e perché) agli operatori in maniera comprensibile.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le dimensioni minime del posto di lavoro",
+   "La macchina permette movimenti e posture non impegnativi per l'operatore",
+   "L'interfaccia utente è adatta alle caratteristiche prevedibili degli operatori"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.7",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.7",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Postazioni di lavoro",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La postazione di lavoro deve essere progettata e costruita in modo da evitare ogni rischio derivante dai gas di scarico o dalla mancanza di ossigeno.\nSe la macchina o il prodotto correlato sono destinati ad essere utilizzati in un ambiente pericoloso che presenta rischi per la salute e la sicurezza dell'operatore o se la macchina stessa o il prodotto correlato stesso generano un ambiente pericoloso, devono essere previsti i mezzi adeguati ad assicurare che l'operatore lavori in buone condizioni e sia protetto da ogni pericolo prevedibile.\nSe del caso, la postazione di lavoro deve essere dotata di una cabina adeguata, progettata, costruita o attrezzata in modo da soddisfare i suddetti requisiti. L'uscita deve consentire un rapido abbandono della macchina. Si deve inoltre, se del caso, prevedere un'uscita di sicurezza in una direzione diversa dall'uscita normale.",
+  "old_condition": "",
+  "old_points": [
+   "La cabina è progettata per proteggere l'operatore da gas di scarico e mancanza di ossigeno",
+   "Le istruzioni indicano le procedure per l'uscita di emergenza in direzione diversa dall'ingresso",
+   "La documentazione menziona l'ubicazione di un'uscita di sicurezza accessibile in emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.8",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.8",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Sedili",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Ove appropriato e se le condizioni di lavoro lo consentono, nella postazione di lavoro integrata alla macchina o al prodotto correlato deve essere prevista l'installazione di sedili.\nSe l'operatore è destinato a lavorare seduto e la postazione di lavoro è parte integrante della macchina o del prodotto correlato, il sedile deve essere fornito unitamente alla macchina o al prodotto correlato.\nIl sedile dell'operatore deve renderlo capace di mantenere una posizione stabile. Inoltre il sedile e la sua distanza dai dispositivi di comando devono potersi adattare all'operatore.\nSe la macchina o il prodotto correlato sono sottoposti a vibrazioni, il sedile deve essere progettato e costruito in modo da ridurre al livello più basso ragionevolmente possibile le vibrazioni trasmesse all'operatore. Il sedile deve essere ancorato in modo da resistere a tutte le sollecitazioni che può subire. Se sotto i piedi dell'operatore non esiste alcun piano di appoggio, egli deve disporre di un poggiapiedi antisdrucciolo.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive la posizione e l'adattabilità del sedile rispetto ai comandi",
+   "La documentazione indica la presenza di un poggiapiedi antisdrucciolo",
+   "Le istruzioni menzionano la riduzione delle vibrazioni tramite il sedile",
+   "La valutazione dei rischi include l'analisi della postazione seduta dell'operatore"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.9-c1",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.9, comma 1",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Protezione dall'alterazione — comma 1",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono essere progettati e costruiti in modo tale da fare sì che il collegamento ad essi di un altro dispositivo, tramite qualsiasi caratteristica del dispositivo connesso stesso o tramite qualsiasi dispositivo remoto che comunica con la macchina o il prodotto correlato, non determini una situazione pericolosa.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di sicurezza per l'accesso non autorizzato",
+   "La valutazione dei rischi include analisi delle interfacce esterne di comunicazione",
+   "I schemi elettrici mostrano protezioni contro l'interferenza esterna",
+   "La dichiarazione tecnica menziona limiti di connettività esterna"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.9-c2",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.9, comma 2",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Protezione dall'alterazione — comma 2",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I componenti hardware che trasmettono segnali o dati, importanti per il collegamento o l'accesso a software che sono fondamentali affinché la macchina o il prodotto correlato rispettino i pertinenti requisiti essenziali di sicurezza e di tutela della salute, devono essere progettati in modo tale da essere adeguatamente protetti da un'alterazione accidentale o intenzionale. La macchina o il prodotto correlato devono raccogliere prove in merito a un intervento legittimo o illegittimo su tali componenti hardware, se importante per il collegamento o l'accesso al software critico per la conformità della macchina o del prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono i meccanismi di protezione contro l'alterazione dei componenti hardware critici",
+   "La valutazione dei rischi include analisi delle vulnerabilità di alterazione dei componenti hardware",
+   "I schemi elettrici indicano misure di sicurezza per prevenire l'alterazione di segnali critici",
+   "La dichiarazione tecnica menziona prove di rilevamento di interventi illegittimi su componenti hardware"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.9-c3",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.9, comma 3",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Protezione dall'alterazione — comma 3",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Software e dati critici per il rispetto da parte della macchina o del prodotto correlato dei pertinenti requisiti essenziali di sicurezza e di tutela della devono essere individuati come tali e devono essere adeguatamente protetti da un'alterazione accidentale o intenzionale.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione identifica software critici per la sicurezza e la loro protezione contro alterazioni",
+   "Le istruzioni descrivono misure di protezione contro modifiche accidentali o intenzionali dei dati critici",
+   "La valutazione dei rischi menziona controlli per prevenire alterazioni di software e dati essenziali",
+   "Le dichiarazioni tecniche indicano procedure per garantire l'integrità dei dati e del software critici"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.9-c4",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.9, comma 4",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Protezione dall'alterazione — comma 4",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono individuare il software installato sullo stesso, necessario per il suo funzionamento in condizioni di sicurezza, e devono essere in grado di fornire tali informazioni in qualsiasi momento in un formato facilmente accessibile.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive chiaramente il software necessario per il funzionamento in sicurezza",
+   "La valutazione dei rischi include informazioni sul software di sicurezza installato",
+   "Le dichiarazioni tecniche indicano il software essenziale per la sicurezza della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.1.9-c5",
+  "law": "MR",
+  "ref": "All. III, punto 1.1.9, comma 5",
+  "group": "Allegato III — 1.1. Considerazioni generali",
+  "title": "Protezione dall'alterazione — comma 5",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono raccogliere prove di un intervento legittimo o illegittimo sul software o di una modifica del software installato sulla macchina o sul prodotto correlato o della sua configurazione.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica le procedure per verificare l'integrità del software",
+   "Le istruzioni descrivono come rilevare modifiche non autorizzate al software",
+   "La valutazione dei rischi menziona metodi per tracciare interventi sul sistema",
+   "La dichiarazione tecnica include prove di controllo delle configurazioni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-c1",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, comma 1",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — comma 1",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo da evitare l'insorgere di situazioni pericolose.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per interrompere l'operazione in emergenza",
+   "La valutazione dei rischi descrive le misure adottate per prevenire errori di comando",
+   "Gli schemi elettrici mostrano l'isolamento delle parti pericolose da quelli accessibili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-1a",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 1, lettera a)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 1, lett. a)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo tale che:\na) riescano a resistere, se del caso, a circostanze e rischi, a previste sollecitazioni di servizio e ad influssi esterni intenzionali o meno, compresi tentativi deliberati ragionevolmente prevedibili da parte di terzi che conducono a una situazione pericolosa;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione contro tentativi di accesso non autorizzato",
+   "La valutazione dei rischi include analisi delle sollecitazioni esterne previste durante l'uso",
+   "Gli schemi elettrici mostrano protezioni contro sovraccarichi e cortocircuiti",
+   "Le dichiarazioni tecniche menzionano resistenza a condizioni ambientali estreme previste"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-1b",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 1, lettera b)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 1, lett. b)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo tale che:\nb) un'avaria nell'hardware o nella logica del sistema di comando non crei situazioni pericolose;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per gestire guasti del sistema di comando",
+   "La valutazione dei rischi identifica scenari di guasto e relative misure di sicurezza",
+   "Gli schemi elettrici indicano isolamenti e protezioni contro guasti logici",
+   "La dichiarazione tecnica menziona test di affidabilità del sistema di comando"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-1c",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 1, lettera c)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 1, lett. c)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo tale che:\nc) errori della logica del sistema di comando non creino situazioni pericolose;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per gestire errori di logica del sistema di comando",
+   "La valutazione dei rischi identifica scenari di guasto e relative misure di sicurezza",
+   "Gli schemi elettrici indicano isolamenti e protezioni contro errori logici",
+   "La dichiarazione tecnica menziona test di validazione della logica del sistema di comando"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-1d",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 1, lettera d)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 1, lett. d)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo tale che:\nd) i limiti delle funzioni di sicurezza siano stabiliti come parte della valutazione del rischio effettuata dal fabbricante e non siano consentite modifiche alle impostazioni o alle norme generate dalla macchina o dal prodotto correlato o dagli operatori, neanche durante la fase di apprendimento della macchina o del prodotto correlato, qualora tali modifiche possano determinare situazioni pericolose;",
+  "old_condition": "",
+  "old_points": [
+   "La valutazione dei rischi include la definizione dei limiti delle funzioni di sicurezza",
+   "Le istruzioni indicano i limiti delle funzioni di sicurezza stabiliti durante la valutazione dei rischi",
+   "Le impostazioni di sicurezza non possono essere modificate dagli operatori secondo il manuale"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-1e",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 1, lettera e)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 1, lett. e)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo tale che:\ne) errori umani ragionevolmente prevedibili nelle manovre non creino situazioni pericolose;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni forniscono procedure per prevenire errori di manovra",
+   "I comandi sono disposti per ridurre il rischio di azioni errate",
+   "La documentazione include misure per mitigare errori umani prevedibili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-1f",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 1, lettera f)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 1, lett. f)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di comando devono essere progettati e costruiti in modo tale che:\nf) la registrazione di tracciamento dei dati generati in relazione a un intervento e delle versioni del software di sicurezza caricato dopo l'immissione sul mercato o la messa in servizio della macchina o del prodotto correlato sia consentita per cinque anni dopo tale caricamento, esclusivamente al fine di dimostrare la conformità della macchina o del prodotto correlato rispetto al presente allegato a fronte di una richiesta motivata da parte di un'autorità nazionale competente.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include un registro delle versioni del software di sicurezza con data e ora del caricamento",
+   "La registrazione dei dati di tracciamento è descritta come disponibile per un periodo di cinque anni",
+   "La macchina è dotata di un sistema per la conservazione dei dati di tracciamento conforme al requisito",
+   "La documentazione menziona la finalità della registrazione come dimostrazione della conformità alla normativa"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-2a",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 2, lettera a)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 2, lett. a)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di controllo delle macchine o dei prodotti correlati dotati di un comportamento o una logica integralmente o parzialmente auto-evolutivi e che sono progettati per funzionare con livelli variabili di autonomia devono essere progettati e costruiti in maniera tale da:\na) non essere la causa di azioni, da parte della macchina o del prodotto correlato, che vanno oltre il suo compito e il suo spazio di movimento definiti;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente i limiti di movimento della macchina",
+   "La valutazione dei rischi identifica azioni non previste del sistema di controllo",
+   "Gli schemi tecnici indicano meccanismi per bloccare movimenti fuori dallo spazio definito"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-2b",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 2, lettera b)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 2, lett. b)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di controllo delle macchine o dei prodotti correlati dotati di un comportamento o una logica integralmente o parzialmente auto-evolutivi e che sono progettati per funzionare con livelli variabili di autonomia devono essere progettati e costruiti in maniera tale da:\nb) consentire che siano registrati i dati relativi al processo decisionale in materia di sicurezza per i sistemi di sicurezza basati su software che garantiscono la funzione di sicurezza, compresi i componenti di sicurezza, dopo che la macchina o il prodotto correlato sono stati immessi sul mercato o messi in servizio, e che tali dati siano conservati per un anno dopo la loro raccolta, esclusivamente per dimostrare la conformità della macchina o del prodotto correlato al presente allegato a seguito di una richiesta motivata da parte di un'autorità nazionale competente;",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione include un registro dei dati decisionali per la sicurezza",
+   "I dati di sicurezza sono conservati per un periodo minimo di un anno",
+   "La macchina è dotata di sistemi di controllo con logica auto-evolutiva",
+   "I dati sono registrati in modo accessibile per verifiche esterne"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-2c",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 2, lettera c)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 2, lett. c)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I sistemi di controllo delle macchine o dei prodotti correlati dotati di un comportamento o una logica integralmente o parzialmente auto-evolutivi e che sono progettati per funzionare con livelli variabili di autonomia devono essere progettati e costruiti in maniera tale da:\nc) consentire in qualsiasi momento la correzione della macchina o del prodotto correlato al fine di preservarne la sicurezza intrinseca.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le procedure per la correzione della macchina in caso di malfunzionamento",
+   "La valutazione dei rischi include misure per garantire la sicurezza intrinseca durante la correzione",
+   "Gli schemi elettrici indicano circuiti di emergenza per interrompere il funzionamento della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3a",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera a)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. a)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\na) la macchina o il prodotto correlato non devono avviarsi in modo inatteso;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per l'avviamento sequenziale della macchina",
+   "La valutazione dei rischi include analisi per prevenire avviamenti inattesi",
+   "Gli schemi elettrici indicano interruzioni di alimentazione per blocco del sistema",
+   "Le dichiarazioni tecniche menzionano dispositivi di arresto immediato in caso di emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3b",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera b)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. b)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\nb) i parametri della macchina o del prodotto correlato non devono cambiare in modo incontrollato, laddove tale cambiamento possa portare a situazioni pericolose;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i limiti di temperatura della macchina",
+   "La valutazione dei rischi descrive le misure per prevenire variazioni impreviste dei parametri",
+   "I schemi elettrici mostrano la protezione contro variazioni anomale delle prestazioni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3c",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera c)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. c)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\nc) devono essere evitate le modifiche delle impostazioni o delle norme, generate dalla macchina o dal prodotto correlato o dagli operatori, anche durante la fase di apprendimento della macchina o del prodotto correlato, qualora tali modifiche possano determinare situazioni pericolose;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per ripristinare le impostazioni originali",
+   "La documentazione descrive i rischi derivanti da modifiche non autorizzate",
+   "Le specifiche tecniche elencano le funzioni non modificabili per sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3d",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera d)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. d)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\nd) non deve essere impedito l'arresto della macchina o del prodotto correlato, se l'ordine di arresto è già stato dato;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per l'arresto immediato della macchina",
+   "La documentazione include un piano di emergenza per l'arresto della macchina",
+   "I schemi elettrici indicano circuiti dedicati all'arresto di emergenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3e",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera e)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. e)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\ne) nessun elemento mobile della macchina o del prodotto o pezzo correlato trattenuto dalla macchina o dal prodotto correlato deve cadere o essere espulso;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono i meccanismi di blocco per elementi mobili",
+   "La documentazione include schemi che indicano le giunzioni di fissaggio",
+   "La valutazione dei rischi menziona misure per prevenire espulsioni di parti mobili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3f",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera f)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. f)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\nf) non deve essere impedito l'arresto manuale o automatico degli elementi mobili di qualsiasi tipo;",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le procedure per l'arresto manuale degli elementi mobili",
+   "La valutazione dei rischi include misure per l'arresto automatico degli elementi mobili",
+   "Gli schemi elettrici indicano dispositivi per l'arresto automatico degli elementi mobili",
+   "La dichiarazione tecnica menziona sistemi di arresto manuale e automatico degli elementi mobili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3g",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera g)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. g)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\ng) i dispositivi di protezione devono rimanere pienamente efficaci o dare un comando di arresto;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente le funzioni di arresto di emergenza",
+   "I dispositivi di protezione sono descritti come sempre attivi e funzionanti",
+   "La documentazione indica come i comandi di arresto siano accessibili e visibili",
+   "Le istruzioni forniscono informazioni sui tempi di risposta dei dispositivi di protezione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-3h",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, elenco 3, lettera h)",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — elenco 3, lett. h)",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Particolare attenzione deve essere prestata a quanto segue:\nh) le parti del sistema di controllo legate alla sicurezza si devono applicare in modo coerente all'interezza di un insieme di macchine o di prodotti correlati o di semi-macchine o di una loro combinazione.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente le funzioni di sicurezza del sistema di comando",
+   "La documentazione include una valutazione dei rischi relativa al sistema di controllo",
+   "Gli schemi tecnici mostrano la connessione tra le parti del sistema di controllo e la sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.1-c2",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.1, comma 2",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Sicurezza ed affidabilità dei sistemi di comando — comma 2",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "In caso di comando wireless, un guasto della comunicazione o della connessione o una connessione difettosa non deve comportare una situazione pericolosa.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per gestire la perdita di segnale wireless",
+   "La documentazione include test di connessione per verificare la sicurezza in caso di guasto",
+   "I schemi elettrici indicano misure di sicurezza attive in caso di interruzione della comunicazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.2",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Dispositivi di comando",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I dispositivi di comando devono essere:\na) chiaramente visibili e individuabili utilizzando, se del caso, pittogrammi;\nb) disposti in modo da garantire una manovra sicura, univoca e rapida;\nc) progettati in modo tale che il movimento del dispositivo di comando sia coerente con l'azione del comando;\nd) situati fuori delle zone pericolose tranne il caso, all'occorrenza, di taluni dispositivi di comando, come un arresto di emergenza o una pulsantiera pensile;\ne) sistemati in modo che la loro manovra non causi rischi supplementari;\nf) progettati o protetti in modo che l'azione comandata, se comporta un pericolo, possa avvenire soltanto in seguito ad un'azione deliberata;\ng) fabbricati in modo da resistere alle sollecitazioni prevedibili, prestando particolare attenzione ai dispositivi di arresto di emergenza che possono essere soggetti a notevoli sollecitazioni.\nSe un dispositivo di comando è progettato e costruito per consentire varie azioni differenti, vale a dire se la sua azione non è univoca, l'azione comandata deve essere chiaramente indicata e, all'occorrenza, confermata.\nLa posizione e la corsa dei dispositivi di comando, nonché lo sforzo richiesto devono essere compatibili con l'azione comandata, tenendo conto dei principi ergonomici.\nLe macchine o i prodotti correlati devono essere muniti di indicatori necessari per un funzionamento sicuro. Dalle postazioni di comando l'operatore deve poter leggere i suddetti indicatori.\nDa ogni postazione di comando l'operatore deve poter essere in grado di assicurarsi dell'assenza di persone nelle zone pericolose oppure il sistema di comando deve essere progettato e costruito in modo che l'avviamento sia impedito fintanto che qualsiasi persona si trova nella zona pericolosa.\nQualora nessuna di tali possibilità sia applicabile, prima dell'avviamento della macchina o del prodotto correlato deve essere emesso un segnale di avvertimento sonoro e/o visivo. Le persone esposte devono avere il tempo di abbandonare la zona pericolosa o impedire l'avviamento della macchina.\nSe necessario, vanno previsti mezzi per assicurarsi che la macchina o il prodotto correlato possano essere comandati solo dalle postazioni di comando situate in una o più zone o posti prestabiliti.\nQuando vi sono più postazioni di comando, il sistema di comando deve essere progettato in modo che l'impiego di una di esse renda impossibile l'uso delle altre, ad eccezione dei comandi di arresto e degli arresti di emergenza.\nQuando la macchina o il prodotto correlato sono muniti di più postazioni di manovra, ognuna di esse deve disporre di tutti i dispositivi di comando necessari, senza ostacolare né mettere in situazione pericolosa mutuamente gli operatori.",
+  "old_condition": "",
+  "old_points": [
+   "I dispositivi di comando sono chiaramente visibili e identificati, se del caso con pittogrammi",
+   "I dispositivi di comando sono posizionati fuori dalle zone pericolose",
+   "I comandi sono protetti contro l'azionamento accidentale"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.2.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.3",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Avviamento",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "L'avviamento di una macchina o di un prodotto correlato deve essere possibile soltanto tramite un'azione volontaria su un dispositivo di comando previsto a tal fine.\nIl medesimo requisito si applica:\na) alla rimessa in marcia dopo un arresto, indipendentemente dall'origine;\nb) all'effettuazione di una modifica rilevante delle condizioni di funzionamento.\nTuttavia, purché ciò non generi situazioni pericolose, la rimessa in marcia o la modifica delle condizioni di funzionamento può essere effettuata tramite un'azione volontaria su un dispositivo diverso dal dispositivo di comando previsto a tal fine.\nPer le macchine o i prodotti correlati a funzionamento automatico, l'avviamento degli stessi, la rimessa in marcia dopo un arresto o la modifica delle condizioni di funzionamento possono essere effettuati senza intervento esterno, se ciò non produce situazioni pericolose.\nQuando la macchina o il prodotto correlato sono muniti di vari dispositivi di comando dell'avviamento e gli operatori possono pertanto mettersi mutuamente in pericolo, devono essere installati dispositivi supplementari per eliminare tali rischi. Se per ragioni di sicurezza l'avviamento e/o l'arresto devono essere effettuati in una sequenza specifica, opportuni dispositivi devono garantire che tali operazioni siano eseguite nell'ordine corretto.",
+  "old_condition": "",
+  "old_points": [
+   "L'avviamento è possibile solo con un'azione volontaria su un dispositivo di comando previsto a tale scopo",
+   "Dopo un arresto, il riavvio richiede una nuova azione volontaria"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.2.4.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.4.1",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Arresto normale",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono essere muniti di un dispositivo di comando che consenta l'arresto generale in condizioni di sicurezza.\nOgni postazione di lavoro deve essere munita di un dispositivo di comando che consenta di arrestare, in funzione dei pericoli esistenti, tutte le funzioni della macchina o del prodotto correlato o unicamente una di esse, in modo che la macchina o il prodotto correlato siano portati in condizioni di sicurezza.\nIl comando di arresto della macchina o del prodotto correlato deve avere priorità rispetto ai comandi di avviamento.\nOttenuto l'arresto della macchina o del prodotto correlato o delle loro funzioni pericolose, si deve interrompere l'alimentazione dei relativi azionatori.",
+  "old_condition": "",
+  "old_points": [
+   "Esiste un dispositivo di comando per l'arresto generale in condizioni di sicurezza",
+   "L'ordine di arresto ha priorità sugli ordini di avviamento"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.2.4.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.4.2",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Arresto operativo",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Se, per motivi operativi, è necessario un comando di arresto che non interrompe l'alimentazione degli azionatori, la condizione di arresto deve essere monitorata e mantenuta.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive il comando di arresto senza interruzione dell'alimentazione degli azionatori",
+   "La valutazione dei rischi include la descrizione della condizione di arresto monitorata",
+   "Gli schemi elettrici indicano la manutenzione della condizione di arresto durante l'arresto operativo",
+   "La dichiarazione tecnica conferma la monitorazione della condizione di arresto durante l'arresto operativo"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.4.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.4.3",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Arresto di emergenza",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono essere muniti di uno o più dispositivi di arresto di emergenza, che consentano di evitare situazioni di pericolo attuali o imminenti.\nSi applicano le eccezioni seguenti:\na) le macchine o i prodotti correlati per i quali il dispositivo di arresto di emergenza non può ridurre il rischio, perché non riduce il tempo per ottenere l'arresto normale oppure perché non permette di prendere le misure specifiche che il rischio richiede;\nb) le macchine o i prodotti correlati portatili tenuti o condotti a mano.\nIl dispositivo deve:\na) comprendere dispositivi di comando chiaramente individuabili, ben visibili e rapidamente accessibili;\nb) provocare l'arresto del processo pericoloso nel tempo più breve possibile, senza creare rischi supplementari;\nc) quando necessario avviare, o permettere di avviare, alcuni movimenti di salvaguardia.\nQuando si smette di azionare il dispositivo di arresto di emergenza dopo un ordine di arresto, tale ordine deve essere mantenuto da un blocco del dispositivo di arresto di emergenza, sino al suo sblocco; non deve essere possibile ottenere il blocco del dispositivo senza che quest'ultimo generi un ordine di arresto; lo sblocco del dispositivo deve essere possibile soltanto con una apposita manovra e non deve riavviare la macchina o il prodotto correlato, ma soltanto consentirne la rimessa in funzione.\nLa funzione di arresto di emergenza deve essere sempre disponibile e operativa a prescindere dalla modalità di funzionamento.\nI dispositivi di arresto di emergenza devono offrire soluzioni di riserva ad altre misure di protezione e non sostituirsi ad esse.",
+  "old_condition": "",
+  "old_points": [
+   "Uno o più dispositivi di arresto di emergenza sono raggiungibili da ogni postazione di lavoro",
+   "I comandi di arresto di emergenza sono chiaramente individuabili, ben visibili e rapidamente accessibili",
+   "Il comando di emergenza resta bloccato finché non viene sbloccato con una manovra apposita",
+   "Lo sblocco del comando di emergenza non riavvia la macchina"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.2.4.4",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.4.4",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Insiemi di macchine o di prodotti correlati",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Nel caso di una macchina o di un prodotto correlato o di elementi di una macchina o di un prodotto correlato progettati per lavorare assemblati, la macchina o il prodotto correlato devono essere progettati e costruiti in modo tale che i comandi di arresto, compresi i dispositivi di arresto di emergenza, possano bloccare non soltanto la macchina stessa o il prodotto correlato stesso ma anche tutte le attrezzature collegate, qualora il loro mantenimento in funzione possa costituire un pericolo.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente i comandi di arresto e i dispositivi di emergenza",
+   "La valutazione dei rischi include l'analisi delle interconnessioni con attrezzature esterne",
+   "Gli schemi elettrici indicano la connessione dei dispositivi di arresto di emergenza con le attrezzature collegate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.2.5",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.5",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Selezione del modo di comando o di funzionamento",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Il modo di comando o di funzionamento selezionato deve avere la priorità su tutti gli altri modi di comando o di funzionamento, salvo l'arresto di emergenza.\nSe è stato progettato e costruito per consentire diversi modi di comando o di funzionamento che necessitano di misure di protezione e/o di procedure di lavoro diverse, la macchina o il prodotto correlato devono essere muniti di un selettore di modo di comando o di funzionamento che possa essere bloccato in ogni posizione. A ciascuna posizione del selettore, che deve essere chiaramente individuabile, deve corrispondere un solo modo di comando o di funzionamento.\nIl selettore può essere sostituito da altri mezzi di selezione che limitino l'utilizzo di talune funzioni della macchina o del prodotto correlato a talune categorie di operatori.\nSe per alcune operazioni la macchina o il prodotto correlato devono poter funzionare con un riparo spostato o rimosso e/o con il dispositivo di protezione neutralizzato, il selettore del modo di comando o di funzionamento deve simultaneamente:\na) escludere tutti gli altri modi di comando o di funzionamento;\nb) consentire l'attivazione delle funzioni pericolose soltanto mediante dispositivi di comando che necessitano di un'azione continuata;\nc) consentire l'attivazione delle funzioni pericolose soltanto in condizioni di minor rischio, evitando i pericoli derivanti dal succedersi delle sequenze;\nd) impedire qualsiasi attivazione delle funzioni pericolose mediante un'azione volontaria o involontaria sui sensori della macchina o del prodotto correlato.\nSe queste quattro condizioni non possono essere soddisfatte simultaneamente, il selettore del modo di comando o di funzionamento deve attivare altre misure di protezione progettate e costruite per garantire una zona di intervento sicura.\nInoltre, alla postazione di manovra l'operatore deve avere la padronanza del funzionamento degli elementi sui quali agisce.",
+  "old_condition": "La macchina dispone di più modi di comando o di funzionamento",
+  "old_points": [
+   "Il selettore di modo è bloccabile in ogni posizione (es. a chiave)",
+   "Nei modi con protezioni escluse i movimenti avvengono solo a velocità ridotta o con comando ad azione mantenuta"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.2.6",
+  "law": "MR",
+  "ref": "All. III, punto 1.2.6",
+  "group": "Allegato III — 1.2. Sistemi di comando",
+  "title": "Guasto del circuito di alimentazione di energia o della connessione alla rete di comunicazione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "L'interruzione, il ripristino dopo un'interruzione o la variazione, di qualsiasi tipo, dell'alimentazione di energia o della connessione alla rete di comunicazione della macchina o del prodotto correlato non deve creare situazioni pericolose.\nParticolare attenzione deve essere prestata a quanto segue:\na) la macchina o il prodotto correlato non devono avviarsi in modo inatteso;\nb) i parametri della macchina non devono cambiare in modo incontrollato, quando tale cambiamento può portare a situazioni pericolose;\nc) non deve essere impedito l'arresto della macchina o del prodotto correlato, se l'ordine di arresto è già stato dato;\nd) nessun elemento mobile della macchina o del prodotto o pezzo correlato trattenuto dalla macchina o dal prodotto correlato deve cadere o essere espulso;\ne) non deve essere impedito l'arresto manuale o automatico degli elementi mobili di qualsiasi tipo;\nf) i dispositivi di protezione devono rimanere pienamente efficaci o dare un comando di arresto.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive le procedure per il ripristino dell'alimentazione senza avviamento inatteso",
+   "La valutazione dei rischi indica misure per prevenire cambiamenti incontrollati dei parametri",
+   "I dispositivi di protezione sono descritti come sempre attivi durante interruzioni di alimentazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.1",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischio di perdita di stabilità",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato, elementi e attrezzature compresi, devono avere una stabilità tale da evitare il rovesciamento, la caduta o gli spostamenti non comandati durante il trasporto, il montaggio, lo smontaggio e tutte le altre azioni che interessano la macchina e il prodotto correlato.\nSe la forma stessa della macchina o del prodotto correlato o la sua installazione prevista non garantiscono sufficiente stabilità, devono essere previsti ed indicati nelle istruzioni per l'uso appositi mezzi di fissaggio.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è stabile contro il ribaltamento durante uso, trasporto e installazione",
+   "Le istruzioni indicano i mezzi di ancoraggio o fissaggio necessari"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.3.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.2",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischio di rottura durante il funzionamento",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Gli elementi delle macchine o dei prodotti correlati, nonché i loro organi di collegamento, devono resistere agli sforzi cui devono essere sottoposti durante l'utilizzazione.\nI materiali utilizzati devono presentare caratteristiche di resistenza sufficienti e adeguate all'ambiente di utilizzazione, previsto dal fabbricante, in particolare per quanto riguarda i fenomeni di fatica, invecchiamento, corrosione e abrasione.\nNelle istruzioni per l'uso devono essere indicati i tipi e le frequenze delle ispezioni e manutenzioni necessarie per motivi di sicurezza. Devono essere indicati dove appropriato gli elementi soggetti ad usura, nonché i criteri di sostituzione.\nSe nonostante le precauzioni prese sussistono rischi di disintegrazione o di rottura, gli elementi in questione devono essere montati, disposti o protetti in modo che i loro eventuali frammenti vengano trattenuti evitando situazioni pericolose.\nLe tubazioni rigide o elastiche contenenti fluidi, in particolare ad alta pressione, devono poter sopportare le sollecitazioni interne ed esterne previste e devono essere solidamente fissate o protette affinché, in caso di rottura, esse non presentino rischi.\nIn caso di alimentazione automatica del materiale da lavorare verso l'utensile, devono essere soddisfatte le condizioni seguenti per evitare rischi per le persone:\na) al momento del contatto tra l’utensile e il pezzo, l'utensile deve aver raggiunto le sue normali condizioni di lavoro;\nb) al momento dell'avviamento e/o dell'arresto dell'utensile (volontario o accidentale), il movimento di alimentazione e il movimento dell'utensile devono essere coordinati.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i criteri di sostituzione degli elementi soggetti ad usura",
+   "Le tubazioni sono fissate o protette per evitare rischi in caso di rottura",
+   "Le istruzioni descrivono le frequenze e i tipi di ispezioni e manutenzioni necessarie",
+   "Gli elementi sono progettati per resistere agli sforzi previsti durante l'utilizzazione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.3",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischi dovuti alla caduta o alla proiezione di oggetti",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Devono essere prese precauzioni per evitare i rischi derivanti dalla caduta o dalla proiezione di oggetti.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure per prevenire la caduta di oggetti",
+   "La documentazione descrive le protezioni contro la proiezione di materiali",
+   "Le istruzioni forniscono informazioni sui dispositivi di fissaggio degli oggetti",
+   "La valutazione dei rischi menziona misure per ridurre i rischi di proiezione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.4",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.4",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischi dovuti a superfici, spigoli o angoli",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Gli elementi accessibili della macchina o di un prodotto correlato devono essere privi, entro i limiti consentiti dalle loro funzioni, di angoli acuti e di spigoli vivi, nonché di superfici rugose che possono causare lesioni.",
+  "old_condition": "",
+  "old_points": [
+   "Le superfici accessibili sono lisce e prive di spigoli vivi",
+   "I bordi delle parti esposte sono arrotondati o smussati",
+   "La documentazione include una descrizione delle superfici non lesive",
+   "Le istruzioni menzionano la manutenzione per preservare la superficie liscia"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.5",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.5",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischi dovuti a una macchina o a un prodotto correlato combinati",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Quando è previsto che la macchina o il prodotto correlato possano eseguire diversi tipi di operazioni con ripresa manuale del pezzo fra ogni operazione (macchina o prodotto correlato combinati), essi devono essere progettati e costruiti in modo che ciascun elemento possa essere utilizzato separatamente senza che gli altri elementi costituiscano un rischio per le persone esposte.\nA tal fine, gli elementi che non siano protetti devono poter essere messi in moto o arrestati individualmente.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono come disattivare singolarmente ogni elemento della macchina",
+   "La documentazione indica le procedure per arrestare ogni elemento separatamente",
+   "Gli schemi mostrano elementi non protetti con collegamenti individuali di comando"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.6",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.6",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischi connessi alle variazioni delle condizioni di funzionamento",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Quando possono effettuare operazioni in condizioni di impiego diverse, la macchina o il prodotto correlato devono essere progettati e costruiti in modo che la scelta e la regolazione di tali condizioni possano essere effettuate in modo sicuro e affidabile.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente le condizioni operative possibili della macchina",
+   "La documentazione indica come regolare le condizioni di funzionamento in modo sicuro",
+   "Le istruzioni forniscono informazioni sui limiti delle condizioni di impiego della macchina",
+   "La macchina è progettata per gestire variazioni delle condizioni di funzionamento senza rischi"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.7",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.7",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischi dovuti a elementi mobili",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Gli elementi mobili della macchina o del prodotto correlato devono essere progettati e costruiti per evitare i rischi di contatto che possono provocare infortuni oppure, se i rischi persistono, essere muniti di ripari o dispositivi di protezione.\nDevono essere adottate tutte le misure necessarie per impedire un bloccaggio improvviso degli elementi mobili. Nei casi in cui, malgrado le precauzioni prese, possa verificarsi un bloccaggio, dovranno essere previsti, ove opportuno, i dispositivi di protezione specifici e gli utensili specifici necessari per permettere lo sbloccaggio in modo sicuro.\nLe istruzioni per l'uso e, ove possibile, un'indicazione sulla macchina o sul prodotto correlato devono individuare tali dispositivi di protezione specifici e la modalità di impiego.\nLa prevenzione di rischi derivanti da contatto che determinano situazioni di pericolo e le tensioni psichiche che possono essere causate dall'interazione con la macchina deve essere adeguata in relazione a:\na) coesistenza uomo-macchina in uno spazio condiviso in assenza di collaborazione diretta;\nb) interazione uomo-macchina.",
+  "old_condition": "",
+  "old_points": [
+   "Gli elementi mobili che possono causare infortuni sono protetti da ripari o dispositivi di protezione"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.3.8",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.8",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Scelta di una protezione contro i rischi dovuti a elementi mobili",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I ripari o i dispositivi di protezione progettati contro i rischi dovuti a elementi mobili devono essere scelti in funzione del tipo di rischio. Per la scelta si deve ricorrere alle linee guida seguenti.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente i rischi legati agli elementi mobili",
+   "I dispositivi di protezione sono selezionati in base al tipo di rischio identificato",
+   "La documentazione indica le caratteristiche tecniche dei ripari o dispositivi di protezione",
+   "Le misure di protezione sono adatte al tipo di movimento e velocità degli elementi mobili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.3.8.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.8.1",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Elementi mobili di trasmissione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I ripari progettati per proteggere le persone dai pericoli creati dagli elementi mobili di trasmissione devono essere:\na) ripari fissi di cui al punto 1.4.2.1; oppure\nb) ripari mobili interbloccati, di cui al punto 1.4.2.2.\nSe si prevedono interventi frequenti, si deve ricorrere a ripari mobili interbloccati.",
+  "old_condition": "La macchina ha elementi mobili di trasmissione (cinghie, catene, pulegge, alberi, giunti)",
+  "old_points": [
+   "Gli elementi mobili di trasmissione sono protetti da ripari fissi o da ripari mobili interbloccati"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.3.8.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.8.2",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Elementi mobili che partecipano alla lavorazione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I ripari o i dispositivi di protezione progettati per proteggere le persone dai pericoli creati dagli elementi mobili che partecipano alla lavorazione devono essere:\na) ripari fissi di cui al punto 1.4.2.1; oppure\nb) ripari mobili interbloccati, di cui al punto 1.4.2.2. oppure\nc) dispositivi di protezione di cui al punto 1.4.3; oppure\nd) una combinazione di quanto sopra.\nTuttavia, se taluni elementi mobili che partecipano direttamente alla lavorazione non possono essere resi interamente inaccessibili durante il loro funzionamento a causa di operazioni che richiedono l'intervento dell'operatore, tali elementi devono essere muniti di:\na) ripari fissi o di ripari mobili interbloccati, che impediscano l'accesso alle parti degli elementi non utilizzate per la lavorazione; e\nb) ripari regolabili di cui al punto 1.4.2.3, che limitino l'accesso alle parti degli elementi mobili cui è necessario accedere.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica i tipi di ripari installati sulla macchina",
+   "I ripari sono descritti come fissi, mobili interbloccati o regolabili",
+   "La documentazione menziona dispositivi di protezione conforme al punto 1.4.3",
+   "La macchina è dotata di ripari che impediscono l'accesso alle parti non utilizzate per la lavorazione"
+  ],
+  "old_status": "bozza"
+ }
+]

@@ -1,7 +1,7 @@
 package it.regmac.desktop;
 
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.parser.PdfTextExtractor;
+import org.apache.pdfbox.Loader;
+import org.apache.pdfbox.text.PDFTextStripper;
 
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -15,6 +15,7 @@ import java.util.zip.ZipInputStream;
 
 /** Estrae il testo dei documenti in brani brevi (una frase o una riga), con pagina e titolo di sezione. */
 public final class TextExtractor {
+  public static final String VERSION = "pdfbox3-context-v1";
   private TextExtractor() { }
 
   public record Passage(String text, int page, String section) { }
@@ -31,11 +32,15 @@ public final class TextExtractor {
   static Result pdf(Path file) throws Exception {
     List<Passage> out = new ArrayList<>();
     int pages, empty = 0;
-    try (PdfReader r = new PdfReader(Files.readAllBytes(file))) {
+    try (var r = Loader.loadPDF(file.toFile())) {
       pages = r.getNumberOfPages();
-      PdfTextExtractor ex = new PdfTextExtractor(r);
+      PDFTextStripper ex = new PDFTextStripper();
+      ex.setSortByPosition(true);
       for (int p = 1; p <= pages; p++) {
-        String t = ex.getTextFromPage(p);
+        ex.setStartPage(p); ex.setEndPage(p);
+        String t;
+        try { t = ex.getText(r); }
+        catch (Exception e) { throw new java.io.IOException("Lettura interrotta alla pagina " + p + "; nessun testo parziale utilizzato", e); }
         if (t == null || t.isBlank()) { empty++; continue; }
         out.addAll(split(t, p, ""));
       }
@@ -82,21 +87,23 @@ public final class TextExtractor {
     if (!block.isEmpty()) { out.addAll(split(block.toString(), page, section)); block.setLength(0); }
   }
 
-  /** Brani: righe e frasi; le frasi brevissime si uniscono alla successiva, quelle lunghe si spezzano. */
+  /** Finestre sovrapposte, sempre nella stessa pagina/sezione: conserva condizioni e frasi vicine. */
   static List<Passage> split(String text, int page, String section) {
     List<Passage> out = new ArrayList<>();
-    String carry = "";
-    for (String line : text.split("\n")) {
-      for (String s : line.strip().split("(?<=[.;!?])\\s+(?=[A-ZÀ-Ú0-9«\"(])")) {
-        String t = (carry + " " + s).strip().replaceAll("\\s+", " ");
-        if (t.isEmpty()) continue;
-        if (t.length() < 30) { carry = t; continue; }
-        carry = "";
-        while (t.length() > 450) { int cut = t.lastIndexOf(' ', 420); if (cut < 200) cut = 420; out.add(new Passage(t.substring(0, cut), page, section)); t = t.substring(cut).strip(); }
-        out.add(new Passage(t, page, section));
+    String t = text.replace('\u00ad', ' ').replaceAll("\\s+", " ").strip();
+    int start = 0;
+    while (start < t.length()) {
+      int end = Math.min(start + 1200, t.length());
+      if (end < t.length()) {
+        int boundary = t.lastIndexOf(' ', end);
+        if (boundary > start) end = boundary;
       }
+      String part = t.substring(start, end).strip();
+      if (!part.isEmpty()) out.add(new Passage(part, page, section));
+      if (end == t.length()) break;
+      int next = t.indexOf(' ', Math.max(start + 1, end - 240));
+      start = next >= 0 && next < end ? next + 1 : end;
     }
-    if (!carry.isBlank()) out.add(new Passage(carry, page, section));
     return out;
   }
 }

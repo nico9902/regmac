@@ -28,10 +28,10 @@ public class Ollama {
    */
   public static final String BASE = System.getProperty("regmac.ollama", "http://127.0.0.1:11435");
   /** Modelli necessari: decisioni (chat) e indice semantico (embedding). */
-  public static final String CHAT = "qwen3:8b", EMBED = "nomic-embed-text";
+  public static final String CHAT = "qwen3:8b", EMBED = System.getProperty("regmac.embedModel", "embeddinggemma");
   public static final List<Model> REQUIRED = List.of(
       new Model(CHAT, "Decisioni sui requisiti e profilo della macchina", 5_200_000_000L),
-      new Model(EMBED, "Indice semantico dei documenti", 274_000_000L));
+      new Model(EMBED, "Ricerca multilingue nei documenti", 622_000_000L));
   public record Model(String name, String role, long approxBytes) { }
   public record Pull(String model, String status, long total, long completed, String error, boolean done) { }
 
@@ -206,18 +206,28 @@ public class Ollama {
     return json.readTree(json.readTree(res.body()).path("message").path("content").asText());
   }
 
-  /** Embedding normalizzati (nomic-embed-text richiede i prefissi di ricerca). */
+  /** Il nome del modello e il formato dei prompt fanno parte della versione della cache. */
+  public static final String EMBED_VERSION = EMBED + "-retrieval-prefix-v1";
+  static String embeddingInput(String text, boolean query) {
+    if (EMBED.startsWith("embeddinggemma")) return (query ? "task: search result | query: " : "title: none | text: ") + text;
+    return (query ? "search_query: " : "search_document: ") + text;
+  }
+
+  /** Embedding normalizzati, senza troncamento silenzioso. */
   public List<float[]> embed(List<String> texts, boolean query) throws Exception {
     List<float[]> out = new ArrayList<>();
     for (int i = 0; i < texts.size(); i += 64) {
-      List<String> batch = texts.subList(i, Math.min(texts.size(), i + 64)).stream().map(t -> (query ? "search_query: " : "search_document: ") + t).toList();
+      List<String> batch = texts.subList(i, Math.min(texts.size(), i + 64)).stream().map(t -> embeddingInput(t, query)).toList();
       var req = HttpRequest.newBuilder(URI.create(BASE + "/api/embed")).timeout(Duration.ofMinutes(5))
-          .POST(HttpRequest.BodyPublishers.ofString(json.writeValueAsString(Map.of("model", EMBED, "input", batch)))).build();
+          .POST(HttpRequest.BodyPublishers.ofString(json.writeValueAsString(Map.of("model", EMBED, "input", batch, "truncate", false)))).build();
       var res = http.send(req, HttpResponse.BodyHandlers.ofString());
       if (res.statusCode() != 200) throw new IllegalStateException("Ollama embed: " + res.body());
-      for (JsonNode v : json.readTree(res.body()).path("embeddings")) {
+      JsonNode vectors = json.readTree(res.body()).path("embeddings");
+      if (vectors.size() != batch.size()) throw new IllegalStateException("Numero di vettori inatteso da Ollama");
+      for (JsonNode v : vectors) {
         float[] f = new float[v.size()]; double norm = 0;
         for (int k = 0; k < f.length; k++) { f[k] = (float) v.get(k).asDouble(); norm += f[k] * f[k]; }
+        if (!Double.isFinite(norm) || norm <= 0) throw new IllegalStateException("Vettore di ricerca non valido");
         norm = Math.sqrt(norm);
         for (int k = 0; k < f.length; k++) f[k] /= (float) norm;
         out.add(f);
@@ -226,5 +236,5 @@ public class Ollama {
     return out;
   }
 
-  public static double cos(float[] a, float[] b) { double s = 0; for (int i = 0; i < a.length; i++) s += a[i] * b[i]; return s; }
+  public static double cos(float[] a, float[] b) { if (a == null || b == null || a.length != b.length) throw new IllegalStateException("Indice da ricostruire: dimensioni dei vettori diverse"); double s = 0; for (int i = 0; i < a.length; i++) s += a[i] * b[i]; return s; }
 }

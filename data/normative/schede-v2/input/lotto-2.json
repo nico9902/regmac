@@ -1,0 +1,986 @@
+[
+ {
+  "id": "MR-III-1.3.9",
+  "law": "MR",
+  "ref": "All. III, punto 1.3.9",
+  "group": "Allegato III — 1.3. Misure di protezione contro i rischi meccanici",
+  "title": "Rischi di movimenti incontrollati",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Quando un elemento della macchina o del prodotto correlato è stato arrestato, la sua deriva dalla posizione di arresto, per qualsiasi causa che non sia l'azionamento di dispositivi di comando, deve essere impedita o essere tale da non presentare un rischio.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per bloccare la deriva dopo l'arresto della macchina",
+   "La valutazione dei rischi include analisi della deriva meccanica in caso di arresto non programmato",
+   "Gli schemi tecnici indicano dispositivi di blocco per prevenire movimenti incontrollati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.4.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.4.1",
+  "group": "Allegato III — 1.4. Caratteristiche richieste per i ripari ed i dispositivi di protezione",
+  "title": "Requisiti generali",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I ripari e i dispositivi di protezione:\na) devono essere di costruzione robusta;\nb) devono essere fissati solidamente;\nc) non devono provocare pericoli supplementari;\nd) non devono essere facilmente elusi o resi inefficaci;\ne) devono essere situati ad una distanza sufficiente dalla zona pericolosa;\nf) non devono limitare più del necessario l'osservazione del ciclo di lavoro; e\ng) devono permettere gli interventi indispensabili per l'installazione e/o la sostituzione degli utensili e per i lavori di manutenzione, limitando però l'accesso soltanto al settore in cui deve essere effettuato il lavoro e, se possibile, senza smontare il riparo o senza disattivare il dispositivo di protezione.\nInoltre, se possibile, i ripari devono proteggere dalla caduta e dalla proiezione di materiali o oggetti e dalle emissioni provocate dalla macchina o dal prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "I ripari sono costruiti in materiali robusti e resistenti",
+   "I dispositivi di protezione sono fissati in modo permanente e sicuro",
+   "I ripari sono posizionati a distanza sufficiente dalla zona pericolosa"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.4.2.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.4.2.1",
+  "group": "Allegato III — 1.4. Caratteristiche richieste per i ripari ed i dispositivi di protezione",
+  "title": "Ripari fissi",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Il fissaggio dei ripari fissi deve essere ottenuto con sistemi che richiedono l'uso di utensili per la loro apertura o smontaggio.\nI sistemi di fissaggio devono rimanere attaccati ai ripari o alla macchina o al prodotto correlato quando i ripari sono rimossi.\nSe possibile, i ripari non devono poter rimanere al loro posto in mancanza dei loro mezzi di fissaggio.",
+  "old_condition": "La macchina ha ripari fissi",
+  "old_points": [
+   "I ripari fissi si possono aprire o smontare solo con un utensile",
+   "Gli elementi di fissaggio restano attaccati al riparo o alla macchina quando il riparo è rimosso"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.4.2.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.4.2.2",
+  "group": "Allegato III — 1.4. Caratteristiche richieste per i ripari ed i dispositivi di protezione",
+  "title": "Ripari mobili interbloccati",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I ripari mobili interbloccati devono:\na) per quanto possibile restare uniti alla macchina o al prodotto correlato quando siano aperti;\nb) essere progettati e costruiti in modo che la loro regolazione richieda un intervento volontario.\nI ripari mobili interbloccati devono essere associati ad un dispositivo di interblocco che:\na) impedisca l'avviamento di funzioni pericolose della macchina o del prodotto correlato fin quando i ripari sono chiusi; e\nb) dia un comando di arresto non appena i ripari non sono più chiusi.\nSe un operatore può raggiungere la zona pericolosa prima che sia cessato il rischio dovuto alle funzioni pericolose della macchina o del prodotto correlato, i ripari mobili devono essere associati ad un dispositivo di bloccaggio del riparo, oltre che ad un dispositivo di interblocco che:\na) impedisca l'avviamento delle funzioni pericolose della macchina o del prodotto correlato fin quando il riparo non è chiuso e bloccato; e\nb) tenga il riparo chiuso e bloccato fin quando non è cessato il rischio di lesioni dovuto alle funzioni pericolose della macchina o del prodotto correlato.\nI ripari mobili interbloccati devono essere progettati in modo che la mancanza o il guasto di uno dei loro elementi impedisca l'avviamento o provochi l'arresto delle funzioni pericolose della macchina o del prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente il funzionamento dei ripari mobili interbloccati",
+   "I ripari mobili interbloccati rimangono collegati alla macchina quando sono aperti",
+   "I dispositivi di interblocco impediscono l'avviamento quando i ripari sono chiusi",
+   "I ripari mobili sono associati a dispositivi di bloccaggio in caso di accesso anticipato alla zona pericolosa"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.4.2.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.4.2.3",
+  "group": "Allegato III — 1.4. Caratteristiche richieste per i ripari ed i dispositivi di protezione",
+  "title": "Ripari regolabili che limitano l'accesso",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I ripari regolabili che limitano l'accesso alle parti degli elementi mobili indispensabili alla lavorazione devono:\na) potersi regolare manualmente o automaticamente a seconda del tipo di lavorazione da eseguire; e\nb) potersi regolare facilmente senza l'uso di un attrezzo.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono come regolare i ripari in base al tipo di lavorazione",
+   "La documentazione indica i metodi di regolazione senza l'uso di attrezzi",
+   "I disegni tecnici mostrano ripari con meccanismi di regolazione accessibili",
+   "La valutazione dei rischi menziona la facilità di regolazione dei ripari"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.4.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.4.3",
+  "group": "Allegato III — 1.4. Caratteristiche richieste per i ripari ed i dispositivi di protezione",
+  "title": "Requisiti particolari per i dispositivi di protezione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I dispositivi di protezione devono essere progettati e incorporati nel sistema di comando in modo tale che:\na) la messa in moto degli elementi mobili non sia possibile fintantoché l'operatore può raggiungerli;\nb) le persone non possano accedere agli elementi mobili in movimento; e\nc) la mancanza o il guasto di uno dei loro elementi impedisca l'avviamento o provochi l'arresto degli elementi mobili.\nLa loro regolazione deve richiedere un intervento volontario.",
+  "old_condition": "",
+  "old_points": [
+   "I dispositivi di protezione sono integrati nel sistema di comando della macchina",
+   "La regolazione dei dispositivi di protezione richiede un intervento volontario da parte dell'operatore",
+   "I dispositivi di protezione impediscono l'avviamento degli elementi mobili in caso di guasto",
+   "I dispositivi di protezione impediscono l'accesso agli elementi mobili in movimento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.1",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Energia elettrica",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Se sono alimentati con energia elettrica, le macchine o i prodotti correlati devono essere progettati, costruiti ed equipaggiati in modo da prevenire o da consentire di prevenire tutti i pericoli dovuti all'energia elettrica.\nGli obiettivi di sicurezza fissati dalla direttiva 2014/35/UE si applicano alle macchine o ai prodotti correlati. Tuttavia, gli obblighi concernenti la valutazione della conformità e l'immissione sul mercato o la messa in servizio di macchine o di prodotti correlati in relazione ai pericoli dovuti all'energia elettrica sono disciplinati esclusivamente dal presente regolamento.",
+  "old_condition": "La macchina è alimentata con energia elettrica",
+  "old_points": [
+   "L'equipaggiamento elettrico è progettato secondo una norma di sicurezza elettrica (es. EN 60204-1)",
+   "Sono previste protezioni contro i contatti diretti e indiretti"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.5.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.2",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Elettricità statica",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da evitare o da ridurre la formazione di cariche elettrostatiche potenzialmente pericolose e/o devono essere muniti di mezzi che consentano di scaricarle.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano misure per ridurre la formazione di cariche elettrostatiche",
+   "La macchina è dotata di dispositivi per la scarica di cariche elettrostatiche",
+   "Le istruzioni descrivono procedure per prevenire la formazione di cariche pericolose",
+   "La documentazione menziona materiali utilizzati per ridurre l'accumulo di cariche elettrostatiche"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.3",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Alimentazione diversa dall'energia elettrica",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Se sono alimentati da fonti di energia diverse da quella elettrica, le macchine o i prodotti correlati devono essere progettati, costruiti ed equipaggiati in modo da prevenire tutti i rischi che possono derivare da tali fonti di energia.",
+  "old_condition": "La macchina è alimentata da fonti di energia diverse dall'energia elettrica",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione contro le fonti di energia alternative",
+   "La valutazione dei rischi include analisi specifiche per le fonti di energia non elettriche",
+   "Gli schemi tecnici mostrano dispositivi di interruzione per le fonti di energia alternative"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.4",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.4",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Errori di montaggio",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Gli errori commessi al montaggio o al rimontaggio di taluni pezzi, che potrebbero essere all'origine di rischi, devono essere resi impossibili dalla progettazione e dalla costruzione degli stessi oppure mediante indicazioni figuranti sui pezzi o sui loro carter. Le stesse indicazioni devono figurare sugli elementi mobili o sui loro carter, qualora occorra conoscere il senso del moto per evitare rischi.\nSe del caso, nelle istruzioni per l'uso devono figurare informazioni supplementari su tali rischi.\nSe l'origine dei rischi può essere dovuta ad un collegamento difettoso, la progettazione o le indicazioni figuranti sugli elementi da collegare e, se del caso, sui mezzi di collegamento devono rendere impossibili i raccordi errati.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il senso di movimento degli elementi mobili",
+   "I pezzi sono contrassegnati per evitare montaggi errati",
+   "Le indicazioni sui carteri prevennero raccordi impropri"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.5",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.5",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Temperature estreme",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Devono essere adottate opportune misure per evitare qualsiasi rischio di lesioni causate dal contatto o dalla vicinanza con parti della macchina o del prodotto correlato o materiali a temperatura elevata o molto bassa.\nDevono inoltre essere adottate le misure necessarie per evitare i rischi di proiezione di materiali molto caldi o molto freddi o per proteggere da tali rischi.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le temperature massime e minime delle parti accessibili",
+   "Le istruzioni descrivono le misure di protezione contro proiezioni di calore o freddo",
+   "Le istruzioni segnalano le zone della macchina a rischio di contatto con materiali a temperatura estrema",
+   "Le istruzioni forniscono informazioni sui dispositivi di interruzione automatica in caso di sovraccarico termico"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.6",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.6",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Incendio",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da evitare qualsiasi rischio d'incendio o di surriscaldamento presentato dalla macchina stessa o dal prodotto correlato stesso o da gas, liquidi, polveri, vapori od altre sostanze, prodotti o utilizzati dalla macchina o dal prodotto correlato.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione contro il surriscaldamento",
+   "La valutazione dei rischi include analisi delle sostanze combustibili utilizzate",
+   "I materiali utilizzati sono selezionati per ridurre il rischio di incendio",
+   "Le istruzioni descrivono procedure per prevenire la formazione di polveri infiammabili"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.7",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.7",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Esplosione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da evitare qualsiasi rischio di esplosione presentato dalla macchina stessa o dal prodotto correlato stesso o da gas, liquidi, polveri, vapori od altre sostanze prodotti o utilizzati dalla macchina o dal prodotto correlato.\nLe macchine o i prodotti correlati devono essere conformi, per quanto riguarda i rischi di esplosione dovuti all'utilizzo in atmosfera potenzialmente esplosiva, alla specifica normativa di armonizzazione dell'Unione.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione contro esplosioni",
+   "La macchina è conforme alle normative di armonizzazione UE per atmosfere esplosive",
+   "I materiali utilizzati non presentano rischi di generazione di polveri esplosive",
+   "Le istruzioni forniscono informazioni sui limiti di concentrazione di gas o vapori"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.8",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.8",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Rumore",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo tale che i rischi dovuti all'emissione di rumore aereo siano ridotti al livello minimo, tenuto conto del progresso tecnico e della possibilità di disporre di mezzi atti a limitare il rumore, in particolare alla fonte.\nIl livello dell'emissione di rumore può essere valutato in riferimento ai dati comparativi di emissione di macchine o prodotti correlati simili.",
+  "old_condition": "",
+  "old_points": [
+   "Il rumore emesso è ridotto alla fonte con misure di progettazione",
+   "Il livello di emissione sonora è misurato e dichiarato"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.5.9",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.9",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Vibrazioni",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo tale che i rischi dovuti alle vibrazioni trasmesse dalle stesse o dagli stessi siano ridotti al livello minimo, tenuto conto del progresso tecnico e della disponibilità di mezzi atti a ridurre le vibrazioni, in particolare alla fonte.\nIl livello dell'emissione di vibrazioni può essere valutato in riferimento ai dati comparativi di emissione di macchine o prodotti correlati simili.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano misure per ridurre le vibrazioni durante l'uso",
+   "La documentazione riporta valori di vibrazione confrontabili con macchine simili",
+   "Le istruzioni descrivono modalità operative per minimizzare le vibrazioni",
+   "La macchina è progettata con elementi che limitano la trasmissione delle vibrazioni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.10",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.10",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Radiazione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le emissioni indesiderabili di radiazioni da parte delle macchine o dei prodotti correlati devono essere eliminate o ridotte a livelli che non producono effetti negativi sulle persone. Ogni emissione di radiazioni ionizzanti funzionali deve essere ridotta al livello minimo sufficiente per il corretto funzionamento della macchina o del prodotto correlato durante la regolazione, il funzionamento e la pulizia. Qualora sussistano rischi si devono prendere le necessarie misure di protezione. Ogni emissione di radiazioni non ionizzanti funzionali durante la regolazione, il funzionamento e la pulizia deve essere ridotta a livelli che non producono effetti negativi sulle persone.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il livello di radiazione non ionizzante durante l'uso",
+   "La macchina è dotata di dispositivi di protezione contro le radiazioni ionizzanti",
+   "Le istruzioni descrivono le misure di riduzione delle emissioni di radiazioni durante la pulizia"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.11",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.11",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Radiazioni esterne",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo tale che il loro funzionamento non sia perturbato dalle radiazioni esterne.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di protezione contro radiazioni esterne",
+   "La valutazione dei rischi include analisi delle radiazioni esterne",
+   "Gli schemi mostrano isolamenti e schermature contro radiazioni esterne"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.12",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.12",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Radiazioni laser",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "In caso di impiego di dispositivi laser, deve essere preso in considerazione quanto segue:\na) i dispositivi laser montati su macchine o su prodotti correlati devono essere progettati e costruiti in modo da evitare qualsiasi radiazione involontaria;\nb) i dispositivi laser montati su macchine o su prodotti correlati devono essere protetti in modo tale che né le radiazioni utili, né le radiazioni prodotte da riflessione o da diffusione e le radiazioni secondarie possano nuocere alla salute;\nc) i dispositivi ottici per l'osservazione o la regolazione di dispositivi laser montati su macchine o su prodotti correlati devono essere tali che le radiazioni laser non creino alcun rischio per la salute.",
+  "old_condition": "La macchina impiega dispositivi laser",
+  "old_points": [
+   "I dispositivi laser sono progettati per evitare radiazioni involontarie"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.5.13",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.13",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Emissioni di materie e sostanze pericolose",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo tale da evitare i rischi di inalazione, ingestione, contatto con la pelle, gli occhi e le mucose e di penetrazione attraverso la pelle delle materie e sostanze pericolose prodotte. Se il pericolo non può essere eliminato, la macchina o il prodotto correlato devono essere equipaggiati in modo che le materie e sostanze pericolose possano essere contenute, captate, aspirate, precipitate mediante vaporizzazione di acqua, filtrate o trattate con un altro metodo altrettanto efficace. Qualora il processo non sia totalmente chiuso durante il normale funzionamento della macchina o del prodotto correlato, i dispositivi di contenimento, captazione, filtrazione, separazione o aspirazione devono essere situati in modo da produrre il massimo effetto.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le misure di contenimento per sostanze pericolose",
+   "La valutazione dei rischi descrive metodi di captazione delle sostanze pericolose",
+   "Gli schemi mostrano dispositivi di filtrazione per sostanze pericolose"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.14",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.14",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Rischio di restare imprigionati in una macchina",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati, costruiti o dotati di mezzi che consentano di evitare che una persona resti chiusa all'interno o, se ciò non fosse possibile, devono essere dotati di mezzi per chiedere aiuto.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono procedure per liberare una persona imprigionata all'interno della macchina",
+   "La macchina è dotata di un sistema di allarme per chiedere aiuto in caso di blocco",
+   "Le istruzioni indicano l'accesso a un contatto di emergenza esterno",
+   "La macchina include un mezzo per comunicare con l'esterno in caso di imprigionamento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.15",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.15",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Rischio di scivolamento, inciampo o caduta",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le parti della macchina o del prodotto correlato sulle quali è previsto lo spostamento o lo stazionamento delle persone devono essere progettate e costruite in modo da evitare che esse scivolino, inciampino o cadano su tali parti o fuori di esse. Se opportuno, dette parti devono essere dotate di mezzi di presa fissi rispetto all'utilizzatore che gli consentano di mantenere la stabilità.",
+  "old_condition": "",
+  "old_points": [
+   "Le superfici di accesso sono progettate per ridurre il rischio di scivolamento",
+   "Le parti accessibili sono dotate di mezzi di presa fissi per garantire la stabilità",
+   "Le istruzioni indicano misure per prevenire inciambi o cadute durante l'uso",
+   "La macchina è progettata per evitare accessi a zone pericolose da parte degli operatori"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.5.16",
+  "law": "MR",
+  "ref": "All. III, punto 1.5.16",
+  "group": "Allegato III — 1.5. Rischi dovuti ad altre cause",
+  "title": "Fulmini",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati che necessitano di protezione dagli effetti di fulmini durante l'uso devono essere equipaggiati in modo da scaricare al suolo le eventuali scariche elettriche.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di un sistema di scarica a terra per fulmini",
+   "Le istruzioni descrivono le procedure per la protezione contro i fulmini",
+   "La documentazione include schemi elettrici con collegamenti a terra",
+   "La macchina presenta dispositivi di protezione contro sovratensioni da fulmini"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.6.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.6.1",
+  "group": "Allegato III — 1.6. Manutenzione",
+  "title": "Manutenzione delle macchine o dei prodotti correlati",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "I punti di regolazione e di manutenzione devono essere situati fuori dalle zone pericolose. Gli interventi di regolazione, di manutenzione, di riparazione e di pulizia devono poter essere eseguiti quando la macchina o il prodotto correlato sono fermi.\nSe per motivi tecnici non è possibile soddisfare una delle precedenti condizioni, devono essere adottate misure per garantire che dette operazioni possano essere eseguite in condizioni di sicurezza (cfr. punto 1.2.5).\nPer le macchine automatizzate e, se del caso, per altre macchine o altri prodotti correlati, deve essere previsto un dispositivo di connessione che consenta di montare un dispositivo di diagnosi di ricerca delle avarie.\nGli elementi delle macchine automatizzate o dei prodotti correlati che devono essere sostituiti frequentemente devono essere facilmente smontabili e rimontabili in condizioni di sicurezza. L'accesso a tali elementi deve consentire di svolgere questi compiti con i mezzi tecnici necessari secondo il metodo operativo previsto.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la posizione dei punti di manutenzione fuori dalle zone pericolose",
+   "Le operazioni di manutenzione sono descritte come eseguibili quando la macchina è ferma",
+   "La macchina è dotata di dispositivo di connessione per la diagnosi delle avarie",
+   "Gli elementi sostituibili sono descritti come facilmente smontabili in sicurezza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.6.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.6.2",
+  "group": "Allegato III — 1.6. Manutenzione",
+  "title": "Accesso alle postazioni di lavoro e ai punti d'intervento utilizzati per la manutenzione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere progettati e costruiti in modo da permettere l'accesso in condizioni di sicurezza a tutte le zone in cui è necessario intervenire durante il funzionamento, la regolazione e la manutenzione della macchina o del prodotto correlato.\nNel caso di macchine o di prodotti correlati nei quali le persone devono entrare per azionarli, effettuarne la regolazione, la manutenzione o la pulizia, gli accessi a tali macchine o prodotti correlati devono essere dimensionati e adattati per l'uso di attrezzature di soccorso in modo tale da rendere possibile un soccorso di emergenza alle persone.",
+  "old_condition": "",
+  "old_points": [
+   "Il manuale descrive chiaramente le zone accessibili per la manutenzione",
+   "Le istruzioni indicano le procedure per l'accesso sicuro alle postazioni di lavoro",
+   "La documentazione include schemi che mostrano le aree accessibili durante la manutenzione"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.6.3",
+  "law": "MR",
+  "ref": "All. III, punto 1.6.3",
+  "group": "Allegato III — 1.6. Manutenzione",
+  "title": "Isolamento dalle fonti di energia",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le macchine o i prodotti correlati devono essere muniti di dispositivi che consentono di isolarli da ciascuna delle loro fonti di energia. Tali dispositivi devono essere identificati chiaramente. Essi devono poter essere bloccati, qualora la riconnessione possa rappresentare un pericolo per le persone. I dispositivi devono inoltre poter essere bloccati nel caso in cui l'operatore non possa verificare l'effettivo costante isolamento da tutte le posizioni cui ha accesso.\nNel caso di macchine o di prodotti correlati che possono essere alimentati ad energia elettrica mediante una spina ad innesto, è sufficiente la rimozione della spina, qualora l'operatore possa verificare da tutte le posizioni cui ha accesso, che la spina resti disinserita.\nL'eventuale energia residua o immagazzinata dopo l'isolamento della macchina o del prodotto correlato deve poter essere dissipata senza rischio per le persone.\nIn deroga al requisito dei commi precedenti, taluni circuiti possono non essere separati dalla loro fonte di energia onde consentire, ad esempio, il supporto di pezzi, la tutela di informazioni, l'illuminazione delle parti interne, ecc. In questo caso devono essere adottate misure particolari per garantire la sicurezza degli operatori.",
+  "old_condition": "",
+  "old_points": [
+   "Esiste un dispositivo che isola la macchina da ciascuna fonte di energia, chiaramente identificato",
+   "Il dispositivo di isolamento è bloccabile (es. con lucchetto) in posizione di isolamento",
+   "Le energie residue (es. pressione idraulica, condensatori) possono essere scaricate"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.6.4",
+  "law": "MR",
+  "ref": "All. III, punto 1.6.4",
+  "group": "Allegato III — 1.6. Manutenzione",
+  "title": "Intervento dell'operatore",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono essere progettati, costruiti ed equipaggiati in modo tale da limitare la necessità d'intervento dell’operatore. L'intervento di un operatore, ogniqualvolta non possa essere evitato, deve poter essere effettuato facilmente e in condizioni di sicurezza.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per l'intervento dell'operatore in sicurezza",
+   "La macchina è dotata di dispositivi di interruzione automatica per l'intervento manuale",
+   "Le istruzioni forniscono informazioni chiare sulle condizioni di sicurezza durante l'intervento",
+   "La macchina presenta accessi protetti per l'intervento dell'operatore"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.6.5",
+  "law": "MR",
+  "ref": "All. III, punto 1.6.5",
+  "group": "Allegato III — 1.6. Manutenzione",
+  "title": "Pulizia delle parti interne",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "La macchina o il prodotto correlato devono essere progettati e costruiti in modo che la pulizia delle parti interne che hanno contenuto sostanze o miscele pericolose sia possibile senza penetrare in tali parti interne; anche un eventuale svuotamento completo deve poter essere compiuto dall'esterno. Se è impossibile evitare di penetrarvi, la macchina o il prodotto correlato devono essere progettati e costruiti in modo da consentire di effettuare la pulizia in condizioni di sicurezza.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono come svuotare le parti interne dall'esterno",
+   "Le istruzioni indicano come pulire le parti interne senza entrare in contatto diretto",
+   "La valutazione dei rischi menziona misure per garantire la sicurezza durante la pulizia"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.1",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Informazioni e avvertenze sulla macchina o sul prodotto correlato",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le informazioni e le avvertenze sulla macchina o sul prodotto correlato dovrebbero essere fornite preferibilmente in forma di simboli o pittogrammi facilmente comprensibili.\nLe informazioni e le avvertenze scritte o verbali devono essere espresse in una lingua stabilita dallo Stato membro interessato, facilmente comprensibile dagli utilizzatori finali.",
+  "old_condition": "",
+  "old_points": [
+   "Le avvertenze sono rappresentate da simboli o pittogrammi facilmente comprensibili",
+   "Le informazioni sono fornite in una lingua stabilita dallo Stato membro interessato",
+   "Le istruzioni menzionano le misure di protezione contro i rischi identificati"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.1.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.1.1",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Informazioni e dispositivi di informazione",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Le informazioni necessarie alla guida di una macchina o di un prodotto correlato devono essere fornite in forma chiara e facilmente comprensibile. Non devono essere in quantità tale da sovraccaricare l'operatore.\nLe unità di visualizzazione o qualsiasi altro mezzo di comunicazione interattiva tra l'operatore e la macchina o il prodotto correlato devono essere di facile comprensione e impiego.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano chiaramente le informazioni relative alla sicurezza dell'operatore",
+   "Le informazioni sono presentate in modo semplice e facilmente comprensibile per l'operatore",
+   "La documentazione include una descrizione chiara delle funzioni principali della macchina",
+   "Le istruzioni forniscono informazioni sufficienti per la corretta gestione delle emergenze"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.1.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.1.2",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Dispositivi di allarme",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Quando la sicurezza e la salute delle persone possono essere messe in pericolo da un'avaria nel funzionamento di una macchina o di un prodotto correlato non sorvegliati, tale macchina o prodotto correlato devono essere attrezzati in modo da emettere un segnale di avvertenza sonoro o luminoso adeguato.\nSe la macchina o il prodotto correlato sono muniti di dispositivi di avvertenza, questi ultimi devono poter essere compresi senza ambiguità e facilmente percepiti. Devono essere adottate misure opportune per consentire all'operatore di verificare la costante efficienza di tali dispositivi di avvertenza.\nDevono essere applicate le disposizioni degli atti giuridici specifici dell'Unione concernenti i colori e i segnali di sicurezza.",
+  "old_condition": "",
+  "old_points": [
+   "I dispositivi di allarme sono descritti con colori e segnali conformi agli atti giuridici dell'Unione",
+   "La documentazione menziona procedure per verificare l'efficienza dei dispositivi di allarme",
+   "I segnali di allarme sono descritti come chiari e facilmente percepibili dall'operatore"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.2",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.2",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Avvertenze in merito ai rischi residui",
+  "tags": [
+   "generale"
+  ],
+  "always": false,
+  "text": "Nel caso in cui permangano dei rischi, malgrado siano state adottate le misure di protezione integrate nella progettazione, le protezioni e le misure di protezione complementari, devono essere previste le necessarie avvertenze, compresi i dispositivi di avvertenza.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i rischi residui e le relative avvertenze",
+   "La documentazione include dispositivi di avvertenza per i rischi residui",
+   "Le misure di protezione complementari sono descritte con relative avvertenze",
+   "Le avvertenze sono visibili e accessibili al personale operatore"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.3-c1",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.3, comma 1",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Marcatura delle macchine o dei prodotti correlati — comma 1",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "Oltre ai requisiti di marcatura di cui agli articoli 10 e 24, le macchine o i prodotti correlati devono recare una marcatura visibile, leggibile e indelebile.",
+  "old_condition": "",
+  "old_points": [
+   "La marcatura è visibile, leggibile e indelebile sulla macchina",
+   "La marcatura include il numero di serie della macchina",
+   "La marcatura indica la data di immatricolazione della macchina",
+   "La marcatura riporta il nome e l'indirizzo del fabbricante"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.3-c2",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.3, comma 2",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Marcatura delle macchine o dei prodotti correlati — comma 2",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "Le macchine o i prodotti correlati di cui ai capi da 2 a 6 del presente allegato devono recare una marcatura conforme ai requisiti supplementari indicati in tali capi.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina è dotata di dispositivi di blocco per prevenire l'avviamento accidentale",
+   "La dichiarazione di conformità include la valutazione dei rischi completa",
+   "Gli schemi elettrici mostrano l'ubicazione dei dispositivi di interruzione d'urgenza"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.3-c3",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.3, comma 3",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Marcatura delle macchine o dei prodotti correlati — comma 3",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "Inoltre la macchina o un prodotto correlato progettati e costruiti per l'utilizzo in atmosfera esplosiva devono recare l'apposita marcatura.",
+  "old_condition": "",
+  "old_points": [
+   "La macchina indica la marcatura specifica per atmosfere esplosive",
+   "La documentazione tecnica menziona la marcatura richiesta per l'ambiente di utilizzo",
+   "La dichiarazione di conformità include la marcatura per atmosfere esplosive",
+   "Le istruzioni operative riportano la marcatura necessaria per l'ambiente esplosivo"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.3-c4",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.3, comma 4",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Marcatura delle macchine o dei prodotti correlati — comma 4",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "Le macchine o i prodotti correlati devono altresì recare indicazioni complete riguardanti il proprio tipo, nonché le indicazioni indispensabili alla sicurezza di utilizzo. Tali informazioni sono soggette ai requisiti di cui al punto 1.7.1.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano il tipo di macchina e le sue caratteristiche principali",
+   "La valutazione dei rischi include analisi delle fonti di pericolo e misure di protezione",
+   "La dichiarazione di conformità menziona i requisiti di sicurezza applicabili",
+   "Gli schemi tecnici mostrano le indicazioni di sicurezza accessibili all'utente"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.3-c5",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.3, comma 5",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Marcatura delle macchine o dei prodotti correlati — comma 5",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "Se un elemento della macchina o di un prodotto correlato deve essere movimentato durante l'utilizzazione con mezzi di sollevamento, la sua massa deve essere indicata in modo leggibile, indelebile e non ambiguo.",
+  "old_condition": "",
+  "old_points": [
+   "La documentazione indica la massa dell'elemento movimentabile in modo leggibile e indelebile",
+   "La massa dell'elemento movimentabile è specificata in modo non ambiguo nel manuale di utilizzo",
+   "La valutazione dei rischi menziona la massa dell'elemento movimentabile in modo chiaro e preciso"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Istruzioni per l'uso",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "In aggiunta agli obblighi di cui all'articolo 10, paragrafo 7, le istruzioni per l'uso sono redatte come segue.\nIn deroga all'articolo 10, paragrafo 7, le istruzioni per la manutenzione destinate ad essere usate da personale specializzato incaricato dal fabbricante o dal suo mandatario possono essere fornite in una sola lingua ufficiale dell'Unione compresa da detto personale.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni per l'uso sono fornite nella lingua del paese di utilizzo",
+   "Le istruzioni descrivono uso previsto, installazione, regolazione e manutenzione in sicurezza",
+   "Le istruzioni indicano i rischi residui e le misure di protezione a carico dell'utilizzatore"
+  ],
+  "old_status": "rivista"
+ },
+ {
+  "id": "MR-III-1.7.4.1",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.1",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Principi generali di redazione delle istruzioni per l'uso",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "a) Il contenuto delle istruzioni per l'uso non deve riguardare soltanto l'uso previsto della macchina o del prodotto correlato, ma deve tener conto anche dell'uso scorretto ragionevolmente prevedibile.\nb) In caso di macchine o di prodotti correlati destinati all'utilizzazione da parte di operatori non professionali, la redazione e la presentazione delle istruzioni per l'uso devono tenere conto del livello di formazione generale e della perspicacia che ci si può ragionevolmente aspettare da tali operatori.",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano i rischi derivanti dall'uso scorretto della macchina",
+   "Le istruzioni forniscono istruzioni chiare per l'uso da parte di operatori non professionali",
+   "Le istruzioni menzionano le misure di protezione contro l'accesso non autorizzato",
+   "Le istruzioni descrivono le procedure di emergenza in caso di guasto"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-a",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera a)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. a)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\na) la ragione sociale e l’indirizzo completo del fabbricante e, se del caso, del suo mandatario;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la ragione sociale del fabbricante",
+   "Le istruzioni riportano l'indirizzo completo del fabbricante",
+   "Le istruzioni menzionano il mandatario, se presente"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-b",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera b)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. b)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nb) la designazione della macchina o del prodotto correlato, come indicato sulla macchina stessa o sul prodotto correlato stesso, eccetto il numero di serie (cfr. punto 1.7.3);",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano la designazione della macchina come indicata sulla stessa",
+   "Le istruzioni menzionano il prodotto correlato, se presente, come indicato sul prodotto stesso",
+   "Le istruzioni riportano la designazione della macchina in modo chiaro e leggibile",
+   "Le istruzioni includono la designazione della macchina in corrispondenza delle istruzioni operative"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-c",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera c)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. c)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nc) la dichiarazione di conformità UE o l'indirizzo internet o il codice ottico dove è possibile accedere alla dichiarazione di conformità UE, conformemente all'articolo 10, paragrafo 8;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano l'indirizzo internet per la dichiarazione di conformità UE",
+   "Le istruzioni riportano il codice ottico per accedere alla dichiarazione di conformità UE",
+   "Le istruzioni menzionano la dichiarazione di conformità UE in modo visibile e accessibile"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-d",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera d)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. d)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nd) una descrizione generale della macchina o del prodotto correlato;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni forniscono una descrizione chiara della macchina",
+   "Le istruzioni menzionano le caratteristiche principali del prodotto",
+   "Le istruzioni descrivono l'uso previsto del prodotto correlato"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-e",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera e)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. e)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\ne) i disegni, i diagrammi, le descrizioni e le spiegazioni necessari per l'uso, la manutenzione e la riparazione della macchina o del prodotto correlato e per verificarne il corretto funzionamento;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni includono disegni dettagliati per la manutenzione dei componenti accessibili",
+   "Le istruzioni descrivono passaggi chiari per la verifica del corretto funzionamento dei sistemi",
+   "Le istruzioni forniscono spiegazioni su come riparare elementi soggetti a usura"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-f",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera f)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. f)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nf) una descrizione della o delle postazioni di lavoro che possono essere occupate dagli operatori;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le postazioni di lavoro occupabili dagli operatori",
+   "Le istruzioni indicano le caratteristiche delle postazioni di lavoro occupabili",
+   "Le istruzioni menzionano le condizioni di sicurezza per le postazioni di lavoro"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-g",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera g)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. g)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\ng) una descrizione dell'uso previsto della macchina o del prodotto correlato;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono chiaramente l'uso previsto della macchina",
+   "Le istruzioni indicano le condizioni ambientali necessarie per l'uso",
+   "Le istruzioni menzionano le attività operative tipiche della macchina"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-h",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera h)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. h)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nh) le avvertenze concernenti i modi nei quali la macchina o il prodotto correlato non devono essere usati e che potrebbero, in base all'esperienza, presentarsi;",
+  "old_condition": "La macchina presenta modalità di funzionamento diverse",
+  "old_points": [
+   "Le istruzioni indicano i modi di utilizzo non consentiti per ogni modalità di funzionamento",
+   "Le istruzioni elencano le conseguenze potenziali di un uso improprio per ogni modalità di funzionamento",
+   "Le istruzioni specificano le limitazioni operative per ogni modalità di funzionamento"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-i",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera i)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. i)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\ni) le istruzioni per il montaggio, l'installazione e il collegamento, inclusi i disegni e i diagrammi e i sistemi di fissaggio e la designazione del telaio o dell'installazione su cui la macchina o il prodotto correlato devono essere montati;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono dettagliatamente il sistema di fissaggio della macchina",
+   "Le istruzioni includono disegni e diagrammi per il collegamento elettrico",
+   "Le istruzioni indicano la designazione del telaio su cui la macchina deve essere montata"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-j",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera j)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. j)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nj) le istruzioni per l'installazione e il montaggio volte a ridurre il rumore e le vibrazioni prodotti;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni indicano le procedure per ridurre le vibrazioni durante l'installazione",
+   "Le istruzioni forniscono istruzioni dettagliate per l'installazione silenziosa",
+   "Le istruzioni menzionano l'uso di elementi di fissaggio per ridurre le vibrazioni"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-k",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera k)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. k)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nk) le istruzioni per la messa in servizio e l'uso della macchina o del prodotto correlato e, se necessario, le istruzioni per la formazione degli operatori;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni descrivono le procedure per la messa in servizio della macchina",
+   "Le istruzioni forniscono istruzioni dettagliate per l'uso sicuro della macchina",
+   "Le istruzioni indicano le modalità di formazione degli operatori previste"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-l",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera l)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. l)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nl) le informazioni in merito ai rischi residui che permangono, malgrado siano state adottate le misure di protezione integrate nella progettazione e malgrado le protezioni e le misure di protezione complementari adottate;",
+  "old_condition": "",
+  "old_points": [
+   "Le istruzioni per l'uso elencano i rischi residui non eliminabili",
+   "Le istruzioni indicano le misure di protezione integrate nella progettazione",
+   "Le istruzioni descrivono le protezioni complementari adottate"
+  ],
+  "old_status": "bozza"
+ },
+ {
+  "id": "MR-III-1.7.4.2-m",
+  "law": "MR",
+  "ref": "All. III, punto 1.7.4.2, lettera m)",
+  "group": "Allegato III — 1.7. Informazioni",
+  "title": "Contenuto delle istruzioni per l'uso — lett. m)",
+  "tags": [
+   "generale"
+  ],
+  "always": true,
+  "text": "1. Le istruzioni per l'uso devono contenere, se del caso, almeno le informazioni seguenti:\nm) le istruzioni sulle misure di protezione che devono essere adottate dall'utilizzatore, incluse, se del caso, le attrezzature di protezione individuale che devono essere fornite;",
+  "old_condition": "La macchina richiede l'uso di attrezzature di protezione individuale",
+  "old_points": [
+   "Le istruzioni indicano le attrezzature di protezione individuale da fornire",
+   "Le istruzioni descrivono le misure di protezione da adottare dall'utilizzatore",
+   "Le istruzioni specificano le procedure di sicurezza durante l'uso della macchina"
+  ],
+  "old_status": "bozza"
+ }
+]

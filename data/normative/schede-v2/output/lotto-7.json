@@ -1,0 +1,684 @@
+{
+  "CRA-ART13-21": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La politica di gestione delle vulnerabilità descrive la procedura per le azioni correttive in caso di non conformità del prodotto dopo l'immissione sul mercato",
+        "doc": "cybersicurezza",
+        "ok": "procedura che prevede correzione (aggiornamento/patch), ritiro o richiamo del prodotto, con responsabilità e tempi",
+        "no": "impegno generico a mantenere il prodotto sicuro; procedura di assistenza clienti non legata alla conformità"
+      },
+      {
+        "q": "La documentazione di cibersicurezza indica che le azioni correttive valgono per tutto il periodo di assistenza dichiarato",
+        "doc": "cybersicurezza",
+        "ok": "riferimento esplicito al periodo di assistenza (data finale o durata) come arco temporale delle correzioni",
+        "no": "durata della garanzia commerciale; periodo di supporto non collegato alle correzioni di sicurezza"
+      }
+    ]
+  },
+  "CRA-ART13-22": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione di cibersicurezza prevede la messa a disposizione dell'autorità di vigilanza, su richiesta, di informazioni e documentazione di conformità",
+        "doc": "cybersicurezza",
+        "ok": "procedura o impegno a fornire documentazione tecnica all'autorità su richiesta motivata, in formato cartaceo o elettronico, in lingua comprensibile",
+        "no": "generica disponibilità a collaborare con i clienti; solo il rimando all'articolo del regolamento"
+      },
+      {
+        "q": "La documentazione di cibersicurezza indica un referente o una procedura per cooperare con le autorità sulle misure per eliminare rischi di cibersicurezza",
+        "doc": "cybersicurezza",
+        "ok": "ruolo o contatto designato per le autorità; descrizione del flusso di cooperazione sulle misure correttive",
+        "no": "contatto commerciale generico; punto di contatto per i soli utilizzatori"
+      }
+    ]
+  },
+  "CRA-ART13-23": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione di cibersicurezza prevede di informare autorità di vigilanza e utilizzatori prima della cessazione dell'attività del fabbricante",
+        "doc": "cybersicurezza",
+        "ok": "procedura di fine attività con comunicazione preventiva alle autorità e agli utilizzatori (canali indicati)",
+        "no": "procedura di fine vita del singolo prodotto; fine del periodo di assistenza senza cessazione dell'attività"
+      }
+    ]
+  },
+  "CRA-ART14-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La politica di gestione delle vulnerabilità prevede la notifica delle vulnerabilità attivamente sfruttate al CSIRT coordinatore e all'ENISA",
+        "doc": "cybersicurezza",
+        "ok": "procedura che indica CSIRT coordinatore ed ENISA come destinatari e la piattaforma unica di segnalazione come canale",
+        "no": "notifica ai soli clienti; segnalazione al fornitore del componente; generico impegno a comunicare le vulnerabilità",
+        "smentita": "la politica esclude la notifica alle autorità o la limita alle sole vulnerabilità risolte"
+      }
+    ]
+  },
+  "CRA-ART14-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La politica di gestione delle vulnerabilità fissa i tempi di notifica: preallarme entro 24 ore e notifica entro 72 ore dalla conoscenza",
+        "doc": "cybersicurezza",
+        "ok": "scadenze di 24 ore (preallarme) e 72 ore (notifica) per le vulnerabilità attivamente sfruttate",
+        "no": "tempi di risposta interni al cliente; tempi di rilascio della patch senza notifica alle autorità",
+        "smentita": "la procedura prevede tempi di prima notifica superiori a 24 ore o la notifica solo dopo la correzione"
+      },
+      {
+        "q": "La politica di gestione delle vulnerabilità prevede una relazione finale entro 14 giorni dalla disponibilità della correzione",
+        "doc": "cybersicurezza",
+        "ok": "relazione finale entro 14 giorni con descrizione, gravità e impatto, eventuali autori dello sfruttamento, dettagli dell'aggiornamento",
+        "no": "note di rilascio dell'aggiornamento; rapporto interno senza invio alle autorità"
+      },
+      {
+        "q": "La procedura di notifica elenca i contenuti della notifica a 72 ore: prodotto, natura dello sfruttamento, misure correttive o di attenuazione",
+        "doc": "cybersicurezza",
+        "ok": "modulo o elenco dei campi della notifica, incluse misure adottabili dagli utilizzatori e grado di sensibilità",
+        "no": "solo l'obbligo di notificare senza contenuti; avviso di sicurezza per i clienti"
+      }
+    ]
+  },
+  "CRA-ART14-3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La procedura di gestione degli incidenti prevede la notifica degli incidenti gravi al CSIRT coordinatore e all'ENISA tramite la piattaforma unica",
+        "doc": "cybersicurezza",
+        "ok": "procedura per incidenti gravi con CSIRT coordinatore ed ENISA come destinatari e piattaforma unica di segnalazione",
+        "no": "gestione degli incidenti informatici interni dell'azienda; notifica ai soli clienti",
+        "smentita": "la procedura esclude la notifica degli incidenti alle autorità"
+      }
+    ]
+  },
+  "CRA-ART14-4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La procedura di gestione degli incidenti fissa preallarme entro 24 ore e notifica entro 72 ore per gli incidenti gravi",
+        "doc": "cybersicurezza",
+        "ok": "scadenze 24/72 ore; il preallarme indica se si sospetta un atto illegittimo o malevolo e gli Stati membri coinvolti",
+        "no": "tempi di ripristino del servizio; tempi di risposta contrattuali al cliente",
+        "smentita": "la procedura prevede la prima notifica oltre 24 ore o solo a incidente risolto"
+      },
+      {
+        "q": "La procedura di gestione degli incidenti prevede una relazione finale entro un mese dalla notifica dell'incidente",
+        "doc": "cybersicurezza",
+        "ok": "relazione finale entro un mese con descrizione dettagliata, gravità, impatto, causa di fondo e misure di attenuazione",
+        "no": "analisi interna post-incidente senza invio alle autorità"
+      }
+    ]
+  },
+  "CRA-ART14-5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La procedura di gestione degli incidenti definisce i criteri per classificare un incidente come grave",
+        "doc": "cybersicurezza",
+        "ok": "criteri: compromissione di disponibilità, autenticità, integrità o riservatezza di dati/funzioni importanti, oppure esecuzione di codice maligno",
+        "no": "classificazione basata solo sul fermo macchina o sul danno economico; scala di priorità senza criteri"
+      }
+    ]
+  },
+  "CRA-ART14-7": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La procedura di notifica identifica lo Stato membro dello stabilimento principale e il CSIRT coordinatore a cui inviare le notifiche",
+        "doc": "cybersicurezza",
+        "ok": "nome dello Stato membro e del CSIRT coordinatore, o criterio di scelta (rappresentante, importatore, distributore, utilizzatori)",
+        "no": "solo il riferimento generico alla piattaforma unica senza indicare il CSIRT; contatto delle forze dell'ordine"
+      }
+    ]
+  },
+  "CRA-ART14-8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La politica di gestione delle vulnerabilità prevede di informare gli utilizzatori di vulnerabilità sfruttate e incidenti gravi, con le misure che possono adottare",
+        "doc": "cybersicurezza",
+        "ok": "avvisi di sicurezza agli utilizzatori con misure di attenuazione; canale indicato (portale, e-mail, bollettino)",
+        "no": "comunicazione alle sole autorità; note di rilascio generiche senza misure per l'utilizzatore",
+        "smentita": "la politica prevede di non informare gli utilizzatori fino al rilascio della correzione"
+      },
+      {
+        "q": "La documentazione di cibersicurezza indica che gli avvisi di sicurezza sono pubblicati in formato strutturato leggibile da macchina",
+        "doc": "cybersicurezza",
+        "ok": "formato strutturato citato (CSAF, VEX, JSON o simile)",
+        "no": "avvisi solo in PDF o pagina web testuale"
+      }
+    ]
+  },
+  "CRA-ART28-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE attesta il rispetto dei requisiti essenziali di cibersicurezza dell'allegato I del regolamento (UE) 2024/2847",
+        "doc": "dichiarazione",
+        "ok": "citazione del regolamento (UE) 2024/2847 (Cyber Resilience Act) e dei requisiti essenziali dell'allegato I",
+        "no": "dichiarazione che cita solo il regolamento macchine o la direttiva bassa tensione; dichiarazione del fornitore di un componente",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART28-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE segue la struttura dell'allegato V e riporta revisione o data aggiornata",
+        "doc": "dichiarazione",
+        "ok": "voci dell'allegato V (prodotto, fabbricante, responsabilità, oggetto, normativa, norme, organismo notificato, firma) e data o numero di revisione",
+        "no": "attestato di prova o certificato di un laboratorio; dichiarazione priva di data",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE è disponibile nella lingua dello Stato membro di immissione sul mercato",
+        "doc": "dichiarazione",
+        "ok": "dichiarazione in italiano (o nella lingua del mercato) o elenco delle versioni linguistiche disponibili",
+        "no": "dichiarazione solo in inglese senza indicazione di traduzioni",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART28-3": {
+    "condition": "Al prodotto si applicano più atti dell'Unione che richiedono una dichiarazione di conformità UE",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE è unica e cita tutti gli atti dell'Unione applicabili con i riferimenti di pubblicazione",
+        "doc": "dichiarazione",
+        "ok": "un solo documento che elenca CRA e altri atti (es. regolamento macchine 2023/1230, direttiva EMC) con riferimento GU",
+        "no": "dichiarazioni separate per ciascun atto; atti citati senza estremi di pubblicazione",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART28-4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE indica che è rilasciata sotto la responsabilità esclusiva del fabbricante",
+        "doc": "dichiarazione",
+        "ok": "frase di assunzione di responsabilità esclusiva con nome del fabbricante, firma e data",
+        "no": "dichiarazione non firmata; dichiarazione di un distributore senza indicare il fabbricante",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART30-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La marcatura CE è apposta sul prodotto in modo visibile, leggibile e indelebile",
+        "doc": "targa",
+        "ok": "foto o descrizione della targa con marcatura CE (incisa, serigrafata o su etichetta permanente)",
+        "no": "marcatura CE solo nel manuale; marchi di altri schemi (UL, TÜV)",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Per prodotti software, la marcatura CE è riportata sulla dichiarazione di conformità UE o sul sito web del prodotto, indicato nelle istruzioni",
+        "doc": "istruzioni",
+        "ok": "indirizzo della pagina web con marcatura CE o dichiarazione con marcatura CE per il software",
+        "no": "marcatura CE solo sull'hardware su cui il software è installato",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART30-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La targa o la marcatura del prodotto riporta la marcatura CE con dimensione che la rende visibile e leggibile",
+        "doc": "targa",
+        "ok": "marcatura CE con altezza indicata (normalmente almeno 5 mm) o foto in cui è leggibile",
+        "no": "marcatura CE deformata o in proporzioni diverse dal logo ufficiale",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART30-3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La marcatura CE è apposta sul prodotto prima dell'immissione sul mercato, sulla targa del prodotto finito",
+        "doc": "targa",
+        "ok": "targa del prodotto con marcatura CE e dati identificativi (modello, numero di serie)",
+        "no": "marcatura prevista solo nei disegni di progetto; istruzioni che chiedono all'utilizzatore di apporre la marcatura",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-ART30-4": {
+    "condition": "La valutazione della conformità segue il modulo H (garanzia qualità totale) con organismo notificato",
+    "points": [
+      {
+        "q": "La marcatura CE è seguita dal numero di identificazione dell'organismo notificato",
+        "doc": "targa",
+        "ok": "CE seguito da un numero a quattro cifre dell'organismo notificato",
+        "no": "nome dell'organismo senza numero; numero di un certificato",
+        "quasi": "integratore"
+      },
+      {
+        "q": "Il certificato dell'organismo notificato per il sistema qualità (modulo H) riporta il numero di identificazione dell'organismo",
+        "doc": "certificati",
+        "ok": "certificato modulo H con nome e numero dell'organismo notificato",
+        "no": "certificato ISO 9001 o ISO/IEC 27001 non rilasciato come organismo notificato CRA"
+      }
+    ]
+  },
+  "CRA-ART31-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica di cibersicurezza contiene gli elementi dell'allegato VII CRA (indice o struttura)",
+        "doc": "cybersicurezza",
+        "ok": "indice con descrizione del prodotto, progettazione, gestione vulnerabilità, valutazione dei rischi, periodo di assistenza, norme, prove, dichiarazione, SBOM",
+        "no": "solo il manuale d'uso; fascicolo tecnico del regolamento macchine senza parte di cibersicurezza"
+      },
+      {
+        "q": "La documentazione tecnica descrive, per ciascun requisito essenziale dell'allegato I, i mezzi adottati per soddisfarlo",
+        "doc": "cybersicurezza",
+        "ok": "tabella requisito-soluzione con riferimento ai requisiti dell'allegato I parte I e II",
+        "no": "elenco di requisiti segnati come conformi senza descrivere la soluzione"
+      }
+    ]
+  },
+  "CRA-ART31-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica di cibersicurezza è datata e gestita in revisioni, con aggiornamenti previsti per il periodo di assistenza",
+        "doc": "cybersicurezza",
+        "ok": "data di emissione anteriore all'immissione sul mercato, storico delle revisioni, procedura di aggiornamento",
+        "no": "documento senza data o revisione; aggiornamento solo del manuale d'uso"
+      }
+    ]
+  },
+  "CRA-ART31-3": {
+    "condition": "Il prodotto è soggetto anche ad altri atti dell'Unione che prevedono documentazione tecnica (es. regolamento macchine)",
+    "points": [
+      {
+        "q": "La documentazione tecnica è unica e riunisce le informazioni dell'allegato VII CRA e quelle richieste dagli altri atti applicabili",
+        "doc": "cybersicurezza",
+        "ok": "fascicolo unico con sezioni CRA e sezioni di altri atti (es. allegato IV regolamento macchine) o rimandi incrociati",
+        "no": "fascicoli separati senza collegamento; solo il fascicolo macchine"
+      }
+    ]
+  },
+  "CRA-ART31-4": {
+    "condition": "La valutazione della conformità coinvolge un organismo notificato",
+    "points": [
+      {
+        "q": "La documentazione tecnica è redatta in una lingua ufficiale dello Stato dell'organismo notificato o in una lingua da esso accettata",
+        "doc": "certificati",
+        "ok": "lingua della documentazione indicata nel contratto o certificato dell'organismo, o accettazione della lingua da parte dell'organismo",
+        "no": "lingua delle istruzioni per l'utilizzatore"
+      }
+    ]
+  },
+  "CRA-ART32-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE o la documentazione tecnica indica la procedura di valutazione della conformità applicata (modulo A, B+C, H o certificazione)",
+        "doc": "dichiarazione",
+        "ok": "procedura nominata: controllo interno modulo A, esame UE del tipo B+C, modulo H, o sistema europeo di certificazione",
+        "no": "solo l'elenco delle norme applicate; procedura del regolamento macchine senza riferimento al CRA",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La documentazione tecnica contiene l'esito della valutazione di conformità del prodotto e dei processi del fabbricante ai requisiti dell'allegato I",
+        "doc": "cybersicurezza",
+        "ok": "rapporto o sintesi della valutazione con esito per prodotto e processi di gestione delle vulnerabilità",
+        "no": "autovalutazione generica senza riferimento all'allegato I"
+      }
+    ]
+  },
+  "CRA-ART32-2": {
+    "condition": "Il prodotto è un prodotto importante di classe I (allegato III CRA)",
+    "points": [
+      {
+        "q": "La documentazione indica la classe del prodotto (importante classe I) e le norme armonizzate o certificazioni applicate integralmente",
+        "doc": "cybersicurezza",
+        "ok": "classificazione allegato III classe I e norme armonizzate o certificazione almeno «sostanziale» applicate per intero",
+        "no": "classificazione senza motivazione; norme non armonizzate CRA"
+      },
+      {
+        "q": "Se le norme armonizzate non sono applicate per intero, esiste un certificato di esame UE del tipo (modulo B) o di sistema qualità (modulo H)",
+        "doc": "certificati",
+        "ok": "certificato modulo B o approvazione modulo H rilasciato da organismo notificato",
+        "no": "autodichiarazione modulo A; certificato ISO 27001",
+        "smentita": "la dichiarazione indica il solo controllo interno (modulo A) pur con norme applicate solo in parte o assenti"
+      }
+    ]
+  },
+  "CRA-ART32-3": {
+    "condition": "Il prodotto è un prodotto importante di classe II (allegato III CRA)",
+    "points": [
+      {
+        "q": "Esiste un certificato di esame UE del tipo (modulo B), di sistema qualità (modulo H) o un certificato europeo di cibersicurezza almeno «sostanziale»",
+        "doc": "certificati",
+        "ok": "certificato modulo B o H di organismo notificato o certificato di un sistema europeo (regolamento 2019/881) livello sostanziale o superiore",
+        "no": "autodichiarazione modulo A; certificati privati non europei",
+        "smentita": "la dichiarazione indica il solo controllo interno (modulo A)"
+      }
+    ]
+  },
+  "CRA-ART32-4": {
+    "condition": "Il prodotto è un prodotto critico (allegato IV CRA)",
+    "points": [
+      {
+        "q": "Esiste un certificato rilasciato secondo un sistema europeo di certificazione della cibersicurezza, o in alternativa un certificato modulo B o H",
+        "doc": "certificati",
+        "ok": "certificato europeo di cibersicurezza (regolamento 2019/881) o certificato modulo B/H con organismo notificato",
+        "no": "autodichiarazione modulo A; certificato di sistema di gestione",
+        "smentita": "la dichiarazione indica il solo controllo interno (modulo A)"
+      }
+    ]
+  },
+  "CRA-ART32-5": {
+    "condition": "Il prodotto è software libero e open source rientrante nell'allegato III CRA",
+    "points": [
+      {
+        "q": "La documentazione tecnica del software open source è pubblicata e accessibile al pubblico, con indirizzo indicato",
+        "doc": "cybersicurezza",
+        "ok": "indirizzo pubblico (repository o sito) dove è disponibile la documentazione tecnica dell'allegato VII",
+        "no": "pubblicazione del solo codice sorgente senza documentazione tecnica"
+      }
+    ]
+  },
+  "CRA-II-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni riportano nome o marchio del fabbricante, indirizzo postale e un contatto digitale (e-mail o altro)",
+        "doc": "istruzioni",
+        "ok": "ragione sociale o marchio, indirizzo postale completo, e-mail o modulo web, eventuale sito web",
+        "no": "solo il nome del distributore o rivenditore; solo il sito web senza indirizzo postale"
+      }
+    ]
+  },
+  "CRA-II-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano il punto di contatto unico per segnalare vulnerabilità e dove trovare la politica di divulgazione coordinata",
+        "doc": "istruzioni",
+        "ok": "indirizzo e-mail o pagina web dedicata alle vulnerabilità (es. security@, PSIRT) e collegamento alla politica di divulgazione coordinata",
+        "no": "contatto generico di assistenza tecnica; numero del servizio clienti"
+      }
+    ]
+  },
+  "CRA-II-3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni riportano nome, tipo e dati che identificano univocamente il prodotto (modello, versione firmware o software)",
+        "doc": "istruzioni",
+        "ok": "nome commerciale, modello o codice tipo, versione software o firmware, eventuale numero di serie",
+        "no": "solo la famiglia di prodotti; nome commerciale senza modello"
+      }
+    ]
+  },
+  "CRA-II-4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono la finalità prevista del prodotto e l'ambiente di sicurezza in cui deve operare",
+        "doc": "istruzioni",
+        "ok": "uso previsto e ambiente di rete previsto (es. rete industriale segregata, firewall, accessi limitati)",
+        "no": "uso previsto solo meccanico senza riferimento all'ambiente informatico"
+      },
+      {
+        "q": "Le istruzioni descrivono le funzionalità essenziali e le proprietà di sicurezza del prodotto",
+        "doc": "istruzioni",
+        "ok": "elenco funzioni di sicurezza informatica: autenticazione, gestione utenti e ruoli, cifratura, registri, aggiornamento firmato",
+        "no": "funzioni di sicurezza delle persone (arresto di emergenza, ripari); affermazione generica che il prodotto è sicuro"
+      }
+    ]
+  },
+  "CRA-II-5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni elencano usi o condizioni (anche uso improprio prevedibile) che comportano rischi di cibersicurezza significativi",
+        "doc": "istruzioni",
+        "ok": "avvertenze concrete: esposizione diretta a Internet, password predefinite non cambiate, porte di servizio aperte, supporti USB non verificati",
+        "no": "avvertenze di sicurezza meccanica o elettrica; frase generica sui rischi informatici"
+      }
+    ]
+  },
+  "CRA-II-6": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano l'indirizzo Internet dove consultare la dichiarazione di conformità UE",
+        "doc": "istruzioni",
+        "ok": "URL specifico della dichiarazione di conformità o della pagina che la contiene",
+        "no": "solo l'indirizzo del sito aziendale generico senza percorso alla dichiarazione"
+      }
+    ]
+  },
+  "CRA-II-7": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni indicano la data finale del periodo di assistenza durante cui si ricevono aggiornamenti di sicurezza",
+        "doc": "istruzioni",
+        "ok": "data esplicita (mese e anno) di fine del periodo di assistenza di sicurezza",
+        "no": "durata della garanzia commerciale; frase \"per tutta la vita del prodotto\" senza data",
+        "smentita": "le istruzioni dichiarano che non sono previsti aggiornamenti di sicurezza"
+      },
+      {
+        "q": "Le istruzioni descrivono il tipo di assistenza tecnica di sicurezza offerta dal fabbricante",
+        "doc": "istruzioni",
+        "ok": "descrizione dell'assistenza: aggiornamenti di sicurezza, bollettini, canali di supporto, tempi di risposta",
+        "no": "assistenza meccanica o ricambi; contratto di manutenzione generico"
+      }
+    ]
+  },
+  "CRA-II-8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Le istruzioni descrivono le misure per l'uso sicuro alla prima messa in servizio e durante la vita del prodotto",
+        "doc": "istruzioni",
+        "ok": "passi concreti: cambio password iniziale, configurazione di rete, disattivazione servizi non usati, backup",
+        "no": "procedura di messa in servizio meccanica o elettrica senza aspetti informatici"
+      },
+      {
+        "q": "Le istruzioni descrivono come installare gli aggiornamenti di sicurezza e come disattivare l'installazione automatica",
+        "doc": "istruzioni",
+        "ok": "procedura di aggiornamento (passi, verifica versione) e impostazione per disattivare l'aggiornamento automatico",
+        "no": "solo l'avviso che sono disponibili aggiornamenti; aggiornamento da eseguire solo da tecnico senza procedura"
+      },
+      {
+        "q": "Le istruzioni descrivono lo smantellamento sicuro e la cancellazione sicura dei dati degli utilizzatori",
+        "doc": "istruzioni",
+        "ok": "procedura di ripristino di fabbrica o cancellazione dati, rimozione credenziali, distruzione supporti",
+        "no": "smaltimento RAEE o rottamazione meccanica senza cancellazione dei dati"
+      },
+      {
+        "q": "Le istruzioni spiegano come le modifiche al prodotto possono influire sulla sicurezza dei dati e, se integrabile, forniscono informazioni per l'integratore",
+        "doc": "istruzioni",
+        "ok": "avvertenze su modifiche software o configurazione e relativi effetti; sezione per integratori con requisiti di rete e interfacce",
+        "no": "avvertenze sulle modifiche meccaniche; divieto generico di modifica senza spiegarne gli effetti sui dati"
+      }
+    ]
+  },
+  "CRA-II-9": {
+    "condition": "Il fabbricante mette la distinta base del software (SBOM) a disposizione dell'utilizzatore",
+    "points": [
+      {
+        "q": "Le istruzioni indicano dove accedere alla distinta base del software (SBOM)",
+        "doc": "istruzioni",
+        "ok": "URL, percorso nel prodotto o modalità di richiesta della SBOM",
+        "no": "elenco delle licenze open source senza SBOM; SBOM citata senza indicare dove trovarla"
+      }
+    ]
+  },
+  "CRA-VII-1": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica contiene una descrizione generale del prodotto con la finalità prevista e le versioni software rilevanti",
+        "doc": "cybersicurezza",
+        "ok": "finalità prevista e numeri di versione di firmware o software oggetto della valutazione",
+        "no": "descrizione commerciale senza versioni software"
+      },
+      {
+        "q": "La documentazione tecnica contiene fotografie o illustrazioni del prodotto hardware: aspetto esterno, marcatura e disposizione interna",
+        "doc": "disegni",
+        "ok": "foto o disegni esterni, della targa e dell'interno (schede, componenti)",
+        "no": "solo disegni d'ingombro senza marcatura né interno"
+      }
+    ]
+  },
+  "CRA-VII-2": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica descrive l'architettura del sistema e come i componenti software interagiscono",
+        "doc": "cybersicurezza",
+        "ok": "schema dell'architettura software con componenti, interfacce, flussi dati e dipendenze",
+        "no": "schema elettrico di potenza; elenco dei moduli senza relazioni"
+      },
+      {
+        "q": "La documentazione tecnica descrive i processi di gestione delle vulnerabilità: SBOM, politica di divulgazione coordinata e contatto per le segnalazioni",
+        "doc": "cybersicurezza",
+        "ok": "SBOM presente, politica di divulgazione coordinata, indirizzo di contatto per le vulnerabilità",
+        "no": "impegno generico a correggere i difetti"
+      },
+      {
+        "q": "La documentazione tecnica descrive le soluzioni tecniche per la distribuzione sicura degli aggiornamenti",
+        "doc": "cybersicurezza",
+        "ok": "firma digitale degli aggiornamenti, canale cifrato, verifica di integrità, meccanismo di rollback",
+        "no": "aggiornamento tramite chiavetta USB senza verifica di integrità descritta"
+      },
+      {
+        "q": "La documentazione tecnica descrive i processi di produzione e monitoraggio del prodotto e la loro convalida",
+        "doc": "cybersicurezza",
+        "ok": "controlli di produzione relativi al software (programmazione firmware, chiavi, verifica versione) e loro convalida",
+        "no": "controllo qualità meccanico; certificato ISO 9001 senza descrizione dei processi"
+      }
+    ]
+  },
+  "CRA-VII-3": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esiste una valutazione dei rischi di cibersicurezza del prodotto con minacce, vulnerabilità e misure adottate",
+        "doc": "cybersicurezza",
+        "ok": "analisi delle minacce (es. modello di minaccia) con valutazione del rischio e contromisure per il ciclo di vita",
+        "no": "valutazione dei rischi del regolamento macchine senza minacce informatiche; elenco di controlli senza analisi"
+      },
+      {
+        "q": "La valutazione dei rischi di cibersicurezza indica come si applica ciascun requisito dell'allegato I parte I",
+        "doc": "cybersicurezza",
+        "ok": "tabella requisiti allegato I parte I con applicabilità, motivazione di eventuali esclusioni e misure",
+        "no": "requisiti dichiarati non applicabili senza motivazione"
+      }
+    ]
+  },
+  "CRA-VII-4": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica riporta le informazioni usate per determinare il periodo di assistenza",
+        "doc": "cybersicurezza",
+        "ok": "motivazione del periodo: durata d'uso prevista, aspettative degli utilizzatori, vita dei componenti, prassi del settore",
+        "no": "solo la data di fine assistenza senza motivazione"
+      }
+    ]
+  },
+  "CRA-VII-5": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica elenca norme armonizzate, specifiche comuni o certificazioni applicate, indicando le parti applicate se parziali",
+        "doc": "cybersicurezza",
+        "ok": "elenco norme con codice e anno (es. EN/IEC 62443-4-2, EN 18031) e parti applicate",
+        "no": "norme di sicurezza macchine (EN ISO 12100) senza norme di cibersicurezza; elenco senza indicare parti in caso di applicazione parziale"
+      },
+      {
+        "q": "In assenza di norme armonizzate, la documentazione tecnica descrive le soluzioni adottate per i requisiti dell'allegato I e le altre specifiche tecniche applicate",
+        "doc": "cybersicurezza",
+        "ok": "descrizione delle soluzioni per i requisiti allegato I parti I e II ed elenco di specifiche tecniche (es. IEC 62443, ETSI EN 303 645)",
+        "no": "dichiarazione di conformità generica senza soluzioni descritte"
+      }
+    ]
+  },
+  "CRA-VII-6": {
+    "condition": "",
+    "points": [
+      {
+        "q": "Esistono rapporti delle prove di cibersicurezza sul prodotto (es. test di penetrazione, scansione vulnerabilità) con esito",
+        "doc": "rapporti_prova",
+        "ok": "rapporto con data, versione testata, metodo, risultati e vulnerabilità trovate/risolte",
+        "no": "prove funzionali o di compatibilità elettromagnetica; rapporti su un'altra versione del software senza riferimento"
+      },
+      {
+        "q": "Esistono verifiche documentate sui processi di gestione delle vulnerabilità (allegato I parte II)",
+        "doc": "rapporti_prova",
+        "ok": "audit o verifica dei processi: tempi di gestione, SBOM aggiornata, prova del canale di segnalazione",
+        "no": "sola descrizione della procedura senza verifica"
+      }
+    ]
+  },
+  "CRA-VII-7": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica contiene una copia della dichiarazione di conformità UE secondo il CRA",
+        "doc": "dichiarazione",
+        "ok": "copia della dichiarazione firmata che cita il regolamento (UE) 2024/2847",
+        "no": "dichiarazione di incorporazione o dichiarazione solo per il regolamento macchine",
+        "quasi": "integratore"
+      }
+    ]
+  },
+  "CRA-VII-8": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La documentazione tecnica contiene o rende disponibile la distinta base del software (SBOM) del prodotto",
+        "doc": "cybersicurezza",
+        "ok": "SBOM in formato standard (SPDX, CycloneDX) con componenti e versioni, almeno le dipendenze di primo livello",
+        "no": "elenco delle licenze open source; elenco componenti senza versioni"
+      }
+    ]
+  },
+  "CRA-V": {
+    "condition": "",
+    "points": [
+      {
+        "q": "La dichiarazione di conformità UE identifica univocamente il prodotto (nome, tipo, versione) e il fabbricante con indirizzo",
+        "doc": "dichiarazione",
+        "ok": "nome, modello o tipo, versione o numero di serie, eventuale foto; nome e indirizzo del fabbricante o del rappresentante autorizzato",
+        "no": "solo nome commerciale; solo il nome del distributore",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE contiene l'attestazione di responsabilità esclusiva e di conformità alla normativa di armonizzazione",
+        "doc": "dichiarazione",
+        "ok": "frase di responsabilità esclusiva e attestazione di conformità con citazione del regolamento (UE) 2024/2847",
+        "no": "citazione di norme senza attestazione di conformità",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE riporta norme armonizzate, specifiche o certificazioni applicate e, se coinvolto, l'organismo notificato con certificato",
+        "doc": "dichiarazione",
+        "ok": "elenco norme o certificazioni; nome e numero dell'organismo notificato, procedura seguita, numero del certificato",
+        "no": "norme senza anno o edizione; organismo citato senza numero o certificato",
+        "quasi": "integratore"
+      },
+      {
+        "q": "La dichiarazione di conformità UE è firmata, con luogo, data, nome e funzione del firmatario",
+        "doc": "dichiarazione",
+        "ok": "luogo e data di rilascio, nome e funzione del firmatario, firma",
+        "no": "dichiarazione senza firma o senza data",
+        "quasi": "integratore"
+      }
+    ]
+  }
+}
